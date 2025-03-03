@@ -1,0 +1,153 @@
+.cookie-banner {
+   position: fixed;
+   bottom: 0;
+   left: 50%;
+   transform: translateX(-50%);
+   width: 50%;
+   background-color: #fff;
+   color: black;
+   padding: 15px;
+   border: 2px solid #ff0100;
+   border-radius: 8px;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+   z-index: 500;
+   font-family: Arial, sans-serif;
+   display: none; /* Alguses on bänner peidetud */
+   font-size: small;
+}
+
+
+.cookie-message {
+   margin-bottom: 10px;
+}
+
+.cookie-link {
+   text-decoration: underline;
+   color: #aaf;
+}
+
+.cookie-options {
+   display: none; /* Default state */
+   flex-direction: column;
+   margin-bottom: 10px;
+}
+
+.cookie-options.visible {
+   display: flex; /* Make it visible and apply flex layout */
+}
+
+.cookie-options label {
+   margin: 5px 0; /* This will now be applied when the element is visible */
+}
+
+.cookie-label {
+   margin-left: 10px;
+}
+
+.cookie-slider input[type="range"] {
+   -webkit-appearance: none;
+   appearance: none;
+   width: 100px;
+   height: 10px;
+   background: #ddd;
+   border-radius: 5px;
+   outline: none;
+   transition: background 0.3s ease;
+}
+
+.cookie-slider input[type="range"]:focus {
+   background: #bbb;
+}
+
+.cookie-slider input[type="range"]::-webkit-slider-thumb {
+   -webkit-appearance: none;
+   appearance: none;
+   width: 20px;
+   height: 20px;
+   background: #ff0100;
+   border-radius: 50%;
+   cursor: pointer;
+}
+
+.cookie-slider input[type="range"]:disabled {
+   background: #ccc;
+}
+
+.cookie-actions {
+   display: flex;
+   justify-content: flex-end;
+   gap: 10px;
+   
+}
+
+.cookie-button {
+   padding: 5px 20px;
+   border: none;
+   border-radius: 5px;
+   color: white;
+   cursor: pointer;
+}
+
+.cookie-button.accept {
+   background-color: green;
+}
+
+.cookie-button.accept:hover {
+   background-color: #4CAF50;
+}
+
+.cookie-button.kohanda {
+   background-color: rgb(255, 255, 255);
+   border: 2px solid #ff0100; /* Red border */
+   display: flex; /* Enables flexbox layout */
+   align-items: center; /* Centers content vertically */
+   justify-content: space-between; /* Centers content horizontally */
+   color: rgb(34, 34, 34);
+   transition: border-color 0.3s ease, color 0.3s ease; /* Smooth transition for border and text */
+   padding: 5px 10px 5px 20px;
+}
+
+.cookie-button.kohanda:hover {
+   color: rgb(89, 89, 89); /* Darker gray text */
+   border-color: #ff7f7f; /* Lighter red border on hover */
+}
+#user-cookies-preferences{
+   width:170px;
+   padding: 5px 20px;
+   border: none;
+   border-radius: 5px;
+   background-color: rgb(255, 255, 255);
+   border: 1.7px solid #ff0100; /* Red border */
+ color: rgb(34, 34, 34);
+   cursor: pointer;}
+#user-cookies-preferences:hover{color: rgb(89, 89, 89); /* Darker gray text */
+   border-color: #ff7f7f; /* Lighter red border on hover */}
+
+.cookie-icon {
+   position: fixed;
+   bottom: 20px;
+   left: 20px;
+   width: 35px;
+   height: 35px;
+   background-color: #ff0100;
+   color: white;
+   font-size: 25px;
+   border-radius: 50%;
+   display: block; /* Alati nähtav */
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   cursor: pointer;
+   z-index: 60;
+}
+
+.cookie-icon:hover {
+   background-color: #ff4d4d;
+}
+
+.cookie-icon.visible {
+   display: flex; /* Kui ikoon on nähtav, muutub see painduvaks */
+}
+@media screen and (max-width: 755px) {
+    
+   .cookie-icon {display:none !important;}}

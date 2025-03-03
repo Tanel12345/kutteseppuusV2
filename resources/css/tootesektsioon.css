@@ -1,0 +1,245 @@
+.tootesektsioon{
+   width:100%;
+   
+}
+
+.tootevalikud{
+  width:100%;
+  margin-top: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.brands{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 1300px;           /* Set the width of the brands container */
+  margin: 20px auto;          /* Center .brands horizontally */
+  text-align: center; 
+  padding: 25px; 
+  gap:3rem;  /* Ensure <h2> inside brands is centered */
+}
+.brandboxes{border-style: solid;
+  border-color: #ff0100;
+  border-style: solid;
+  border-width: 2px;
+  padding: 20px;
+  width:250px;
+  height:120px;
+  box-shadow:  0 5px 7px rgba(0, 0, 0, 0.3);}
+
+  .brandboxes:hover {
+    transition-duration: 0.5s;
+    transform: translateY(-7px);
+    cursor: pointer;
+    box-shadow: 10px 14px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  .brandboxes img{width:100%; height:100%;
+   object-fit: cover;
+  }
+  
+  .brandboxes:hover {
+    transition-duration: 0.5s;
+    transform: translateY(-7px);
+    cursor: pointer;
+    box-shadow: 10px 14px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+
+.tootediv{
+
+   width:100%;
+   position: relative;
+  
+   background-image: linear-gradient(
+      #eeeeee 0%,     /* Top - Light Gray at the start */
+      #ffffff 50%,    /* Middle - White at 50% of the height */
+      #eeeeee 100%    /* Bottom - Light Gray at the end */
+    );
+    margin:12px 0;
+     box-shadow: 0px -2px 7px rgba(0, 0, 0, 0.2), /* Top shadow */
+     0 2px 7px rgba(0, 0, 0, 0.3); /*10px (Horizontal Offset): 5px (Vertical Offset): 7px (Blur Radius): rgba(0, 0, 0, 0.3) (Color & Opacity): */
+    min-height: 450px;
+    
+
+}
+
+.tooteaktiivala {
+  flex-direction: row;
+   position: relative;
+   z-index: 1;
+   max-width: 1300px;
+   margin: 0 auto;
+   display: flex;
+   justify-content: space-between; 
+   align-items:center; /* Aligns the content at the top */
+   flex-wrap: wrap;
+   justify-content: center; 
+
+   
+}
+
+
+
+.taustapildid {
+  position: absolute;
+  z-index: 0;
+    top: 0;
+    left: 50%; /* Center the images horizontally */
+    transform: translateX(-50%); /* Centering */
+    width: 1600px;  /* Fixed width of 1300px */
+    height: 100%;  /* Ensure the height covers the full height of the parent */
+    display: flex;  /* Use flex to position the images side by side */
+    justify-content: space-between;  /* Equal space between each image */
+}
+
+.taustapildid .img {
+  width: 20%;  /* Divide the space into 5 equal sections */
+  height: 100%;  /* Ensure the images cover the full height of the parent */
+  object-fit: cover;  /* Make sure the images are scaled to cover the area */
+  opacity: 0.1;  /* Optional: you can adjust the transparency of the images */
+}
+
+
+
+.tooteaktiivala .tekstid {
+   max-width: 650px;
+   width: 100%; /* Allows it to shrink on smaller screens */
+   min-width: 150px;
+   height:100%;
+   margin: 40px 40px 20px 20px ;
+   display: flex;
+   flex-direction: column;
+   text-align: left;
+   justify-content: center;
+   align-items: flex-start; /* Aligns the content at the top */
+   word-wrap: break-word; /* Ensures long words break and don't overflow */
+}
+
+.tekstid h2{margin: 25px 0 15px 0;}
+.tekstid h3{margin: 25px 0 15px 0;}
+
+
+.tooteaktiivala .productImg {
+  margin:15px;
+   max-width: 450px; /* Ensures the image shrinks to fit container */
+   min-width: 150px; /* Ensures the image shrinks to fit container */
+   width: 100%;;
+  
+}
+.tooteaktiivala .tooteImg:hover{ transition-duration: 0.5s;
+  transform: translateY(-7px);
+  
+  cursor: pointer;}
+.tooteaktiivala .tooteImg {
+  
+  object-fit: cover;  /* Make sure the images are scaled to cover the area */
+ width:100%;
+ height: 100%;;
+}
+
+
+.tooteaktiivala .brandImg {
+  margin: 20px 0 0 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;  /* Center horizontally */
+    align-items: center;  /* Center vertically */
+    position: relative;
+    max-width: 350px;
+    gap:1rem;
+    
+}
+  
+
+.tooteaktiivala .brand {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;  /* Keeps the image's aspect ratio while fitting within the container */
+}
+.tooteaktiivala .brand:hover {
+  transition-duration: 0.5s;
+  transform: translateY(-7px);
+  cursor: pointer;
+  box-shadow: 10px 14px 10px rgba(0, 0, 0, 0.3);
+}
+/* küsi pakkumist parem
+.kusipakkumist {
+   width: 170px;
+   height: 170px;
+   background-image: radial-gradient(#ff0100, #ff0100, rgb(206, 7, 7));
+   padding: 6px 10px;
+   margin: 100px auto 30px auto;
+   color: white;
+   border-radius: 15px;
+   transition-duration: 0.3s;
+   box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.3);
+   border-radius: 40% 60% 60% 40% / 50% 70% 25% 30%;
+ }
+ .kusipakkumist h3 {
+   font-weight: 600;
+   font-size: 20px;
+   line-height: 25px;
+   text-align: center;
+   color: #ffffff;
+   border-radius: 90px 130px 90px 130px;
+   margin: 40px 12px;
+   padding: 18px;
+   transform: rotate(30deg) translateX(-3px);
+ }
+ .kusipakkumist h3:hover {
+   color: #ffffff;
+   font-weight: 700;
+   background-color: #00000071;
+ }
+ .kusipakkumist:hover {
+   transition-duration: 0.5s;
+   transform: translateY(-7px);
+   box-shadow: 10px 14px 10px rgba(0, 0, 0, 0.3);
+   cursor: pointer;
+ } */
+
+ /* küsi pakkumist vasak */
+.kusipakkumist {
+   width: 120px;
+   height: 120px;
+   background-image: radial-gradient(#ff0100, #ff0100, rgb(206, 7, 7));
+   padding: 6px 0px;
+   margin: 15px 50px 15px 7px;
+   color: white;
+   border-radius: 15px;
+   transition-duration: 0.3s;
+   box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.3);
+   border-radius: 60% 40% 40% 60% / 70% 50% 30% 25%;
+   display: inline-block;
+ }
+ .kusipakkumist h3 {
+   width: 100%;
+   font-weight: 600;
+   font-size: 16px;
+   text-align: center;
+   line-height: 20px;
+   color: #ffffff;
+   border-radius: 130px 90px 130px 90px;
+   margin: 10px 12px;
+   padding: 8px;
+   transform: rotate(-30deg) translateX(-18px);
+ }
+ .kusipakkumist h3:hover {
+   color: #ffffff;
+   font-weight: 700;
+   background-color: #00000071;
+ }
+ .kusipakkumist:hover {
+   transition-duration: 0.5s;
+   transform: translateY(-7px);
+   box-shadow: 10px 14px 10px rgba(0, 0, 0, 0.3);
+   cursor: pointer;
+ }
+ 
