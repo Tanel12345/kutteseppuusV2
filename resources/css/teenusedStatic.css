@@ -2,87 +2,66 @@
 .sektsioon-teenused {
    position: relative;
    width: 100%;
-   background-color: #eeeeee;
+   background-color: #ffffff;
  }
  .teenused {
    display: flex;
-   justify-content: space-around;
+   justify-content: center;
    flex-direction: row;
    flex-wrap: wrap;
    list-style: none;
    max-width: 1300px;
    min-width: 300px;
    margin: 0 auto;
-   padding: 150px 8px 20px 8px;
+   padding: 20px 8px 20px 8px;
    
    gap: 10px;
  }
  .teenused li {
    padding: 10px 12px 0 12px;
-   text-align:center;
-   width: 200px;
+   text-align: center;
+   width: 300px;
    min-width: 150px;
    display: flex;
    flex-direction: column;
   
- }
- .teenused li:nth-child(2) {
-   text-align: center;
- 
-
- }
- 
- .teenused li:nth-child(4) li {
-width:100%;
-   padding:0;
-   text-align: center;
-   line-height: 18px;
-   font-size: 0.9rem;
-   padding-top: 0;
-   padding-bottom: 5px;
- }
- .teenused li:nth-child(4) ul {
-  display:flex;
-  flex-direction: column;
-
- }
- .h5holder {
-   height: 80px;
- }
- .teenused li a {
-   color: #000000;
-   font-weight: 600;
+   
    
  }
+ .teenused li:nth-child(3) {
+  border-left: 1px solid #9595958a; /* Left border */
+  border-right:1px solid #9595958a; /* Right border */
+ }
+ 
+
+ .h5holder {
+
+   height: 80px;
+ }
+
  .teenused p span {
    color: #ff0100;
-   font-size: 1rem;
+   font-size: 1.5rem;
    font-weight: 500;
- }
- .teenused li a:hover {
-   color: #ff0100;
- }
- .teenused p span:hover {
-   color: #ff0100;
+   line-height: 30px;
  }
 
+ .teenused h2 {
+  width: 100%;  /* Makes sure h2 takes full width */
+   text-align: center; /* Centers the text */
+   margin: 20px; /* Adds space below h2 */
+}
 
- .teenused h4 a {
-  
-   color: #ff0100;
-   font-size: 1rem;
-   font-weight: 500;
- }
- .teenused h4 {
-   font-size: 1.2rem;
+
+ .teenused h3 {
+   font-size: 1.3rem;
    font-weight: 500;
    line-height: 25px;
  }
  .teenused p {
-   font-size: 0.9rem;
-   margin-top: 20px;
-   margin-bottom: 20px;
-   line-height: 20px;
+   font-size: 1.1rem;
+   margin-top: 0px;
+   margin-bottom: 20px
  }
  .number {
    width: 40px;

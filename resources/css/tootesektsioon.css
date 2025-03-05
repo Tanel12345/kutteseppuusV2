@@ -119,6 +119,7 @@
    justify-content: center;
    align-items: flex-start; /* Aligns the content at the top */
    word-wrap: break-word; /* Ensures long words break and don't overflow */
+   text-align: justify;
 }
 
 .tekstid h2{margin: 25px 0 15px 0;}
@@ -219,7 +220,7 @@
    border-radius: 60% 40% 40% 60% / 70% 50% 30% 25%;
    display: inline-block;
  }
- .kusipakkumist h3 {
+ .kusipakkumist p {
    width: 100%;
    font-weight: 600;
    font-size: 16px;
@@ -231,7 +232,7 @@
    padding: 8px;
    transform: rotate(-30deg) translateX(-18px);
  }
- .kusipakkumist h3:hover {
+ .kusipakkumist p:hover {
    color: #ffffff;
    font-weight: 700;
    background-color: #00000071;

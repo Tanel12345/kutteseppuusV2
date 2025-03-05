@@ -150,7 +150,7 @@ box-shadow: 0 3px 4px rgba(0, 0, 0, 0.3);
   box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.3);
   border-radius: 40% 60% 60% 40% / 50% 70% 25% 30%;
 }
-.kusipakkumist h3 {
+.kusipakkumist p {
   font-weight: 600;
   font-size: 20px;
   line-height: 25px;
@@ -161,7 +161,7 @@ box-shadow: 0 3px 4px rgba(0, 0, 0, 0.3);
   padding: 18px;
   transform: rotate(30deg) translateX(-3px);
 }
-.kusipakkumist h3:hover {
+.kusipakkumist p:hover {
   color: #ffffff;
   font-weight: 700;
   background-color: #00000071;

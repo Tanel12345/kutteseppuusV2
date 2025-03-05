@@ -1,16 +1,16 @@
 <section class="tootesektsioon" id="tootesektsioon" >
    <div class="tootevalikud">
-    <h3 style="font-size: 32px; font-weight: 400;">REASTA TOOTED BRÄNDI JÄRGI</h3>
+    <h2 style="font-size: 32px; font-weight: 400; margin: 14px; text-align: center;">REASTA TOOTED BRÄNDI JÄRGI</h2>
     <div class="brands">
         
         <div class="brandboxes">
-            <a href="{{ route('ohksoojuspumbad.index', ['brand' => 'midea']) }}#tootesektsioon" title="Midea">
+            <a href="{{ route('ohksoojuspumbad.index', ['brand' => 'midea']) }}#tootesektsioon" title="Midea õhksoojuspumbad">
                 <img src="{{ Vite::asset('resources/images/logod/Midea_logo.webp') }}" alt="Bränd Midea" />
             </a>
            
         </div>
         <div class="brandboxes">
-            <a href="{{ route('ohksoojuspumbad.index', ['brand' => 'bosch']) }}#tootesektsioon" title="Bosch">
+            <a href="{{ route('ohksoojuspumbad.index', ['brand' => 'bosch']) }}#tootesektsioon" title="Bosch õhksoojuspumbad">
                 <img src="{{ Vite::asset('resources/images/logod/bosch.png') }}" alt="Bränd Bosch" />
             </a>
            
@@ -29,15 +29,16 @@
                  
                   <div class="brandImg">
                     <div class="kusipakkumist">
-                        <a href="{{  url('/') . '?product=' . urlencode($product->name) . "/#form"')    }}" title="Kontakt vormile">
-                            <h3>KÜSI PAKKUMIST</h3>
+                        <a href="{{ url('/') . '?product=' . urlencode($product->brandname . ' ' . $product->name) . '#form' }}" title="Kontakt vormile">
+                            <p>KÜSI LISAINFOT</p>
                         </a>
                     </div>
                     @if($product->brand_img)
                         <a href="{{ route('ohksoojuspumbad.brand', ['brandname' => strtolower($product->brandname)]) }}">
                             <img class="brand" src="{{ asset('storage/' . $product->brand_img) }}" alt="Toote brändi nimi on {{ $product->brandname }}" />
                         </a>
-                        @endif
+                    @endif
+                    
                     </div>
                 </div>
                 

@@ -32,13 +32,16 @@
   </div>
 
   <div class="Input">
-      <input type="text" name="pealkiri" class="input" id="pealkiri" placeholder="Pealkiri" value="{{ isset($product) ? 'Tere, soovin küsida toote ' . $product->name . ' kohta' : old('pealkiri', '') }}">
-      <div id="pealkirierror">@error('pealkiri') {{ $message }} @enderror</div>
-  </div>
+    <input type="text" name="pealkiri" class="input" id="pealkiri" placeholder="Pealkiri"
+           value="{{ old('pealkiri') }}">
+    
+</div>
 
   <div class="Inputtext">
-      <textarea class="input" name="inputtext" id="teade" placeholder="*Sinu päring..." required>{{ old('inputtext') }}</textarea>
-      <div id="teadeerror">@error('inputtext') {{ $message }} @enderror</div>
+    <textarea class="input" name="inputtext" id="teade" placeholder="*Sinu päring..." required>
+      {{ isset($product) ? "Tere \nsoovin küsida toote " . $product . " kohta" : old('pealkiri', '') }}
+  </textarea>
+    <div id="teadeerror">@error('inputtext') {{ $message }} @enderror</div>
   </div>
  
 

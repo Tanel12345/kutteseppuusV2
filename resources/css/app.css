@@ -5,6 +5,8 @@
    box-sizing: border-box;
    color: #262626;
    box-sizing: border-box;
+   max-width: 100%;
+
  }
  body {
   width: 100%;

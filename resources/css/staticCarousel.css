@@ -37,19 +37,20 @@
   margin: auto auto;
   top: 120px;
   left:10px;
-min-width:900px;
+  min-width:900px;
 
   border-radius: 15px;
 }
 
  .textholder{
-  background-color: #ffffff42;
+  background-color: #ffffff58;
   animation: h1slide 1s ease-in-out 0.5s forwards;
   position: relative;
   
   width: 70%;
   min-width: 300px;
   max-width: 900px;
+  
 
   z-index: 9999;
   margin:10px;
@@ -59,39 +60,42 @@ min-width:900px;
 
  .carousel h1 {
   
- 
   text-align: left;
+
   
   color: black;
   
-  font-size: 1.6rem;
+  font-size: 2rem;
   font-weight: 900;
  
-  padding: 8px;
-  line-height: 40px;
+  padding: 12px;
+  line-height: 28px;
   letter-spacing: 1px;
+  margin-bottom:20px
   
   
   
   
 }
 .carousel p {
- 
-  text-align: left;
+  text-align: justify;
+  
   
   
   font-size: 16px;
   font-weight:500;
  
-  padding: 8px;
+  padding: 12px;
   line-height: 25px;
 
  
 }
 .carousel span {
-  font-size: 1.6rem;
+ 
+  font-size: 1.4rem;
   font-weight: 300;
   line-height: 0px;
+ 
 }
 @keyframes h1slide {
   0% {
@@ -132,7 +136,7 @@ min-width:900px;
   }
   .carousel p {
    
-    text-align: left;
+    text-align: justify;
     font-size: 13px;
     padding: 8px;
     line-height: 20px;

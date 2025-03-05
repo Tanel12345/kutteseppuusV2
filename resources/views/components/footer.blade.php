@@ -28,11 +28,12 @@
         </div>
         
 
+
         <div class="footeritem">
             <hr>
             <h6>LEIA MIND FACEBOOKIS</h6>
             <hr>
-            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FKyttesepp%2Fposts%2Fpfbid02a24xwcjE39SF5cW9du8umSd9ps8Crvym6vsynWzDDexzhpd1nsJVwoZJHGnbJ39il&show_text=true&width=500" width="100%" height="748" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FKyttesepp%2Fposts%2Fpfbid02efiuszvCj1BCaXV8aDWsCa2Cgy6a3PEo3JH8gKP8vMMpQBiSzoFEWC6NGMS2C88zl&show_text=true&width=100" width="580" height="200" style="border:none;overflow:hidden; transform: scale(0.7); transform-origin: 0 0;" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
             
         </div>
     </div>

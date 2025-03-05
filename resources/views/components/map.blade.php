@@ -3,6 +3,7 @@
         <!-- Google Maps iframe -->
         <div id="map-container" style="display: block;">
             <iframe 
+                id="google-map-iframe"
                 width="1300" 
                 height="600" 
                 style="border: 0;" 

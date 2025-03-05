@@ -10,17 +10,17 @@
                 </div>
                 <div class="piltlingitekst">
                     <img src="{{ Vite::asset('resources/images/icons/küttesepp.png') }}" alt="Küttesepp" />
-                    <h2><a href="{{ route('index') }}" title="ÕHK-õhk soojuspumbad">ÕHK-õhk soojuspumbad</a></h2>
+                    <h2><a href="{{ route('ohksoojuspumbad.index') }}" title="ÕHK-õhk soojuspumbad">ÕHK-õhk soojuspumbad</a></h2>
                 </div>
                 <ul class="Lisalingid">
                     <li>
-                        <a href="{{ route('index') }}" title="Bosch">
+                        <a href="{{ route('ohksoojuspumbad.brand', ['brandname' => 'bosch']) }}" title="Bosch">
                             <img src="{{ Vite::asset('resources/images/vaikesed/bosch/Bosch.png') }}" alt="Bosch" />
                             Bosch
                         </a>
                     </li>
                     <li>
-                        <a href="{{ route('index') }}" title="Midea">
+                        <a href="{{ route('ohksoojuspumbad.brand', ['brandname' => 'midea']) }}" title="Midea">
                             <img src="{{ Vite::asset('resources/images/vaikesed/midea/MIDEA.avif') }}" alt="Midea" />
                             Midea
                         </a>
@@ -143,7 +143,7 @@
        
         <div class="kusipakkumist">
             <a href="/#form" title="Kontakt">
-                <h3>KÜSI LISAINFOT</h3>
+                <p>KÜSI LISAINFOT</p>
             </a>
         </div>
     </div>

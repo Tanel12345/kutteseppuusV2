@@ -22,7 +22,7 @@ Route::controller(PageController::class)->group(function () {
     Route::get('/teenused', 'teenused')->name('teenused');
     Route::get('/soojuspumpadest', 'soojuspumpadest')->name('soojuspumpadest');
     Route::get('/poranda-ja-radiaatorkute.', 'porandaJaRadiaatorkute')->name('poranda-ja-radiaatorkute');
-    Route::get('/milleks-kutteautomaatika', 'milleksKutteautomaatika')->name('milleks-kutteautomaatika');
+    Route::get('/kutteautomaatika', 'milleksKutteautomaatika')->name('milleks-kutteautomaatika');
     Route::get('/kuidas-saasta-kuttekuludelt', 'kuidasSaastaKuttekuludelt')->name('kuidas-saasta-kuttekuludelt');
     Route::get('/ohksoojuspumbad', 'ohkSoojuspumbad')->name('ohksoojuspumbad.index');
     Route::get('/ohksoojuspumbad/{brandname}', 'showBrandPage')->name('ohksoojuspumbad.brand');

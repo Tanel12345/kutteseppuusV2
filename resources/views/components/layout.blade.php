@@ -26,10 +26,12 @@
     {{-- Facebooki jaoks meta --}}
     <meta property="og:title" content="{{ $title ?? 'Küttesepp - Küttemurede lahendaja' }}">
     <meta property="og:description" content="{{ $metaDescription ?? 'Pakume küttesüsteeme ja paigaldust kogu Eestis. Vaata lähemalt!' }}">
-    <meta property="og:image" content="{{ $ogImage ?? Vite::asset('resources/images/küttesepp_logo.webp') }}">
     <meta property="og:url" content="{{ url()->current() }}">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="et_EE">
+    <meta property="og:image" content="{{ Vite::asset('resources/images/küttesepp.png') }}">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="539">
 
     <!-- Lingid -->
     <link rel="canonical" href="{{ $canonical ?? url()->current() }}" />
