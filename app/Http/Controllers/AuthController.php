@@ -29,12 +29,12 @@ class AuthController extends Controller
                 $request->session()->regenerate();
                 $request->session()->regenerateToken();
                
-                return redirect()->route('admin.dashboard');
+                return redirect()->route('admin.dashboard');}
                
             return back()->withErrors([
                 'email' => 'The provided credentials do not match our records.',
             ]);
-        }}
+        }
 
        
         

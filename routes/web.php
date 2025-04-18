@@ -19,13 +19,22 @@ return view('pages.privaatsuspoliitika');
 Route::controller(PageController::class)->group(function () {
     
     Route::get('/', 'index')->name('index');
-    Route::get('/teenused', 'teenused')->name('teenused');
-    Route::get('/soojuspumpadest', 'soojuspumpadest')->name('soojuspumpadest');
+    Route::get('/soojuspumpade-paigaldus', 'soojuspumpadePaigaldus')->name('soojuspumpade-paigaldus');
     Route::get('/poranda-ja-radiaatorkute.', 'porandaJaRadiaatorkute')->name('poranda-ja-radiaatorkute');
     Route::get('/kutteautomaatika', 'milleksKutteautomaatika')->name('milleks-kutteautomaatika');
     Route::get('/kuidas-saasta-kuttekuludelt', 'kuidasSaastaKuttekuludelt')->name('kuidas-saasta-kuttekuludelt');
+    Route::get('/kuttesusteemi-hooldus', 'küttesüsteemiHooldus')->name('kuttesusteemi-hooldus');
+
+
     Route::get('/ohksoojuspumbad', 'ohkSoojuspumbad')->name('ohksoojuspumbad.index');
-    Route::get('/ohksoojuspumbad/{brandname}', 'showBrandPage')->name('ohksoojuspumbad.brand');
+    Route::get('/ohksoojuspumbad/{brandname}', 'showBrandPage')->name('ohk_ohk_soojuspumbad.brand');
+
+    
+    Route::get('/ohk-vesi-soojuspumbad', 'ohkVesiSoojuspumbad')->name('ohk-vesi-soojuspumbad.index');
+    Route::get('/ohk-vesi-soojuspumbad/{brandname}', 'showOhkVesiBrandPage')->name('ohk_vesi_soojuspumbad.brand');
+
+    Route::get('/maasoojuspumbad', 'maasoojuspumbad')->name('maasoojuspumbad.index');
+    Route::get('/maasoojuspumbad/{brandname}', 'showMaasoojusBrandPage')->name('maasoojuspumbad.brand');
   
 
 

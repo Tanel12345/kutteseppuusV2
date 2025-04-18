@@ -5,7 +5,9 @@ const elementsToObserve = [
   ...document.querySelectorAll(".piltlink"),
   ...document.querySelectorAll(".kusipakkumist"),
   ...document.querySelectorAll(".ettevottest"),
-  ...document.querySelectorAll(".ettevottest1")
+  ...document.querySelectorAll(".ettevottest1"),
+  ...document.querySelectorAll(".pildidiv"),
+  ...document.querySelectorAll(".tootjastpilt"),
 ];
 
 // Preload image function
@@ -20,7 +22,7 @@ function preloadImage(img) {
 const imgOptions = { threshold: 0, rootMargin: "0px 0px 500px 0px" };
 
 // Observer options for other elements (load when they appear in the viewport)
-const elementOptions = { threshold: 0, rootMargin: "0px 0px 200px 0px" };
+const elementOptions = { threshold: 0, rootMargin: "0px 0px 100px 0px" };
 
 // Callback for the intersection observer
 const observerCallback = (entries, observer) => {
@@ -29,7 +31,6 @@ const observerCallback = (entries, observer) => {
       // If it's an image, preload it
       if (entry.target.tagName === 'IMG') {
         preloadImage(entry.target);
-        entry.target.classList.add("inverse"); // Add class for loaded images
       } else {
         // Add class for other elements
         entry.target.classList.add("inverse1");

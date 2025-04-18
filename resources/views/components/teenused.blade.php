@@ -11,7 +11,7 @@
             <p>
                 Küttesepalt saate täispaketi: nõustamise ja hinnaideed, <br />
                 vajadusel eriosade projekti, küttesüsteemi paigalduse, järelteeninduseni välja.<br />
-                Vaata ka: <a href="{{ route('teenused') }}" title="Teenused">teenused.</a>
+                Vaata ka: <a href="{{ route('soojuspumpade-paigaldus') }}" title="Ettevõttest teenused">Soojuspumpade paigaldus.</a>
             </p> 
         </li>
 
@@ -35,10 +35,10 @@
             <div class="h5holder">
                 <h4>
                     STANDARDID JA NORMID <br />
-                    <a href="https://www.evs.ee/et/evs-941-1-2024" rel="nofollow" target="_blank" title="EVS standardid">
+                    <a href="https://www.evs.ee/et/evs-941-1-2024"  target="_blank" title="EVS standardid">
                         EVS 941-1:2024
                     </a> ja 
-                    <a href="https://www.evs.ee/et/evs-844-2022" rel="nofollow" target="_blank" title="EVS standardid">
+                    <a href="https://www.evs.ee/et/evs-844-2022"  target="_blank" title="EVS standardid">
                         EVS 844:2022
                     </a>
                 </h4>

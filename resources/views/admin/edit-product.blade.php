@@ -42,6 +42,7 @@
                 <option value="Midea" {{ old('brandname', $product->brandname ?? '') == 'Midea' ? 'selected' : '' }}>Midea</option>
                 <option value="Mitsubishi Electric" {{ old('brandname', $product->brandname ?? '') == 'Mitsubishi Electric' ? 'selected' : '' }}>Mitsubishi Electric</option>
                 <option value="Alpha-innotec" {{ old('brandname', $product->brandname ?? '') == 'Alpha-innotec' ? 'selected' : '' }}>Alpha-innotec</option>
+                <option value="Samsung" {{ old('brandname') == 'Samsung' ? 'selected' : '' }}>Samsung</option>
                 <option value="Muubrandname" {{ old('brandname', $product->brandname ?? '') == 'Muubrandname' ? 'selected' : '' }}>Muubrandname</option>
             </select>
         </div>
@@ -60,7 +61,7 @@
 
         <div>
             <label for="name">Product Name</label>
-            <input type="text" name="name" id="name" value="{{ old('name', $product->name ?? '') }}" required>
+            <input type="text" name="name" id="name" value="{{ old('name', $product->name ?? '') }}" size="150" required>
         </div>
 
         <div>

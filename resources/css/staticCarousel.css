@@ -27,6 +27,7 @@
   width: 100%; /* Optional */
   height:100%;
   object-fit: cover; /* Optional - fills the area without stretching */
+  object-position: top; /* <-- This makes the top of the image always show */
   opacity: 0.5;
   z-index: -5;
    transition: transform 0.2s ease-out; /* Smooth out the transform transitions */
@@ -43,12 +44,12 @@
 }
 
  .textholder{
-  background-color: #ffffff58;
+  background-color: #ffffffa8;
   animation: h1slide 1s ease-in-out 0.5s forwards;
   position: relative;
   
   width: 70%;
-  min-width: 300px;
+  min-width: 320px;
   max-width: 900px;
   
 

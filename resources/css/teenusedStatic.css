@@ -1,5 +1,6 @@
 /* Sektsioon teenused */
 .sektsioon-teenused {
+  margin-top:120px;
    position: relative;
    width: 100%;
    background-color: #ffffff;
@@ -12,26 +13,40 @@
    list-style: none;
    max-width: 1300px;
    min-width: 300px;
-   margin: 0 auto;
+   margin: 15px auto;
    padding: 20px 8px 20px 8px;
+   align-items: flex-start; /* Align at the top for uniform height */
    
-   gap: 10px;
+  
  }
  .teenused li {
+  margin-top: 25px;
    padding: 10px 12px 0 12px;
    text-align: center;
    width: 300px;
    min-width: 150px;
    display: flex;
    flex-direction: column;
-  
-   
+   height:300px;
+   justify-content: space-between; /* Align child elements with space between */
+   position: relative;
+   box-sizing: border-box; /* Ensures padding doesn’t increase size */
    
  }
- .teenused li:nth-child(3) {
-  border-left: 1px solid #9595958a; /* Left border */
-  border-right:1px solid #9595958a; /* Right border */
- }
+
+
+   .teenused li:not(:first-child):not(:nth-child(2))::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0; /* Adjust spacing */
+    height: 100%;
+    width: 1px;
+    background-color: #9595958a;
+}
+
+ 
+ 
  
 
  .h5holder {
@@ -92,4 +107,18 @@
   .teenused{
     justify-content: center;
   }
+
+
+
+  .teenused li:not(:first-child):not(:nth-child(2))::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0; /* Adjust spacing */
+    height: 100%;
+    width: 1px;
+    background-color: #9595958a;
+}
+
+  
  }

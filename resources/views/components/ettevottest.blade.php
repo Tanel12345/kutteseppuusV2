@@ -55,11 +55,11 @@
         <h3>Vaata ka:</h3>
         <div class="ettevottest">
             <div class="imgcontainer">
-                <a href="{{ route('soojuspumpadest') }}"><img src="" data-src="{{ Vite::asset('resources/images/vaikesed/es/es.webp') }}"
-                    title="Soojuspumpadest" alt="Soojuspumpadest"></a>
+                <a href="{{ route('soojuspumpade-paigaldus') }}"><img src="" data-src="{{ Vite::asset('resources/images/vaikesed/es/es.webp') }}"
+                    title="Soojuspumpade paigaldus" alt="Soojuspumpadest"></a>
             </div>
             <div class="text">
-                <h3><a href="{{ route('soojuspumpadest') }}">Soojuspumpadest</a></h3>
+                <h3><a href="{{ route('soojuspumpade-paigaldus') }}">Soojuspumpade paigaldus</a></h3>
             </div>
         </div>
         <div class="ettevottest1">

@@ -25,17 +25,13 @@ section.piltlingid {
    height: 450px;
     max-width: 400px;
     min-width: 300px;
-   
+    opacity: 0;
     background-color: #ffffff;
     border-radius: 15px;
     box-shadow: 0 10px 7px rgba(0, 0, 0, 0.3);
-    opacity: 0;
     transform: translateY(500px);
   }
-  .inverse1 {
-    opacity: 1;
-    animation: linkslide 1s ease-in-out forwards;
-  }
+  
   div.piltlink:hover {
     transition-duration: 0.5s;
     transform: translateY(-7px);
@@ -49,19 +45,14 @@ section.piltlingid {
     width: 100%;
     object-fit: cover;
     border-radius: 15px 15px 0 0;
-    opacity: 0;
+   
   }
-  .inverse {
-    animation: imgslide 1s ease-in-out forwards;
+
+  .inverse1 {
+    opacity: 1;
+    animation: linkslide 1s ease-in-out forwards;
   }
-  @keyframes imgslide {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
+
   @keyframes linkslide {
     from {
       opacity: 0;
@@ -108,6 +99,7 @@ align-items: end;
    
   }
   .Lisalingid li {
+    width:170px;
     font-size: 0.8rem;
     border-style:solid;
     border-color: #ff0100;

@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('products', function (Blueprint $table) {
             $table->id();
-            $table->enum('brandname', ['ES', 'Bosch', 'Midea', 'Mitsubishi Electic', 'Alpha-innotec', 'Muubrandname']); // ENUM column in database
+            $table->enum('brandname', ['ES', 'Bosch', 'Midea', 'Mitsubishi Electic', 'Alpha-innotec', 'Muubrandname', 'Samsung']); // ENUM column in database
             $table->enum('product_type', ['ohk_ohk_soojuspumbad', 'ohk_vesi_soojuspumbad', 'Maasoojuspumbad', 'Katlad', 'Keskküttepliidid', 'Pelletikaminad']); 
             $table->string('name');
             $table->text('description')->nullable();

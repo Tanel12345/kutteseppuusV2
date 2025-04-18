@@ -2,7 +2,6 @@
     :metaDescription="'Õhk-õhk soojuspumbad - Soodsaim valik kütmiseks ja jahutamiseks.'"
     :metaKeywords="'õhk-õhk soojuspumbad, soojuspump, kütmine, jahutamine, energiasääst'"
     :metaAuthor="'Tanel Sepp'"
-    :canonical="url()->current()"
     :robots="'index, follow'"
     :viteCssAssets="['resources/css/app.css', 'resources/css/navbar.css', 'resources/css/footer.css','resources/css/staticCarousel.css', 'resources/css/tootesektsioon.css','resources/css/upscroller.css','resources/css/cookies.css']"
 
@@ -19,7 +18,7 @@
     imageAlt="Õhksoojuspumbad taust"
     :textholderStyle="''"
 />
- <x-tootesektsioon :products="$products"/>
+<x-tootesektsioonid.ohk-ohkTootesektsioon :products="$products" :brands="$brands"/>
  <x-up-scroller/>
  <x-cookies/> 
 

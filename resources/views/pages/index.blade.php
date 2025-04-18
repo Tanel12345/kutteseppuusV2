@@ -5,7 +5,6 @@
     :metaKeywords="'soojuspumbad, õhksoojuspumbad, õhk-vesi soojuspumbad, maasoojuspumbad, pelletikatlad, pelletikaminad, küttesüsteemid, küttesüsteemide paigaldus, katlad, küttesüsteemide hooldus, säästlik küte'"
     :metaAuthor="'Tanel Sepp'"
     :robots="'index, follow'"  
-     :canonical="url()->current()"
     :viteCssAssets="['resources/css/app.css', 'resources/css/navbar.css', 'resources/css/footer.css', 'resources/css/upscroller.css', 'resources/css/indexCarousel.css', 'resources/css/teenused.css', 'resources/css/piltlingid.css', 'resources/css/cookies.css', 'resources/css/ettevottest.css','resources/css/contact.css']"
     :viteJsAssets="['resources/js/app.js','resources/js/hamburger.js','resources/js/carousel.js','resources/js/upscroller.js','resources/js/imagePopup.js','resources/js/lazyLoading.js','resources/js/navbar.js','resources/js/lenis.js', 'resources/js/cookies.js','resources/js/contact.js']"
     >

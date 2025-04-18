@@ -17,7 +17,7 @@ class AdminController extends Controller
     // Show the admin dashboard page
     public function dashboard()
     {
-        $products = Product::where('product_type', 'ohk_ohk_soojuspumbad')->get();
+        $products = Product::orderBy('id', 'desc')->get();
 
     // Return the view and pass the products
     return view('admin.dashboard', compact('products'));
@@ -38,7 +38,7 @@ class AdminController extends Controller
     {
         // Validate the incoming request
         $request->validate([
-            'brandname' => 'required|in:ES,Bosch,Midea,Mitsubishi Electric,Alpha-innotec,Muubrandname',
+            'brandname' => 'required|in:ES,Bosch,Midea,Mitsubishi Electric,Alpha-innotec,Muubrandname,Samsung',
             'product_type' => 'required|in:ohk_ohk_soojuspumbad,ohk_vesi_soojuspumbad,Maasoojuspumbad,Katlad,Keskküttepliidid,Pelletikaminad',
             'name' => 'required|string|max:255',
             'description' => 'nullable|string',

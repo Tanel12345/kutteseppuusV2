@@ -1,3 +1,0 @@
-<div>
-    Teenuste leht
-</div>

@@ -37,6 +37,7 @@
                 <option value="Midea" {{ old('brandname') == 'Midea' ? 'selected' : '' }}>Midea</option>
                 <option value="Mitsubishi Electric" {{ old('brandname') == 'Mitsubishi Electric' ? 'selected' : '' }}>Mitsubishi Electric</option>
                 <option value="Alpha-innotec" {{ old('brandname') == 'Alpha-innotec' ? 'selected' : '' }}>Alpha-innotec</option>
+                <option value="Samsung" {{ old('brandname') == 'Samsung' ? 'selected' : '' }}>Samsung</option>
                 <option value="Muubrandname" {{ old('brandname') == 'Muubrandname' ? 'selected' : '' }}>Muubrandname</option>
             </select>
         </div>
@@ -55,7 +56,7 @@
 
         <div>
             <label for="name">Product Name</label>
-            <input type="text" name="name" id="name" value="{{ old('name') }}" required>
+            <input type="text" name="name" id="name" value="{{ old('name') }}" size="150" required>
         </div>
 
         <div>
@@ -102,7 +103,7 @@
                <div class="tooteaktiivala">
                      <div class="tekstid">
                        <h2>{{ $product->name }}</h2> <!-- Product Title -->
-                       <p>{{ $product->description }}</p>
+                       <p>{!! nl2br(e(str_replace('\\n', "\n", $product->description))) !!}</p>
                        <h3>Toote võimsus: <span style="font-weight: 400;">{{ $product->power }}</span> </h3> <!-- Product Description -->
 
                        <!-- Remove Product Button -->

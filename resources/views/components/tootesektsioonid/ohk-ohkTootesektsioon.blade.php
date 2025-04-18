@@ -3,18 +3,15 @@
     <h2 style="font-size: 32px; font-weight: 400; margin: 14px; text-align: center;">REASTA TOOTED BRÄNDI JÄRGI</h2>
     <div class="brands">
         
+
+        @foreach ($brands as $brand)
         <div class="brandboxes">
-            <a href="{{ route('ohksoojuspumbad.index', ['brand' => 'midea']) }}#tootesektsioon" title="Midea õhksoojuspumbad">
-                <img src="{{ Vite::asset('resources/images/logod/Midea_logo.webp') }}" alt="Bränd Midea" />
+            <a href="{{ route($brand['route'], ['brand' => $brand['title']]) }}#tootesektsioon"
+            title="{{ $brand['title'] }}">
+                <img src="{{ Vite::asset($brand['image']) }}" alt="{{ $brand['title'] }}" />
             </a>
-           
         </div>
-        <div class="brandboxes">
-            <a href="{{ route('ohksoojuspumbad.index', ['brand' => 'bosch']) }}#tootesektsioon" title="Bosch õhksoojuspumbad">
-                <img src="{{ Vite::asset('resources/images/logod/bosch.png') }}" alt="Bränd Bosch" />
-            </a>
-           
-        </div>
+        @endforeach
         
        
     </div>
@@ -24,7 +21,7 @@
           <div class="tooteaktiivala">
                 <div class="tekstid">
                   <h2>{{ $product->name }}</h2> <!-- Product Title -->
-                  <p>{{ $product->description }}</p>
+                  <p>{!! nl2br(e(str_replace('\\n', "\n", $product->description))) !!}</p>
                   <h3>Toote võimsus: <span style="font-weight: 400;">{{ $product->power }}</span> </h3> <!-- Product Description -->
                  
                   <div class="brandImg">
@@ -34,7 +31,7 @@
                         </a>
                     </div>
                     @if($product->brand_img)
-                        <a href="{{ route('ohksoojuspumbad.brand', ['brandname' => strtolower($product->brandname)]) }}">
+                    <a href="{{ route(strtolower($product->product_type) . '.brand', ['brandname' => strtolower($product->brandname) . '-ohk-ohk-soojuspumbad']) }}">
                             <img class="brand" src="{{ asset('storage/' . $product->brand_img) }}" alt="Toote brändi nimi on {{ $product->brandname }}" />
                         </a>
                     @endif
@@ -47,13 +44,10 @@
               
               <!-- Product Image (secondary image if you want to show another image) -->
                 <div class="productImg">
-                    @if($product->product_img)
-                    <a href="{{ route('ohksoojuspumbad.brand', ['brandname' => strtolower($product->brandname)]) }}">
-                        <img class="tooteImg" src="{{ asset('storage/' . $product->product_img) }}" alt="Toote pilt: {{ $product->name }}" />
+                    <a href="{{ route(strtolower($product->product_type) . '.brand', ['brandname' => strtolower($product->brandname) . '-ohk-ohk-soojuspumbad']) }}">
+                        <img loading="lazy" class="tooteImg" src="{{ asset('storage/' . $product->product_img) }}" alt="Toote pilt: {{ $product->name }}" />
                     </a>
-                    @endif
                 </div>
-               
             </div>
             <div class="taustapildid">
                 <img class="img" src="{{ Vite::asset('resources/images/taustad/taust5.png') }}" alt="Dekoratiivne taustapilt" />

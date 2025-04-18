@@ -2,7 +2,6 @@
     :metaDescription="'Privaatsuspoliitika - Küttesepp'" 
     :metaKeywords="'Privaatsuspoliitika - Küttesepp'" 
     :metaAuthor="'Tanel Sepp'"
-    :canonical="'Tanel Sepp'"
     :viteCssAssets="['resources/css/app.css', 'resources/css/navbar.css', 'resources/css/footer.css', 'resources/css/upscroller.css', 'resources/css/indexCarousel.css', 'resources/css/teenused.css', 'resources/css/piltlingid.css', 'resources/css/cookies.css']"
     :viteJsAssets="['resources/js/app.js','resources/js/hamburger.js','resources/js/carousel.js','resources/js/upscroller.js','resources/js/imagePopup.js','resources/js/lazyLoading.js','resources/js/navbarScrolling.js','resources/js/lenis.js', 'resources/js/cookies.js']"
     >

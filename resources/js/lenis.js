@@ -78,7 +78,7 @@ import Lenis from 'lenis';
         
         // Smooth scroll for #ettevottestid
         const contactScroller = document.querySelector('a[href="/#form"]');
-        if (ettevottestScroller) {
+        if (contactScroller) {
             contactScroller.addEventListener('click', (e) => {
                 //e.preventDefault();  // Prevent default anchor behavior
     
