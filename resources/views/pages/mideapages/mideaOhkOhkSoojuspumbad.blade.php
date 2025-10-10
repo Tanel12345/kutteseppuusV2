@@ -46,7 +46,7 @@
                             <img class="tootjastpilt" src="" data-src="{{ Vite::asset("resources/images/vaikesed/midea/front-left-open-768x384.png") }}" alt="Mitea soojuspump">
                         </div><br><br>
     
-                        <h3><strong>Midea Xtreme Heat</strong></h3>
+                        <h3><strong>Midea Xtreme Heat</strong></h3><br>
                         <p> Midea Xtreme Heat tagab kiire soojenduse ka kõige külmematel talveöödel, säilitades oma efektiivsuse ka -25°C temperatuuri juures. Suur energiatõhusus tagab minimaalse elektritarbimise ning maksimaalse kokkuhoiu. </p><br><br>
                         <ul class="rohelise-linnukesega" style='font-weight: 500; font-size: 18px;  margin-bottom: 20px'>
                             <li>Põhjamaiste tingimuste jaoks konstrueeritud </li>

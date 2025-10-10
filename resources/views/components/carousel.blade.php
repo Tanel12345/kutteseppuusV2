@@ -9,7 +9,7 @@
        <div class="heading">
            
            <h1>Sinu küttemurede lahendaja</h1>
-            <h2>Soojuspumbad Katlad Pelletikaminad</h2>
+            <h2>Soojuspumbad ja Tahkekütteseadmed</h2>
             <h3>Usaldusväärne teenus</h3>
            <img src="{{ Vite::asset('resources/images/küttesepp_logo1.png') }}" class="h1logo" alt="Küttesepp" />
          </div>

@@ -23,7 +23,7 @@
         </ul><br>
         
         <h3>Miks valida Küttesepp?</h3>
-        <p>Küttesepa meister Tanel on valdkonnas tegev, tahkeküttesüsteemide planeerimisel ja ehitusel, juba aastast 2003.<br> Uuema teenusena, veeringil baseeruvate küttesüsteemide disainimiseks ja ehituseks, on olemas nii kompetents kui teadmised.<br> Küttesepa eesmärk on tagada optimaalne ja energiat säästev lõpplahendus.</p><br>
+        <p>Küttesepp on mikroettevõte kus meister Tanel on valdkonnas tegev, tahkeküttesüsteemide planeerimisel ja ehitusel, juba aastast 2003.<br> Kui otsite usaldusväärset tegijat kes individuaalselt täidab tellimusi, liikudes edasi siis kui eelmine on lõpetatud. Äriliselt ebaefektiivne kuid praktiliselt riskivaba mudel nii telliale kui töövõtjale.<br> Küttesepa eesmärk on tagada optimaalne ja rahuldav lõpplahendus.</p><br>
         
         <h3>Põhiteenused</h3>
         <ol>
@@ -38,7 +38,8 @@
         <ol>
             <li>Seadmete transport</li>
             <li>Vana seadme eemaldus ja utiliseerimine</li>
-            <li>Küttesüsteemi konsultatsioon ja projekteerimine</li>
+            <li>Küttesüsteemi projekteerimine</li>
+            <li>Paigaldatud küttesüsteemi seadustamise protsess</li>
             <li>Hooldus ja garantiijärgne teenindus</li>
         </ol>
     </div>

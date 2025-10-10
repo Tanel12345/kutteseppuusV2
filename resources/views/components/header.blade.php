@@ -40,24 +40,27 @@
                         </li>
                     </ul>
                     <ul>
-                        <li><a href="/#piltlingid">KESKKÜTTESEADMED<img src="{{ Vite::asset('resources/images/icons/down.png') }}" style=" width:18px; height:auto; vertical-align: middle; position: relative; top: 2px;"> </a>
+                        <li>
+                            <a href="/#piltlingid" title="Tahkekütteseadmete info ja tüübid">
+                              TAHKEKÜTTESEADMED
+                              <img src="{{ Vite::asset('resources/images/icons/down.png') }}" style="width:18px; height:auto; vertical-align: middle; position: relative; top: 2px;">
+                            </a>
                             <div class="popup">
-                                <ul>
-                                    <li><a href="{{ route('index') }}">PUUGAASIKATLAD</a></li>
-                                    <li><a href="{{ route('index') }}">PELLETIKATLAD</a></li>
-                                    <li><a href="{{ route('index') }}">KOMBIKATLAD</a></li>
-                                    <li><a href="{{ route('index') }}">KESKKÜTTEPLIIDID</a></li>
-                                    <li><a href="{{ route('index') }}">PELLETIKAMINAD</a></li>
-                                    <li><a href="{{ route('index') }}">PUUKÜTTEKAMINAD</a></li>
-                                </ul>
+                              <ul>
+                                <li><a href="https://www.ahjumees.ee" title="Ahjude, pliitide ja kaminate lehele" target="_blank">KÄSITÖÖ AHJUD PLIIDID KAMINAD</a></li>
+                                <li><a href="{{ route('index') }}" title="Pelletikatelde müük ja paigaldus">PELLETIKATLAD</a></li>
+                                <li><a href="{{ route('index') }}" title="Pelletikaminate lahendused">PELLETIKAMINAD</a></li>
+                                <li><a href="{{ route('index') }}" title="Keskküttepliitid">KESKKÜTTEPLIIDID</a></li>
+                                <li><a href="{{ route('index') }}" title="Keskküttekaminate info ja paigaldus">KESKKÜTTEKAMINAD</a></li>
+                              </ul>
                             </div>
-                        </li>
+                          </li>
                     </ul>
                     <ul>
-                        <li><a href="{{ route('kuttesusteemi-hooldus') }}">KÜTTESÜSTEEMI HOOLDUS</a></li>
+                        <li><a href="{{ route('kuttesusteemi-hooldus') }}" title="Küttesüsteemide hooldus">KÜTTESÜSTEEMI HOOLDUS</a></li>
                     </ul>
                     <ul>
-                        <li><a href="{{ route('index') }}">TEHTUD TÖÖD</a></li>
+                        <li><a href="{{ route('index') }}" title="Tehtud tööd">TEHTUD TÖÖD</a></li>
                     </ul>
                     <ul>
                         <li><a id="kontakt" href="/#form">KONTAKT</a></li>

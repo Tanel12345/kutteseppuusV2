@@ -104,45 +104,28 @@
                 </div>
                 <div class="piltlingitekst">
                     <img src="{{ Vite::asset('resources/images/icons/küttesepp.png') }}" alt="Küttesepp" />
-                    <h2><a href="{{ route('index') }}" title="Ahjud">Keskkütteseadmed</a></h2>
+                    <h2><a href="{{ route('index') }}" title="Ahjud">Tahkekütteseadmed</a></h2>
                 </div>
                 <ul class="Lisalingid" style="margin-top: 25px; gap:0.8rem; font-size: 2rem;">
                     <li>
-                        <a href="{{ route('index') }}" title="Puugaasikatlad">
-                            <img src="{{ Vite::asset('resources/images/icons/küttesepp.png') }}" alt="Küttesepp" style="width:20px;"/>
-                            Puugaasikatlad
+                        <a href="https://www.ahjumees.ee" title="Ahjumees lehele" target="_blank">
+                            <img src="{{ Vite::asset('resources/images/logod/ahjumees-logo.png') }}" alt="Küttesepp" style="width:90px;"/>
+                            Halupuu ahjud, pliidid, kaminad
                         </a>
                     </li>
                     <li>
-                        <a href="{{ route('index') }}" title="Pelletikatlad">
+                        <a href="{{ route('pelletikatladJaKaminad.index') }}" title="Pelletikatlad ja pelletikaminad">
                             <img src="{{ Vite::asset('resources/images/icons/küttesepp.png') }}" alt="Küttesepp" style="width:20px;"/>
-                            Pelletikatlad
+                            Pelletikatlad ja -kaminad
                         </a>
                     </li>
                     <li>
-                        <a href="{{ route('index') }}" title="Kombikatlad">
+                        <a href="{{ route('keskkyttepliididJaKaminad.index') }}" title="Keskküttepliidid ja keskküttekaminad">
                             <img src="{{ Vite::asset('resources/images/icons/küttesepp.png') }}" alt="Küttesepp" style="width:20px;"/>
-                            Kombikatlad
+                            Keskküttepliidid ja -kaminad
                         </a>
                     </li>
-                    <li>
-                        <a href="{{ route('index') }}" title="Keskküttepliidid">
-                            <img src="{{ Vite::asset('resources/images/icons/küttesepp.png') }}" alt="Küttesepp" style="width:20px;"/>
-                            Keskküttepliidid
-                        </a>
-                    </li>
-                    <li>
-                        <a href="{{ route('index') }}" title="Pelletikaminad">
-                            <img src="{{ Vite::asset('resources/images/icons/küttesepp.png') }}" alt="Küttesepp" style="width:20px;"/>
-                            Pelletikaminad
-                        </a>
-                    </li>
-                    <li>
-                        <a href="{{ route('index') }}" title="Pelletikaminad">
-                            <img src="{{ Vite::asset('resources/images/icons/küttesepp.png') }}" alt="Küttesepp" style="width:20px;"/>
-                            Halupuukaminad
-                        </a>
-                    </li>
+                   
                 </ul>
             </a>
         </div>

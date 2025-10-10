@@ -35,10 +35,11 @@
             <div class="h5holder">
                 <h4>
                     STANDARDID JA NORMID <br />
-                    <a href="https://www.evs.ee/et/evs-941-1-2024"  target="_blank" title="EVS standardid">
+                    <a href="https://www.evs.ee/et/evs-941-1-2024" target="_blank" rel="noopener noreferrer" title="EVS 941-1:2024 küttesüsteemide ehituse üldised kvaliteedinõuded">
                         EVS 941-1:2024
-                    </a> ja 
-                    <a href="https://www.evs.ee/et/evs-844-2022"  target="_blank" title="EVS standardid">
+                    </a>
+                    ja
+                    <a href="https://www.evs.ee/et/evs-844-2022" target="_blank" rel="noopener noreferrer" title="EVS 844:2022 Hoonete kütte projekteerimine">
                         EVS 844:2022
                     </a>
                 </h4>

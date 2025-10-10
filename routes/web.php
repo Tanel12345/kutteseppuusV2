@@ -36,7 +36,10 @@ Route::controller(PageController::class)->group(function () {
     Route::get('/maasoojuspumbad', 'maasoojuspumbad')->name('maasoojuspumbad.index');
     Route::get('/maasoojuspumbad/{brandname}', 'showMaasoojusBrandPage')->name('maasoojuspumbad.brand');
   
-
+    Route::get('/pelletikatlad-kaminad', 'pelletikatladJaKaminad')->name('pelletikatladJaKaminad.index');
+   
+    Route::get('/keskkyttepliidid-kaminad', 'keskkyttepliididJaKaminad')->name('keskkyttepliididJaKaminad.index');
+  
 
 });
 
