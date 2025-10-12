@@ -8,7 +8,7 @@
     :viteJsAssets="['resources/js/app.js','resources/js/lazyLoading.js','resources/js/hamburger.js','resources/js/navbar.js','resources/js/lenis.js','resources/js/upscroller.js', 'resources/js/cookies.js']"
 >
 
-<x-staticCarousel
+<x-static-carousel
     title="Alpha-innotec õhk-vesi soojuspumbad <br><br><span>Kvaliteetne ja energiasäästlik lahendus igasse koju ja kontorisse</span>"
     content="Alpha innotec on kahtlemata suurepärane valik. Alpha innotec õhk-vesi soojuspumbad sobivad nii uusehitistesse kui ka olemasolevate süsteemide renoveerimiseks.<br><br>
 
@@ -20,7 +20,7 @@ Saksa kvaliteet ning asjalik järelteenindus on märksõnad siin. Alpha innotec 
     :textholderStyle="'margin:10px auto; max-width: 1000px;'"
 />
 
-<x-TeenusedComponents.teenusedAlpha/>
+<x-teenused-components.teenused-alpha/>
 
 <section class="tootjasektsioon" id="tootjaid">
     <div class="tootjast">

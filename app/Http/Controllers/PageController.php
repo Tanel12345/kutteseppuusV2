@@ -18,7 +18,7 @@ use Illuminate\Http\Request;
     public function soojuspumpadePaigaldus()
     {
        
-        return view('pages.soojuspumpadePaigaldus');
+        return view('pages.soojuspumpade-paigaldus');
     }
 
     public function porandaJaRadiaatorkute()
@@ -82,11 +82,11 @@ public function showBrandPage($brandname)
         if($brandname && in_array($brandname, $alowedBrands1)){
 
             if($brandname == 'midea-ohk-ohk-soojuspumbad'){
-                return view('pages.mideapages.mideaOhkOhkSoojuspumbad');
+                return view('pages.mideapages.midea-ohk-ohk-soojuspumbad');
             }elseif ($brandname == 'bosch-ohk-ohk-soojuspumbad') {
-            return view('pages.boschpages.boschOhkOhkSoojuspumbad');
+            return view('pages.boschpages.bosch-ohk-ohk-soojuspumbad');
         }elseif ($brandname == 'samsung-ohk-ohk-soojuspumbad') {
-            return view('pages.samsungpages.samsungOhkOhkSoojuspumbad');
+            return view('pages.samsungpages.samsung-ohk-ohk-soojuspumbad');
         }
     }
         // If the brand is not allowed, return a 404 page or custom error page
@@ -127,7 +127,7 @@ public function showBrandPage($brandname)
     ];
 
     // Pass data to the view
-    return view('pages.ohkVesiSoojuspumbad', compact('products', 'brands'));
+    return view('pages.ohk-vesi-soojuspumbad', compact('products', 'brands'));
     }
 
 
@@ -138,13 +138,13 @@ public function showBrandPage($brandname)
             if($brandname && in_array($brandname, $alowedBrands1)){
     
                 if($brandname == 'es-ohk-vesi-soojuspumbad'){
-                    return view('pages.essoojuspumbad');
+                    return view('pages.es-soojuspumbad');
                 }elseif ($brandname == 'alpha-innotec-ohk-vesi-soojuspumbad') {
-                return view('pages.alphapages.alphainnotecOhkVesiSoojuspumbad');
+                return view('pages.alphapages.alphainnotec-ohk-vesi-soojuspumbad');
             }elseif ($brandname == 'samsung-ohk-vesi-soojuspumbad') {
-            return view('pages.samsungpages.samsungOhkVesiSoojuspumbad');
+            return view('pages.samsungpages.samsung-ohk-vesi-soojuspumbad');
         }elseif ($brandname == 'bosch-ohk-vesi-soojuspumbad') {
-            return view('pages.boschpages.boschOhkVesiSoojuspumbad');
+            return view('pages.boschpages.bosch-ohk-vesi-soojuspumbad');
         }
     }
              // If the brand is not allowed, return a 404 page or custom error page
@@ -182,7 +182,7 @@ public function showBrandPage($brandname)
             ];
         
             // Pass data to the view
-            return view('pages.Maasoojuspumbad', compact('products', 'brands'));
+            return view('pages.maasoojuspumbad', compact('products', 'brands'));
             }
         
         
@@ -193,10 +193,10 @@ public function showBrandPage($brandname)
                     if($brandname && in_array($brandname, $alowedBrands1)){
             
                         if ($brandname == 'alpha-innotec-maasoojuspumbad') {
-                        return view('pages.alphapages.alphainnotecMaasoojuspumbad');
+                        return view('pages.alphapages.alphainnotec-maasoojuspumbad');
                     
                         }elseif ($brandname == 'bosch-maasoojuspumbad') {
-                            return view('pages.boschpages.boschMaasoojuspumbad');
+                            return view('pages.boschpages.bosch-maasoojuspumbad');
                         }
                     }
                      // If the brand is not allowed, return a 404 page or custom error page

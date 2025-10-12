@@ -9,14 +9,14 @@
     :viteJsAssets="['resources/js/app.js','resources/js/lazyLoading.js','resources/js/hamburger.js','resources/js/navbar.js','resources/js/lenis.js','resources/js/upscroller.js', 'resources/js/cookies.js']"
 >
    
-<x-staticCarousel
+<x-static-carousel
 title="Bosch õhk-vesi soojuspumbad <br><br><span>tõhus ja energiasäästlik lahendus igasse koju ja kontorisse</span>"
 content="Bosch õhk-vesi soojuspumbad pakuvad usaldusväärsust ja kõrget kvaliteeti, et tagada optimaalne soojus- ja jahutus aastaringselt. Bosch tooted ühendavad innovatsiooni ja tehnoloogia, et pakkuda parimat energiatõhusust ja mugavust, samal ajal vähendades teie igakuiseid kütte- ja jahutusarveid."
 image="resources/images/taustad/Boschtaust1.webp"
 imageAlt="Bosch õhk-vesi soojuspumbad - Kvaliteet ja Energiatõhusus"
 :textholderStyle="'margin:10px auto; max-width: 1000px;'"
 />
-<x-TeenusedComponents.teenusedBosch/>
+<x-teenused-components.teenused-bosch/>
 <section class="tootjasektsioon" id="tootjaid">
     <div class="tootjast">
         <div class="ettevotte">

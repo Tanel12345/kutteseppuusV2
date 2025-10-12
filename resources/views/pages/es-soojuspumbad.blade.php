@@ -9,7 +9,7 @@
     :viteJsAssets="['resources/js/app.js','resources/js/lazyLoading.js','resources/js/hamburger.js','resources/js/navbar.js','resources/js/lenis.js','resources/js/upscroller.js', 'resources/js/cookies.js']"
 >
    
-<x-staticCarousel
+<x-static-carousel
 title="ES - Energy Save õhk-vesi soojuspumbad <br><br><span>Rootsis disainitud. Põhjamaa kliimasse</span>"
 content="ES - Energy Save õhksoojuspumbad pakuvad usaldusväärset ja kõrget kvaliteeti, et tagada optimaalne soojus- ja jahutus aastaringselt. <br><br>
 ES Energy Save Holding AB (publ) tegutseb oma tütarettevõtete ES Systems, ES Heat Pumps ja ES Services kaudu, pakkudes oma küttelahendusi, mis on suunatud energiasäästule.<br> Põhitooted põhinevad uusimal soojuspumbatehnoloogial ning kõik grupi ettevõtted osalevad aktiivselt Euroopa turu jaoks mõeldud toodete arendamisel.<br> Lisaks toodetele pakutakse ka teenuseid ning erinevaid digitaliseeritud tööriistu ja teenuseid.<br><br>
@@ -19,7 +19,7 @@ image="resources/images/taustad/es-taust.webp"
 imageAlt="ES - Energy Save Õhksoojuspumbad - Kvaliteet ja Energiatõhusus"
 :textholderStyle="'margin:10px auto; max-width: 1000px;'"
 />
-<x-TeenusedComponents.teenusedes/>
+<x-teenused-components.teenused-es/>
 
 <section class="tootjasektsioon" id="tootjaid">
     <div class="tootjast">

@@ -8,7 +8,7 @@
     :viteJsAssets="['resources/js/app.js','resources/js/hamburger.js','resources/js/navbar.js','resources/js/lenis.js','resources/js/upscroller.js', 'resources/js/cookies.js']"
 >
 
-<x-staticCarousel 
+<x-static-carousel 
     title="MAASOOJUSPUMBAD <br><br><span>Energiatõhusus otse sinu kodu alt</span>"
     content="Maasoojuspump kasutab maapinda salvestunud päikeseenergiat, et pakkuda sinu kodule tõhusat ja stabiilset küttelahendust. Maakollektori või puurkaevu kaudu ammutatakse soojusenergiat, mis suunatakse küttesüsteemi vee soojendamiseks.
     <br><br>
@@ -21,7 +21,7 @@
     eriStiil="object-position: bottom;"
     :textholderStyle="''"
 />
-<x-tootesektsioonid.maasoojusTootesektsioon :products="$products" :brands="$brands"/>
+<x-tootesektsioonid.maasoojus-tootesektsioon :products="$products" :brands="$brands"/>
 <x-up-scroller/>
 <x-cookies/> 
 </x-layout>

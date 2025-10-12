@@ -10,7 +10,7 @@
     :viteJsAssets="['resources/js/app.js','resources/js/lazyLoading.js','resources/js/hamburger.js','resources/js/navbar.js','resources/js/lenis.js','resources/js/upscroller.js', 'resources/js/cookies.js']"
 >
    
-    <x-staticCarousel
+    <x-static-carousel
     title="Midea õhksoojuspumbad  <br><br><span>tõhus, kindel ja energiasäästlik lahendus teie kodu kütmiseks ja jahutamiseks</span>"
     content="Midea on maailma juhtivaid kodumasinate ja HVAC-seadmete tarnijaid, pakkudes uuenduslikke ja energiatõhusaid õhksoojuspumpasid, mis vastavad tänapäeva mugavuse ja säästlikkuse ootustele. <br>Midea õhksoojuspumbad ühendavad tipptasemel tehnoloogia, ökoloogilise disaini ja lihtsa kasutamise, tehes neist suurepärase valiku nii kodudesse kui ka äripindadele."
     image="resources/images/taustad/midea_taust.jpeg"
@@ -18,7 +18,7 @@
     :textholderStyle="'margin:10px auto; max-width: 1000px;'"
 />
     />
-    <x-TeenusedComponents.teenusedMidea/>
+    <x-teenused-components.teenused-midea/>
 
     <section class="tootjasektsioon" id="tootjaid">
         <div class="tootjast">

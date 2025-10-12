@@ -9,14 +9,14 @@
     :viteJsAssets="['resources/js/app.js','resources/js/lazyLoading.js','resources/js/hamburger.js','resources/js/navbar.js','resources/js/lenis.js','resources/js/upscroller.js', 'resources/js/cookies.js']"
 >
    
-<x-staticCarousel
+<x-static-carousel
 title="Bosch Õhksoojuspumbad <br><br><span>tõhus ja energiasäästlik lahendus igasse koju ja kontorisse</span>"
 content="Bosch õhksoojuspumbad pakuvad usaldusväärsust ja kõrget kvaliteeti, et tagada soodsalt ja kiirelt optimaalne soojus- ja jahutus aastaringselt.<br> Bosch tooted ühendavad innovatsiooni ja tehnoloogia, et pakkuda parimat energiatõhusust ja mugavust, samal ajal vähendades teie igakuiseid kütte- ja jahutusarveid.<br> Õhksoojuspumbad on soojuspumba liigi või tüübina kõige soodsam ja lihtsalt paigaldatav teie eramusse või korterisse."
 image="resources/images/taustad/Boschtaust1.webp"
 imageAlt="Bosch Õhksoojuspumbad - Kvaliteet ja Energiatõhusus"
 :textholderStyle="'margin:10px auto; max-width: 1000px;'"
 />
-<x-TeenusedComponents.teenusedBosch/>
+<x-teenused-components.teenused-bosch/>
 
 <section class="tootjasektsioon" id="tootjaid">
     <div class="tootjast">
