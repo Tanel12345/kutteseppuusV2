@@ -1,0 +1,1 @@
+.upscroller{position:fixed;bottom:80px;right:12px;border:none;opacity:0;transition:opacity 2s;z-index:5000}.upscroller img:hover{background-color:#88000052;border-radius:10px}.upscroller img{width:40px;height:40px;padding:3px 2px 4px;cursor:pointer;background:transparent}
