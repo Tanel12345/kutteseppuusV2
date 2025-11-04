@@ -2,7 +2,7 @@
     :metaDescription="'Õhk-vesi soojuspumbad - Mõistlikuim valik kütmiseks ja jahutamiseks.'"
     :metaKeywords="'Õhk-vesi soojuspumbad, soojuspump, kütmine, jahutamine, energiasääst'"
     :metaAuthor="'Tanel Sepp'"
-    :robots="'index, follow'"
+    :robots="'noindex, nofollow'"
     :viteCssAssets="['resources/css/app.css', 'resources/css/navbar.css', 'resources/css/footer.css','resources/css/staticCarousel.css', 'resources/css/tootesektsioon.css','resources/css/upscroller.css','resources/css/cookies.css']"
 
     :viteJsAssets="['resources/js/app.js','resources/js/hamburger.js','resources/js/navbar.js','resources/js/lenis.js','resources/js/upscroller.js', 'resources/js/cookies.js']"

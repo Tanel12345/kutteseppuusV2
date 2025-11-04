@@ -3,7 +3,7 @@
     :metaDescription="'Bosch õhksoojuspumbad pakuvad usaldusväärset ja energiatõhusat lahendust soojendamiseks ja jahutamiseks. Kvaliteet ja innovatsioon, mis tagab mugavuse igasugustes oludes.'"
     :metaKeywords="'Bosch õhksoojuspump, Bosch soojuspump, õhksoojuspumbad, energiasääst, soojendamine, jahutamine, õhk-õhk soojuspump, kvaliteetne soojuspump, kütte ja jahutusseade, Bosch kütte- ja jahutusseadmed'"
     :metaAuthor="'Tanel Sepp'"
-    :robots="'index, follow'"
+    :robots="'noindex, nofollow'"
     :viteCssAssets="['resources/css/app.css', 'resources/css/navbar.css', 'resources/css/footer.css','resources/css/staticCarousel.css', 'resources/css/tootjasektsioon.css','resources/css/upscroller.css','resources/css/teenusedStatic.css','resources/css/cookies.css']"
 
     :viteJsAssets="['resources/js/app.js','resources/js/lazyLoading.js','resources/js/hamburger.js','resources/js/navbar.js','resources/js/lenis.js','resources/js/upscroller.js', 'resources/js/cookies.js']"

@@ -3,7 +3,7 @@
     :metaDescription="'Midea õhksoojuspumbad pakuvad parimat lahendust soojendamiseks ja jahutamiseks. Kvaliteet, usaldusväärsus ja energiasäästlikkus – ideaalne valik kodu või äri jaoks.'"
     :metaKeywords="'Midea õhksoojuspump, Midea soojuspump, õhksoojuspumbad, energiasääst, soojendamine, jahutamine, õhk-õhk soojuspump, kvaliteetne soojuspump, kütte ja jahutusseade, Midea kütte- ja jahutusseadmed'"
     :metaAuthor="'Tanel Sepp'"
-    :robots="'index, follow'"
+    :robots="'noindex, nofollow'"
     
     :viteCssAssets="['resources/css/app.css', 'resources/css/navbar.css', 'resources/css/footer.css','resources/css/staticCarousel.css', 'resources/css/tootjasektsioon.css','resources/css/upscroller.css','resources/css/teenusedStatic.css','resources/css/cookies.css']"
 

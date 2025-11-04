@@ -3,7 +3,7 @@
 :metaDescription="'Alpha Innotec maasoojuspumbad pakuvad Saksamaa tipptasemel insenerikunsti ja energiatõhusaid lahendusi kodu kütmiseks ja jahutamiseks. Usaldusväärne tehnoloogia tagab mugavuse igas olukorras.'"
 :metaKeywords="'Alpha Innotec maakütte soojuspump, Alpha Innotec soojuspump, Alpha Innotec õhk-vesi soojuspump, energiasääst, kütte- ja jahutusseade, kõrge efektiivsusega soojuspump, Saksa kvaliteet, nutikas küttelahendus'"
     :metaAuthor="'Tanel Sepp'"
-    :robots="'index, follow'"
+    :robots="'noindex, nofollow'"
     :viteCssAssets="['resources/css/app.css', 'resources/css/navbar.css', 'resources/css/footer.css','resources/css/staticCarousel.css', 'resources/css/tootjasektsioon.css','resources/css/upscroller.css','resources/css/teenusedStatic.css','resources/css/cookies.css']"
     :viteJsAssets="['resources/js/app.js','resources/js/lazyLoading.js','resources/js/hamburger.js','resources/js/navbar.js','resources/js/lenis.js','resources/js/upscroller.js', 'resources/js/cookies.js']"
 >

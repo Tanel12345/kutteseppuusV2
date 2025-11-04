@@ -3,7 +3,7 @@
     :metaDescription="'Bosch maasoojuspumbad pakuvad paindlikku lahendus väikestele ja suurtele küttepindadele. Kvaliteet ja innovatsioon, mis tagab tulemuse mida ootad.'"
     :metaKeywords="'Bosch maasoojuspump, Bosch soojuspump, energiasääst, soojendamine, jahutamine, kvaliteetne soojuspump, kütte ja jahutusseade, Bosch kütte- ja jahutusseadmed'"
     :metaAuthor="'Tanel Sepp'"
-    :robots="'index, follow'"
+    :robots="'noindex, nofollow'"
     :viteCssAssets="['resources/css/app.css', 'resources/css/navbar.css', 'resources/css/footer.css','resources/css/staticCarousel.css', 'resources/css/tootjasektsioon.css','resources/css/upscroller.css','resources/css/teenusedStatic.css','resources/css/cookies.css']"
 
     :viteJsAssets="['resources/js/app.js','resources/js/lazyLoading.js','resources/js/hamburger.js','resources/js/navbar.js','resources/js/lenis.js','resources/js/upscroller.js', 'resources/js/cookies.js']"
