@@ -30,14 +30,14 @@
            <!-- Slaid2 -->
             <ul class="carousel-ul">
                 <li class="carousel-li">
-                    <img loading="lazy" src="{{ Vite::asset('resources/images/taustad/Es_soojuspump6.webp') }}" alt="Õhk-vesi soojuspump - ES" class="carousel-img" title="Es_soojuspump" />
+                    <img  src="{{ Vite::asset('resources/images/taustad/Es_soojuspump6.webp') }}" alt="Õhk-vesi soojuspump - ES" class="carousel-img" title="Es_soojuspump" />
                 </li>
               
             </ul>
            <!-- Slaid3 -->
             <ul class="carousel-ul">
                 <li class="carousel-li">
-                    <img loading="lazy" src="{{ Vite::asset('resources/images/taustad/ALPHA-ohk-vesi.webp') }}" alt="Õhk-vesi soojuspump - ES" class="carousel-img" title="Es_soojuspump" />
+                    <img  src="{{ Vite::asset('resources/images/taustad/ALPHA-ohk-vesi.webp') }}" alt="Õhk-vesi soojuspump - ES" class="carousel-img" title="Es_soojuspump" />
                 </li>
            
             </ul>
@@ -45,7 +45,7 @@
            <!-- Slaid4 -->
             <ul class="carousel-ul">
                 <li class="carousel-li">
-                    <img loading="lazy" src="{{ Vite::asset('resources/images/taustad/ALPHA-maasoojus.webp') }}" alt="Õhk-vesi soojuspump - ES" class="carousel-img" title="Es_soojuspump" />
+                    <img  src="{{ Vite::asset('resources/images/taustad/ALPHA-maasoojus.webp') }}" alt="Õhk-vesi soojuspump - ES" class="carousel-img" title="Es_soojuspump" />
                 </li>
            
             </ul>
