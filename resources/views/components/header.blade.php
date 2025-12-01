@@ -8,10 +8,32 @@
                 <a style="cursor:auto;" href="#"><img src="{{ Vite::asset('resources/images/icons/küttesepp.png') }}" alt="Küttesepa email" />tanel[ät]kyttesepp.ee</a>
             </div>
             <div class="right-topdiv" id="right-topdiv">
-                <a class="{{ Route::currentRouteName() == 'soojuspumpade-paigaldus' ? 'active' : '' }}" href="{{ route('soojuspumpade-paigaldus') }}"><img src="{{ Vite::asset('resources/images/icons/küttesepp.png') }}" alt="Küttesepp" />Soojuspumpade paigaldus</a>
-                <a class="{{ Route::currentRouteName() == 'milleks-kutteautomaatika' ? 'active' : '' }}" href="{{ route('milleks-kutteautomaatika') }}"><img src="{{ Vite::asset('resources/images/icons/küttesepp.png') }}" alt="Küttesepp" />Milleks kütteautomaatika</a>
-                <a class="{{ Route::currentRouteName() == 'poranda-ja-radiaatorkute' ? 'active' : '' }}" href="{{ route('poranda-ja-radiaatorkute') }}"><img src="{{ Vite::asset('resources/images/icons/küttesepp.png') }}" alt="Küttesepp" />Põranda- ja radiaatorküte</a>
-                <a class="{{ Route::currentRouteName() == 'kuidas-saasta-kuttekuludelt' ? 'active' : '' }}" href="{{ route('kuidas-saasta-kuttekuludelt') }}"><img src="{{ Vite::asset('resources/images/icons/küttesepp.png') }}" alt="Küttesepp" />Kuidas säästa küttekuludelt</a>
+
+            <a class="{{ Route::currentRouteName() == 'soojuspumpade-paigaldus' ? 'active' : '' }}" 
+                href="{{ route('soojuspumpade-paigaldus') }}">
+                <img src="{{ Vite::asset('resources/images/icons/küttesepp.png') }}" alt="Küttesepp" />
+                Soojuspumpade paigaldus
+            </a>
+          
+           
+            <a class="{{ Route::currentRouteName() == 'kuttesusteemi-vesi' ? 'active' : '' }}"
+            href="{{ route('kuttesusteemi-vesi') }}">
+                <img src="{{ Vite::asset('resources/images/icons/küttesepp.png') }}" alt="Küttesepp"/>
+                Küttesüsteemi vesi
+            </a>
+          
+            <a class="{{ Route::currentRouteName() == 'milleks-kutteautomaatika' ? 'active' : '' }}" 
+                href="{{ route('milleks-kutteautomaatika') }}">
+                <img src="{{ Vite::asset('resources/images/icons/küttesepp.png') }}" alt="Küttesepp" />
+                Milleks kütteautomaatika
+            </a>
+
+            <a class="{{ Route::currentRouteName() == 'poranda-ja-radiaatorkute' ? 'active' : '' }}" 
+                href="{{ route('poranda-ja-radiaatorkute') }}">
+                <img src="{{ Vite::asset('resources/images/icons/küttesepp.png') }}" alt="Küttesepp" />
+                Põranda- ja radiaatorküte
+            </a>
+
             </div>
         </div>
         <!--  Alumine navbar -->
@@ -47,17 +69,32 @@
                             </a>
                             <div class="popup">
                               <ul>
-                                <li><a href="https://www.ahjumees.ee" title="Ahjude, pliitide ja kaminate lehele" target="_blank">KÄSITÖÖ AHJUD PLIIDID KAMINAD</a></li>
-                                <li><a href="{{ route('index') }}" title="Pelletikatelde müük ja paigaldus">PELLETIKATLAD</a></li>
-                                <li><a href="{{ route('index') }}" title="Pelletikaminate lahendused">PELLETIKAMINAD</a></li>
-                                <li><a href="{{ route('index') }}" title="Keskküttepliitid">KESKKÜTTEPLIIDID</a></li>
-                                <li><a href="{{ route('index') }}" title="Keskküttekaminate info ja paigaldus">KESKKÜTTEKAMINAD</a></li>
+                                <li><a href="{{ route('index') }}" title="Pelletikatelde müük ja paigaldus">PELLETIKATLAD JA -KAMINAD</a></li>
+                                <li><a href="{{ route('index') }}" title="Keskküttepliitid">KESKKÜTTEPLIIDID JA -KAMINAD</a></li>
                               </ul>
                             </div>
                           </li>
                     </ul>
                     <ul>
-                        <li><a href="{{ route('kuttesusteemi-hooldus') }}" title="Küttesüsteemide hooldus">KÜTTESÜSTEEMI HOOLDUS</a></li>
+                        <li><a href="{{ route('kuttesusteemide-hooldus') }}" title="Küttesüsteemide hooldus">KÜTTESÜSTEEMIDE HOOLDUS<img src="{{ Vite::asset('resources/images/icons/down.png') }}" style=" width:18px; height:auto; vertical-align: middle; position: relative; top: 2px;"></a>
+                        <div class="popup">
+                                <ul>
+                                  
+                                    <li class="{{ Route::currentRouteName() == 'kuttevee-demineraliseerimine' ? 'active' : '' }}">
+                                        <a href="{{ route('kuttevee-demineraliseerimine') }}">KÜTTEVEE DEMINERALISEERIMINE</a>
+                                    </li>
+
+                                    <li class="{{ Route::currentRouteName() == 'kuttevee-inhibiitorid' ? 'active' : '' }}">
+                                        <a href="{{ route('kuttevee-inhibiitorid') }}">KÜTTEVEE INHIBIITORID</a>
+                                    </li>
+                                      <li><a class="{{ Route::currentRouteName() == 'kuttesusteemi-pesu' ? 'active' : '' }}" href="{{ route('kuttesusteemi-labipesu') }}">KÜTTESÜSTEEMI LÄBIPESU</a></li>
+
+                                  
+                                </ul>
+                            </div></li>
+
+                        
+
                     </ul>
                     <ul>
                         <li><a href="{{ route('index') }}" title="Tehtud tööd">TEHTUD TÖÖD</a></li>

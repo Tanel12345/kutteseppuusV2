@@ -188,7 +188,7 @@ header.animate {
   }
   100% {
     opacity: 1;
-    top: 25px; /* Final position */
+    top: 20px; /* Final position */
   }
 }
 
@@ -199,6 +199,12 @@ header.animate {
   /* Set up the animation */
  animation: slideIn 0.5s ease-in-out forwards;
 }
+
+
+
+
+
+
 
 .logo {
   width: 270px;
@@ -441,6 +447,8 @@ img.facebook:hover {
       /* Set up the animation */
     animation: slideIn 0.5s ease-in-out forwards;
     }
+
+
     
     
     /* Keyframes for sliding animation */

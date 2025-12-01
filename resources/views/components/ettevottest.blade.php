@@ -83,11 +83,11 @@
         </div>
         <div class="ettevottest1">
             <div class="imgcontainer">
-                <a href="{{ route('kuidas-saasta-kuttekuludelt') }}"><img src="" data-src="{{ Vite::asset('resources/images/vaikesed/kuidas-säästa-küttekuludelt/kuidas-saasta-kuttekuludelt.webp') }}"
+                <a href="#"><img src="" data-src="{{ Vite::asset('resources/images/vaikesed/kuidas-säästa-küttekuludelt/kuidas-saasta-kuttekuludelt.webp') }}"
                     title="Kuidas säästa küttekuludelt" alt="Kuidas säästa küttekuludelt"></a>
             </div>
             <div class="text">
-                <h3><a href="{{ route('kuidas-saasta-kuttekuludelt') }}">Kuidas säästa küttekuludelt</a></h3>
+                <h3><a href="#">Kuidas säästa küttekuludelt</a></h3>
             </div>
         </div>
     </div>

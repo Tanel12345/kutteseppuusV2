@@ -4,9 +4,10 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\PageController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\Cachecontroller;
 use App\Http\Controllers\ContactController;
-use Illuminate\Support\Facades\Artisan;
-use Illuminate\Support\Facades\Request;
+
+
 
 
 
@@ -14,27 +15,12 @@ Route::get('/privaatsuspoliitika' , function () {
 return view('pages.privaatsuspoliitika');
 })->name('privaatsuspoliitika');
 
-Route::get('/cache-optimize', function () {
-    // Turvakontroll – lubatud ainult sinu IP-l ja ainult productionis
-    abort_unless(app()->isProduction() && in_array(Request::ip(), ['85.253.172.130']), 403);
+Route::controller(Cachecontroller::class)->group(function () {
+    
+    Route::get('/cache-optimize', 'cacheoptimize')->name('cacheoptimize');
+    Route::get('/cache-clear', 'cacheclear')->name('cacheclear');
 
-    // Laravel 11 jaoks (Laravel 12 puhul võid kasutada Artisan::call('optimize:cache'))
-    Artisan::call('config:cache');
-    Artisan::call('route:cache');
-    Artisan::call('view:cache');
-    Artisan::call('event:cache');
 
-    return nl2br(e("✅ Cache built successfully!\n\n" . Artisan::output()));
-});
-
-Route::get('/cache-clear', function () {
-    // Turvakontroll – lubatud ainult sinu IP-l ja ainult productionis
-    abort_unless(app()->isProduction() && in_array(Request::ip(), ['85.253.172.130']), 403);
-
-    // Laravel 11 jaoks (Laravel 12 puhul võid kasutada Artisan::call('optimize:clear'))
-    Artisan::call('optimize:clear');
-
-    return nl2br(e("🧹 All caches cleared!\n\n" . Artisan::output()));
 });
 
 
@@ -43,11 +29,17 @@ Route::get('/cache-clear', function () {
 Route::controller(PageController::class)->group(function () {
     
     Route::get('/', 'index')->name('index');
+
     Route::get('/soojuspumpade-paigaldus', 'soojuspumpadePaigaldus')->name('soojuspumpade-paigaldus');
+
+     Route::get('/kuttesusteemi-vesi', 'kuttesusteemiVesi')->name('kuttesusteemi-vesi');
+    
+    
     Route::get('/poranda-ja-radiaatorkute.', 'porandaJaRadiaatorkute')->name('poranda-ja-radiaatorkute');
+
+
     Route::get('/kutteautomaatika', 'milleksKutteautomaatika')->name('milleks-kutteautomaatika');
-    Route::get('/kuidas-saasta-kuttekuludelt', 'kuidasSaastaKuttekuludelt')->name('kuidas-saasta-kuttekuludelt');
-    Route::get('/kuttesusteemi-hooldus', 'küttesüsteemiHooldus')->name('kuttesusteemi-hooldus');
+    
 
 
     Route::get('/ohksoojuspumbad', 'ohkSoojuspumbad')->name('ohksoojuspumbad.index');
@@ -60,12 +52,31 @@ Route::controller(PageController::class)->group(function () {
     Route::get('/maasoojuspumbad', 'maasoojuspumbad')->name('maasoojuspumbad.index');
     Route::get('/maasoojuspumbad/{brandname}', 'showMaasoojusBrandPage')->name('maasoojuspumbad.brand');
   
+    
+    
     Route::get('/pelletikatlad-kaminad', 'pelletikatladJaKaminad')->name('pelletikatladJaKaminad.index');
    
     Route::get('/keskkyttepliidid-kaminad', 'keskkyttepliididJaKaminad')->name('keskkyttepliididJaKaminad.index');
+
+     
+    
+    
+    Route::get('/kuttesusteemide-hooldus', 'kuttesusteemiHooldus')
+        ->name('kuttesusteemide-hooldus');
+
+    Route::get('/kuttesusteemi-labipesu', 'kuttesusteemiPesu')
+        ->name('kuttesusteemi-labipesu');
+
+    Route::get('/kuttevee-demineraliseerimine', 'demineraliseerimine')
+        ->name('kuttevee-demineraliseerimine');
+
+    Route::get('/kuttevee-inhibiitorid', 'inhibiitorid')
+        ->name('kuttevee-inhibiitorid');
   
 
 });
+
+
 
 Route::controller(AuthController::class)->group(function () {
     

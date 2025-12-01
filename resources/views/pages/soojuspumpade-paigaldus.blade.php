@@ -22,8 +22,7 @@
             <div class="taustadiv">
                 <div class="textholderdiv">
                     <div class="textholder">
-                        <h1>Soojuspumpade ja küttesüsteemide paigaldus ning seadustamine</h1>
-
+                        <h1>Soojuspumpade valimine, paigaldus ja registreerimine EHR is.</h1>
                     </div>
                 </div>
                 <img class="taust" src="{{ Vite::asset('resources/images/taustad/Soojuspumba-taust.webp') }}"
@@ -40,7 +39,6 @@
             <div class="ettevotte">
                 <div class="content">
                     <h2><span>Mis on eduka projekti valem?</span> - Hästi läbimõeldud idee</h2>
-
                     <p>
                         Millest tekib aga idee, enamjaolt vajadusest millegi järele.<br>
                         Selleks et mitte pettuda ja liikuda sujuvalt samm sammult, kindlas suunas edasi, on mul sulle
@@ -56,7 +54,9 @@
                         Eelnevat arvesse võttes ärme otsusta rutakalt, otsime vajadusel abi ja loome selge
                         tegevuskava.<br>
                         Küttesepp saabki siinkohal tulla appi kõigepealt nõu (küttesüsteemi valik) ja vajadusel hiljem
-                        ka jõuga (näiteks soojuspumba paigaldus ja seadustamine). </p>
+                        ka jõuga (näiteks soojuspumba paigaldus ja vajadusel ka asjaajamine  <a href="https://livekluster.ehr.ee/ui/ehr/v1" target="_blank" rel="noopener noreferrer" title="EHR ">
+                        ehitisregistris
+                    </a>). </p>
                     <div class="pildidiv">
                         <img class="tootjastpilt" src=""
                             data-src="{{ Vite::asset('resources/images/vaikesed/soojuspumpade-paigaldus/prillidega naine.png') }}"

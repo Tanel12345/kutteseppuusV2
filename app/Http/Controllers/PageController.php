@@ -21,6 +21,34 @@ use Illuminate\Http\Request;
         return view('pages.soojuspumpade-paigaldus');
     }
 
+    public function kuttesusteemiVesi()
+    {
+       
+        return view('pages.kuttesusteemiVesi.kuttesusteemiVesi');
+    }
+
+
+       public function demineraliseerimine()
+    {
+       
+        return view('pages.kuttesusteemiVesi.demineraliseerimine');
+    }
+
+     public function inhibiitorid()
+    {
+       
+        return view('pages.kuttesusteemiVesi.inhibiitorid');
+    }
+
+    public function kuttesusteemiPesu()
+    {
+       
+        return view('pages.kuttesusteemideHooldus.kuttesusteemi-labipesu');
+    }
+
+
+
+
     public function porandaJaRadiaatorkute()
     {
        
@@ -33,11 +61,7 @@ use Illuminate\Http\Request;
         return view('pages.milleks-kutteautomaatika');
     }
 
-    public function kuidasSaastaKuttekuludelt()
-    {
-       
-        return view('pages.kuidas-saasta-kuttekuludelt');
-    }
+ 
     public function küttesüsteemiHooldus()
     {
        

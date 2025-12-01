@@ -44,6 +44,10 @@
    margin-bottom: 20px;
    line-height: 35px;
  }
+ul.rohelise-linnukesega {
+  margin:20px 0 40px 0;
+}
+
  .rohelise-linnukesega li {
   position: relative;
   padding-left: 28px;
@@ -112,7 +116,7 @@ h4{font-size: 20px;font-weight: 700;font-size: 20px;
   margin: 40px 0 20px 0;
 }
 
-h3{margin: 50px 0 20px 0;}
+h3{margin: 30px 0 30px 0;}
 
 
 .inverse1 {
@@ -120,7 +124,7 @@ h3{margin: 50px 0 20px 0;}
   animation: linkslide 1s ease-in-out forwards;
 }
 
-p{font-size: 17px;margin:20px 0 40px 27px;}
+p{font-size: 17px;margin:20px 0 40px 0px;}
 h5{font-size: 18px;}
 a:hover{color: #ff0100;}
 
@@ -128,7 +132,7 @@ a:hover{color: #ff0100;}
   border: none;
   border-top: 2px solid #ff0100;  /* thickness and color */
   width: 400px;
-  margin: 3em 0 4em 0;   
+  margin: 3em 0 6em 0;   
   align-self: flex-start;  
         /* space above/below, centered */
 }
@@ -144,6 +148,7 @@ a:hover{color: #ff0100;}
   }
 }
 
+strong {font-size: 18px; font-weight: 700;}
  /* küsi pakkumist parem
 .kusipakkumist {
    width: 170px;
@@ -250,7 +255,7 @@ a:hover{color: #ff0100;}
 
 .faq-icon {
   font-size: 1.5rem;
-  color: #ff0100;
+  color: green;
   display: inline-block;
   transition: transform 0.3s ease;
 }
@@ -265,17 +270,20 @@ a:hover{color: #ff0100;}
 }
 
 .faq-answer {
-  max-height: 0;  /* Algselt on max-height 0 */
-  opacity: 0;     /* Algselt peidetud */
-  overflow: hidden;  /* Peidab üleliigse sisu */
-  transition: max-height 0.4s ease, opacity 0.4s ease;  /* Sujuv üleminek */
-  
+  max-height: 0;
+  overflow: hidden;
+  padding: 0;
+  transition: max-height 0.35s ease, padding 0.35s ease;
+}
+.faq-answer.show {
+  max-height: 500px; /* või 5000px, peaasi et liiga väike ei ole */
+
 }
 
 @media screen and (max-width: 755px)   {
 
   .faq-question {
-    font-size: 1.0rem;
+    font-size: 1.1rem;
     
   }
   p{font-size: 15px;}
@@ -285,4 +293,13 @@ a:hover{color: #ff0100;}
   .content h4 {font-size: 17px;}
   .content h5 {font-size: 18px;}
   .content span {font-size: 22px;}
+   table {
+    width: auto;          /* lase sisul määrata suurus */
+    min-width: 300px;     /* ära lase minna alla 300px */
+  }
+  table th,
+  table td {
+    word-break: break-word;  /* murrab teksti vajadusel */
+    padding: 6px;
+  }
   }
