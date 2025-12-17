@@ -105,27 +105,32 @@ public function soojuspumbad(Request $request, string $type)
         'typeSlug' => $type, // SEO-URL jaoks, kui vaja
     ]);
 }
-    /* ===============================
-     * ÜKS UNIVERSSAALNE BRÄNDILEHT
-     * =============================== */
-    /**
-     * URL:
-     * /tootja/{brand}
-     * /tootja/{brand}?type=ohk_vesi_soojuspumbad
-     */
     public function brandPage(Brand $brand, Request $request)
-    {
-        $type = $request->query('type');
+{
+    $typeSlug = $request->query('type'); // SEO slug
+    $dbType   = $typeSlug ? str_replace('-', '_', $typeSlug) : null;
 
-        $products = $brand->products()
-            ->when($type, fn ($q) =>
-                $q->where('product_type', $type)
-            )
-            ->get();
+    $products = $brand->products()
+        ->when($dbType, fn ($q) =>
+            $q->where('product_type', $dbType)
+        )
+        ->get();
 
-        return view('pages.brand', compact('brand', 'products', 'type'));
+    // 👉 dünaamiline blade tee
+    $view = $typeSlug
+        ? "pages.brand.{$brand->slug}.{$typeSlug}"
+        : "pages.brand.{$brand->slug}.index";
+
+    if (!view()->exists($view)) {
+        abort(404);
     }
 
+    return view($view, [
+        'brand'    => $brand,
+        'products' => $products,
+        'typeSlug' => $typeSlug,
+    ]);
+}
     /* ===============================
      * TAHKEKÜTTESEADMED
      * =============================== */

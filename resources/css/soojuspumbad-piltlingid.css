@@ -33,6 +33,11 @@ section.piltlingid {
    height: auto; /* <-- OLULINE */
    border: 1px solid rgba(0, 0, 0, 0.12);
 }
+  .piltlink a {
+  display: block;
+  width: 100%;
+}
+
   
   div.piltlink:hover {
     transition-duration: 0.5s;
@@ -99,11 +104,13 @@ ul.Lisalingid {
   justify-content: flex-start; /* ⬅️ RIDA ALUSTAB ALATI VASAKULT */
   align-items: flex-start;
 
-  gap: 1rem;
+  gap: 1rem; 
 
   width: 100%;
-  margin: 30px 15px 12px 15px;
-  padding: 0;
+  margin: 30px 0 12px 0;   /* ⬅️ EI nihuta ridu */
+  padding: 0 15px;        /* ⬅️ visuaalne siseserv */
+
+  box-sizing: border-box; /* ⬅️ oluline */
 }
 
 

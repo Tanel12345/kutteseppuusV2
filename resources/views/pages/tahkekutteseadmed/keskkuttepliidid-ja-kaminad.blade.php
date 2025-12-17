@@ -1,6 +1,6 @@
 <x-layout 
-    :title="'Keskküttepliidid ja keskküttekaminad – Küttesepp'"
-    :metaDescription="'Keskküttepliidid ja keskküttekaminad radiaatorite ja põrandaküttega küttesüsteemidele. Küttesepp tagab korrektse paigalduse ja toimiva lahenduse.'"
+    :title="'Keskküttepliidid ja keskküttekaminad – vesiküte radiaatoritele | Küttesepp'"
+    :metaDescription="'Keskküttepliidid ja keskküttekaminad vesiküttega radiaatorite ja põrandakütte süsteemidele. Küttesepp tagab korrektse paigalduse ja töökindluse.'"
     :metaKeywords="'keskküttekaminad, keskküttepliidid, vesiküttega kamin, vesiküttega pliit, küttepliidi paigaldus, kamin keskküttele'"
     :metaAuthor="'Tanel Sepp'"
     :robots="'index, follow'"

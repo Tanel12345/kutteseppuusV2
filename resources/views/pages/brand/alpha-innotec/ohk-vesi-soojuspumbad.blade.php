@@ -1,15 +1,16 @@
 <x-layout
-:title="'Alpha Innotec õhk-vesi soojuspumbad - Tõhus, Usaldusväärne ja Energiasäästlik Kütte- ja Jahutusseade'"
-:metaDescription="'Alpha Innotec soojuspumbad pakuvad Saksamaa tipptasemel insenerikunsti ja energiatõhusaid lahendusi kodu kütmiseks ja jahutamiseks. Usaldusväärne tehnoloogia tagab mugavuse igas olukorras.'"
-:metaKeywords="'Alpha Innotec maakütte soojuspump, Alpha Innotec soojuspump, Alpha Innotec õhk-vesi soojuspump, energiasääst, kütte- ja jahutusseade, kõrge efektiivsusega soojuspump, Saksa kvaliteet, nutikas küttelahendus'"
+:title="'Alpha Innotec õhk-vesi soojuspumbad – Saksa kvaliteet | Küttesepp'"
+:metaDescription="'Alpha Innotec õhk-vesi soojuspumbad pakuvad Saksa insenerikvaliteeti, kõrget kasutegurit ja tulevikukindlat R290 tehnoloogiat. Sobib nii uusehitistele kui renoveerimiseks. Küttesepp paigaldab ja nõustab.'"
+:metaKeywords="'alpha innotec õhk-vesi soojuspump, alpha innotec r290, saksa õhk-vesi soojuspump, energiatõhus õhk-vesi küte, küttesepp'"
+:metaAuthor="'Tanel Sepp'"
+:robots="'index, follow'"
     :metaAuthor="'Tanel Sepp'"
-    :robots="'noindex, nofollow'"
     :viteCssAssets="['resources/css/app.css', 'resources/css/navbar.css', 'resources/css/footer.css','resources/css/staticCarousel.css', 'resources/css/tootjasektsioon.css','resources/css/upscroller.css','resources/css/teenusedStatic.css','resources/css/cookies.css']"
     :viteJsAssets="['resources/js/app.js','resources/js/lazyLoading.js','resources/js/hamburger.js','resources/js/navbar.js','resources/js/lenis.js','resources/js/upscroller.js', 'resources/js/cookies.js']"
 >
 
 <x-static-carousel
-    title="Alpha-innotec õhk-vesi soojuspumbad <br><br><span>Kvaliteetne ja energiasäästlik lahendus igasse koju ja kontorisse</span>"
+    title="Alpha-innotec õhk-vesi soojuspumbad<br><br><span>R290, tulevikukindel ja energiasäästlik küttelahendus</span>"
     content="Alpha innotec on kahtlemata suurepärane valik. Alpha innotec õhk-vesi soojuspumbad sobivad nii uusehitistesse kui ka olemasolevate süsteemide renoveerimiseks.<br><br>
 
 Saksa kvaliteet ning asjalik järelteenindus on märksõnad siin. Alpha innotec pakub oma soojuspumpadele 5 a garantiid.<br><br>
@@ -42,7 +43,7 @@ Saksa kvaliteet ning asjalik järelteenindus on märksõnad siin. Alpha innotec 
                         <img class="tootjastpilt" src="" data-src="{{ Vite::asset("resources/images/vaikesed/alpha/tulevikukindel.webp") }}" alt="tulevikukindel soojuspump">
                     </div>
 
-                    <h3 style="float: right"> 20+ aastat kogemust propaaniga </h3><br><br>
+                    <h3>20+ aastat kogemust R290 propaan-soojuspumpadega</h3><br><br>
                     
                     <p>AEsimene propaanil töötav Alpha innotec´i soojuspump nägi ilmavalgust juba üle 20 aasta tagasi.
                     Hybrox´i näol on tegemist selle seeria kolmanda generatsiooniga. Hybrox toob teieni innovatsiooni, mida toetab 25 aastat kogemust propaaniga.</p><br>
@@ -114,14 +115,16 @@ Saksa kvaliteet ning asjalik järelteenindus on märksõnad siin. Alpha innotec 
                 </div>
             <div class="links">
                 <div class="kusipakkumist">
-                    <a href="{{ route('ohk-vesi-soojuspumbad.index', ['brand' => 'alpha-innotec-ohk-vesi-soojuspumbad']) }}#tootesektsioon" title="Alpha-innotec õhk-vesi soojuspumbad" >
-                        <p>ÕHK-VESI TOOTED</p>
-                    </a>
+                    <a href="{{ route('soojuspumbad.type', 'ohk-vesi-soojuspumbad') }}?brand=alpha-innotec#tootesektsioon"
+   title="Alpha-innotec õhk-vesi soojuspumbad">
+    <p>ÕHK-VESI TOOTED</p>
+</a>
                 </div>
                 <div class="kusipakkumist">
-                    <a href="{{ route('maasoojuspumbad.index', ['brand' => 'alpha-innotec-maasoojuspumbad']) }}#tootesektsioon" title="Alpha-innotec maasoojuspumbad" >
-                        <p>MAAKÜTTE TOOTED</p>
-                    </a>
+                     <a href="{{ route('soojuspumbad.type', 'maasoojuspumbad') }}?brand=alpha-innotec#tootesektsioon"
+   title="Alpha-innotec maasoojuspumbad">
+    <p>MAAKÜTTE TOOTED</p>
+</a>
                 </div>
                 <div class="kusipakkumist">
                     <a href="https://www.alpha-innotec.com/en" title="Alpha-innotec lehele" target="_blank" rel="noopener noreferrer">

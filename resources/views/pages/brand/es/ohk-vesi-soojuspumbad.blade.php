@@ -1,9 +1,9 @@
 <x-layout 
-    :title="'ES - Energy Save õhk-vesi soojuspumbad - Tõhusad ja Energiasäästlikud Kütte- ja Jahutusseadmed'"
-    :metaDescription="'ES - Energy Save õhk-vesi soojuspumbad pakuvad usaldusväärset ja energiatõhusat lahendust soojendamiseks ja jahutamiseks. Kvaliteet ja innovatsioon, mis tagab mugavuse igasugustes oludes.'"
-    :metaKeywords="'ES õhk-vesi soojuspump, Energy Save soojuspump, õhk-vesi soojuspumbad, energiasääst, soojendamine, jahutamine, kvaliteetne soojuspump, kütte ja jahutusseade, Energy Save kütte- ja jahutusseadmed'"
+    :title="'ES Energy Save õhk-vesi soojuspumbad – R290 ja R32 monoblokk lahendused | Küttesepp'"
+    :metaDescription="'ES Energy Save õhk-vesi soojuspumbad on mõeldud vesiküttesüsteemidele – radiaatoritele, põrandaküttele ja tarbevee soojendamiseks. Rootsis disainitud R32 ja R290 lahendused, mis töötavad töökindlalt ka põhjamaa kliimas koos paigaldusega Küttesepalt.'"
+    :metaKeywords="'ES Energy Save õhk-vesi soojuspumbad, ES õhk-vesi soojuspump, Energy Save soojuspump, vesiküte, põrandaküte, tarbevesi, R290 soojuspump, monoblokk soojuspump'"
     :metaAuthor="'Tanel Sepp'"
-    :robots="'noindex, nofollow'"
+    :robots="'index, follow'"
     :viteCssAssets="['resources/css/app.css', 'resources/css/navbar.css', 'resources/css/footer.css','resources/css/staticCarousel.css', 'resources/css/tootjasektsioon.css','resources/css/upscroller.css','resources/css/teenusedStatic.css','resources/css/cookies.css']"
 
     :viteJsAssets="['resources/js/app.js','resources/js/lazyLoading.js','resources/js/hamburger.js','resources/js/navbar.js','resources/js/lenis.js','resources/js/upscroller.js', 'resources/js/cookies.js']"
@@ -26,14 +26,17 @@ eriStiil="object-position: center;"
     <div class="tootjast">
         <div class="ettevotte">
             <h2><span>ES - Energy Save</span>  <br>Nutikad ja energiatõhusad soojuspumbad sinu koju</h2><br><br>
+            <p style="margin-bottom: 25px;">Vaata Energy Save õhk-vesi soojuspumpade Küttesepa tutvustavat videot.</p>
             <div class="videodiv">
                 <iframe width="500" height="280" src="https://www.youtube.com/embed/g1uKAYyem1s" 
                 title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
                 </iframe>
+                
                 <iframe width="500" height="280" src="https://www.youtube.com/embed/7Jzipapy6-I" 
                     title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
                 </iframe>
             </div><br>
+            
     
                 <div class="content">
                     <h3><strong>ES - Energy Save</strong></h3><br>
@@ -52,7 +55,7 @@ eriStiil="object-position: center;"
                         <li>Sisseehitatud WiFi – kaugjuhtimine ja jälgimine nutiseadmest või arvutist</li>
                         <li>Kahe erineva temperatuuritsooni seadistamine</li>
                         <li>Automaatne taaskäivitumine pärast voolukatkestust</li>
-                        <li>Saadaval võimsustega: 6 kW, 9 kW, 12 kW, 15kw ja 19kw</li>
+                        <li>Saadaval võimsustega: 6 kW, 9 kW, 12 kW, 15 kw ja 19 kw</li>
                         <li>Töötab kuni –25°C välistemperatuuril</li>
                         <li>Madal müratase – vaikne välisseade</li>
                         <li>Kiire tasuvus tänu madalale investeeringukulule</li>
@@ -88,9 +91,10 @@ eriStiil="object-position: center;"
                    
             <div class="links">
                 <div class="kusipakkumist">
-                    <a href="{{ route('ohk-vesi-soojuspumbad.index', ['brand' => 'es-ohk-vesi-soojuspumbad']) }}#tootesektsioon" title="ES õhk-vesi soojuspumbad" >
-                        <p>ÕHK-VESI TOOTED</p>
-                    </a>
+                     <a href="{{ route('soojuspumbad.type', 'ohk-vesi-soojuspumbad') }}?brand=es#tootesektsioon"
+                            title="Es õhk-vesi soojuspumbad">
+                            <p>ÕHK-VESI TOOTED</p>
+                        </a>
                 </div>
                 <div class="kusipakkumist">
                     <a href="https://energysave.se" title="Energy-save lehele" target="_blank" rel="noopener noreferrer">

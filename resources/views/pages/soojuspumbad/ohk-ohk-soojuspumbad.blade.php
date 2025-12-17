@@ -1,6 +1,6 @@
 <x-layout :title="'Õhk-õhk soojuspumbad – kvaliteetne küte ja jahutus | Küttesepp'"
-    :metaDescription="'Õhk-õhk soojuspumbad - Soodsaim valik kütmiseks ja jahutamiseks.'"
-    :metaKeywords="'õhk-õhk soojuspumbad, soojuspump, kütmine, jahutamine, energiasääst'"
+    :metaDescription="'Õhk-õhk soojuspumbad on soodsaim ja kiireim lahendus kodu kütmiseks ja jahutamiseks. Küttesepp pakub kvaliteetseid seadmeid koos paigalduse ja kasutusõpetusega.'"
+    :metaKeywords="'õhk-õhk soojuspumbad, soojuspump, kütmine, jahutamine, energiasääst, õhk-õhk küte, õhksoojuspump, energiasäästlik küte'"
     :metaAuthor="'Tanel Sepp'"
     :robots="'index, follow'"
     :viteCssAssets="['resources/css/app.css', 'resources/css/navbar.css', 'resources/css/footer.css','resources/css/staticCarousel.css', 'resources/css/tootesektsioon.css','resources/css/upscroller.css','resources/css/cookies.css']"

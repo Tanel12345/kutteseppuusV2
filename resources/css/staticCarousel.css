@@ -37,8 +37,9 @@
   position: relative;
   max-width:1300px;
   margin: auto auto;
+  
   top: 120px;
-  left:10px;
+ 
   min-width:900px;
 
   border-radius: 15px;
@@ -49,7 +50,7 @@
    backdrop-filter: blur(3px);
   animation: h1slide 1s ease-in-out 0.5s forwards;
   position: relative;
-  
+  padding: 10px;
   width: 70%;
   min-width: 320px;
   max-width: 900px;
@@ -81,6 +82,7 @@
   
 }
 .carousel p {
+
   text-align: justify;
   
   
@@ -118,11 +120,11 @@
 
   .carousel {
 
-    height: 750px;
+    height: 840px;
   
   }
   .taust {
-    height:800px;
+    height:840px;
   }
 
   .carousel h1 {
@@ -152,7 +154,7 @@
     min-width:300px;
     margin: auto auto;
     top: 30px;
-    left:10px;
+  
   }
   
   

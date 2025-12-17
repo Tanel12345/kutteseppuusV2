@@ -1,8 +1,8 @@
-<x-layout :title="'Maasoojuspump - tõhus ja kestlik küttelahendus Küttesepalt'"
-    :metaDescription="'Maasoojuspumbad - Kõige energiatõhusam valik kütmiseks ja tarbevee soojendamiseks.'"
+<x-layout :title="'Maasoojuspumbad – tõhus ja kestlik küttelahendus | Küttesepp'"
+    :metaDescription="'Maasoojuspumbad on kõige energiatõhusam valik kodu kütmiseks ja tarbevee soojendamiseks. Küttesepp pakub kvaliteetseid lahendusi koos professionaalse paigaldusega.'"
     :metaKeywords="'Maasoojuspump, maasoojuspumbad, maaküte, energiatõhus küte, küttelahendus'"
     :metaAuthor="'Tanel Sepp'"
-    :robots="'noindex, nofollow'"
+    :robots="'index, follow'"
     :viteCssAssets="['resources/css/app.css', 'resources/css/navbar.css', 'resources/css/footer.css','resources/css/staticCarousel.css', 'resources/css/tootesektsioon.css','resources/css/upscroller.css','resources/css/cookies.css']"
 
     :viteJsAssets="['resources/js/app.js','resources/js/hamburger.js','resources/js/navbar.js','resources/js/lenis.js','resources/js/upscroller.js', 'resources/js/cookies.js']"
@@ -21,7 +21,7 @@
     eriStiil="object-position: bottom;"
     :textholderStyle="''"
 />
-<x-tootesektsioonid.maasoojus-tootesektsioon :products="$products" :brands="$brands"/>
+<x-tootesektsioonid.soojuspumbad-tootesektsioon :products="$products" :brands="$brands"  :typeSlug="$typeSlug"/>
 <x-up-scroller/>
 <x-cookies/> 
 </x-layout>

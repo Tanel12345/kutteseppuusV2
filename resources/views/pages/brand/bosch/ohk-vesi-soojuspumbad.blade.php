@@ -1,9 +1,9 @@
 <x-layout 
-    :title="'Bosch õhk-vesi soojuspumbad - Tõhusad ja Energiasäästlikud Kütte- ja Jahutusseadmed'"
-    :metaDescription="'Bosch õhk-vesi soojuspumbad pakuvad usaldusväärset ja energiatõhusat lahendust soojendamiseks ja jahutamiseks. Kvaliteet ja innovatsioon, mis tagab mugavuse igasugustes oludes.'"
-    :metaKeywords="'Bosch õhksoojuspump, Bosch soojuspump, Bosch õhk-vesi soojuspump, õhksoojuspumbad, energiasääst, soojendamine, jahutamine, kvaliteetne soojuspump, kütte ja jahutusseade, Bosch kütte- ja jahutusseadmed'"
+    :title="'Bosch õhk-vesi soojuspumbad – Compress 7000i AW | Küttesepp'"
+    :metaDescription="'Bosch õhk-vesi soojuspumbad on mõeldud radiaator- ja põrandaküttesüsteemidele ning tarbevee soojendamiseks. Saksa kvaliteet, vaikne töö ja invertertehnoloogia. Compress 7000i AW lahendused koos paigaldusega Küttesepalt.'"
+    :metaKeywords="'Bosch õhk-vesi soojuspumbad, Bosch soojuspump, Compress 7000i AW, Bosch õhk-vesi soojuspump, vesiküte, põrandaküte, tarbevesi, inverter soojuspump'"
     :metaAuthor="'Tanel Sepp'"
-    :robots="'noindex, nofollow'"
+    :robots="'index, follow'"
     :viteCssAssets="['resources/css/app.css', 'resources/css/navbar.css', 'resources/css/footer.css','resources/css/staticCarousel.css', 'resources/css/tootjasektsioon.css','resources/css/upscroller.css','resources/css/teenusedStatic.css','resources/css/cookies.css']"
 
     :viteJsAssets="['resources/js/app.js','resources/js/lazyLoading.js','resources/js/hamburger.js','resources/js/navbar.js','resources/js/lenis.js','resources/js/upscroller.js', 'resources/js/cookies.js']"
@@ -76,19 +76,22 @@ imageAlt="Bosch õhk-vesi soojuspumbad - Kvaliteet ja Energiatõhusus"
             <div class="links">
 
                 <div class="kusipakkumist">
-                    <a href="{{ route('ohksoojuspumbad.index', ['brand' => 'bosch-ohk-ohk-soojuspumbad']) }}#tootesektsioon" title="Bosch õhksoojuspumbad" >
-                        <p>ÕHK-ÕHK TOOTED</p>
-                    </a>
+                        <a href="{{ route('soojuspumbad.type', 'ohk-ohk-soojuspumbad') }}?brand=bosch#tootesektsioon"
+                            title="Bosch õhk-õhk soojuspumbad">
+                            <p>ÕHK-ÕHK TOOTED</p>
+                        </a>
                 </div>
                 <div class="kusipakkumist">
-                    <a href="{{ route('ohk-vesi-soojuspumbad.index', ['brand' => 'bosch-ohk-vesi-soojuspumbad']) }}#tootesektsioon" title="Bosch õhk-vesi soojuspumbad" >
-                        <p>ÕHK-VESI TOOTED</p>
-                    </a>
+                    <a href="{{ route('soojuspumbad.type', 'ohk-vesi-soojuspumbad') }}?brand=bosch#tootesektsioon"
+                            title="Bosch õhk-vesi soojuspumbad">
+                            <p>ÕHK-VESI TOOTED</p>
+                        </a>
                 </div>
                 <div class="kusipakkumist">
-                    <a href="{{ route('maasoojuspumbad.index', ['brand' => 'bosch-maasoojuspumbad']) }}#tootesektsioon" title="Bosch maakütte soojuspumbad" >
-                        <p>MAAKÜTTE TOOTED</p>
-                    </a>
+                   <a href="{{ route('soojuspumbad.type', 'maasoojuspumbad') }}?brand=bosch#tootesektsioon"
+                            title="Bosch maakütte soojuspumbad">
+                            <p>MAAKÜTTE TOOTED</p>
+                        </a>
                 </div>
                 
                 <div class="kusipakkumist">

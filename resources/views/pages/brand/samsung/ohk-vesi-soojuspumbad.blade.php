@@ -1,9 +1,9 @@
 <x-layout
-    :title="'Samsung õhk-vesi soojuspump - Tõhus ja Energiasäästlik Kütte- ja Jahutusseade'"
-    :metaDescription="'Samsung õhk-vesi soojuspumbad pakuvad innovatiivset ja energiatõhusat lahendust kodu soojendamiseks ja jahutamiseks. Tipptehnoloogia ja kõrge efektiivsus tagavad mugavuse igas olukorras.'"
-    :metaKeywords="'Samsung õhksoojuspump, Samsung soojuspump,Samsung õhk-vesi soojuspump, õhksoojuspumbad, energiasääst, soojendamine, jahutamine, õhk-õhk soojuspump,õhk-vesi soojuspump, kvaliteetne soojuspump, kütte ja jahutusseade, Samsung kütte- ja jahutusseadmed'"
+    :title="'Samsung õhk-vesi soojuspumbad – EHS Mono ja R290 lahendused | Küttesepp'"
+    :metaDescription="'Samsung õhk-vesi soojuspumbad on mõeldud vesiküttesüsteemidele – radiaatoritele, põrandaküttele ja tarbevee soojendamiseks. EHS Mono ja R290 lahendused pakuvad kõrget kasutegurit ja töökindlust ka külmas kliimas koos paigaldusega Küttesepalt.'"
+    :metaKeywords="'Samsung õhk-vesi soojuspumbad, Samsung EHS Mono, Samsung R290, õhk-vesi soojuspump, vesiküte, põrandaküte, radiaatorküte, tarbevesi'"
     :metaAuthor="'Tanel Sepp'"
-    :robots="'noindex, nofollow'"
+    :robots="'index, follow'"
     :viteCssAssets="['resources/css/app.css', 'resources/css/navbar.css', 'resources/css/footer.css','resources/css/staticCarousel.css', 'resources/css/tootjasektsioon.css','resources/css/upscroller.css','resources/css/teenusedStatic.css','resources/css/cookies.css']"
     :viteJsAssets="['resources/js/app.js','resources/js/lazyLoading.js','resources/js/hamburger.js','resources/js/navbar.js','resources/js/lenis.js','resources/js/upscroller.js', 'resources/js/cookies.js']"
 >
@@ -89,12 +89,12 @@
                 </div><br>
             <div class="links">
                 <div class="kusipakkumist">
-                    <a href="{{ route('ohk-vesi-soojuspumbad.index', ['brand' => 'samsung-ohk-vesi-soojuspumbad']) }}#tootesektsioon" title="Samsung õhk-vesi soojuspumbad" >
+                   <a href="{{ route('soojuspumbad.type', 'ohk-vesi-soojuspumbad') }}?brand=samsung#tootesektsioon" title="Samsung õhk-vesi soojuspumbad" >
                         <p>ÕHK-VESI TOOTED</p>
                     </a>
                 </div>
                 <div class="kusipakkumist">
-                    <a href="{{ route('ohksoojuspumbad.index', ['brand' => 'samsung-ohk-ohk-soojuspumbad']) }}#tootesektsioon" title="Samsung õhksoojuspumbad" >
+                    <a href="{{ route('soojuspumbad.type', 'ohk-ohk-soojuspumbad') }}?brand=samsung#tootesektsioon" title="Samsung õhksoojuspumbad" >
                         <p>ÕHK-ÕHK TOOTED</p>
                     </a>
                 </div>

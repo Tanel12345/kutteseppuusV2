@@ -1,8 +1,8 @@
-<x-layout :title="'Õhk-vesi soojuspump - kvaliteetsed õhk-vesi soojuspumbad Küttesepalt'"
-    :metaDescription="'Õhk-vesi soojuspumbad - Mõistlikuim valik kütmiseks ja jahutamiseks.'"
-    :metaKeywords="'Õhk-vesi soojuspumbad, soojuspump, kütmine, jahutamine, energiasääst'"
+<x-layout :title="'Õhk-vesi soojuspumbad - kvaliteetsed ja energiasäästlikud | Küttesepp'"
+    :metaDescription="'Õhk-vesi soojuspumbad on energiasäästlik valik kodu kütmiseks ja tarbevee soojendamiseks. Küttesepp pakub lahendusi koos professionaalse paigaldusega.'"
+    :metaKeywords="'õhk-vesi soojuspumbad, õhk-vesi küte, soojuspump, energiasäästlik küte, tarbevee soojendamine'"
     :metaAuthor="'Tanel Sepp'"
-    :robots="'noindex, nofollow'"
+    :robots="'index, follow'"
     :viteCssAssets="['resources/css/app.css', 'resources/css/navbar.css', 'resources/css/footer.css','resources/css/staticCarousel.css', 'resources/css/tootesektsioon.css','resources/css/upscroller.css','resources/css/cookies.css']"
 
     :viteJsAssets="['resources/js/app.js','resources/js/hamburger.js','resources/js/navbar.js','resources/js/lenis.js','resources/js/upscroller.js', 'resources/js/cookies.js']"
@@ -19,7 +19,7 @@
     imageAlt="Õhk-vesi soojuspumbad taust"
     :textholderStyle="''"
 />
-<x-tootesektsioonid.ohk-vesi-tootesektsioon :products="$products" :brands="$brands"/>
+<x-tootesektsioonid.soojuspumbad-tootesektsioon :products="$products" :brands="$brands"  :typeSlug="$typeSlug"/>
 <x-up-scroller/>
 <x-cookies/> 
 </x-layout>

@@ -34,7 +34,7 @@
     <meta property="og:image:height" content="539">
 
     <!-- Lingid -->
-    <link rel="canonical" href="https://www.kuttesepp.ee{{ request()->getRequestUri() }}" />
+    <link rel="canonical" href="{{ url()->current() }}" />
     <meta name="robots" content="{{ $robots ?? 'index, follow' }}">
     
 
