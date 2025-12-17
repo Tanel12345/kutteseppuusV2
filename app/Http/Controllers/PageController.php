@@ -2,236 +2,178 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Brand;
 use App\Models\Product;
 use Illuminate\Http\Request;
 
-
-    Class PageController extends Controller
+class PageController extends Controller
 {
+    /* ===============================
+     * ÜLDLEHED
+     * =============================== */
+
     public function index(Request $request)
     {
-       
-        $product = $request->query('product'); // Get product name from query parameter
+        $product = $request->query('product');
         return view('pages.index', compact('product'));
     }
 
     public function soojuspumpadePaigaldus()
     {
-       
         return view('pages.soojuspumpade-paigaldus');
     }
 
     public function kuttesusteemiVesi()
     {
-       
         return view('pages.kuttesusteemiVesi.kuttesusteemiVesi');
     }
 
-
-       public function demineraliseerimine()
+    public function demineraliseerimine()
     {
-       
         return view('pages.kuttesusteemiVesi.demineraliseerimine');
     }
 
-     public function inhibiitorid()
+    public function inhibiitorid()
     {
-       
         return view('pages.kuttesusteemiVesi.inhibiitorid');
     }
 
     public function kuttesusteemiPesu()
     {
-       
         return view('pages.kuttesusteemideHooldus.kuttesusteemi-labipesu');
     }
 
+    public function kuttesusteemideHooldus()
+    {
+        return view('pages.kuttesusteemideHooldus.kuttesusteemide-hooldus');
+    }
 
-
+    public function tahkekutteseadmed()
+    {
+        return view('pages.tahkekutteseadmed.tahkekutteseadmed');
+    }
 
     public function porandaJaRadiaatorkute()
     {
-       
         return view('pages.poranda-ja-radiaatorkute');
     }
 
     public function milleksKutteautomaatika()
     {
-       
         return view('pages.milleks-kutteautomaatika');
     }
 
- 
-    public function küttesüsteemiHooldus()
+    /* ===============================
+     * UNIVERSAALNE SOOJUSPUMBADE LIST
+     * =============================== */
+    /**
+     * 
+     * 
+     * URL:
+     * /soojuspumbad/{type}
+     * /soojuspumbad/{type}?brand=samsung
+     */
+    public function soojuspumbadIndex()
     {
-       
-        //return view('pages.kuttesusteemiHooldus');
+        return view('pages.soojuspumbad');
     }
 
-
-
-
-    //Õhksoojuspumbad
-
-    public function ohkSoojuspumbad(Request $request){
-    $brand = $request->query('brand'); // Get brand from URL query
-
-    // Allowed brands
-    $allowedBrands = ['midea-ohk-ohk-soojuspumbad', 'bosch-ohk-ohk-soojuspumbad','samsung-ohk-ohk-soojuspumbad'];
-
-    if ($brand && in_array($brand, $allowedBrands)) {
-        // Fetch only products of the allowed brand
-        $products = Product::where('product_type', 'ohk_ohk_soojuspumbad')
-                           ->where('brandname', str_replace('-ohk-ohk-soojuspumbad', '', $brand))
-                           ->get();
-    } else {
-        // Fetch all products
-        $products = Product::where('product_type', 'ohk_ohk_soojuspumbad')->get();
-    }
-    //Brandbox idele
-    $brands = [
-        ['title' => 'midea-ohk-ohk-soojuspumbad', 'image' => 'resources/images/logod/Midea_logo.webp', 'route' => 'ohksoojuspumbad.index'],
-        ['title' => 'bosch-ohk-ohk-soojuspumbad', 'image' => 'resources/images/logod/bosch.png', 'route' => 'ohksoojuspumbad.index'],
-        ['title' => 'samsung-ohk-ohk-soojuspumbad', 'image' => 'resources/images/vaikesed/samsung/samsunglogo.png', 'route' => 'ohksoojuspumbad.index']
-        // Add more brands here with different routes if needed
-    ];
-    // Pass products to the view
-    return view('pages.ohksoojuspumbad', compact('products', 'brands'));
-}
-
-
-public function showBrandPage($brandname)
-    {
-        $alowedBrands1 = ['midea-ohk-ohk-soojuspumbad', 'bosch-ohk-ohk-soojuspumbad', 'samsung-ohk-ohk-soojuspumbad'];
-        if($brandname && in_array($brandname, $alowedBrands1)){
-
-            if($brandname == 'midea-ohk-ohk-soojuspumbad'){
-                return view('pages.mideapages.midea-ohk-ohk-soojuspumbad');
-            }elseif ($brandname == 'bosch-ohk-ohk-soojuspumbad') {
-            return view('pages.boschpages.bosch-ohk-ohk-soojuspumbad');
-        }elseif ($brandname == 'samsung-ohk-ohk-soojuspumbad') {
-            return view('pages.samsungpages.samsung-ohk-ohk-soojuspumbad');
-        }
-    }
-        // If the brand is not allowed, return a 404 page or custom error page
-    return response()->view('errors.404', ["hello"], 404);
-    }   
-    
-       
-
-    
-
-
-    //Õhkvesisoojuspumbad
-
-    public function ohkVesiSoojuspumbad(Request $request)
+public function soojuspumbad(Request $request, string $type)
 {
-    $brand = $request->query('brand'); // Get brand from URL query
+    // SEO slug → sisemine product_type
+    $dbType = str_replace('-', '_', $type);
+                                                    
 
-    // Define allowed brands
-    $allowedBrands = ['es-ohk-vesi-soojuspumbad', 'alpha-innotec-ohk-vesi-soojuspumbad', 'samsung-ohk-vesi-soojuspumbad', 'bosch-ohk-vesi-soojuspumbad'];
+    $brandSlug = $request->query('brand');
 
-    
-    // Fetch products based on brand filter
-    if ($brand && in_array($brand, $allowedBrands)) {
-        $products = Product::where('product_type', 'ohk_vesi_soojuspumbad')
-                           ->where('brandname', str_replace('-ohk-vesi-soojuspumbad', '', $brand))
-                           ->orderBy('id', 'desc') // Order by id in descending order
-                           ->get();
-    } else {
-        $products = Product::where('product_type', 'ohk_vesi_soojuspumbad')->get();
-    }
-    // Define brand images
-    $brands = [
-        ['title' => 'es-ohk-vesi-soojuspumbad', 'image' => 'resources/images/vaikesed/es/eslogo.webp', 'route' => 'ohk-vesi-soojuspumbad.index'],
-        ['title' => 'alpha-innotec-ohk-vesi-soojuspumbad', 'image' => 'resources/images/vaikesed/alpha/alpha.png', 'route' => 'ohk-vesi-soojuspumbad.index'],
-        ['title' => 'samsung-ohk-vesi-soojuspumbad', 'image' => 'resources/images/vaikesed/samsung/samsunglogo.png', 'route' => 'ohk-vesi-soojuspumbad.index'],
-        ['title' => 'bosch-ohk-vesi-soojuspumbad', 'image' => 'resources/images/vaikesed/bosch/Bosch.png', 'route' => 'ohk-vesi-soojuspumbad.index']
-        // Add more brands here with different routes if needed
-    ];
+    $products = Product::with('brand')
+        ->where('product_type', $dbType)
+        ->when($brandSlug, function ($q) use ($brandSlug) {
+            $q->whereHas('brand', fn ($b) => $b->where('slug', $brandSlug));
+        })
+        ->get();
 
-    // Pass data to the view
-    return view('pages.ohk-vesi-soojuspumbad', compact('products', 'brands'));
-    }
+    $brands = Brand::whereHas('products', function ($q) use ($dbType) {
+            $q->where('product_type', $dbType);
+        })
+        ->get(['id','name','slug','logo']);
 
-
-
-        public function showOhkVesiBrandPage($brandname)
-        {
-            $alowedBrands1 = ['es-ohk-vesi-soojuspumbad', 'alpha-innotec-ohk-vesi-soojuspumbad', 'samsung-ohk-vesi-soojuspumbad', 'bosch-ohk-vesi-soojuspumbad'];
-            if($brandname && in_array($brandname, $alowedBrands1)){
-    
-                if($brandname == 'es-ohk-vesi-soojuspumbad'){
-                    return view('pages.es-soojuspumbad');
-                }elseif ($brandname == 'alpha-innotec-ohk-vesi-soojuspumbad') {
-                return view('pages.alphapages.alphainnotec-ohk-vesi-soojuspumbad');
-            }elseif ($brandname == 'samsung-ohk-vesi-soojuspumbad') {
-            return view('pages.samsungpages.samsung-ohk-vesi-soojuspumbad');
-        }elseif ($brandname == 'bosch-ohk-vesi-soojuspumbad') {
-            return view('pages.boschpages.bosch-ohk-vesi-soojuspumbad');
-        }
-    }
-             // If the brand is not allowed, return a 404 page or custom error page
-        return response()->view('errors.404', ["hello"], 404);
-        }
-
-
-
-
-        //Maasoojuspumbad
-    
-
-        public function maasoojuspumbad(Request $request)
-        {
-            $brand = $request->query('brand'); // Get brand from URL query
-        
-            // Define allowed brands
-            $allowedBrands = ['alpha-innotec-maasoojuspumbad', 'bosch-maasoojuspumbad'];
-        
-            
-            // Fetch products based on brand filter
-            if ($brand && in_array($brand, $allowedBrands)) {
-                $products = Product::where('product_type', 'maasoojuspumbad')
-                                   ->where('brandname', str_replace('-maasoojuspumbad', '', $brand))
-                                   ->orderBy('id', 'desc') // Order by id in descending order
-                                   ->get();
-            } else {
-                $products = Product::where('product_type', 'maasoojuspumbad')->get();
-            }
-            // Define brand images
-            $brands = [
-                ['title' => 'alpha-innotec-maasoojuspumbad', 'image' => 'resources/images/vaikesed/alpha/alpha.png', 'route' => 'maasoojuspumbad.index'],
-                ['title' => 'bosch-maasoojuspumbad', 'image' => 'resources/images/vaikesed/bosch/Bosch.png', 'route' => 'maasoojuspumbad.index']
-                // Add more brands here with different routes if needed
-            ];
-        
-            // Pass data to the view
-            return view('pages.maasoojuspumbad', compact('products', 'brands'));
-            }
-        
-        
-        
-                public function showmaasoojusBrandPage($brandname)
-                {
-                    $alowedBrands1 = ['alpha-innotec-maasoojuspumbad', 'bosch-maasoojuspumbad'];
-                    if($brandname && in_array($brandname, $alowedBrands1)){
-            
-                        if ($brandname == 'alpha-innotec-maasoojuspumbad') {
-                        return view('pages.alphapages.alphainnotec-maasoojuspumbad');
-                    
-                        }elseif ($brandname == 'bosch-maasoojuspumbad') {
-                            return view('pages.boschpages.bosch-maasoojuspumbad');
-                        }
-                    }
-                     // If the brand is not allowed, return a 404 page or custom error page
-                return response()->view('errors.404', ["hello"], 404);
-                }
-        
-        
-        
-
+    return view("pages.soojuspumbad.$type", [
+        'products' => $products,
+        'brands'   => $brands,
+        'type'     => $dbType,
+        'typeSlug' => $type, // SEO-URL jaoks, kui vaja
+    ]);
 }
+    /* ===============================
+     * ÜKS UNIVERSSAALNE BRÄNDILEHT
+     * =============================== */
+    /**
+     * URL:
+     * /tootja/{brand}
+     * /tootja/{brand}?type=ohk_vesi_soojuspumbad
+     */
+    public function brandPage(Brand $brand, Request $request)
+    {
+        $type = $request->query('type');
 
-    
+        $products = $brand->products()
+            ->when($type, fn ($q) =>
+                $q->where('product_type', $type)
+            )
+            ->get();
+
+        return view('pages.brand', compact('brand', 'products', 'type'));
+    }
+
+    /* ===============================
+     * TAHKEKÜTTESEADMED
+     * =============================== */
+
+    public function pelletikatladJaKaminad(Request $request)
+    {
+        $brandSlug = $request->query('brand');
+
+        $products = Product::with('brand')
+            ->where('product_type', 'Pelletikatlad_kaminad')
+            ->when($brandSlug, function ($q) use ($brandSlug) {
+                $q->whereHas('brand', fn ($b) =>
+                    $b->where('slug', $brandSlug)
+                );
+            })
+            ->get();
+
+        $brands = Brand::whereHas('products', function ($q) {
+                $q->where('product_type', 'Pelletikatlad_kaminad');
+            })
+            ->get(['id', 'name', 'slug', 'logo']);
+
+        return view('pages.tahkekutteseadmed.pelletikatlad-ja-kaminad', compact('products', 'brands'))
+    ->with('pageRoute', 'pelletikatladJaKaminad.index');
+    }
 
 
+
+
+    public function keskkuttepliididJaKaminad(Request $request)
+    {
+        $brandSlug = $request->query('brand');
+
+        $products = Product::with('brand')
+            ->where('product_type', 'keskkuttepliidid_ja_kaminad')
+            ->when($brandSlug, function ($q) use ($brandSlug) {
+                $q->whereHas('brand', fn ($b) =>
+                    $b->where('slug', $brandSlug)
+                );
+            })
+            ->get();
+
+        $brands = Brand::whereHas('products', function ($q) {
+                $q->where('product_type', 'keskkuttepliidid_ja_kaminad');
+            })
+            ->get(['id', 'name', 'slug', 'logo']);
+
+       return view('pages.tahkekutteseadmed.keskkuttepliidid-ja-kaminad', compact('products', 'brands'))
+    ->with('pageRoute', 'keskkuttepliididJaKaminad.index');
+    }
+}

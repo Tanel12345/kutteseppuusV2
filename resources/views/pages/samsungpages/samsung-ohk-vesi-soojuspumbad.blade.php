@@ -24,6 +24,12 @@
     <div class="tootjast">
         <div class="ettevotte">
             <h2><span>Samsung</span> - innovatsioon ja energiatõhusus</h2><br><br>
+            <div class="videodiv">
+                <iframe width="500" height="280" src="https://www.youtube.com/embed/3C-_WVBgkuw" 
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+                
+            </div><br>
     
                 <div class="content">
                     <h3><strong>Samsung õhk-vesi soojuspumbad</strong></h3> 

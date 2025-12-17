@@ -1,4 +1,4 @@
-<x-layout :title="'Õhksoojuspump - kvaliteetsed õhksoojuspumbad Küttesepalt'"
+<x-layout :title="'Õhk-õhk soojuspumbad – kvaliteetne küte ja jahutus | Küttesepp'"
     :metaDescription="'Õhk-õhk soojuspumbad - Soodsaim valik kütmiseks ja jahutamiseks.'"
     :metaKeywords="'õhk-õhk soojuspumbad, soojuspump, kütmine, jahutamine, energiasääst'"
     :metaAuthor="'Tanel Sepp'"
@@ -18,7 +18,7 @@
     imageAlt="Õhksoojuspumbad taust"
     :textholderStyle="''"
 />
-<x-tootesektsioonid.ohk-ohk-tootesektsioon :products="$products" :brands="$brands"/>
+<x-tootesektsioonid.soojuspumbad-tootesektsioon :products="$products" :brands="$brands"  :typeSlug="$typeSlug"/>
  <x-up-scroller/>
  <x-cookies/> 
 

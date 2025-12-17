@@ -51,7 +51,7 @@
 
     @vite($viteCssAssets ?? 'resources/css/app.css')
     @vite($viteJsAssets ?? ['resources/js/app.js'])
-
+    <script defer  src="https://www.youtube.com/iframe_api"></script>
 
     {{-- <script src="https://www.google.com/recaptcha/api.js" async defer></script> --}}
 

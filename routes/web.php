@@ -26,42 +26,48 @@ Route::controller(Cachecontroller::class)->group(function () {
 
 
 
+
 Route::controller(PageController::class)->group(function () {
-    
+
+    // Avaleht
     Route::get('/', 'index')->name('index');
 
+    // Teenused / infod
     Route::get('/soojuspumpade-paigaldus', 'soojuspumpadePaigaldus')->name('soojuspumpade-paigaldus');
-
-     Route::get('/kuttesusteemi-vesi', 'kuttesusteemiVesi')->name('kuttesusteemi-vesi');
-    
-    
-    Route::get('/poranda-ja-radiaatorkute.', 'porandaJaRadiaatorkute')->name('poranda-ja-radiaatorkute');
-
-
+    Route::get('/kuttesusteemi-vesi', 'kuttesusteemiVesi')->name('kuttesusteemi-vesi');
+    Route::get('/poranda-ja-radiaatorkute', 'porandaJaRadiaatorkute')->name('poranda-ja-radiaatorkute');
     Route::get('/kutteautomaatika', 'milleksKutteautomaatika')->name('milleks-kutteautomaatika');
-    
 
+    // ===== SOOJUSPUMBAD (UNIVERSAALNE) =====
+    Route::get('/soojuspumbad', 'soojuspumbadIndex')
+    ->name('soojuspumbad.index');
 
-    Route::get('/ohksoojuspumbad', 'ohkSoojuspumbad')->name('ohksoojuspumbad.index');
-    Route::get('/ohksoojuspumbad/{brandname}', 'showBrandPage')->name('ohk_ohk_soojuspumbad.brand');
+    // Näited:
+    // /soojuspumbad/ohk_ohk_soojuspumbad
+    // /soojuspumbad/ohk_vesi_soojuspumbad?brand=samsung
+    // /soojuspumbad/maasoojuspumbad
+    Route::get('/soojuspumbad/{type}', 'soojuspumbad')
+        ->name('soojuspumbad.type');
 
-    
-    Route::get('/ohk-vesi-soojuspumbad', 'ohkVesiSoojuspumbad')->name('ohk-vesi-soojuspumbad.index');
-    Route::get('/ohk-vesi-soojuspumbad/{brandname}', 'showOhkVesiBrandPage')->name('ohk_vesi_soojuspumbad.brand');
+    // ===== BRÄNDILEHT (ÜKS KÕIGILE) =====
+    // Näited:
+    // /tootja/samsung
+    // /tootja/bosch?type=maasoojuspumbad
+    Route::get('/tootja/{brand:slug}', 'brandPage')
+        ->name('brand.page');
 
-    Route::get('/maasoojuspumbad', 'maasoojuspumbad')->name('maasoojuspumbad.index');
-    Route::get('/maasoojuspumbad/{brandname}', 'showMaasoojusBrandPage')->name('maasoojuspumbad.brand');
-  
-    
-    
-    Route::get('/pelletikatlad-kaminad', 'pelletikatladJaKaminad')->name('pelletikatladJaKaminad.index');
-   
-    Route::get('/keskkyttepliidid-kaminad', 'keskkyttepliididJaKaminad')->name('keskkyttepliididJaKaminad.index');
+    // ===== TAHKEKÜTTESEADMED =====
+    Route::get('/tahkekutteseadmed', 'tahkekutteseadmed')
+        ->name('tahkekutteseadmed.index');
 
-     
-    
-    
-    Route::get('/kuttesusteemide-hooldus', 'kuttesusteemiHooldus')
+    Route::get('/pelletikatlad-kaminad', 'pelletikatladJaKaminad')
+        ->name('pelletikatladJaKaminad.index');
+
+    Route::get('/keskkuttepliidid-kaminad', 'keskkuttepliididJaKaminad')
+        ->name('keskkuttepliididJaKaminad.index');
+
+    // ===== HOOLDUS JA VESI =====
+    Route::get('/kuttesusteemide-hooldus', 'kuttesusteemideHooldus')
         ->name('kuttesusteemide-hooldus');
 
     Route::get('/kuttesusteemi-labipesu', 'kuttesusteemiPesu')
@@ -72,8 +78,6 @@ Route::controller(PageController::class)->group(function () {
 
     Route::get('/kuttevee-inhibiitorid', 'inhibiitorid')
         ->name('kuttevee-inhibiitorid');
-  
-
 });
 
 

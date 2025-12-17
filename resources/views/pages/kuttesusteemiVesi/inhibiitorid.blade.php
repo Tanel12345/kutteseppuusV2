@@ -141,7 +141,7 @@
                         </h3>
                         <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" class="faq-answer">
                             <p itemprop="text">
-                                Jah. Kasutatav inhibiitor ei sisalda nitriteid ega muid keskkonnaohtlikke aineid. Kõik koostisosad on
+                                Jah. Küttesepa kasutatav inhibiitor ei sisalda nitriteid ega muid keskkonnaohtlikke aineid. Kõik koostisosad on
                                 biolagunevad ja ohutud nii keskkonnale kui ka kasutajale.
                             </p>
                         </div>
@@ -177,7 +177,7 @@
                         </h3>
                         <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" class="faq-answer">
                             <p itemprop="text">
-                                Üldjuhul pole vaja neid kombineerida, kuid see on võimalik. Näiteks suurtes või keerulistes süsteemides
+                                Kuigi küttevee demineraliseerimise käigus lisatakse ph stabiliseerijat ei ole tegemist mitte inhibiitoriga vaid vee omaduste reguleerijaga. Inhibiitor, olgu ta moübdaadi, silikaadi või orgaanika baasil, moodustab aktiivse korrosioonivastase kaitsekile metalli pinnale, mis muudab toru sisepinna keemiliselt passiivsemaks. <br><br>Üldjuhul pole vaja neid kombineerida, kuid see on võimalik. Näiteks suurtes või keerulistes süsteemides
                                 võib väike kogus inhibiitorit anda täiendava kaitse.
                             </p>
                         </div>

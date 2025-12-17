@@ -1,0 +1,80 @@
+/* VIDEOSECTION – emadiv */
+.videosection {
+  position: relative;
+  width: 100%;
+  padding: 80px 0;
+  overflow: hidden;
+  background: #ffffff;
+  border-top: 1px solid #ff0100;
+  border-bottom: 1px solid #ff0100;
+}
+
+/* Wrapper – SIIN ON TÕDE */
+.video-slider-wrapper {
+    padding: 25px;
+  max-width: 1500px;
+  margin: 0 auto;
+  overflow: hidden;
+
+  /* DEFAULT = DESKTOP */
+  --visible-slides: 3;
+  --gap: 20px;
+}
+
+/* Slider */
+.video-slider {
+  display: flex;
+  gap: var(--gap);
+  transform: translateX(0);
+  transition: transform 0.45s ease;
+  will-change: transform;
+}
+
+/* Slide laius */
+.video-slide {
+  flex: 0 0 calc(
+    (100% - (var(--visible-slides) - 1) * var(--gap))
+    / var(--visible-slides)
+  );
+  max-width: 100%; /* ⬅️ kaitse */
+}
+
+.video-slide iframe {
+  width: 100%;
+  height: 280px;
+  border-radius: 12px;
+}
+
+/* Noolte asukoht */
+.videosection .carousel-button-back,
+.videosection .carousel-button-next {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* ---------- RESPONSIVE (JÄRJEKORD OLULINE!) ---------- */
+
+/* Tablet */
+@media (max-width: 1200px) {
+  .video-slider-wrapper {
+    --visible-slides: 2;
+  }
+}
+
+
+
+/* Väga kitsas – nooled alla */
+@media (max-width: 768px) {
+  .videosection .carousel-button-back,
+  .videosection .carousel-button-next {
+    top: 85%;
+    
+  }
+   .video-slider-wrapper {
+    --visible-slides: 1;
+  }
+
+  .video-slide iframe {
+    height: 220px;
+  }
+}

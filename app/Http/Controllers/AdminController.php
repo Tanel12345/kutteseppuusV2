@@ -37,15 +37,15 @@ class AdminController extends Controller
     public function storeProduct(Request $request)
     {
         // Validate the incoming request
-        $request->validate([
-            'brandname' => 'required|in:ES,Bosch,Midea,Mitsubishi Electric,Alpha-innotec,Muubrandname,Samsung',
-            'product_type' => 'required|in:ohk_ohk_soojuspumbad,ohk_vesi_soojuspumbad,Maasoojuspumbad,Katlad,Keskküttepliidid,Pelletikaminad',
-            'name' => 'required|string|max:255',
-            'description' => 'nullable|string',
-            'power' => 'nullable|string|max:255',
-            'product_img' => 'nullable|mimes:jpeg,png,jpg,gif,svg,webp,avif|max:10048',
-            'brand_img' => 'nullable|mimes:jpeg,png,jpg,gif,svg,webp,avif|max:10048',
-        ]);
+       $request->validate([
+    'brandname' => 'required|string|max:255',
+    'product_type' => 'required|string|max:255',
+    'name' => 'required|string|max:255',
+    'description' => 'nullable|string',
+    'power' => 'nullable|string|max:255',
+    'product_img' => 'nullable|mimes:jpeg,png,jpg,gif,svg,webp,avif|max:10048',
+    'brand_img' => 'nullable|mimes:jpeg,png,jpg,gif,svg,webp,avif|max:10048',
+]);
 
         $productImgPath = null;
         // Handle product image upload and resizing

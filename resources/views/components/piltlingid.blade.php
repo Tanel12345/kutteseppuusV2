@@ -1,69 +1,80 @@
- <!-- Pildilingisektsioon -->
- <section class="piltlingid" id="piltlingid" >
+<section class="piltlingid" id="piltlingid">
     <div class="piltlingidiv">
-        <!-- Pildid -->
-        
-        <div class="piltlink"> 
-            <a href="{{ route('ohksoojuspumbad.index') }}" title="ÕHK-õhk soojuspumbad">
+
+        {{-- ÕHK–ÕHK --}}
+        <div class="piltlink">
+            <a href="{{ route('soojuspumbad.type', 'ohk-ohk-soojuspumbad') }}" title="Õhk-õhk soojuspumbad">
                 <div class="piltlingipilt">
-                <img src="" data-src="{{ Vite::asset('resources/images/vaikesed/bosch/Bosch.webp') }}" alt="ÕHK-õhk soojuspumbad" title="ÕHK-õhk soojuspumbad" />
+                    <img data-src="{{ Vite::asset('resources/images/vaikesed/bosch/Bosch.webp') }}"
+                        alt="Õhk-õhk soojuspumbad" />
                 </div>
+
                 <div class="piltlingitekst">
                     <img src="{{ Vite::asset('resources/images/icons/küttesepp.png') }}" alt="Küttesepp" />
-                    <h2><a href="{{ route('ohksoojuspumbad.index') }}" title="ÕHK-õhk soojuspumbad">ÕHK-õhk soojuspumbad</a></h2>
+                    <h2>ÕHK-õhk soojuspumbad</h2>
                 </div>
+
                 <ul class="Lisalingid">
                     <li>
-                        <a href="{{ route('ohk_ohk_soojuspumbad.brand', ['brandname' => 'bosch-ohk-ohk-soojuspumbad']) }}" title="Bosch brändileht">
+                        <a href="{{ route('brand.page', 'bosch') }}?type=ohk-ohk-soojuspumbad">
                             <img src="{{ Vite::asset('resources/images/vaikesed/bosch/Bosch.png') }}" alt="Bosch" />
                             Bosch
                         </a>
                     </li>
                     <li>
-                        <a href="{{ route('ohk_ohk_soojuspumbad.brand', ['brandname' => 'midea-ohk-ohk-soojuspumbad']) }}" title="Midea brändileht">
+                        <a href="{{ route('brand.page', 'midea') }}?type=ohk-ohk-soojuspumbad">
                             <img src="{{ Vite::asset('resources/images/vaikesed/midea/MIDEA.avif') }}" alt="Midea" />
                             Midea
                         </a>
                     </li>
                     <li>
-                        <a href="{{ route('ohk_ohk_soojuspumbad.brand', ['brandname' => 'samsung-ohk-ohk-soojuspumbad']) }}" title="Samsung brändileht">
-                            <img src="{{ Vite::asset('resources/images/vaikesed/samsung/samsunglogo.png') }}" alt="Samsung soojuspumbad" />
+                        <a href="{{ route('brand.page', 'samsung') }}?type=ohk-ohk-soojuspumbad">
+                            <img src="{{ Vite::asset('resources/images/vaikesed/samsung/samsunglogo.png') }}"
+                                alt="Samsung" />
                             Samsung
                         </a>
                     </li>
                 </ul>
             </a>
         </div>
-        <div class="piltlink"> 
-            <a href="{{ route('ohk-vesi-soojuspumbad.index') }}" title="ÕHK-vesi soojuspumbad">
+
+        {{-- ÕHK–VESI --}}
+        <div class="piltlink">
+            <a href="{{ route('soojuspumbad.type', 'ohk-vesi-soojuspumbad') }}" title="Õhk-vesi soojuspumbad">
                 <div class="piltlingipilt">
-                <img src="" data-src="{{ Vite::asset('resources/images/vaikesed/es/Es_soojuspump_vaike.webp') }}" alt="ÕHK-vesi soojuspumbad" title="ÕHK-vesi soojuspumbad" />
+                    <img data-src="{{ Vite::asset('resources/images/vaikesed/es/Es_soojuspump_vaike.webp') }}"
+                        alt="Õhk-vesi soojuspumbad" />
                 </div>
+
                 <div class="piltlingitekst">
                     <img src="{{ Vite::asset('resources/images/icons/küttesepp.png') }}" alt="Küttesepp" />
-                    <h2><a href="{{ route('ohk-vesi-soojuspumbad.index') }}" title="ÕHK-vesi soojuspumbad">ÕHK-vesi soojuspumbad</a></h2>
+                    <h2>ÕHK-vesi soojuspumbad</h2>
                 </div>
+
                 <ul class="Lisalingid">
                     <li>
-                        <a href="{{ route('ohk_vesi_soojuspumbad.brand', ['brandname' => 'es-ohk-vesi-soojuspumbad']) }}" title="ES brändileht">
-                            <img src="{{ Vite::asset('resources/images/vaikesed/es/Energy Save logo.jpg') }}" alt="Energy Save" />
+                        <a href="{{ route('brand.page', 'energy-save') }}?type=ohk-vesi-soojuspumbad">
+                            <img src="{{ Vite::asset('resources/images/vaikesed/es/Energy Save logo.jpg') }}"
+                                alt="Energy Save" />
                             Energy Save
                         </a>
                     </li>
                     <li>
-                        <a href="{{ route('ohk_vesi_soojuspumbad.brand', ['brandname' => 'alpha-innotec-ohk-vesi-soojuspumbad']) }}" title="Alpha-InnoTec brändileht">
-                            <img src="{{ Vite::asset('resources/images/vaikesed/alpha/alpha.png') }}" alt="Alpha Innotec" />
+                        <a href="{{ route('brand.page', 'alpha-innotec') }}?type=ohk-vesi-soojuspumbad">
+                            <img src="{{ Vite::asset('resources/images/vaikesed/alpha/alpha.png') }}"
+                                alt="Alpha Innotec" />
                             Alpha-InnoTec
                         </a>
                     </li>
                     <li>
-                        <a href="{{ route('ohk_vesi_soojuspumbad.brand', ['brandname' => 'samsung-ohk-vesi-soojuspumbad']) }}" title="Samsung brändileht">
-                            <img src="{{ Vite::asset('resources/images/vaikesed/samsung/samsunglogo.png') }}" alt="Samsung" />
+                        <a href="{{ route('brand.page', 'samsung') }}?type=ohk-vesi-soojuspumbad">
+                            <img src="{{ Vite::asset('resources/images/vaikesed/samsung/samsunglogo.png') }}"
+                                alt="Samsung" />
                             Samsung
                         </a>
                     </li>
                     <li>
-                        <a href="{{ route('ohk_vesi_soojuspumbad.brand', ['brandname' => 'bosch-ohk-vesi-soojuspumbad']) }}" title="Bosch brändileht">
+                        <a href="{{ route('brand.page', 'bosch') }}?type=ohk-vesi-soojuspumbad">
                             <img src="{{ Vite::asset('resources/images/vaikesed/bosch/Bosch.png') }}" alt="Bosch" />
                             Bosch
                         </a>
@@ -72,68 +83,73 @@
             </a>
         </div>
 
-        <div class="piltlink"> 
-            <a href="{{ route('maasoojuspumbad.index') }}" title="Maasoojuspumbad">
-                <div class="piltlingipilt">
-                <img src="" data-src="{{ Vite::asset('resources/images/vaikesed/alpha/alpha2.webp') }}" alt="Maasoojuspumbad" title="Maasoojuspumbad" />
-                </div>
-                <div class="piltlingitekst">
-                    <img src="{{ Vite::asset('resources/images/icons/küttesepp.png') }}" alt="Küttesepp" />
-                    <h2><a href="{{ route('maasoojuspumbad.index') }}" title="Maasoojuspumbad">Maasoojuspumbad</a></h2>
-                </div>
-                <ul class="Lisalingid">
-                    <li>
-                        <a href="{{ route('maasoojuspumbad.brand', ['brandname' => 'alpha-innotec-maasoojuspumbad']) }}" title="Alpha-InnoTec">
-                            <img src="{{ Vite::asset('resources/images/vaikesed/alpha/alpha.png') }}" alt="Alpha Innotec" />
-                            Alpha-InnoTec
-                        </a>
-                    </li>
-                    <li>
-                        <a href="{{ route('maasoojuspumbad.brand', ['brandname' => 'bosch-maasoojuspumbad']) }}" title="Bosch">
-                            <img src="{{ Vite::asset('resources/images/vaikesed/bosch/Bosch.png') }}" alt="Bosch" />
-                            Bosch
-                        </a>
-                    </li>
-                </ul>
-            </a>
+        {{-- MAASOOJUS --}}
+        <div class="piltlink">
+            <div class="piltlink-inner">
+                <a href="{{ route('soojuspumbad.type', 'maasoojuspumbad') }}" title="Maasoojuspumbad">
+                    <div class="piltlingipilt">
+                        <img data-src="{{ Vite::asset('resources/images/vaikesed/alpha/alpha2.webp') }}"
+                            alt="Maasoojuspumbad" />
+                    </div>
+
+                    <div class="piltlingitekst">
+                        <img src="{{ Vite::asset('resources/images/icons/küttesepp.png') }}" alt="Küttesepp" />
+                        <h2>Maasoojuspumbad</h2>
+                    </div>
+
+                    <ul class="Lisalingid">
+                        <li>
+                            <a href="{{ route('brand.page', 'alpha-innotec') }}?type=maasoojuspumbad">
+                                <img src="{{ Vite::asset('resources/images/vaikesed/alpha/alpha.png') }}"
+                                    alt="Alpha Innotec" />
+                                Alpha-InnoTec
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{{ route('brand.page', 'bosch') }}?type=maasoojuspumbad">
+                                <img src="{{ Vite::asset('resources/images/vaikesed/bosch/Bosch.png') }}"
+                                    alt="Bosch" />
+                                Bosch
+                            </a>
+                        </li>
+                    </ul>
+                </a>
+            </div>
         </div>
-        <div class="piltlink"> 
-            <a href="{{ route('index') }}" title="Keskküttekatlad">
+
+        {{-- TAHKEKÜTE --}}
+        <div class="piltlink">
+            <a href="{{ route('tahkekutteseadmed.index') }}" title="Tahkekütteseadmed">
                 <div class="piltlingipilt">
-                <img src="" data-src="{{ Vite::asset('resources/images/vaikesed/extraflame/extraflame.webp') }}" alt="Maasoojuspumbad" title="Maasoojuspumbad" />
+                    <img data-src="{{ Vite::asset('resources/images/vaikesed/extraflame/extraflame.webp') }}"
+                        alt="Tahkekütteseadmed" />
                 </div>
+
                 <div class="piltlingitekst">
                     <img src="{{ Vite::asset('resources/images/icons/küttesepp.png') }}" alt="Küttesepp" />
-                    <h2><a href="{{ route('index') }}" title="Ahjud">Tahkekütteseadmed</a></h2>
+                    <h2>Tahkekütteseadmed</h2>
                 </div>
-                <ul class="Lisalingid" style="margin-top: 25px; gap:0.8rem; font-size: 2rem;">
+
+                <ul class="Lisalingid" style="margin-top:25px; gap:0.8rem; font-size:2rem;">
                     <li>
-                        <a href="https://www.ahjumees.ee" title="Ahjumees lehele" target="_blank">
-                            <img src="{{ Vite::asset('resources/images/logod/ahjumees-logo.png') }}" alt="Küttesepp" style="width:90px;"/>
-                            Halupuu ahjud, pliidid, kaminad
-                        </a>
-                    </li>
-                    <li>
-                        <a href="{{ route('pelletikatladJaKaminad.index') }}" title="Pelletikatlad ja pelletikaminad">
-                            <img src="{{ Vite::asset('resources/images/icons/küttesepp.png') }}" alt="Küttesepp" style="width:20px;"/>
+                        <a href="{{ route('pelletikatladJaKaminad.index') }}">
                             Pelletikatlad ja -kaminad
                         </a>
                     </li>
                     <li>
-                        <a href="{{ route('keskkyttepliididJaKaminad.index') }}" title="Keskküttepliidid ja keskküttekaminad">
-                            <img src="{{ Vite::asset('resources/images/icons/küttesepp.png') }}" alt="Küttesepp" style="width:20px;"/>
+                        <a href="{{ route('keskkuttepliididJaKaminad.index') }}">
                             Keskküttepliidid ja -kaminad
                         </a>
                     </li>
-                   
                 </ul>
             </a>
         </div>
 
         <div class="kusipakkumist">
-            <a href="/#form" title="Kontakt">
+            <a href="{{ route('index') }}#form">
                 <p>KÜSI LISAINFOT</p>
             </a>
         </div>
+
     </div>
 </section>

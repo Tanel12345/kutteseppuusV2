@@ -104,7 +104,7 @@ header.animate {
   align-items: center; /* Align items vertically */
   flex-wrap: nowrap; /* Prevent line breaks within each container */
   gap: 5px; /* Add space between elements */
-  min-width: 440px;
+  min-width: 330px;
 
 }
 
@@ -141,7 +141,7 @@ header.animate {
 }
   
 .bottom-nav ul {
-  margin-right: 19px;
+  margin-right: 15px;
   margin-bottom: 10px;
 
   list-style: none;
@@ -188,7 +188,7 @@ header.animate {
   }
   100% {
     opacity: 1;
-    top: 20px; /* Final position */
+    top: 24px; /* Final position */
   }
 }
 
@@ -465,4 +465,25 @@ img.facebook:hover {
   }
 
     
+   
+  @media screen and (max-width: 447px)   {
     
+   .bottom-rightdiv {
+
+    top: 158px;
+    
+  }
+  }
+
+  
+  
+  
+  @media screen and (max-width: 400px)   {
+    
+   .bottom-rightdiv {
+
+    top: 183px;
+   
+  }
+  }
+  

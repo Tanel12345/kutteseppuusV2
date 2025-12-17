@@ -15,6 +15,7 @@
     Valikus on nii õhk-õhk kui õhk-vesi pumbad"
     image="resources/images/taustad/samsung-taust.webp"
     imageAlt="Samsung soojuspumbad - Kvaliteet ja Energiatõhusus"
+    eriStiil="object-position: center;"
     :textholderStyle="'margin:10px auto; max-width: 1000px;'"
 />
 

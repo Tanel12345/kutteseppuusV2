@@ -1,3 +1,74 @@
+// import Lenis from 'lenis';
+
+// document.addEventListener("DOMContentLoaded", () => {
+
+//     const lenis = new Lenis({
+//         duration: 1,
+//         easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+//         smooth: true,
+//         direction: 'vertical',
+//         smoothWheel: true,
+//         smoothTouch: true,
+//         touchMultiplier: 2,
+//     });
+
+//     function raf(time) {
+//         lenis.raf(time);
+//         requestAnimationFrame(raf);
+//     }
+//     requestAnimationFrame(raf);
+
+//     /* ======================
+//        ÜLDSKROLLI ABIFUNKTSIOON
+//     ====================== */
+//     function bindScroll(linkSelector, targetId, offset = -70) {
+//         const link = document.querySelector(linkSelector);
+//         if (!link) return;
+
+//         link.addEventListener('click', (e) => {
+//             e.preventDefault();
+//             const target = document.getElementById(targetId);
+//             if (!target) return;
+
+//             lenis.scrollTo(target, {
+//                 offset,
+//                 duration: 1.5,
+//                 easing: (t) => 1 - Math.pow(1 - t, 3),
+//             });
+
+//             document.querySelector('.bottom-rightdiv')?.classList.remove('showing');
+//         });
+//     }
+
+//     bindScroll('a[href="#uperid"]', 'uperid', -180);
+//     bindScroll('a[href="/#ettevottestid"]', 'ettevottestid');
+//     bindScroll('a[href="/#form"]', 'contact');
+//     bindScroll('a[href="/#piltlingid"]', 'piltlingid');
+
+//     /* ======================
+//        HASHI KÄSITLEMINE
+//     ====================== */
+//     const hashMap = {
+//         '#ettevottestid': 'ettevottestid',
+//         '#form': 'contact',
+//         '#piltlingid': 'piltlingid'
+//     };
+
+//     const hash = window.location.hash;
+//     if (hashMap[hash]) {
+//         const target = document.getElementById(hashMap[hash]);
+//         if (target) {
+//             lenis.scrollTo(target, {
+//                 offset: -70,
+//                 duration: 1.5,
+//                 easing: (t) => 1 - Math.pow(1 - t, 3),
+//             });
+//         }
+//         document.querySelector('.bottom-rightdiv')?.classList.remove('showing');
+//     }
+// });
+
+
 import Lenis from 'lenis';
 
 

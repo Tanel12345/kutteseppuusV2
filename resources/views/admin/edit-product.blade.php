@@ -43,6 +43,8 @@
                 <option value="Mitsubishi Electric" {{ old('brandname', $product->brandname ?? '') == 'Mitsubishi Electric' ? 'selected' : '' }}>Mitsubishi Electric</option>
                 <option value="Alpha-innotec" {{ old('brandname', $product->brandname ?? '') == 'Alpha-innotec' ? 'selected' : '' }}>Alpha-innotec</option>
                 <option value="Samsung" {{ old('brandname') == 'Samsung' ? 'selected' : '' }}>Samsung</option>
+                 <option value="Alfa-plam" {{ old('brandname', $product->brandname ?? '') == 'Alfa-plam' ? 'selected' : '' }}>Alfa-plam</option>
+                 <option value="Nordica" {{ old('brandname', $product->brandname ?? '') == 'Nordica' ? 'selected' : '' }}>Nordica</option>
                 <option value="Muubrandname" {{ old('brandname', $product->brandname ?? '') == 'Muubrandname' ? 'selected' : '' }}>Muubrandname</option>
             </select>
         </div>
@@ -53,9 +55,9 @@
                 <option value="ohk_ohk_soojuspumbad" {{ old('product_type', $product->product_type ?? '') == 'ohk_ohk_soojuspumbad' ? 'selected' : '' }}>OHK Soojuspumbad</option>
                 <option value="ohk_vesi_soojuspumbad" {{ old('product_type', $product->product_type ?? '') == 'ohk_vesi_soojuspumbad' ? 'selected' : '' }}>OHK Vesi Soojuspumbad</option>
                 <option value="Maasoojuspumbad" {{ old('product_type', $product->product_type ?? '') == 'Maasoojuspumbad' ? 'selected' : '' }}>Maasoojuspumbad</option>
-                <option value="Katlad" {{ old('product_type', $product->product_type ?? '') == 'Katlad' ? 'selected' : '' }}>Katlad</option>
-                <option value="Keskküttepliidid" {{ old('product_type', $product->product_type ?? '') == 'Keskküttepliidid' ? 'selected' : '' }}>Keskküttepliidid</option>
-                <option value="Pelletikaminad" {{ old('product_type', $product->product_type ?? '') == 'Pelletikaminad' ? 'selected' : '' }}>Pelletikaminad</option>
+                <option value="Pelletikatlad_kaminad" {{ old('product_type', $product->product_type ?? '') == 'Pelletikatlad_kaminad' ? 'selected' : '' }}>pelletikatlad_kaminad</option>
+                <option value="Keskkuttepliidid_ja_kaminad" {{ old('product_type', $product->product_type ?? '') == 'Keskkuttepliidid_ja_kaminad' ? 'selected' : '' }}>Keskkuttepliidid_ja_kaminad</option>
+                
             </select>
         </div>
 

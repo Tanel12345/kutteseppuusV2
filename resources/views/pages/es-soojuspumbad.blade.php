@@ -17,6 +17,7 @@ ES Energy Save Holding AB (publ) tegutseb oma tütarettevõtete ES Systems, ES H
 Alates 2007. aastast on Energy Save Nordic AB ja Energy Save AS turustanud oma tooteid ES kaubamärgi all."
 image="resources/images/taustad/es-taust.webp"
 imageAlt="ES - Energy Save Õhksoojuspumbad - Kvaliteet ja Energiatõhusus"
+eriStiil="object-position: center;"
 :textholderStyle="'margin:10px auto; max-width: 1000px;'"
 />
 <x-teenused-components.teenused-es/>
