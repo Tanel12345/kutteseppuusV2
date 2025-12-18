@@ -301,11 +301,12 @@ overflow: hidden; /* Clips any overflow */
   text-align: center;
 }
 .heading h1 {
-  font-weight: 900;
+  font-size: 40px;
+  font-weight: 700;
   display: inline-block;
-  letter-spacing: 3px;
+  letter-spacing: 1px;
   text-align: center;
-  line-height: 65px;
+  line-height: 39px;
   padding: 12px 24px;
   opacity: 1;
   background-color: #ffffff42;
@@ -313,13 +314,14 @@ overflow: hidden; /* Clips any overflow */
   transform: scale(0);
   animation: h1slide 1s ease-in-out 0.5s forwards;
 }
+h1 span{font-size: 30px; font-weight:300; margin-top:0;}
 .heading h2 {
-  font-weight: 900;
+  font-weight: 300;
   display: inline-block;
-  font-size: 30px;
+  font-size: 25px;
   padding: 12px 24px;
-  font-weight: 500;
-  letter-spacing: 3px;
+  font-weight: 400;
+
   background-color: #ffffff42;
   border-bottom-right-radius: 15px;
   border-bottom-left-radius: 15px;
@@ -328,12 +330,11 @@ overflow: hidden; /* Clips any overflow */
 }
 .heading h3 {
   display: inline-block;
-  font-weight: 900;
-  font-size: 1.5em;
+  font-weight: 700;
+  font-size: 1.3em;
   opacity: 1;
   position: absolute;
-  letter-spacing: 3px;
-  line-height: 50px;
+  line-height: 39px;
   text-align: center;
   line-height: 50px;
   padding: 12px 24px;
@@ -413,7 +414,7 @@ max-width: 500px; /* Set a reasonable maximum width */
     padding: 50px 20px;
 
     }
-    
+     h1 span{font-size: 18px;}
      .heading h1{font-size: 25px; 
       line-height: 30px;
      }
@@ -422,7 +423,7 @@ max-width: 500px; /* Set a reasonable maximum width */
         padding: 10px 0px;
      }
      .heading h3{font-size: 20px; 
-      line-height: 30px;
+      line-height: 20px;
      }
 
      .carousel{height: 500px;}

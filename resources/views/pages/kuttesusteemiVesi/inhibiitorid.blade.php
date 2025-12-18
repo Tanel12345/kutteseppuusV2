@@ -1,7 +1,13 @@
 <x-layout 
-    :title="'Küttevee inhibiitorid – korrosiooni ja katlakivi ennetamine | Küttesepp'" 
-    :metaDescription="'Küttevee inhibiitorid kaitsevad küttesüsteemi metallosi korrosiooni eest ja aitavad vähendada katlakivi teket. Küttesepp kasutab keskkonnasõbralikke inhibiitoreid ilma nitrititeta.'" 
-    :metaKeywords="'küttevee inhibiitorid, küttesüsteemi hooldus, korrosioonikaitse, keskkonnasõbralik küttevesi, küttesüsteemi kaitse, küttevee töötlus, inhibiitorilahus'" 
+    :title="'Küttevee inhibiitorid – korrosiooni ja katlakivi ennetamine küttesüsteemis | Küttesepp'" 
+    :metaDescription="'Küttevee inhibiitorid kaitsevad küttesüsteemi metallosi korrosiooni eest ja vähendavad katlakivi teket. Küttesepp kasutab keskkonnasõbralikke, nitrititeta inhibiitoreid ja tagab õige kontsentratsiooni.'" 
+    :metaKeywords="'küttevee inhibiitorid,
+inhibiitor küttesüsteemile,
+korrosioonikaitse,
+katlakivi ennetamine,
+küttesüsteemi hooldus,
+küttevee töötlus,
+keskkonnasõbralik inhibiitor'" 
     :metaAuthor="'Tanel Sepp'" 
     :robots="'index, follow'" 
     :viteCssAssets="[
@@ -70,7 +76,7 @@
                 <h3>Miks kasutada inhibiitoreid?</h3>
 
                 <p>
-                    Inhibiitorid sobivad ka nendesse süsteemidesse, mida ei ole võimalik täielikult demineraliseerida või välja pesta.
+                    Inhibiitorid sobivad ka nendesse süsteemidesse, mida ei ole võimalik täielikult demineraliseerida või välja pesta. (<a href="/kuttevee-demineraliseerimine">küttevee demineraliseerimine</a>).
                     Need toimivad ka siis, kui vesi sisaldab mineraale või süsteemis on segamaterjalid (teras, vask, alumiinium).
                 </p>
 

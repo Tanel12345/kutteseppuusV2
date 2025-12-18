@@ -2,15 +2,15 @@
    <div class="carousel">
        
       <div class="taustadiv">
-           <img class="taust" src="{{ Vite::asset('resources/images/pilved.webp') }}" alt="Clouds"> </img>
+           <img class="taust" src="{{ Vite::asset('resources/images/pilved.webp') }}" alt="Soojuspumpade ja küttesüsteemide paigaldus – Küttesepp"> </img>
        </div>
        
        
        <div class="heading">
            
-           <h1>Sinu küttemurede lahendaja</h1>
-            <h2>Soojuspumbad ja Tahkekütteseadmed</h2>
-            <h3>Usaldusväärne teenus</h3>
+           <h1>Soojuspumbad ja küttesüsteemid <br> <span>(müük ja paigaldus)</span> </h1>
+            <h2>Õhk-õhk | õhk-vesi | maakütte soojuspumbad ning tahkekütteseadmed</h2>
+            <h3>Usaldusväärne ja professionaalne teenus</h3>
            <img src="{{ Vite::asset('resources/images/küttesepp_logo1.png') }}" class="h1logo" alt="Küttesepp" />
          </div>
 
@@ -23,21 +23,21 @@
        <div class="carouselcontainer">
             <ul class="carousel-ul active">
                <li class="carousel-li">
-                   <img src="{{ Vite::asset('resources/images/taustad/Es_soojuspump5.webp') }}" alt="Õhk-vesi soojuspump - ES" class="carousel-img" title="Es_soojuspump" />
+                   <img src="{{ Vite::asset('resources/images/taustad/Es_soojuspump5.webp') }}" alt="Õhk-vesi soojuspump eramajale – Küttesepp paigaldus" class="carousel-img" title="Es õhk-vesi soojuspump" />
                </li>
               
            </ul>
            <!-- Slaid2 -->
             <ul class="carousel-ul">
                 <li class="carousel-li">
-                    <img  src="{{ Vite::asset('resources/images/taustad/Es_soojuspump6.webp') }}" alt="Õhk-vesi soojuspump - ES" class="carousel-img" title="Es_soojuspump" />
+                    <img  src="{{ Vite::asset('resources/images/taustad/Es_soojuspump6.webp') }}" alt="Õhk-vesi soojuspump - ES" class="carousel-img" title="Es-soojuspump" />
                 </li>
               
             </ul>
            <!-- Slaid3 -->
             <ul class="carousel-ul">
                 <li class="carousel-li">
-                    <img  src="{{ Vite::asset('resources/images/taustad/ALPHA-ohk-vesi.webp') }}" alt="Õhk-vesi soojuspump - ES" class="carousel-img" title="Es_soojuspump" />
+                    <img  src="{{ Vite::asset('resources/images/taustad/ALPHA-ohk-vesi.webp') }}" alt="Alpha Innotec õhk-vesi soojuspump küttesüsteemis" class="carousel-img" title="Alpha Innotec soojuspump" />
                 </li>
            
             </ul>
@@ -45,7 +45,7 @@
            <!-- Slaid4 -->
             <ul class="carousel-ul">
                 <li class="carousel-li">
-                    <img  src="{{ Vite::asset('resources/images/taustad/ALPHA-maasoojus.webp') }}" alt="Õhk-vesi soojuspump - ES" class="carousel-img" title="Es_soojuspump" />
+                    <img  src="{{ Vite::asset('resources/images/taustad/ALPHA-maasoojus.webp') }}" alt="Maakütte soojuspump – energiatõhus lahendus" class="carousel-img" title="Maakütte soojuspump" />
                 </li>
            
             </ul>

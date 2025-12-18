@@ -1,4 +1,11 @@
-<x-layout :title="'Küttesüsteemide hooldus – soojuspumbad, pliidid, kaminad ja pelletiseadmed | Küttesepp'" :metaDescription="'Küttesepp OÜ teostab küttesüsteemide hooldust: õhk-õhk, õhk-vesi ja maakütte soojuspumbad, pelletikatlad, kaminad, keskkütte pliidid ja kaminad. Kontroll, puhastus ja süsteemi tööparameetrite reguleerimine. Küsi hooldust!'" :metaKeywords="'küttesüsteemide hooldus, soojuspumba hooldus, õhk-vesi hooldus, maakütte hooldus, pliidi hooldus, pelletikatla hooldus, küttesõlme kontroll, hooldusteenus, Küttesepp OÜ'" :metaAuthor="'Tanel Sepp'" :robots="'index, follow'" :viteCssAssets="[
+<x-layout :title="'Küttesüsteemide hooldus – soojuspumbad, pelletikatlad, kaminad ja pliidid | Küttesepp'" :metaDescription="'Küttesepp OÜ teostab küttesüsteemide hooldust: õhk-õhk, õhk-vesi ja maakütte soojuspumbad, pelletikatlad, kaminad, keskkütte pliidid ja kaminad. Kontroll, puhastus ja süsteemi tööparameetrite reguleerimine enne kütteperioodi või rikke ennetamiseks.'" :metaKeywords="'küttesüsteemide hooldus,
+soojuspumba hooldus,
+õhk-vesi hooldus,
+maakütte hooldus,
+pelletikatla hooldus,
+kaminahooldus,
+küttesõlme kontroll,
+küttesüsteemi hooldusteenus'" :metaAuthor="'Tanel Sepp'" :robots="'index, follow'" :viteCssAssets="[
     'resources/css/app.css',
     'resources/css/navbar.css',
     'resources/css/footer.css',
@@ -41,9 +48,7 @@
                     <br>
 
                     <p>
-                        Olgu teil soojuspump, tahke- vedelkütte või gaasikatel. Tuleb teile soe katlamajast või kütate
-                        tavalist halupuuahju. Iga küttesüsteem omab kas soojusallikat ja/või ka eriosi ja need vajavad
-                        regulaarset hooldust. Ikka selleks et tagada energiasäästlik töö, madalad küttearved ja
+                        Olgu teil soojuspump, tahkekütte-, vedelkütte- või gaasikatel. Kas tuleb soe katlamajast või kütate tavalist halupuuahju – Iga küttesüsteem omab kas soojusallikat ja/või ka eriosi ja need vajavad regulaarset hooldust ja vajadusel <a href="/kuttesusteemi-labipesu">küttesüsteemi läbipesu</a> ning <a href="/kuttesusteemi-vesi">küttevee töötlust</a>. Ikka selleks et tagada energiasäästlik töö, madalad küttearved ja
                         seadmete, eriosade, pikk eluiga.
                         Aastatega kuluvad süsteemi liikuvad osad, mudapüünistesse kogunevad setted, kusagilt võib hakata
                         tilkuma, rõhud muutuvad ning automaatika vajab ülevaatust.

@@ -1,4 +1,11 @@
-<x-layout :title="'Küttesüsteemi läbipesu – õhu-, vee- ja keemiaga puhastus | Küttesepp'" :metaDescription="'Küttesüsteemi läbipesu eemaldab rooste, muda, magnetiidi ja katlakivi setted. Pakume õhu ja vee loputust, happelist puhastust ning aluselise keemiaga süsteemipesu. Küttesepp OÜ – professionaalne süsteemide taastamine ja hooldus.'" :metaKeywords="'küttesüsteemi läbipesu, küttesüsteemi puhastus, torustiku pesu, happeline süsteemipesu, aluselise keemiaga puhastus, õhu ja vee loputus, katlakivi eemaldus, küttesüsteemi hooldus, Küttesepp OÜ'" :metaAuthor="'Tanel Sepp'" :robots="'index, follow'" :viteCssAssets="[
+<x-layout :title="'Küttesüsteemi läbipesu – õhu-, vee- ja keemiaga puhastus küttesüsteemidele | Küttesepp'" :metaDescription="'Küttesüsteemi läbipesu eemaldab rooste, muda, magnetiidi ja katlakivi setted. Pakume õhu ja vee loputust, happelist puhastust ning aluselise keemiaga süsteemipesu. Küttesepp OÜ – professionaalne süsteemide taastamine ja hooldus enne uue küttesüsteemi täitmist või renoveerimist.'" :metaKeywords="'küttesüsteemi läbipesu,
+küttesüsteemi puhastus,
+torustiku pesu,
+happeline süsteemipesu,
+aluselise keemiaga pesu,
+powerflush küttesüsteem,
+magnetiidi eemaldus,
+katlakivi eemaldus'" :metaAuthor="'Tanel Sepp'" :robots="'index, follow'" :viteCssAssets="[
     'resources/css/app.css',
     'resources/css/navbar.css',
     'resources/css/footer.css',
@@ -40,7 +47,7 @@
                     <h2><span>Küttesüsteemi läbipesu</span> – süsteemi taastamine ja puhastus</h2>
                     <br>
 
-                    <p>
+                    <p> Küttesüsteemi läbipesu on eriti oluline enne soojuspumba, kondensatsioonikatla või uue ringluspumba paigaldust, et vältida soojusvahetite ummistumist ja garantiiprobleeme.<br><br>
                         Aastatega koguneb küttesüsteemi torustikku muda, rooste, magnetiit, katlakivi ning muud jäägid,
                         mis
                         vähendavad küttesüsteemi efektiivsust ja võivad põhjustada ringluspumba, soojusvaheti või

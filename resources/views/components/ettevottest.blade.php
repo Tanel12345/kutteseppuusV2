@@ -6,21 +6,24 @@
            Aitan sul leida tervikliku küttelahenduse vastavalt soovidele ja võimalustele.<br> Kui vajad nõu küttesüsteemi valikut tehes, seadmete paigalduse ning süsteemi ehituseni välja, siis oled õiges kohas.</p><br>
         
         <h3>Meie pakutavad kütteseadmed:</h3>
-        <ul>
-            <li><strong>Soojuspumbad:</strong> 
-                <a href="/soojuspumbad/ohk-ohk">Õhk-õhk</a>, 
-                <a href="/soojuspumbad/ohk-vesi">Õhk-vesi</a>, 
-                <a href="/soojuspumbad/maasoojus">Maasoojus</a>
-            </li>
-            <li><strong>Keskkütteseadmed:</strong> 
-                <a href="/keskkutteseadmed/puugaasikatlad">Puugaasikatlad</a>, 
-                <a href="/keskkutteseadmed/pelletikatlad">Pelletikatlad</a>, 
-                <a href="/keskkutteseadmed/kombikatlad">Kombikatlad</a>, 
-                <a href="/keskkutteseadmed/keskkuttepliidid">Keskküttepliidid</a>, 
-                <a href="/keskkutteseadmed/pelletikaminad">Pelletikaminad</a>, 
-                <a href="/keskkutteseadmed/keskkuttekaminad">Keskküttekaminad</a>
-            </li>
-        </ul><br>
+
+<ul>
+    <li>
+        <strong>Soojuspumbad:</strong>
+        <a href="{{ route('soojuspumbad.type', 'ohk-ohk-soojuspumbad') }}">Õhk-õhk</a>,
+        <a href="{{ route('soojuspumbad.type', 'ohk-vesi-soojuspumbad') }}">Õhk-vesi</a>,
+        <a href="{{ route('soojuspumbad.type', 'maasoojuspumbad') }}">Maaküte</a>
+    </li>
+
+    <li>
+        <strong>Tahkekütteseadmed:</strong>
+        <a href="{{ route('pelletikatladJaKaminad.index') }}">Pelletikatlad ja kaminad</a>,
+        <a href="{{ route('keskkuttepliididJaKaminad.index') }}">Keskküttepliidid ja kaminad</a>
+        
+    </li>
+</ul>
+
+<br>
         
         <h3>Miks valida Küttesepp?</h3>
         <p>Küttesepp on mikroettevõte kus meister Tanel on valdkonnas tegev, tahkeküttesüsteemide planeerimisel ja ehitusel, juba aastast 2003.<br> Kui otsite usaldusväärset tegijat kes individuaalselt täidab tellimusi, liikudes edasi siis kui eelmine on lõpetatud. Äriliselt ebaefektiivne kuid praktiliselt riskivaba mudel nii telliale kui töövõtjale.<br> Küttesepa eesmärk on tagada optimaalne ja rahuldav lõpplahendus.</p><br>

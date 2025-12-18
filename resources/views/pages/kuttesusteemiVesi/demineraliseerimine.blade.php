@@ -1,8 +1,15 @@
 
    <x-layout 
-    :title="'Küttevee demineraliseerimine – miks ja millal seda kasutada | Küttesepp'" 
-    :metaDescription="'Demineraliseeritud küttevesi vastab VDI 2035 nõuetele ning kaitseb küttesüsteemi katlakivi ja korrosiooni eest. Küttesepp selgitab, millal ja miks see on vajalik.'" 
-    :metaKeywords="'demineraliseeritud küttevesi, VDI 2035, küttesüsteemi vesi, katlakivi vältimine, korrosioonikaitse, soojuspumba hooldus, küttesüsteemi täitmine'" 
+    :title="'Küttevee demineraliseerimine – miks ja millal seda kasutada küttesüsteemis | Küttesepp'" 
+    :metaDescription="'Demineraliseeritud küttevesi vastab VDI 2035 nõuetele ning kaitseb küttesüsteemi katlakivi ja korrosiooni eest. Küttesepp selgitab, millal see on vajalik ja kuidas seda õigesti teha.'" 
+    :metaKeywords="'küttevee demineraliseerimine,
+demineraliseeritud küttevesi,
+VDI 2035,
+küttesüsteemi vesi,
+katlakivi vältimine,
+korrosioonikaitse,
+küttesüsteemi täitmine,
+soojuspumba hooldus'" 
     :metaAuthor="'Tanel Sepp'" 
     :robots="'index, follow'" 
     :viteCssAssets="[
@@ -55,7 +62,7 @@
                 <p>
                     Kui küttekontuur täidetakse demineraliseeritud ja aluselise veega, väheneb oluliselt hooldusvajadus, süsteemi efektiivsus püsib kõrge ning soojusvahetid ja pumbad töötavad optimaalselt aastaid.
                     See on eelkõige soovitatav uutele või ka renoveeritud süsteemidele. <br>
-                    <strong>Küttesepp OÜ teostab alati ennem küttevee töötlemist  <a  style="font-size:18px" href="/kuttesusteemi-labipesu">küttesüsteemi läbipesu.</a> Olenevalt vajadusest kas keemiaga või ilma.</strong>
+                    <strong>Küttesepp OÜ teostab alati ennem küttevee töötlemist  <a href="/kuttesusteemi-labipesu">küttesüsteemi läbipesu enne demineraliseerimist.</a> Olenevalt vajadusest kas keemiaga või ilma.</strong>
                 </p>
 
                 <div class="pildidiv">
