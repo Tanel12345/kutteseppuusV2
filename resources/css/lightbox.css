@@ -1,0 +1,160 @@
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99999; /* kõrgem kui navbar */
+}
+
+.lightbox.hidden {
+  display: none;
+}
+.lightbox-inner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
+.lightbox-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 50px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.lightbox-nav.prev { left: 25px; }
+.lightbox-nav.next { right: 25px; }
+
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.925);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99999999;
+}
+
+#lightboxImage {
+  max-width: 90vw;
+  max-height: 90vh;
+  border: 2px solid #b00000;
+  border-radius: 16px;
+}
+
+.lightbox.hidden {
+  display: none;
+}
+
+.lightbox .x {
+  position: absolute;
+  top: -14px;
+  right: -14px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  padding: 6px;
+  z-index: 10;
+}
+.lightbox .x {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.lightbox .x:hover {
+  background-color: #ff989852;
+  border-radius: 10px;
+}
+.lightbox button:hover {
+  background-color: #ff989852;
+  border-radius: 10px;
+}
+.carousel-button-back {
+  position: fixed;
+  top: 50%;
+  left: 25px;
+  transform: translateY(-50%);
+  z-index: 100001;
+}
+
+.carousel-button-next {
+  position: fixed;
+  top: 50%;
+  right: 25px;
+  transform: translateY(-50%);
+  z-index: 100001;
+}
+@keyframes lightboxZoomIn {
+  from {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromRight {
+  from {
+    transform: translateX(1180px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-1180px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideOutToLeft {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(-1180px);
+    opacity: 0;
+  }
+}
+
+@keyframes slideOutToRight {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(1180px);
+    opacity: 0;
+  }
+}
+
+#lightboxImage {
+  animation: lightboxZoomIn 0.35s ease;
+  will-change: transform, opacity;
+}

@@ -28,7 +28,7 @@ pointer-events: auto;
 height:720px;
 overflow: hidden; /* Clips any overflow */
   z-index: 0;
-  opacity: 0.7;
+  opacity: 0.9;
  
 }
 .taust {

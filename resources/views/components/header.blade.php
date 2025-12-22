@@ -45,7 +45,7 @@
         {{-- ALUMINE NAV --}}
         <nav class="bottom-nav">
 
-            <a href="https://www.facebook.com/kyttesepp" target="_blank">
+            <a href="https://www.facebook.com/kuttesepp" target="_blank">
                 <img class="facebook"
                      src="{{ Vite::asset('resources/images/icons/facebook.png') }}"
                      alt="facebook logo" />
@@ -145,7 +145,7 @@
                     </ul>
 
                     <ul>
-                        <li><a href="{{ route('index') }}">TEHTUD TÖÖD</a></li>
+                        <li><a href="{{ route('works.index') }}">TEHTUD TÖÖD</a></li>
                     </ul>
 
                     <ul>

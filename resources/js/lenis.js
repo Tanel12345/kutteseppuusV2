@@ -71,27 +71,23 @@
 
 import Lenis from 'lenis';
 
+let lenis;
 
+document.addEventListener("DOMContentLoaded", () => {
 
-    document.addEventListener("DOMContentLoaded", () => {
-        // Initialize Lenis with optimized settings
-        const lenis = new Lenis({
-            duration: 1,
-            easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-            smooth: true,
-            direction: 'vertical',
-            smoothWheel: true,
-            smoothTouch: true,
-            touchMultiplier: 2,
-        });
-    
-        // Animation frame for Lenis
-        function raf(time) {
-            lenis.raf(time);
-            requestAnimationFrame(raf);
-        }
-    
-        requestAnimationFrame(raf);
+  lenis = new Lenis({
+    duration: 0.8,
+    easing: (t) => 1 - Math.pow(1 - t, 3),
+    smoothWheel: true,
+    smoothTouch: false, //  oluline
+  });
+
+  function raf(time) {
+    lenis.raf(time);
+    requestAnimationFrame(raf);
+  }
+  requestAnimationFrame(raf);
+
     
         // Smooth scroll for #uperid
             const upscroller = document.querySelector('a[href="#uperid"]');
@@ -102,7 +98,7 @@ import Lenis from 'lenis';
                 const targetElement = document.getElementById('uperid');
                 if (targetElement) {
                     lenis.scrollTo(targetElement, {
-                        offset: -180,  // Adjust the offset if needed
+                        offset: -190,  // Adjust the offset if needed
                         duration: 1.5,
                         easing: (t) => 1 - Math.pow(1 - t, 3),
                     });
@@ -121,7 +117,7 @@ import Lenis from 'lenis';
                     if (targetElement) {
                         // Smooth scroll to the target section
                         lenis.scrollTo(targetElement, {
-                            offset: -70,
+                            offset: -90,
                             duration: 1.5,
                             easing: (t) => 1 - Math.pow(1 - t, 3),
                         });
@@ -137,7 +133,7 @@ import Lenis from 'lenis';
             const targetElement = document.getElementById("ettevottestid");
             if (targetElement) {
                 lenis.scrollTo(targetElement, {
-                    offset: -70,
+                    offset: 200,
                     duration: 1.5,
                     easing: (t) => 1 - Math.pow(1 - t, 3),
                 });
@@ -147,7 +143,7 @@ import Lenis from 'lenis';
 
         
         
-        // Smooth scroll for #ettevottestid
+        // Smooth scroll for #form
         const contactScroller = document.querySelector('a[href="/#form"]');
         if (contactScroller) {
             contactScroller.addEventListener('click', (e) => {
@@ -158,7 +154,7 @@ import Lenis from 'lenis';
                     if (targetElement) {
                         // Smooth scroll to the target section
                         lenis.scrollTo(targetElement, {
-                            offset: -70,
+                            offset: -90,
                             duration: 1.5,
                             easing: (t) => 1 - Math.pow(1 - t, 3),
                         });
@@ -174,7 +170,7 @@ import Lenis from 'lenis';
             const targetElement = document.getElementById("contact");
             if (targetElement) {
                 lenis.scrollTo(targetElement, {
-                    offset: -70,
+                    offset: 200,
                     duration: 1.5,
                     easing: (t) => 1 - Math.pow(1 - t, 3),
                 });
@@ -182,38 +178,7 @@ import Lenis from 'lenis';
             document.querySelector('.bottom-rightdiv').classList.remove('showing');
         }
 
-
-       
-        const piltlingidScrollers = document.querySelectorAll('a[href="/#piltlingid"]');
-        piltlingidScrollers.forEach((link) => {
-            link.addEventListener('click', (e) => {
-                //e.preventDefault();  // Uncomment if you don't want URL hash change
-        
-                const targetElement = document.getElementById("piltlingid");
-                if (targetElement) {
-                    lenis.scrollTo(targetElement, {
-                        offset: -70,
-                        duration: 1.5,
-                        easing: (t) => 1 - Math.pow(1 - t, 3),
-                    });
-                }
-                document.querySelector('.bottom-rightdiv').classList.remove('showing');
-            });
-        });
-    
-        // Handle smooth scrolling if the page is loaded with the hash
-        const hash1 = window.location.hash;
-        if (hash1 === "#piltlingid") {
-            const targetElement = document.getElementById("piltlingid");
-            if (targetElement) {
-                lenis.scrollTo(targetElement, {
-                    offset: -70,
-                    duration: 1.5,
-                    easing: (t) => 1 - Math.pow(1 - t, 3),
-                });
-            }
-            document.querySelector('.bottom-rightdiv').classList.remove('showing');
-        }
 
         
     });
+

@@ -62,6 +62,7 @@ class PageController extends Controller
     {
         return view('pages.milleks-kutteautomaatika');
     }
+ 
 
     /* ===============================
      * UNIVERSAALNE SOOJUSPUMBADE LIST

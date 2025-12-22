@@ -13,7 +13,10 @@
                 vajadusel eriosade projekti, küttesüsteemi paigalduse, järelteeninduseni välja.<br />
                 Vaata ka: <a href="{{ route('soojuspumpade-paigaldus') }}" title="Ettevõttest teenused">Soojuspumpade paigaldus.</a>
             </p> 
+               <hr class="red-line-teenused">
         </li>
+      
+        
 
         <li>
             <div class="number">
@@ -26,6 +29,7 @@
                 <a href="/#form" title="Kontakt">Võta ühendust</a> ja leiame ühise punkti valikute ja võimaluste vahel.<br/>
                 Konsultatsioon kohapeal on tellijale <span>tasuta.</span>
             </p>
+            <hr class="red-line-teenused">
         </li>
 
         <li>
@@ -47,6 +51,7 @@
             <p>
                 Küttesüsteemide ehitus vastavalt kehtivatele standarditele ja normidele. Kõik Küttesepa tooted ja teenused on kooskõlas kehtivate regulatsioonide ja hea ehitustavaga.
             </p>
+            <hr class="red-line-teenused">
         </li>
 
         <li>
@@ -61,12 +66,13 @@
                 <li>Kütteseadmed koos kõige vajalikuga.</li>
                 <li>
                     <a href="{{ route('milleks-kutteautomaatika') }}">Kütteautomaatika</a>
-                    energiasäästuks, mugavuseks, pikemaks elueaks küttesüsteemile.
+                    energiasäästuks.
                 </li>
-                <li>
-                    <a href="{{ route('index') }}">Järelteenindus</a> küttesüsteemide hooldus.
+                <li>Järelteenindus
+                    <a href="{{ route('kuttesusteemide-hooldus') }}"> ja küttesüsteemide hooldus.</a> 
                 </li>
             </ul>
+            <hr class="red-line-teenused">
         </li>
 
         <li>
@@ -80,6 +86,7 @@
                 Küttesepp OÜ on mikroettevõte, kus meister ja ettevõtja Tanel on eramute tahkeküttesüsteemide paigalduse ja ehituse valdkonnas tegev juba aastast
                 2003. Valmis alati kliendiga parimat ühisosa leidma.
             </p>
+            <hr class="red-line-teenused">
         </li>
     </ul>
 </section>

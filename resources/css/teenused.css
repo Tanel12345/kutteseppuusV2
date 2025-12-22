@@ -13,7 +13,7 @@
    max-width: 1300px;
    min-width: 300px;
    margin: 0 auto;
-   padding: 200px 8px 20px 8px;
+   padding: 190px 8px 60px 8px;
    
    gap: 10px;
  }
@@ -24,8 +24,20 @@
    min-width: 150px;
    display: flex;
    flex-direction: column;
+   position: relative;
+  
   
  }
+.red-line-teenused {
+  position: absolute;
+  bottom: 0px;
+  border: none;
+  border-top: 3px solid #ff0100;  /* thickness and color */
+  width: 176px;
+  margin: 3em 0 0 0;   
+  align-self: flex-start;  
+        /* space above/below, centered */
+}
 
  .teenused li:nth-child(2) {
    text-align: center;
@@ -56,12 +68,12 @@ width:100%;
    
  }
  .teenused p span {
-   color: #ff0100;
+   color: #ff00009a;
    font-size: 1rem;
    font-weight: 500;
  }
  .teenused li a:hover {
-   color: #ff0100;
+   color: #ff6262;
  }
  .teenused p span:hover {
    color: #ff0100;

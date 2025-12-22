@@ -1,11 +1,13 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\AuthController;
-use App\Http\Controllers\PageController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\AuthController;
 use App\Http\Controllers\Cachecontroller;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\PageController;
+use App\Http\Controllers\WorkController;
+use Illuminate\Support\Facades\Route;
+
 
 
 
@@ -37,6 +39,7 @@ Route::controller(PageController::class)->group(function () {
     Route::get('/kuttesusteemi-vesi', 'kuttesusteemiVesi')->name('kuttesusteemi-vesi');
     Route::get('/poranda-ja-radiaatorkute', 'porandaJaRadiaatorkute')->name('poranda-ja-radiaatorkute');
     Route::get('/kutteautomaatika', 'milleksKutteautomaatika')->name('milleks-kutteautomaatika');
+  
 
     // ===== SOOJUSPUMBAD (UNIVERSAALNE) =====
     Route::get('/soojuspumbad', 'soojuspumbadIndex')
@@ -98,10 +101,19 @@ Route::controller(ContactController::class)->group(function () {
 
 });
 
+    //Workcontroller
+    Route::get('/tehtud-tood', [WorkController::class, 'index'])
+    ->name('works.index');
+
+Route::get('/tehtud-tood/{slug}', [WorkController::class, 'show'])
+    ->name('works.show');
+
 // Admin Dashboard
 Route::middleware(['auth'])->group(function () {
     
    Route::get('/admin', [AdminController::class, 'dashboard'])->name('admin.dashboard');
+   // Product form submission route
+   Route::get('/admin/products', [AdminController::class, 'products'])->name('admin.products.index');
    // Product form submission route
    Route::post('/admin/products', [AdminController::class, 'storeProduct'])->name('admin.products.store');
    // Route to delete a product
@@ -111,5 +123,37 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/admin/product/{id}/edit', [AdminController::class, 'edit'])->name('admin.product.edit');
     // Update product (edit existing product)
     Route::put('/admin/products/{id}', [AdminController::class, 'update'])->name('admin.products.update');
+
+
+
+
+
+
+     //Works
+
+    Route::get('/admin/works', [AdminController::class, 'works'])
+    ->name('admin.works.index');
+
+Route::post('/admin/works', [AdminController::class, 'storeWork'])
+    ->name('admin.works.store');
+    Route::delete('/admin/works/{id}', [AdminController::class, 'deleteWork'])
+    ->name('admin.works.delete');
+
+
+    // edit formi avamine
+Route::get('/admin/works/{id}/edit', [AdminController::class, 'editWork'])
+    ->name('admin.works.edit');
+
+// update (salvestamine)
+Route::put('/admin/works/{id}', [AdminController::class, 'updateWork'])
+    ->name('admin.works.update');
+
+    // delete single image
+Route::delete('/admin/works/image/{id}', [AdminController::class, 'deleteWorkImage'])
+    ->name('admin.works.image.delete');
+//sorteerib pildid
+    Route::post('/admin/works/images/sort', [AdminController::class, 'sortWorkImages'])
+    ->name('admin.works.images.sort');
+
 
 });

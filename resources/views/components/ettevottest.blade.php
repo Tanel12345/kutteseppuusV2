@@ -26,7 +26,7 @@
 <br>
         
         <h3>Miks valida Küttesepp?</h3>
-        <p>Küttesepp on mikroettevõte kus meister Tanel on valdkonnas tegev, tahkeküttesüsteemide planeerimisel ja ehitusel, juba aastast 2003.<br> Kui otsite usaldusväärset tegijat kes individuaalselt täidab tellimusi, liikudes edasi siis kui eelmine on lõpetatud. Äriliselt ebaefektiivne kuid praktiliselt riskivaba mudel nii telliale kui töövõtjale.<br> Küttesepa eesmärk on tagada optimaalne ja rahuldav lõpplahendus.</p><br>
+        <p>Küttesepp on mikroettevõte kus meister Tanel on valdkonnas tegev, tahkeküttesüsteemide planeerimisel ja ehitusel, juba aastast 2003.<br> Kui otsite usaldusväärset tegijat kes individuaalselt täidab tellimusi, liikudes edasi siis kui eelmine on lõpetatud. Paktiliselt riskivaba mudel nii telliale kui töövõtjale.<br> Küttesepa eesmärk on tagada optimaalne ja rahuldav lõpplahendus.</p><br>
         
         <h3>Põhiteenused</h3>
         <ol>
@@ -48,7 +48,7 @@
     </div>
     
     <div class="soojuspumpadest">
-        <h2>Soojuspumbad - tõhus, mugav ja säästlik küttelahendus</h2>
+        <h2>Soojuspumbad - tõhus, mugav ja säästlik kütte</h2>
         <p>Soojuspumbad on mugav, energiasäästlik ja keskkonnasõbralik lahendus nii kodude kui äripindade kütmiseks ja jahutamiseks. 
            Maasoojuspumbad tagavad energiatõhususe ka kõige külmemal ajal aastast, kuid mahukama paigaldusprotsessi ja teatud piirangute tõttu ei sobi nad mitte igale poole ja alati. Küsi nõu Küttesepalt.</p><br>
         

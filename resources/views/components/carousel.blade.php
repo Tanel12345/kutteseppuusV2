@@ -1,72 +1,91 @@
 <section class="uper" id="uperid">
-   <div class="carousel">
-       
-      <div class="taustadiv">
-           <img class="taust" src="{{ Vite::asset('resources/images/pilved.webp') }}" alt="Soojuspumpade ja küttesüsteemide paigaldus – Küttesepp"> </img>
-       </div>
-       
-       
-       <div class="heading">
-           
-           <h1>Soojuspumbad ja küttesüsteemid <br> <span>(müük ja paigaldus)</span> </h1>
+    <div class="carousel">
+
+        <div class="taustadiv">
+            <img class="taust" src="{{ Vite::asset('resources/images/pilved.webp') }}"
+                alt="Soojuspumpade ja küttesüsteemide paigaldus – Küttesepp"> </img>
+        </div>
+
+
+        <div class="heading">
+
+            <h1>Soojuspumbad ja küttesüsteemid <br> <span>müük ja paigaldus</span> </h1>
             <h2>Õhk-õhk | õhk-vesi | maakütte soojuspumbad ning tahkekütteseadmed</h2>
             <h3>Usaldusväärne ja professionaalne teenus</h3>
-           <img src="{{ Vite::asset('resources/images/küttesepp_logo1.png') }}" class="h1logo" alt="Küttesepp" />
-         </div>
+            <img src="{{ Vite::asset('resources/images/küttesepp_logo1.png') }}" class="h1logo" alt="Küttesepp" />
+        </div>
 
-       <button type="button" class="carousel-button carousel-button-back">
-           <img src="{{ Vite::asset('resources/images/icons/back.png') }}" alt="backbutton" class="arrow-img" />
-       </button>
+        <button type="button" class="carousel-button carousel-button-back">
+            <img src="{{ Vite::asset('resources/images/icons/back.png') }}" alt="backbutton" class="arrow-img" />
+        </button>
 
 
-       <!-- Slaid1 -->
-       <div class="carouselcontainer">
+
+        <div class="carouselcontainer">
+
+            <!-- Slaid0 -->
             <ul class="carousel-ul active">
-               <li class="carousel-li">
-                   <img src="{{ Vite::asset('resources/images/taustad/Es_soojuspump5.webp') }}" alt="Õhk-vesi soojuspump eramajale – Küttesepp paigaldus" class="carousel-img" title="Es õhk-vesi soojuspump" />
-               </li>
-              
-           </ul>
-           <!-- Slaid2 -->
+                <li class="carousel-li">
+                <img src="{{ Vite::asset('resources/images/taustad/ohk-vesi-samsungtaust.webp') }}"
+                    alt="Õhk-vesi soojuspump - Samsung" class="carousel-img" title="Samsung-soojuspump" />
+                </li>
+                
+            </ul>
+            <!-- Slaid1 -->
+            <ul class="carousel-ul ">
+                <li class="carousel-li">
+                    <img src="{{ Vite::asset('resources/images/taustad/Es_soojuspump5.webp') }}"
+                        alt="Õhk-vesi soojuspump eramajale – Küttesepp paigaldus" class="carousel-img"
+                        title="Es õhk-vesi soojuspump" />
+                </li>
+
+            </ul>
+            <!-- Slaid2 -->
             <ul class="carousel-ul">
                 <li class="carousel-li">
-                    <img  src="{{ Vite::asset('resources/images/taustad/Es_soojuspump6.webp') }}" alt="Õhk-vesi soojuspump - ES" class="carousel-img" title="Es-soojuspump" />
+                    <img src="{{ Vite::asset('resources/images/taustad/Es_soojuspump6.webp') }}"
+                        alt="Õhk-vesi soojuspump - ES" class="carousel-img" title="Es-soojuspump" />
                 </li>
-              
+
             </ul>
-           <!-- Slaid3 -->
+            <!-- Slaid3 -->
             <ul class="carousel-ul">
                 <li class="carousel-li">
-                    <img  src="{{ Vite::asset('resources/images/taustad/ALPHA-ohk-vesi.webp') }}" alt="Alpha Innotec õhk-vesi soojuspump küttesüsteemis" class="carousel-img" title="Alpha Innotec soojuspump" />
+                    <img src="{{ Vite::asset('resources/images/taustad/ALPHA-ohk-vesi.webp') }}"
+                        alt="Alpha Innotec õhk-vesi soojuspump küttesüsteemis" class="carousel-img"
+                        title="Alpha Innotec soojuspump" />
                 </li>
-           
+
             </ul>
 
-           <!-- Slaid4 -->
+            <!-- Slaid4 -->
             <ul class="carousel-ul">
                 <li class="carousel-li">
-                    <img  src="{{ Vite::asset('resources/images/taustad/ALPHA-maasoojus.webp') }}" alt="Maakütte soojuspump – energiatõhus lahendus" class="carousel-img" title="Maakütte soojuspump" />
+                    <img src="{{ Vite::asset('resources/images/taustad/ALPHA-maasoojus.webp') }}"
+                        alt="Maakütte soojuspump – energiatõhus lahendus" class="carousel-img"
+                        title="Maakütte soojuspump" />
                 </li>
-           
+
             </ul>
-       </div>
+        </div>
 
-       <div class="popup-image">
-           <div class="img-container">
-               <img class="x" src="{{ Vite::asset('resources/images/icons/x.png') }}" alt="x" />
-               <img class="img" src="" alt="" />
-           </div>
-       </div>
+        <div class="popup-image">
+            <div class="img-container">
+                <img class="x" src="{{ Vite::asset('resources/images/icons/x.png') }}" alt="x" />
+                <img class="img" src="" alt="" />
+            </div>
+        </div>
 
-       <button type="button" class="carousel-button carousel-button-next">
-           <img src="{{ Vite::asset('resources/images/icons/next.png') }}" alt="nextbutton" class="arrow-img" />
-       </button>
+        <button type="button" class="carousel-button carousel-button-next">
+            <img src="{{ Vite::asset('resources/images/icons/next.png') }}" alt="nextbutton" class="arrow-img" />
+        </button>
 
-       <div class="carousel-nav">
-           <button class="carousel-indicator active1"></button>
-           <button class="carousel-indicator"></button>
-           <button class="carousel-indicator"></button>
-           <button class="carousel-indicator"></button>
-       </div>
-   </div>
+        <div class="carousel-nav">
+            <button class="carousel-indicator active1"></button>
+            <button class="carousel-indicator"></button>
+            <button class="carousel-indicator"></button>
+            <button class="carousel-indicator"></button>
+            <button class="carousel-indicator"></button>
+        </div>
+    </div>
 </section>

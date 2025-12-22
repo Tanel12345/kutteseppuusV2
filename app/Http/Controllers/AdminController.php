@@ -1,293 +1,397 @@
 <?php
 
 namespace App\Http\Controllers;
-
-use Carbon\Carbon;
+use App\Models\Work;
+use App\Models\WorkImage;
+use Illuminate\Support\Str;
 use App\Models\Product;
+use App\Models\Brand;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
-use Intervention\Image\ImageManager;
 use Illuminate\Support\Facades\Storage;
+use Intervention\Image\ImageManager;
 use Intervention\Image\Drivers\Gd\Driver;
+
 
 class AdminController extends Controller
 {
-
-
-    // Show the admin dashboard page
+    // Dashboard
     public function dashboard()
     {
-        $products = Product::orderBy('id', 'desc')->get();
-
-    // Return the view and pass the products
-    return view('admin.dashboard', compact('products'));
+        return view('admin.dashboard');
     }
 
+    // Products list + form
+    public function products()
+    {
+        $products = Product::with('brand')
+            ->orderBy('id', 'desc')
+            ->get();
 
+        $brands = Brand::orderBy('name')->get();
 
-    
-    
-    
-    
-    
-    
-    
-    
-    // Store a new product in the database
+        return view('admin.products.products', compact('products', 'brands'));
+    }
+
+    // Store product
     public function storeProduct(Request $request)
     {
-        // Validate the incoming request
-       $request->validate([
-    'brandname' => 'required|string|max:255',
-    'product_type' => 'required|string|max:255',
-    'name' => 'required|string|max:255',
-    'description' => 'nullable|string',
-    'power' => 'nullable|string|max:255',
-    'product_img' => 'nullable|mimes:jpeg,png,jpg,gif,svg,webp,avif|max:10048',
-    'brand_img' => 'nullable|mimes:jpeg,png,jpg,gif,svg,webp,avif|max:10048',
-]);
-
-        $productImgPath = null;
-        // Handle product image upload and resizing
-        if ($request->hasFile('product_img')) {
-
-
-            
-    
-            // Save new product image with timestamp and original filename
-            $productImgPath = $this->storeImage($request->file('product_img'), 'product_images');
-        
-           // Resize the brand image after upload
-           $this->resizeImage($productImgPath, 450);   // Resize to 150px width
-        
-        }
-
-        $brandImgPath = null;
-        // Handle product image upload and resizing
-        if ($request->hasFile('brand_img')) {
-    
-            // Save new product image with timestamp and original filename
-            $brandImgPath = $this->storeImage($request->file('brand_img'), 'brand_images');
-        
-
-            // Resize the brand image after upload
-            $this->resizeImage($brandImgPath, 150);   // Resize to 150px width
-        
-        }
-
-
-        // Save the product with the image path in the database
-        // Create a new product
-        Product::create([
-            'brandname' => $request->input('brandname'),
-            'product_type' => $request->input('product_type'),
-            'name' => $request->input('name'),
-            'description' => $request->input('description'),
-            'power' => $request->input('power'),
-            'product_img' => $productImgPath,
-            'brand_img' => $brandImgPath,
+        $request->validate([
+            'brand_id' => 'required|exists:brands,id',
+            'product_type' => 'required|string|max:255',
+            'name' => 'required|string|max:255',
+            'description' => 'nullable|string',
+            'power' => 'nullable|string|max:255',
+            'product_img' => 'nullable|mimes:jpeg,png,jpg,gif,svg,webp,avif|max:10048',
         ]);
 
-        // Redirect back to dashboard with a success message
-        return redirect()->route('admin.dashboard')->with('success', 'Product added successfully!');
+        $productImgPath = null;
+
+        if ($request->hasFile('product_img')) {
+            $productImgPath = $this->storeImage(
+                $request->file('product_img'),
+                'product_images'
+            );
+
+            $this->resizeImage($productImgPath, 450);
+        }
+
+        Product::create([
+            'brand_id'     => $request->brand_id,
+            'product_type' => $request->product_type,
+            'name'         => $request->name,
+            'description'  => $request->description,
+            'power'        => $request->power,
+            'product_img'  => $productImgPath,
+        ]);
+
+        return redirect()
+            ->route('admin.products.index')
+            ->with('success', 'Product added successfully!');
     }
 
-
-
-
-
-
-
+    // Delete product
     public function delete($id)
     {
-        // Find the product by its ID
         $product = Product::findOrFail($id);
 
-         // Delete the old product image if it exists
-         if ($product->product_img) {
-            // Get the relative path from the database
-            $product_img_path = $product->product_img; //
-    
-            // Check if the old image exists
-            if (Storage::disk('public')->exists($product_img_path)) {
-                Log::info("Deleting product image: " . $product_img_path);
-                Storage::disk('public')->delete($product_img_path);
-            } else {
-                Log::warning("Product image not found: " . $product_img_path);
-            }
-        }
-       
-            if ($product->brand_img) {
-                $brand_img_path = $product->brand_img;
-              
-                if (Storage::disk('public')->exists($brand_img_path)) {
-                    // Log the file path before deleting
-                    Log::info("Deleting brand image: " . $brand_img_path);
-                    Storage::disk('public')->delete($brand_img_path);
-                } else {
-                    Log::warning("Brand image not found: " . $brand_img_path);
-                }
-            }
-        // Delete the product
-        $product->delete();
-    
-        // Redirect back to the dashboard with a success message
-        return redirect()->route('admin.dashboard')->with('success', 'Product removed successfully!');
-    }
-
-
-
-
-
-    
-    
-    
-    public function edit($id)
-{
-    // Find the product by its ID
-    $product = Product::findOrFail($id);
-
-    // Return the edit view with the product
-    return view('admin.edit-product', compact('product'));
-}
-
-
-
-
-
-
-
-public function update(Request $request, $id)
-{
-    // Validate request data
-    $request->validate([
-        'brandname' => 'required|string|max:255',
-        'product_type' => 'required|string|max:255',
-        'name' => 'required|string|max:255',
-        'description' => 'nullable|string',
-        'power' => 'nullable|string',
-        'product_img' => 'nullable|mimes:jpeg,png,jpg,gif,svg,webp,avif|max:10048',
-        'brand_img' => 'nullable|mimes:jpeg,png,jpg,gif,svg,webp,avif|max:10048',
-    ]);
-
-    // Find the product by ID
-    $product = Product::findOrFail($id);
-
-    // Update product data
-    $product->brandname = $request->brandname;
-    $product->product_type = $request->product_type;
-    $product->name = $request->name;
-    $product->description = $request->description;
-    $product->power = $request->power;
-
-    // Handle product image upload and resizing
-    if ($request->hasFile('product_img')) {
-        // Delete old product image if it exists
         if ($product->product_img) {
             $this->deleteOldImage($product->product_img);
         }
 
-        // Save new product image with timestamp and original filename
-        $productImgPath = $this->storeImage($request->file('product_img'), 'product_images');
-        $product->product_img = $productImgPath;
+        $product->delete();
 
-        // Resize the product image after upload
-        $this->resizeImage($productImgPath, 450);  // Resize to 450px width
+        return redirect()
+            ->route('admin.products.index')
+            ->with('success', 'Product removed successfully!');
     }
 
-    // Handle brand image upload and resizing
-    if ($request->hasFile('brand_img')) {
-        // Delete old brand image if it exists
-        if ($product->brand_img) {
-            $this->deleteOldImage($product->brand_img);
+    // Edit product
+    public function edit($id)
+    {
+        $product = Product::findOrFail($id);
+        $brands  = Brand::orderBy('name')->get();
+
+        return view('admin.products.edit-product', compact('product', 'brands'));
+    }
+
+    // Update product
+    public function update(Request $request, $id)
+{
+    $request->validate([
+        'brand_id' => 'required|exists:brands,id',
+        'product_type' => 'required|string|max:255',
+        'name' => 'required|string|max:255',
+        'description' => 'nullable|string',
+        'power' => 'nullable|string|max:255',
+        'product_img' => 'nullable|mimes:jpeg,png,jpg,gif,svg,webp,avif|max:10048',
+        'brand_img' => 'nullable|mimes:jpeg,png,jpg,webp,avif|max:10048',
+    ]);
+
+    $product = Product::findOrFail($id);
+
+    // --- PRODUCT DATA ---
+    $product->brand_id     = $request->brand_id;
+    $product->product_type = $request->product_type;
+    $product->name         = $request->name;
+    $product->description  = $request->description;
+    $product->power        = $request->power;
+
+    // --- PRODUCT IMAGE ---
+    if ($request->hasFile('product_img')) {
+        if ($product->product_img) {
+            $this->deleteOldImage($product->product_img);
         }
 
-        // Save new brand image with timestamp and original filename
-        $brandImgPath = $this->storeImage($request->file('brand_img'), 'brand_images');
-        $product->brand_img = $brandImgPath;
+        $productImgPath = $this->storeImage(
+            $request->file('product_img'),
+            'product_images'
+        );
 
-        // Resize the brand image after upload
-        $this->resizeImage($brandImgPath, 150);  // Resize to 150px width
+        $this->resizeImage($productImgPath, 450);
+        $product->product_img = $productImgPath;
+    }
+
+    // --- BRAND IMAGE (LOGO) ---
+    if ($request->hasFile('brand_img')) {
+    $brand = Brand::findOrFail($request->brand_id);
+
+    if ($brand->logo) {
+        $this->deleteOldImage($brand->logo);
+    }
+
+    $brandImgPath = $this->storeImage(
+        $request->file('brand_img'),
+        'brand_images'
+    );
+
+    $this->resizeImage($brandImgPath, 150);
+
+    // ⬇⬇⬇ SIIN ON KRIITILINE RIDA
+    $brand->logo = $brandImgPath;
+
+    $brand->save();
+    }
+    return redirect()
+        ->route('admin.products.index')
+        ->with('success', 'Product updated successfully!');
+}
+    // ===== HELPERS =====
+
+    private function deleteOldImage($imagePath)
+    {
+        if (Storage::disk('public')->exists($imagePath)) {
+            Log::info("Deleting image: " . $imagePath);
+            Storage::disk('public')->delete($imagePath);
+        }
+    }
+
+    private function storeImage($image, $directory)
+    {
+        $originalName = pathinfo($image->getClientOriginalName(), PATHINFO_FILENAME);
+        $extension = $image->getClientOriginalExtension();
+
+        $baseFilename = strtolower(str_replace(' ', '_', $originalName));
+        $counter = 1;
+        $filename = $baseFilename . '_' . $counter . '.' . $extension;
+
+        while (Storage::disk('public')->exists($directory . '/' . $filename)) {
+            $counter++;
+            $filename = $baseFilename . '_' . $counter . '.' . $extension;
+        }
+
+        return $image->storeAs($directory, $filename, 'public');
+    }
+
+    private function resizeImage($imagePath, $width)
+    {
+        $manager = new ImageManager(new Driver);
+
+        $image = $manager->read(public_path('storage/' . $imagePath));
+        $image->scale(width: $width);
+        $image->save(public_path('storage/' . $imagePath));
     }
 
 
 
 
-    // Save the updated product
-    $product->save();
 
-    // Redirect back to the dashboard with a success message
-    return redirect()->route('admin.dashboard')->with('success', 'Product updated successfully!');
+
+    //Töö osa
+
+public function works()
+{
+    $works = Work::with('images')
+        ->orderByDesc('id')
+        ->get();
+
+    return view('admin.works.index', compact('works'));
 }
 
 
-
-
-
-
-// Helper method to delete old images
-private function deleteOldImage($imagePath)
+public function storeWork(Request $request)
 {
-    if (Storage::disk('public')->exists($imagePath)) {
-        Log::info("Deleting image: " . $imagePath);
-        Storage::disk('public')->delete($imagePath);
-    } else {
-        Log::warning("Image not found: " . $imagePath);
-    }
-}
+    $request->validate([
+        'title' => 'required|string|max:255',
+        'location' => 'nullable|string|max:255',
+        'description' => 'nullable|string',
+        'system_type' => 'nullable|string|max:255',
+        'brand' => 'nullable|string|max:255',
+        'images.*' => 'image|mimes:jpg,jpeg,png,webp|max:20048',
+    ]);
 
-
-
-
-// Helper method to store images with timestamp
-private function storeImage($image, $directory)
-{
-    $originalName = pathinfo($image->getClientOriginalName(), PATHINFO_FILENAME); // Get filename without extension
-    $extension = $image->getClientOriginalExtension(); // Get file extension
-
-    // Create a base name for the image (e.g., product_name_color)
-    $baseFilename = strtolower(str_replace(' ', '_', $originalName)); // Replace spaces with underscores and make lowercase
-
-    // Generate a unique identifier (you could use a counter or a random number)
+    /**
+     * SEO-SAFE SLUG (vältib duplicate slug probleemi)
+     */
+    $baseSlug = Str::slug($request->title);
+    $slug = $baseSlug;
     $counter = 1;
-    $filename = $baseFilename . '_' . $counter . '.' . $extension;
 
-    // Ensure the filename is unique by checking if it already exists in the storage directory
-    while (Storage::disk('public')->exists($directory . '/' . $filename)) {
-        $counter++;
-        $filename = $baseFilename . '_' . $counter . '.' . $extension; // Increment the counter
+    while (Work::where('slug', $slug)->exists()) {
+        $slug = $baseSlug . '-' . $counter++;
     }
-    // Store the image with the unique filename
-    return $image->storeAs($directory, $filename, 'public');
+
+    $work = Work::create([
+        'title' => $request->title,
+        'slug' => $slug,
+        'location' => $request->location,
+        'description' => $request->description,
+        'system_type' => $request->system_type,
+        'brand' => $request->brand,
+        'is_active' => true,
+    ]);
+
+    /**
+     * SALVESTA PILDID + SORT_ORDER
+     */
+    if ($request->hasFile('images')) {
+        foreach ($request->file('images') as $index => $image) {
+
+            $path = $this->storeImage($image, 'works');
+
+            WorkImage::create([
+                'work_id' => $work->id,
+                'image_path' => $path,
+                'sort_order' => $index,
+            ]);
+        }
+    }
+
+    return redirect()
+        ->route('admin.works.index')
+        ->with('success', 'Tehtud töö lisatud');
 }
 
 
 
 
 
-// Helper method to resize images
-private function resizeImage($imagePath, $width)
+public function deleteWork($id)
 {
-    $manager = new ImageManager(new Driver); // Use default driver (GD or Imagick)
+    $work = Work::with('images')->findOrFail($id);
 
-    // Load the image
-    $image = $manager->read(public_path('storage/' . $imagePath));
+    /**
+     * KUSTUTA PILDID KETTALT
+     */
+    foreach ($work->images as $image) {
+        if ($image->image_path) {
+            $this->deleteOldImage($image->image_path);
+        }
+    }
 
-    // Resize the image while maintaining aspect ratio
-    $image->scale(width: $width);
+    /**
+     * DB-st kustuvad work_images automaatselt (cascadeOnDelete)
+     */
+    $work->delete();
 
-    // Save the resized image (overwrite the original file)
-    $image->save(public_path('storage/' . $imagePath));
+    return redirect()
+        ->route('admin.works.index')
+        ->with('success', 'Tehtud töö kustutatud');
+}
+
+
+public function editWork($id)
+{
+    $work = Work::with('images')->findOrFail($id);
+
+    return view('admin.works.edit', compact('work'));
 }
 
 
 
+public function updateWork(Request $request, $id)
+{
+    $work = Work::with('images')->findOrFail($id);
+
+    $validated = $request->validate([
+        'title' => 'required|string|max:255',
+        'location' => 'nullable|string|max:255',
+        'description' => 'nullable|string',
+        'system_type' => 'nullable|string|max:255',
+        'brand' => 'nullable|string|max:255',
+        'images.*' => 'nullable|image|mimes:jpg,jpeg,png,webp|max:20048',
+    ]);
+
+    // SLUG ainult siis kui title muutus
+    if ($validated['title'] !== $work->title) {
+        $baseSlug = Str::slug($validated['title']);
+        $slug = $baseSlug;
+        $counter = 1;
+
+        while (
+            Work::where('slug', $slug)
+                ->where('id', '!=', $work->id)
+                ->exists()
+        ) {
+            $slug = $baseSlug . '-' . $counter++;
+        }
+
+        $work->slug = $slug;
+    }
+
+    // BASIC FIELDS
+    $work->fill([
+        'title' => $validated['title'],
+        'location' => $validated['location'] ?? null,
+        'description' => $validated['description'] ?? null,
+        'system_type' => $validated['system_type'] ?? null,
+        'brand' => $validated['brand'] ?? null,
+    ]);
+
+    $work->save();
+
+    // UUTE PILTIDE LISAMINE (vanad jäävad alles)
+    if ($request->hasFile('images')) {
+        $startOrder = (int) ($work->images()->max('sort_order') ?? 0);
+
+        foreach ($request->file('images') as $index => $image) {
+            $path = $this->storeImage($image, 'works');
+
+            WorkImage::create([
+                'work_id' => $work->id,
+                'image_path' => $path,
+                'sort_order' => $startOrder + $index + 1,
+                // 'alt_text' => ... (kui tahad automaatselt)
+            ]);
+        }
+    }
+
+    return redirect()
+        ->route('admin.works.edit', $work->id) // soovitan tagasi samale editile
+        ->with('success', 'Tehtud töö uuendatud');
+}
+
+public function deleteWorkImage($id)
+{
+    $image = WorkImage::findOrFail($id);
+
+    // kustuta fail kettalt
+    if ($image->image_path) {
+        $this->deleteOldImage($image->image_path);
+    }
+
+    // kustuta DB rida
+    $image->delete();
+
+    return back()->with('success', 'Pilt kustutatud');
+}
 
 
+public function sortWorkImages(Request $request)
+{
+    $request->validate([
+        'order' => 'required|array',
+        'order.*' => 'integer|exists:work_images,id',
+    ]);
 
+    foreach ($request->order as $index => $imageId) {
+        WorkImage::where('id', $imageId)->update([
+            'sort_order' => $index
+        ]);
+    }
 
-
+    return response()->json(['status' => 'ok']);
+}
 
 
 }
-

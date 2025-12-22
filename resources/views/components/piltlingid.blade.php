@@ -146,7 +146,7 @@
         </div>
 
         <div class="kusipakkumist">
-            <a href="{{ route('index') }}#form">
+            <a href="/#form">
                 <p>KÜSI LISAINFOT</p>
             </a>
         </div>

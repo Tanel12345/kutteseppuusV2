@@ -247,22 +247,22 @@
                             alt="R290 külmainega tulevikukindel soojuspump">
                     </div>
 
-                   
+
                     <hr class="red-line" style="justify-self:flex-start;"><br>
-<p style="text-align:center; margin-bottom:60px; margin-top:0;">
-    <a href="{{ route('soojuspumbad.type', 'ohk-ohk-soojuspumbad') }}">
-        õhk-õhk soojuspumpade lehele
-    </a>
-    <span style="margin:0 10px;">|</span>
-    <a href="{{ route('soojuspumbad.type', 'ohk-vesi-soojuspumbad') }}">
-        õhk-vesi soojuspumpade lehele
-    </a>
-    <span style="margin:0 10px;">|</span>
-    <a href="{{ route('soojuspumbad.type', 'maasoojuspumbad') }}">
-        maakütte soojuspumpade lehele
-    </a>
-</p>
-                  
+                    <p style="text-align:center; margin-bottom:60px; margin-top:0;">
+                        <a href="{{ route('soojuspumbad.type', 'ohk-ohk-soojuspumbad') }}">
+                            õhk-õhk soojuspumpade lehele
+                        </a>
+                        <span style="margin:0 10px;">|</span>
+                        <a href="{{ route('soojuspumbad.type', 'ohk-vesi-soojuspumbad') }}">
+                            õhk-vesi soojuspumpade lehele
+                        </a>
+                        <span style="margin:0 10px;">|</span>
+                        <a href="{{ route('soojuspumbad.type', 'maasoojuspumbad') }}">
+                            maakütte soojuspumpade lehele
+                        </a>
+                    </p>
+
                     <div class="faq-container" itemscope itemtype="https://schema.org/FAQPage">
 
                         <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
@@ -436,7 +436,8 @@
 
                 </div>
             </div>
-
+     
+        </div>
     </section>
 
 
@@ -444,3 +445,4 @@
     <x-cookies />
 
 </x-layout>
+'
