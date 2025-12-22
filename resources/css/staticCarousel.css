@@ -31,7 +31,9 @@
   object-position: top; 
   opacity: 0.8;
   z-index: -5;
-   transition: transform 0.2s ease-out; /* Smooth out the transform transitions */
+
+   will-change: transform;
+  transform: translate3d(0, 0, 0);
  }
  .textholderdiv{
   position: relative;

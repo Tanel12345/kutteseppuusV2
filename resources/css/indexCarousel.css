@@ -34,10 +34,11 @@ overflow: hidden; /* Clips any overflow */
 .taust {
   position: absolute; /* Make sure it's positioned relative to its container */
   
+will-change: transform;
+  transform: translate3d(0, 0, 0);
 
-
-  z-index: -1; /* Ensure the image stays in the background */
-  transition: transform 0.2s ease-out; /* Smooth out the transform transitions */
+  z-index: 1; /* Ensure the image stays in the background */
+  
 }
 
 

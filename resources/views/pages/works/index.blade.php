@@ -30,7 +30,7 @@
                         <h1>Küttesepa tööd ja tegemised!</h1>
                     </div>
                 </div>
-                <img class="taust" src="{{ Vite::asset('resources/images/taustad/tehtud-tood-taust.webp') }}"
+                <img style="opacity:0.5; filter: blur(3px);" class="taust" src="{{ Vite::asset('resources/images/taustad/tehtud-tood-taust.webp') }}"
                     alt="Küttesüsteemi ehitamine">
             </div>
         </div>

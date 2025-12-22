@@ -61,7 +61,7 @@
                         <h1>{{ $work->title }}</h1>
                     </div>
                 </div>
-                <img class="taust" src="{{ Vite::asset('resources/images/taustad/tehtud-tood-taust.webp') }}"
+                <img style="opacity:0.5; filter: blur(3px);" class="taust" src="{{ Vite::asset('resources/images/taustad/tehtud-tood-taust.webp') }}"
                     alt="Küttesüsteemi ehitamine">
             </div>
         </div>
@@ -158,7 +158,7 @@
     <x-up-scroller />
     <x-cookies />
 
-
+{{-- struktureeritud andmete deklaratsioon (JSON-LD).Seo, google jaok --}}
     <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -175,8 +175,10 @@
     "url": "{{ url('/') }}"
   }
 }
-</script>
 
+
+</script>
+{{-- Töö piltide slider --}}
     <script>
         document.addEventListener('DOMContentLoaded', () => {
 

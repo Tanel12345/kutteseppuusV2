@@ -11,7 +11,7 @@
 
                 <a style="cursor:auto;" href="#">
                     <img src="{{ Vite::asset('resources/images/icons/küttesepp.png') }}" alt="Küttesepa email" />
-                    tanel[ät]kyttesepp.ee
+                    tanel[ät]kuttesepp.ee
                 </a>
             </div>
 

@@ -39,6 +39,7 @@ Route::controller(PageController::class)->group(function () {
     Route::get('/kuttesusteemi-vesi', 'kuttesusteemiVesi')->name('kuttesusteemi-vesi');
     Route::get('/poranda-ja-radiaatorkute', 'porandaJaRadiaatorkute')->name('poranda-ja-radiaatorkute');
     Route::get('/kutteautomaatika', 'milleksKutteautomaatika')->name('milleks-kutteautomaatika');
+    Route::get('/kuidas-saasta-kuttekuludelt', 'kuidasSaastaKuttekuludelt')->name('kuidas-saasta-kuttekuludelt');
   
 
     // ===== SOOJUSPUMBAD (UNIVERSAALNE) =====

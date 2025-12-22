@@ -62,6 +62,10 @@ class PageController extends Controller
     {
         return view('pages.milleks-kutteautomaatika');
     }
+     public function kuidasSaastaKuttekuludelt()
+    {
+        return view('pages.kuidas-saasta-kuttekuludelt');
+    }
  
 
     /* ===============================
