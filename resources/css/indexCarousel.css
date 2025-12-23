@@ -453,60 +453,8 @@ max-width: 500px; /* Set a reasonable maximum width */
   opacity: 1;
   cursor: pointer;
 }
+  .carousel-nav {
+      top: 570px;
+    }
 
-    /* .heading img {
-      display: none;
-    }
-    .carousel-nav {
-      top: 160px;
-    }
-    .heading .h1logo {
-      display: block;
-      width: 100%;
-    }
-    .teenused {
-      padding-top: 280px;
-    }
-    div.piltlingidiv {
-      grid-template-columns: 100%;
-      grid-template-rows: 18% 18% 18% 18% 18% 18%;
-      padding: 20px 45px 20px 45px;
-    }
-    .midatahendabahikute {
-      margin-top: 20px;
-    }
-    .kasitookuttekolded {
-      margin-top: 20px;
-    }
-    div.piltlink {
-      margin: 0 auto;
-    }
-    .kusipakkumist {
-      margin-top: 10px;
-    }
-    footer p {
-      text-align: center;
-    }
-    footer h6 {
-      text-align: center;
-    }
-    .top-nav {
-      padding: 3px 15px 15px 15px;
-    }
-    
-    .carousel-ul {
-      gap: 10px;
-      min-width: 280px;
-    }
-   */
-
-    
   }
-
-
-  @media screen and (max-width: 600px) {
-    
-  }
-    /* .logoanchor{margin: 0 auto;} */
-
-    

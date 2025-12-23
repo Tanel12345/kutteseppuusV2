@@ -17,7 +17,22 @@
     <x-video-section/>
     <x-contact :product="$product" />
     <x-map/>
-    <x-cookies/>    
+    <x-cookies/>
+    
+    @if(request()->routeIs('index'))
+<script src="https://www.google.com/recaptcha/api.js?render=6LduzjQsAAAAAGXX_gNgdl6NvQQiEFpG0VnbQw-w"></script>
+
+<script>
+    grecaptcha.ready(function () {
+        grecaptcha.execute('6LduzjQsAAAAAGXX_gNgdl6NvQQiEFpG0VnbQw-w', {
+            action: 'contact'
+        }).then(function (token) {
+            const el = document.getElementById('recaptcha_token');
+            if (el) el.value = token;
+        });
+    });
+</script>
+@endif
     
 </x-layout>
 

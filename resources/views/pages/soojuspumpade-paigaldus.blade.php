@@ -22,7 +22,7 @@
             <div class="taustadiv">
                 <div class="textholderdiv">
                     <div class="textholder">
-                        <h1>Soojuspumpade paigaldus, projekt ja EHR-i asjaajamine</h1>
+                        <h1>Soojuspumpade paigaldus ja projekt</h1>
 
                     </div>
                 </div>

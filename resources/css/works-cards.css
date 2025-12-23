@@ -134,7 +134,7 @@ position: relative; /* ⚠️ oluline */
     grid-column: 1 / -1;
 }
 .work-detail-content p {
-  margin: 40px 0 40px 0;
+  margin: 20px 0 40px 0;
   font-size: 18px;
   line-height: 1.5;
   width: 500px;

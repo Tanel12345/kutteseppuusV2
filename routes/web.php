@@ -17,13 +17,7 @@ Route::get('/privaatsuspoliitika' , function () {
 return view('pages.privaatsuspoliitika');
 })->name('privaatsuspoliitika');
 
-Route::controller(Cachecontroller::class)->group(function () {
-    
-    Route::get('/cache-optimize', 'cacheoptimize')->name('cacheoptimize');
-    Route::get('/cache-clear', 'cacheclear')->name('cacheclear');
 
-
-});
 
 
 
@@ -155,6 +149,13 @@ Route::delete('/admin/works/image/{id}', [AdminController::class, 'deleteWorkIma
 //sorteerib pildid
     Route::post('/admin/works/images/sort', [AdminController::class, 'sortWorkImages'])
     ->name('admin.works.images.sort');
+
+      //  Cache maintenance (ADMIN ONLY)
+    Route::get('/admin/cache-optimize', [Cachecontroller::class, 'cacheoptimize'])
+        ->name('admin.cache.optimize');
+
+    Route::get('/admin/cache-clear', [Cachecontroller::class, 'cacheclear'])
+        ->name('admin.cache.clear');
 
 
 });

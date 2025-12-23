@@ -1,102 +1,104 @@
 
-//Küpsistebanneri js kood
 document.addEventListener('DOMContentLoaded', function () {
     const cookieBanner = document.getElementById('cookie-banner');
     const cookieOptions = document.querySelector('.cookie-options');
     const acceptCookiesButton = document.getElementById('accept-cookies');
     const kohandaButton = document.getElementById('kohanda-cookies');
+    const rejectAnalyticsButton = document.getElementById('reject-analytics');
+
+    const analyticsCheckbox = document.getElementById('analytics-cookies');
+    const userCookiesPreferenceButton = document.getElementById('user-cookies-preferences');
 
     const cookiesAccepted = localStorage.getItem('cookiesAccepted');
     const analyticsCookies = localStorage.getItem('analyticsCookies');
-   
 
-    const analyticsCheckbox = document.getElementById('analytics-cookies');
-
-    const userCookiesPreferenceButton = document.getElementById('user-cookies-preferences');
-    
-
-    
-
-    // Function to load Google Analytics
     function analyticsLoad() {
-        if (!document.getElementById('google-analytics')) {
-            // Create a single script for both loading and configuration
-            const gtagCombinedScript = document.createElement('script');
-            gtagCombinedScript.id = 'google-analytics';
-            gtagCombinedScript.async = true;
-            gtagCombinedScript.src = "https://www.googletagmanager.com/gtag/js?id=UA-160195597-1";
-            gtagCombinedScript.onload = function () {
-                window.dataLayer = window.dataLayer || [];
-                function gtag() { dataLayer.push(arguments); }
-                gtag('js', new Date());
-                gtag('config', 'UA-160195597-1');
-            };
+    // ära lae uuesti, kui juba olemas
+    if (document.getElementById('google-analytics')) return;
 
-            // Prepend the combined script to the head
-            document.head.prepend(gtagCombinedScript);
-        }
-    }
+    // lae GA4 gtag.js
+    const gtagScript = document.createElement('script');
+    gtagScript.id = 'google-analytics';
+    gtagScript.async = true;
+    gtagScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-QCX3G9KSPC';
+    document.head.appendChild(gtagScript);
+
+    gtagScript.onload = function () {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){ dataLayer.push(arguments); }
+
+        // märgi, et analytics on lubatud (consent juba saadud)
+        gtag('js', new Date());
+
+        gtag('config', 'G-QCX3G9KSPC', {
+            anonymize_ip: true,                    // GDPR
+            allow_google_signals: false,           // ei mingit reklaami/profiile
+            allow_ad_personalization_signals: false
+        });
+    };
+}
 
 
+    // Initial state
     if (!cookiesAccepted) {
-        // If cookies are not accepted yet, show the banner and set checkboxes to default (checked)
         cookieBanner.style.display = 'block';
-        
-        
+        // GDPR mõttes: analüütika peab olema vaikimisi OFF
+        analyticsCheckbox.checked = false;
     } else {
-        // If cookies are already accepted, set checkboxes based on localStorage values
-        if (analyticsCookies === 'true') {
-            analyticsCheckbox.checked = true;
-            analyticsLoad(); // Automatically load analytics if cookies are accepted
-        } else {
-            analyticsCheckbox.checked = false;
-        }
+        const consent = (analyticsCookies === 'true');
+        analyticsCheckbox.checked = consent;
+        if (consent) analyticsLoad();
     }
-    
-    
-    // Accept cookies handler
+
+    // "Nõustu kõigiga" = nõustu analüütikaga
     acceptCookiesButton.addEventListener('click', function () {
-      
-        localStorage.setItem('cookiesAccepted', true);
-        localStorage.setItem('analyticsCookies', true);
+        localStorage.setItem('cookiesAccepted', 'true');
+        localStorage.setItem('analyticsCookies', 'true');
         analyticsCheckbox.checked = true;
-        analyticsLoad(); // Load analytics scripts
-        cookieBanner.style.display = 'none'; // Hide the banner
-       
+        analyticsLoad();
+        cookieBanner.style.display = 'none';
     });
 
-    // Salvesta eelistused button
+    // "Ainult vajalikud" = keeldu analüütikast
+    if (rejectAnalyticsButton) {
+        rejectAnalyticsButton.addEventListener('click', function () {
+            localStorage.setItem('cookiesAccepted', 'true');
+            localStorage.setItem('analyticsCookies', 'false');
+            analyticsCheckbox.checked = false;
 
+            // Kui script on juba lehel (nt varem lubatud), eemalda script tag
+            const analyticsScript = document.getElementById('google-analytics');
+            if (analyticsScript) analyticsScript.remove();
+
+            cookieBanner.style.display = 'none';
+        });
+    }
+
+    // "Salvesta eelistused"
     userCookiesPreferenceButton.addEventListener('click', function () {
-
         const analyticsConsent = analyticsCheckbox.checked;
-        localStorage.setItem('cookiesAccepted', true);
-        localStorage.setItem('analyticsCookies', analyticsConsent);
+
+        localStorage.setItem('cookiesAccepted', 'true');
+        localStorage.setItem('analyticsCookies', analyticsConsent ? 'true' : 'false');
+
         if (analyticsConsent) {
-            // Load Google Analytics script if consent is given
             analyticsLoad();
         } else {
-            // Remove Google Analytics script if consent is not given
             const analyticsScript = document.getElementById('google-analytics');
-            if (analyticsScript) {
-                analyticsScript.remove();  // Removes the Google Analytics script from the page
-            }
+            if (analyticsScript) analyticsScript.remove();
         }
-        cookieBanner.style.display = 'none'; // Hide the banner
+
+        cookieBanner.style.display = 'none';
     });
 
-
-
-    
+    // Kohanda toggle
     kohandaButton.addEventListener('click', function () {
-        cookieOptions.classList.toggle('visible'); // Toggle the 'visible' class
+        cookieOptions.classList.toggle('visible');
     });
 
-    // Function to toggle cookie banner visibility
+    // Banner show/hide via cookie icon
     window.toggleBanner = function () {
-        // Show or hide the banner based on its current state
-        cookieBanner.style.display = (cookieBanner.style.display === 'none' || cookieBanner.style.display === '') ? 'block' : 'none';
+        cookieBanner.style.display =
+            (cookieBanner.style.display === 'none' || cookieBanner.style.display === '') ? 'block' : 'none';
     };
-
-  
 });

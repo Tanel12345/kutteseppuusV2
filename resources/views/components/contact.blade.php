@@ -1,7 +1,137 @@
+
+
 <section class="contact" id="contact">
+
+<form
+    id="form"
+    name="myForm"
+    class="contactform"
+    action="{{ route('contact.send') }}"
+    method="post"
+    autocomplete="on"
+    novalidate
+>
+    @csrf
+
+    <!-- reCAPTCHA token -->
+    <input type="hidden" name="recaptcha_token" id="recaptcha_token">
+
+    <div class="pealkiri">
+        @if(session('success'))
+            <label style="color: green; font-size: 25px; padding: 10px; width: fit-content; display: block; margin: 0 auto; font-weight: 300;" class="Pealkiri">
+                {{ session('success') }}
+            </label>
+        @endif
+
+        @if(session('error'))
+            <label style="color: red; font-size: 20px; padding: 10px; width: fit-content; display: block; margin: 0 auto; font-weight: 300;" class="Pealkiri">
+                {{ session('error') }}
+            </label>
+        @endif
+
+        @if(!session('success') && !session('error'))
+            <label class="Pealkiri" for="sinunimi">
+                Kiirem infovahetus telefonis – <span>Helista või saada kiri.</span>
+            </label>
+        @endif
+    </div>
+
+    <div class="Input">
+        <input
+            type="text"
+            name="sinunimi"
+            class="input"
+            id="sinunimi"
+            placeholder="*Sinu nimi:"
+            required
+            value="{{ old('sinunimi') }}"
+        >
+        <div id="nimierror">@error('sinunimi') {{ $message }} @enderror</div>
+    </div>
+
+    <div class="Input">
+        <input
+            type="email"
+            name="email"
+            class="input"
+            id="email"
+            placeholder="*Sinu e-post:"
+            required
+            value="{{ old('email') }}"
+        >
+        <div id="emailerror">@error('email') {{ $message }} @enderror</div>
+    </div>
+
+    <div class="Input">
+        <input
+            type="text"
+            name="pealkiri"
+            class="input"
+            id="pealkiri"
+            placeholder="Pealkiri"
+            value="{{ old('pealkiri') }}"
+        >
+    </div>
+
+    <div class="Inputtext">
+        <textarea
+            class="input"
+            name="inputtext"
+            id="teade"
+            placeholder="*Sinu päring..."
+            required
+        >{{ isset($product)
+            ? "Tere\nsoovin küsida toote " . $product . " kohta"
+            : old('inputtext', '') }}</textarea>
+
+        <div id="teadeerror">@error('inputtext') {{ $message }} @enderror</div>
+    </div>
+
+    <div class="nupp">
+        <button id="login_button" type="submit">Saada teade</button>
+    </div>
+
+</form>
+
+<div class="minukontakt">
+    <h3>
+        Tegevuspiirkond:<br>
+        Üle Eesti
+    </h3>
+    <hr>
+
+    <p><span>Asukoht:</span> Tallinn</p>
+
+    <p>
+        <span>Kontakt:</span><br>
+        Tanel Sepp<br>
+        tel: +372 5668 1555<br>
+        e-post: <a href="mailto:tanel@kuttesepp.ee">tanel@kuttesepp.ee</a>
+    </p>
+
+    <br>
+
+    <img
+        src="{{ Vite::asset('resources/images/tanel.webp') }}"
+        title="Tanel Sepp"
+        alt="Tanel Sepp"
+    >
+</div>
+
+</section>
+
+
+
+
+
+
+
+
+
+{{-- <section class="contact" id="contact">
 <form id="form" name="myForm" class="contactform" action="{{ route('contact.send') }}" method="post" autocomplete="on" novalidate>
   @csrf {{-- Laravel CSRF protection --}}
-  <div class="pealkiri">
+  {{--<div class="pealkiri">
       @if(session('success'))
         <label style="color: green; font-size: 25px; padding: 10px; width: fit-content; display: block; margin: 0 auto; font-weight: 300;" class="Pealkiri">
             {{ session('success') }}
@@ -62,7 +192,7 @@
   <img src="{{ Vite::asset('resources/images/tanel.webp') }}"
   title="Tanel Sepp" alt="Tanel Sepp">
 </div>
-</section>
+</section> --}}
 
 
 

@@ -10,56 +10,52 @@ const auto = true;
 const intervalTime = 80000;
 let slideInterval;
 const nextSlide = () => {
-  const current = document.querySelector(".active");
-  current.classList.remove("active");
-  const current1 = document.querySelector(".active1");
-  if (current.nextElementSibling) {
-    current1.classList.remove("active1");
-    current1.nextElementSibling.classList.add("active1");
-    current.nextElementSibling.classList.add("active");
-    current.style.animation = "slide-rightout 1s ease-in-out ";
-    current.addEventListener("animationend", () => {
-      current.style.opacity = "";
-      current.style.animation = "";
-    });
-  } else {
-    slides[0].classList.add("active");
-    navbutton[0].classList.add("active1");
-    navbutton[3].classList.remove("active1");
-    current.style.animation = "slide-rightout 1s ease-in-out ";
-    current.addEventListener("animationend", () => {
-      current.style.opacity = "";
-      current.style.animation = "";
-    });
+  const currentSlide = document.querySelector(".carousel-ul.active");
+  const currentIndicator = document.querySelector(".carousel-indicator.active1");
+
+  let nextIndex = Array.from(slides).indexOf(currentSlide) + 1;
+
+  // Kui jõuame lõppu, mine tagasi algusesse
+  if (nextIndex >= slides.length) {
+    nextIndex = 0;
   }
-  setTimeout(() => current.classList.remove("active"));
+
+  // Eemalda aktiivsed klassid
+  currentSlide.classList.remove("active");
+  currentIndicator.classList.remove("active1");
+
+  // Lisa uuele
+  slides[nextIndex].classList.add("active");
+  navbutton[nextIndex].classList.add("active1");
+
+  // Animatsioon
+  currentSlide.style.animation = "slide-rightout 1s ease-in-out";
+  currentSlide.addEventListener("animationend", () => {
+    currentSlide.style.opacity = "";
+    currentSlide.style.animation = "";
+  }, { once: true });
 };
 const prevSlide = () => {
-  const current = document.querySelector(".active");
-  current.classList.remove(".active");
-  current.style.opacity = "1";
-  const current1 = document.querySelector(".active1");
-  if (current.previousElementSibling) {
-    current1.classList.remove("active1");
-    current1.previousElementSibling.classList.add("active1");
-    current.style.animation = "slide-leftout 1s ease-in-out ";
-    current.previousElementSibling.classList.add("active");
-    current.addEventListener("animationend", () => {
-      current.style.opacity = "";
-      current.style.animation = "";
-    });
-  } else {
-    slides[slides.length - 1].classList.add("active");
-    navbutton[slides.length - 1].classList.add("active1");
-    navbutton[0].classList.remove("active1");
-    current.style.opacity = "1";
-    current.style.animation = "slide-leftout 1s ease-in-out ";
-    current.addEventListener("animationend", () => {
-      current.style.opacity = "";
-      current.style.animation = "";
-    });
+  const currentSlide = document.querySelector(".carousel-ul.active");
+  const currentIndicator = document.querySelector(".carousel-indicator.active1");
+
+  let prevIndex = Array.from(slides).indexOf(currentSlide) - 1;
+
+  if (prevIndex < 0) {
+    prevIndex = slides.length - 1;
   }
-  setTimeout(() => current.classList.remove("active"));
+
+  currentSlide.classList.remove("active");
+  currentIndicator.classList.remove("active1");
+
+  slides[prevIndex].classList.add("active");
+  navbutton[prevIndex].classList.add("active1");
+
+  currentSlide.style.animation = "slide-leftout 1s ease-in-out";
+  currentSlide.addEventListener("animationend", () => {
+    currentSlide.style.opacity = "";
+    currentSlide.style.animation = "";
+  }, { once: true });
 };
 next.addEventListener("click", () => {
   nextSlide();

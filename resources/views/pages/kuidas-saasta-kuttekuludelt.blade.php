@@ -21,6 +21,7 @@
         'resources/js/hamburger.js',
         'resources/js/cookies.js',
         'resources/js/accordeon.js',
+        'resources/js/lazyLoading.js',
     ]"
 >
 
@@ -34,8 +35,8 @@
                 </div>
             </div>
             <img class="taust"
-                 src="{{ Vite::asset('resources/images/taustad/kuttekulude-saastmine.webp') }}"
-                 alt="Küttekulude säästmine nutika küttesüsteemiga">
+                 src="{{ Vite::asset('resources/images/taustad/kuidas-saasta-taust.webp') }}"
+                 alt="Küttekulude raha säästmine ">
         </div>
     </div>
 </section>
@@ -54,7 +55,7 @@
                 </p>
 
                 <p>
-                    Küttesepp aitab leida lahendused, mis sobivad just sinu hoonele –
+                    Küttesepp aitab leida küttelahendused, mis sobivad just sinu hoonele –
                     olgu selleks <a href="{{ route('soojuspumbad.index') }}">soojuspump</a>,
                     <a href="{{ route('tahkekutteseadmed.index') }}">katel</a>
                     või olemasoleva süsteemi optimeerimine.
@@ -71,6 +72,12 @@
                     <li>soojuspump või katel töötab sagedase sisse-välja tsükliga</li>
                     <li>ruumide temperatuur on kõrgem kui tegelikult vajalik</li>
                 </ul>
+                <div class="pildidiv">
+                        <img class="tootjastpilt" src=""
+                            data-src="{{ Vite::asset('resources/images/vaikesed/kuidas-saasta-kuttekuludelt/hoiuporsas.webp') }}"
+                            alt="kuidas säästa raha">
+                    </div>
+
 
                 <hr class="red-line">
 
@@ -89,7 +96,14 @@
                     <li>tagab ühtlase sisekliima</li>
                 </ul>
 
-                <hr class="red-line">
+                <div class="pildidiv" style="justify-self:flex-end;">
+                        <img class="tootjastpilt"  src=""
+                            data-src="{{ Vite::asset('resources/images/vaikesed/kutteautomaatika/naine-kutteautomaatikaga.webp') }}"
+                            alt="Kütteautomaatikaga naine">
+                    </div>
+
+                 <hr class="red-line" style="justify-self:flex-end;">
+
 
                 <h3>Ilmastikukompensatsioon – sääst enne, kui ruum jahtub</h3>
 
@@ -103,6 +117,11 @@
                     See hoiab soojusallika töö stabiilsena ja vähendab
                     energiatarbimist kogu kütteperioodi vältel.
                 </p>
+                <div class="pildidiv" >
+                        <img class="tootjastpilt"  src=""
+                            data-src="{{ Vite::asset('resources/images/vaikesed/kutteautomaatika/weathercompensation.webp') }}"
+                            alt="Ilmastikukompensatsioon">
+                    </div>
 
                 <hr class="red-line">
 
@@ -124,7 +143,7 @@
                             <span class="faq-icon">&#10003;</span>
                             Kui palju on võimalik küttekuludelt säästa?
                         </h3>
-                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" class="faq-answer">
                             <p itemprop="text">
                                 Sõltuvalt hoonest ja süsteemist on võimalik säästa 15–40%,
                                 eriti kui automaatika ja küttekõver on õigesti seadistatud.
@@ -137,10 +156,9 @@
                             <span class="faq-icon">&#10003;</span>
                             Kas Küttesepp aitab olemasolevat süsteemi optimeerida?
                         </h3>
-                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" class="faq-answer">
                             <p itemprop="text">
-                                Jah. Teostame küttesüsteemide mõõdistust,
-                                seadistust ja optimeerimist üle Eesti.
+                                Jah. Teostame küttesüsteemide seadistamist, eelkõige küll seadmetele ja süsteemidele mida oleme ise paigaldanud või mida tunneme, pakume.
                             </p>
                         </div>
                     </div>
@@ -150,7 +168,7 @@
                 <div class="links" style="margin-top:30px;">
                     <div class="kusipakkumist">
                         <a href="/#form">
-                            <p>KÜSI TASUTA NÕU</p>
+                            <p>KÜSI LISAINFOT</p>
                         </a>
                     </div>
                 </div>
