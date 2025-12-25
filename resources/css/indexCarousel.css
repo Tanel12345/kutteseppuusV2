@@ -11,7 +11,7 @@
   height: 680px;
   position: relative;
   pointer-events: auto;
-overflow-x: hidden;
+
 }
 .carousel img {
   width: 100%;
@@ -106,7 +106,7 @@ will-change: transform;
   max-width: 1500px;
   
   margin: 50px auto;
-  overflow-x: hidden;
+ 
 }
 .carousel-ul {
   position: absolute;
