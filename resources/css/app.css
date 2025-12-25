@@ -1,38 +1,36 @@
-* {
-   margin: 0;
-   padding: 0;
-   font-family: "Poppins", sans-serif;
-   box-sizing: border-box;
-   color: #262626;
-   box-sizing: border-box;
-   max-width: 100%;
 
- }
- body {
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  color: #262626;
+  max-width: 100%;
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+body {
   width: 100%;
   height: 100%;
   overflow-x: hidden;
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none;    /* Firefox */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
   opacity: 0;
   animation: allin 0.5s ease-in-out forwards;
- }
- @keyframes allin {
-   from {
-     opacity: 0;
-   }
-   to {
-     opacity: 1;
-   }
- }
- /* Sujuv liikumine id dele mis ankurtagile lisatud */
- html {
-   /* scroll-behavior: smooth;  */
-   scroll-padding: 120px;
- }
-  /* Ankur tääg */
-  a {
-   text-decoration: none;
-   transition: color 0.3s ease;
- }
+}
+
+@keyframes allin {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+html {
+  scroll-padding: 120px;
+}
+
+a {
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
 

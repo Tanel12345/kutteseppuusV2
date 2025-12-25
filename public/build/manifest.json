@@ -1,6 +1,6 @@
 {
   "resources/css/app.css": {
-    "file": "assets/app-CO5yV6mX.css",
+    "file": "assets/app-qqQNEVJK.css",
     "src": "resources/css/app.css",
     "isEntry": true,
     "names": [
@@ -16,7 +16,7 @@
     ]
   },
   "resources/css/cookies.css": {
-    "file": "assets/cookies-DUl970_B.css",
+    "file": "assets/cookies-XNmilpX-.css",
     "src": "resources/css/cookies.css",
     "isEntry": true,
     "names": [
@@ -40,15 +40,23 @@
     ]
   },
   "resources/css/indexCarousel.css": {
-    "file": "assets/indexCarousel-CWW8wtkq.css",
+    "file": "assets/indexCarousel-r8OkwocY.css",
     "src": "resources/css/indexCarousel.css",
     "isEntry": true,
     "names": [
       "indexCarousel.css"
     ]
   },
+  "resources/css/lightbox.css": {
+    "file": "assets/lightbox-Dq2GANmD.css",
+    "src": "resources/css/lightbox.css",
+    "isEntry": true,
+    "names": [
+      "lightbox.css"
+    ]
+  },
   "resources/css/navbar.css": {
-    "file": "assets/navbar-DlU5Yft_.css",
+    "file": "assets/navbar-fJ8fe2Ne.css",
     "src": "resources/css/navbar.css",
     "isEntry": true,
     "names": [
@@ -56,15 +64,23 @@
     ]
   },
   "resources/css/piltlingid.css": {
-    "file": "assets/piltlingid-MnzFtNmL.css",
+    "file": "assets/piltlingid-CdLblocv.css",
     "src": "resources/css/piltlingid.css",
     "isEntry": true,
     "names": [
       "piltlingid.css"
     ]
   },
+  "resources/css/soojuspumbad-piltlingid.css": {
+    "file": "assets/soojuspumbad-piltlingid-DezxCR6c.css",
+    "src": "resources/css/soojuspumbad-piltlingid.css",
+    "isEntry": true,
+    "names": [
+      "soojuspumbad-piltlingid.css"
+    ]
+  },
   "resources/css/staticCarousel.css": {
-    "file": "assets/staticCarousel-BrU3XpM-.css",
+    "file": "assets/staticCarousel-D7ZaNPjO.css",
     "src": "resources/css/staticCarousel.css",
     "isEntry": true,
     "names": [
@@ -72,7 +88,7 @@
     ]
   },
   "resources/css/staticCarouselkuttesepp.css": {
-    "file": "assets/staticCarouselkuttesepp-DdD0nSQE.css",
+    "file": "assets/staticCarouselkuttesepp-rJRM6h0D.css",
     "src": "resources/css/staticCarouselkuttesepp.css",
     "isEntry": true,
     "names": [
@@ -80,7 +96,7 @@
     ]
   },
   "resources/css/teenused.css": {
-    "file": "assets/teenused-utGFFwQc.css",
+    "file": "assets/teenused-DCXmoulo.css",
     "src": "resources/css/teenused.css",
     "isEntry": true,
     "names": [
@@ -88,7 +104,7 @@
     ]
   },
   "resources/css/teenusedStatic.css": {
-    "file": "assets/teenusedStatic-CvfJFODD.css",
+    "file": "assets/teenusedStatic-Boo6jbB0.css",
     "src": "resources/css/teenusedStatic.css",
     "isEntry": true,
     "names": [
@@ -96,7 +112,7 @@
     ]
   },
   "resources/css/tootesektsioon.css": {
-    "file": "assets/tootesektsioon-VLVExShG.css",
+    "file": "assets/tootesektsioon-CEA1mzY0.css",
     "src": "resources/css/tootesektsioon.css",
     "isEntry": true,
     "names": [
@@ -104,7 +120,7 @@
     ]
   },
   "resources/css/tootjasektsioon.css": {
-    "file": "assets/tootjasektsioon-o-Bbpu3n.css",
+    "file": "assets/tootjasektsioon-NLxSdawV.css",
     "src": "resources/css/tootjasektsioon.css",
     "isEntry": true,
     "names": [
@@ -112,7 +128,7 @@
     ]
   },
   "resources/css/tootjasektsioon2.css": {
-    "file": "assets/tootjasektsioon2-CGjQslyg.css",
+    "file": "assets/tootjasektsioon2-bdVzqN34.css",
     "src": "resources/css/tootjasektsioon2.css",
     "isEntry": true,
     "names": [
@@ -125,6 +141,22 @@
     "isEntry": true,
     "names": [
       "upscroller.css"
+    ]
+  },
+  "resources/css/videosection.css": {
+    "file": "assets/videosection-Vrk_sXCB.css",
+    "src": "resources/css/videosection.css",
+    "isEntry": true,
+    "names": [
+      "videosection.css"
+    ]
+  },
+  "resources/css/works-cards.css": {
+    "file": "assets/works-cards-DtIxFCin.css",
+    "src": "resources/css/works-cards.css",
+    "isEntry": true,
+    "names": [
+      "works-cards.css"
     ]
   },
   "resources/images/icons/back.png": {
@@ -167,6 +199,10 @@
     "file": "assets/küttesepp_logo1-D1n0W-Vw.png",
     "src": "resources/images/küttesepp_logo1.png"
   },
+  "resources/images/logod/LaNordica-Extraflame.png": {
+    "file": "assets/LaNordica-Extraflame-CBA1YFtV.png",
+    "src": "resources/images/logod/LaNordica-Extraflame.png"
+  },
   "resources/images/logod/MIDEA.avif": {
     "file": "assets/MIDEA-C5Kr9di5.avif",
     "src": "resources/images/logod/MIDEA.avif"
@@ -182,6 +218,10 @@
   "resources/images/logod/ahjumees-logo.png": {
     "file": "assets/ahjumees-logo-CwWznk77.png",
     "src": "resources/images/logod/ahjumees-logo.png"
+  },
+  "resources/images/logod/alfa-plam-300x60.png": {
+    "file": "assets/alfa-plam-300x60-DZFTkLtU.png",
+    "src": "resources/images/logod/alfa-plam-300x60.png"
   },
   "resources/images/logod/bosch.png": {
     "file": "assets/bosch-DDTsLGl4.png",
@@ -256,7 +296,7 @@
     "src": "resources/images/taustad/Es_soojuspump4.webp"
   },
   "resources/images/taustad/Es_soojuspump5.webp": {
-    "file": "assets/Es_soojuspump5-BmUjE-k0.webp",
+    "file": "assets/Es_soojuspump5-D_CYU_wP.webp",
     "src": "resources/images/taustad/Es_soojuspump5.webp"
   },
   "resources/images/taustad/Es_soojuspump6.webp": {
@@ -267,6 +307,14 @@
     "file": "assets/Soojuspumba-taust-Bas-tUE5.webp",
     "src": "resources/images/taustad/Soojuspumba-taust.webp"
   },
+  "resources/images/taustad/VDI-2035.webp": {
+    "file": "assets/VDI-2035-B8BZXYdl.webp",
+    "src": "resources/images/taustad/VDI-2035.webp"
+  },
+  "resources/images/taustad/VDI-2035_taust.webp": {
+    "file": "assets/VDI-2035_taust-BCU3JOD4.webp",
+    "src": "resources/images/taustad/VDI-2035_taust.webp"
+  },
   "resources/images/taustad/alpha.webp": {
     "file": "assets/alpha-czdv6T9U.webp",
     "src": "resources/images/taustad/alpha.webp"
@@ -275,6 +323,46 @@
     "file": "assets/es-taust-BYvm941K.webp",
     "src": "resources/images/taustad/es-taust.webp"
   },
+  "resources/images/taustad/inhibiitor.webp": {
+    "file": "assets/inhibiitor-kdqsR9BF.webp",
+    "src": "resources/images/taustad/inhibiitor.webp"
+  },
+  "resources/images/taustad/keskkuttepliidid-taust.webp": {
+    "file": "assets/keskkuttepliidid-taust-APvgFAD-.webp",
+    "src": "resources/images/taustad/keskkuttepliidid-taust.webp"
+  },
+  "resources/images/taustad/keskkutteseadmed.webp": {
+    "file": "assets/keskkutteseadmed-uOmz92UZ.webp",
+    "src": "resources/images/taustad/keskkutteseadmed.webp"
+  },
+  "resources/images/taustad/kuidas-saasta-taust.webp": {
+    "file": "assets/kuidas-saasta-taust-BkghG1Bv.webp",
+    "src": "resources/images/taustad/kuidas-saasta-taust.webp"
+  },
+  "resources/images/taustad/kutteautomaatika-taust.webp": {
+    "file": "assets/kutteautomaatika-taust-CkZUgqR8.webp",
+    "src": "resources/images/taustad/kutteautomaatika-taust.webp"
+  },
+  "resources/images/taustad/kuttesusteemi-vesi.webp": {
+    "file": "assets/kuttesusteemi-vesi-YIRTd8Hw.webp",
+    "src": "resources/images/taustad/kuttesusteemi-vesi.webp"
+  },
+  "resources/images/taustad/kuttesusteemi-vesi1.webp": {
+    "file": "assets/kuttesusteemi-vesi1-DQ8dl6Q2.webp",
+    "src": "resources/images/taustad/kuttesusteemi-vesi1.webp"
+  },
+  "resources/images/taustad/kuttesusteemide-hooldus.webp": {
+    "file": "assets/kuttesusteemide-hooldus-BrN-LYe0.webp",
+    "src": "resources/images/taustad/kuttesusteemide-hooldus.webp"
+  },
+  "resources/images/taustad/kuttevee-inhibiitorid.webp": {
+    "file": "assets/kuttevee-inhibiitorid-CkpmRZ1i.webp",
+    "src": "resources/images/taustad/kuttevee-inhibiitorid.webp"
+  },
+  "resources/images/taustad/labipesu.webp": {
+    "file": "assets/labipesu-eqpt53tB.webp",
+    "src": "resources/images/taustad/labipesu.webp"
+  },
   "resources/images/taustad/maasoojuspumbad-taust.webp": {
     "file": "assets/maasoojuspumbad-taust-CkV3TdYB.webp",
     "src": "resources/images/taustad/maasoojuspumbad-taust.webp"
@@ -282,6 +370,10 @@
   "resources/images/taustad/midea_taust.jpeg": {
     "file": "assets/midea_taust-DbP1Y09A.jpeg",
     "src": "resources/images/taustad/midea_taust.jpeg"
+  },
+  "resources/images/taustad/ohk-vesi-samsungtaust.webp": {
+    "file": "assets/ohk-vesi-samsungtaust-BwNF0F2V.webp",
+    "src": "resources/images/taustad/ohk-vesi-samsungtaust.webp"
   },
   "resources/images/taustad/ohk-vesi-soojuspumbad.webp": {
     "file": "assets/ohk-vesi-soojuspumbad-BMUMt2HW.webp",
@@ -292,16 +384,36 @@
     "src": "resources/images/taustad/ohk-vesi-soojuspumptaust.webp"
   },
   "resources/images/taustad/ohksoojuspumptaust.webp": {
-    "file": "assets/ohksoojuspumptaust-DhOM5xgJ.webp",
+    "file": "assets/ohksoojuspumptaust-B1_Y7Ncc.webp",
     "src": "resources/images/taustad/ohksoojuspumptaust.webp"
+  },
+  "resources/images/taustad/pelletitaust.webp": {
+    "file": "assets/pelletitaust-CrnRJwcU.webp",
+    "src": "resources/images/taustad/pelletitaust.webp"
+  },
+  "resources/images/taustad/pelletitaust1.webp": {
+    "file": "assets/pelletitaust1-XFyqnEV7.webp",
+    "src": "resources/images/taustad/pelletitaust1.webp"
+  },
+  "resources/images/taustad/poranda-ja-radiaatorkute.webp": {
+    "file": "assets/poranda-ja-radiaatorkute-BQkoy3Dw.webp",
+    "src": "resources/images/taustad/poranda-ja-radiaatorkute.webp"
   },
   "resources/images/taustad/samsung-taust.webp": {
     "file": "assets/samsung-taust-AqRZ1fra.webp",
     "src": "resources/images/taustad/samsung-taust.webp"
   },
+  "resources/images/taustad/soojuspumbad-üldtaust.webp": {
+    "file": "assets/soojuspumbad-üldtaust-BqF8_L0x.webp",
+    "src": "resources/images/taustad/soojuspumbad-üldtaust.webp"
+  },
   "resources/images/taustad/taust5.png": {
     "file": "assets/taust5-BRLLd_uU.png",
     "src": "resources/images/taustad/taust5.png"
+  },
+  "resources/images/taustad/tehtud-tood-taust.webp": {
+    "file": "assets/tehtud-tood-taust-CmDheDtq.webp",
+    "src": "resources/images/taustad/tehtud-tood-taust.webp"
   },
   "resources/images/taustad/winter-8437400_1280.jpg": {
     "file": "assets/winter-8437400_1280-DzC9HWNj.jpg",
@@ -471,13 +583,97 @@
     "file": "assets/margaret_petra-Dowf9uD6.webp",
     "src": "resources/images/vaikesed/extraflame/margaret_petra.webp"
   },
-  "resources/images/vaikesed/kuidas-säästa-küttekuludelt/kuidas-saasta-kuttekuludelt.webp": {
-    "file": "assets/kuidas-saasta-kuttekuludelt-CPkMBS3A.webp",
-    "src": "resources/images/vaikesed/kuidas-säästa-küttekuludelt/kuidas-saasta-kuttekuludelt.webp"
+  "resources/images/vaikesed/keskkuttepliidid/Alfa-Plam-keskkuttepliit.jpg": {
+    "file": "assets/Alfa-Plam-keskkuttepliit-rvDzZMf6.jpg",
+    "src": "resources/images/vaikesed/keskkuttepliidid/Alfa-Plam-keskkuttepliit.jpg"
   },
-  "resources/images/vaikesed/kütteautomaatika/esbe-ara.webp": {
+  "resources/images/vaikesed/keskkuttepliidid/Alfa-Plam-keskkuttepliit.webp": {
+    "file": "assets/Alfa-Plam-keskkuttepliit-C84PVrMs.webp",
+    "src": "resources/images/vaikesed/keskkuttepliidid/Alfa-Plam-keskkuttepliit.webp"
+  },
+  "resources/images/vaikesed/kuidas-saasta-kuttekuludelt/hoiuporsas.webp": {
+    "file": "assets/hoiuporsas-CpyY6tsc.webp",
+    "src": "resources/images/vaikesed/kuidas-saasta-kuttekuludelt/hoiuporsas.webp"
+  },
+  "resources/images/vaikesed/kuidas-saasta-kuttekuludelt/kuidas-saasta-kuttekuludelt.webp": {
+    "file": "assets/kuidas-saasta-kuttekuludelt-CPkMBS3A.webp",
+    "src": "resources/images/vaikesed/kuidas-saasta-kuttekuludelt/kuidas-saasta-kuttekuludelt.webp"
+  },
+  "resources/images/vaikesed/kutteautomaatika/esbe-ara.webp": {
     "file": "assets/esbe-ara-5Fe8jF3l.webp",
-    "src": "resources/images/vaikesed/kütteautomaatika/esbe-ara.webp"
+    "src": "resources/images/vaikesed/kutteautomaatika/esbe-ara.webp"
+  },
+  "resources/images/vaikesed/kutteautomaatika/esbe-crb221-wireless-controller.webp": {
+    "file": "assets/esbe-crb221-wireless-controller-DmzlNX2_.webp",
+    "src": "resources/images/vaikesed/kutteautomaatika/esbe-crb221-wireless-controller.webp"
+  },
+  "resources/images/vaikesed/kutteautomaatika/naine-kutteautomaatikaga.webp": {
+    "file": "assets/naine-kutteautomaatikaga-CbG-MPk4.webp",
+    "src": "resources/images/vaikesed/kutteautomaatika/naine-kutteautomaatikaga.webp"
+  },
+  "resources/images/vaikesed/kutteautomaatika/weathercompensation.webp": {
+    "file": "assets/weathercompensation-3pK6gokk.webp",
+    "src": "resources/images/vaikesed/kutteautomaatika/weathercompensation.webp"
+  },
+  "resources/images/vaikesed/kuttesusteemi-vesi/Täitefilter thermaliQ_HB2.webp": {
+    "file": "assets/Täitefilter thermaliQ_HB2-BSoYX-d0.webp",
+    "src": "resources/images/vaikesed/kuttesusteemi-vesi/Täitefilter thermaliQ_HB2.webp"
+  },
+  "resources/images/vaikesed/kuttesusteemi-vesi/VDI-2035_radiaator.webp": {
+    "file": "assets/VDI-2035_radiaator-Dz8DBsee.webp",
+    "src": "resources/images/vaikesed/kuttesusteemi-vesi/VDI-2035_radiaator.webp"
+  },
+  "resources/images/vaikesed/kuttesusteemi-vesi/inhibiitor.webp": {
+    "file": "assets/inhibiitor-lpXjL-8I.webp",
+    "src": "resources/images/vaikesed/kuttesusteemi-vesi/inhibiitor.webp"
+  },
+  "resources/images/vaikesed/kuttesusteemi-vesi/inhibiitor2.webp": {
+    "file": "assets/inhibiitor2-CQpnc0Gi.webp",
+    "src": "resources/images/vaikesed/kuttesusteemi-vesi/inhibiitor2.webp"
+  },
+  "resources/images/vaikesed/kuttesusteemi-vesi/kuttesusteemi-vesi2.webp": {
+    "file": "assets/kuttesusteemi-vesi2-Bf4yHepQ.webp",
+    "src": "resources/images/vaikesed/kuttesusteemi-vesi/kuttesusteemi-vesi2.webp"
+  },
+  "resources/images/vaikesed/kuttesusteemi-vesi/porandakute.webp": {
+    "file": "assets/porandakute-C74kH74l.webp",
+    "src": "resources/images/vaikesed/kuttesusteemi-vesi/porandakute.webp"
+  },
+  "resources/images/vaikesed/kuttesusteemi-vesi/vdi-2035.webp": {
+    "file": "assets/vdi-2035-BZcOrFfl.webp",
+    "src": "resources/images/vaikesed/kuttesusteemi-vesi/vdi-2035.webp"
+  },
+  "resources/images/vaikesed/kuttesusteemi-vesi/vdi2035.webp": {
+    "file": "assets/vdi2035-CZOb516E.webp",
+    "src": "resources/images/vaikesed/kuttesusteemi-vesi/vdi2035.webp"
+  },
+  "resources/images/vaikesed/kuttesusteemide-hooldus/Tanel Soojuspumbaga.png": {
+    "file": "assets/Tanel Soojuspumbaga-CmZidTh5.png",
+    "src": "resources/images/vaikesed/kuttesusteemide-hooldus/Tanel Soojuspumbaga.png"
+  },
+  "resources/images/vaikesed/kuttesusteemide-hooldus/aluselise-keemiaga-pesu.webp": {
+    "file": "assets/inhibiitor-lpXjL-8I.webp",
+    "src": "resources/images/vaikesed/kuttesusteemi-vesi/inhibiitor.webp"
+  },
+  "resources/images/vaikesed/kuttesusteemide-hooldus/happelise-keemiaga-pesu.webp": {
+    "file": "assets/happelise-keemiaga-pesu-IbF8pHmD.webp",
+    "src": "resources/images/vaikesed/kuttesusteemide-hooldus/happelise-keemiaga-pesu.webp"
+  },
+  "resources/images/vaikesed/kuttesusteemide-hooldus/labipesu.webp": {
+    "file": "assets/labipesu-B5xQq-gQ.webp",
+    "src": "resources/images/vaikesed/kuttesusteemide-hooldus/labipesu.webp"
+  },
+  "resources/images/vaikesed/kuttesusteemide-hooldus/puhas-kuttesusteem.webp": {
+    "file": "assets/puhas-kuttesusteem-BraRcsxc.webp",
+    "src": "resources/images/vaikesed/kuttesusteemide-hooldus/puhas-kuttesusteem.webp"
+  },
+  "resources/images/vaikesed/kuttesusteemide-hooldus/rothenberg-roplus.webp": {
+    "file": "assets/rothenberg-roplus-CkL6hSpj.webp",
+    "src": "resources/images/vaikesed/kuttesusteemide-hooldus/rothenberg-roplus.webp"
+  },
+  "resources/images/vaikesed/kuttesusteemide-hooldus/samsung-valisosa.webp": {
+    "file": "assets/samsung-valisosa-dVqLqCRh.webp",
+    "src": "resources/images/vaikesed/kuttesusteemide-hooldus/samsung-valisosa.webp"
   },
   "resources/images/vaikesed/midea/MIDEA.avif": {
     "file": "assets/MIDEA-C5Kr9di5.avif",
@@ -502,6 +698,18 @@
   "resources/images/vaikesed/mitsubishi/MITSUBISHI.avif": {
     "file": "assets/MITSUBISHI-UEeDInTn.avif",
     "src": "resources/images/vaikesed/mitsubishi/MITSUBISHI.avif"
+  },
+  "resources/images/vaikesed/poranda-ja-radiaatorkute/perekond-radiaatoriga.webp": {
+    "file": "assets/perekond-radiaatoriga-wDBoAIKt.webp",
+    "src": "resources/images/vaikesed/poranda-ja-radiaatorkute/perekond-radiaatoriga.webp"
+  },
+  "resources/images/vaikesed/poranda-ja-radiaatorkute/porandakute.webp": {
+    "file": "assets/porandakute-CGIJR4k1.webp",
+    "src": "resources/images/vaikesed/poranda-ja-radiaatorkute/porandakute.webp"
+  },
+  "resources/images/vaikesed/poranda-ja-radiaatorkute/radiator.webp": {
+    "file": "assets/radiator-yCZsrPxK.webp",
+    "src": "resources/images/vaikesed/poranda-ja-radiaatorkute/radiator.webp"
   },
   "resources/images/vaikesed/samsung/Samsung-nordic-essential.jpg": {
     "file": "assets/Samsung-nordic-essential-BLlqmY18.jpg",
@@ -533,7 +741,7 @@
   },
   "resources/images/vaikesed/samsung/samsung-valisosa.webp": {
     "file": "assets/samsung-valisosa-dVqLqCRh.webp",
-    "src": "resources/images/vaikesed/samsung/samsung-valisosa.webp"
+    "src": "resources/images/vaikesed/kuttesusteemide-hooldus/samsung-valisosa.webp"
   },
   "resources/images/vaikesed/samsung/samsung-windfree.webp": {
     "file": "assets/samsung-windfree-C0oypiEv.webp",
@@ -553,7 +761,7 @@
   },
   "resources/images/vaikesed/soojuspumpade-paigaldus/Tanel Soojuspumbaga.png": {
     "file": "assets/Tanel Soojuspumbaga-CmZidTh5.png",
-    "src": "resources/images/vaikesed/soojuspumpade-paigaldus/Tanel Soojuspumbaga.png"
+    "src": "resources/images/vaikesed/kuttesusteemide-hooldus/Tanel Soojuspumbaga.png"
   },
   "resources/images/vaikesed/soojuspumpade-paigaldus/istuv mees.png": {
     "file": "assets/istuv mees-TKDx_39z.png",
@@ -576,7 +784,7 @@
     "src": "resources/images/vaikesed/upponor/uponor-underfloor-heating.webp"
   },
   "resources/js/accordeon.js": {
-    "file": "assets/accordeon-ClONqkov.js",
+    "file": "assets/accordeon-DTJi5r8-.js",
     "name": "accordeon",
     "src": "resources/js/accordeon.js",
     "isEntry": true
@@ -597,7 +805,7 @@
     "isEntry": true
   },
   "resources/js/carousel.js": {
-    "file": "assets/carousel-DYSSLlTX.js",
+    "file": "assets/carousel-VZ1TMMo1.js",
     "name": "carousel",
     "src": "resources/js/carousel.js",
     "isEntry": true
@@ -609,7 +817,7 @@
     "isEntry": true
   },
   "resources/js/cookies.js": {
-    "file": "assets/cookies-DGU0A4vy.js",
+    "file": "assets/cookies-DLEWTE-O.js",
     "name": "cookies",
     "src": "resources/js/cookies.js",
     "isEntry": true
@@ -633,13 +841,13 @@
     "isEntry": true
   },
   "resources/js/lenis.js": {
-    "file": "assets/lenis-Cu7Xo5C1.js",
+    "file": "assets/lenis-B438PF3r.js",
     "name": "lenis",
     "src": "resources/js/lenis.js",
     "isEntry": true
   },
   "resources/js/navbar.js": {
-    "file": "assets/navbar--9eND7Fk.js",
+    "file": "assets/navbar-wD4BrhY8.js",
     "name": "navbar",
     "src": "resources/js/navbar.js",
     "isEntry": true
@@ -648,6 +856,12 @@
     "file": "assets/upscroller-BlUazkKq.js",
     "name": "upscroller",
     "src": "resources/js/upscroller.js",
+    "isEntry": true
+  },
+  "resources/js/videosection.js": {
+    "file": "assets/videosection-BVoqLbpi.js",
+    "name": "videosection",
+    "src": "resources/js/videosection.js",
     "isEntry": true
   }
 }

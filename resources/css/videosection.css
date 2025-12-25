@@ -7,6 +7,7 @@
   background: #ffffff;
   border-top: 1px solid #ff0100;
   border-bottom: 1px solid #ff0100;
+  overflow-x: hidden;
 }
 
 /* Wrapper – SIIN ON TÕDE */

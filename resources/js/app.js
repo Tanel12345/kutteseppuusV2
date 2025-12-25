@@ -1,4 +1,6 @@
+// Core
 import './bootstrap';
 
-//Võimaldab samuti pildid buildi ajal laadida bootsrap cachesse
+
+// Assets (et pildid läheksid Vite buildi)
 import.meta.glob(['../images/**'], { eager: true });

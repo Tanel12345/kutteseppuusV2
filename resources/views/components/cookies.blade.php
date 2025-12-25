@@ -2,8 +2,8 @@
 
     <p class="cookie-message">
         Küttesepa lehel ei kasutata isikupärastatud reklaame.<br>
-        Lehe turvalisuse tagamiseks (Google reCAPTCHA) ja asukoha kuvamiseks
-        (Google Maps) võivad vajalikud küpsised alati rakenduda.<br>
+        Lehe turvalisuse tagamiseks ja asukoha kuvamiseks
+        võivad vajalikud küpsised alati rakenduda.<br>
         Valikuline on ainult analüütika (Google Analytics), millega mõõdame
         lehe külastatavust ja parandame teenust.
         <a href="{{ route('privaatsuspoliitika') }}" class="cookie-link" target="_blank">
