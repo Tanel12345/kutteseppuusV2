@@ -137,7 +137,7 @@ position: relative; /* ⚠️ oluline */
   margin: 20px 0 40px 0;
   font-size: 18px;
   line-height: 1.5;
-  width: 500px;
+  max-width: 500px;
 }
 .work-gallery {
   display: flex;

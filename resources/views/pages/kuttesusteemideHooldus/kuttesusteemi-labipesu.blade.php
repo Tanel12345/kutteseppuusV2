@@ -45,7 +45,7 @@ katlakivi eemaldus'" :metaAuthor="'Tanel Sepp'" :robots="'index, follow'" :viteC
                 <div class="content">
 
                     <h2><span>Küttesüsteemi läbipesu</span> – süsteemi taastamine ja puhastus</h2>
-                    <br>
+                   
 
                     <p> Küttesüsteemi läbipesu on eriti oluline enne soojuspumba, kondensatsioonikatla või uue ringluspumba paigaldust, et vältida soojusvahetite ummistumist ja garantiiprobleeme.<br><br>
                         Aastatega koguneb küttesüsteemi torustikku muda, rooste, magnetiit, katlakivi ning muud jäägid,

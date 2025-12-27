@@ -12,9 +12,8 @@
             @foreach ($brands as $brand)
                 <div class="brandboxes">
                     <a href="{{ route('soojuspumbad.type', $typeSlug) }}?brand={{ $brand->slug }}#tootesektsioon"
-                       title="{{ $brand->name }}">
-                        <img src="{{ asset('storage/' . $brand->logo) }}"
-                             alt="{{ $brand->name }}">
+                        title="{{ $brand->name }}">
+                        <img src="{{ asset('storage/' . $brand->logo) }}" alt="{{ $brand->name }}">
                     </a>
                 </div>
             @endforeach
@@ -27,8 +26,13 @@
 
                     <div class="tekstid">
                         <h2>{{ $product->name }}</h2>
+                        <button class="toggle-description" type="button">
+                            <span class="toggle-text">Vaata kirjeldust</span>
+                            <img class="toggle-icon" src="{{ Vite::asset('resources/images/icons/down.png') }}"
+                                alt="">
+                        </button>
 
-                        <p>{!! nl2br(e($product->description)) !!}</p>
+                        <p class="description">{!! nl2br(e($product->description)) !!}</p>
 
                         <h3>
                             Toote võimsus:
@@ -41,17 +45,17 @@
 
                             {{-- KÜSI LISAINFOT --}}
                             <div class="kusipakkumist">
-                                <a href="{{ url('/') . '?product=' . urlencode($product->brand->name . ' ' . $product->name) . '#form' }}">
+                                <a
+                                    href="{{ url('/') . '?product=' . urlencode($product->brand->name . ' ' . $product->name) . '#form' }}">
                                     <p>KÜSI LISAINFOT</p>
                                 </a>
                             </div>
 
                             {{-- BRÄND --}}
-                            @if($product->brand)
+                            @if ($product->brand)
                                 <a href="{{ route('brand.page', $product->brand->slug) }}?type={{ $typeSlug }}">
-                                    <img class="brand"
-                                         src="{{ asset('storage/' . $product->brand->logo) }}"
-                                         alt="{{ $product->brand->name }}">
+                                    <img class="brand" src="{{ asset('storage/' . $product->brand->logo) }}"
+                                        alt="{{ $product->brand->name }}">
                                 </a>
                             @endif
 
@@ -61,10 +65,8 @@
                     {{-- TOOTE PILT --}}
                     <div class="productImg">
                         <a href="{{ route('brand.page', $product->brand->slug) }}?type={{ $typeSlug }}">
-                            <img loading="lazy"
-                                 class="tooteImg"
-                                 src="{{ asset('storage/' . $product->product_img) }}"
-                                 alt="{{ $product->name }}">
+                            <img loading="lazy" class="tooteImg" src="{{ asset('storage/' . $product->product_img) }}"
+                                alt="{{ $product->name }}">
                         </a>
                     </div>
 
@@ -80,3 +82,25 @@
 
     </div>
 </section>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        document.querySelectorAll(".toggle-description").forEach(button => {
+            button.addEventListener("click", () => {
+                const description = button.nextElementSibling;
+                if (!description) return;
+
+                const isOpen = description.classList.toggle("open");
+
+                button.classList.toggle("open", isOpen);
+
+                const textSpan = button.querySelector(".toggle-text");
+                if (textSpan) {
+                    textSpan.textContent = isOpen ?
+                        "Peida kirjeldus" :
+                        "Vaata kirjeldust";
+                }
+            });
+        });
+    });
+</script>

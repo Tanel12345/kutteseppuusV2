@@ -46,7 +46,7 @@
             <div class="content">
 
                 <h2><span>Kütteautomaatika</span> – küttesüsteemi aju</h2>
-                <br>
+                
 
                 <p>
                     Kütteautomaatika on kogu vesiküttesüsteemi keskne juhtimissüsteem.

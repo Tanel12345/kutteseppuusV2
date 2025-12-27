@@ -9,9 +9,9 @@
 
         <div class="heading">
 
-            <h1>Soojuspumbad ja küttesüsteemid <br> <span>müük ja paigaldus</span> </h1>
+            <h1>Soojuspumbad ja küttesüsteemid <br> <span>Tallinnas ja Harjumaal</span> </h1>
             <h2>Õhk-õhk | õhk-vesi | maakütte soojuspumbad ning tahkekütteseadmed</h2>
-            <h3>Usaldusväärne ja professionaalne teenus</h3>
+            <h3>Sinu küttemurede lahendaja</h3>
             <img src="{{ Vite::asset('resources/images/küttesepp_logo1.png') }}" class="h1logo" alt="Küttesepp" />
         </div>
 

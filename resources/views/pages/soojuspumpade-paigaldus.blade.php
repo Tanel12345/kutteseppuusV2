@@ -1,4 +1,4 @@
-<x-layout :title="'Soojuspumpade paigaldus – Küttesepp annab nõu ja teeb ära'" :metaDescription="'Soojuspumpade paigaldus Tallinnas ja Harjumaal. Küttesepp aitab sul valida õige küttesüsteemi ja teeb töö korralikult ära. Loe, mida jälgida ja küsi pakkumist.'" :metaKeywords="'soojuspumba paigaldus, õhk-vesi soojuspumba paigaldus, maakütte paigaldus, soojuspumba projekt, EHR soojuspump, küttesüsteemi valik'" :metaAuthor="'Tanel Sepp'" :robots="'index, follow'" :viteCssAssets="[
+<x-layout :title="'Soojuspumpade paigaldus Tallinnas ja Harjumaal – nõuanded ja teostus | Küttesepp'" :metaDescription="'Soojuspumpade paigaldus Tallinnas ja Harjumaal. Selgitame, mida paigalduse juures arvestada, kuidas valida sobiv lahendus ning teostame töö professionaalselt.'" :metaKeywords="'soojuspumba paigaldus, õhk-vesi soojuspumba paigaldus, maasoojuspumba paigaldus, soojuspumba projekt, EHR soojuspump, küttesüsteemi paigaldus'" :metaAuthor="'Tanel Sepp'" :robots="'index, follow'" :viteCssAssets="[
     'resources/css/app.css',
     'resources/css/navbar.css',
     'resources/css/footer.css',
@@ -183,15 +183,15 @@
                         teostuvad, vähemalt siin ettevõttes, köik tööd ajagraafikus.
                     </p>
 
-                    <div class="pildidiv" style="justify-self:flex-end;width: 500px;">
+                    <div class="pildidiv" style="justify-self:flex-end;">
                         <img class="tootjastpilt" src=""
                             data-src="{{ Vite::asset('resources/images/vaikesed/soojuspumpade-paigaldus/naine-soojuspumbaga.png') }}"
                             alt="R290 külmainega tulevikukindel soojuspump">
                     </div>
                     <hr class="red-line" style="justify-self:flex-end;">
-                    <h3><strong>Milliste teenustega Küttesepp saab mind aidata?</strong></h3><br>
+                    <h3><strong>Milliste teenustega Küttesepp saab mind aidata?</strong></h3>
                     <ul class="rohelise-linnukesega"
-                        style='font-weight: 500; font-size: 18px; margin-top: 20px; margin-bottom: 5px'>
+                        style='font-weight: 500; font-size: 18px; margin-top:0; margin-bottom: 5px'>
                         <li>Konsultatsioon</li>
 
                     </ul>
@@ -241,7 +241,7 @@
 
 
 
-                    <div class="pildidiv" style="justify-self:flex-start;width: 500px;">
+                    <div class="pildidiv" style="justify-self:flex-start;">
                         <img class="tootjastpilt" src=""
                             data-src="{{ Vite::asset('resources/images/vaikesed/soojuspumpade-paigaldus/Tanel Soojuspumbaga.png') }}"
                             alt="R290 külmainega tulevikukindel soojuspump">

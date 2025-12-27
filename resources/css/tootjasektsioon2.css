@@ -21,8 +21,8 @@
    padding:25px;
    min-width: 300px;
    max-width: 1000px;
-   margin: 70px auto;
-   text-align: justify;         /* Justifies the text */
+   margin: 50px auto;
+   text-align:start;         /* Justifies the text */
    width: 100%;                 /* Ensures the .ettevotte takes up full width within the container */
    position: relative;          /* Add relative positioning to control the positioning of child elements */
    display: flex;              /* Enable flexbox */
@@ -67,8 +67,9 @@ ul.rohelise-linnukesega {
 
  .pildidiv {
 
-  width: 400px;
-  min-width: 300px;
+  width: 100%;
+  max-width: 400px;
+  min-width: unset;
   height: 100%; /* Set a specific height */
   margin-top: 50px;
   margin-bottom: 20px;
@@ -116,7 +117,7 @@ h4{font-size: 20px;font-weight: 700;font-size: 20px;
   margin: 40px 0 20px 0;
 }
 
-h3{margin: 40px 0 30px 0;}
+h3{margin: 40px 0 30px 0; font-size: 20px;}
 
 
 .inverse1 {
@@ -131,7 +132,8 @@ a:hover{color: #ff0100;}
 .red-line {
   border: none;
   border-top: 2px solid #ff0100;  /* thickness and color */
-  width: 400px;
+  width: 100%;
+  max-width: 400px;
   margin: 3em 0 6em 0;   
   align-self: flex-start;  
         /* space above/below, centered */
@@ -286,13 +288,15 @@ strong {font-size: 18px; font-weight: 700;}
     font-size: 1.1rem;
     
   }
-  p{font-size: 15px;}
+  p{ font-size: 15px;
+    margin: 8px 0 25px 0;
+    line-height: 1.6;}
   .content ul li {font-size: 17px;}
   .content h2 {font-size: 24px;}
   .content h3 strong {font-size: 20px;}
   .content h4 {font-size: 17px;}
   .content h5 {font-size: 18px;}
-  .content span {font-size: 22px;}
+  .content span {font-size: 28px;}
    table {
     width: auto;          /* lase sisul määrata suurus */
     min-width: 300px;     /* ära lase minna alla 300px */
@@ -301,5 +305,16 @@ strong {font-size: 18px; font-weight: 700;}
   table td {
     word-break: break-word;  /* murrab teksti vajadusel */
     padding: 6px;
+  }
+  .ettevotte {
+    min-width: unset;      /* 🔥 oluline */
+    padding: 25px;         /* vähem paddingut */
+    margin: 30px auto;
+  }
+   h4 {
+    display: block;        /* 🔥 kõige olulisem */
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
   }
   }

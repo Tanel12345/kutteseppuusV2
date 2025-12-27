@@ -1,8 +1,8 @@
 
 
-<x-layout :title="'Soojuspumbad ja küttesüsteemid – müük, paigaldus ja hooldus | Küttesepp'"
-    :metaDescription="'Soojuspumpade ja küttesüsteemide müük, paigaldus ja hooldus. Õhk-õhk, õhk-vesi ja maasoojuspumbad, pelletikatlad ja -kaminad. Küttesepp – professionaalne küttelahendus sinu kodule.'"
-    :metaKeywords="'soojuspumbad, õhk-õhk soojuspumbad, õhk-vesi soojuspumbad, maasoojuspumbad, pelletikatlad, pelletikaminad, küttesüsteemid, küttesüsteemide paigaldus, küttesüsteemide hooldus, säästlik küte'"
+<x-layout :title="'Soojuspumbad ja küttesüsteemid Tallinnas ja Harjumaal | Küttesepp'"
+    :metaDescription="'Soojuspumpade ja küttesüsteemide müük, paigaldus ja hooldus Tallinnas ja Harjumaal. Õhk-õhk, õhk-vesi ja maasoojuspumbad, pelletikatlad ja kaminad. Küttesepp.'"
+    :metaKeywords="'soojuspumbad tallinn, soojuspumbad harjumaa, õhk-õhk soojuspumbad, õhk-vesi soojuspumbad, maasoojuspumbad, pelletikatlad, küttesüsteemide paigaldus'"
     :metaAuthor="'Tanel Sepp'"
     :robots="'index, follow'"  
     :viteCssAssets="['resources/css/app.css', 'resources/css/navbar.css', 'resources/css/footer.css', 'resources/css/upscroller.css', 'resources/css/indexCarousel.css', 'resources/css/teenused.css', 'resources/css/piltlingid.css', 'resources/css/cookies.css', 'resources/css/ettevottest.css','resources/css/contact.css','resources/css/videosection.css']"

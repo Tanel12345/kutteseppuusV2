@@ -39,7 +39,7 @@
                 <div class="content">
 
                     <h2><span>Põrandaküte või radiaatorid</span> – küttesüsteemi tunnetatav osa</h2>
-                    <br>
+                    
 
                     <p>
                         Põranda- ja radiaatorküte on vesiküttesüsteemi kõige olulisem osa – just see määrab,

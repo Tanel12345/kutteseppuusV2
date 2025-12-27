@@ -47,7 +47,7 @@ katlakivi vältimine'"
                 <div class="content">
 
                     <h2><span>Küttesüsteemi vee kvaliteet</span> - süsteemi eluiga, töökindlus ja küttekulud.</h2>
-                    <br>
+                  
 
                     <p>
                         Küttesüsteemi vee koostis – juhtivus, pH, mineraalide sisaldus ja gaasilisus – määrab, kas
@@ -222,7 +222,7 @@ katlakivi vältimine'"
 
 
                     <hr class="red-line" style="margin-top:40px; margin-bottom:40px;">
-                    <br>
+                      <br>
 
                     <!--  FAQ AKORDION – sinu originaalblokk 1:1  -->
 

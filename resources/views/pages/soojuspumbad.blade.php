@@ -1,4 +1,4 @@
-<x-layout :title="'Soojuspumbad – Õhk-õhk, õhk-vesi ja maasoojuspumbad | Küttesepp'" :metaDescription="'Kõik soojuspumba tüübid – õhk-õhk, õhk-vesi ja maasoojuspumbad. Vastavalt sinu kodu vajadustele aitab Küttesepp valida sobivaima lahenduse ja teostab paigalduse.'" :metaKeywords="'soojuspumbad, õhksoojuspump, õhk-vesi soojuspump, maasoojuspump, kütmine, energiasääst, küttesüsteemid'" :metaAuthor="'Tanel Sepp'" :robots="'index, follow'" :viteCssAssets="[
+<x-layout :title="'Soojuspumbad – Õhk-õhk, õhk-vesi ja maasoojuspumbad Tallinnas | Küttesepp'" :metaDescription="'Kõik soojuspumba tüübid – õhk-õhk, õhk-vesi ja maasoojuspumbad. Vastavalt sinu kodu vajadustele aitab Küttesepp valida sobivaima lahenduse ja teostab paigalduse.'" :metaKeywords="'soojuspumbad, õhksoojuspump, õhk-vesi soojuspump, maasoojuspump, kütmine, energiasääst, küttesüsteemid'" :metaAuthor="'Tanel Sepp'" :robots="'index, follow'" :viteCssAssets="[
     'resources/css/app.css',
     'resources/css/navbar.css',
     'resources/css/footer.css',
@@ -18,12 +18,12 @@
         'resources/js/lazyLoading.js',
     ]"> <x-static-carousel
         title="SOOJUSPUMBAD <br><br><span>Tõhusaimad lahendused sinu kodu kütmiseks</span>"
-        content="Soojuspumpade peamine eesmärk on toota soojust võimalikult madala energiakuluga. Kõik soojuspumba tüübid – õhk-õhk, õhk-vesi ja maasoojuspumbad – kasutavad ära looduslikku soojusenergiat ning kannavad selle sinu elamisse. <br><br>Soojuspumbad erinevad üksteisest selle järgi, millisest keskkonnast nad soojust koguvad ja kuidas nad selle sinu küttevõrku või ruumidesse edasi annavad. Kui soovid säästa küttekuludelt, tõsta kodu energiatõhusust ja suurendada mugavust, on soojuspump üks parimaid valikuid. <br><br>Küttesepp aitab valida sinu hoone jaoks sobivaima lahenduse, koostab vajalikud projektid ning teostab professionaalse paigalduse ja seadistamise."
+        content="Soojuspumpade peamine eesmärk on toota soojust võimalikult madala energiakuluga. Kõik soojuspumba tüübid – õhk-õhk, õhk-vesi ja maasoojuspumbad – kasutavad ära looduslikku soojusenergiat ning kannavad selle sinu elamisse. <br><br>Soojuspumbad erinevad üksteisest selle järgi, millisest keskkonnast nad soojust koguvad ja kuidas nad selle sinu küttevõrku või ruumidesse edasi annavad. Kui soovid säästa küttekuludelt, tõsta kodu energiatõhusust ja suurendada mugavust, on soojuspump üks parimaid valikuid. <br><br>Küttesepp aitab valida sinu hoone jaoks sobivaima lahenduse, koostab vajalikud projektid ning teostab professionaalse paigalduse ja seadistamise. Teenust pakume üle Eesti, kuid oma asukohast tulenevalt teenindame eelkõige Tallinna ja Harjumaa piirkonda."
         image="resources/images/taustad/soojuspumbad-üldtaust.webp" imageAlt="Soojuspumpade üldinfo taust"
         eriStiil="object-position: bottom;" :textholderStyle="''" />
 <section class="piltlingid" id="piltlingid">
 
-    <h2 style="font-size:32px;font-weight:400;margin:154px 0 0;text-align:center;">
+    <h2 style="font-size:32px;font-weight:400;margin:50px 0 0;text-align:center;">
         VALI SOBIV SOOJUSPUMBA TÜÜP
     </h2>
 

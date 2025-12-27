@@ -20,10 +20,14 @@
    padding:25px;
    min-width: 300px;
    max-width: 1000px;
-   margin: 70px auto;
-   text-align: justify;         /* Justifies the text */
+   margin: 50px auto;
+   text-align:start;         /* Justifies the text */
    width: 100%;                 /* Ensures the .ettevotte takes up full width within the container */
    position: relative;          /* Add relative positioning to control the positioning of child elements */
+   display: flex;              /* Enable flexbox */
+   flex-direction: column;      /* Align children in a column */
+   justify-content: flex-start;     
+   align-items: flex-start;  
 }
  .ettevotte span {
    font-weight: 500;
@@ -42,6 +46,7 @@
   position: relative;
   padding-left: 28px;
   margin-bottom: 3px;
+
 }
 .rohelise-linnukesega li::before {
   content: "✔";

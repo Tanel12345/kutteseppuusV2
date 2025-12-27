@@ -50,7 +50,7 @@ keskkonnasõbralik inhibiitor'"
             <div class="content">
 
                 <h2><span>Küttevee inhibiitor</span> – täielik kaitse kogu küttesüsteemile</h2>
-                <br>
+              
 
                 <p>
                     Küttevee inhibiitorid on spetsiaalsed lisaained, mis takistavad torustiku ja soojusvahetite sisepindade

@@ -13,7 +13,8 @@
 
     {{-- Facebooki jaoks meta --}}
     <meta property="og:title" content="{{ $title ?? 'Küttesepp - Küttemurede lahendaja' }}">
-    <meta property="og:description" content="{{ $metaDescription ?? 'Pakume küttesüsteeme ja paigaldust kogu Eestis. Vaata lähemalt!' }}">
+    <meta property="og:description"
+        content="{{ $metaDescription ?? 'Pakume küttesüsteeme ja paigaldust kogu Eestis. Vaata lähemalt!' }}">
     <meta property="og:url" content="{{ url()->current() }}">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="et_EE">
@@ -24,7 +25,7 @@
     <!-- Lingid -->
     <link rel="canonical" href="{{ url()->current() }}" />
     <meta name="robots" content="{{ $robots ?? 'index, follow' }}">
-    
+
 
     <!-- favikoonid erinevatesse kohtadesse ja seadmetesse, kasutasin realfavicongeneratorit -->
     <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
@@ -32,32 +33,46 @@
     <link rel="shortcut icon" href="/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="manifest" href="/site.webmanifest" />
-     <!-- googlefonts -->
+    <!-- googlefonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;900&display=swap"
+        rel="stylesheet">
 
     @vite($viteCssAssets ?? 'resources/css/app.css')
     @vite($viteJsAssets ?? ['resources/js/app.js'])
-    <script defer  src="https://www.youtube.com/iframe_api"></script>
+    <script defer src="https://www.youtube.com/iframe_api"></script>
+    <script type="application/ld+json">
+    {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Küttesepp",
+    "url": "https://www.kuttesepp.ee",
+    "logo": "https://www.kuttesepp.ee/storage/images/kuttesepp-logo-512x512.png",
+    "image": "https://www.kuttesepp.ee/storage/images/kuttesepp-logo-512x512.png",
+    "sameAs": [
+        "https://www.facebook.com/kuttesepp"
+    ]
+    }
+    </script>
 
-  
+
 
 
 </head>
 
 <body>
-    
-   
-        <x-header />
-       
-        <main>
-            {{ $slot }}
-        </main>
 
-        <x-footer />
-        
-      
+
+    <x-header />
+
+    <main>
+        {{ $slot }}
+    </main>
+
+    <x-footer />
+
+
 </body>
-  
+
 </html>

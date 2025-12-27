@@ -40,7 +40,7 @@
 
 {{-- ✅ ALAKATEGOORIATE VALIK --}}
 <section class="piltlingid" id="piltlingid">
-   <div style="margin-top:35px"class="piltlingidiv">
+   <div style="margin-top:50px"class="piltlingidiv">
 
     {{-- 🔥 PELLETIKATLAD JA -KAMINAD --}}
     <div class="piltlink">

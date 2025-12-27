@@ -45,7 +45,7 @@ küttesüsteemi hooldusteenus'" :metaAuthor="'Tanel Sepp'" :robots="'index, foll
                 <div class="content">
 
                     <h2><span>Küttesüsteemi hooldus</span> – miks see on vajalik?</h2>
-                    <br>
+                    
 
                     <p>
                         Olgu teil soojuspump, tahkekütte-, vedelkütte- või gaasikatel. Kas tuleb soe katlamajast või kütate tavalist halupuuahju – Iga küttesüsteem omab kas soojusallikat ja/või ka eriosi ja need vajavad regulaarset hooldust ja vajadusel <a href="/kuttesusteemi-labipesu">küttesüsteemi läbipesu</a> ning <a href="/kuttesusteemi-vesi">küttevee töötlust</a>. Ikka selleks et tagada energiasäästlik töö, madalad küttearved ja

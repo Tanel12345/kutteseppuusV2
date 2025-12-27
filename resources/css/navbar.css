@@ -80,7 +80,7 @@ header.animate {
 /*Navbar*/
  .top-nav {
   font-weight: 400;
-  font-size: 0.8rem;
+  font-size: 13px;
  
   padding: 15px 15px 0px 15px;
   display: flex;
@@ -104,7 +104,7 @@ header.animate {
   align-items: center; /* Align items vertically */
   flex-wrap: nowrap; /* Prevent line breaks within each container */
   gap: 5px; /* Add space between elements */
-  min-width: 330px;
+  min-width: 370px;
 
 }
 
@@ -332,7 +332,10 @@ img.facebook:hover {
 }
 
    @media screen and (max-width: 755px)   {
-    
+    .top-nav {
+  
+  font-size: 11px;
+    }
     .hamburger {
     display: block;
     grid-column: 1;

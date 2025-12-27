@@ -5,7 +5,7 @@
 
 .tootevalikud{
   width:100%;
-  margin: 80px 0;
+  margin: 50px 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -120,11 +120,16 @@
    justify-content: center;
    align-items: flex-start; /* Aligns the content at the top */
    word-wrap: break-word; /* Ensures long words break and don't overflow */
-   text-align: justify;
+   text-align: flex-start;
 }
 
 .tekstid h2{margin: 25px 0 15px 0;}
 .tekstid h3{margin: 25px 0 15px 0;}
+
+
+
+
+
 
 
 .tooteaktiivala .productImg {
@@ -170,6 +175,102 @@
   transform: translateY(-7px);
   cursor: pointer;
   box-shadow: 10px 14px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+
+/* ================================
+   TOOTE KIRJELDUSE AVAMINE / SULGEMINE
+   ================================ */
+
+/* Nupp */
+.toggle-description {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 15px 0 10px 0;
+
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+
+  font-size: 15px;
+  font-weight: 600;
+  color: #ff0100;
+  cursor: pointer;
+
+  text-align: left;
+}
+
+/* Tekst */
+.toggle-description .toggle-text {
+  color: #ff0100;
+}
+
+/* Nool */
+.toggle-description .toggle-icon {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+  transform: rotate(0deg);
+  transition: transform 0.3s ease;
+  position: relative;
+  top: 3px;
+}
+
+/* Avatud olek – nool pöördub */
+.toggle-description.open .toggle-icon {
+  transform: rotate(180deg);
+}
+
+/* Hover (desktop) */
+.toggle-description:hover {
+  opacity: 0.85;
+}
+
+/* ================================
+   KIRJELDUSE SISEU – PEIDETUD / AVATUD
+   ================================ */
+
+.tekstid .description {
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+
+  transition:
+    max-height 0.4s ease,
+    opacity 0.25s ease;
+
+  margin: 0;
+}
+
+/* Kui avatud */
+.tekstid .description.open {
+  max-height: 2000px; /* piisavalt suur, et kogu tekst avaneks */
+  opacity: 1;
+
+}
+
+/* ================================
+   MOBIILIPARANDUSED
+   ================================ */
+@media screen and (max-width: 755px) {
+
+  .toggle-description {
+    font-size: 14px;
+    margin-top: 12px;
+  }
+
+  .toggle-description .toggle-icon {
+    width: 16px;
+    height: 16px;
+  }
+
+  .tekstid .description {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  .tekstid h2{font-size:20px;}
 }
 /* küsi pakkumist parem
 .kusipakkumist {
@@ -244,7 +345,3 @@
    box-shadow: 10px 14px 10px rgba(0, 0, 0, 0.3);
    cursor: pointer;
  }
- @media screen and (max-width: 755px)   {
-
-.tekstid h2{font-size:20px;}
-  }

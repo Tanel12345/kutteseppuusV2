@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+    xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+                        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+  <!-- Avaleht -->
+  <url>
+    <loc>https://www.kuttesepp.ee/</loc>
+    <lastmod>2025-12-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Teenused -->
+  <url>
+    <loc>https://www.kuttesepp.ee/soojuspumpade-paigaldus</loc>
+    <lastmod>2025-12-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.kuttesepp.ee/kuttesusteemi-vesi</loc>
+    <lastmod>2025-12-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.kuttesepp.ee/kutteautomaatika</loc>
+    <lastmod>2025-12-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.kuttesepp.ee/poranda-ja-radiaatorkute</loc>
+    <lastmod>2025-12-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Soojuspumbad -->
+  <url>
+    <loc>https://www.kuttesepp.ee/soojuspumbad</loc>
+    <lastmod>2025-12-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://www.kuttesepp.ee/soojuspumbad/ohk-ohk-soojuspumbad</loc>
+    <lastmod>2025-12-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.kuttesepp.ee/soojuspumbad/ohk-vesi-soojuspumbad</loc>
+    <lastmod>2025-12-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.kuttesepp.ee/soojuspumbad/maasoojuspumbad</loc>
+    <lastmod>2025-12-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Tahkekütteseadmed -->
+  <url>
+    <loc>https://www.kuttesepp.ee/tahkekutteseadmed</loc>
+    <lastmod>2025-12-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.kuttesepp.ee/pelletikatlad-kaminad</loc>
+    <lastmod>2025-12-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.kuttesepp.ee/keskkuttepliidid-kaminad</loc>
+    <lastmod>2025-12-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Hooldus ja vesi -->
+  <url>
+    <loc>https://www.kuttesepp.ee/kuttesusteemide-hooldus</loc>
+    <lastmod>2025-12-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.kuttesepp.ee/kuttevee-demineraliseerimine</loc>
+    <lastmod>2025-12-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.kuttesepp.ee/kuttevee-inhibiitorid</loc>
+    <lastmod>2025-12-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.kuttesepp.ee/kuttesusteemi-labipesu</loc>
+    <lastmod>2025-12-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Blogi / sisu -->
+  <url>
+    <loc>https://www.kuttesepp.ee/kuidas-saasta-kuttekuludelt</loc>
+    <lastmod>2025-12-25</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Tehtud tööd -->
+  <url>
+    <loc>https://www.kuttesepp.ee/tehtud-tood</loc>
+    <lastmod>2025-12-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://www.kuttesepp.ee/tehtud-tood/magnet-ja-mudafiltri-lisamine-susteemi-ja-kuttevee-tootlus</loc>
+    <lastmod>2025-12-25</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://www.kuttesepp.ee/tehtud-tood/ohk-vesi-soojuspumba-paigaldus-eramusse-laagris</loc>
+    <lastmod>2025-12-25</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://www.kuttesepp.ee/tehtud-tood/ohk-vesi-soojuspumba-paigaldus-suuremasse-eramusse</loc>
+    <lastmod>2025-12-25</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+</urlset>

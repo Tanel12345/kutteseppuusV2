@@ -51,7 +51,7 @@ soojuspumba hooldus'"
             <div class="content">
 
                 <h2><span>Demineraliseeritud küttevesi</span> – kaitse süsteemi katlakivi ja korrosiooni eest.</h2>
-                <br>
+            
 
                 <p>
                     Küttevee demineraliseerimine tähendab vee puhastamist kõigist lahustunud sooladest ja mineraalidest,

@@ -5,7 +5,7 @@
    
  }
  .carousel {
-
+position: relative;
    width: 100%;
    height:490px;
  
@@ -35,31 +35,36 @@
   transform: translate3d(0, 0, 0);
  }
  .textholderdiv{
-  position: relative;
-  max-width:1300px;
+   position: absolute;
+  inset: 0;                 /* top:0 right:0 bottom:0 left:0 */
+  max-width: 1300px;
   margin: auto;
- 
 
-  border-radius: 15px;
   display: flex;
-  justify-content: center;  /* Horizontal centering */
-  align-items: center;      /* Vertical centering */
-  min-height: 50vh;    
+  justify-content: center;
+  align-items: center;
+
+  pointer-events: none;     /* optional */
+
+  
+
+     
 }
 
  .textholder{
   background-color: #ffffffa8;
   animation: h1slide 1s ease-in-out 0.5s forwards;
-  position: relative;
   
+  border-radius: 15px;
   width: 70%;
-  min-width: 320px;
+  min-width: 300px;
   max-width: 900px;
   
-
+ pointer-events: auto;
   z-index: 9999;
   border-radius: 15px;
   transform: scale(0);
+  transform-origin: center;
  }
 
  .carousel h1 {
@@ -82,14 +87,14 @@
   
 }
 .carousel p {
-  text-align: justify;
+  text-align:start;
   
   
   
   font-size: 16px;
   font-weight:500;
  
-  padding: 12px;
+  padding: 15px;
   line-height: 25px;
 
  
@@ -118,13 +123,22 @@
 @media screen and (max-width: 755px)   {
 
   .carousel {
-
-    height: 500px;
+height:250px;
+    
   
   }
   .taust {
-    height:550px;
+    height:300px;
   }
+
+  .taustadiv {
+
+  height: 250px;
+ 
+
+  
+ }
+
 
   .carousel h1 {
  
@@ -147,14 +161,7 @@
   
    
   }
-  .textholderdiv{
-    position: relative;
-    max-width:1300px;
-    min-width:300px;
-    margin: auto auto;
-    top: 30px;
-    left:10px;
-  }
+
   
   
 }
