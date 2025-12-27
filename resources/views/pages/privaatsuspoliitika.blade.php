@@ -16,7 +16,7 @@
         'resources/js/app.js',
         'resources/js/hamburger.js',
         'resources/js/upscroller.js',
-        'resources/js/navbarScrolling.js',
+        'resources/js/navbar.js',
         'resources/js/lenis.js',
         'resources/js/cookies.js'
     ]"
