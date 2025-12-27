@@ -31,11 +31,12 @@
 
     Vesiküttega kamin või pliit sobib hästi neile, kes soovivad ühendada elutoa hubase kaminatule ja praktilise keskküttelahenduse üheks süsteemiks. Süsteemi saab kombineerida ka soojuspumba, päikeseenergia või olemasoleva katlaga.<br><br>
     
-    Keskküttepliitide ja -kaminate eeliseks on kiire reageerimine, kompaktne ehitus ning võimalus töötada ka väikese puhverpaagi või olemasoleva küttesüsteemiga. Võrreldes klassikaliste halupuukateldega on need seadmed oluliselt kergemad ja sobivad hästi ka väiksematesse tehnoruumidesse.<br><br>
+    Keskküttepliitide ja -kaminate eeliseks on kiire reageerimine, kompaktne ehitus ning võimalus töötada ka väikese puhverpaagi või olemasoleva küttesüsteemiga.<br><br>
     
     Küttesepp pakub keskküttekamina ja -pliidi terviklahendust: seadme valik, hüdrauliline ühendamine, ohutusarmatuur, paisupaak, automaatika ning süsteemi tasakaalustamine ja kasutusõpetus."
     image="resources/images/taustad/keskkuttepliidid-taust.webp"
     imageAlt="Keskküttepliit kui küttesüsteemi osa"
+    eriStiil="object-position:70% top;"
     :textholderStyle="''"
 />
 

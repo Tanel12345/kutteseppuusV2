@@ -93,9 +93,10 @@ section.piltlingid {
   div.piltlingitekst h2 {
     font-size: 1.5rem;
     font-weight: 300;
+    line-height: 25px;
   }
   div.piltlingitekst img {
-    width: 30px;
+    width: 50px;
     height: auto;
   }
 ul.Lisalingid {

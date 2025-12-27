@@ -17,6 +17,7 @@
     image="resources/images/taustad/ohksoojuspumptaust.webp"
     imageAlt="Õhksoojuspumbad taust"
     :textholderStyle="''"
+    eriStiil="object-position: 80% top;"
 />
 <x-tootesektsioonid.soojuspumbad-tootesektsioon :products="$products" :brands="$brands"  :typeSlug="$typeSlug"/>
  <x-up-scroller/>
