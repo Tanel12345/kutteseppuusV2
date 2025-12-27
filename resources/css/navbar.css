@@ -3,16 +3,19 @@
   color: #ff0100;
   transition: color 0.5s;
 }
+
 #ettevottest:hover {
   color: #000000;
   transition: color 1s;
 }
+
 .bottom-rightdiv a:hover {
   color: #ff0100;
   transition: color 0.5s;
 }
+
 /* ******************************************************************** */
- 
+
 .header-container {
   width: 100%;
   min-width: 300px;
@@ -40,11 +43,13 @@ header.animate {
   transform: translatey(-160px);
 
 }
+
 @keyframes headerslide {
   from {
     opacity: 0;
     transform: translateY(-160px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0px);
@@ -57,53 +62,67 @@ header.animate {
   position: sticky;
   animation: scroll-down 0.7s ease-out forwards;
 }
+
 @keyframes scroll-down {
   from {
     transform: translateY(-160px);
   }
+
   to {
     transform: translateY(-35px);
   }
 }
+
 .header-container.scroll-up {
   position: sticky;
   animation: scroll-up 0.7s ease-out forwards;
 }
+
 @keyframes scroll-up {
   from {
     transform: translateY(-30px);
   }
+
   to {
     transform: translateY(0px);
   }
-} 
+}
+
 /*Navbar*/
- .top-nav {
+.top-nav {
   font-weight: 400;
   font-size: 13px;
- 
+
   padding: 15px 15px 0px 15px;
   display: flex;
-  justify-content: space-between; /* Space between left and right sections */
-  align-items: center; /* Vertically align items */
-  flex-wrap: nowrap; /* Prevent wrapping of the left and right containers */
+  justify-content: space-between;
+  /* Space between left and right sections */
+  align-items: center;
+  /* Vertically align items */
+  flex-wrap: nowrap;
+  /* Prevent wrapping of the left and right containers */
 
 }
 
 
-.left-topdiv
-{
+.left-topdiv {
   display: flex;
-  align-items: center; /* Align items vertically */
-  flex-wrap: nowrap; /* Prevent line breaks within each container */
-  gap: 15px; /* Add space between elements */
+  align-items: center;
+  /* Align items vertically */
+  flex-wrap: nowrap;
+  /* Prevent line breaks within each container */
+  gap: 15px;
+  /* Add space between elements */
 }
 
 .right-topdiv {
   display: flex;
-  align-items: center; /* Align items vertically */
-  flex-wrap: nowrap; /* Prevent line breaks within each container */
-  gap: 5px; /* Add space between elements */
+  align-items: center;
+  /* Align items vertically */
+  flex-wrap: nowrap;
+  /* Prevent line breaks within each container */
+  gap: 5px;
+  /* Add space between elements */
   min-width: 370px;
 
 }
@@ -112,13 +131,17 @@ header.animate {
 
 .top-nav img {
   width: 20px;
-  
+
   margin-right: 3px;
 }
+
 .top-nav a {
-  display: flex; /* Make anchors a flex container to keep image and text in one line */
-  align-items: center; /* Vertically align text with image */
-  white-space: nowrap; /* Prevent text wrapping */
+  display: flex;
+  /* Make anchors a flex container to keep image and text in one line */
+  align-items: center;
+  /* Vertically align text with image */
+  white-space: nowrap;
+  /* Prevent text wrapping */
   margin-right: 12px;
   color: #000;
   text-decoration: none;
@@ -133,13 +156,15 @@ header.animate {
 .bottom-nav {
   display: flex;
   flex-direction: column;
-  list-style: none; /* Remove list-style in case of nested lists */
-  min-width: 320px; /* Ensure proper width for responsive design */
+  list-style: none;
+  /* Remove list-style in case of nested lists */
+  min-width: 320px;
+  /* Ensure proper width for responsive design */
   padding: 0px 15px 0px 15px;
- 
+
 
 }
-  
+
 .bottom-nav ul {
   margin-right: 15px;
   margin-bottom: 10px;
@@ -147,57 +172,72 @@ header.animate {
   list-style: none;
   white-space: nowrap;
 }
+
 .bottom-rightdiv {
 
   display: flex;
-  justify-content:flex-end; /* Space between left and right sections */
-  flex-wrap: nowrap; /* Prevent wrapping of the left and right containers */
+  justify-content: flex-end;
+  /* Space between left and right sections */
+  flex-wrap: nowrap;
+  /* Prevent wrapping of the left and right containers */
   margin-left: 12px;
-  
+
 }
 
 
-.bottom-rightdiv li{position: relative;}
+.bottom-rightdiv li {
+  position: relative;
+}
 
-.popup{
+.popup {
   position: absolute;
   white-space: nowrap;
   display: none;
-  top: 0px; /* Start above the visible area */
-  left: 0px; /* Center horizontally */
-  min-width: max-content; /* Make it as wide as its content */
- 
-  background-color: rgba(60, 60, 60, 0.8); /* Transparent red background */
+  top: 0px;
+  /* Start above the visible area */
+  left: 0px;
+  /* Center horizontally */
+  min-width: max-content;
+  /* Make it as wide as its content */
+
+  background-color: rgba(60, 60, 60, 0.8);
+  /* Transparent red background */
   border: 1px solid #ff0100;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
   z-index: 1000;
-  padding:10px 0px 0px 10px;
+  padding: 10px 0px 0px 10px;
   /* Creating the arrow effect */
 
   border-top-right-radius: 8px;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
- 
+
 }
 
 /* Keyframes for sliding animation */
 @keyframes slideIn {
   0% {
     opacity: 0;
-    top: -20%; /* Start from above */
+    top: -20%;
+    /* Start from above */
   }
+
   100% {
     opacity: 1;
-    top: 24px; /* Final position */
+    top: 24px;
+    /* Final position */
   }
 }
 
-.popup a {color:#eeeeee}
+.popup a {
+  color: #eeeeee
+}
+
 .bottom-rightdiv li:hover .popup,
 .popup:hover {
   display: block;
   /* Set up the animation */
- animation: slideIn 0.5s ease-in-out forwards;
+  animation: slideIn 0.5s ease-in-out forwards;
 }
 
 
@@ -208,25 +248,31 @@ header.animate {
 
 .logo {
   width: 270px;
-  height:100%;
+  height: 100%;
   min-width: 230px;
   cursor: pointer;
- 
+
 }
+
 .logo:hover {
   width: 280px;
   transition: width 1s;
 }
+
 .second-line {
   display: flex;
-  justify-content: space-between; /* Logo on the left, bottom-right div on the right */
+  justify-content: space-between;
+  /* Logo on the left, bottom-right div on the right */
   align-items: flex-end;
-  width: 100%; /* Ensure it spans full width */
+  width: 100%;
+  /* Ensure it spans full width */
   flex-wrap: wrap;
 }
+
 a.active {
   color: #ff0100;
 }
+
 #kontakt {
   background-image: radial-gradient(#ff0100, #ff0100, rgb(206, 7, 7));
   padding: 6px 10px;
@@ -234,27 +280,32 @@ a.active {
   border-radius: 15px;
   transition-duration: 0.3s;
 }
-#kontakt:hover{color: rgb(0, 0, 0);}
+
+#kontakt:hover {
+  color: rgb(0, 0, 0);
+}
+
 #kontakt.aktiivne {
   color: rgb(0, 0, 0);
-} 
+}
 
 
 /* Facebook */
 img.facebook {
-width: 20px;
-position:absolute;
-right:12px;
-margin-top: 20px;
+  width: 20px;
+  position: absolute;
+  right: 12px;
+  margin-top: 20px;
 
 }
+
 img.facebook:hover {
   padding: 2px;
   width: 23px;
   border-radius: 5px;
   background-image: radial-gradient(#669cf8, #3373df, #1953b7);
   transition-duration: 0.5s;
-}  
+}
 
 
 
@@ -268,6 +319,7 @@ img.facebook:hover {
   display: none;
   text-align: justify;
 }
+
 .menu-btn {
   width: 25px;
   height: 4px;
@@ -277,6 +329,7 @@ img.facebook:hover {
   transition: all 0.3s ease-in-out;
   cursor: pointer;
 }
+
 .menu-btn::after,
 .menu-btn::before {
   content: "";
@@ -289,9 +342,11 @@ img.facebook:hover {
   transition: all 0.3s ease-in-out;
   cursor: pointer;
 }
+
 .menu-btn::after {
   transform: translateY(8px);
 }
+
 .menu-btn::before {
   transform: translateY(-8px);
 }
@@ -299,12 +354,14 @@ img.facebook:hover {
 .menu-btn.open.menu-btn {
   background: transparent;
 }
+
 .menu-btn.open.menu-btn::before {
   transform: rotate(45deg);
 }
+
 .menu-btn.open.menu-btn::after {
   transform: rotate(-45deg);
-} 
+}
 
 
 
@@ -317,26 +374,30 @@ img.facebook:hover {
 
 
 /* Media queries */
- @media screen and (max-width: 1074px) {
+@media screen and (max-width: 1074px) {
 
   .bottom-rightdiv {
 
-   
-    flex-wrap: wrap; 
+
+    flex-wrap: wrap;
   }
 
   .left-topdiv {
     display: none;
   }
-.right-topdiv{flex-wrap: wrap;}
+
+  .right-topdiv {
+    flex-wrap: wrap;
+  }
 }
 
-   @media screen and (max-width: 755px)   {
-    .top-nav {
-  
-  font-size: 11px;
-    }
-    .hamburger {
+@media screen and (max-width: 755px) {
+  .top-nav {
+
+    font-size: 11px;
+  }
+
+  .hamburger {
     display: block;
     grid-column: 1;
   }
@@ -346,147 +407,153 @@ img.facebook:hover {
     margin: 8px auto;
     padding-top: 30px;
     height: 100vh;
-   
+
     opacity: 0;
     position: absolute;
-    top: 133px;
+    top: 108px;
     left: 0;
     width: 100vw;
     z-index: 6;
   }
+
   .bottom-rightdiv.showing {
     display: flex;
-    gap: 10px ;
-    justify-content: flex-start; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    flex-direction: column; /* Optional: stack content vertically if needed */
-    text-align: center; /* Center text inside child elements */
-  
+    gap: 10px;
+    justify-content: flex-start;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically */
+    flex-direction: column;
+    /* Optional: stack content vertically if needed */
+    text-align: center;
+    /* Center text inside child elements */
+
     animation: menuin 1s ease-in-out forwards;
-    background-image: linear-gradient(
-      #eeeeee,
-      rgb(255, 255, 255),
-      #eeeeee,
-      rgb(255, 255, 255)
-    );
+    background-image: linear-gradient(#eeeeee,
+        rgb(255, 255, 255),
+        #eeeeee,
+        rgb(255, 255, 255));
   }
 
   .second-line {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr; /* 3 equal columns */
-  
+    grid-template-columns: 1fr 1fr 1fr;
+    /* 3 equal columns */
+
     margin-left: 6px;
   }
+
   .logoanchor {
 
-    grid-column: 2; /* Position it in the second column (center) */
- 
+    grid-column: 2;
+    /* Position it in the second column (center) */
+
   }
+
   @keyframes menuin {
     from {
       transform: translatey(-100%);
       opacity: 0;
     }
+
     to {
       transform: translatey(0%);
       opacity: 1;
     }
   }
+
   img.facebook {
     width: 20px;
 
     position: absolute;
-    top:88px;
-  
-    right:12px;
+    top: 65px;
+
+    right: 12px;
     margin-top: 20px;
-    
-    }
-    .header-container.scroll-down {
-      position: sticky;
-      animation: scroll-down 0.7s ease-out forwards;
-    }
-    @keyframes scroll-down {
-      from {
-        transform: translateY(-150px);
-      }
-      to {
-        transform: translateY(-59px);
-      }
-    }
-    .header-container.scroll-up {
-      position: sticky;
-      animation: scroll-up 0.7s ease-out forwards;
-    }
-    @keyframes scroll-up {
-      from {
-        transform: translateY(-70px);
-      }
-      to {
-        transform: translateY(0px);
-      }
-    } 
 
-    .bottom-rightdiv li {
-      position: relative;
-    }
-    
-    .bottom-rightdiv ul {
-      position: relative;
-    }
-    
-    .popup {
+  }
 
-      top: -50px;  /* Position below the parent li */
-      left: 50%;  /* Center it horizontally */
-      transform: translateX(-50%);  /* Shift it back by 50% of its own width to center it */
-      background-color: rgba(60, 60, 60, 1); /* Transparent red background */
-      border-top-left-radius: 8px;
-     
+  .header-container.scroll-down {
+    position: sticky;
+    animation: scroll-down 0.7s ease-out forwards;
+  }
+
+  @keyframes scroll-down {
+    from {
+      transform: translateY(-150px);
     }
-    .bottom-rightdiv li:hover .popup,
-    .popup:hover {
-      display: block;
-      /* Set up the animation */
+
+    to {
+      transform: translateY(-59px);
+    }
+  }
+
+  .header-container.scroll-up {
+    position: sticky;
+    animation: scroll-up 0.7s ease-out forwards;
+  }
+
+  @keyframes scroll-up {
+    from {
+      transform: translateY(-70px);
+    }
+
+    to {
+      transform: translateY(0px);
+    }
+  }
+
+  .bottom-rightdiv li {
+    position: relative;
+  }
+
+  .bottom-rightdiv ul {
+    position: relative;
+  }
+
+  .popup {
+
+    top: -50px;
+    /* Position below the parent li */
+    left: 50%;
+    /* Center it horizontally */
+    transform: translateX(-50%);
+    /* Shift it back by 50% of its own width to center it */
+    background-color: rgba(60, 60, 60, 1);
+    /* Transparent red background */
+    border-top-left-radius: 8px;
+
+  }
+
+  .bottom-rightdiv li:hover .popup,
+  .popup:hover {
+    display: block;
+    /* Set up the animation */
     animation: slideIn 0.5s ease-in-out forwards;
+  }
+
+
+
+
+  /* Keyframes for sliding animation */
+  @keyframes slideIn {
+    0% {
+      opacity: 0;
+      top: -50px;
+      /* Start from above */
     }
 
-
-    
-    
-    /* Keyframes for sliding animation */
-    @keyframes slideIn {
-      0% {
-        opacity: 0;
-        top: -50px; /* Start from above */
-      }
-      100% {
-        opacity: 1;
-        top: 100%; /* Final position */
-      }
+    100% {
+      opacity: 1;
+      top: 100%;
+      /* Final position */
     }
   }
+}
+@media screen and (max-width: 694px) {
+  .bottom-rightdiv {top:133px;}
+  img.facebook {
 
-    
-   
-  @media screen and (max-width: 447px)   {
-    
-   .bottom-rightdiv {
+    top: 88px;
 
-    top: 158px;
-    
-  }
-  }
-
-  
-  
-  
-  @media screen and (max-width: 400px)   {
-    
-   .bottom-rightdiv {
-
-    top: 183px;
-   
-  }
-  }
-  
+   }}
