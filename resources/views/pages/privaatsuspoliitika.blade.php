@@ -167,7 +167,7 @@ Kontakt: <strong>tanel@kuttesepp.ee</strong>
 </div>
 </div>
 
-<x-up-scroller/>
+<x-up_scroller/>
 <x-cookies/>
 
 <a href="javascript:void(0);" onclick="window.close();" class="close-link">
