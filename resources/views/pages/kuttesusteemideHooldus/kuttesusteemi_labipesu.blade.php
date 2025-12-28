@@ -271,6 +271,6 @@ katlakivi eemaldus'" :metaAuthor="'Tanel Sepp'" :robots="'index, follow'" :viteC
             </div>
     </section>
 
-    <x-up-scroller />
+    <x-up_scroller />
     <x-cookies />
 </x-layout>

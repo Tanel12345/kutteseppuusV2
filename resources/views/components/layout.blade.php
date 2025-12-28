@@ -48,8 +48,8 @@
     "@type": "Organization",
     "name": "Küttesepp",
     "url": "https://www.kuttesepp.ee",
-    "logo": "https://www.kuttesepp.ee/storage/images/kuttesepp-logo-512x512.png",
-    "image": "https://www.kuttesepp.ee/storage/images/kuttesepp-logo-512x512.png",
+    "logo": "https://www.kuttesepp.ee/images/kuttesepp-logo-512x512.png",
+    "image": "https://www.kuttesepp.ee/images/kuttesepp-logo-512x512.png",
     "sameAs": [
         "https://www.facebook.com/kuttesepp"
     ]

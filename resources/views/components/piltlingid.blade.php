@@ -53,11 +53,11 @@
 
                 <ul class="Lisalingid">
                     <li>
-                        <a href="{{ route('brand.page', 'energy-save') }}?type=ohk-vesi-soojuspumbad">
-                            <img src="{{ Vite::asset('resources/images/vaikesed/es/Energy Save logo.jpg') }}"
-                                alt="Energy Save" />
-                            Energy Save
-                        </a>
+                        <a href="{{ route('brand.page', 'es') }}?type=ohk-vesi-soojuspumbad">
+    <img src="{{ Vite::asset('resources/images/vaikesed/es/Energy Save logo.jpg') }}"
+         alt="Energy Save" />
+    Energy Save
+</a>
                     </li>
                     <li>
                         <a href="{{ route('brand.page', 'alpha-innotec') }}?type=ohk-vesi-soojuspumbad">

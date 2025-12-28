@@ -9,7 +9,7 @@
     :viteJsAssets="['resources/js/app.js','resources/js/lazyLoading.js','resources/js/hamburger.js','resources/js/navbar.js','resources/js/lenis.js','resources/js/upscroller.js', 'resources/js/cookies.js']"
 >
    
-<x-static-carousel
+<x-static_carousel
 title="ES - Energy Save õhk-vesi soojuspumbad <br><br><span>Rootsis disainitud. Põhjamaa kliimasse</span>"
 content="ES - Energy Save õhksoojuspumbad pakuvad usaldusväärset ja kõrget kvaliteeti, et tagada optimaalne soojus- ja jahutus aastaringselt. <br><br>
 ES Energy Save Holding AB (publ) tegutseb oma tütarettevõtete ES Systems, ES Heat Pumps ja ES Services kaudu, pakkudes oma küttelahendusi, mis on suunatud energiasäästule.<br> Põhitooted põhinevad uusimal soojuspumbatehnoloogial ning kõik grupi ettevõtted osalevad aktiivselt Euroopa turu jaoks mõeldud toodete arendamisel.<br> Lisaks toodetele pakutakse ka teenuseid ning erinevaid digitaliseeritud tööriistu ja teenuseid.<br><br>
@@ -20,19 +20,19 @@ imageAlt="ES - Energy Save Õhksoojuspumbad - Kvaliteet ja Energiatõhusus"
 eriStiil="object-position: center;"
 :textholderStyle="'margin:10px auto; max-width: 1000px;'"
 />
-<x-teenused-components.teenused-es/>
+<x-teenused-components.teenused_es/>
 
 <section class="tootjasektsioon" id="tootjaid">
     <div class="tootjast">
         <div class="ettevotte">
-            <h2><span>ES - Energy Save</span>  <br>Nutikad ja energiatõhusad soojuspumbad sinu koju</h2><br><br>
+            <h2><span>ES - Energy Save</span>  <br>Nutikad ja energiatõhusad soojuspumbad sinu koju</h2><br>
             <p style="margin-bottom: 25px;">Vaata Energy Save õhk-vesi soojuspumpade Küttesepa tutvustavat videot.</p>
             <div class="videodiv">
-                <iframe width="500" height="280" src="https://www.youtube.com/embed/g1uKAYyem1s" 
+                <iframe width="450" height="280" src="https://www.youtube.com/embed/g1uKAYyem1s" 
                 title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
                 </iframe>
                 
-                <iframe width="500" height="280" src="https://www.youtube.com/embed/7Jzipapy6-I" 
+                <iframe width="450" height="280" src="https://www.youtube.com/embed/7Jzipapy6-I" 
                     title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
                 </iframe>
             </div><br>
@@ -112,6 +112,6 @@ eriStiil="object-position: center;"
 
 
 
-<x-up-scroller/>
+<x-up_scroller/>
 <x-cookies/> 
 </x-layout>

@@ -11,10 +11,10 @@
  
     <x-carousel/>
     <x-teenused/>
-    <x-up-scroller/>
+    <x-up_scroller/>
     <x-piltlingid/>
     <x-ettevottest/>
-    <x-video-section/>
+    <x-video_section/>
     <x-contact :product="$product" />
     <x-map/>
     <x-cookies/>

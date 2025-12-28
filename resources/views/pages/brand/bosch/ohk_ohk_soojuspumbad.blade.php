@@ -23,12 +23,12 @@
         'resources/js/cookies.js',
     ]">
 
-    <x-static-carousel
+    <x-static_carousel
         title="Bosch Õhksoojuspumbad <br><br><span>tõhus ja energiasäästlik lahendus igasse koju ja kontorisse</span>"
         content="Bosch õhksoojuspumbad pakuvad usaldusväärsust ja kõrget kvaliteeti, et tagada soodsalt ja kiirelt optimaalne soojus- ja jahutus aastaringselt.<br> Bosch tooted ühendavad innovatsiooni ja tehnoloogia, et pakkuda parimat energiatõhusust ja mugavust, samal ajal vähendades teie igakuiseid kütte- ja jahutusarveid.<br> Õhksoojuspumbad on soojuspumba liigi või tüübina kõige soodsam ja lihtsalt paigaldatav teie eramusse või korterisse."
         image="resources/images/taustad/Boschtaust1.webp" imageAlt="Bosch Õhksoojuspumbad - Kvaliteet ja Energiatõhusus"
         :textholderStyle="'margin:10px auto; max-width: 1000px;'" />
-    <x-teenused-components.teenused-bosch />
+    <x-teenused-components.teenused_bosch />
 
     <section class="tootjasektsioon" id="tootjaid">
         <div class="tootjast">
@@ -136,6 +136,6 @@
 
     </section>
 
-    <x-up-scroller />
+    <x-up_scroller />
     <x-cookies />
 </x-layout>

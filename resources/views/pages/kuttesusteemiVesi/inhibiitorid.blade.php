@@ -204,6 +204,6 @@ keskkonnasõbralik inhibiitor'"
     </div>
 </section>
 
-<x-up-scroller />
+<x-up_scroller />
 <x-cookies />
 </x-layout>

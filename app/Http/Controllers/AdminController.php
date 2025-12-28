@@ -92,7 +92,7 @@ class AdminController extends Controller
         $product = Product::findOrFail($id);
         $brands  = Brand::orderBy('name')->get();
 
-        return view('admin.products.edit-product', compact('product', 'brands'));
+        return view('admin.products.edit_product', compact('product', 'brands'));
     }
 
     // Update product
@@ -152,6 +152,8 @@ class AdminController extends Controller
 
     $brand->save();
     }
+    
+$product->save();
     return redirect()
         ->route('admin.products.index')
         ->with('success', 'Product updated successfully!');

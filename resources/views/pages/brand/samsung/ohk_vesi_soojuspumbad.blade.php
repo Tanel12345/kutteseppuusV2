@@ -8,7 +8,7 @@
     :viteJsAssets="['resources/js/app.js','resources/js/lazyLoading.js','resources/js/hamburger.js','resources/js/navbar.js','resources/js/lenis.js','resources/js/upscroller.js', 'resources/js/cookies.js']"
 >
 
-<x-static-carousel
+<x-static_carousel
     title="Samsung õhk-vesi soojuspumbad <br><br><span>tõhus ja energiasäästlik lahendus igasse koju ja kontorisse</span>"
     content="Samsung õhk-vesi soojuspumbad pakuvad usaldusväärsust ja tipptasemel efektiivsust, tagades aastaringse mugavuse nii kütmisel kui jahutamisel. Samsung ühendab innovatsiooni ja kaasaegse tehnoloogia, pakkudes Ai ehk tehisaru abil energiatõhusust. Optimeerides teie kütte, vähendades sellega energiakulusid.<br><br>
     Samsung on Eestis laialdast tuntust kogunud oma usaldusväärsuse ja efektiivsuse poolest, samuti on ta suhteliselt hinnasõbralik.<br><br>
@@ -18,7 +18,7 @@
     :textholderStyle="'margin:10px auto; max-width: 1000px;'"
 />
 
-<x-teenused-components.teenused-samsung/>
+<x-teenused-components.teenused_samsung/>
 
 <section class="tootjasektsioon" id="tootjaid">
     <div class="tootjast">
@@ -63,7 +63,7 @@
                         <img class="tootjastpilt" src="{{ Vite::asset("resources/images/vaikesed/samsung/samsung-valisosa.webp") }}" alt="Samsung soojuspump">
                     </div>
             
-                    <ul style='font-weight: 500; font-size: 18px; margin-top: 20px; margin-bottom: 20px'>
+                    <ul style='font-weight: 600; font-size: 18px; margin-top: 20px; margin-bottom: 20px'>
                         <li>Kõrgem sooja vee temperatuur</li>
                         <p>Euroopas kasutatakse paljudes vanemates majades endiselt radiaatoreid, mis vajavad ruumide tõhusaks kütmiseks vähemalt 65 °C temperatuuriga sooja vett. Uus EHS Mono R290 ühendab endas täiustatud funktsioonid, et pakkuda kodukütteks pidevalt kuni 75°C1 sooja vett. Seetõttu sobib pump asendama küttesüsteemi vanemates elamutes, mille kütmine on varasemalt sõltunud gaasiboileritest. Lisaks suudab see ilma lisaküttekeha kasutamata pakkuda kuni 70°C2 sooja tarbevett isegi siis kui välistemperatuur on -10 °C.</p><br>
                         <li>Lihtne paigaldada ja hooldada</li>
@@ -114,7 +114,7 @@
 
 
 
-<x-up-scroller/>
+<x-up_scroller/>
 <x-cookies/>
 
 </x-layout>

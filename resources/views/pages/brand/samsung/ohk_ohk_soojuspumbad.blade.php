@@ -8,7 +8,7 @@
     :viteJsAssets="['resources/js/app.js','resources/js/lazyLoading.js','resources/js/hamburger.js','resources/js/navbar.js','resources/js/lenis.js','resources/js/upscroller.js', 'resources/js/cookies.js']"
 >
 
-<x-static-carousel
+<x-static_carousel
     title="Samsung õhksoojuspumbad <br><br><span>tõhus ja energiasäästlik lahendus igasse koju ja kontorisse</span>"
     content="Samsung õhksoojuspumbad pakuvad usaldusväärsust ja tipptasemel tehnoloogiat, tagades aastaringse mugavuse nii kütmisel kui jahutamisel. Samsung ühendab innovatsiooni ja kaasaegse tehnoloogia, pakkudes Ai ehk tehisaru abil energiatõhusust. Optimeerides teie kütte, vähendades sellega energiakulusid.<br><br>
     Samsung on Eestis laialdast tuntust kogunud oma usaldusväärsuse ja efektiivsuse poolest, samuti on ta suhteliselt hinnasõbralik.<br><br>
@@ -19,12 +19,12 @@
     :textholderStyle="'margin:10px auto; max-width: 1000px;'"
 />
 
-<x-teenused-components.teenused-samsung/>
+<x-teenused-components.teenused_samsung/>
 
 <section class="tootjasektsioon" id="tootjaid">
     <div class="tootjast">
         <div class="ettevotte">
-            <h2><span>Samsung</span> - innovatsioon ja energiatõhusus</h2><br><br>
+            <h2><span>Samsung</span> - innovatsioon ja energiatõhusus</h2><br>
     
                 <div class="content">
                     <h3><strong>Samsung õhksoojuspumbad</strong></h3> <br>
@@ -123,7 +123,7 @@
 
 
 
-<x-up-scroller/>
+<x-up_scroller/>
 <x-cookies/>
 
 </x-layout>

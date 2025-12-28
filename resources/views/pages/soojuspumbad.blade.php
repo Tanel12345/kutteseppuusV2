@@ -16,7 +16,7 @@
         'resources/js/upscroller.js',
         'resources/js/cookies.js',
         'resources/js/lazyLoading.js',
-    ]"> <x-static-carousel
+    ]"> <x-static_carousel
         title="SOOJUSPUMBAD <br><br><span>Tõhusaimad lahendused sinu kodu kütmiseks</span>"
         content="Soojuspumpade peamine eesmärk on toota soojust võimalikult madala energiakuluga. Kõik soojuspumba tüübid – õhk-õhk, õhk-vesi ja maasoojuspumbad – kasutavad ära looduslikku soojusenergiat ning kannavad selle sinu elamisse. <br><br>Soojuspumbad erinevad üksteisest selle järgi, millisest keskkonnast nad soojust koguvad ja kuidas nad selle sinu küttevõrku või ruumidesse edasi annavad. Kui soovid säästa küttekuludelt, tõsta kodu energiatõhusust ja suurendada mugavust, on soojuspump üks parimaid valikuid. <br><br>Küttesepp aitab valida sinu hoone jaoks sobivaima lahenduse, koostab vajalikud projektid ning teostab professionaalse paigalduse ja seadistamise. Teenust pakume üle Eesti, kuid oma asukohast tulenevalt teenindame eelkõige Tallinna ja Harjumaa piirkonda."
         image="resources/images/taustad/soojuspumbad-üldtaust.webp" imageAlt="Soojuspumpade üldinfo taust"
@@ -93,7 +93,7 @@
 
             <ul class="Lisalingid">
                 <li>
-                    <a href="{{ route('brand.page', 'energy-save') }}?type=ohk-vesi-soojuspumbad">
+                    <a href="{{ route('brand.page', 'es') }}?type=ohk-vesi-soojuspumbad">
                         <img src="{{ Vite::asset('resources/images/vaikesed/es/Energy Save logo.jpg') }}">
                         Energy Save
                     </a>
@@ -167,6 +167,6 @@
 </div>
 </section>
 
-<x-up-scroller />
+<x-up_scroller />
 <x-cookies />
 </x-layout>

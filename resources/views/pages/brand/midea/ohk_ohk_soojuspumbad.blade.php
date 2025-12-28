@@ -18,18 +18,18 @@
         'resources/js/cookies.js',
     ]">
 
-    <x-static-carousel
+    <x-static_carousel
         title="Midea õhksoojuspumbad  <br><br><span>tõhus, kindel ja energiasäästlik lahendus teie kodu kütmiseks ja jahutamiseks</span>"
         content="Midea on maailma juhtivaid kodumasinate ja HVAC-seadmete tarnijaid, pakkudes uuenduslikke ja energiatõhusaid õhksoojuspumpasid, mis vastavad tänapäeva mugavuse ja säästlikkuse ootustele. <br>Midea õhksoojuspumbad ühendavad tipptasemel tehnoloogia, ökoloogilise disaini ja lihtsa kasutamise, tehes neist suurepärase valiku nii kodudesse kui ka äripindadele.<br>Midea õhksoojuspumbad sobivad suurepäraselt Eesti kliimasse, pakkudes stabiilset tööd nii külmal talveperioodil kui ka suvisel jahutusvajadusel."
         image="resources/images/taustad/midea_taust.jpeg"
         imageAlt="Midea Õhksoojuspumbad - Tõhus ja Energiasäästlik Lahendus" :textholderStyle="'margin: auto; max-width: 1000px;'" />
     />
-    <x-teenused-components.teenused-midea />
+    <x-teenused-components.teenused_midea />
 
     <section class="tootjasektsioon" id="tootjaid">
         <div class="tootjast">
             <div class="ettevotte">
-                <h2><span>Midea Group</span> - innovatsioon ja tipptase</h2><br>
+                <h2><span>Midea Group</span> - innovatsioon ja tipptase</h2>
 
                 <div class="content">
 
@@ -61,7 +61,8 @@
                         <img class="tootjastpilt" src=""
                             data-src="{{ Vite::asset('resources/images/vaikesed/midea/front-left-open-768x384.png') }}"
                             alt="Mitea soojuspump">
-                    </div><br><br>
+                    </div>
+                   
 
                     <h3><strong>Midea Xtreme Heat</strong></h3><br>
                     <p> Midea Xtreme Heat tagab kiire soojenduse ka kõige külmematel talveöödel, säilitades oma
@@ -130,6 +131,6 @@
     </section>
 
 
-    <x-up-scroller />
+    <x-up_scroller />
     <x-cookies />
 </x-layout>

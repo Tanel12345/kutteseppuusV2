@@ -364,10 +364,28 @@ img.facebook:hover {
 }
 
 
+/* iOS Safari – lukusta põhimenüü lingid */
+.bottom-rightdiv > ul > li > a:not(#kontakt),
+.bottom-rightdiv > ul > li > a:not(#kontakt):visited,
+.bottom-rightdiv > ul > li > a:not(#kontakt):focus,
+.bottom-rightdiv > ul > li > a:not(#kontakt):active {
+  color: #000 !important;
+  -webkit-text-fill-color: #000 !important;
+}
 
+/* Aktiivne põhimenüü link */
+.bottom-rightdiv > ul > li > a.active:not(#kontakt) {
+  color: #ff0100 !important;
+  -webkit-text-fill-color: #ff0100 !important;
+}
+/* =========================================
+   PÕHIMENÜÜ HOVER – LUBATUD KA SAFARIS
+   ========================================= */
 
-
-
+.bottom-rightdiv > ul > li > a:not(#kontakt):hover {
+  color: #ff0100 !important;
+  -webkit-text-fill-color: #ff0100 !important;
+}
 
 
 

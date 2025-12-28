@@ -34,18 +34,23 @@
    font-size: 30px;
    letter-spacing: 0px;
  }
- strong{font-size: 22px;}
+ strong{font-size: 20px;}
  .ettevotte h2 {
    font-weight: 200;
    font-size: 30px;
    letter-spacing: 4px;
-   margin-bottom: 20px;
+   margin-bottom: 30px;
    line-height: 35px;
  }
+ ul.rohelise-linnukesega {
+  margin:20px 0 40px 0;
+}
+
  .rohelise-linnukesega li {
   position: relative;
   padding-left: 28px;
   margin-bottom: 3px;
+  font-weight: 500;
 
 }
 .rohelise-linnukesega li::before {
@@ -62,7 +67,7 @@
  .pildidiv {
 
   width: 60%;
-  min-width: 350px;
+  min-width: 300px;
   height: 100%; /* Set a specific height */
   margin-top: 50px;
   margin-bottom: 70px;
@@ -89,6 +94,8 @@
  
 gap: 1rem;
 margin-bottom:45px;
+flex-direction: row;
+flex-wrap: wrap;
 }
 
 iframe{border-radius: 12px;}
@@ -100,8 +107,7 @@ iframe{border-radius: 12px;}
 }
 ul {list-style:none;}
 ul p {font-weight:300; font-size: 16px;}
-h4{font-size: 20px;font-weight: 700;font-size: 20px;
-  font-weight: 700;
+h4{font-size: 20px;font-weight: 600;
   background-color: #f0f0f0; /* light gray */
   padding: 15px 15px;
   border: 1px solid #ccc;
@@ -205,6 +211,15 @@ h4{font-size: 20px;font-weight: 700;font-size: 20px;
    box-shadow: 10px 14px 10px rgba(0, 0, 0, 0.3);
    cursor: pointer;
  }
+.red-line {
+  border: none;
+  border-top: 2px solid #ff0100;  /* thickness and color */
+  
+  max-width: 500px;
+  margin: 3em 0 6em 0;   
+  align-self: flex-start;  
+        /* space above/below, centered */
+}
  @media screen and (max-width: 755px)   {
 
 
@@ -212,8 +227,8 @@ h4{font-size: 20px;font-weight: 700;font-size: 20px;
   .content ul li {font-size: 17px;}
   .ettevotte h2  {font-size: 25px;}
   .ettevotte h2 span  {font-size: 27px;}
-  .content h3 strong {font-size: 20px;}
-  .content h3 {font-size: 20px;}
+  .content h3 strong {font-size: 20px;line-height: 27px;}
+  .content h3 {font-size: 20px;line-height: 27px;}
   .content h4 {font-size: 18px;}
   .content h5 {font-size: 18px;}
   .content span {font-size: 22px;}

@@ -58,7 +58,7 @@
  .kyttesepp h3 {
   font-weight: 500;
   font-size: 26px;
- 
+ line-height: 32px;
   margin-bottom: 5px;
  
 }
@@ -133,18 +133,18 @@ font-weight: 400;
  }
  .kyttesepp ol li {
    list-style-position: inside;
-   font-weight: 600;
+   font-weight: 500;
    color: #000000;
    line-height: 25px;
  }
  .kyttesepp ul li a {
   list-style-position: inside;
-  font-weight: 400;
+  font-weight: 500;
   color: #000000;
   line-height: 25px;
 }
  .kyttesepp ol {
-   font-weight: 300;
+   font-weight: 400;
    color: #000000;
  }
  .imgcontainer {

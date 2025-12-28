@@ -20,7 +20,7 @@ class PageController extends Controller
 
     public function soojuspumpadePaigaldus()
     {
-        return view('pages.soojuspumpade-paigaldus');
+        return view('pages.soojuspumpade_paigaldus');
     }
 
     public function kuttesusteemiVesi()
@@ -40,12 +40,12 @@ class PageController extends Controller
 
     public function kuttesusteemiPesu()
     {
-        return view('pages.kuttesusteemideHooldus.kuttesusteemi-labipesu');
+        return view('pages.kuttesusteemideHooldus.kuttesusteemi_labipesu');
     }
 
     public function kuttesusteemideHooldus()
     {
-        return view('pages.kuttesusteemideHooldus.kuttesusteemide-hooldus');
+        return view('pages.kuttesusteemideHooldus.kuttesusteemide_hooldus');
     }
 
     public function tahkekutteseadmed()
@@ -55,16 +55,16 @@ class PageController extends Controller
 
     public function porandaJaRadiaatorkute()
     {
-        return view('pages.poranda-ja-radiaatorkute');
+        return view('pages.poranda_ja_radiaatorkute');
     }
 
     public function milleksKutteautomaatika()
     {
-        return view('pages.milleks-kutteautomaatika');
+        return view('pages.milleks_kutteautomaatika');
     }
      public function kuidasSaastaKuttekuludelt()
     {
-        return view('pages.kuidas-saasta-kuttekuludelt');
+        return view('pages.kuidas_saasta_kuttekuludelt');
     }
  
 
@@ -103,29 +103,39 @@ public function soojuspumbad(Request $request, string $type)
         })
         ->get(['id','name','slug','logo']);
 
-    return view("pages.soojuspumbad.$type", [
+    return view("pages.soojuspumbad.$dbType", [
         'products' => $products,
         'brands'   => $brands,
         'type'     => $dbType,
         'typeSlug' => $type, // SEO-URL jaoks, kui vaja
     ]);
 }
-    public function brandPage(Brand $brand, Request $request)
-{
-    $typeSlug = $request->query('type'); // SEO slug
-    $dbType   = $typeSlug ? str_replace('-', '_', $typeSlug) : null;
 
+
+
+   public function brandPage(Brand $brand, Request $request)
+{
+    // SEO slug URL-ist (ohk-vesi-soojuspumbad)
+    $typeSlug = $request->query('type');
+
+    // DB + Blade jaoks (ohk_vesi_soojuspumbad)
+    $viewType = $typeSlug ? str_replace('-', '_', $typeSlug) : null;
+
+ 
+
+    // Tooted
     $products = $brand->products()
-        ->when($dbType, fn ($q) =>
-            $q->where('product_type', $dbType)
+        ->when($viewType, fn ($q) =>
+            $q->where('product_type', $viewType)
         )
         ->get();
 
-    // 👉 dünaamiline blade tee
-    $view = $typeSlug
-        ? "pages.brand.{$brand->slug}.{$typeSlug}"
+    // 👉 dünaamiline blade tee (ALAKRIIPS)
+    $view = $viewType
+        ? "pages.brand.{$brand->slug}.{$viewType}"
         : "pages.brand.{$brand->slug}.index";
 
+    // Kui view puudub → 404
     if (!view()->exists($view)) {
         abort(404);
     }
@@ -133,7 +143,7 @@ public function soojuspumbad(Request $request, string $type)
     return view($view, [
         'brand'    => $brand,
         'products' => $products,
-        'typeSlug' => $typeSlug,
+        'typeSlug' => $typeSlug, // vajadusel SEO / breadcrumb jaoks
     ]);
 }
     /* ===============================
@@ -145,7 +155,7 @@ public function soojuspumbad(Request $request, string $type)
         $brandSlug = $request->query('brand');
 
         $products = Product::with('brand')
-            ->where('product_type', 'Pelletikatlad_kaminad')
+            ->where('product_type', 'pelletikatlad_kaminad')
             ->when($brandSlug, function ($q) use ($brandSlug) {
                 $q->whereHas('brand', fn ($b) =>
                     $b->where('slug', $brandSlug)
@@ -154,11 +164,11 @@ public function soojuspumbad(Request $request, string $type)
             ->get();
 
         $brands = Brand::whereHas('products', function ($q) {
-                $q->where('product_type', 'Pelletikatlad_kaminad');
+                $q->where('product_type', 'pelletikatlad_kaminad');
             })
             ->get(['id', 'name', 'slug', 'logo']);
 
-        return view('pages.tahkekutteseadmed.pelletikatlad-ja-kaminad', compact('products', 'brands'))
+        return view('pages.tahkekutteseadmed.pelletikatlad_ja_kaminad', compact('products', 'brands'))
     ->with('pageRoute', 'pelletikatladJaKaminad.index');
     }
 
@@ -183,7 +193,7 @@ public function soojuspumbad(Request $request, string $type)
             })
             ->get(['id', 'name', 'slug', 'logo']);
 
-       return view('pages.tahkekutteseadmed.keskkuttepliidid-ja-kaminad', compact('products', 'brands'))
+       return view('pages.tahkekutteseadmed.keskkuttepliidid_ja_kaminad', compact('products', 'brands'))
     ->with('pageRoute', 'keskkuttepliididJaKaminad.index');
     }
 }

@@ -69,9 +69,138 @@
 // });
 
 
+// import Lenis from 'lenis';
+
+// let lenis;
+
+// document.addEventListener("DOMContentLoaded", () => {
+
+//   lenis = new Lenis({
+//     duration: 0.8,
+//     easing: (t) => 1 - Math.pow(1 - t, 3),
+//     smoothWheel: true,
+//     smoothTouch: false, //  oluline
+//   });
+
+//   function raf(time) {
+//     lenis.raf(time);
+//     requestAnimationFrame(raf);
+//   }
+//   requestAnimationFrame(raf);
+
+    
+//         // Smooth scroll for #uperid
+//             const upscroller = document.querySelector('a[href="#uperid"]');
+//             if (upscroller) {
+//             upscroller.addEventListener('click', (e) => {
+//                 e.preventDefault();  // Prevent default anchor behavior
+    
+//                 const targetElement = document.getElementById('uperid');
+//                 if (targetElement) {
+//                     lenis.scrollTo(targetElement, {
+//                         offset: -190,  // Adjust the offset if needed
+//                         duration: 1.5,
+//                         easing: (t) => 1 - Math.pow(1 - t, 3),
+//                     });
+//                 }
+//             });
+//     }
+    
+//     // Smooth scroll for #ettevottestid
+//         const ettevottestScroller = document.querySelector('a[href="/#ettevottestid"]');
+//         if (ettevottestScroller) {
+//             ettevottestScroller.addEventListener('click', (e) => {
+//                 //e.preventDefault();  // Prevent default anchor behavior
+    
+             
+//                     const targetElement = document.getElementById("ettevottestid");
+//                     if (targetElement) {
+//                         // Smooth scroll to the target section
+//                         lenis.scrollTo(targetElement, {
+//                             offset: -90,
+//                             duration: 1.5,
+//                             easing: (t) => 1 - Math.pow(1 - t, 3),
+//                         });
+//                     }
+//                     document.querySelector('.bottom-rightdiv').classList.remove('showing');
+                
+//             });
+//         }
+    
+//         // Handle smooth scrolling if the page is loaded with the hash
+//         const hash = window.location.hash;
+//         if (hash === "#ettevottestid") {
+//             const targetElement = document.getElementById("ettevottestid");
+//             if (targetElement) {
+//                 lenis.scrollTo(targetElement, {
+//                     offset: 220,
+//                     duration: 1.5,
+//                     easing: (t) => 1 - Math.pow(1 - t, 3),
+//                 });
+//             }
+//             document.querySelector('.bottom-rightdiv').classList.remove('showing');
+//         }
+
+        
+        
+//         // Smooth scroll for #form
+//         const contactScroller = document.querySelector('a[href="/#form"]');
+//         if (contactScroller) {
+//             contactScroller.addEventListener('click', (e) => {
+//                 //e.preventDefault();  // Prevent default anchor behavior
+    
+             
+//                     const targetElement = document.getElementById("contact");
+//                     if (targetElement) {
+//                         // Smooth scroll to the target section
+//                         lenis.scrollTo(targetElement, {
+//                             offset: -90,
+//                             duration: 1.5,
+//                             easing: (t) => 1 - Math.pow(1 - t, 3),
+//                         });
+//                     }
+//                     document.querySelector('.bottom-rightdiv').classList.remove('showing');
+                
+//             });
+//         }
+    
+//         // Handle smooth scrolling if the page is loaded with the hash
+//         const hash2 = window.location.hash;
+//         if (hash2 === "#form") {
+//             const targetElement = document.getElementById("contact");
+//             if (targetElement) {
+//                 lenis.scrollTo(targetElement, {
+//                     offset: 220,
+//                     duration: 1.5,
+//                     easing: (t) => 1 - Math.pow(1 - t, 3),
+//                 });
+//             }
+//             document.querySelector('.bottom-rightdiv').classList.remove('showing');
+//         }
+
+
+        
+//     });
+
+
 import Lenis from 'lenis';
 
 let lenis;
+
+/**
+ * Arvutab täpse scroll-positsiooni,
+ * kus div päriselt algab (mobiil + desktop)
+ */
+function scrollToRealElement(element, offset = 0) {
+  const rect = element.getBoundingClientRect();
+  const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  const targetY = rect.top + scrollTop + offset;
+
+  lenis.scrollTo(targetY, {
+    duration: 1.5,
+    easing: (t) => 1 - Math.pow(1 - t, 3),
+  });
+}
 
 document.addEventListener("DOMContentLoaded", () => {
 
@@ -79,7 +208,7 @@ document.addEventListener("DOMContentLoaded", () => {
     duration: 0.8,
     easing: (t) => 1 - Math.pow(1 - t, 3),
     smoothWheel: true,
-    smoothTouch: false, //  oluline
+    smoothTouch: false, // jääb NII nagu soovisid
   });
 
   function raf(time) {
@@ -88,97 +217,84 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   requestAnimationFrame(raf);
 
-    
-        // Smooth scroll for #uperid
-            const upscroller = document.querySelector('a[href="#uperid"]');
-            if (upscroller) {
-            upscroller.addEventListener('click', (e) => {
-                e.preventDefault();  // Prevent default anchor behavior
-    
-                const targetElement = document.getElementById('uperid');
-                if (targetElement) {
-                    lenis.scrollTo(targetElement, {
-                        offset: -190,  // Adjust the offset if needed
-                        duration: 1.5,
-                        easing: (t) => 1 - Math.pow(1 - t, 3),
-                    });
-                }
-            });
-    }
-    
-    // Smooth scroll for #ettevottestid
-        const ettevottestScroller = document.querySelector('a[href="/#ettevottestid"]');
-        if (ettevottestScroller) {
-            ettevottestScroller.addEventListener('click', (e) => {
-                //e.preventDefault();  // Prevent default anchor behavior
-    
-             
-                    const targetElement = document.getElementById("ettevottestid");
-                    if (targetElement) {
-                        // Smooth scroll to the target section
-                        lenis.scrollTo(targetElement, {
-                            offset: -90,
-                            duration: 1.5,
-                            easing: (t) => 1 - Math.pow(1 - t, 3),
-                        });
-                    }
-                    document.querySelector('.bottom-rightdiv').classList.remove('showing');
-                
-            });
-        }
-    
-        // Handle smooth scrolling if the page is loaded with the hash
-        const hash = window.location.hash;
-        if (hash === "#ettevottestid") {
-            const targetElement = document.getElementById("ettevottestid");
-            if (targetElement) {
-                lenis.scrollTo(targetElement, {
-                    offset: 200,
-                    duration: 1.5,
-                    easing: (t) => 1 - Math.pow(1 - t, 3),
-                });
-            }
-            document.querySelector('.bottom-rightdiv').classList.remove('showing');
-        }
+  /* =============================
+     #uperid
+  ============================== */
+  const upscroller = document.querySelector('a[href="#uperid"]');
+  if (upscroller) {
+    upscroller.addEventListener('click', (e) => {
+      e.preventDefault();
 
-        
-        
-        // Smooth scroll for #form
-        const contactScroller = document.querySelector('a[href="/#form"]');
-        if (contactScroller) {
-            contactScroller.addEventListener('click', (e) => {
-                //e.preventDefault();  // Prevent default anchor behavior
-    
-             
-                    const targetElement = document.getElementById("contact");
-                    if (targetElement) {
-                        // Smooth scroll to the target section
-                        lenis.scrollTo(targetElement, {
-                            offset: -90,
-                            duration: 1.5,
-                            easing: (t) => 1 - Math.pow(1 - t, 3),
-                        });
-                    }
-                    document.querySelector('.bottom-rightdiv').classList.remove('showing');
-                
-            });
-        }
-    
-        // Handle smooth scrolling if the page is loaded with the hash
-        const hash2 = window.location.hash;
-        if (hash2 === "#form") {
-            const targetElement = document.getElementById("contact");
-            if (targetElement) {
-                lenis.scrollTo(targetElement, {
-                    offset: 200,
-                    duration: 1.5,
-                    easing: (t) => 1 - Math.pow(1 - t, 3),
-                });
-            }
-            document.querySelector('.bottom-rightdiv').classList.remove('showing');
-        }
-
-
-        
+      const targetElement = document.getElementById('uperid');
+      if (targetElement) {
+        scrollToRealElement(targetElement, -190);
+      }
     });
+  }
+
+  /* =============================
+     #ettevottestid (klikiga)
+  ============================== */
+  const ettevottestScroller = document.querySelector('a[href="/#ettevottestid"]');
+  if (ettevottestScroller) {
+    ettevottestScroller.addEventListener('click', () => {
+
+      const targetElement = document.getElementById("ettevottestid");
+      if (targetElement) {
+        scrollToRealElement(targetElement, -90);
+      }
+
+      document.querySelector('.bottom-rightdiv')?.classList.remove('showing');
+    });
+  }
+
+  /* =============================
+     #ettevottestid (hashiga)
+  ============================== */
+  if (window.location.hash === "#ettevottestid") {
+    requestAnimationFrame(() => {
+      setTimeout(() => {
+        const targetElement = document.getElementById("ettevottestid");
+        if (targetElement) {
+          scrollToRealElement(targetElement, -90);
+        }
+        document.querySelector('.bottom-rightdiv')?.classList.remove('showing');
+      }, 120); // mobiil vajab väikest viidet
+    });
+  }
+
+  /* =============================
+     #form (klikiga)
+  ============================== */
+  const contactScroller = document.querySelector('a[href="/#form"]');
+  if (contactScroller) {
+    contactScroller.addEventListener('click', () => {
+
+      const targetElement = document.getElementById("contact");
+      if (targetElement) {
+        scrollToRealElement(targetElement, -90);
+      }
+
+      document.querySelector('.bottom-rightdiv')?.classList.remove('showing');
+    });
+  }
+
+  /* =============================
+     #form (hashiga)
+  ============================== */
+  if (window.location.hash === "#form") {
+    requestAnimationFrame(() => {
+      setTimeout(() => {
+        const targetElement = document.getElementById("contact");
+        if (targetElement) {
+          scrollToRealElement(targetElement, -90);
+        }
+        document.querySelector('.bottom-rightdiv')?.classList.remove('showing');
+      }, 120);
+    });
+  }
+
+});
+
+
 

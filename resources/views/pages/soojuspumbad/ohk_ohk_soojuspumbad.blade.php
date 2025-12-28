@@ -8,7 +8,7 @@
     :viteJsAssets="['resources/js/app.js','resources/js/hamburger.js','resources/js/navbar.js','resources/js/lenis.js','resources/js/upscroller.js', 'resources/js/cookies.js']"
 >
     
-<x-static-carousel 
+<x-static_carousel 
     title="ÕHKSOOJUSPUMBAD <br><br><span>Soodsaim valik efektiivseks kütteks</span>"
     content="Õhksoojuspump töötab sama põhimõtte järgi nagu teisedki soojuspumba tüübid: Energia salvestatakse välisõhust välisõhu ja normaalrõhu all oleva külmaine temperatuuri vahest ning kasutades elektrienergiat külmaine rõhu tõstmiseks saavutatakse selle sobiv temperatuur maja kütmiseks.<br><br>
     Tavalise nn õhk-õhk soojuspumba puhul antakse primaar ehk külmaine ringist saadud soojus tuppa läbi toas paikneva nn soojapuhuri.
@@ -19,8 +19,8 @@
     :textholderStyle="''"
     eriStiil="object-position: 80% top;"
 />
-<x-tootesektsioonid.soojuspumbad-tootesektsioon :products="$products" :brands="$brands"  :typeSlug="$typeSlug"/>
- <x-up-scroller/>
+<x-tootesektsioonid.soojuspumbad_tootesektsioon :products="$products" :brands="$brands"  :typeSlug="$typeSlug"/>
+ <x-up_scroller/>
  <x-cookies/> 
 
 

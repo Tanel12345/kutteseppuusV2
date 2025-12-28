@@ -9,7 +9,7 @@
                 <span>1</span>
             </div>
             <div class="h5holder">
-                <h3>ÜLIKÕRGE ENERGIATÕHUSUS</h3>
+                <h3>ENERGIATÕHUSUS</h3>
             </div>
             <p>Tagab madala <br><span>ENERGIAKULU</span><br> tänu rätsepa täpsuslele ja uuenduslikule tehnoloogiale</p>
             <div style="text-align: center; margin-top:20px;">

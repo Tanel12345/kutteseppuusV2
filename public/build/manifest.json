@@ -24,7 +24,7 @@
     ]
   },
   "resources/css/ettevottest.css": {
-    "file": "assets/ettevottest-BKjSjg3J.css",
+    "file": "assets/ettevottest-D1hOCXdU.css",
     "src": "resources/css/ettevottest.css",
     "isEntry": true,
     "names": [
@@ -32,7 +32,7 @@
     ]
   },
   "resources/css/footer.css": {
-    "file": "assets/footer-TQKFrEPo.css",
+    "file": "assets/footer-DGJ_4UvV.css",
     "src": "resources/css/footer.css",
     "isEntry": true,
     "names": [
@@ -56,7 +56,7 @@
     ]
   },
   "resources/css/navbar.css": {
-    "file": "assets/navbar-BYQ6vWkp.css",
+    "file": "assets/navbar-Fiwn9AJM.css",
     "src": "resources/css/navbar.css",
     "isEntry": true,
     "names": [
@@ -64,7 +64,7 @@
     ]
   },
   "resources/css/piltlingid.css": {
-    "file": "assets/piltlingid-Bpc-cpuw.css",
+    "file": "assets/piltlingid-DGuqrXeF.css",
     "src": "resources/css/piltlingid.css",
     "isEntry": true,
     "names": [
@@ -104,7 +104,7 @@
     ]
   },
   "resources/css/teenusedStatic.css": {
-    "file": "assets/teenusedStatic-Boo6jbB0.css",
+    "file": "assets/teenusedStatic-CGB-VsRV.css",
     "src": "resources/css/teenusedStatic.css",
     "isEntry": true,
     "names": [
@@ -120,7 +120,7 @@
     ]
   },
   "resources/css/tootjasektsioon.css": {
-    "file": "assets/tootjasektsioon-Cs92ZuQe.css",
+    "file": "assets/tootjasektsioon-COiNME_O.css",
     "src": "resources/css/tootjasektsioon.css",
     "isEntry": true,
     "names": [
@@ -128,7 +128,7 @@
     ]
   },
   "resources/css/tootjasektsioon2.css": {
-    "file": "assets/tootjasektsioon2-C66fyfy0.css",
+    "file": "assets/tootjasektsioon2-DqheE5tF.css",
     "src": "resources/css/tootjasektsioon2.css",
     "isEntry": true,
     "names": [
@@ -234,6 +234,14 @@
   "resources/images/pilved.webp": {
     "file": "assets/pilved-avRJpWIn.webp",
     "src": "resources/images/pilved.webp"
+  },
+  "resources/images/pilved1.webp": {
+    "file": "assets/pilved1-CpP3dFs_.webp",
+    "src": "resources/images/pilved1.webp"
+  },
+  "resources/images/pilved2.webp": {
+    "file": "assets/pilved2-CQXJSxG9.webp",
+    "src": "resources/images/pilved2.webp"
   },
   "resources/images/tanel.webp": {
     "file": "assets/tanel-DyDyPEEc.webp",
@@ -805,7 +813,7 @@
     "isEntry": true
   },
   "resources/js/carousel.js": {
-    "file": "assets/carousel-VZ1TMMo1.js",
+    "file": "assets/carousel-BUENPU2o.js",
     "name": "carousel",
     "src": "resources/js/carousel.js",
     "isEntry": true
@@ -841,7 +849,7 @@
     "isEntry": true
   },
   "resources/js/lenis.js": {
-    "file": "assets/lenis-B438PF3r.js",
+    "file": "assets/lenis-DURdDOSt.js",
     "name": "lenis",
     "src": "resources/js/lenis.js",
     "isEntry": true

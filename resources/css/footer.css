@@ -76,6 +76,13 @@ footer {
    transition: ease-in-out 0.5s;
  }
 
+ @media (hover: hover) {
+  footer a:hover {
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+  }
+}
+
  @media screen and (max-width: 750px) {
 
    footer p {

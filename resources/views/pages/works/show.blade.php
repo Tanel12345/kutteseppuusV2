@@ -125,7 +125,7 @@
                                 Küttesepp OÜ planeerimine ja teostus
                             </h3>
 
-                            <h4 style="font-size:20px; font-weight:700; margin-left:-18px; margin-top: 15px">
+                            <h4 style="font-size:18px; font-weight:700; margin-left:-18px; margin-top: 15px">
                                 Küttesepp pakub <a style="font-weight:600"
                                     href="{{ route('soojuspumbad.index') }}">soojuspumpasid</a> ja <a
                                     style="font-weight:600" href="{{ route('tahkekutteseadmed.index') }}">
@@ -155,7 +155,7 @@
 
     </section>
 
-    <x-up-scroller />
+    <x-up_scroller />
     <x-cookies />
 
 {{-- struktureeritud andmete deklaratsioon (JSON-LD).Seo, google jaok --}}

@@ -1,6 +1,6 @@
 /* Sektsioon teenused */
 .sektsioon-teenused {
-  margin:50px 0 80px 0;
+  margin:30px 0 50px 0;
    position: relative;
    width: 100%;
    background-color: #ffffff;
@@ -27,7 +27,7 @@
    min-width: 150px;
    display: flex;
    flex-direction: column;
-   height:300px;
+   height:270px;
    justify-content: space-between; /* Align child elements with space between */
    position: relative;
    box-sizing: border-box; /* Ensures padding doesn’t increase size */
@@ -51,7 +51,7 @@
 
  .h5holder {
 
-   height: 80px;
+ 
  }
 
  .teenused p span {

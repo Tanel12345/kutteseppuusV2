@@ -43,7 +43,7 @@
 
 
 
-                    <p style="text-align:justify; margin:0 auto 40px; font-size:18px">
+                    <p style="margin:0 auto 40px; font-size:18px">
                         Allpool on valik Küttesepp OÜ poolt teostatud soojuspumpade ja
                         küttesüsteemide paigaldustest, ehitustest, remontidest ja hooldustest. Tegemist on projektidega,
                         mille lahendamisel on kohandatud konkreetse hoone ja
@@ -115,7 +115,7 @@
 
     </section>
 
-    <x-up-scroller />
+    <x-up_scroller />
     <x-cookies />
 
 </x-layout>

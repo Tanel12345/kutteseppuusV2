@@ -24,7 +24,7 @@
     ]"
 >
     
-<x-static-carousel 
+<x-static_carousel 
     title="PELLETIKATLAD JA PELLETIKAMINAD <br><br><span>Mugav ja automaatne küte kogu majale</span>"
     content="
     Pelletikatlad ja pelletikaminad on mõeldud mugavaks ning automatiseeritud küttesüsteemiks, kus soojus toodetakse puidupelletitest ja jaotatakse radiaatorite või põrandakütte kaudu kogu hoonesse. Tegemist on keskkonnasõbraliku ja kasutajasõbraliku küttelahendusega, kus kütuse lisamine ja põlemine on suurel määral automaatne.<br>
@@ -41,9 +41,9 @@
 />
 
 
-<x-tootesektsioonid.tahkekutteseadmed-tootesektsioon :products="$products" :brands="$brands"/>
+<x-tootesektsioonid.tahkekutteseadmed_tootesektsioon :products="$products" :brands="$brands"/>
 
-<x-up-scroller/>
+<x-up_scroller/>
 <x-cookies/> 
     
 </x-layout>

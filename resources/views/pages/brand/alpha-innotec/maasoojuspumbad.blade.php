@@ -9,7 +9,7 @@
     :viteJsAssets="['resources/js/app.js','resources/js/lazyLoading.js','resources/js/hamburger.js','resources/js/navbar.js','resources/js/lenis.js','resources/js/upscroller.js', 'resources/js/cookies.js']"
 >
 
-<x-static-carousel
+<x-static_carousel
     title="Alpha-innotec maasoojuspumbad <br><br><span>Kvaliteetne ja energiasäästlik lahendus igasse koju ja kontorisse</span>"
     content="Alpha innotec on kahtlemata suurepärane valik. Alpha innotec maasoojuspumbad sobivad nii uusehitistesse kui ka olemasolevate süsteemide renoveerimiseks.<br><br>
 
@@ -21,12 +21,12 @@ Saksa kvaliteet ning asjalik järelteenindus on märksõnad siin. Alpha innotec 
     :textholderStyle="'margin:10px auto; max-width: 1000px;'"
 />
 
-<x-teenused-components.teenused-alpha/>
+<x-teenused-components.teenused_alpha/>
 
 <section class="tootjasektsioon" id="tootjaid">
     <div class="tootjast">
         <div class="ettevotte">
-            <h2><span>Alpha Innotec</span> - Saksa täpsus ja energiatõhusus</h2><br><br>
+            <h2><span>Alpha Innotec</span> - Saksa täpsus ja energiatõhusus</h2><br>
     
                 <div class="content">
                     <h3><strong>Alpha innotec ON/OFF</strong></h3><br>
@@ -95,7 +95,7 @@ Saksa kvaliteet ning asjalik järelteenindus on märksõnad siin. Alpha innotec 
 
 
 
-<x-up-scroller/>
+<x-up_scroller/>
 <x-cookies/>
 
 </x-layout>

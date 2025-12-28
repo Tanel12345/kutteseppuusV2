@@ -61,12 +61,12 @@
                 Maasoojus
             </option>
 
-            <option value="pelletikatlad-kaminad"
-                {{ $product->product_type === 'Pelletikatlad-kaminad' ? 'selected' : '' }}>
+            <option value="Pelletikatlad_kaminad"
+                {{ $product->product_type === 'Pelletikatlad_kaminad' ? 'selected' : '' }}>
                 Pelletikatlad ja kaminad
             </option>
 
-            <option value="keskkuttepliidid-kaminad"
+            <option value="Keskkuttepliidid_ja_kaminad"
                 {{ $product->product_type === 'Keskkuttepliidid_ja_kaminad' ? 'selected' : '' }}>
                 Keskküttepliidid ja kaminad
             </option>

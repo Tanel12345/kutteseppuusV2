@@ -23,12 +23,12 @@
         'resources/js/cookies.js',
     ]">
 
-    <x-static-carousel
+    <x-static_carousel
         title="Bosch maasoojuspumbad <br><br><span> paindlik lahendus väikestele ja suurtele küttepindadele</span>"
         content="Bosch maasoojuspumbad ühendavad Saksamaa inseneritarkuse, töökindluse ja energiatõhususe. Need soojuspumbad kasutavad maa pinna all salvestunud looduslikku soojust, et pakkuda aastaringselt stabiilset ja kuluefektiivset kütet ning jahutust. <br><br>Bosch maasoojuspumbad on ideaalne valik nii uute kui ka renoveeritavate hoonete jaoks, tagades kõrge kasutusmugavuse, madalad ekspluatatsioonikulud ja vähese keskkonnamõju. <br>Tänu arenenud juhtsüsteemidele ja vaiksele tööle sobivad need lahendused igale koduomanikule, kes hindab pikaealisust ja kvaliteeti."
         image="resources/images/taustad/7800i.jpg" imageAlt="Bosch Õhksoojuspumbad - Kvaliteet ja Energiatõhusus"
         :textholderStyle="'margin:10px auto; max-width: 1000px;'" />
-    <x-teenused-components.teenused-bosch />
+    <x-teenused-components.teenused_bosch />
     <section class="tootjasektsioon" id="tootjaid">
         <div class="tootjast">
             <div class="ettevotte">
@@ -144,6 +144,6 @@
 
     </section>
 
-    <x-up-scroller />
+    <x-up_scroller />
     <x-cookies />
 </x-layout>

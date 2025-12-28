@@ -24,7 +24,7 @@
     ]"
 >
     
-<x-static-carousel 
+<x-static_carousel 
     title="KESKKÜTTEPLIITID JA -KAMINAD <br><br><span>Tõhus puuküte radiaatorite ja põrandaküttega</span>"
     content="
     Keskküttekaminad ja keskküttepliidid on mõeldud vee soojendamiseks ning radiaatorite või põrandakütte kaudu kogu maja kütmiseks. Erinevalt tavalisest kaminast või pliidist ei köeta ainult ühte ruumi – soojus jaotub ühtlaselt kogu küttesüsteemi kaudu.<br><br>
@@ -40,9 +40,9 @@
     :textholderStyle="''"
 />
 
-<x-tootesektsioonid.tahkekutteseadmed-tootesektsioon :products="$products" :brands="$brands"/>
+<x-tootesektsioonid.tahkekutteseadmed_tootesektsioon :products="$products" :brands="$brands"/>
 
-<x-up-scroller/>
+<x-up_scroller/>
 <x-cookies/> 
     
 </x-layout>

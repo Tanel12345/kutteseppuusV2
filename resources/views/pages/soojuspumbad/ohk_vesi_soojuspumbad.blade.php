@@ -8,7 +8,7 @@
     :viteJsAssets="['resources/js/app.js','resources/js/hamburger.js','resources/js/navbar.js','resources/js/lenis.js','resources/js/upscroller.js', 'resources/js/cookies.js']"
 >
     
-<x-static-carousel 
+<x-static_carousel 
     title="ÕHK-VESI SOOJUSPUMBAD <br><br><span>Tõhus ja säästlik lahendus küttesüsteemidele</span>"
     content="Õhk-vesi soojuspumba tööprotsess on samal põhimõttel nagu õhksoojuspumbal: Energia ammutatakse välisõhust, kasutades elektrienergiat külmaine rõhu tõstmiseks, et saavutada sobiv temperatuur. Saadud temperatuuri aga kasutatakse küttesüsteemi vee soojendamiseks.<br><br>
     Erinevalt õhk-õhk soojuspumbast suunatakse soojus küttevee kaudu radiaatoritesse, põrandaküttesüsteemi või tarbevee soojendamiseks, tagades ühtlase ja mugava sisekliima.
@@ -19,7 +19,7 @@
     imageAlt="Õhk-vesi soojuspumbad taust"
     :textholderStyle="''"
 />
-<x-tootesektsioonid.soojuspumbad-tootesektsioon :products="$products" :brands="$brands"  :typeSlug="$typeSlug"/>
-<x-up-scroller/>
+<x-tootesektsioonid.soojuspumbad_tootesektsioon :products="$products" :brands="$brands"  :typeSlug="$typeSlug"/>
+<x-up_scroller/>
 <x-cookies/> 
 </x-layout>

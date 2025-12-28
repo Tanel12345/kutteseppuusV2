@@ -26,7 +26,7 @@
 >
 
 {{-- ✅ ÜLEMINE ÜLDTAUST JA TEKST --}}
-<x-static-carousel 
+<x-static_carousel 
     title="TAHKEKÜTTESEADMED <br><br><span><span>Puiduküte – halupuu või pellet kodu kütmiseks</span>"
     content="Tahkekütteseadmed on ennast ajas tõestatud - küttelahendus, mis võib toimida sõltumatult elektrist ning tagab kodus kindla ja stabiilse soojuse ka keerulistes oludes.
 
@@ -114,6 +114,6 @@
 </div>
 </section>
 
-<x-up-scroller />
+<x-up_scroller />
 <x-cookies />
 </x-layout>

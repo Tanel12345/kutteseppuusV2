@@ -209,6 +209,40 @@ küttesüsteemi hooldusteenus'" :metaAuthor="'Tanel Sepp'" :robots="'index, foll
                         </div>
 
                     </div>
+                     <div
+                        style="display:flex;
+                                flex-wrap:wrap;
+                                justify-content:center;
+                                gap:3px;
+                                margin-top:40px;
+                                font-weight:600;
+                            ">
+
+                        <div style="width:300px; text-align:center;">
+                            <a href="{{ route('soojuspumbad.type', 'ohk-ohk-soojuspumbad') }}">
+                                | Õhk-õhk soojuspumbad |
+                            </a>
+                        </div>
+
+                        <div style="width:300px; text-align:center;">
+                            <a href="{{ route('soojuspumbad.type', 'ohk-vesi-soojuspumbad') }}">
+                                | Õhk-vesi soojuspumbad |
+                            </a>
+                        </div>
+
+                        <div style="width:300px; text-align:center;">
+                            <a href="{{ route('soojuspumbad.type', 'maasoojuspumbad') }}">
+                                | Maaküte |
+                            </a>
+                        </div>
+
+                        <div style="width:300px; text-align:center;">
+                            <a href="{{ route('tahkekutteseadmed.index') }}">
+                                | Tahkekütteseadmed |
+                            </a>
+                        </div>
+
+                    </div>
 
                     <div class="links" style="margin-top:20px;">
                         <div class="kusipakkumist">
@@ -223,6 +257,6 @@ küttesüsteemi hooldusteenus'" :metaAuthor="'Tanel Sepp'" :robots="'index, foll
         </div>
     </section>
 
-    <x-up-scroller />
+    <x-up_scroller />
     <x-cookies />
 </x-layout>

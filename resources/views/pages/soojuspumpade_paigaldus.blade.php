@@ -248,21 +248,8 @@
                     </div>
 
 
-                    <hr class="red-line" style="justify-self:flex-start;"><br>
-                    <p style="text-align:center; margin-bottom:60px; margin-top:0;">
-                        <a href="{{ route('soojuspumbad.type', 'ohk-ohk-soojuspumbad') }}">
-                            õhk-õhk soojuspumpade lehele
-                        </a>
-                        <span style="margin:0 10px;">|</span>
-                        <a href="{{ route('soojuspumbad.type', 'ohk-vesi-soojuspumbad') }}">
-                            õhk-vesi soojuspumpade lehele
-                        </a>
-                        <span style="margin:0 10px;">|</span>
-                        <a href="{{ route('soojuspumbad.type', 'maasoojuspumbad') }}">
-                            maakütte soojuspumpade lehele
-                        </a>
-                    </p>
-
+                    <hr class="red-line" style="justify-self:flex-start;">
+                    
                     <div class="faq-container" itemscope itemtype="https://schema.org/FAQPage">
 
                         <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
@@ -422,6 +409,45 @@
 
                     <h4>Küsi Küttesepalt soojuspumpa või lokaalseid vesikütteseadmeid koos paigaldusega.
                     </h4>
+                     
+                    
+                    <div
+                        style="display:flex;
+                                flex-wrap:wrap;
+                                justify-content:center;
+                                gap:3px;
+                                margin-top:40px;
+                                font-weight:600;
+                            ">
+
+                        <div style="width:300px; text-align:center;">
+                            <a href="{{ route('soojuspumbad.type', 'ohk-ohk-soojuspumbad') }}">
+                                | Õhk-õhk soojuspumbad |
+                            </a>
+                        </div>
+
+                        <div style="width:300px; text-align:center;">
+                            <a href="{{ route('soojuspumbad.type', 'ohk-vesi-soojuspumbad') }}">
+                                | Õhk-vesi soojuspumbad |
+                            </a>
+                        </div>
+
+                        <div style="width:300px; text-align:center;">
+                            <a href="{{ route('soojuspumbad.type', 'maasoojuspumbad') }}">
+                                | Maaküte |
+                            </a>
+                        </div>
+
+                        <div style="width:300px; text-align:center;">
+                            <a href="{{ route('tahkekutteseadmed.index') }}">
+                                | Tahkekütteseadmed |
+                            </a>
+                        </div>
+
+                    </div>
+
+
+               
 
                     <div class="links">
 
@@ -435,13 +461,14 @@
                     </div>
 
                 </div>
+               
             </div>
      
         </div>
     </section>
 
 
-    <x-up-scroller />
+    <x-up_scroller />
     <x-cookies />
 
 </x-layout>
