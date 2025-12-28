@@ -9,10 +9,7 @@
   transition: color 1s;
 }
 
-.bottom-rightdiv a:hover {
-  color: #ff0100;
-  transition: color 0.5s;
-}
+
 
 /* ******************************************************************** */
 
@@ -269,9 +266,7 @@ header.animate {
   flex-wrap: wrap;
 }
 
-a.active {
-  color: #ff0100;
-}
+
 
 #kontakt {
   background-image: radial-gradient(#ff0100, #ff0100, rgb(206, 7, 7));
@@ -364,32 +359,66 @@ img.facebook:hover {
 }
 
 
-/* iOS Safari – lukusta põhimenüü lingid */
-.bottom-rightdiv > ul > li > a:not(#kontakt),
-.bottom-rightdiv > ul > li > a:not(#kontakt):visited,
-.bottom-rightdiv > ul > li > a:not(#kontakt):focus,
-.bottom-rightdiv > ul > li > a:not(#kontakt):active {
-  color: #000 !important;
-  -webkit-text-fill-color: #000 !important;
-}
+/* =========================================================
+   SAFARI + HEADER LINKIDE LÕPLIK PARANDUS
+   ========================================================= */
 
-/* Aktiivne põhimenüü link */
-.bottom-rightdiv > ul > li > a.active:not(#kontakt) {
+/* ❌ ÄRA kasuta enam globaalset a.active
+   (jäta see kas eemaldatuks või lase alloleval üle kirjutada) */
+
+/* ✅ AINULT PÕHIMENÜÜ AKTIIVNE LINK */
+.bottom-rightdiv > ul > li > a.active {
   color: #ff0100 !important;
   -webkit-text-fill-color: #ff0100 !important;
+}
+
+/* ✅ PÕHIMENÜÜ HOVER (ainult kui EI ole active) */
+.bottom-rightdiv > ul > li > a:not(.active):not(#kontakt):hover {
+  color: #ff0100 !important;
+  -webkit-text-fill-color: #ff0100 !important;
+}
+
+/* ✅ DROPDOWNI ALAMLINGID – EI PÄRI PUNAST SAFARIS */
+.bottom-rightdiv .popup a,
+.bottom-rightdiv .popup a:visited,
+.bottom-rightdiv .popup a:focus,
+.bottom-rightdiv .popup a:active {
+  color: #eeeeee !important;
+  -webkit-text-fill-color: #eeeeee !important;
 }
 /* =========================================
-   PÕHIMENÜÜ HOVER – LUBATUD KA SAFARIS
+   ALAMLINGI AKTIIVNE OLEK (lehel olles)
    ========================================= */
 
-.bottom-rightdiv > ul > li > a:not(#kontakt):hover {
+.bottom-rightdiv .popup a.active {
   color: #ff0100 !important;
   -webkit-text-fill-color: #ff0100 !important;
+  font-weight: 500;
+}
+/* ✅ ALAMLINGID – HOVER AINULT DESKTOPIS */
+@media (hover: hover) {
+  .bottom-rightdiv .popup a:hover {
+    color: #ff0100 !important;
+    -webkit-text-fill-color: #ff0100 !important;
+  }
 }
 
+/* ✅ KONTAKT JÄÄB ERANDIKS */
+#kontakt {
+  background-image: radial-gradient(#ff0100, #ff0100, rgb(206, 7, 7));
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+}
 
+#kontakt:hover {
+  color: #000000 !important;
+  -webkit-text-fill-color: #000000 !important;
+}
 
-
+/* ✅ SAFARI TOUCH BUGI FIX (ei jäta active olekut külge) */
+.bottom-rightdiv a {
+  -webkit-tap-highlight-color: transparent;
+}
 
 /* Media queries */
 @media screen and (max-width: 1074px) {

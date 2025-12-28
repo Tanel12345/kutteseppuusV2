@@ -81,6 +81,33 @@ footer {
     color: #ffffff !important;
     -webkit-text-fill-color: #ffffff !important;
   }
+
+  /* =========================================================
+   SAFARI FOOTER LINKIDE FIX
+   ========================================================= */
+
+/* Lukusta footeris KÕIK lingid vaikimisi valgeks */
+footer a,
+footer a:visited,
+footer a:active,
+footer a:focus {
+  color: #dddddd !important;
+  -webkit-text-fill-color: #dddddd !important;
+  text-decoration: none;
+}
+
+/* Hover ainult seadmetel, kus hover on päriselt olemas */
+@media (hover: hover) {
+  footer a:hover {
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+  }
+}
+
+/* iOS Safari touch-highlight bugi eemaldus */
+footer a {
+  -webkit-tap-highlight-color: transparent;
+}
 }
 
  @media screen and (max-width: 750px) {
