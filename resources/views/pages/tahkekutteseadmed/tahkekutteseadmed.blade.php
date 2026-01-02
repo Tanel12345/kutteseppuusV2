@@ -5,25 +5,8 @@
     :metaAuthor="'Tanel Sepp'"
     :robots="'index, follow'"
     :viteCssAssets="[
-        'resources/css/app.css',
-        'resources/css/navbar.css',
-        'resources/css/footer.css',
-        'resources/css/staticCarousel.css',
-        'resources/css/tootesektsioon.css',
-        'resources/css/upscroller.css',
-        'resources/css/soojuspumbad-piltlingid.css',
-        'resources/css/cookies.css'
-    ]"
-    :viteJsAssets="[
-        'resources/js/app.js',
-        'resources/js/hamburger.js',
-        'resources/js/navbar.js',
-        'resources/js/lenis.js',
-        'resources/js/upscroller.js',
-        'resources/js/cookies.js',
-        'resources/js/lazyLoading.js'
-    ]"
->
+    'resources/css/pages/tootelehed.css',
+  ]">
 
 {{-- ✅ ÜLEMINE ÜLDTAUST JA TEKST --}}
 <x-static_carousel 
@@ -33,14 +16,14 @@
     <br><br>Küttesepa pakutavad tahkeküttel töötavad seadmed – pelletikatlad, kaminad ja keskküttepliidid – sobivad hästi nii põhi- kui ka varukütteks. Need on eriti hinnatud just maapiirkondades ja kohtades, kus soovitakse osalist või täielikku energiasõltumatust.
 
     <br><br>Küttesepp aitab planeerida sinu kodu jaoks sobivaima tahkeküttesüsteemi, pakub nii seadme, eriosad, teostab paigalduse ja süsteemi välja ehitamise, teostab hooldust ning nõustab ka küttesüsteemi ohutu ja tõhusa kasutamise osas."
-    image="resources/images/taustad/keskkutteseadmed.webp"
+    image="images/taustad/keskkutteseadmed.webp"
     imageAlt="Tahkekütteseadmed – pelletikatlad ja keskküttepliidid"
     :textholderStyle="''"
 />
 
 {{-- ✅ ALAKATEGOORIATE VALIK --}}
 <section class="piltlingid" id="piltlingid">
-   <div style="margin-top:50px"class="piltlingidiv">
+   <div style="margin-top:50px" class="piltlingidiv">
 
     {{-- 🔥 PELLETIKATLAD JA -KAMINAD --}}
     <div class="piltlink">
@@ -49,7 +32,7 @@
             <div class="piltlingipilt">
                 <img 
                     src="" 
-                    data-src="{{ Vite::asset('resources/images/vaikesed/extraflame/extraflame.webp') }}" 
+                    data-src="{{ asset('images/vaikesed/extraflame/extraflame.webp') }}" 
                     alt="Extraflame pelletkamin Küttesepalt" 
                     title="Pelletikamin"
                 />
@@ -57,7 +40,7 @@
 
             <div class="piltlingitekst">
                 <img 
-                    src="{{ Vite::asset('resources/images/icons/küttesepp.png') }}" 
+                    src="{{ asset('images/icons/küttesepp.png') }}" 
                     alt="Küttesepp"
                 />
                 <h2>Pelletikatlad ja -kaminad</h2>
@@ -81,7 +64,7 @@
             <div class="piltlingipilt">
                 <img 
                     src="" 
-                    data-src="{{ Vite::asset('resources/images/vaikesed/keskkuttepliidid/Alfa-Plam-keskkuttepliit.webp') }}" 
+                    data-src="{{ asset('images/vaikesed/keskkuttepliidid/Alfa-Plam-keskkuttepliit.webp') }}" 
                     alt="Keskküttepliit Küttesepalt" 
                     title="Keskküttepliit"
                 />
@@ -89,7 +72,7 @@
 
             <div class="piltlingitekst">
                 <img 
-                    src="{{ Vite::asset('resources/images/icons/küttesepp.png') }}" 
+                    src="{{ asset('images/icons/küttesepp.png') }}" 
                     alt="Küttesepp"
                 />
                 <h2>Keskküttepliidid ja -kaminad</h2>

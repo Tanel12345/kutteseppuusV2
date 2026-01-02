@@ -4,15 +4,12 @@
     :metaKeywords="'Bosch õhk-vesi soojuspumbad, Bosch soojuspump, Compress 7000i AW, Bosch õhk-vesi soojuspump, vesiküte, põrandaküte, tarbevesi, inverter soojuspump'"
     :metaAuthor="'Tanel Sepp'"
     :robots="'index, follow'"
-    :viteCssAssets="['resources/css/app.css', 'resources/css/navbar.css', 'resources/css/footer.css','resources/css/staticCarousel.css', 'resources/css/tootjasektsioon.css','resources/css/upscroller.css','resources/css/teenusedStatic.css','resources/css/cookies.css']"
-
-    :viteJsAssets="['resources/js/app.js','resources/js/lazyLoading.js','resources/js/hamburger.js','resources/js/navbar.js','resources/js/lenis.js','resources/js/upscroller.js', 'resources/js/cookies.js']"
->
+     :viteCssAssets="['resources/css/pages/brandilehed.css']">
    
 <x-static_carousel
 title="Bosch õhk-vesi soojuspumbad <br><br><span>tõhus ja energiasäästlik lahendus igasse koju ja kontorisse</span>"
 content="Bosch õhk-vesi soojuspumbad pakuvad usaldusväärsust ja kõrget kvaliteeti, et tagada optimaalne soojus- ja jahutus aastaringselt. Bosch tooted ühendavad innovatsiooni ja tehnoloogia, et pakkuda parimat energiatõhusust ja mugavust, samal ajal vähendades teie igakuiseid kütte- ja jahutusarveid."
-image="resources/images/taustad/Boschtaust1.webp"
+image="images/taustad/Boschtaust1.webp"
 imageAlt="Bosch õhk-vesi soojuspumbad - Kvaliteet ja Energiatõhusus"
 :textholderStyle="'margin:10px auto; max-width: 1000px;'"
 />
@@ -35,7 +32,7 @@ imageAlt="Bosch õhk-vesi soojuspumbad - Kvaliteet ja Energiatõhusus"
                         Üks parimaid ja enim valitud Boschi soojuspumpasid turul
                     </p><br>
                     <div class="pildidiv" style="justify-self:left; margin-top:55px;">
-                        <img class="tootjastpilt" src="" data-src="{{ Vite::asset("resources/images/vaikesed/bosch/bosch-outside.webp") }}" alt="Bosch õhk-vesi välisosa">
+                        <img class="tootjastpilt" src="" data-src="{{ asset("images/vaikesed/bosch/bosch-outside.webp") }}" alt="Bosch õhk-vesi välisosa">
                     </div><br><br>
 
                     <h3><strong>Compress 7000i AW</strong></h3>
@@ -58,10 +55,10 @@ imageAlt="Bosch õhk-vesi soojuspumbad - Kvaliteet ja Energiatõhusus"
                     </ul>
                    <div class="pildidivholder">
                         <div class="pildidiv" style="width: 45%; display: inline-block; ">
-                            <img class="tootjastpilt" src="" data-src="{{ Vite::asset('resources/images/vaikesed/bosch/Compress_7000i_AW_AWE_AWMB.webp') }}" alt="Compress 7000i õhk-vesi soojuspump">
+                            <img class="tootjastpilt" src="" data-src="{{ asset('images/vaikesed/bosch/Compress_7000i_AW_AWE_AWMB.webp') }}" alt="Compress 7000i õhk-vesi soojuspump">
                         </div><!--
                      --><div class="pildidiv" style="width: 45%; display:">
-                            <img class="tootjastpilt" src="" data-src="{{ Vite::asset('resources/images/vaikesed/bosch/Bosch-compress-7000i- AWM-AWMS.avif') }}" alt="Compress 7000i õhk-vesi soojuspump">
+                            <img class="tootjastpilt" src="" data-src="{{ asset('images/vaikesed/bosch/Bosch-compress-7000i- AWM-AWMS.avif') }}" alt="Compress 7000i õhk-vesi soojuspump">
                         </div><br><br>
                     </div><br><br>
                     

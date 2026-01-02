@@ -3,30 +3,11 @@
 :metaKeywords="'Bosch maasoojuspump, Bosch maaküte, Compress 7800i LW, maasoojuspumbad, energiatõhus küte'" 
 :robots="'index, follow'" 
 :metaAuthor="'Tanel Sepp'" 
-:viteCssAssets="[
-    'resources/css/app.css',
-    'resources/css/navbar.css',
-    'resources/css/footer.css',
-    'resources/css/staticCarousel.css',
-    'resources/css/tootjasektsioon.css',
-    'resources/css/upscroller.css',
-    'resources/css/teenusedStatic.css',
-    'resources/css/cookies.css',
-]"
-    :viteJsAssets="[
-        'resources/js/app.js',
-        'resources/js/lazyLoading.js',
-        'resources/js/hamburger.js',
-        'resources/js/navbar.js',
-        'resources/js/lenis.js',
-        'resources/js/upscroller.js',
-        'resources/js/cookies.js',
-    ]">
-
+:viteCssAssets="['resources/css/pages/brandilehed.css']">
     <x-static_carousel
         title="Bosch maasoojuspumbad <br><br><span> paindlik lahendus väikestele ja suurtele küttepindadele</span>"
         content="Bosch maasoojuspumbad ühendavad Saksamaa inseneritarkuse, töökindluse ja energiatõhususe. Need soojuspumbad kasutavad maa pinna all salvestunud looduslikku soojust, et pakkuda aastaringselt stabiilset ja kuluefektiivset kütet ning jahutust. <br><br>Bosch maasoojuspumbad on ideaalne valik nii uute kui ka renoveeritavate hoonete jaoks, tagades kõrge kasutusmugavuse, madalad ekspluatatsioonikulud ja vähese keskkonnamõju. <br>Tänu arenenud juhtsüsteemidele ja vaiksele tööle sobivad need lahendused igale koduomanikule, kes hindab pikaealisust ja kvaliteeti."
-        image="resources/images/taustad/7800i.jpg" imageAlt="Bosch Õhksoojuspumbad - Kvaliteet ja Energiatõhusus"
+        image="images/taustad/7800i.jpg" imageAlt="Bosch Õhksoojuspumbad - Kvaliteet ja Energiatõhusus"
         :textholderStyle="'margin:10px auto; max-width: 1000px;'" />
     <x-teenused-components.teenused_bosch />
     <section class="tootjasektsioon" id="tootjaid">
@@ -47,18 +28,18 @@
                         pühendumus kvaliteedile teeb Bosch'ist ühe parima valiku kodu ja tööruumide kütmiseks ja
                         jahutamiseks.</p><br><br>
 
-                    <h3><strong>Bosch maasoojuspumbad</strong></h3> <br>
+                    <h3><strong>Bosch maasoojuspumbad</strong></h3> 
 
                     <p>
                         Kasutage maapealset energiat kütteks Boschi tõhusate maasoojuspumpadega!
                     </p><br>
                     <div class="pildidiv" style="justify-self:left; margin-top:55px;">
                         <img class="tootjastpilt" src=""
-                            data-src="{{ Vite::asset('resources/images/taustad/7800i taust.jpg') }}"
+                            data-src="{{ asset('images/taustad/7800i taust.jpg') }}"
                             alt="Bosch maasoojuspump">
                     </div><br><br>
 
-                    <h3><strong>Bosch COMPRESS 7800i LW</strong></h3> <br>
+                    <h3><strong>Bosch COMPRESS 7800i LW</strong></h3> 
 
                     <p>
                         Compress 7800i LW Paindlik lahendus väikestele ja suurtele küttepindadele.
@@ -95,9 +76,9 @@
                     </ul>
                     <div class="pildidiv" style="justify-self:right; margin-top:55px;">
                         <img class="tootjastpilt" src=""
-                            data-src="{{ Vite::asset('resources/images/vaikesed/bosch/bosch-compress-7001i.png') }}"
+                            data-src="{{ asset('images/vaikesed/bosch/bosch-compress-7001i.png') }}"
                             alt="Bosch 7800i LW">
-                    </div><br><br>
+                    </div><br>
 
 
                     <h4><strong>Energiasäästlik küte aastaringselt maa looduslikust soojusest</strong></h4><br>

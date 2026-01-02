@@ -5,25 +5,9 @@ maakütte hooldus,
 pelletikatla hooldus,
 kaminahooldus,
 küttesõlme kontroll,
-küttesüsteemi hooldusteenus'" :metaAuthor="'Tanel Sepp'" :robots="'index, follow'" :viteCssAssets="[
-    'resources/css/app.css',
-    'resources/css/navbar.css',
-    'resources/css/footer.css',
-    'resources/css/staticCarouselkuttesepp.css',
-    'resources/css/tootjasektsioon2.css',
-    'resources/css/upscroller.css',
-    'resources/css/cookies.css',
-]"
-    :viteJsAssets="[
-        'resources/js/app.js',
-        'resources/js/lazyLoading.js',
-        'resources/js/hamburger.js',
-        'resources/js/navbar.js',
-        'resources/js/lenis.js',
-        'resources/js/upscroller.js',
-        'resources/js/cookies.js',
-        'resources/js/accordeon.js',
-    ]">
+küttesüsteemi hooldusteenus'" :metaAuthor="'Tanel Sepp'" :robots="'index, follow'" 
+:viteCssAssets="['resources/css/pages/teenustelehed.css']"
+    :viteJsAssets="['resources/js/pages/teenustelehed.js']">
 
     <section class="uper" id="uperid">
         <div class="carousel">
@@ -33,7 +17,7 @@ küttesüsteemi hooldusteenus'" :metaAuthor="'Tanel Sepp'" :robots="'index, foll
                         <h1>Küttesüsteemide hooldus – töökindlus, sääst ja pikem eluiga</h1>
                     </div>
                 </div>
-                <img class="taust" src="{{ Vite::asset('resources/images/taustad/kuttesusteemide-hooldus.webp') }}"
+                <img class="taust" src="{{ asset('images/taustad/kuttesusteemide-hooldus.webp') }}"
                     alt="Küttesüsteemi hooldus ja kontroll">
             </div>
         </div>
@@ -45,10 +29,13 @@ küttesüsteemi hooldusteenus'" :metaAuthor="'Tanel Sepp'" :robots="'index, foll
                 <div class="content">
 
                     <h2><span>Küttesüsteemi hooldus</span> – miks see on vajalik?</h2>
-                    
 
                     <p>
-                        Olgu teil soojuspump, tahkekütte-, vedelkütte- või gaasikatel. Kas tuleb soe katlamajast või kütate tavalist halupuuahju – Iga küttesüsteem omab kas soojusallikat ja/või ka eriosi ja need vajavad regulaarset hooldust ja vajadusel <a href="/kuttesusteemi-labipesu">küttesüsteemi läbipesu</a> ning <a href="/kuttesusteemi-vesi">küttevee töötlust</a>. Ikka selleks et tagada energiasäästlik töö, madalad küttearved ja
+                        Olgu teil soojuspump, tahkekütte-, vedelkütte- või gaasikatel. Kas tuleb soe katlamajast või
+                        kütate tavalist halupuuahju – Iga küttesüsteem omab kas soojusallikat ja/või ka eriosi ja need
+                        vajavad regulaarset hooldust ja vajadusel <a href="{{ route('kuttesusteemi-labipesu') }}">küttesüsteemi
+                            läbipesu</a> ning <a href="{{ route('kuttesusteemi-vesi') }}">küttevee töötlust</a>. Ikka selleks et
+                        tagada energiasäästlik töö, madalad küttearved ja
                         seadmete, eriosade, pikk eluiga.
                         Aastatega kuluvad süsteemi liikuvad osad, mudapüünistesse kogunevad setted, kusagilt võib hakata
                         tilkuma, rõhud muutuvad ning automaatika vajab ülevaatust.
@@ -74,7 +61,7 @@ küttesüsteemi hooldusteenus'" :metaAuthor="'Tanel Sepp'" :robots="'index, foll
 
                     <div class="pildidiv">
                         <img class="tootjastpilt" src=""
-                            data-src="{{ Vite::asset('resources/images/vaikesed/kuttesusteemide-hooldus/puhas-kuttesusteem.webp') }}"
+                            data-src="{{ asset('images/vaikesed/kuttesusteemide-hooldus/puhas-kuttesusteem.webp') }}"
                             alt="Küttesüsteemide hooldusteenus – Küttesepp OÜ">
                     </div>
 
@@ -97,12 +84,11 @@ küttesüsteemi hooldusteenus'" :metaAuthor="'Tanel Sepp'" :robots="'index, foll
 
                     <div class="pildidiv" style="justify-self:flex-end;">
                         <img class="tootjastpilt" src=""
-                            data-src="{{ Vite::asset('resources/images/vaikesed/kuttesusteemide-hooldus/samsung-valisosa.webp') }}"
+                            data-src="{{ asset('images/vaikesed/kuttesusteemide-hooldus/samsung-valisosa.webp') }}"
                             alt="Õhk-vesi soojuspumba hooldus">
                     </div>
 
                     <hr class="red-line" style="justify-self:flex-end;">
-
 
                     <h3>Küttesüsteemide hoolduse näidis kontrollnimekiri</h3>
                     <p><strong>Küttesepp OÜ hooldus sisaldab seadme ja süsteemi terviklikku ülevaatust:</strong></p>
@@ -129,132 +115,110 @@ küttesüsteemi hooldusteenus'" :metaAuthor="'Tanel Sepp'" :robots="'index, foll
 
                     <div class="pildidiv">
                         <img class="tootjastpilt" src=""
-                            data-src="{{ Vite::asset('resources/images/vaikesed/kuttesusteemide-hooldus/Tanel Soojuspumbaga.png') }}"
+                            data-src="{{ asset('images/vaikesed/kuttesusteemide-hooldus/Tanel Soojuspumbaga.png') }}"
                             alt="Soojuspumba hooldus ja kontroll">
                     </div>
 
                     <hr class="red-line">
 
-
-                   
+              
                     <!-- FAQ -->
                     <div class="faq-container" itemscope itemtype="https://schema.org/FAQPage">
                         <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                            <h3 itemprop="name" class="faq-question">
-                                <span class="faq-icon">&#10003;</span> Kui tihti küttesüsteemi hooldada?
-                            </h3>
+                            <h3 itemprop="name" class="faq-question"> <span class="faq-icon">&#10003;</span> Kui tihti
+                                küttesüsteemi hooldada? </h3>
                             <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"
                                 class="faq-answer">
-                                <p itemprop="text">
-                                    <strong>Õhk-vesi soojuspump:</strong> 1 kord aastas (väga soovitatav)<br><br>
+                                <p itemprop="text"> <strong>Õhk-vesi soojuspump:</strong> 1 kord aastas (väga
+                                    soovitatav)<br><br> <strong>Maakütte soojuspump:</strong> 1 kord aasta
+                                    jooksul<br><br> <strong>Õhk-õhk soojuspump:</strong><br> – Filtrid: pesta 1–2×
+                                    kuus<br> – Professionaalne hooldus: kord aastas<br><br> <strong>Pelletikatlad /
+                                        kaminad:</strong><br> – Koldesisu ja soojusvaheti puhastus: Olenevalt tootja
+                                    soovitusest kuid vähemalt 1 kord aastas. On põleteid mille puhastamist võiks
+                                    teostada 1-2 korda kuus kuid jällegi vastavalt konkreetse tootja juhistele.<br> –
+                                    Suitsuteede hooldus vastavalt kasutusele<br><br> <strong>Keskkütte pliidid ja
+                                        kaminad:</strong><br> – Tuhk ja suitsuteede puhastus: Vähemalt 1 kord
+                                    aastas.<br> – Liitekohtade ja uksetihendite kontroll: Heaperemehelikult ennem igat
+                                    sedame kasutamist. </p>
+                            </div>
+                        </div>
+                        <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                            <h3 itemprop="name" class="faq-question"> <span class="faq-icon">&#10003;</span> Kas
+                                Küttesepp hooldab kõiki brände? </h3>
+                            <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"
+                                class="faq-answer">
+                                <p itemprop="text"> Küttesepp hooldab eelkõige seadmeid, mida ise müüb ja paigaldab. See
+                                    tagab kvaliteetse hoolduse, õiged varuosad ja garantii säilimise. Teiste tootjate
+                                    seadmeid hooldame kokkuleppel ja vastavalt hetke võimalustele. </p>
+                            </div>
+                        </div>
+                        <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                            <h3 itemprop="name" class="faq-question"> <span class="faq-icon">&#10003;</span> Kas hooldus
+                                tõstab soojuspumba eluiga? </h3>
+                            <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"
+                                class="faq-answer">
+                                <p itemprop="text"> Jah. Regulaarne hooldus tagab madalama koormuse kompressorile,
+                                    väiksema energiakulu, stabiilse töö ja pikendab eluiga aastate võrra. Hooldamata
+                                    süsteem võib kuluda mitu korda kiiremini. </p>
+                            </div>
+                        </div>
+                        <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                            <h3 itemprop="name" class="faq-question"> <span class="faq-icon">&#10003;</span> Kas
+                                hooldusega saab ennetada süsteemi rikkeid? </h3>
+                            <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"
+                                class="faq-answer">
+                                <p itemprop="text"> Jah. 90% riketest tekib väikeste kõrvalekallete tõttu (rõhud,
+                                    õhumullid, määrdunud filtrid, valed seaded). Regulaarne hooldus avastab need enne,
+                                    kui tekib kallis remont. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        style="display:flex; flex-wrap:wrap; justify-content:center; gap:3px; margin-top:40px; font-weight:600; ">
 
-                                    <strong>Maakütte soojuspump:</strong> 1 kord aasta jooksul<br><br>
+                        <div
+                            style="display:flex;
+                           flex-wrap:wrap;
+                           justify-content:center;
+                           gap:3px;
+                           margin-top:40px;
+                           font-weight:600;">
+                            <div style="width:300px; text-align:center;">
+                                <a href="{{ route('soojuspumbad.type', 'ohk-ohk-soojuspumbad') }}">
+                                    | Õhk-õhk soojuspumbad |
+                                </a>
+                            </div>
 
-                                    <strong>Õhk-õhk soojuspump:</strong><br>
-                                    – Filtrid: pesta 1–2× kuus<br>
-                                    – Professionaalne hooldus: kord aastas<br><br>
+                            <div style="width:300px; text-align:center;">
+                                <a href="{{ route('soojuspumbad.type', 'ohk-vesi-soojuspumbad') }}">
+                                    | Õhk-vesi soojuspumbad |
+                                </a>
+                            </div>
 
-                                    <strong>Pelletikatlad / kaminad:</strong><br>
-                                    – Koldesisu ja soojusvaheti puhastus: Olenevalt tootja soovitusest kuid vähemalt 1 kord aastas. On põleteid mille puhastamist võiks teostada 1-2 korda kuus kuid jällegi vastavalt konkreetse tootja juhistele.<br>
-                                    – Suitsuteede hooldus vastavalt kasutusele<br><br>
+                            <div style="width:300px; text-align:center;">
+                                <a href="{{ route('soojuspumbad.type', 'maasoojuspumbad') }}">
+                                    | Maaküte |
+                                </a>
+                            </div>
 
-                                    <strong>Keskkütte pliidid ja kaminad:</strong><br>
-                                    – Tuhk ja suitsuteede puhastus: Vähemalt 1 kord aastas.<br>
-                                    – Liitekohtade ja uksetihendite kontroll: Heaperemehelikult ennem igat sedame kasutamist.
-                                </p>
+                            <div style="width:300px; text-align:center;">
+                                <a href="{{ route('tahkekutteseadmed.index') }}">
+                                    | Tahkekütteseadmed |
+                                </a>
                             </div>
                         </div>
 
-
-                        <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                            <h3 itemprop="name" class="faq-question">
-                                <span class="faq-icon">&#10003;</span> Kas Küttesepp hooldab kõiki brände?
-                            </h3>
-                            <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"
-                                class="faq-answer">
-                                <p itemprop="text">
-                                    Küttesepp hooldab eelkõige seadmeid, mida ise müüb ja paigaldab. See tagab
-                                    kvaliteetse hoolduse, õiged varuosad ja garantii säilimise.
-                                    Teiste tootjate seadmeid hooldame kokkuleppel ja vastavalt hetke võimalustele.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                            <h3 itemprop="name" class="faq-question">
-                                <span class="faq-icon">&#10003;</span> Kas hooldus tõstab soojuspumba eluiga?
-                            </h3>
-                            <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"
-                                class="faq-answer">
-                                <p itemprop="text">
-                                    Jah. Regulaarne hooldus tagab madalama koormuse kompressorile, väiksema energiakulu,
-                                    stabiilse töö ja pikendab eluiga aastate võrra. Hooldamata süsteem võib kuluda mitu
-                                    korda kiiremini.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                            <h3 itemprop="name" class="faq-question">
-                                <span class="faq-icon">&#10003;</span> Kas hooldusega saab ennetada süsteemi rikkeid?
-                            </h3>
-                            <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"
-                                class="faq-answer">
-                                <p itemprop="text">
-                                    Jah. 90% riketest tekib väikeste kõrvalekallete tõttu (rõhud, õhumullid, määrdunud
-                                    filtrid, valed seaded).
-                                    Regulaarne hooldus avastab need enne, kui tekib kallis remont.
-                                </p>
+                        <div class="links" style="margin-top:20px;">
+                            <div class="kusipakkumist">
+                                <a href="/#form" title="Emaili vormile">
+                                    <p>KÜSI LISAINFOT</p>
+                                </a>
                             </div>
                         </div>
 
                     </div>
-                     <div
-                        style="display:flex;
-                                flex-wrap:wrap;
-                                justify-content:center;
-                                gap:3px;
-                                margin-top:40px;
-                                font-weight:600;
-                            ">
-
-                        <div style="width:300px; text-align:center;">
-                            <a href="{{ route('soojuspumbad.type', 'ohk-ohk-soojuspumbad') }}">
-                                | Õhk-õhk soojuspumbad |
-                            </a>
-                        </div>
-
-                        <div style="width:300px; text-align:center;">
-                            <a href="{{ route('soojuspumbad.type', 'ohk-vesi-soojuspumbad') }}">
-                                | Õhk-vesi soojuspumbad |
-                            </a>
-                        </div>
-
-                        <div style="width:300px; text-align:center;">
-                            <a href="{{ route('soojuspumbad.type', 'maasoojuspumbad') }}">
-                                | Maaküte |
-                            </a>
-                        </div>
-
-                        <div style="width:300px; text-align:center;">
-                            <a href="{{ route('tahkekutteseadmed.index') }}">
-                                | Tahkekütteseadmed |
-                            </a>
-                        </div>
-
-                    </div>
-
-                    <div class="links" style="margin-top:20px;">
-                        <div class="kusipakkumist">
-                            <a href="/#form" title="Emaili vormile">
-                                <p>KÜSI LISAINFOT</p>
-                            </a>
-                        </div>
-                    </div>
-
                 </div>
             </div>
-        </div>
     </section>
 
     <x-up_scroller />

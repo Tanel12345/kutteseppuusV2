@@ -111,11 +111,11 @@
 
     <br>
 
-    <img
-        src="{{ Vite::asset('resources/images/tanel.webp') }}"
-        title="Tanel Sepp"
-        alt="Tanel Sepp"
-    >
+ <img
+    src="{{ asset('images/tanel.webp') }}"
+    title="Tanel Sepp"
+    alt="Tanel Sepp"
+>
 </div>
 
 </section>

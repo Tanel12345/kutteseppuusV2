@@ -1,32 +1,10 @@
-<x-layout 
-:title="'Bosch õhk-õhk soojuspumbad – Climate 6100i ja 8100i | Küttesepp'"
-:metaDescription="'Bosch õhk-õhk soojuspumbad on kiirelt paigaldatavad ja energiatõhusad lahendused ruumide kütmiseks ja jahutamiseks. Climate 6100i ja 8100i mudelid pakuvad vaikset tööd, kõrget kasutegurit ja Saksa kvaliteeti. Küttesepp paigaldab.'"
-:metaKeywords="'Bosch õhk-õhk soojuspumbad, Bosch õhksoojuspump, Climate 6100i, Climate 8100i, õhk-õhk soojuspump, ruumide küte ja jahutus'"
-:robots="'index, follow'"
-:viteCssAssets="[
-    'resources/css/app.css',
-    'resources/css/navbar.css',
-    'resources/css/footer.css',
-    'resources/css/staticCarousel.css',
-    'resources/css/tootjasektsioon.css',
-    'resources/css/upscroller.css',
-    'resources/css/teenusedStatic.css',
-    'resources/css/cookies.css',
-]"
-    :viteJsAssets="[
-        'resources/js/app.js',
-        'resources/js/lazyLoading.js',
-        'resources/js/hamburger.js',
-        'resources/js/navbar.js',
-        'resources/js/lenis.js',
-        'resources/js/upscroller.js',
-        'resources/js/cookies.js',
-    ]">
+<x-layout :title="'Bosch õhk-õhk soojuspumbad – Climate 6100i ja 8100i | Küttesepp'" :metaDescription="'Bosch õhk-õhk soojuspumbad on kiirelt paigaldatavad ja energiatõhusad lahendused ruumide kütmiseks ja jahutamiseks. Climate 6100i ja 8100i mudelid pakuvad vaikset tööd, kõrget kasutegurit ja Saksa kvaliteeti. Küttesepp paigaldab.'" :metaKeywords="'Bosch õhk-õhk soojuspumbad, Bosch õhksoojuspump, Climate 6100i, Climate 8100i, õhk-õhk soojuspump, ruumide küte ja jahutus'" :robots="'index, follow'" :viteCssAssets="['resources/css/pages/brandilehed.css']">
 
     <x-static_carousel
         title="Bosch Õhksoojuspumbad <br><br><span>tõhus ja energiasäästlik lahendus igasse koju ja kontorisse</span>"
         content="Bosch õhksoojuspumbad pakuvad usaldusväärsust ja kõrget kvaliteeti, et tagada soodsalt ja kiirelt optimaalne soojus- ja jahutus aastaringselt.<br> Bosch tooted ühendavad innovatsiooni ja tehnoloogia, et pakkuda parimat energiatõhusust ja mugavust, samal ajal vähendades teie igakuiseid kütte- ja jahutusarveid.<br> Õhksoojuspumbad on soojuspumba liigi või tüübina kõige soodsam ja lihtsalt paigaldatav teie eramusse või korterisse."
-        image="resources/images/taustad/Boschtaust1.webp" imageAlt="Bosch Õhksoojuspumbad - Kvaliteet ja Energiatõhusus"
+        image="images/taustad/Boschtaust1.webp" 
+        imageAlt="Bosch Õhksoojuspumbad - Kvaliteet ja Energiatõhusus"
         :textholderStyle="'margin:10px auto; max-width: 1000px;'" />
     <x-teenused-components.teenused_bosch />
 
@@ -56,7 +34,7 @@
                     </p><br>
                     <div class="pildidiv" style="justify-self:left; margin-top:55px;">
                         <img class="tootjastpilt" src=""
-                            data-src="{{ Vite::asset('resources/images/vaikesed/bosch/Bosch.webp') }}"
+                            data-src="{{ asset('images/vaikesed/bosch/Bosch.webp') }}"
                             alt="Bosch soojuspump">
                     </div><br><br>
 
@@ -71,7 +49,7 @@
                     </ul>
                     <div class="pildidiv" style="justify-self:right; margin-top:55px;">
                         <img class="tootjastpilt" src=""
-                            data-src="{{ Vite::asset('resources/images/vaikesed/bosch/Climate_Class_6000_6100i.webp') }}"
+                            data-src="{{ asset('images/vaikesed/bosch/Climate_Class_6000_6100i.webp') }}"
                             alt="Climate class 6100i õhksoojuspump">
                     </div><br><br>
 
@@ -88,7 +66,7 @@
                     </ul>
                     <div class="pildidiv">
                         <img class="tootjastpilt" src=""
-                            data-src="{{ Vite::asset('resources/images/vaikesed/bosch/Climate_Class_8000_8100i.webp') }}"
+                            data-src="{{ asset('images/vaikesed/bosch/Climate_Class_8000_8100i.webp') }}"
                             alt="Alpha-innotec on-off maasoojuspump">
                     </div><br><br>
 
@@ -101,12 +79,12 @@
                 <div class="links">
 
                     <div class="kusipakkumist">
-                     
+
                         <a href="{{ route('soojuspumbad.type', 'ohk-ohk-soojuspumbad') }}?brand=bosch#tootesektsioon"
                             title="Bosch õhk-õhk soojuspumbad">
                             <p>ÕHK-ÕHK TOOTED</p>
                         </a>
-                    
+
                     </div>
                     <div class="kusipakkumist">
                         <a href="{{ route('soojuspumbad.type', 'ohk-vesi-soojuspumbad') }}?brand=bosch#tootesektsioon"

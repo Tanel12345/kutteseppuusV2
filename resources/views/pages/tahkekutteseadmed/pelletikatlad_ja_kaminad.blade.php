@@ -4,25 +4,7 @@
     :metaKeywords="'pelletikatlad, pelletikaminad, pelletiküte, pelletikatel paigaldus, pelletikamin keskküttele, automaatne küte'"
     :metaAuthor="'Tanel Sepp'"
     :robots="'index, follow'"
-    :viteCssAssets="[
-        'resources/css/app.css', 
-        'resources/css/navbar.css', 
-        'resources/css/footer.css',
-        'resources/css/staticCarousel.css', 
-        'resources/css/tootesektsioon.css',
-        'resources/css/upscroller.css',
-        'resources/css/cookies.css'
-    ]"
-
-    :viteJsAssets="[
-        'resources/js/app.js',
-        'resources/js/hamburger.js',
-        'resources/js/navbar.js',
-        'resources/js/lenis.js',
-        'resources/js/upscroller.js', 
-        'resources/js/cookies.js'
-    ]"
->
+     :viteCssAssets="['resources/css/pages/tootelehedala.css']">
     
 <x-static_carousel 
     title="PELLETIKATLAD JA PELLETIKAMINAD <br><br><span>Mugav ja automaatne küte kogu majale</span>"
@@ -34,7 +16,7 @@
     Pelletikütte suureks eeliseks on automatiseeritud tahkekütteallikas ja kõrge kasutegur.<br><br>
     
     Küttesepp pakub pelletikatelde ja -kaminate terviklahendust: seadme valik, hüdrauliline ühendamine, suitsulõõride lahendused, ohutusarmatuur, automatiseerimine, süsteemi täitmine, tasakaalustamine ning põhjalik kasutusõpetus."
-    image="resources/images/taustad/pelletitaust.webp"
+    image="images/taustad/pelletitaust.webp"
     imageAlt="Pelletikamin vesiküttesüsteemis"
     eriStiil="object-position: 20% top;"
        :textholderStyle="''"

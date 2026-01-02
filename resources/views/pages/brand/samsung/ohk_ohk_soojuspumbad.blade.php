@@ -4,16 +4,15 @@
     :metaKeywords="'Samsung õhk-õhk soojuspumbad, Samsung soojuspump, õhk-õhk soojuspump, energiasäästlik küte, jahutamine, SmartThings, WindFree'"
     :metaAuthor="'Tanel Sepp'"
     :robots="'index, follow'"
-    :viteCssAssets="['resources/css/app.css', 'resources/css/navbar.css', 'resources/css/footer.css','resources/css/staticCarousel.css', 'resources/css/tootjasektsioon.css','resources/css/upscroller.css','resources/css/teenusedStatic.css','resources/css/cookies.css']"
-    :viteJsAssets="['resources/js/app.js','resources/js/lazyLoading.js','resources/js/hamburger.js','resources/js/navbar.js','resources/js/lenis.js','resources/js/upscroller.js', 'resources/js/cookies.js']"
->
+    :viteCssAssets="['resources/css/pages/brandilehed.css']">
+
 
 <x-static_carousel
     title="Samsung õhksoojuspumbad <br><br><span>tõhus ja energiasäästlik lahendus igasse koju ja kontorisse</span>"
     content="Samsung õhksoojuspumbad pakuvad usaldusväärsust ja tipptasemel tehnoloogiat, tagades aastaringse mugavuse nii kütmisel kui jahutamisel. Samsung ühendab innovatsiooni ja kaasaegse tehnoloogia, pakkudes Ai ehk tehisaru abil energiatõhusust. Optimeerides teie kütte, vähendades sellega energiakulusid.<br><br>
     Samsung on Eestis laialdast tuntust kogunud oma usaldusväärsuse ja efektiivsuse poolest, samuti on ta suhteliselt hinnasõbralik.<br><br>
     Valikus on nii õhk-õhk kui õhk-vesi pumbad"
-    image="resources/images/taustad/samsung-taust.webp"
+    image="images/taustad/samsung-taust.webp"
     imageAlt="Samsung soojuspumbad - Kvaliteet ja Energiatõhusus"
     eriStiil="object-position: center;"
     :textholderStyle="'margin:10px auto; max-width: 1000px;'"
@@ -51,7 +50,7 @@
                     </ul>
                    
                     <div class="pildidiv" style="justify-self:left; margin-top:55px;">
-                        <img class="tootjastpilt" src="" data-src="{{ Vite::asset("resources/images/vaikesed/samsung/Samsung-nordic-essential.jpg") }}" alt="Samsung nordic essential soojuspump">
+                        <img class="tootjastpilt" src="" data-src="{{ asset("images/vaikesed/samsung/Samsung-nordic-essential.jpg") }}" alt="Samsung nordic essential soojuspump">
                     </div><br><br>
 
                     <h3><strong>Samsung Nordic Deluxe Geo</strong></h3><br>
@@ -71,7 +70,7 @@
                     </ul>
                    
                     <div class="pildidiv" style="justify-self:right; margin-top:55px;">
-                        <img class="tootjastpilt" src="" data-src="{{ Vite::asset("resources/images/vaikesed/samsung/Samsung-nordicdeluxe-.webp") }}" alt="Samsung soojuspump">
+                        <img class="tootjastpilt" src="" data-src="{{ asset("images/vaikesed/samsung/Samsung-nordicdeluxe-.webp") }}" alt="Samsung soojuspump">
                     </div><br><br>
 
                     <h3><strong>Õhksoojuspump Nordic WindFree PRM</strong></h3><br>
@@ -88,7 +87,7 @@
                     </ul>
                    
                     <div class="pildidiv" style="justify-self:left; margin-top:55px;">
-                        <img class="tootjastpilt" src="" data-src="{{ Vite::asset("resources/images/vaikesed/samsung/samsung-windfree.webp") }}" alt="Samsung windfree õhksoojuspump">
+                        <img class="tootjastpilt" src="" data-src="{{ asset("images/vaikesed/samsung/samsung-windfree.webp") }}" alt="Samsung windfree õhksoojuspump">
                     </div><br><br>
 
                     <h4><strong>Samsung –</strong>  kaasaegne ja energiasäästlik lahendus teie kodu kütmiseks ja jahutamiseks.</h4><br>

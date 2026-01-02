@@ -1,27 +1,12 @@
 <x-layout :title="'Midea õhk-õhk soojuspumbad – energiasäästlik küte ja jahutus | Küttesepp'" :metaDescription="'Midea õhk-õhk soojuspumbad pakuvad energiasäästlikku ja töökindlat lahendust kodu kütmiseks ja jahutamiseks Eesti kliimas. Usaldusväärsed seadmed koos professionaalse paigalduse ja nõustamisega Küttesepalt.'" :metaKeywords="'Midea õhk-õhk soojuspumbad, Midea soojuspump, õhk-õhk soojuspump, energiasäästlik küte, jahutamine, inverter soojuspump'" :metaAuthor="'Tanel Sepp'" :robots="'index, follow'" :viteCssAssets="[
-    'resources/css/app.css',
-    'resources/css/navbar.css',
-    'resources/css/footer.css',
-    'resources/css/staticCarousel.css',
-    'resources/css/tootjasektsioon.css',
-    'resources/css/upscroller.css',
-    'resources/css/teenusedStatic.css',
-    'resources/css/cookies.css',
-]"
-    :viteJsAssets="[
-        'resources/js/app.js',
-        'resources/js/lazyLoading.js',
-        'resources/js/hamburger.js',
-        'resources/js/navbar.js',
-        'resources/js/lenis.js',
-        'resources/js/upscroller.js',
-        'resources/js/cookies.js',
-    ]">
+    'resources/css/pages/brandilehed.css',
+]">
+
 
     <x-static_carousel
         title="Midea õhksoojuspumbad  <br><br><span>tõhus, kindel ja energiasäästlik lahendus teie kodu kütmiseks ja jahutamiseks</span>"
         content="Midea on maailma juhtivaid kodumasinate ja HVAC-seadmete tarnijaid, pakkudes uuenduslikke ja energiatõhusaid õhksoojuspumpasid, mis vastavad tänapäeva mugavuse ja säästlikkuse ootustele. <br>Midea õhksoojuspumbad ühendavad tipptasemel tehnoloogia, ökoloogilise disaini ja lihtsa kasutamise, tehes neist suurepärase valiku nii kodudesse kui ka äripindadele.<br>Midea õhksoojuspumbad sobivad suurepäraselt Eesti kliimasse, pakkudes stabiilset tööd nii külmal talveperioodil kui ka suvisel jahutusvajadusel."
-        image="resources/images/taustad/midea_taust.jpeg"
+        image="images/taustad/midea_taust.jpeg"
         imageAlt="Midea Õhksoojuspumbad - Tõhus ja Energiasäästlik Lahendus" :textholderStyle="'margin: auto; max-width: 1000px;'" />
     />
     <x-teenused-components.teenused_midea />
@@ -59,7 +44,7 @@
 
                     <div class="pildidiv" style="justify-self:left; margin-top:55px;">
                         <img class="tootjastpilt" src=""
-                            data-src="{{ Vite::asset('resources/images/vaikesed/midea/front-left-open-768x384.png') }}"
+                            data-src="{{ asset('images/vaikesed/midea/front-left-open-768x384.png') }}"
                             alt="Mitea soojuspump">
                     </div>
                    
@@ -80,7 +65,7 @@
                     </ul><br>
                     <div class="pildidiv" style="justify-self:right; margin-top:55px;">
                         <img class="tootjastpilt" src=""
-                            data-src="{{ Vite::asset('resources/images/vaikesed/midea/Midea-xtreme-logo.png') }}"
+                            data-src="{{ asset('images/vaikesed/midea/Midea-xtreme-logo.png') }}"
                             alt="midea xtreme õhksoojuspump">
                     </div><br><br>
 
@@ -101,11 +86,11 @@
                     </ul>
                     <div class="pildidiv">
                         <img class="tootjastpilt" src=""
-                            data-src="{{ Vite::asset('resources/images/vaikesed/midea/midea-OP.png') }}"
+                            data-src="{{ asset('images/vaikesed/midea/midea-OP.png') }}"
                             alt="midea op õhksoojuspump">
                     </div><br><br>
 
-                    <h4>Soodsaima valiku esikoht <br>Küte talvel ja jahutus suvel - Midea</h4><br>
+                    <h4>Soodsaima valiku esikoht <br>Küte talvel ja jahutus suvel -<span> Midea</span></h4><br>
 
                 </div><br>
                 <div class="links">

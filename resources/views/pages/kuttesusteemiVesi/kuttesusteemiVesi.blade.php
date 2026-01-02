@@ -7,25 +7,8 @@ küttesüsteemi hooldus,
 katlakivi vältimine'" 
 :metaAuthor="'Tanel Sepp'" 
 :robots="'index, follow'" 
-:viteCssAssets="[
-    'resources/css/app.css',
-    'resources/css/navbar.css',
-    'resources/css/footer.css',
-    'resources/css/staticCarouselkuttesepp.css',
-    'resources/css/tootjasektsioon2.css',
-    'resources/css/upscroller.css',
-    'resources/css/cookies.css',
-]"
-    :viteJsAssets="[
-        'resources/js/app.js',
-        'resources/js/lazyLoading.js',
-        'resources/js/hamburger.js',
-        'resources/js/navbar.js',
-        'resources/js/lenis.js',
-        'resources/js/upscroller.js',
-        'resources/js/cookies.js',
-        'resources/js/accordeon.js',
-    ]">
+:viteCssAssets="['resources/css/pages/teenustelehed.css']"
+    :viteJsAssets="['resources/js/pages/teenustelehed.js']">
 
     <section class="uper" id="uperid">
         <div class="carousel">
@@ -35,7 +18,7 @@ katlakivi vältimine'"
                         <h1>Küttesüsteemi vesi – süsteemi eluiga määrav tegur</h1>
                     </div>
                 </div>
-                <img class="taust" src="{{ Vite::asset('resources/images/taustad/kuttesusteemi-vesi.webp') }}"
+                <img class="taust" src="{{ asset('images/taustad/kuttesusteemi-vesi.webp') }}"
                     alt="Küttevee kvaliteet, VDI 2035 ja küttesüsteemi vee tähtsus">
             </div>
         </div>
@@ -64,7 +47,7 @@ katlakivi vältimine'"
                     </p>
                     <div class="pildidiv">
                         <img class="tootjastpilt" src=""
-                            data-src="{{ Vite::asset('resources/images/vaikesed/kuttesusteemi-vesi/kuttesusteemi-vesi2.webp') }}"
+                            data-src="{{ asset('images/vaikesed/kuttesusteemi-vesi/kuttesusteemi-vesi2.webp') }}"
                             alt="Küttesüsteemi vesi">
                     </div>
                     <hr class="red-line">
@@ -96,7 +79,7 @@ katlakivi vältimine'"
                     </p>
                     <div class="pildidiv" style="justify-self:flex-end;">
                         <img class="tootjastpilt" src=""
-                            data-src="{{ Vite::asset('resources/images/vaikesed/kuttesusteemi-vesi/vdi-2035.webp') }}"
+                            data-src="{{ asset('images/vaikesed/kuttesusteemi-vesi/vdi-2035.webp') }}"
                             alt="VDI-2035">
                     </div>
                     <hr class="red-line" style="justify-self:flex-end;">
@@ -132,7 +115,7 @@ katlakivi vältimine'"
                     </p>
                     <div class="pildidiv">
                         <img class="tootjastpilt" src=""
-                            data-src="{{ Vite::asset('resources/images/vaikesed/kuttesusteemi-vesi/inhibiitor.webp') }}"
+                            data-src="{{ asset('images/vaikesed/kuttesusteemi-vesi/inhibiitor.webp') }}"
                             alt="Küttesüsteemi inhibiitor">
                     </div>
                     <hr class="red-line">
@@ -216,8 +199,8 @@ katlakivi vältimine'"
                     <p>
                         Kui soovid täpsemalt teada, milline lahendus sobib sinu süsteemile,
                         vaata eraldi teemasid:
-                        <a href="/kuttevee-demineraliseerimine">demineraliseerimine</a> ja
-                        <a href="/kuttevee-inhibiitorid">inhibiitorid</a>.
+                        <a href="{{ route('kuttevee-demineraliseerimine') }}">demineraliseerimine</a> ja
+                        <a href="{{ route('kuttevee-inhibiitorid') }}">inhibiitorid</a>.
                     </p>
 
 

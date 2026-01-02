@@ -1,16 +1,12 @@
-
-
 <section class="uper" id="uperid">
     <div class="carousel">
 
         <div class="taustadiv">
-            <img
-                class="taust"
-                src="{{ Vite::asset('resources/images/pilved2.webp') }}"
+            <img class="taust"
+                src="{{ asset('images/pilved2.webp') }}"
                 alt="Soojuspumpade ja küttesüsteemide paigaldus – Küttesepp"
                 loading="eager"
-                fetchpriority="high"
-            >
+                fetchpriority="high">
         </div>
 
         <div class="heading">
@@ -19,17 +15,17 @@
             <h3>Sinu küttemurede lahendaja</h3>
 
             <img
-                src="{{ Vite::asset('resources/images/küttesepp_logo1.png') }}"
+                src="{{ asset('images/küttesepp_logo1.png') }}"
                 class="h1logo"
                 alt="Küttesepp logo"
-                loading="eager"
-            >
+                loading="eager">
         </div>
 
         <button type="button" class="carousel-button carousel-button-back">
-            <img src="{{ Vite::asset('resources/images/icons/back.png') }}"
-                 alt="Tagasi"
-                 class="arrow-img">
+            <img
+                src="{{ asset('images/icons/back.png') }}"
+                alt="Tagasi"
+                class="arrow-img">
         </button>
 
         <div class="carouselcontainer">
@@ -38,13 +34,12 @@
             <ul class="carousel-ul active">
                 <li class="carousel-li">
                     <img
-                        src="{{ Vite::asset('resources/images/taustad/ohk-vesi-samsungtaust.webp') }}"
+                        src="{{ asset('images/taustad/ohk-vesi-samsungtaust.webp') }}"
                         alt="Õhk-vesi soojuspump – Samsung"
                         title="Samsung õhk-vesi soojuspump"
                         class="carousel-img"
                         loading="eager"
-                        fetchpriority="high"
-                    >
+                        fetchpriority="high">
                 </li>
             </ul>
 
@@ -52,12 +47,11 @@
             <ul class="carousel-ul">
                 <li class="carousel-li">
                     <img
-                        data-src="{{ Vite::asset('resources/images/taustad/Es_soojuspump5.webp') }}"
+                        data-src="{{ asset('images/taustad/Es_soojuspump5.webp') }}"
                         alt="Õhk-vesi soojuspump eramajale – Küttesepp paigaldus"
                         title="ES õhk-vesi soojuspump"
                         class="carousel-img"
-                        loading="lazy"
-                    >
+                        loading="lazy">
                 </li>
             </ul>
 
@@ -65,12 +59,11 @@
             <ul class="carousel-ul">
                 <li class="carousel-li">
                     <img
-                        data-src="{{ Vite::asset('resources/images/taustad/Es_soojuspump6.webp') }}"
+                        data-src="{{ asset('images/taustad/Es_soojuspump6.webp') }}"
                         alt="Õhk-vesi soojuspump – ES Energy Save"
                         title="ES Energy Save soojuspump"
                         class="carousel-img"
-                        loading="lazy"
-                    >
+                        loading="lazy">
                 </li>
             </ul>
 
@@ -78,12 +71,11 @@
             <ul class="carousel-ul">
                 <li class="carousel-li">
                     <img
-                        data-src="{{ Vite::asset('resources/images/taustad/ALPHA-ohk-vesi.webp') }}"
+                        data-src="{{ asset('images/taustad/ALPHA-ohk-vesi.webp') }}"
                         alt="Alpha Innotec õhk-vesi soojuspump küttesüsteemis"
                         title="Alpha Innotec õhk-vesi soojuspump"
                         class="carousel-img"
-                        loading="lazy"
-                    >
+                        loading="lazy">
                 </li>
             </ul>
 
@@ -91,21 +83,21 @@
             <ul class="carousel-ul">
                 <li class="carousel-li">
                     <img
-                        data-src="{{ Vite::asset('resources/images/taustad/ALPHA-maasoojus.webp') }}"
+                        data-src="{{ asset('images/taustad/ALPHA-maasoojus.webp') }}"
                         alt="Maakütte soojuspump – energiatõhus lahendus"
                         title="Alpha Innotec maakütte soojuspump"
                         class="carousel-img"
-                        loading="lazy"
-                    >
+                        loading="lazy">
                 </li>
             </ul>
 
         </div>
 
         <button type="button" class="carousel-button carousel-button-next">
-            <img src="{{ Vite::asset('resources/images/icons/next.png') }}"
-                 alt="Edasi"
-                 class="arrow-img">
+            <img
+                src="{{ asset('images/icons/next.png') }}"
+                alt="Edasi"
+                class="arrow-img">
         </button>
 
         <div class="carousel-nav">

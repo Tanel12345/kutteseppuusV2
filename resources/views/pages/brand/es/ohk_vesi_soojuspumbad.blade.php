@@ -4,10 +4,8 @@
     :metaKeywords="'ES Energy Save õhk-vesi soojuspumbad, ES õhk-vesi soojuspump, Energy Save soojuspump, vesiküte, põrandaküte, tarbevesi, R290 soojuspump, monoblokk soojuspump'"
     :metaAuthor="'Tanel Sepp'"
     :robots="'index, follow'"
-    :viteCssAssets="['resources/css/app.css', 'resources/css/navbar.css', 'resources/css/footer.css','resources/css/staticCarousel.css', 'resources/css/tootjasektsioon.css','resources/css/upscroller.css','resources/css/teenusedStatic.css','resources/css/cookies.css']"
+   :viteCssAssets="['resources/css/pages/brandilehed.css']">
 
-    :viteJsAssets="['resources/js/app.js','resources/js/lazyLoading.js','resources/js/hamburger.js','resources/js/navbar.js','resources/js/lenis.js','resources/js/upscroller.js', 'resources/js/cookies.js']"
->
    
 <x-static_carousel
 title="ES - Energy Save õhk-vesi soojuspumbad <br><br><span>Rootsis disainitud. Põhjamaa kliimasse</span>"
@@ -15,7 +13,7 @@ content="ES - Energy Save õhksoojuspumbad pakuvad usaldusväärset ja kõrget k
 ES Energy Save Holding AB (publ) tegutseb oma tütarettevõtete ES Systems, ES Heat Pumps ja ES Services kaudu, pakkudes oma küttelahendusi, mis on suunatud energiasäästule.<br> Põhitooted põhinevad uusimal soojuspumbatehnoloogial ning kõik grupi ettevõtted osalevad aktiivselt Euroopa turu jaoks mõeldud toodete arendamisel.<br> Lisaks toodetele pakutakse ka teenuseid ning erinevaid digitaliseeritud tööriistu ja teenuseid.<br><br>
 
 Alates 2007. aastast on Energy Save Nordic AB ja Energy Save AS turustanud oma tooteid ES kaubamärgi all."
-image="resources/images/taustad/es-taust.webp"
+image="images/taustad/es-taust.webp"
 imageAlt="ES - Energy Save Õhksoojuspumbad - Kvaliteet ja Energiatõhusus"
 eriStiil="object-position: center;"
 :textholderStyle="'margin:10px auto; max-width: 1000px;'"
@@ -65,7 +63,7 @@ eriStiil="object-position: center;"
                         <li>Keymark sertifikaat – tõend kvaliteedi ja energiatõhususe kohta</li>
                     </ul><br>
                     <div class="pildidiv">
-                        <img class="tootjastpilt" src="" data-src="{{ Vite::asset("resources/images/vaikesed/es/es-V8-komplekt.png") }}" alt="es-õhk-vesi soojuspump">
+                        <img class="tootjastpilt" src="" data-src="{{ asset("images/vaikesed/es/es-V8-komplekt.png") }}" alt="es-õhk-vesi soojuspump">
                     </div>
                 
                     <h3>ES esitleb uue tootena järgmise põlvkonna R290 propaanil töötavaid monoblokk-soojuspumpasid</h3><br>
@@ -85,7 +83,7 @@ eriStiil="object-position: center;"
                     <h4>ES - Energy Save – nutikas tehnoloogia, mis teeb elu lihtsamaks ja energiatõhusamaks.</h4><br><br>
 
                     <div class="pildidiv">
-                        <img class="tootjastpilt" src="" data-src="{{ Vite::asset("resources/images/vaikesed/es/r290-es.jpg") }}" alt="r290 Energy save soojuspump">
+                        <img class="tootjastpilt" src="" data-src="{{ asset("images/vaikesed/es/r290-es.jpg") }}" alt="r290 Energy save soojuspump">
                     </div>
 
                    

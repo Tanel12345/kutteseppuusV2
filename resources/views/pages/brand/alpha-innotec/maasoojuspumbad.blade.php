@@ -5,9 +5,7 @@
 :metaAuthor="'Tanel Sepp'"
 :robots="'index, follow'"
     :metaAuthor="'Tanel Sepp'"
-    :viteCssAssets="['resources/css/app.css', 'resources/css/navbar.css', 'resources/css/footer.css','resources/css/staticCarousel.css', 'resources/css/tootjasektsioon.css','resources/css/upscroller.css','resources/css/teenusedStatic.css','resources/css/cookies.css']"
-    :viteJsAssets="['resources/js/app.js','resources/js/lazyLoading.js','resources/js/hamburger.js','resources/js/navbar.js','resources/js/lenis.js','resources/js/upscroller.js', 'resources/js/cookies.js']"
->
+    :viteCssAssets="['resources/css/pages/brandilehed.css']">
 
 <x-static_carousel
     title="Alpha-innotec maasoojuspumbad <br><br><span>Kvaliteetne ja energiasäästlik lahendus igasse koju ja kontorisse</span>"
@@ -16,7 +14,7 @@
 Saksa kvaliteet ning asjalik järelteenindus on märksõnad siin. Alpha innotec pakub oma soojuspumpadele 5 a garantiid.<br><br>
     Valikus on nii õhk-vesi kui maakütte pumbad<br><br>
     Maitse üle ei vaielda!!!"
-    image="resources/images/taustad/alpha.webp"
+    image="images/taustad/alpha.webp"
     imageAlt="Alpha-innotec maasoojuspumbad - Kvaliteet ja Energiatõhusus"
     :textholderStyle="'margin:10px auto; max-width: 1000px;'"
 />
@@ -40,7 +38,7 @@ Saksa kvaliteet ning asjalik järelteenindus on märksõnad siin. Alpha innotec 
                         <li>Roheline mõtteviis – väiksem CO₂ jalajälg</li>
                     </ul>
                     <div class="pildidiv">
-                        <img class="tootjastpilt" src="" data-src="{{ Vite::asset("resources/images/vaikesed/alpha/maaküte-onof.png") }}" alt="Alpha-innotec on-off maasoojuspump">
+                        <img class="tootjastpilt" src="" data-src="{{ asset("images/vaikesed/alpha/maaküte-onof.png") }}" alt="Alpha-innotec on-off maasoojuspump">
                     </div>
                 
                     <h3>Alpha innotec V-Line </h3><br>
@@ -57,7 +55,7 @@ Saksa kvaliteet ning asjalik järelteenindus on märksõnad siin. Alpha innotec 
                     </ul>
 
                     <div class="pildidiv" style="justify-self:right">
-                        <img class="tootjastpilt" src="" data-src="{{ Vite::asset("resources/images/vaikesed/alpha/Maasoojus-v-line.png") }}" alt="tulevikukindel soojuspump">
+                        <img class="tootjastpilt" src="" data-src="{{ asset("images/vaikesed/alpha/Maasoojus-v-line.png") }}" alt="tulevikukindel soojuspump">
                     </div><br>
 
                     <h4>Alpha Innotec – innovatsioon ja energiatõhusus teie kodu jaoks.</h4>

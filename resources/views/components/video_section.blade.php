@@ -2,7 +2,7 @@
 
     {{-- VASAK NOOL --}}
     <button type="button" class="carousel-button carousel-button-back">
-        <img src="{{ Vite::asset('resources/images/icons/back.png') }}"
+        <img src="{{ asset('images/icons/back.png') }}"
              alt="Eelmine video"
              class="arrow-img" />
     </button>
@@ -49,7 +49,7 @@
 
     {{-- PAREM NOOL --}}
     <button type="button" class="carousel-button carousel-button-next">
-        <img src="{{ Vite::asset('resources/images/icons/next.png') }}"
+        <img src="{{ asset('images/icons/next.png') }}"
              alt="Järgmine video"
              class="arrow-img" />
     </button>

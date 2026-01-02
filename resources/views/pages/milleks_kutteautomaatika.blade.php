@@ -1,22 +1,5 @@
-<x-layout :title="'Milleks kütteautomaatika – täpne juhtimine, mugavus ja energiasääst | Küttesepp'" :metaDescription="'Kütteautomaatika juhib soojuspumpa, katelt ja küttesüsteemi tööd vastavalt ilmastikule ja hoone vajadusele. Küttesepp paigaldab ja seadistab töökindla kütteautomaatika.'" :metaKeywords="'kütteautomaatika, küttesüsteemi juhtimine, küttekõver, ilmastikukompensatsioon, soojuspumba automaatika, katla automaatika, ruumitermostaat, Küttesepp'" :metaAuthor="'Tanel Sepp'" :robots="'index, follow'" :viteCssAssets="[
-    'resources/css/app.css',
-    'resources/css/navbar.css',
-    'resources/css/footer.css',
-    'resources/css/staticCarouselkuttesepp.css',
-    'resources/css/tootjasektsioon2.css',
-    'resources/css/upscroller.css',
-    'resources/css/cookies.css',
-]"
-    :viteJsAssets="[
-        'resources/js/app.js',
-        'resources/js/lazyLoading.js',
-        'resources/js/hamburger.js',
-        'resources/js/navbar.js',
-        'resources/js/lenis.js',
-        'resources/js/upscroller.js',
-        'resources/js/cookies.js',
-        'resources/js/accordeon.js',
-    ]">
+<x-layout :title="'Milleks kütteautomaatika – täpne juhtimine, mugavus ja energiasääst | Küttesepp'" :metaDescription="'Kütteautomaatika juhib soojuspumpa, katelt ja küttesüsteemi tööd vastavalt ilmastikule ja hoone vajadusele. Küttesepp paigaldab ja seadistab töökindla kütteautomaatika.'" :metaKeywords="'kütteautomaatika, küttesüsteemi juhtimine, küttekõver, ilmastikukompensatsioon, soojuspumba automaatika, katla automaatika, ruumitermostaat, Küttesepp'" :metaAuthor="'Tanel Sepp'" :robots="'index, follow'" :viteCssAssets="['resources/css/pages/teenustelehed.css']"
+    :viteJsAssets="['resources/js/pages/teenustelehed.js']">
 
     <section class="uper" id="uperid">
         <div class="carousel">
@@ -26,7 +9,7 @@
                         <h1>Milleks kütteautomaatika?</h1>
                     </div>
                 </div>
-                <img class="taust" src="{{ Vite::asset('resources/images/taustad/kutteautomaatika-taust.webp') }}"
+                <img class="taust" src="{{ asset('images/taustad/kutteautomaatika-taust.webp') }}"
                     alt="Kütteautomaatika juhib küttesüsteemi tööd">
             </div>
         </div>
@@ -69,7 +52,7 @@
 
                     <div class="pildidiv">
                         <img class="tootjastpilt" src=""
-                            data-src="{{ Vite::asset('resources/images/vaikesed/kutteautomaatika/esbe-crb221-wireless-controller.webp') }}"
+                            data-src="{{ asset('images/vaikesed/kutteautomaatika/esbe-crb221-wireless-controller.webp') }}"
                             alt="Esbe reguleer segamisventiil">
                     </div>
 
@@ -90,7 +73,7 @@
 
                     <div class="pildidiv" style="justify-self:flex-end;">
                         <img class="tootjastpilt" src=""
-                            data-src="{{ Vite::asset('resources/images/vaikesed/kutteautomaatika/weathercompensation.webp') }}"
+                            data-src="{{ asset('images/vaikesed/kutteautomaatika/weathercompensation.webp') }}"
                             alt="Kliima kompensatsioon">
                     </div>
 
@@ -116,7 +99,7 @@
                     </ul>
                     <div class="pildidiv">
                         <img class="tootjastpilt" src=""
-                            data-src="{{ Vite::asset('resources/images/vaikesed/kutteautomaatika/naine-kutteautomaatikaga.webp') }}"
+                            data-src="{{ asset('images/vaikesed/kutteautomaatika/naine-kutteautomaatikaga.webp') }}"
                             alt="Naine reguleerimas kütteautomaatika juhtseadet">
                     </div>
 

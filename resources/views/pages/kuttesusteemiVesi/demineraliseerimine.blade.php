@@ -12,25 +12,8 @@ küttesüsteemi täitmine,
 soojuspumba hooldus'" 
     :metaAuthor="'Tanel Sepp'" 
     :robots="'index, follow'" 
-    :viteCssAssets="[
-        'resources/css/app.css',
-        'resources/css/navbar.css',
-        'resources/css/footer.css',
-        'resources/css/staticCarouselkuttesepp.css',
-        'resources/css/tootjasektsioon2.css',
-        'resources/css/upscroller.css',
-        'resources/css/cookies.css',
-    ]"
-    :viteJsAssets="[
-        'resources/js/app.js',
-        'resources/js/lazyLoading.js',
-        'resources/js/hamburger.js',
-        'resources/js/navbar.js',
-        'resources/js/lenis.js',
-        'resources/js/upscroller.js',
-        'resources/js/cookies.js',
-        'resources/js/accordeon.js',
-    ]">
+:viteCssAssets="['resources/css/pages/teenustelehed.css']"
+    :viteJsAssets="['resources/js/pages/teenustelehed.js']">
 
 <section class="uper" id="uperid">
     <div class="carousel">
@@ -40,7 +23,9 @@ soojuspumba hooldus'"
                     <h1>Küttevee demineraliseerimine – puhas vesi, pikk eluiga</h1>
                 </div>
             </div>
-            <img class="taust" src="{{ Vite::asset('resources/images/taustad/VDI-2035_taust.webp') }}"alt="Küttevee demineraliseerimine ja VDI 2035 nõuded">
+            <img class="taust"
+                 src="{{ asset('images/taustad/VDI-2035_taust.webp') }}"
+                 alt="Küttevee demineraliseerimine ja VDI 2035 nõuded">
         </div>
     </div>
 </section>
@@ -62,12 +47,18 @@ soojuspumba hooldus'"
                 <p>
                     Kui küttekontuur täidetakse demineraliseeritud ja aluselise veega, väheneb oluliselt hooldusvajadus, süsteemi efektiivsus püsib kõrge ning soojusvahetid ja pumbad töötavad optimaalselt aastaid.
                     See on eelkõige soovitatav uutele või ka renoveeritud süsteemidele. <br>
-                    <strong>Küttesepp OÜ teostab alati ennem küttevee töötlemist  <a href="/kuttesusteemi-labipesu">küttesüsteemi läbipesu enne demineraliseerimist.</a> Olenevalt vajadusest kas keemiaga või ilma.</strong>
+                    <strong>
+                        Küttesepp OÜ teostab alati ennem küttevee töötlemist
+                        <a href="{{ route('kuttesusteemi-labipesu') }}">
+                            küttesüsteemi läbipesu enne demineraliseerimist.
+                        </a>
+                        Olenevalt vajadusest kas keemiaga või ilma.
+                    </strong>
                 </p>
 
                 <div class="pildidiv">
                     <img class="tootjastpilt" src=""
-                         data-src="{{ Vite::asset('resources/images/vaikesed/kuttesusteemi-vesi/VDI-2035_radiaator.webp') }}"
+                         data-src="{{ asset('images/vaikesed/kuttesusteemi-vesi/VDI-2035_radiaator.webp') }}"
                          alt="Demineraliseeritud kütteveega radiaator">
                 </div>
                 <hr class="red-line">
@@ -86,7 +77,7 @@ soojuspumba hooldus'"
 
                 <div class="pildidiv" style="justify-self:flex-end;">
                     <img class="tootjastpilt" src=""
-                         data-src="{{ Vite::asset('resources/images/vaikesed/kuttesusteemi-vesi/vdi-2035.webp') }}"
+                         data-src="{{ asset('images/vaikesed/kuttesusteemi-vesi/vdi-2035.webp') }}"
                          alt="VDI 2035 standard">
                 </div>
                 <hr class="red-line" style="justify-self:flex-end;">
@@ -99,9 +90,8 @@ soojuspumba hooldus'"
                 </p>
                 <ul class="rohelise-linnukesega" style="font-weight:500; font-size:18px;">
                     <li>madal elektrijuhtivus (tavaliselt alla 100 µS/cm)</li>
-                    <li>Madala hapnikusisaldus (< 0.1 mg/l)</li>
-                    <li>pH vahemikus 8,2–10. Alumiiniumist komponentide puhul 6.5-8.5</li>
-                   
+                    <li>Madala hapnikusisaldus (&lt; 0.1 mg/l)</li>
+                    <li>pH vahemikus 8,2–10. Alumiiniumist komponentide puhul 6.5–8.5</li>
                 </ul>
 
                 <p>
@@ -112,7 +102,7 @@ soojuspumba hooldus'"
 
                 <div class="pildidiv">
                     <img class="tootjastpilt" src=""
-                         data-src="{{ Vite::asset('resources/images/vaikesed/kuttesusteemi-vesi/Täitefilter thermaliQ_HB2.webp') }}"
+                         data-src="{{ asset('images/vaikesed/kuttesusteemi-vesi/Täitefilter thermaliQ_HB2.webp') }}"
                          alt="Demineraliseeritud vee eelised">
                 </div>
 
@@ -128,7 +118,8 @@ soojuspumba hooldus'"
 
                 <p>
                     Pärast täitmist soovitame küttevee parameetreid regulaarselt kontrollida, et tagada süsteemi püsiv kaitse. <br>
-                    <strong>Hilisem süsteemi juurde täitmine tavalise veega vähendab puhta vee osa süsteemis. Soovitame süsteemile lisada spetsiaalse juurdetäite filtri.
+                    <strong>
+                        Hilisem süsteemi juurde täitmine tavalise veega vähendab puhta vee osa süsteemis. Soovitame süsteemile lisada spetsiaalse juurdetäite filtri.
                     </strong>
                 </p>
 

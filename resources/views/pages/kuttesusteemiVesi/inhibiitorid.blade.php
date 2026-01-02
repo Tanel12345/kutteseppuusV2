@@ -10,25 +10,8 @@ küttevee töötlus,
 keskkonnasõbralik inhibiitor'" 
     :metaAuthor="'Tanel Sepp'" 
     :robots="'index, follow'" 
-    :viteCssAssets="[
-        'resources/css/app.css',
-        'resources/css/navbar.css',
-        'resources/css/footer.css',
-        'resources/css/staticCarouselkuttesepp.css',
-        'resources/css/tootjasektsioon2.css',
-        'resources/css/upscroller.css',
-        'resources/css/cookies.css',
-    ]"
-    :viteJsAssets="[
-        'resources/js/app.js',
-        'resources/js/lazyLoading.js',
-        'resources/js/hamburger.js',
-        'resources/js/navbar.js',
-        'resources/js/lenis.js',
-        'resources/js/upscroller.js',
-        'resources/js/cookies.js',
-        'resources/js/accordeon.js',
-    ]">
+:viteCssAssets="['resources/css/pages/teenustelehed.css']"
+    :viteJsAssets="['resources/js/pages/teenustelehed.js']">
 
 <section class="uper" id="uperid">
     <div class="carousel">
@@ -38,7 +21,8 @@ keskkonnasõbralik inhibiitor'"
                     <h1>Küttevee inhibiitorid – keskkonnasõbralik katlakivi- ja korrosioonikaitse</h1>
                 </div>
             </div>
-            <img class="taust" src="{{ Vite::asset('resources/images/taustad/inhibiitor.webp') }}"
+            <img class="taust"
+                 src="{{ asset('images/taustad/inhibiitor.webp') }}"
                  alt="Küttevee inhibiitorid ja küttesüsteemi kaitse">
         </div>
     </div>
@@ -62,13 +46,20 @@ keskkonnasõbralik inhibiitor'"
                     <strong>Küttesepp OÜ</strong> kasutab oma töös professionaalset inhibiitor konsentraati, mis tagab täieliku töökindluse, ei sisalda nitriteid ning mille
                     kõik koostisosad on keskkonnale ohutud.<br> See tagab süsteemi pika eluea ja sobib kasutamiseks nii
                     uutes kui ka vanemates küttesüsteemides. <br><br>
-                       <strong>Küttesepp OÜ teostab võimalusel ennem küttevee töötlemist <a  style="font-size:18px" href="/kuttesusteemi-labipesu">küttesüsteemi läbipesu.</a><br> Olenevalt vajadusest kas keemiaga või ilma.</strong>
+                    <strong>
+                        Küttesepp OÜ teostab võimalusel ennem küttevee töötlemist
+                        <a style="font-size:18px" href="{{ route('kuttesusteemi-labipesu') }}">
+                            küttesüsteemi läbipesu.
+                        </a><br>
+                        Olenevalt vajadusest kas keemiaga või ilma.
+                    </strong>
                 </p>
              
 
                 <div class="pildidiv">
-                    <img class="tootjastpilt" src=""
-                         data-src="{{ Vite::asset('resources/images/vaikesed/kuttesusteemi-vesi/inhibiitor.webp') }}"
+                    <img class="tootjastpilt"
+                         src=""
+                         data-src="{{ asset('images/vaikesed/kuttesusteemi-vesi/inhibiitor.webp') }}"
                          alt="Küttevee inhibiitor">
                 </div>
                 <hr class="red-line">
@@ -76,7 +67,8 @@ keskkonnasõbralik inhibiitor'"
                 <h3>Miks kasutada inhibiitoreid?</h3>
 
                 <p>
-                    Inhibiitorid sobivad ka nendesse süsteemidesse, mida ei ole võimalik täielikult demineraliseerida või välja pesta. (<a href="/kuttevee-demineraliseerimine">küttevee demineraliseerimine</a>).
+                    Inhibiitorid sobivad ka nendesse süsteemidesse, mida ei ole võimalik täielikult demineraliseerida või välja pesta.
+                    (<a href="{{ route('kuttevee-demineraliseerimine') }}">küttevee demineraliseerimine</a>).
                     Need toimivad ka siis, kui vesi sisaldab mineraale või süsteemis on segamaterjalid (teras, vask, alumiinium).
                 </p>
 
@@ -88,8 +80,9 @@ keskkonnasõbralik inhibiitor'"
                 </ul>
 
                 <div class="pildidiv" style="justify-self:flex-end;">
-                    <img class="tootjastpilt" src=""
-                         data-src="{{ Vite::asset('resources/images/vaikesed/kuttesusteemi-vesi/porandakute.webp') }}"
+                    <img class="tootjastpilt"
+                         src=""
+                         data-src="{{ asset('images/vaikesed/kuttesusteemi-vesi/porandakute.webp') }}"
                          alt="Inhibiitorid põrandaküttes">
                 </div>
                 <hr class="red-line" style="justify-self:flex-end;">
@@ -106,8 +99,9 @@ keskkonnasõbralik inhibiitor'"
                 </p>
 
                 <div class="pildidiv">
-                    <img class="tootjastpilt" src=""
-                         data-src="{{ Vite::asset('resources/images/vaikesed/kuttesusteemi-vesi/inhibiitor2.webp') }}"
+                    <img class="tootjastpilt"
+                         src=""
+                         data-src="{{ asset('images/vaikesed/kuttesusteemi-vesi/inhibiitor2.webp') }}"
                          alt="Küttevee inhibiitori lisamine">
                 </div>
 

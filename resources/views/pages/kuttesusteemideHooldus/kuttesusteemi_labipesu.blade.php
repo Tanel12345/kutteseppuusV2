@@ -5,25 +5,10 @@ happeline süsteemipesu,
 aluselise keemiaga pesu,
 powerflush küttesüsteem,
 magnetiidi eemaldus,
-katlakivi eemaldus'" :metaAuthor="'Tanel Sepp'" :robots="'index, follow'" :viteCssAssets="[
-    'resources/css/app.css',
-    'resources/css/navbar.css',
-    'resources/css/footer.css',
-    'resources/css/staticCarouselkuttesepp.css',
-    'resources/css/tootjasektsioon2.css',
-    'resources/css/upscroller.css',
-    'resources/css/cookies.css',
-]"
-    :viteJsAssets="[
-        'resources/js/app.js',
-        'resources/js/lazyLoading.js',
-        'resources/js/hamburger.js',
-        'resources/js/navbar.js',
-        'resources/js/lenis.js',
-        'resources/js/upscroller.js',
-        'resources/js/cookies.js',
-        'resources/js/accordeon.js',
-    ]">
+katlakivi eemaldus'" :metaAuthor="'Tanel Sepp'" :robots="'index, follow'" 
+
+:viteCssAssets="['resources/css/pages/teenustelehed.css']"
+    :viteJsAssets="['resources/js/pages/teenustelehed.js']">
 
     <section class="uper" id="uperid">
         <div class="carousel">
@@ -33,8 +18,9 @@ katlakivi eemaldus'" :metaAuthor="'Tanel Sepp'" :robots="'index, follow'" :viteC
                         <h1>Küttesüsteemi läbipesu – muda, rooste ja katlakivi eemaldamine</h1>
                     </div>
                 </div>
-                <img class="taust" src="{{ Vite::asset('resources/images/taustad/labipesu.webp') }}"
-                    alt="Küttesüsteemi läbipesu ja puhastus">
+                <img class="taust"
+                     src="{{ asset('images/taustad/labipesu.webp') }}"
+                     alt="Küttesüsteemi läbipesu ja puhastus">
             </div>
         </div>
     </section>
@@ -73,15 +59,16 @@ katlakivi eemaldus'" :metaAuthor="'Tanel Sepp'" :robots="'index, follow'" :viteC
                         Läbipesu valik sõltub probleemi olemusest, torustiku seisukorrast, materjalidest ja vee
                         kvaliteedist.
                         Pärast pesu saame vajadusel teha süsteemi täitmise vastavalt <strong><a style="font-size:18px"
-                                href="/kuttevee-demineraliseerimine">VDI-2035</a></strong> standardile või lisame
-                        <strong><a style="font-size:18px" href="/kuttevee-inhibiitorid">küttevee
+                                href="{{ route('kuttevee-demineraliseerimine') }}">VDI-2035</a></strong> standardile või lisame
+                        <strong><a style="font-size:18px" href="{{ route('kuttevee-inhibiitorid') }}">küttevee
                                 inhibiitorid.</a></strong>
                     </p>
 
                     <div class="pildidiv">
-                        <img class="tootjastpilt" src=""
-                            data-src="{{ Vite::asset('resources/images/vaikesed/kuttesusteemide-hooldus/labipesu.webp') }}"
-                            alt="Küttesüsteemi loputus veega ja õhuga">
+                        <img class="tootjastpilt"
+                             src=""
+                             data-src="{{ asset('images/vaikesed/kuttesusteemide-hooldus/labipesu.webp') }}"
+                             alt="Küttesüsteemi loputus veega ja õhuga">
                     </div>
 
                     <hr class="red-line">
@@ -105,9 +92,10 @@ katlakivi eemaldus'" :metaAuthor="'Tanel Sepp'" :robots="'index, follow'" :viteC
                     </p>
 
                     <div class="pildidiv" style="justify-self:flex-end;">
-                        <img class="tootjastpilt" src=""
-                            data-src="{{ Vite::asset('resources/images/vaikesed/kuttesusteemide-hooldus/rothenberg-roplus.webp') }}"
-                            alt="Õhu ja vee loputus küttesüsteemile">
+                        <img class="tootjastpilt"
+                             src=""
+                             data-src="{{ asset('images/vaikesed/kuttesusteemide-hooldus/rothenberg-roplus.webp') }}"
+                             alt="Õhu ja vee loputus küttesüsteemile">
                     </div>
 
                     <hr class="red-line" style="justify-self:flex-end;">
@@ -136,9 +124,10 @@ katlakivi eemaldus'" :metaAuthor="'Tanel Sepp'" :robots="'index, follow'" :viteC
                     </p>
 
                     <div class="pildidiv">
-                        <img class="tootjastpilt" src=""
-                            data-src="{{ Vite::asset('resources/images/vaikesed/kuttesusteemide-hooldus/happelise-keemiaga-pesu.webp') }}"
-                            alt="Happeline küttesüsteemi läbipesu">
+                        <img class="tootjastpilt"
+                             src=""
+                             data-src="{{ asset('images/vaikesed/kuttesusteemide-hooldus/happelise-keemiaga-pesu.webp') }}"
+                             alt="Happeline küttesüsteemi läbipesu">
                     </div>
 
                     <hr class="red-line">
@@ -181,9 +170,10 @@ katlakivi eemaldus'" :metaAuthor="'Tanel Sepp'" :robots="'index, follow'" :viteC
                         korrosioonijääkidega segunenud setteid.
                     </p>
                     <div class="pildidiv">
-                        <img class="tootjastpilt" src=""
-                            data-src="{{ Vite::asset('resources/images/vaikesed/kuttesusteemide-hooldus/aluselise-keemiaga-pesu.webp') }}"
-                            alt="Aluseline küttesüsteemi läbipesu">
+                        <img class="tootjastpilt"
+                             src=""
+                             data-src="{{ asset('images/vaikesed/kuttesusteemide-hooldus/aluselise-keemiaga-pesu.webp') }}"
+                             alt="Aluseline küttesüsteemi läbipesu">
 
                     </div>
 

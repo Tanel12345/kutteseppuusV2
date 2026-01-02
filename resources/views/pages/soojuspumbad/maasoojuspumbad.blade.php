@@ -3,10 +3,7 @@
     :metaKeywords="'Maasoojuspump, maasoojuspumbad, maaküte, energiatõhus küte, küttelahendus'"
     :metaAuthor="'Tanel Sepp'"
     :robots="'index, follow'"
-    :viteCssAssets="['resources/css/app.css', 'resources/css/navbar.css', 'resources/css/footer.css','resources/css/staticCarousel.css', 'resources/css/tootesektsioon.css','resources/css/upscroller.css','resources/css/cookies.css']"
-
-    :viteJsAssets="['resources/js/app.js','resources/js/hamburger.js','resources/js/navbar.js','resources/js/lenis.js','resources/js/upscroller.js', 'resources/js/cookies.js']"
->
+    :viteCssAssets="['resources/css/pages/tootelehedala.css']">
 
 <x-static_carousel 
     title="MAASOOJUSPUMBAD <br><br><span>Energiatõhusus otse sinu kodu alt</span>"
@@ -16,7 +13,7 @@
     <br>Eeliste hulka kuuluvad madalad püsikulud, pikaajaline investeering, kõrge kasutegur ning minimaalne hooldusvajadus.
     <br>Miinusteks võivad olla suurem alginvesteering ja maapinna kaevetööde vajadus.
     <br><br>Küttesepalt leiad kvaliteetsed maasoojuspumbad koos professionaalse paigalduse ja järelteenindusega."
-    image="resources/images/taustad/maasoojuspumbad-taust.webp"
+    image="images/taustad/maasoojuspumbad-taust.webp"
     imageAlt="Maasoojuspumbad taust"
     eriStiil="object-position: bottom;"
     :textholderStyle="''"

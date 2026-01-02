@@ -7,43 +7,25 @@
     strtolower($work->system_type ?? '') .
     ', ' .
     strtolower($work->brand ?? '') .
-    ', küttesepp'" :metaAuthor="'Tanel Sepp'" :robots="'index, follow'" :viteCssAssets="[
-    'resources/css/app.css',
-    'resources/css/navbar.css',
-    'resources/css/footer.css',
-    'resources/css/works-cards.css',
-    'resources/css/upscroller.css',
-    'resources/css/cookies.css',
-    'resources/css/staticCarouselkuttesepp.css',
-    'resources/css/tootjasektsioon2.css',
-    'resources/css/lightbox.css',
-]"
-    :viteJsAssets="[
-        'resources/js/app.js',
-        'resources/js/navbar.js',
-        'resources/js/lenis.js',
-        'resources/js/upscroller.js',
-        'resources/js/cookies.js',
-        'resources/js/hamburger.js',
-    ]">
+    ', küttesepp'" :metaAuthor="'Tanel Sepp'" :robots="'index, follow'" :viteCssAssets="['resources/css/pages/worksleht.css']">
 
 
     <div id="lightbox" class="lightbox hidden">
         <div class="lightbox-inner">
 
             <!-- SULGE -->
-            <img class="x" src="{{ Vite::asset('resources/images/icons/x.png') }}" alt="Sulge">
+            <img class="x" src="{{ asset('images/icons/x.png') }}" alt="Sulge">
 
             <!-- PILT -->
             <img id="lightboxImage" src="" alt="Tehtud töö suur pilt">
 
             <!-- NOOLED -->
             <button type="button" class="carousel-button carousel-button-back">
-                <img src="{{ Vite::asset('resources/images/icons/back.png') }}" class="arrow-img">
+                <img src="{{ asset('images/icons/back.png') }}" class="arrow-img">
             </button>
 
             <button type="button" class="carousel-button carousel-button-next">
-                <img src="{{ Vite::asset('resources/images/icons/next.png') }}" class="arrow-img">
+                <img src="{{ asset('images/icons/next.png') }}" class="arrow-img">
             </button>
 
         </div>
@@ -61,7 +43,7 @@
                         <h1>{{ $work->title }}</h1>
                     </div>
                 </div>
-                <img style="opacity:0.5; filter: blur(3px);" class="taust" src="{{ Vite::asset('resources/images/taustad/tehtud-tood-taust.webp') }}"
+                <img style="opacity:0.5; filter: blur(3px);" class="taust" src="{{ asset('images/taustad/tehtud-tood-taust.webp') }}"
                     alt="Küttesüsteemi ehitamine">
             </div>
         </div>
@@ -125,7 +107,7 @@
                                 Küttesepp OÜ planeerimine ja teostus
                             </h3>
 
-                            <h4 style="font-size:18px; font-weight:700; margin-left:-18px; margin-top: 15px">
+                            <h4 style="font-size:18px; font-weight:700; margin-left:-18px; margin-top: 25px">
                                 Küttesepp pakub <a style="font-weight:600"
                                     href="{{ route('soojuspumbad.index') }}">soojuspumpasid</a> ja <a
                                     style="font-weight:600" href="{{ route('tahkekutteseadmed.index') }}">

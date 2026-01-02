@@ -40,8 +40,8 @@
                         <h2>{{ $product->name }}</h2>
                          <button class="toggle-description" type="button">
                             <span class="toggle-text">Vaata kirjeldust</span>
-                            <img class="toggle-icon" src="{{ Vite::asset('resources/images/icons/down.png') }}"
-                                alt="">
+                            <img class="toggle-icon" src="{{ asset('images/icons/down.png') }}"
+                                alt="Allaikoon">
                         </button>
 
                         <p class="description">{!! nl2br(e($product->description)) !!}</p>
@@ -91,9 +91,9 @@
 
                 {{-- TAUSTAPILDID --}}
                 <div class="taustapildid">
-                    <img class="img" src="{{ Vite::asset('resources/images/taustad/taust5.png') }}" alt="">
-                    <img class="img" src="{{ Vite::asset('resources/images/taustad/taust5.png') }}" alt="">
-                    <img class="img" src="{{ Vite::asset('resources/images/taustad/taust5.png') }}" alt="">
+                    <img class="img" src="{{ asset('images/taustad/taust5.png') }}" alt="Taustaikoon">
+                    <img class="img" src="{{ asset('images/taustad/taust5.png') }}" alt="Taustaikoon">
+                    <img class="img" src="{{ asset('images/taustad/taust5.png') }}" alt="Taustaikoon">
                 </div>
 
             </div>

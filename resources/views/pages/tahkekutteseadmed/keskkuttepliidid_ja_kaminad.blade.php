@@ -4,25 +4,7 @@
     :metaKeywords="'keskküttekaminad, keskküttepliidid, vesiküttega kamin, vesiküttega pliit, küttepliidi paigaldus, kamin keskküttele'"
     :metaAuthor="'Tanel Sepp'"
     :robots="'index, follow'"
-    :viteCssAssets="[
-        'resources/css/app.css', 
-        'resources/css/navbar.css', 
-        'resources/css/footer.css',
-        'resources/css/staticCarousel.css', 
-        'resources/css/tootesektsioon.css',
-        'resources/css/upscroller.css',
-        'resources/css/cookies.css'
-    ]"
-
-    :viteJsAssets="[
-        'resources/js/app.js',
-        'resources/js/hamburger.js',
-        'resources/js/navbar.js',
-        'resources/js/lenis.js',
-        'resources/js/upscroller.js', 
-        'resources/js/cookies.js'
-    ]"
->
+     :viteCssAssets="['resources/css/pages/tootelehedala.css']">
     
 <x-static_carousel 
     title="KESKKÜTTEPLIITID JA -KAMINAD <br><br><span>Tõhus puuküte radiaatorite ja põrandaküttega</span>"
@@ -34,7 +16,7 @@
     Keskküttepliitide ja -kaminate eeliseks on kiire reageerimine, kompaktne ehitus ning võimalus töötada ka väikese puhverpaagi või olemasoleva küttesüsteemiga.<br><br>
     
     Küttesepp pakub keskküttekamina ja -pliidi terviklahendust: seadme valik, hüdrauliline ühendamine, ohutusarmatuur, paisupaak, automaatika ning süsteemi tasakaalustamine ja kasutusõpetus."
-    image="resources/images/taustad/keskkuttepliidid-taust.webp"
+    image="images/taustad/keskkuttepliidid-taust.webp"
     imageAlt="Keskküttepliit kui küttesüsteemi osa"
     eriStiil="object-position:70% top;"
     :textholderStyle="''"

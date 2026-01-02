@@ -4,16 +4,14 @@
     :metaKeywords="'Samsung õhk-vesi soojuspumbad, Samsung EHS Mono, Samsung R290, õhk-vesi soojuspump, vesiküte, põrandaküte, radiaatorküte, tarbevesi'"
     :metaAuthor="'Tanel Sepp'"
     :robots="'index, follow'"
-    :viteCssAssets="['resources/css/app.css', 'resources/css/navbar.css', 'resources/css/footer.css','resources/css/staticCarousel.css', 'resources/css/tootjasektsioon.css','resources/css/upscroller.css','resources/css/teenusedStatic.css','resources/css/cookies.css']"
-    :viteJsAssets="['resources/js/app.js','resources/js/lazyLoading.js','resources/js/hamburger.js','resources/js/navbar.js','resources/js/lenis.js','resources/js/upscroller.js', 'resources/js/cookies.js']"
->
+    :viteCssAssets="['resources/css/pages/brandilehed.css']">
 
 <x-static_carousel
     title="Samsung õhk-vesi soojuspumbad <br><br><span>tõhus ja energiasäästlik lahendus igasse koju ja kontorisse</span>"
     content="Samsung õhk-vesi soojuspumbad pakuvad usaldusväärsust ja tipptasemel efektiivsust, tagades aastaringse mugavuse nii kütmisel kui jahutamisel. Samsung ühendab innovatsiooni ja kaasaegse tehnoloogia, pakkudes Ai ehk tehisaru abil energiatõhusust. Optimeerides teie kütte, vähendades sellega energiakulusid.<br><br>
     Samsung on Eestis laialdast tuntust kogunud oma usaldusväärsuse ja efektiivsuse poolest, samuti on ta suhteliselt hinnasõbralik.<br><br>
     Valikus on nii õhk-õhk kui õhk-vesi pumbad"
-    image="resources/images/taustad/samsung-taust.webp"
+    image="images/taustad/samsung-taust.webp"
     imageAlt="Samsung õhk-vesi soojuspumbad - Kvaliteet ja Energiatõhusus"
     :textholderStyle="'margin:10px auto; max-width: 1000px;'"
 />
@@ -55,12 +53,12 @@
 
                         
                     <div class="pildidiv">
-                        <img class="tootjastpilt" src="" data-src="{{ Vite::asset("resources/images/vaikesed/samsung/samsung.jpeg") }}" alt="Samsung soojuspump">
+                        <img class="tootjastpilt" src="" data-src="{{ asset("images/vaikesed/samsung/samsung.jpeg") }}" alt="Samsung soojuspump">
                     </div>
                     <h3><strong>SAMSUNG Mono R290</strong></h3><br>
                     <p> Samsungi EHS-soojuspumpade tootevaliku uusim väljalase, EHS Mono R290 pakub uut eluasemete kodulahendust. EHS Mono R290 kasutab külmutusagensina R290.  R290 globaalse soojenemise potentsiaal (GWP) on palju madalam, vaid 3, võrreldes teiste külmaainetega R32 ja R410A. EL-i uute F-gaaside eeskirjade kohaselt ei tohi külmutusained alates 2025. aastast  ületada 150 GWP. <br><br>EHS Mono R290 on saadaval laias valikus võimsustega vastavalt projekti  nõuetele – 5, 8, 12 ja 16 kW. 5 ja 8 kW seadmed on vaid 850 mm kõrgused, võrreldes suuremate 12 ja 16 kW seadmetega, mille kõrgus on ligikaudu  1000 mm. See täiendab oma elegantse ja kompaktse disainiga  mis tahes väliruumi. </p>
                     <div class="pildidiv" style="justify-self:right; margin-top:55px;">
-                        <img class="tootjastpilt" src="{{ Vite::asset("resources/images/vaikesed/samsung/samsung-valisosa.webp") }}" alt="Samsung soojuspump">
+                        <img class="tootjastpilt" src="{{ asset("images/vaikesed/samsung/samsung-valisosa.webp") }}" alt="Samsung soojuspump">
                     </div>
             
                     <ul style='font-weight: 600; font-size: 18px; margin-top: 20px; margin-bottom: 20px'>
@@ -80,7 +78,7 @@
                         <p>EHS Mono R290 ühildub EHS Cloud Service pilveteenusega. EHS-i pilveteenus pakub professionaalidele teenindatava EHS-seadme kohta hulgaliselt tehnilisi andmeid ja teadmisi12. Veaaruannetest rikketüüpideni ja olekukontrollist energiatarbimise teabeni. EHS pilveteenus võimaldab professionaalidel enne töösõidu algust teada, mis kliendi juures toimub.12</p><br>
                     </ul>
                     <div class="pildidiv">
-                        <img class="tootjastpilt" src="" data-src="{{ Vite::asset("resources/images/vaikesed/samsung/Samsungtaust.webp") }}" alt="Samsung EHS soojuspump">
+                        <img class="tootjastpilt" src="" data-src="{{ asset("images/vaikesed/samsung/Samsungtaust.webp") }}" alt="Samsung EHS soojuspump">
                     </div><br>
             
                    

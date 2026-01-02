@@ -1,22 +1,5 @@
-<x-layout :title="'Soojuspumpade paigaldus Tallinnas ja Harjumaal – nõuanded ja teostus | Küttesepp'" :metaDescription="'Soojuspumpade paigaldus Tallinnas ja Harjumaal. Selgitame, mida paigalduse juures arvestada, kuidas valida sobiv lahendus ning teostame töö professionaalselt.'" :metaKeywords="'soojuspumba paigaldus, õhk-vesi soojuspumba paigaldus, maasoojuspumba paigaldus, soojuspumba projekt, EHR soojuspump, küttesüsteemi paigaldus'" :metaAuthor="'Tanel Sepp'" :robots="'index, follow'" :viteCssAssets="[
-    'resources/css/app.css',
-    'resources/css/navbar.css',
-    'resources/css/footer.css',
-    'resources/css/staticCarouselkuttesepp.css',
-    'resources/css/tootjasektsioon2.css',
-    'resources/css/upscroller.css',
-    'resources/css/cookies.css',
-]"
-    :viteJsAssets="[
-        'resources/js/app.js',
-        'resources/js/lazyLoading.js',
-        'resources/js/hamburger.js',
-        'resources/js/navbar.js',
-        'resources/js/lenis.js',
-        'resources/js/upscroller.js',
-        'resources/js/cookies.js',
-        'resources/js/accordeon.js',
-    ]">
+<x-layout :title="'Soojuspumpade paigaldus Tallinnas ja Harjumaal – nõuanded ja teostus | Küttesepp'" :metaDescription="'Soojuspumpade paigaldus Tallinnas ja Harjumaal. Selgitame, mida paigalduse juures arvestada, kuidas valida sobiv lahendus ning teostame töö professionaalselt.'" :metaKeywords="'soojuspumba paigaldus, õhk-vesi soojuspumba paigaldus, maasoojuspumba paigaldus, soojuspumba projekt, EHR soojuspump, küttesüsteemi paigaldus'" :metaAuthor="'Tanel Sepp'" :robots="'index, follow'" :viteCssAssets="['resources/css/pages/teenustelehed.css']"
+    :viteJsAssets="['resources/js/pages/teenustelehed.js']">
     <section class="uper" id="uperid">
         <div class="carousel">
             <div class="taustadiv">
@@ -26,7 +9,7 @@
 
                     </div>
                 </div>
-                <img class="taust" src="{{ Vite::asset('resources/images/taustad/Soojuspumba-taust.webp') }}"
+                <img class="taust" src="{{ asset('images/taustad/Soojuspumba-taust.webp') }}"
                     alt="Soojuspumba taustapilt">
             </div>
         </div>
@@ -63,7 +46,7 @@
                         </a>). </p>
                     <div class="pildidiv">
                         <img class="tootjastpilt" src=""
-                            data-src="{{ Vite::asset('resources/images/vaikesed/soojuspumpade-paigaldus/prillidega naine.png') }}"
+                            data-src="{{ asset('images/vaikesed/soojuspumpade-paigaldus/prillidega naine.png') }}"
                             alt="Õhk-vesi soojuspumba paigaldusprotsess õnneliku kliendiga">
                     </div>
                     <hr class="red-line">
@@ -93,23 +76,23 @@
                                 Seda nii renoveeritava kui uue elamise puhul. <br><br>Kui projekteerija oskab ise head
                                 nõu anda ja teab konkreetsete seadmete hindasid, saadavust, eripärasid jne. siis sellest
                                 soovitusest ka piisab.</p><br>
-                            <h5><a href="/#form">Küttesepp pakub konsultatsiooni
-                                    küttesüsteemi valiku tegemiseks</a></h5>
+                            <h5>
+                                <a href="/#form" title="Emaili vormile">
+                                    Konsultatsiooni tellima
+                                </a>
+                            </h5>
                             <p>ja kui valik on tehtud, siis saab tellida vajadusel ka
                                 projekti, muud dokumendid ning asjaajamised kõik Küttesepalt.</p>
                         </li>
 
                     </ul>
 
-
-
                     <div class="pildidiv" style="justify-self:flex-end;">
                         <img class="tootjastpilt" src=""
-                            data-src="{{ Vite::asset('resources/images/vaikesed/soojuspumpade-paigaldus/istuv mees.png') }}"
+                            data-src="{{ asset('images/vaikesed/soojuspumpade-paigaldus/istuv mees.png') }}"
                             alt="Istuv mees">
                     </div>
                     <hr class="red-line" style="justify-self:flex-end;">
-
 
                     <h3 style="justify-self:flex-end;"><strong>Kui tõenäoline on, et valik tuleb just soojuspumba
                             paigalduse kasuks?</strong></h3>
@@ -117,7 +100,7 @@
                         Tavaliselt öeldakse et mugavus maksab, kui aga mingi asi on mugav ja maksab vähem kui ebamugav,
                         siis tõenäosus inimesena selle poole kalduda on kolossaalselt suur.<br><br> Meie (Eesti)
                         geograafilises piirkonnas on kogu aeg külm, suvel paariks kuuks viskab enam vähem mõnusaks, et
-                        siis jälle 9 kuud vihma, pimedust ja tuisku taluda. Kuigi viljakandavat mulda on küllalt igal
+                        siis jälle 9 kuud vihma, pimedust ja tuisku taluda. Kuigi viljakandvat mulda on küllalt igal
                         pool vajame<br>
                         kütet igaljuhul. Küttesüsteemi valikul võib lisada võrdusmärgi elustiili valikule.
                     </p><br>
@@ -171,7 +154,7 @@
 
                     <div class="pildidiv">
                         <img class="tootjastpilt" src=""
-                            data-src="{{ Vite::asset('resources/images/vaikesed/soojuspumpade-paigaldus/onnelik tudruk.png') }}"
+                            data-src="{{ asset('images/vaikesed/soojuspumpade-paigaldus/onnelik tudruk.png') }}"
                             alt="R290 külmainega tulevikukindel soojuspump">
                     </div>
                     <hr class="red-line">
@@ -185,7 +168,7 @@
 
                     <div class="pildidiv" style="justify-self:flex-end;">
                         <img class="tootjastpilt" src=""
-                            data-src="{{ Vite::asset('resources/images/vaikesed/soojuspumpade-paigaldus/naine-soojuspumbaga.png') }}"
+                            data-src="{{ asset('images/vaikesed/soojuspumpade-paigaldus/naine-soojuspumbaga.png') }}"
                             alt="R290 külmainega tulevikukindel soojuspump">
                     </div>
                     <hr class="red-line" style="justify-self:flex-end;">
@@ -215,7 +198,7 @@
                         </a> Ehitusseadustik § 45. Esitada pärast töö lõpetamist koos küttesüsteemiga kaasneva
                         dokumentatsiooniga küttesüsteemi seaduslikuks kasutamiseks.<br><br>
                         Eeldab võimalikke kooskõlastusi ja lähtematerjale tellijalt. Täpsemalt teenusest juba
-                        individuaalselt. <a href="/#form" title="Emaili vormile">Küsi lisainfot</a>
+                        individuaalselt. <a href="{{ route('index') }}#form" title="Emaili vormile">Küsi lisainfot</a>
                     </p>
 
                     <ul class="rohelise-linnukesega"
@@ -239,14 +222,11 @@
                     </ul>
                     <p>Iga liikuv mehanism vajab regulaarset hooldust, nii ka küttesüsteemid.</p>
 
-
-
                     <div class="pildidiv" style="justify-self:flex-start;">
                         <img class="tootjastpilt" src=""
-                            data-src="{{ Vite::asset('resources/images/vaikesed/soojuspumpade-paigaldus/Tanel Soojuspumbaga.png') }}"
+                            data-src="{{ asset('images/vaikesed/soojuspumpade-paigaldus/Tanel Soojuspumbaga.png') }}"
                             alt="R290 külmainega tulevikukindel soojuspump">
                     </div>
-
 
                     <hr class="red-line" style="justify-self:flex-start;">
                     

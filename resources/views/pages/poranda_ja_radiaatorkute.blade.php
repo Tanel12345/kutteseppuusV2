@@ -1,22 +1,5 @@
-<x-layout :title="'Põranda- ja radiaatorküte – projekteerimine, paigaldus ja seadistamine | Küttesepp'" :metaDescription="'Põranda- ja radiaatorküte eramajadele ja renoveeritavatele hoonetele. Küttesepp projekteerib, paigaldab ja seadistab vesiküttesüsteemid soojuspumba, katla või tahkekütteseadmega.'" :metaKeywords="'põrandaküte, radiaatorküte, vesipõrandaküte, radiaatoriküte, küttesüsteemi paigaldus, põrandakütte kollektor, kütteringi seadistamine, Küttesepp'" :metaAuthor="'Tanel Sepp'" :robots="'index, follow'" :viteCssAssets="[
-    'resources/css/app.css',
-    'resources/css/navbar.css',
-    'resources/css/footer.css',
-    'resources/css/staticCarouselkuttesepp.css',
-    'resources/css/tootjasektsioon2.css',
-    'resources/css/upscroller.css',
-    'resources/css/cookies.css',
-]"
-    :viteJsAssets="[
-        'resources/js/app.js',
-        'resources/js/lazyLoading.js',
-        'resources/js/hamburger.js',
-        'resources/js/navbar.js',
-        'resources/js/lenis.js',
-        'resources/js/upscroller.js',
-        'resources/js/cookies.js',
-        'resources/js/accordeon.js',
-    ]">
+<x-layout :title="'Põranda- ja radiaatorküte – projekteerimine, paigaldus ja seadistamine | Küttesepp'" :metaDescription="'Põranda- ja radiaatorküte eramajadele ja renoveeritavatele hoonetele. Küttesepp projekteerib, paigaldab ja seadistab vesiküttesüsteemid soojuspumba, katla või tahkekütteseadmega.'" :metaKeywords="'põrandaküte, radiaatorküte, vesipõrandaküte, radiaatoriküte, küttesüsteemi paigaldus, põrandakütte kollektor, kütteringi seadistamine, Küttesepp'" :metaAuthor="'Tanel Sepp'" :robots="'index, follow'" :viteCssAssets="['resources/css/pages/teenustelehed.css']"
+    :viteJsAssets="['resources/js/pages/teenustelehed.js']">
 
     <section class="uper" id="uperid">
         <div class="carousel">
@@ -27,7 +10,7 @@
                     </div>
                 </div>
                 <img style="object-position: bottom;" class="taust"
-                    src="{{ Vite::asset('resources/images/taustad/poranda-ja-radiaatorkute.webp') }}"
+                    src="{{ asset('images/taustad/poranda-ja-radiaatorkute.webp') }}"
                     alt="Põranda- ja radiaatorküte eramajas">
             </div>
         </div>
@@ -82,7 +65,7 @@
                     </p>
                        <div class="pildidiv">
                         <img class="tootjastpilt" src=""
-                            data-src="{{ Vite::asset('resources/images/vaikesed/poranda-ja-radiaatorkute/porandakute.webp') }}"
+                            data-src="{{ asset('images/vaikesed/poranda-ja-radiaatorkute/porandakute.webp') }}"
                             alt="Põrandakütte torustik">
                     </div>
                     <hr class="red-line">
@@ -109,7 +92,7 @@
 
                     <div class="pildidiv" style="justify-self:flex-end;">
                         <img class="tootjastpilt" src=""
-                            data-src="{{ Vite::asset('resources/images/vaikesed/poranda-ja-radiaatorkute/radiator.webp') }}"
+                            data-src="{{ asset('images/vaikesed/poranda-ja-radiaatorkute/radiator.webp') }}"
                             alt="Radiaator küte">
                     </div>
 
@@ -132,7 +115,7 @@
                     </p>
                     <div class="pildidiv">
                         <img class="tootjastpilt" src=""
-                            data-src="{{ Vite::asset('resources/images/vaikesed/poranda-ja-radiaatorkute/perekond-radiaatoriga.webp') }}"
+                            data-src="{{ asset('images/vaikesed/poranda-ja-radiaatorkute/perekond-radiaatoriga.webp') }}"
                             alt="Perekond radiaator ja põrandaküttega">
                     </div>
                     <hr class="red-line" style="margin-top:40px; margin-bottom:40px;">

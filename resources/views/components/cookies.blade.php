@@ -41,7 +41,7 @@
             aria-label="Kohanda küpsiseid">
             Kohanda
             <img
-                src="{{ Vite::asset('resources/images/icons/down.png') }}"
+                src="{{ asset('images/icons/down.png') }}"
                 alt=""
                 style="padding-left:5px;width:20px;height:auto;">
         </button>

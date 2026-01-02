@@ -1,3 +1,9 @@
+/* base */
+@import './navbar.css';
+@import './footer.css';
+@import './upscroller.css';
+@import './cookies.css';
+
 
 * {
   margin: 0;

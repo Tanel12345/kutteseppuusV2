@@ -5,12 +5,12 @@
         <div class="top-nav">
             <div class="left-topdiv">
                 <a style="cursor:auto;" href="tel:+37256681555">
-                    <img src="{{ Vite::asset('resources/images/icons/küttesepp.png') }}" alt="Küttesepa telefon" />
+                    <img src="{{ asset('images/icons/küttesepp.png') }}" alt="Küttesepa telefon" />
                     +37256681555
                 </a>
 
-                <a style="cursor:auto;" href="#">
-                    <img src="{{ Vite::asset('resources/images/icons/küttesepp.png') }}" alt="Küttesepa email" />
+                <a style="cursor:auto;" href="tanel@kuttesepp.ee">
+                    <img src="{{ asset('images/icons/küttesepp.png') }}" alt="Küttesepa email" />
                     tanel[ät]kuttesepp.ee
                 </a>
             </div>
@@ -18,25 +18,25 @@
             <div class="right-topdiv" id="right-topdiv">
                 <a class="{{ Route::currentRouteName() == 'soojuspumpade-paigaldus' ? 'active' : '' }}"
                     href="{{ route('soojuspumpade-paigaldus') }}">
-                    <img src="{{ Vite::asset('resources/images/icons/küttesepp.png') }}" alt="Küttesepp" />
+                    <img src="{{ asset('images/icons/küttesepp.png') }}" alt="Küttesepp" />
                     Soojuspumpade paigaldus
                 </a>
 
                 <a class="{{ Route::currentRouteName() == 'kuttesusteemi-vesi' ? 'active' : '' }}"
                     href="{{ route('kuttesusteemi-vesi') }}">
-                    <img src="{{ Vite::asset('resources/images/icons/küttesepp.png') }}" alt="Küttesepp" />
+                    <img src="{{ asset('images/icons/küttesepp.png') }}" alt="Küttesepp" />
                     Küttesüsteemi vesi
                 </a>
 
                 <a class="{{ Route::currentRouteName() == 'milleks-kutteautomaatika' ? 'active' : '' }}"
                     href="{{ route('milleks-kutteautomaatika') }}">
-                    <img src="{{ Vite::asset('resources/images/icons/küttesepp.png') }}" alt="Küttesepp" />
+                    <img src="{{ asset('images/icons/küttesepp.png') }}" alt="Küttesepp" />
                     Kütteautomaatika
                 </a>
 
                 <a class="{{ Route::currentRouteName() == 'poranda-ja-radiaatorkute' ? 'active' : '' }}"
                     href="{{ route('poranda-ja-radiaatorkute') }}">
-                    <img src="{{ Vite::asset('resources/images/icons/küttesepp.png') }}" alt="Küttesepp" />
+                    <img src="{{ asset('images/icons/küttesepp.png') }}" alt="Küttesepp" />
                     Põranda- ja radiaatorküte
                 </a>
             </div>
@@ -46,7 +46,7 @@
         <nav class="bottom-nav">
 
             <a href="https://www.facebook.com/kuttesepp" target="_blank">
-                <img class="facebook" src="{{ Vite::asset('resources/images/icons/facebook.png') }}"
+                <img class="facebook" src="{{ asset('images/icons/facebook.png') }}"
                     alt="facebook logo" />
             </a>
 
@@ -57,7 +57,7 @@
                 </div>
 
                 <a href="{{ route('index') }}" class="logoanchor">
-                    <img class="logo" src="{{ Vite::asset('resources/images/küttesepp_logo.webp') }}"
+                    <img class="logo" src="{{ asset('images/küttesepp_logo.webp') }}"
                         alt="Küttesepp logo" />
                 </a>
 
@@ -69,7 +69,7 @@
                             <a class="{{ request()->is('soojuspumbad*') ? 'active' : '' }}"
                                 href="{{ route('soojuspumbad.index') }}">
                                 SOOJUSPUMBAD
-                                <img src="{{ Vite::asset('resources/images/icons/down.png') }}"
+                                <img src="{{ asset('images/icons/down.png') }}"
                                     style="width:18px; position:relative; top:2px;">
                             </a>
 
@@ -104,7 +104,7 @@
                             <a class="{{ request()->is('tahkekutteseadmed*') ? 'active' : '' }}"
                                 href="{{ route('tahkekutteseadmed.index') }}">
                                 TAHKEKÜTTESEADMED
-                                <img src="{{ Vite::asset('resources/images/icons/down.png') }}"
+                                <img src="{{ asset('images/icons/down.png') }}"
                                     style="width:18px; position:relative; top:2px;">
                             </a>
 
@@ -126,14 +126,14 @@
                             </div>
                         </li>
                     </ul>
+
                     {{-- HOOLDUS --}}
-                    
                     <ul>
                         <li>
                             <a class="{{ request()->is('kuttesusteemide-hooldus*') ? 'active' : '' }}"
                                 href="{{ route('kuttesusteemide-hooldus') }}">
                                 KÜTTESÜSTEEMIDE HOOLDUS
-                                <img src="{{ Vite::asset('resources/images/icons/down.png') }}"
+                                <img src="{{ asset('images/icons/down.png') }}"
                                     style="width:18px; position:relative; top:2px;">
                             </a>
 
@@ -161,6 +161,7 @@
                             </div>
                         </li>
                     </ul>
+
                     <ul>
                         <li><a href="{{ route('works.index') }}">TEHTUD TÖÖD</a></li>
                     </ul>

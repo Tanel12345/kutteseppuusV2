@@ -1,0 +1,12 @@
+/* ==============================
+   INDEX PAGE – CSS ENTRY FILE
+   ============================== */
+
+
+/* Indexi sektsioonid */
+@import '../indexCarousel.css';
+@import '../teenused.css';
+@import '../piltlingid.css';
+@import '../ettevottest.css';
+@import '../videosection.css';
+@import '../contact.css';
