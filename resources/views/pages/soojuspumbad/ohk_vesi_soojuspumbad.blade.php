@@ -1,6 +1,7 @@
 <x-layout :title="'Õhk-vesi soojuspumbad - kvaliteetsed ja energiasäästlikud | Küttesepp'"
     :metaDescription="'Õhk-vesi soojuspumbad on energiasäästlik valik kodu kütmiseks ja tarbevee soojendamiseks. Küttesepp pakub lahendusi koos professionaalse paigaldusega.'"
     :metaKeywords="'õhk-vesi soojuspumbad, õhk-vesi küte, soojuspump, energiasäästlik küte, tarbevee soojendamine'"
+    :ogImage="asset('images/serp/kuttesepp-og-ohkvesisoojuspumbad.webp')"
     :metaAuthor="'Tanel Sepp'"
     :robots="'index, follow'"
     :viteCssAssets="['resources/css/pages/tootelehedala.css']">

@@ -1,6 +1,7 @@
 <x-layout :title="'Maasoojuspumbad – tõhus ja kestlik küttelahendus | Küttesepp'"
     :metaDescription="'Maasoojuspumbad on kõige energiatõhusam valik kodu kütmiseks ja tarbevee soojendamiseks. Küttesepp pakub kvaliteetseid lahendusi koos professionaalse paigaldusega.'"
     :metaKeywords="'Maasoojuspump, maasoojuspumbad, maaküte, energiatõhus küte, küttelahendus'"
+    :ogImage="asset('images/serp/kuttesepp-og-maasoojuspumbad.webp')"
     :metaAuthor="'Tanel Sepp'"
     :robots="'index, follow'"
     :viteCssAssets="['resources/css/pages/tootelehedala.css']">

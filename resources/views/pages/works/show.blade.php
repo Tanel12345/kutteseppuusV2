@@ -7,7 +7,8 @@
     strtolower($work->system_type ?? '') .
     ', ' .
     strtolower($work->brand ?? '') .
-    ', küttesepp'" :metaAuthor="'Tanel Sepp'" :robots="'index, follow'" :viteCssAssets="['resources/css/pages/worksleht.css']">
+    ', küttesepp'" :ogImage="asset('images/serp/kuttesepp-og-tehtudtood.webp')" :metaAuthor="'Tanel Sepp'" :robots="'index, follow'"
+    :viteCssAssets="['resources/css/pages/worksleht.css']">
 
 
     <div id="lightbox" class="lightbox hidden">
@@ -43,8 +44,8 @@
                         <h1>{{ $work->title }}</h1>
                     </div>
                 </div>
-                <img style="opacity:0.5; filter: blur(3px);" class="taust" src="{{ asset('images/taustad/tehtud-tood-taust.webp') }}"
-                    alt="Küttesüsteemi ehitamine">
+                <img style="opacity:0.5; filter: blur(3px);" class="taust"
+                    src="{{ asset('images/taustad/tehtud-tood-taust.webp') }}" alt="Küttesüsteemi ehitamine">
             </div>
         </div>
     </section>
@@ -140,7 +141,7 @@
     <x-up_scroller />
     <x-cookies />
 
-{{-- struktureeritud andmete deklaratsioon (JSON-LD).Seo, google jaok --}}
+    {{-- struktureeritud andmete deklaratsioon (JSON-LD).Seo, google jaok --}}
     <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -160,7 +161,7 @@
 
 
 </script>
-{{-- Töö piltide slider --}}
+    {{-- Töö piltide slider --}}
     <script>
         document.addEventListener('DOMContentLoaded', () => {
 

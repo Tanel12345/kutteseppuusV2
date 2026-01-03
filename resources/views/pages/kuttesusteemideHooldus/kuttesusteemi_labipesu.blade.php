@@ -5,8 +5,9 @@ happeline süsteemipesu,
 aluselise keemiaga pesu,
 powerflush küttesüsteem,
 magnetiidi eemaldus,
-katlakivi eemaldus'" :metaAuthor="'Tanel Sepp'" :robots="'index, follow'" 
-
+katlakivi eemaldus'" 
+:ogImage="asset('images/serp/kuttesepp-og-labipesu.webp')"
+:metaAuthor="'Tanel Sepp'" :robots="'index, follow'" 
 :viteCssAssets="['resources/css/pages/teenustelehed.css']"
     :viteJsAssets="['resources/js/pages/teenustelehed.js']">
 

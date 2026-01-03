@@ -2,6 +2,7 @@
    :title="'Pelletikatlad ja pelletikaminad – automaatne vesiküte | Küttesepp'"
     :metaDescription="'Pelletikatlad ja pelletikaminad vesiküttega eramajade küttesüsteemidele. Automaatne, mugav ja efektiivne pelletiküte koos professionaalse paigaldusega.'"
     :metaKeywords="'pelletikatlad, pelletikaminad, pelletiküte, pelletikatel paigaldus, pelletikamin keskküttele, automaatne küte'"
+    :ogImage="asset('images/serp/kuttesepp-og-pelletikatlad.webp')"
     :metaAuthor="'Tanel Sepp'"
     :robots="'index, follow'"
      :viteCssAssets="['resources/css/pages/tootelehedala.css']">

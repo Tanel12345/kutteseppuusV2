@@ -5,7 +5,7 @@
     xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
-  <!-- Avaleht -->
+  <!-- AVALeht -->
   <url>
     <loc>https://www.kuttesepp.ee/</loc>
     <lastmod>2025-12-25</lastmod>
@@ -13,16 +13,16 @@
     <priority>1.0</priority>
   </url>
 
-  <!-- Teenused -->
+  <!-- PEAMISED TEENUSED -->
   <url>
     <loc>https://www.kuttesepp.ee/soojuspumpade-paigaldus</loc>
     <lastmod>2025-12-25</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://www.kuttesepp.ee/kuttesusteemi-vesi</loc>
+    <loc>https://www.kuttesepp.ee/poranda-ja-radiaatorkute</loc>
     <lastmod>2025-12-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -35,14 +35,7 @@
     <priority>0.8</priority>
   </url>
 
-  <url>
-    <loc>https://www.kuttesepp.ee/poranda-ja-radiaatorkute</loc>
-    <lastmod>2025-12-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Soojuspumbad -->
+  <!-- SOOJUSPUMBAD (KATEGOORIAD) -->
   <url>
     <loc>https://www.kuttesepp.ee/soojuspumbad</loc>
     <lastmod>2025-12-25</lastmod>
@@ -71,7 +64,7 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- Tahkekütteseadmed -->
+  <!-- TAHKEKÜTTESEADMED -->
   <url>
     <loc>https://www.kuttesepp.ee/tahkekutteseadmed</loc>
     <lastmod>2025-12-25</lastmod>
@@ -93,9 +86,16 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- Hooldus ja vesi -->
+  <!-- HOOLDUS JA KÜTTEVESI -->
   <url>
     <loc>https://www.kuttesepp.ee/kuttesusteemide-hooldus</loc>
+    <lastmod>2025-12-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.kuttesepp.ee/kuttesusteemi-labipesu</loc>
     <lastmod>2025-12-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -115,14 +115,7 @@
     <priority>0.8</priority>
   </url>
 
-  <url>
-    <loc>https://www.kuttesepp.ee/kuttesusteemi-labipesu</loc>
-    <lastmod>2025-12-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Blogi / sisu -->
+  <!-- SISULEHED -->
   <url>
     <loc>https://www.kuttesepp.ee/kuidas-saasta-kuttekuludelt</loc>
     <lastmod>2025-12-25</lastmod>
@@ -130,7 +123,7 @@
     <priority>0.7</priority>
   </url>
 
-  <!-- Tehtud tööd -->
+  <!-- TEHTUD TÖÖD -->
   <url>
     <loc>https://www.kuttesepp.ee/tehtud-tood</loc>
     <lastmod>2025-12-25</lastmod>

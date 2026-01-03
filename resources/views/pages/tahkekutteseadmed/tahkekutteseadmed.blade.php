@@ -4,6 +4,7 @@
    :metaKeywords="'tahkekütteseadmed, pelletikatlad, pelletkaminad, keskküttepliidid, keskküttekaminad, kaminaküte, tahkeküte'" 
     :metaAuthor="'Tanel Sepp'"
     :robots="'index, follow'"
+    :ogImage="asset('images/serp/kuttesepp-og-tahkekutteseadmed.webp')"
     :viteCssAssets="[
     'resources/css/pages/tootelehed.css',
   ]">

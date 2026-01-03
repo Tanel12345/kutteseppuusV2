@@ -5,21 +5,8 @@
     :metaAuthor="'Tanel Sepp'"
     :robots="'noindex, nofollow'"
     :viteCssAssets="[
-        'resources/css/app.css',
-        'resources/css/navbar.css',
-        'resources/css/footer.css',
-        'resources/css/upscroller.css',
-        'resources/css/ettevottest.css',
-        'resources/css/cookies.css'
-    ]"
-    :viteJsAssets="[
-        'resources/js/app.js',
-        'resources/js/hamburger.js',
-        'resources/js/upscroller.js',
-        'resources/js/navbar.js',
-        'resources/js/lenis.js',
-        'resources/js/cookies.js'
-    ]"
+        'resources/css/ettevottest.css',]"
+
 >
 
 <style>

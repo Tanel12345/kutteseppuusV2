@@ -5,7 +5,9 @@ maakütte hooldus,
 pelletikatla hooldus,
 kaminahooldus,
 küttesõlme kontroll,
-küttesüsteemi hooldusteenus'" :metaAuthor="'Tanel Sepp'" :robots="'index, follow'" 
+küttesüsteemi hooldusteenus'" 
+:ogImage="asset('images/serp/kuttesepp-og-hooldus.webp')"
+:metaAuthor="'Tanel Sepp'" :robots="'index, follow'" 
 :viteCssAssets="['resources/css/pages/teenustelehed.css']"
     :viteJsAssets="['resources/js/pages/teenustelehed.js']">
 

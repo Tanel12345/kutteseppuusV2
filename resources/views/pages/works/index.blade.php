@@ -2,7 +2,8 @@
     use Illuminate\Support\Str;
 @endphp
 
-<x-layout :title="'Soojuspumpade paigaldus – tehtud tööd ja paigaldused | Küttesepp'" :metaDescription="'Vaata Küttesepp OÜ tehtud soojuspumpade ja küttesüsteemide paigaldusi. Reaalsed projektid, pildid ja kogemus õhk-vesi, õhk-õhk ja maakütte lahendustest.'" :metaKeywords="'soojuspumpade paigaldus, tehtud tööd, õhk-vesi soojuspump, maaküte, küttesüsteemide paigaldus, küttesepp'" :metaAuthor="'Tanel Sepp'" :robots="'index, follow'" :viteCssAssets="['resources/css/pages/worksleht.css']">
+<x-layout :title="'Soojuspumpade paigaldus – tehtud tööd ja paigaldused | Küttesepp'" :metaDescription="'Vaata Küttesepp OÜ tehtud soojuspumpade ja küttesüsteemide paigaldusi. Reaalsed projektid, pildid ja kogemus õhk-vesi, õhk-õhk ja maakütte lahendustest.'" :metaKeywords="'soojuspumpade paigaldus, tehtud tööd, õhk-vesi soojuspump, maaküte, küttesüsteemide paigaldus, küttesepp'" :ogImage="asset('images/serp/kuttesepp-og-tehtudtood.webp')" :metaAuthor="'Tanel Sepp'" :robots="'index, follow'"
+    :viteCssAssets="['resources/css/pages/worksleht.css']">
 
 
     <section class="uper" id="uperid">
@@ -13,8 +14,8 @@
                         <h1>Küttesepa tööd ja tegemised!</h1>
                     </div>
                 </div>
-                <img style="opacity:0.5; filter: blur(3px);" class="taust" src="{{ asset('images/taustad/tehtud-tood-taust.webp') }}"
-                    alt="Küttesüsteemi ehitamine">
+                <img style="opacity:0.5; filter: blur(3px);" class="taust"
+                    src="{{ asset('images/taustad/tehtud-tood-taust.webp') }}" alt="Küttesüsteemi ehitamine">
             </div>
         </div>
     </section>
@@ -52,8 +53,7 @@
 
                                         <div class="work-card-content">
                                             {{-- TAUSTAPILT --}}
-                                            <img class="work-card-bg"
-                                                src="{{ asset('images/taustad/taust5.png') }}"
+                                            <img class="work-card-bg" src="{{ asset('images/taustad/taust5.png') }}"
                                                 alt="" aria-hidden="true">
 
 

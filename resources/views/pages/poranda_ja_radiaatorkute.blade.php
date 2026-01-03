@@ -1,4 +1,5 @@
-<x-layout :title="'Põranda- ja radiaatorküte – projekteerimine, paigaldus ja seadistamine | Küttesepp'" :metaDescription="'Põranda- ja radiaatorküte eramajadele ja renoveeritavatele hoonetele. Küttesepp projekteerib, paigaldab ja seadistab vesiküttesüsteemid soojuspumba, katla või tahkekütteseadmega.'" :metaKeywords="'põrandaküte, radiaatorküte, vesipõrandaküte, radiaatoriküte, küttesüsteemi paigaldus, põrandakütte kollektor, kütteringi seadistamine, Küttesepp'" :metaAuthor="'Tanel Sepp'" :robots="'index, follow'" :viteCssAssets="['resources/css/pages/teenustelehed.css']"
+<x-layout :title="'Põranda- ja radiaatorküte – projekteerimine, paigaldus ja seadistamine | Küttesepp'" :metaDescription="'Põranda- ja radiaatorküte eramajadele ja renoveeritavatele hoonetele. Küttesepp projekteerib, paigaldab ja seadistab vesiküttesüsteemid soojuspumba, katla või tahkekütteseadmega.'" :metaKeywords="'põrandaküte, radiaatorküte, vesipõrandaküte, radiaatoriküte, küttesüsteemi paigaldus, põrandakütte kollektor, kütteringi seadistamine, Küttesepp'" 
+:ogImage="asset('images/serp/kuttesepp-og-porandakute.webp')":metaAuthor="'Tanel Sepp'" :robots="'index, follow'" :viteCssAssets="['resources/css/pages/teenustelehed.css']"
     :viteJsAssets="['resources/js/pages/teenustelehed.js']">
 
     <section class="uper" id="uperid">

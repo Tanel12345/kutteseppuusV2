@@ -1,4 +1,6 @@
-<x-layout :title="'Õhk-õhk soojuspumbad – kvaliteetne küte ja jahutus | Küttesepp'" :metaDescription="'Õhk-õhk soojuspumbad on soodsaim ja kiireim lahendus kodu kütmiseks ja jahutamiseks. Küttesepp pakub kvaliteetseid seadmeid koos paigalduse ja kasutusõpetusega.'" :metaKeywords="'õhk-õhk soojuspumbad, soojuspump, kütmine, jahutamine, energiasääst, õhk-õhk küte, õhksoojuspump, energiasäästlik küte'" :metaAuthor="'Tanel Sepp'" :robots="'index, follow'" :viteCssAssets="['resources/css/pages/tootelehedala.css']">
+<x-layout :title="'Õhk-õhk soojuspumbad – kvaliteetne küte ja jahutus | Küttesepp'" :metaDescription="'Õhk-õhk soojuspumbad on soodsaim ja kiireim lahendus kodu kütmiseks ja jahutamiseks. Küttesepp pakub kvaliteetseid seadmeid koos paigalduse ja kasutusõpetusega.'" :metaKeywords="'õhk-õhk soojuspumbad, soojuspump, kütmine, jahutamine, energiasääst, õhk-õhk küte, õhksoojuspump, energiasäästlik küte'" 
+:ogImage="asset('images/serp/kuttesepp-og-ohksoojuspumbad.webp')"
+:metaAuthor="'Tanel Sepp'" :robots="'index, follow'" :viteCssAssets="['resources/css/pages/tootelehedala.css']">
 
     <x-static_carousel title="ÕHKSOOJUSPUMBAD <br><br><span>Soodsaim valik efektiivseks kütteks</span>"
         content="Õhksoojuspump töötab sama põhimõtte järgi nagu teisedki soojuspumba tüübid: Energia salvestatakse välisõhust välisõhu ja normaalrõhu all oleva külmaine temperatuuri vahest ning kasutades elektrienergiat külmaine rõhu tõstmiseks saavutatakse selle sobiv temperatuur maja kütmiseks.<br><br>

@@ -5,6 +5,7 @@ inhibiitorid,
 küttevee ettevalmistus,
 küttesüsteemi hooldus,
 katlakivi vältimine'" 
+:ogImage="asset('images/serp/kuttesepp-og-vesi.webp')"
 :metaAuthor="'Tanel Sepp'" 
 :robots="'index, follow'" 
 :viteCssAssets="['resources/css/pages/teenustelehed.css']"

@@ -1,4 +1,5 @@
-<x-layout :title="'Milleks kütteautomaatika – täpne juhtimine, mugavus ja energiasääst | Küttesepp'" :metaDescription="'Kütteautomaatika juhib soojuspumpa, katelt ja küttesüsteemi tööd vastavalt ilmastikule ja hoone vajadusele. Küttesepp paigaldab ja seadistab töökindla kütteautomaatika.'" :metaKeywords="'kütteautomaatika, küttesüsteemi juhtimine, küttekõver, ilmastikukompensatsioon, soojuspumba automaatika, katla automaatika, ruumitermostaat, Küttesepp'" :metaAuthor="'Tanel Sepp'" :robots="'index, follow'" :viteCssAssets="['resources/css/pages/teenustelehed.css']"
+<x-layout :title="'Milleks kütteautomaatika – täpne juhtimine, mugavus ja energiasääst | Küttesepp'" :metaDescription="'Kütteautomaatika juhib soojuspumpa, katelt ja küttesüsteemi tööd vastavalt ilmastikule ja hoone vajadusele. Küttesepp paigaldab ja seadistab töökindla kütteautomaatika.'" :metaKeywords="'kütteautomaatika, küttesüsteemi juhtimine, küttekõver, ilmastikukompensatsioon, soojuspumba automaatika, katla automaatika, ruumitermostaat, Küttesepp'" 
+:ogImage="asset('images/serp/kuttesepp-og-automaatika.webp')":metaAuthor="'Tanel Sepp'" :robots="'index, follow'" :viteCssAssets="['resources/css/pages/teenustelehed.css']"
     :viteJsAssets="['resources/js/pages/teenustelehed.js']">
 
     <section class="uper" id="uperid">
