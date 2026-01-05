@@ -16,7 +16,7 @@ küttesüsteemi hooldusteenus'"
             <div class="taustadiv">
                 <div class="textholderdiv">
                     <div class="textholder">
-                        <h1>Küttesüsteemide hooldus – Soojuspump või tahkekütteseade</h1>
+                        <h1>Küttesüsteemide hooldus – soojuspump või tahkekütteseade</h1>
                     </div>
                 </div>
                 <img class="taust" src="{{ asset('images/taustad/kuttesusteemide-hooldus.webp') }}"
