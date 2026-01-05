@@ -16,7 +16,7 @@ küttesüsteemi hooldusteenus'"
             <div class="taustadiv">
                 <div class="textholderdiv">
                     <div class="textholder">
-                        <h1>Küttesüsteemide hooldus – töökindlus, sääst ja pikem eluiga</h1>
+                        <h1>Küttesüsteemide hooldus – Soojuspump või tahkekütteseade</h1>
                     </div>
                 </div>
                 <img class="taust" src="{{ asset('images/taustad/kuttesusteemide-hooldus.webp') }}"
@@ -30,7 +30,7 @@ küttesüsteemi hooldusteenus'"
             <div class="ettevotte">
                 <div class="content">
 
-                    <h2><span>Küttesüsteemi hooldus</span> – miks see on vajalik?</h2>
+                    <h2><span>Hooldus</span> – miks see on vajalik?</h2>
 
                     <p>
                         Olgu teil soojuspump, tahkekütte-, vedelkütte- või gaasikatel. Kas tuleb soe katlamajast või

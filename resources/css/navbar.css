@@ -230,17 +230,36 @@ header.animate {
   color: #eeeeee
 }
 
-.bottom-rightdiv li:hover .popup,
-.popup:hover {
+
+
+
+/*.bottom-rightdiv li:hover .popup,
+ .popup:hover {
   display: block;
-  /* Set up the animation */
+  
   animation: slideIn 0.5s ease-in-out forwards;
+} */
+
+/* Popup avaneb AINULT noole (img) hoveril – HTML muutmata */
+@media (hover: hover) {
+
+  /* kui hiir on noole pildi kohal, ava popup */
+  .bottom-rightdiv ul > li:has(a > img:hover) > .popup,
+  .bottom-rightdiv ul > li > .popup:hover {
+    display: block;
+    animation: slideIn 0.5s ease-in-out forwards;
+  }
 }
 
+/* tee nool "lihtsamini tabatavaks" */
+.bottom-rightdiv a > img {
 
-
-
-
+  cursor: pointer;
+   width: 20px;
+  
+           
+  vertical-align:bottom;
+}
 
 
 .logo {
@@ -572,12 +591,7 @@ img.facebook:hover {
 
   }
 
-  .bottom-rightdiv li:hover .popup,
-  .popup:hover {
-    display: block;
-    /* Set up the animation */
-    animation: slideIn 0.5s ease-in-out forwards;
-  }
+
 
 
 

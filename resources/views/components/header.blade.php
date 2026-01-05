@@ -69,8 +69,7 @@
                             <a class="{{ request()->is('soojuspumbad*') ? 'active' : '' }}"
                                 href="{{ route('soojuspumbad.index') }}">
                                 SOOJUSPUMBAD
-                                <img src="{{ asset('images/icons/down.png') }}"
-                                    style="width:18px; position:relative; top:2px;">
+                                <img src="{{ asset('images/icons/down.png') }}">
                             </a>
 
                             <div class="popup">
@@ -104,8 +103,7 @@
                             <a class="{{ request()->is('tahkekutteseadmed*') ? 'active' : '' }}"
                                 href="{{ route('tahkekutteseadmed.index') }}">
                                 TAHKEKÜTTESEADMED
-                                <img src="{{ asset('images/icons/down.png') }}"
-                                    style="width:18px; position:relative; top:2px;">
+                                <img src="{{ asset('images/icons/down.png') }}">
                             </a>
 
                             <div class="popup">
@@ -133,8 +131,7 @@
                             <a class="{{ request()->is('kuttesusteemide-hooldus*') ? 'active' : '' }}"
                                 href="{{ route('kuttesusteemide-hooldus') }}">
                                 KÜTTESÜSTEEMIDE HOOLDUS
-                                <img src="{{ asset('images/icons/down.png') }}"
-                                    style="width:18px; position:relative; top:2px;">
+                                <img src="{{ asset('images/icons/down.png') }}">
                             </a>
 
                             <div class="popup">
@@ -179,3 +176,4 @@
         </nav>
     </header>
 </div>
+
