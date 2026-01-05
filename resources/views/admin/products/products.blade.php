@@ -51,10 +51,10 @@
         <label for="product_type">Product Type</label>
         <select name="product_type" id="product_type" required>
             <option value="ohk_ohk_soojuspumbad">Õhk-õhk soojuspumbad</option>
-            <option value="ohk_vesi_soojuspumbad">Õhk-vesi soojuspumbad</option>
-            <option value="Maasoojuspumbad">Maasoojuspumbad</option>
-            <option value="Pelletikatlad_kaminad">Pelletikatlad ja kaminad</option>
-            <option value="Keskkuttepliidid_ja_kaminad">Keskküttepliidid ja kaminad</option>
+<option value="ohk_vesi_soojuspumbad">Õhk-vesi soojuspumbad</option>
+<option value="maasoojuspumbad">Maasoojuspumbad</option>
+<option value="pelletikatlad_kaminad">Pelletikatlad ja kaminad</option>
+<option value="keskkuttepliidid_ja_kaminad">Keskküttepliidid ja kaminad</option>
         </select>
     </div>
 

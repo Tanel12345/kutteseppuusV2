@@ -44,34 +44,34 @@
     {{-- PRODUCT TYPE --}}
     <div>
         <label for="product_type">Product Type</label>
-        <select name="product_type" id="product_type" required>
+       <select name="product_type" id="product_type" required>
 
-            <option value="ohk_ohk_soojuspumbad"
-                {{ $product->product_type === 'ohk_ohk_soojuspumbad' ? 'selected' : '' }}>
-                Õhk-õhk
-            </option>
+    <option value="ohk_ohk_soojuspumbad"
+        {{ $product->product_type === 'ohk_ohk_soojuspumbad' ? 'selected' : '' }}>
+        Õhk-õhk soojuspumbad
+    </option>
 
-            <option value="ohk_vesi_soojuspumbad"
-                {{ $product->product_type === 'ohk_vesi_soojuspumbad' ? 'selected' : '' }}>
-                Õhk-vesi
-            </option>
+    <option value="ohk_vesi_soojuspumbad"
+        {{ $product->product_type === 'ohk_vesi_soojuspumbad' ? 'selected' : '' }}>
+        Õhk-vesi soojuspumbad
+    </option>
 
-            <option value="Maasoojuspumbad"
-                {{ $product->product_type === 'Maasoojuspumbad' ? 'selected' : '' }}>
-                Maasoojus
-            </option>
+    <option value="maasoojuspumbad"
+        {{ $product->product_type === 'maasoojuspumbad' ? 'selected' : '' }}>
+        Maasoojuspumbad
+    </option>
 
-            <option value="Pelletikatlad_kaminad"
-                {{ $product->product_type === 'Pelletikatlad_kaminad' ? 'selected' : '' }}>
-                Pelletikatlad ja kaminad
-            </option>
+    <option value="pelletikatlad_kaminad"
+        {{ $product->product_type === 'pelletikatlad_kaminad' ? 'selected' : '' }}>
+        Pelletikatlad ja kaminad
+    </option>
 
-            <option value="Keskkuttepliidid_ja_kaminad"
-                {{ $product->product_type === 'Keskkuttepliidid_ja_kaminad' ? 'selected' : '' }}>
-                Keskküttepliidid ja kaminad
-            </option>
+    <option value="keskkuttepliidid_ja_kaminad"
+        {{ $product->product_type === 'keskkuttepliidid_ja_kaminad' ? 'selected' : '' }}>
+        Keskküttepliidid ja kaminad
+    </option>
 
-        </select>
+</select>
     </div>
 
     {{-- NAME --}}

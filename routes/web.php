@@ -51,8 +51,11 @@ Route::controller(PageController::class)->group(function () {
     // Näited:
     // /tootja/samsung
     // /tootja/bosch?type=maasoojuspumbad
+    // Route::get('/tootja/{brand:slug}', 'brandPage')
+    //     ->name('brand.page');
     Route::get('/tootja/{brand:slug}', 'brandPage')
-        ->name('brand.page');
+    ->where('brand', '[a-z0-9\-]+')
+    ->name('brand.page');
 
     // ===== TAHKEKÜTTESEADMED =====
     Route::get('/tahkekutteseadmed', 'tahkekutteseadmed')

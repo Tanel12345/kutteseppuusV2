@@ -1,16 +1,17 @@
 <?php
 
 namespace App\Http\Controllers;
+use App\Models\Brand;
+use App\Models\Product;
 use App\Models\Work;
 use App\Models\WorkImage;
-use Illuminate\Support\Str;
-use App\Models\Product;
-use App\Models\Brand;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Storage;
-use Intervention\Image\ImageManager;
+use Illuminate\Support\Str;
+use Illuminate\Validation\Rule;
 use Intervention\Image\Drivers\Gd\Driver;
+use Intervention\Image\ImageManager;
 
 
 class AdminController extends Controller
@@ -36,14 +37,25 @@ class AdminController extends Controller
     // Store product
     public function storeProduct(Request $request)
     {
-        $request->validate([
-            'brand_id' => 'required|exists:brands,id',
-            'product_type' => 'required|string|max:255',
-            'name' => 'required|string|max:255',
-            'description' => 'nullable|string',
-            'power' => 'nullable|string|max:255',
-            'product_img' => 'nullable|mimes:jpeg,png,jpg,gif,svg,webp,avif|max:10048',
-        ]);
+       $request->validate([
+    'brand_id' => 'required|exists:brands,id',
+
+    'product_type' => [
+        'required',
+        Rule::in([
+            'ohk_ohk_soojuspumbad',
+            'ohk_vesi_soojuspumbad',
+            'maasoojuspumbad',
+            'pelletikatlad_kaminad',
+            'keskkuttepliidid_ja_kaminad',
+        ]),
+    ],
+
+    'name' => 'required|string|max:255',
+    'description' => 'nullable|string',
+    'power' => 'nullable|string|max:255',
+    'product_img' => 'nullable|mimes:jpeg,png,jpg,gif,svg,webp,avif|max:10048',
+]);
 
         $productImgPath = null;
 
