@@ -4,7 +4,7 @@
     "name": "upscroller"
   },
   "resources/css/app.css": {
-    "file": "assets/app-r5nFlXiM.css",
+    "file": "assets/app-Rjvuh5Kg.css",
     "src": "resources/css/app.css",
     "isEntry": true,
     "names": [
@@ -28,7 +28,7 @@
     ]
   },
   "resources/css/pages/brandilehed.css": {
-    "file": "assets/brandilehed-CLyHjfk4.css",
+    "file": "assets/brandilehed-VdnoaOwG.css",
     "src": "resources/css/pages/brandilehed.css",
     "isEntry": true,
     "names": [
@@ -36,7 +36,7 @@
     ]
   },
   "resources/css/pages/index.css": {
-    "file": "assets/index-B73K53wF.css",
+    "file": "assets/index-CoauoHMS.css",
     "src": "resources/css/pages/index.css",
     "isEntry": true,
     "names": [
@@ -52,7 +52,7 @@
     ]
   },
   "resources/css/pages/tootelehed.css": {
-    "file": "assets/tootelehed-CjJ5_WQD.css",
+    "file": "assets/tootelehed-DaLB1PhE.css",
     "src": "resources/css/pages/tootelehed.css",
     "isEntry": true,
     "names": [
@@ -60,7 +60,7 @@
     ]
   },
   "resources/css/pages/tootelehedala.css": {
-    "file": "assets/tootelehedala-CXMW_UU4.css",
+    "file": "assets/tootelehedala-FvvsMT3-.css",
     "src": "resources/css/pages/tootelehedala.css",
     "isEntry": true,
     "names": [
