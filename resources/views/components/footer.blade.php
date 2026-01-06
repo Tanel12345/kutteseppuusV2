@@ -24,7 +24,7 @@
             <hr>
             <h6>ASUN</h6>
             <hr>
-            <p>Tallinnas Laagris <br><br> Tegevuspiirkond: Üle Eesti</p>
+            <p>Tallinnas Laagris <br><br> Tegevuspiirkond: Üle Eesti <br><br>Eelistatum piirkond: Tallinn ja harjumaa</p>
         </div>
         
 
