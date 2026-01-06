@@ -97,7 +97,7 @@ küttesüsteemi hooldusteenus'"
 
                     <hr class="red-line" style="justify-self:flex-end;">
 
-                    <h3>Küttesüsteemide hoolduse näidis kontrollnimekiri</h3>
+                    <h3>Soojuspumbaga küttesüsteemi hoolduse näidis kontrollnimekiri</h3>
                     <p><strong>Küttesepp OÜ hooldus sisaldab seadme ja süsteemi terviklikku ülevaatust:</strong></p>
 
                     <ul class="rohelise-linnukesega" style="font-size:18px; font-weight:500;">
