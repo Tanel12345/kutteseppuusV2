@@ -1,13 +1,17 @@
 <section class="ettevottestsekts" id="ettevottestid">
     <div class="ettevõttest">
         <div class="kyttesepp">
-            <h2><span>Küttesepp</span> - Sinu küttemurede lahendaja</h2>
-            <p>OÜ Küttesepp pakub kaasaegseid ja tõhusaid küttelahendusi Eesti kodudesse.<br>
+            <h2><span>Küttesepp</span> - küttesüsteemide terviklahendused ja hooldus</h2>
+            <p>OÜ Küttesepp pakub kaasaegseid ja tõhusaid küttesüsteeme ja -seadmeid Eesti kodudesse.<br>
                 Aitan sul leida tervikliku küttelahenduse vastavalt soovidele ja võimalustele.<br> Kui vajad nõu
                 küttesüsteemi valikut tehes, seadmete paigalduse ning süsteemi ehituseni välja, siis oled õiges kohas.
             </p><br>
+            <p>
+                Töötan üle Eesti, kuid teenindan eelkõige <strong>Tallinna ja Harjumaa</strong> piirkonda.
+                Iga lahendus valmib vastavalt hoonele, kasutusharjumustele ja süsteemi eripäradele.
+            </p><br>
 
-            <h3>Meie pakutavad kütteseadmed:</h3>
+            <h3>Pakutavad kütteseadmed:</h3>
 
             <ul>
                 <li>
@@ -28,17 +32,22 @@
             <br>
 
             <h3>Miks valida Küttesepp?</h3>
-            <p>Küttesepp on mikroettevõte kus meister Tanel on valdkonnas tegev, tahkeküttesüsteemide planeerimisel ja
-                ehitusel, juba aastast 2003.<br> Kui otsite usaldusväärset tegijat kes individuaalselt täidab tellimusi,
-                liikudes edasi siis kui eelmine on lõpetatud. Paktiliselt riskivaba mudel nii telliale kui
-                töövõtjale.<br> Küttesepa eesmärk on tagada optimaalne ja rahuldav lõpplahendus.</p><br>
+            <p>
+                Küttesepp on mikroettevõte, kus kogu töö eest vastutab üks meister.
+                <strong>Tanel</strong> on küttesüsteemide valdkonnas tegutsenud alates <strong>2003. aastast</strong>.<br>
+                Tööd tehakse etapiviisiliselt – järgmine samm algab alles siis, kui eelmine on lõpetatud.
+            </p>
+
+            <p>
+                Selline töökorraldus vähendab riske, hoiab kvaliteeti ning tagab, et küttesüsteem
+                töötab ka aastaid pärast paigaldust või hooldust.
+            </p><br>
 
             <h3>Põhiteenused</h3>
             <ol>
                 <li>Konsultatsioon ja nõustamine</li>
                 <li>Soojuspumpade müük, paigaldus ja hooldus</li>
                 <li>Keskkütteseadmete müük, paigaldus ja hooldus</li>
-                <li>Keskküttepliitide ja -kaminate paigaldus ning hooldus</li>
                 <li>Küttekehade, soojuskiirgurite paigaldus - ehitus</li>
             </ol><br>
 
@@ -47,23 +56,23 @@
                 <li>Seadmete transport</li>
                 <li>Vana seadme eemaldus ja utiliseerimine</li>
                 <li>Küttesüsteemi projekteerimine</li>
-                <li>Paigaldatud küttesüsteemi seadustamise protsess</li>
                 <li>Hooldus ja garantiijärgne teenindus</li>
             </ol>
         </div>
 
         <div class="soojuspumpadest">
-            <h2>Soojuspumbad - tõhus, mugav ja säästlik kütte</h2>
-            <p>Soojuspumbad on mugav, energiasäästlik ja keskkonnasõbralik lahendus nii kodude kui äripindade kütmiseks
-                ja jahutamiseks.
-                Maasoojuspumbad tagavad energiatõhususe ka kõige külmemal ajal aastast, kuid mahukama paigaldusprotsessi
-                ja teatud piirangute tõttu ei sobi nad mitte igale poole ja alati. Küsi nõu Küttesepalt.</p><br>
+             <h2>Soojuspumbad ja tahkekütteseadmed – töökindlus enne kõike</h2>
 
-            <h3>Tahkekütteseadmed</h3>
-            <p>Keskkütteseadmed, nagu puugaasi- ja pelletikatlad, -kaminad, pakuvad samuti mugavat ja automatiseeritud
-                lahendust.
-                Paljud kaasaegsed mudelid on varustatud nutika kliimakompensatsiooniga, vähendades vajadust rohkete
-                täiendavate tarvikute või suurema tehnoruumi järele.</p><br>
+            <p>
+                Kaasaegsed soojuspumbad pakuvad energiasäästlikku ja mugavat kütet nii uutes kui renoveeritavates hoonetes.
+                Õige lahendus eeldab aga korrektset projekteerimist, paigaldust ja
+                <strong>regulaarset hooldust</strong>.<br><br>
+            </p>
+
+            <p>
+                Küttesepp teostab küttesüsteemide hooldust, läbipesu ja küttevee töötlust
+                vastavalt tootjate nõuetele ja kehtivatele standarditele.
+            </p><br>
 
             <h3>Vaata ka:</h3>
             <div class="ettevottest">
