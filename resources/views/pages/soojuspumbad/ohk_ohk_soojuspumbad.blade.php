@@ -1,4 +1,4 @@
-<x-layout :title="'Õhk-õhk soojuspumbad Tallinnas – küte ja jahutus | Küttesepp'" :metaDescription="'Õhk-õhk soojuspumpade müük ja paigaldus Tallinnas ja Harjumaal. Kiire ja soodne küte ning jahutus koos professionaalse paigaldusega.'" :metaKeywords="'õhk-õhk soojuspumbad, soojuspump, kütmine, jahutamine, energiasääst, õhk-õhk küte, õhksoojuspump, energiasäästlik küte'" 
+<x-layout :title="'Õhksoojuspumbad Tallinnas – küte ja jahutus | Küttesepp'" :metaDescription="'Õhksoojuspumpade müük ja paigaldus Tallinnas ja Harjumaal. Kiire ja soodne küte ning jahutus koos professionaalse paigaldusega.'" :metaKeywords="'õhksoojuspumbad, soojuspump, kütmine, jahutamine, energiasääst, õhk-õhk küte, õhksoojuspump, energiasäästlik küte'" 
 :ogImage="asset('images/serp/kuttesepp-og-ohksoojuspumbad.webp')"
 :metaAuthor="'Tanel Sepp'" :robots="'index, follow'" :viteCssAssets="['resources/css/pages/tootelehedala.css']">
 
