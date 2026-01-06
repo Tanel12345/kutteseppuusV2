@@ -221,6 +221,13 @@
 
                     </ul>
                     <p>Iga liikuv mehanism vajab regulaarset hooldust, nii ka küttesüsteemid.</p>
+                      <ul class="rohelise-linnukesega"
+                        style='font-weight: 500; font-size: 18px; margin-top: 20px; margin-bottom: 5px'>
+                        <li>Küttesepp pakub oma teenust üle Eesti</li>
+
+                    </ul>
+                    <p>Enda asukohast lähtuvalt eelistame aga Tallinna ja harjumaa piirkonda.</p>
+
 
                     <div class="pildidiv" style="justify-self:flex-start;">
                         <img class="tootjastpilt" src=""
