@@ -182,8 +182,8 @@ katlakivi eemaldus'"
                     <hr class="red-line" style="margin-top:40px; margin-bottom:40px;">
 
                     <p>
-                    Teenust pakume <strong>üle Eesti</strong>, eelistatult siiski Tallinna ja Harjumaa piirkonnas.
-                    Läbipesu teostame mobiilse seadmega objektil kohapeal.
+                    Teenust pakun <strong>üle Eesti</strong>, eelistatult siiski Tallinna ja Harjumaa piirkonnas.
+                    Läbipesu teostan mobiilse seadmega objektil kohapeal.
                     </p>
                     <!-- FAQ -->
                     <div class="faq-container" itemscope itemtype="https://schema.org/FAQPage">

@@ -206,8 +206,8 @@ katlakivi vältimine'"
 
                            <p>
                     Küttesepp OÜ pakub küttevee töötlemise teenust
-                    <strong>üle Eesti</strong>, eelistame siiski Tallinna ja Harjumaa piirkonda, kuna ise asume siin.<br>
-                    Teenuse teostame mobiilsete seadmetega objektil kohapeal.
+                    <strong>üle Eesti</strong>, eelistan siiski Tallinna ja Harjumaa piirkonda, kuna ise asun siin.<br>
+                    Teenuse teostan mobiilsete seadmetega objektil kohapeal.
                     </p>
                    
 

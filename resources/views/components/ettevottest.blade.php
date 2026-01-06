@@ -7,7 +7,7 @@
                 küttesüsteemi valikut tehes, seadmete paigalduse ning süsteemi ehituseni välja, siis oled õiges kohas.
             </p><br>
             <p>
-                Töötan üle Eesti, kuid teenindan eelkõige <strong>Tallinna ja Harjumaa</strong> piirkonda.
+                Töötan üle Eesti, kuid eelistan eelkõige <strong>Tallinna ja Harjumaa</strong> piirkonda.
                 Iga lahendus valmib vastavalt hoonele, kasutusharjumustele ja süsteemi eripäradele.
             </p><br>
 

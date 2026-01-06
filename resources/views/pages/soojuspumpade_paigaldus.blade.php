@@ -226,7 +226,7 @@
                         <li>Küttesepp pakub oma teenust üle Eesti</li>
 
                     </ul>
-                    <p>Enda asukohast lähtuvalt eelistame aga Tallinna ja harjumaa piirkonda.</p>
+                    <p>Enda asukohast lähtuvalt eelistan aga Tallinna ja harjumaa piirkonda.</p>
 
 
                     <div class="pildidiv" style="justify-self:flex-start;">

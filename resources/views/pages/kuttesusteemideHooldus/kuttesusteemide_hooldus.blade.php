@@ -45,7 +45,7 @@ küttesüsteemi hooldusteenus'"
                     <p>
                         Küttesepp OÜ teostab soojuspumpade ja küttesüsteemide hooldust eelkõige
                         <strong>Tallinnas ja Harjumaal</strong>. Olenevalt aastaajast ka üle Eesti.
-                        Teenindame eelkõige ühe- ja mitmepere eramuid ja ridaelamuid.
+                        Teenindan eelkõige ühe- ja mitmepere eramuid ja ridaelamuid.
                         </p>
 
                     <p>
