@@ -118,6 +118,12 @@ keskkonnasõbralik inhibiitor'" :ogImage="asset('images/serp/kuttesepp-og-inhibi
                         mahust.
                     </p>
 
+                          <p>
+                    Küttesepp OÜ pakub küttevee töötlemise teenust
+                    <strong>üle Eesti</strong>, eelistame siiski Tallinna ja Harjumaa piirkonda, kuna ise asume siin.<br>
+                    Teenuse teostame mobiilsete seadmetega objektil kohapeal.
+                    </p>
+
                     <hr class="red-line" style="margin-top:40px; margin-bottom:40px;">
 
                     <!-- FAQ AKORDION -->

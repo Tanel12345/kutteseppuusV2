@@ -8,7 +8,7 @@
         eriStiil="object-position: bottom;" :textholderStyle="''" />
 <section class="piltlingid" id="piltlingid">
 
-    <h2 style="font-size:32px;font-weight:400;margin:50px 0 0;text-align:center;">
+    <h2 style="font-size:32px;font-weight:400;margin:50px 15px 0 15px;text-align:center;">
         VALI SOBIV SOOJUSPUMBA TÜÜP
     </h2>
 

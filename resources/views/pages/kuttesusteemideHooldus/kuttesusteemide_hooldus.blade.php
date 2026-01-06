@@ -1,4 +1,4 @@
-<x-layout :title="'Küttesüsteemide hooldus – soojuspumbad, pelletikatlad, kaminad ja pliidid | Küttesepp'" :metaDescription="'Küttesepp OÜ teostab küttesüsteemide hooldust: õhk-õhk, õhk-vesi ja maakütte soojuspumbad, pelletikatlad, kaminad, keskkütte pliidid ja kaminad. Kontroll, puhastus ja süsteemi tööparameetrite reguleerimine enne kütteperioodi või rikke ennetamiseks.'" :metaKeywords="'küttesüsteemide hooldus,
+<x-layout :title="'Küttesüsteemide ja soojuspumpade hooldus Tallinnas | Küttesepp'" :metaDescription="'Soojuspumpade ja küttesüsteemide hooldus Tallinnas ja Harjumaal. õhk-õhk, õhk-vesi ja maakütte soojuspumbad, pelletikatlad ja kaminad. Küttesepp OÜ teostab põhjaliku hoolduse, vaatab teie küttesüsteemi üle.'" :metaKeywords="'küttesüsteemide hooldus,
 soojuspumba hooldus,
 õhk-vesi hooldus,
 maakütte hooldus,
@@ -16,7 +16,7 @@ küttesüsteemi hooldusteenus'"
             <div class="taustadiv">
                 <div class="textholderdiv">
                     <div class="textholder">
-                        <h1>Küttesüsteemide hooldus – soojuspump või tahkekütteseade</h1>
+                        <h1>Küttesüsteemide hooldus – soojuspumpade hooldus või tahkekütteseadmed</h1>
                     </div>
                 </div>
                 <img class="taust" src="{{ asset('images/taustad/kuttesusteemide-hooldus.webp') }}"
@@ -42,11 +42,16 @@ küttesüsteemi hooldusteenus'"
                         Aastatega kuluvad süsteemi liikuvad osad, mudapüünistesse kogunevad setted, kusagilt võib hakata
                         tilkuma, rõhud muutuvad ning automaatika vajab ülevaatust.
                     </p>
+                    <p>
+                        Küttesepp OÜ teostab soojuspumpade ja küttesüsteemide hooldust
+                        <strong>Tallinnas ja üle kogu Harjumaa</strong>.
+                        Teenindame nii eramuid, ridaelamuid kui ka väiksemaid ärihooneid.
+                        </p>
 
                     <p>
-                        <strong>Küttesepp OÜ</strong> teostab hooldust eelkõige seadmetele, mida ise müüb ja paigaldab.
+                        <strong>Küttesepp OÜ</strong> teostab hooldust eelkõige seadmetele millega ise oleme kokku puutunud või mida ise müüme.
                         See tagab kvaliteedi, tootjapoolse garantiisobivuse ning põhjaliku tundmise just nende seadmete
-                        ehitusest ja töörežiimidest.
+                        ehitusest ja töörežiimidest. Küsi julgelt oma küttesüsteemi hoolduse võimaluse kohta.
                     </p>
 
                     <p>

@@ -18,20 +18,21 @@
   justify-content: center;
   align-items: center;
   max-width: 1300px;           /* Set the width of the brands container */
-  margin: 20px auto 60px;    
+  margin: 20px auto 50px;    
         /* Center .brands horizontally */
   text-align: center; 
   padding: 25px; 
-  gap:3rem;  /* Ensure <h2> inside brands is centered */
+  gap:2rem;  /* Ensure <h2> inside brands is centered */
 }
 .brandboxes{border-style: solid;
   border-color: #ff0100;
   border-style: solid;
   border-width: 2px;
-  padding: 20px;
+  padding: 25px;
   width:250px;
   height:120px;
-  box-shadow:  0 5px 7px rgba(0, 0, 0, 0.3);}
+  box-shadow:  0 5px 7px rgba(0, 0, 0, 0.3);
+ border-radius: 15px;}
 
   .brandboxes:hover {
     transition-duration: 0.5s;
@@ -345,3 +346,16 @@
    box-shadow: 10px 14px 10px rgba(0, 0, 0, 0.3);
    cursor: pointer;
  }
+
+
+
+
+ @media screen and (max-width: 755px)   {
+.brandboxes{
+ padding: 15px;
+  width:190px;
+  height:80px;
+ }
+
+
+    }

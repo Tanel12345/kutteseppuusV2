@@ -177,3 +177,34 @@
     </header>
 </div>
 
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll(".bottom-rightdiv a > img").forEach(img => {
+    img.addEventListener("click", e => {
+      // ära mine linki
+      e.preventDefault();
+      e.stopPropagation();
+
+      const li = img.closest("li");
+      const popup = li?.querySelector(".popup");
+
+      if (!popup) return;
+
+      // sulge teised
+      document.querySelectorAll(".popup.show").forEach(p => {
+        if (p !== popup) p.classList.remove("show");
+      });
+
+      popup.classList.toggle("show");
+    });
+  });
+
+  // klikk väljaspool sulgeb
+  document.addEventListener("click", () => {
+    document.querySelectorAll(".popup.show").forEach(p =>
+      p.classList.remove("show")
+    );
+  });
+});
+</script>
+

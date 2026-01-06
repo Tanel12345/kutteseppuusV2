@@ -170,6 +170,7 @@ katlakivi eemaldus'"
                         Reaalses süsteemis võib see koos vee tugeva ringlusega siiski kaasa viia ka katlakivi ja
                         korrosioonijääkidega segunenud setteid.
                     </p>
+                   
                     <div class="pildidiv">
                         <img class="tootjastpilt"
                              src=""
@@ -180,7 +181,10 @@ katlakivi eemaldus'"
 
                     <hr class="red-line" style="margin-top:40px; margin-bottom:40px;">
 
-
+                    <p>
+                    Teenust pakume <strong>üle Eesti</strong>, eelistatult siiski Tallinna ja Harjumaa piirkonnas.
+                    Läbipesu teostame mobiilse seadmega objektil kohapeal.
+                    </p>
                     <!-- FAQ -->
                     <div class="faq-container" itemscope itemtype="https://schema.org/FAQPage">
 

@@ -261,6 +261,11 @@ header.animate {
   vertical-align:bottom;
 }
 
+.popup.show {
+  display: block;
+  animation: slideIn 0.4s ease forwards;
+}
+
 
 .logo {
   width: 270px;

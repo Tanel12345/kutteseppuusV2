@@ -126,6 +126,11 @@ soojuspumba hooldus'" :metaAuthor="'Tanel Sepp'" :robots="'index, follow'" :ogIm
                             süsteemile lisada spetsiaalse juurdetäite filtri.
                         </strong>
                     </p>
+                    <p>
+                    Küttesepp OÜ pakub küttevee demineraliseerimise teenust
+                    <strong>üle Eesti</strong>, eelistame siiski Tallinna ja Harjumaa piirkonda, kuna asume ise siin.<br>
+                    Teenuse teostame mobiilse seadmega objektil kohapeal.
+                    </p>
 
                     <hr class="red-line" style="margin-top:40px; margin-bottom:40px;">
 
