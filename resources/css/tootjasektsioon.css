@@ -40,7 +40,7 @@
    font-size: 30px;
    letter-spacing: 4px;
    margin-bottom: 30px;
-   line-height: 35px;
+  
  }
  ul.rohelise-linnukesega {
   margin:20px 0 40px 0;
@@ -225,7 +225,7 @@ h4{font-size: 20px;font-weight: 600;
 
   p{font-size: 15px;}
   .content ul li {font-size: 17px;}
-  .ettevotte h2  {font-size: 25px;}
+  
   .ettevotte h2 span  {font-size: 27px;}
   .content h3 strong {font-size: 20px;line-height: 27px;}
   .content h3 {font-size: 20px;line-height: 27px;}

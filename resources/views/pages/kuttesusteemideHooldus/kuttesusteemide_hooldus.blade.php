@@ -16,7 +16,7 @@ küttesüsteemi hooldusteenus'"
             <div class="taustadiv">
                 <div class="textholderdiv">
                     <div class="textholder">
-                        <h1>Küttesüsteemide hooldus – soojuspumpade hooldus või tahkekütteseadmed</h1>
+                        <h1>Küttesüsteemide ja soojuspumpade hooldus</h1>
                     </div>
                 </div>
                 <img class="taust" src="{{ asset('images/taustad/kuttesusteemide-hooldus.webp') }}"
@@ -43,7 +43,7 @@ küttesüsteemi hooldusteenus'"
                         tilkuma, rõhud muutuvad ning automaatika vajab ülevaatust.
                     </p>
                     <p>
-                        Küttesepp OÜ teostab soojuspumpade ja küttesüsteemide hooldust eelkõige
+                        Küttesepp OÜ teostab soojuspumpade ja küttesüsteemide hooldust, enda asukohta arvestades, eelkõige
                         <strong>Tallinnas ja Harjumaal</strong>. Olenevalt aastaajast ka üle Eesti.
                         Teenindan eelkõige ühe- ja mitmepere eramuid ja ridaelamuid.
                         </p>

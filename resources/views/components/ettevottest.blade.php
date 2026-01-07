@@ -3,11 +3,11 @@
         <div class="kyttesepp">
             <h2><span>Küttesepp</span> - küttesüsteemide terviklahendused ja hooldus</h2>
             <p>OÜ Küttesepp pakub kaasaegseid ja tõhusaid küttesüsteeme ja -seadmeid Eesti kodudesse.<br>
-                Aitan sul leida tervikliku küttelahenduse vastavalt soovidele ja võimalustele.<br> Kui vajad nõu
+                Personaalse abimehena aitan sul leida tervikliku küttelahenduse vastavalt soovidele ja võimalustele.<br> Kui vajad nõu
                 küttesüsteemi valikut tehes, seadmete paigalduse ning süsteemi ehituseni välja, siis oled õiges kohas.
             </p><br>
             <p>
-                Töötan üle Eesti, kuid eelistan eelkõige <strong>Tallinna ja Harjumaa</strong> piirkonda.
+                Olenevalt teenusest töötan üle Eesti, kuid enda asukoha tõttu eelistan eelkõige <strong>Tallinna ja Harjumaa</strong> piirkonda.<br>
                 Iga lahendus valmib vastavalt hoonele, kasutusharjumustele ja süsteemi eripäradele.
             </p><br>
 
@@ -33,14 +33,13 @@
 
             <h3>Miks valida Küttesepp?</h3>
             <p>
-                Küttesepp on mikroettevõte, kus kogu töö eest vastutab üks meister.
-                <strong>Tanel</strong> on küttesüsteemide valdkonnas tegutsenud alates <strong>2003. aastast</strong>.<br>
-                Tööd tehakse etapiviisiliselt – järgmine samm algab alles siis, kui eelmine on lõpetatud.
+                Küttesepp on mikroettevõte, kus töö eest vastutab üks meister <strong>Tanel</strong>.<br>
+                 Ta on küttesüsteemide valdkonnas tegutsenud alates <strong>2003. aastast</strong>.<br>
+                Tööd teostan, kas abilisega või ilma, etapiviisiliselt – järgmine samm algab alles siis, kui eelmine on lõpetatud.<br>
             </p>
 
             <p>
-                Selline töökorraldus vähendab riske, hoiab kvaliteeti ning tagab, et küttesüsteem
-                töötab ka aastaid pärast paigaldust või hooldust.
+                Selline töökorraldus vähendab riske, minimeerib kommunikatsioonikao, hoiab kvaliteeti ning tagab, et küttesüsteemi kõik kitsaskohad on läbi mõeldud ja tõrgeteta töö toimib ka aastaid pärast paigaldust või hooldust.
             </p><br>
 
             <h3>Põhiteenused</h3>
@@ -61,7 +60,7 @@
         </div>
 
         <div class="soojuspumpadest">
-             <h2>Soojuspumbad ja tahkekütteseadmed – töökindlus enne kõike</h2>
+             <h2>Soojuspumbad ja tahkekütteseadmed – töökindlus on prioriteet</h2>
 
             <p>
                 Kaasaegsed soojuspumbad pakuvad energiasäästlikku ja mugavat kütet nii uutes kui renoveeritavates hoonetes.
@@ -70,7 +69,7 @@
             </p>
 
             <p>
-                Küttesepp teostab küttesüsteemide hooldust, läbipesu ja küttevee töötlust
+                Küttesepp teostab küttesüsteemide paigaldusele lisaks hooldust, läbipesu ja küttevee töötlust
                 vastavalt tootjate nõuetele ja kehtivatele standarditele.
             </p><br>
 

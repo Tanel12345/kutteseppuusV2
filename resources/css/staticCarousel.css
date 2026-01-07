@@ -75,7 +75,7 @@
   font-weight: 900;
  
   padding: 12px;
-  line-height: 28px;
+  line-height: 26px;
   letter-spacing: 1px;
   margin-bottom:20px
   
@@ -101,7 +101,7 @@
  
   font-size: 1.4rem;
   font-weight: 300;
-  line-height: 0px;
+
  
 }
 @keyframes h1slide {
@@ -135,12 +135,11 @@
     color: black;
     font-size: 1.4rem;
     padding: 8px;
-    line-height: 25px;
     letter-spacing: 1px;
   }
   .carousel span {
     font-size: 1.2rem;
-    line-height: 25px;
+    
   }
   .carousel p {
    
