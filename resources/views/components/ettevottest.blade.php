@@ -33,9 +33,9 @@
 
             <h3>Miks valida Küttesepp?</h3>
             <p>
-                Küttesepp on mikroettevõte, kus töö eest vastutab üks meister <strong>Tanel</strong>.<br>
-                 Ta on küttesüsteemide valdkonnas tegutsenud alates <strong>2003. aastast</strong>.<br>
-                Tööd teostan, kas abilisega või ilma, etapiviisiliselt – järgmine samm algab alles siis, kui eelmine on lõpetatud.<br>
+                Küttesepp on mikroettevõte, kus töö eest vastutab üks meister <strong>Tanel</strong>.
+                 Olen küttesüsteemide valdkonnas tegutsenud alates <strong>2003. aastast</strong>.<br>
+                Töid teostan, kas abilisega või ilma, etapiviisiliselt – järgmine samm algab alles siis, kui eelmine on lõpetatud.<br>
             </p>
 
             <p>
