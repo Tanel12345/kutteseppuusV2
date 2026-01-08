@@ -15,7 +15,11 @@
     <meta property="og:title" content="{{ $title ?? 'Küttesepp - Küttemurede lahendaja' }}">
     <meta property="og:description"
         content="{{ $metaDescription ?? 'Pakume küttesüsteeme ja paigaldust kogu Eestis. Vaata lähemalt!' }}">
-    <meta property="og:url" content="{{ url()->current() }}">
+    @if (request()->has('brand'))
+        <meta property="og:url" content="{{ route('soojuspumbad.type', $typeSlug ?? request()->route('type')) }}">
+    @else
+        <meta property="og:url" content="{{ request()->fullUrl() }}">
+    @endif
     <meta property="og:type" content="website">
     <meta property="og:locale" content="et_EE">
 
@@ -27,9 +31,17 @@
 
     <!-- Lingid -->
     {{-- <link rel="canonical" href="{{ url()->current() }}" /> --}}
-    <link rel="canonical" href="{{ request()->fullUrl() }}">
-    
-    <meta name="robots" content="{{ $robots ?? 'index, follow, max-image-preview:large' }}">
+    @if (request()->has('brand'))
+        {{-- Filtrivaade: ÄRA indexi, canonical põhilehele --}}
+       <link rel="canonical" href="{{ route('soojuspumbad.type', $typeSlug ?? request()->route('type')) }}">
+    <meta name="robots" content="noindex, follow">
+    <meta name="googlebot" content="noindex, follow">
+    @else
+        {{-- Päris SEO-leht --}}
+        <link rel="canonical" href="{{ request()->fullUrl() }}">
+        <meta name="robots" content="{{ $robots ?? 'index, follow, max-image-preview:large' }}">
+    @endif
+
 
     <!-- favikoonid erinevatesse kohtadesse ja seadmetesse, kasutasin realfavicongeneratorit -->
     <link rel="icon" href="/favicon-48x48.png" sizes="48x48" type="image/png">
