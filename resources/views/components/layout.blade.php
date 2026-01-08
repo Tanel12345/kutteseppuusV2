@@ -26,7 +26,8 @@
     <meta property="og:image:type" content="image/webp">
 
     <!-- Lingid -->
-    <link rel="canonical" href="{{ url()->current() }}" />
+    {{-- <link rel="canonical" href="{{ url()->current() }}" /> --}}
+    <link rel="canonical" href="{{ request()->fullUrl() }}">
     
     <meta name="robots" content="{{ $robots ?? 'index, follow, max-image-preview:large' }}">
 
