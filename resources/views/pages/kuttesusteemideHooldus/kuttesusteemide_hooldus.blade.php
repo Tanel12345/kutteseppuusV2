@@ -43,13 +43,13 @@ küttesüsteemi hooldusteenus'"
                         tilkuma, rõhud muutuvad ning automaatika vajab ülevaatust.
                     </p>
                     <p>
-                        Küttesepp OÜ teostab soojuspumpade ja küttesüsteemide hooldust, enda asukohta arvestades, eelkõige
-                        <strong>Tallinnas ja Harjumaal</strong>. Olenevalt aastaajast ka üle Eesti.
+                        Küttesepp OÜ teostab soojuspumpade ja küttesüsteemide hooldust enda asukohta arvestades eelkõige
+                        <strong>Tallinnas ja Harjumaal</strong>. Olenevalt aastaajast liigun ka kaugemale.
                         Teenindan eelkõige ühe- ja mitmepere eramuid ja ridaelamuid.
                         </p>
 
                     <p>
-                        <strong>Küttesepp OÜ</strong> teostab hooldust eelkõige seadmetele millega ise oleme kokku puutunud või mida ise müüme.
+                        <strong>Küttesepp OÜ</strong> pakub oma teenust eelkõige seadmetele millega ise oleme kokku puutunud või mida ise müüme.
                         See tagab kvaliteedi, tootjapoolse garantiisobivuse ning põhjaliku tundmise just nende seadmete
                         ehitusest ja töörežiimidest. Küsi julgelt oma küttesüsteemi hoolduse võimaluse kohta.
                     </p>

@@ -80,7 +80,7 @@
 <main>
 <section class="ettevottestsekts">
 <div class="ettevõttest">
-<div class="ahjumees" style="margin-top:50px;">
+<div class="ahjumees" style="margin:50px 25px 30px 25px;">
 
 <h2><span>Privaatsusinfo<br></span></h2>
 

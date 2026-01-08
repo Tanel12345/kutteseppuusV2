@@ -34,7 +34,7 @@
     <link rel="icon" href="/favicon-48x48.png" sizes="48x48" type="image/png">
     <link rel="icon" href="/favicon-96x96.png" sizes="96x96" type="image/png">
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="icon" href="/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="manifest" href="/site.webmanifest" />
 

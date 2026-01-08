@@ -12,7 +12,7 @@
         <div class="heading">
             <h1>Soojuspumbad ja küttesüsteemid <br> <span>Tallinnas ja Harjumaal</span></h1>
             <h2>Õhk-õhk | õhk-vesi | maakütte soojuspumbad ning tahkekütteseadmed</h2>
-            <h3>Sinu küttemurede lahendaja</h3>
+            <h3>Lahendame Sinu küttemure</h3>
 
             <img
                 src="{{ asset('images/küttesepp_logo1.png') }}"
@@ -50,8 +50,7 @@
                         data-src="{{ asset('images/taustad/Es_soojuspump5.webp') }}"
                         alt="Õhk-vesi soojuspump eramajale – Küttesepp paigaldus"
                         title="ES õhk-vesi soojuspump"
-                        class="carousel-img"
-                        loading="lazy">
+                        class="carousel-img">
                 </li>
             </ul>
 
@@ -62,8 +61,7 @@
                         data-src="{{ asset('images/taustad/Es_soojuspump6.webp') }}"
                         alt="Õhk-vesi soojuspump – ES Energy Save"
                         title="ES Energy Save soojuspump"
-                        class="carousel-img"
-                        loading="lazy">
+                        class="carousel-img">
                 </li>
             </ul>
 
@@ -74,8 +72,7 @@
                         data-src="{{ asset('images/taustad/ALPHA-ohk-vesi.webp') }}"
                         alt="Alpha Innotec õhk-vesi soojuspump küttesüsteemis"
                         title="Alpha Innotec õhk-vesi soojuspump"
-                        class="carousel-img"
-                        loading="lazy">
+                        class="carousel-img">
                 </li>
             </ul>
 
@@ -86,8 +83,7 @@
                         data-src="{{ asset('images/taustad/ALPHA-maasoojus.webp') }}"
                         alt="Maakütte soojuspump – energiatõhus lahendus"
                         title="Alpha Innotec maakütte soojuspump"
-                        class="carousel-img"
-                        loading="lazy">
+                        class="carousel-img">
                 </li>
             </ul>
 
