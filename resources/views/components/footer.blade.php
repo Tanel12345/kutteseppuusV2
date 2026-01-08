@@ -42,7 +42,7 @@
             <div class="centerdiv">
             <p>C Copyright - Küttesepp {{ date('Y')}} </p>
             </div>
-            <a href="www.facebook.ee/kuttesepp" target="_blank"><img src="{{ asset('images/icons/facebook.png') }}" alt="facebook Küttesepp"></a>
+            <a href="https://www.facebook.com/kuttesepp" target="_blank" rel="noopener noreferrer"><img src="{{ asset('images/icons/facebook.png') }}" alt="facebook Küttesepp"></a>
         </div>
     </div>
     

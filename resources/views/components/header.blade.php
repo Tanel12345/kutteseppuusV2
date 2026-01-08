@@ -9,7 +9,7 @@
                     +37256681555
                 </a>
 
-                <a style="cursor:auto;" href="tanel@kuttesepp.ee">
+                <a style="cursor:auto;" href="mailto:tanel@kuttesepp.ee">
                     <img src="{{ asset('images/icons/küttesepp.png') }}" alt="Küttesepa email" />
                     tanel[ät]kuttesepp.ee
                 </a>
@@ -45,7 +45,7 @@
         {{-- ALUMINE NAV --}}
         <nav class="bottom-nav">
 
-            <a href="https://www.facebook.com/kuttesepp" target="_blank">
+            <a href="https://www.facebook.com/kuttesepp" target="_blank" rel="noopener noreferrer">
                 <img class="facebook" src="{{ asset('images/icons/facebook.png') }}"
                     alt="facebook logo" />
             </a>
