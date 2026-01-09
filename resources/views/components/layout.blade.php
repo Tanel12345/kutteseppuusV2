@@ -15,11 +15,23 @@
     <meta property="og:title" content="{{ $title ?? 'Küttesepp - Küttemurede lahendaja' }}">
     <meta property="og:description"
         content="{{ $metaDescription ?? 'Pakume küttesüsteeme ja paigaldust kogu Eestis. Vaata lähemalt!' }}">
-    @if (request()->has('brand'))
-        <meta property="og:url" content="{{ route('soojuspumbad.type', $typeSlug ?? request()->route('type')) }}">
+    @if (request()->has('brand') &&
+            (Route::is('soojuspumbad.*') ||
+                Route::is('pelletikatladJaKaminad.index') ||
+                Route::is('keskkuttepliididJaKaminad.index')))
+
+        @if (Route::is('soojuspumbad.*'))
+            <meta property="og:url" content="{{ route('soojuspumbad.type', $typeSlug ?? request()->route('type')) }}">
+        @elseif (Route::is('pelletikatladJaKaminad.index'))
+            <meta property="og:url" content="{{ route('pelletikatladJaKaminad.index') }}">
+        @elseif (Route::is('keskkuttepliididJaKaminad.index'))
+            <meta property="og:url" content="{{ route('keskkuttepliididJaKaminad.index') }}">
+        @endif
     @elseif (request()->has('product'))
+        {{-- Kontaktivormi eeltäide --}}
         <meta property="og:url" content="{{ url('/') }}">
     @else
+        {{-- Päris SEO-leht --}}
         <meta property="og:url" content="{{ request()->fullUrl() }}">
     @endif
     <meta property="og:type" content="website">
@@ -32,10 +44,20 @@
     <meta property="og:image:type" content="image/webp">
 
     <!-- Lingid -->
-    {{-- <link rel="canonical" href="{{ url()->current() }}" /> --}}
-    @if (request()->has('brand'))
+    @if (request()->has('brand') &&
+            (Route::is('soojuspumbad.*') ||
+                Route::is('pelletikatladJaKaminad.index') ||
+                Route::is('keskkuttepliididJaKaminad.index')))
+
         {{-- Filtrivaade: ÄRA indexi, canonical põhilehele --}}
-        <link rel="canonical" href="{{ route('soojuspumbad.type', $typeSlug ?? request()->route('type')) }}">
+        @if (Route::is('soojuspumbad.*'))
+            <link rel="canonical" href="{{ route('soojuspumbad.type', $typeSlug ?? request()->route('type')) }}">
+        @elseif (Route::is('pelletikatladJaKaminad.index'))
+            <link rel="canonical" href="{{ route('pelletikatladJaKaminad.index') }}">
+        @elseif (Route::is('keskkuttepliididJaKaminad.index'))
+            <link rel="canonical" href="{{ route('keskkuttepliididJaKaminad.index') }}">
+        @endif
+
         <meta name="robots" content="noindex, follow">
         <meta name="googlebot" content="noindex, follow">
     @elseif (request()->has('product'))
