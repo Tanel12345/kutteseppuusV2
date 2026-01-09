@@ -17,6 +17,8 @@
         content="{{ $metaDescription ?? 'Pakume küttesüsteeme ja paigaldust kogu Eestis. Vaata lähemalt!' }}">
     @if (request()->has('brand'))
         <meta property="og:url" content="{{ route('soojuspumbad.type', $typeSlug ?? request()->route('type')) }}">
+    @elseif (request()->has('product'))
+        <meta property="og:url" content="{{ url('/') }}">
     @else
         <meta property="og:url" content="{{ request()->fullUrl() }}">
     @endif
@@ -33,9 +35,14 @@
     {{-- <link rel="canonical" href="{{ url()->current() }}" /> --}}
     @if (request()->has('brand'))
         {{-- Filtrivaade: ÄRA indexi, canonical põhilehele --}}
-       <link rel="canonical" href="{{ route('soojuspumbad.type', $typeSlug ?? request()->route('type')) }}">
-    <meta name="robots" content="noindex, follow">
-    <meta name="googlebot" content="noindex, follow">
+        <link rel="canonical" href="{{ route('soojuspumbad.type', $typeSlug ?? request()->route('type')) }}">
+        <meta name="robots" content="noindex, follow">
+        <meta name="googlebot" content="noindex, follow">
+    @elseif (request()->has('product'))
+        {{-- Kontaktivormi eel­täide – MITTE SEO-leht --}}
+        <link rel="canonical" href="{{ url('/') }}">
+        <meta name="robots" content="noindex, follow">
+        <meta name="googlebot" content="noindex, follow">
     @else
         {{-- Päris SEO-leht --}}
         <link rel="canonical" href="{{ request()->fullUrl() }}">
