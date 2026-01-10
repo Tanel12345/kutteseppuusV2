@@ -182,7 +182,7 @@ katlakivi eemaldus'"
                     <hr class="red-line" style="margin-top:40px; margin-bottom:40px;">
 
                     <p>
-                    Teenust pakun <strong>üle Eesti</strong>, eelistatult siiski Tallinna ja Harjumaa piirkonnas.
+                    Teenust pakun <strong>üle Eesti</strong>, kuid enda asukoha tõttu eelistan siiski Tallinna ja Harjumaa piirkonda.<br>
                     Läbipesu teostan mobiilse seadmega objektil kohapeal.
                     </p>
                     <!-- FAQ -->

@@ -13,7 +13,7 @@
     Maasoojuspumbad on erakordselt energiasäästlikud ja sobivad eriti hästi suurema energiavajadusega majadele. Süsteem pakub ühtlast kütet ja tarbevee soojendust aastaringselt, sõltumata välisõhu temperatuurist.
     <br>Eeliste hulka kuuluvad madalad püsikulud, pikaajaline investeering, kõrge kasutegur ning minimaalne hooldusvajadus.
     <br>Miinusteks võivad olla suurem alginvesteering ja maapinna kaevetööde vajadus.
-    <br><br>Küttesepalt leiad kvaliteetsed maasoojuspumbad koos professionaalse paigalduse ja järelteenindusega."
+    <br><br>Küttesepalt leiad kvaliteetsed maasoojuspumbad koos professionaalse paigalduse ja järelteenindusega. Paigaldusteenust pakume nii enda lähedal <strong>Tallinna ja Harjumaa piirkonnas</strong> kui ka kaugemal üle Eesti."
     image="images/taustad/maasoojuspumbad-taust.webp"
     imageAlt="Maasoojuspumbad taust"
     eriStiil="object-position: bottom;"
