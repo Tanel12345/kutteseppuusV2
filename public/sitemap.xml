@@ -5,158 +5,183 @@
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
-
-
 <url>
-  <loc>https://kuttesepp.ee/</loc>
+  <loc>https://www.kuttesepp.ee/</loc>
   <lastmod>2026-01-08T11:40:36+00:00</lastmod>
   <priority>1.00</priority>
 </url>
+
 <url>
-  <loc>https://kuttesepp.ee/soojuspumpade-paigaldus</loc>
+  <loc>https://www.kuttesepp.ee/soojuspumpade-paigaldus</loc>
+  <lastmod>2026-01-08T11:40:36+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://www.kuttesepp.ee/kuttesusteemi-vesi</loc>
+  <lastmod>2026-01-08T11:40:36+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://www.kuttesepp.ee/kutteautomaatika</loc>
+  <lastmod>2026-01-08T11:40:36+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://www.kuttesepp.ee/poranda-ja-radiaatorkute</loc>
+  <lastmod>2026-01-08T11:40:36+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://www.kuttesepp.ee/soojuspumbad</loc>
+  <lastmod>2026-01-08T11:40:36+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://www.kuttesepp.ee/soojuspumbad/ohk-ohk-soojuspumbad</loc>
+  <lastmod>2026-01-08T11:40:36+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://www.kuttesepp.ee/soojuspumbad/ohk-vesi-soojuspumbad</loc>
+  <lastmod>2026-01-08T11:40:36+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://www.kuttesepp.ee/soojuspumbad/maasoojuspumbad</loc>
+  <lastmod>2026-01-08T11:40:36+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://www.kuttesepp.ee/tahkekutteseadmed</loc>
+  <lastmod>2026-01-08T11:40:36+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://www.kuttesepp.ee/pelletikatlad-kaminad</loc>
+  <lastmod>2026-01-08T11:40:36+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://www.kuttesepp.ee/keskkuttepliidid-kaminad</loc>
+  <lastmod>2026-01-08T11:40:36+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://www.kuttesepp.ee/kuttesusteemide-hooldus</loc>
+  <lastmod>2026-01-08T11:40:36+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://www.kuttesepp.ee/kuttevee-demineraliseerimine</loc>
+  <lastmod>2026-01-08T11:40:36+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://www.kuttesepp.ee/kuttevee-inhibiitorid</loc>
+  <lastmod>2026-01-08T11:40:36+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://www.kuttesepp.ee/kuttesusteemi-labipesu</loc>
+  <lastmod>2026-01-08T11:40:36+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://www.kuttesepp.ee/tehtud-tood</loc>
   <lastmod>2026-01-08T11:40:36+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://kuttesepp.ee/kuttesusteemi-vesi</loc>
+  <loc>https://www.kuttesepp.ee/tootja/bosch?type=ohk-ohk-soojuspumbad</loc>
   <lastmod>2026-01-08T11:40:36+00:00</lastmod>
   <priority>0.80</priority>
 </url>
+
 <url>
-  <loc>https://kuttesepp.ee/kutteautomaatika</loc>
+  <loc>https://www.kuttesepp.ee/tootja/midea?type=ohk-ohk-soojuspumbad</loc>
   <lastmod>2026-01-08T11:40:36+00:00</lastmod>
   <priority>0.80</priority>
 </url>
+
 <url>
-  <loc>https://kuttesepp.ee/poranda-ja-radiaatorkute</loc>
+  <loc>https://www.kuttesepp.ee/tootja/samsung?type=ohk-ohk-soojuspumbad</loc>
   <lastmod>2026-01-08T11:40:36+00:00</lastmod>
   <priority>0.80</priority>
 </url>
+
 <url>
-  <loc>https://kuttesepp.ee/soojuspumbad</loc>
+  <loc>https://www.kuttesepp.ee/tootja/es?type=ohk-vesi-soojuspumbad</loc>
   <lastmod>2026-01-08T11:40:36+00:00</lastmod>
   <priority>0.80</priority>
 </url>
+
 <url>
-  <loc>https://kuttesepp.ee/soojuspumbad/ohk-ohk-soojuspumbad</loc>
+  <loc>https://www.kuttesepp.ee/tootja/alpha-innotec?type=ohk-vesi-soojuspumbad</loc>
   <lastmod>2026-01-08T11:40:36+00:00</lastmod>
   <priority>0.80</priority>
 </url>
+
 <url>
-  <loc>https://kuttesepp.ee/soojuspumbad/ohk-vesi-soojuspumbad</loc>
+  <loc>https://www.kuttesepp.ee/tootja/samsung?type=ohk-vesi-soojuspumbad</loc>
   <lastmod>2026-01-08T11:40:36+00:00</lastmod>
   <priority>0.80</priority>
 </url>
+
 <url>
-  <loc>https://kuttesepp.ee/soojuspumbad/maasoojuspumbad</loc>
+  <loc>https://www.kuttesepp.ee/tootja/bosch?type=ohk-vesi-soojuspumbad</loc>
   <lastmod>2026-01-08T11:40:36+00:00</lastmod>
   <priority>0.80</priority>
 </url>
+
 <url>
-  <loc>https://kuttesepp.ee/tahkekutteseadmed</loc>
+  <loc>https://www.kuttesepp.ee/tootja/alpha-innotec?type=maasoojuspumbad</loc>
   <lastmod>2026-01-08T11:40:36+00:00</lastmod>
   <priority>0.80</priority>
 </url>
+
 <url>
-  <loc>https://kuttesepp.ee/pelletikatlad-kaminad</loc>
+  <loc>https://www.kuttesepp.ee/tootja/bosch?type=maasoojuspumbad</loc>
   <lastmod>2026-01-08T11:40:36+00:00</lastmod>
   <priority>0.80</priority>
 </url>
+
 <url>
-  <loc>https://kuttesepp.ee/keskkuttepliidid-kaminad</loc>
+  <loc>https://www.kuttesepp.ee/kuidas-saasta-kuttekuludelt</loc>
   <lastmod>2026-01-08T11:40:36+00:00</lastmod>
   <priority>0.80</priority>
 </url>
+
 <url>
-  <loc>https://kuttesepp.ee/kuttesusteemide-hooldus</loc>
-  <lastmod>2026-01-08T11:40:36+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://kuttesepp.ee/kuttevee-demineraliseerimine</loc>
-  <lastmod>2026-01-08T11:40:36+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://kuttesepp.ee/kuttevee-inhibiitorid</loc>
-  <lastmod>2026-01-08T11:40:36+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://kuttesepp.ee/kuttesusteemi-labipesu</loc>
-  <lastmod>2026-01-08T11:40:36+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://kuttesepp.ee/tehtud-tood</loc>
-  <lastmod>2026-01-08T11:40:36+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://kuttesepp.ee/tootja/bosch?type=ohk-ohk-soojuspumbad</loc>
-  <lastmod>2026-01-08T11:40:36+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://kuttesepp.ee/tootja/midea?type=ohk-ohk-soojuspumbad</loc>
-  <lastmod>2026-01-08T11:40:36+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://kuttesepp.ee/tootja/samsung?type=ohk-ohk-soojuspumbad</loc>
-  <lastmod>2026-01-08T11:40:36+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://kuttesepp.ee/tootja/es?type=ohk-vesi-soojuspumbad</loc>
-  <lastmod>2026-01-08T11:40:36+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://kuttesepp.ee/tootja/alpha-innotec?type=ohk-vesi-soojuspumbad</loc>
-  <lastmod>2026-01-08T11:40:36+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://kuttesepp.ee/tootja/samsung?type=ohk-vesi-soojuspumbad</loc>
-  <lastmod>2026-01-08T11:40:36+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://kuttesepp.ee/tootja/bosch?type=ohk-vesi-soojuspumbad</loc>
-  <lastmod>2026-01-08T11:40:36+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://kuttesepp.ee/tootja/alpha-innotec?type=maasoojuspumbad</loc>
-  <lastmod>2026-01-08T11:40:36+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://kuttesepp.ee/tootja/bosch?type=maasoojuspumbad</loc>
-  <lastmod>2026-01-08T11:40:36+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://kuttesepp.ee/kuidas-saasta-kuttekuludelt</loc>
-  <lastmod>2026-01-08T11:40:36+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://kuttesepp.ee/tehtud-tood/magnet-ja-mudafiltri-lisamine-susteemi-ja-kuttevee-tootlus</loc>
-  <lastmod>2026-01-08T11:40:36+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://kuttesepp.ee/tehtud-tood/ohk-vesi-soojuspumba-paigaldus-eramusse-laagris</loc>
-  <lastmod>2026-01-08T11:40:36+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://kuttesepp.ee/tehtud-tood/ohk-vesi-soojuspumba-paigaldus-suuremasse-eramusse</loc>
+  <loc>https://www.kuttesepp.ee/tehtud-tood/magnet-ja-mudafiltri-lisamine-susteemi-ja-kuttevee-tootlus</loc>
   <lastmod>2026-01-08T11:40:36+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 
+<url>
+  <loc>https://www.kuttesepp.ee/tehtud-tood/ohk-vesi-soojuspumba-paigaldus-eramusse-laagris</loc>
+  <lastmod>2026-01-08T11:40:36+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+<url>
+  <loc>https://www.kuttesepp.ee/tehtud-tood/ohk-vesi-soojuspumba-paigaldus-suuremasse-eramusse</loc>
+  <lastmod>2026-01-08T11:40:36+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
 
 </urlset>
