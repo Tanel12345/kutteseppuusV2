@@ -53,7 +53,9 @@ header.animate {
   }
 }
 
-
+.taust {
+    will-change: transform;
+}
 
 .header-container.scroll-down {
   position: sticky;
