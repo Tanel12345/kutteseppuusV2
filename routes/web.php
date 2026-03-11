@@ -18,7 +18,7 @@ return view('pages.privaatsuspoliitika');
 })->name('privaatsuspoliitika');
 
 
-Route::redirect('/kuttesusteemide-hooldus', '/remont-ja-hooldus', 301);
+Route::redirect('/kuttesusteemide-hooldus', '/hooldus-ja-remont', 301);
 
 
 
