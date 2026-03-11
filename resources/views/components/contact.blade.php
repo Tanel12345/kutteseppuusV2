@@ -112,7 +112,7 @@
     <br>
 
  <img
-    src="{{ asset('images/tanel.webp') }}"
+    src="{{ asset('images/tanel1.webp') }}"
     title="Tanel Sepp"
     alt="Tanel Sepp"
 >

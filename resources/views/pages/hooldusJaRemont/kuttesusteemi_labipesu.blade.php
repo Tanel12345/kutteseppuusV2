@@ -5,11 +5,8 @@ happeline süsteemipesu,
 aluselise keemiaga pesu,
 powerflush küttesüsteem,
 magnetiidi eemaldus,
-katlakivi eemaldus'" 
-:ogImage="asset('images/serp/kuttesepp-og-labipesu.webp')"
-:metaAuthor="'Tanel Sepp'" :robots="'index, follow'" 
-:viteCssAssets="['resources/css/pages/teenustelehed.css']"
-    :viteJsAssets="['resources/js/pages/teenustelehed.js']">
+katlakivi eemaldus'" :ogImage="asset('images/serp/kuttesepp-og-labipesu.webp')" :metaAuthor="'Tanel Sepp'" :robots="'index, follow'"
+    :viteCssAssets="['resources/css/pages/teenustelehed.css']" :viteJsAssets="['resources/js/pages/teenustelehed.js']">
 
     <section class="uper" id="uperid">
         <div class="carousel">
@@ -19,9 +16,8 @@ katlakivi eemaldus'"
                         <h1>Küttesüsteemi läbipesu – muda, rooste ja katlakivi eemaldamine</h1>
                     </div>
                 </div>
-                <img class="taust"
-                     src="{{ asset('images/taustad/labipesu.webp') }}"
-                     alt="Küttesüsteemi läbipesu ja puhastus">
+                <img class="taust" src="{{ asset('images/taustad/labipesu.webp') }}"
+                    alt="Küttesüsteemi läbipesu ja puhastus">
             </div>
         </div>
     </section>
@@ -32,9 +28,10 @@ katlakivi eemaldus'"
                 <div class="content">
 
                     <h2><span>Küttesüsteemi läbipesu</span> – süsteemi taastamine ja puhastus</h2>
-                   
 
-                    <p> Küttesüsteemi läbipesu on eriti oluline enne soojuspumba, kondensatsioonikatla või uue ringluspumba paigaldust, et vältida soojusvahetite ummistumist ja garantiiprobleeme.<br><br>
+
+                    <p> Küttesüsteemi läbipesu on eriti oluline enne soojuspumba, kondensatsioonikatla või uue
+                        ringluspumba paigaldust, et vältida soojusvahetite ummistumist ja garantiiprobleeme.<br><br>
                         Aastatega koguneb küttesüsteemi torustikku muda, rooste, magnetiit, katlakivi ning muud jäägid,
                         mis
                         vähendavad küttesüsteemi efektiivsust ja võivad põhjustada ringluspumba, soojusvaheti või
@@ -60,16 +57,16 @@ katlakivi eemaldus'"
                         Läbipesu valik sõltub probleemi olemusest, torustiku seisukorrast, materjalidest ja vee
                         kvaliteedist.
                         Pärast pesu saame vajadusel teha süsteemi täitmise vastavalt <strong><a style="font-size:18px"
-                                href="{{ route('kuttevee-demineraliseerimine') }}">VDI-2035</a></strong> standardile või lisame
+                                href="{{ route('kuttevee-demineraliseerimine') }}">VDI-2035</a></strong> standardile või
+                        lisame
                         <strong><a style="font-size:18px" href="{{ route('kuttevee-inhibiitorid') }}">küttevee
                                 inhibiitorid.</a></strong>
                     </p>
 
                     <div class="pildidiv">
-                        <img class="tootjastpilt"
-                             src=""
-                             data-src="{{ asset('images/vaikesed/kuttesusteemide-hooldus/labipesu.webp') }}"
-                             alt="Küttesüsteemi loputus veega ja õhuga">
+                        <img class="tootjastpilt" src=""
+                            data-src="{{ asset('images/vaikesed/kuttesusteemide-hooldus/labipesu.webp') }}"
+                            alt="Küttesüsteemi loputus veega ja õhuga">
                     </div>
 
                     <hr class="red-line">
@@ -93,13 +90,12 @@ katlakivi eemaldus'"
                     </p>
 
                     <div class="pildidiv" style="justify-self:flex-end;">
-                        <img class="tootjastpilt"
-                             src=""
-                             data-src="{{ asset('images/vaikesed/kuttesusteemide-hooldus/rothenberg-roplus.webp') }}"
-                             alt="Õhu ja vee loputus küttesüsteemile">
+                        <img class="tootjastpilt" src=""
+                            data-src="{{ asset('images/vaikesed/kuttesusteemide-hooldus/Läbipesu-seadmed.webp') }}"
+                            alt="Küttesüsteemi läbipesu ja remondi seadmed">
                     </div>
-
                     <hr class="red-line" style="justify-self:flex-end;">
+
 
 
                     <h3>Keemiaga läbipesu – happeline puhastus</h3>
@@ -125,10 +121,9 @@ katlakivi eemaldus'"
                     </p>
 
                     <div class="pildidiv">
-                        <img class="tootjastpilt"
-                             src=""
-                             data-src="{{ asset('images/vaikesed/kuttesusteemide-hooldus/happelise-keemiaga-pesu.webp') }}"
-                             alt="Happeline küttesüsteemi läbipesu">
+                        <img class="tootjastpilt" src=""
+                            data-src="{{ asset('images/vaikesed/kuttesusteemide-hooldus/happelise-keemiaga-pesu.webp') }}"
+                            alt="Happeline küttesüsteemi läbipesu">
                     </div>
 
                     <hr class="red-line">
@@ -170,20 +165,20 @@ katlakivi eemaldus'"
                         Reaalses süsteemis võib see koos vee tugeva ringlusega siiski kaasa viia ka katlakivi ja
                         korrosioonijääkidega segunenud setteid.
                     </p>
-                   
+
                     <div class="pildidiv">
-                        <img class="tootjastpilt"
-                             src=""
-                             data-src="{{ asset('images/vaikesed/kuttesusteemide-hooldus/aluselise-keemiaga-pesu.webp') }}"
-                             alt="Aluseline küttesüsteemi läbipesu">
+                        <img class="tootjastpilt" src=""
+                            data-src="{{ asset('images/vaikesed/kuttesusteemide-hooldus/aluselise-keemiaga-pesu.webp') }}"
+                            alt="Aluseline küttesüsteemi läbipesu">
 
                     </div>
 
                     <hr class="red-line" style="margin-top:40px; margin-bottom:40px;">
 
                     <p>
-                    Teenust pakun <strong>üle Eesti</strong>, kuid enda asukoha tõttu eelistan siiski Tallinna ja Harjumaa piirkonda.<br>
-                    Läbipesu teostan mobiilse seadmega objektil kohapeal.
+                        Teenust pakun <strong>üle Eesti</strong>, kuid enda asukoha tõttu eelistan siiski Tallinna ja
+                        Harjumaa piirkonda.<br>
+                        Läbipesu teostan mobiilse seadmega objektil kohapeal.
                     </p>
                     <!-- FAQ -->
                     <div class="faq-container" itemscope itemtype="https://schema.org/FAQPage">
@@ -225,9 +220,11 @@ katlakivi eemaldus'"
                                 class="faq-answer">
                                 <p itemprop="text">
                                     Aluseline pesu sobib siis, kui süsteemis on must muda (oksüdatsiooni jääk),
-                                    magnetiit, natuke aitab kaasa ka katlakivi jääkide eemaldamisele, otseselt eemaldab katlakivi siiski happeline keskkond.
-                                    See on eriti tõhus põrandakütte kontuuride taastamisel. 
-                                    Küttesepa kasutatav aluseline puhastussüsteem tagab suures plaanis, va katlakivi, sama tulemuse mis
+                                    magnetiit, natuke aitab kaasa ka katlakivi jääkide eemaldamisele, otseselt eemaldab
+                                    katlakivi siiski happeline keskkond.
+                                    See on eriti tõhus põrandakütte kontuuride taastamisel.
+                                    Küttesepa kasutatav aluseline puhastussüsteem tagab suures plaanis, va katlakivi,
+                                    sama tulemuse mis
                                     kiire happelise lahusega pesu. 4 nädalat ringlev puhastusaine lahustab saastainet
                                     tõenäoliselt paremini ka kaugematest süsteemi osadest.
                                 </p>

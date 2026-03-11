@@ -69,7 +69,7 @@
                     energiasäästuks.
                 </li>
                 <li>Järelteenindus
-                    <a href="{{ route('kuttesusteemide-hooldus') }}"> ja küttesüsteemide hooldus.</a> 
+                    <a href="{{ route('soojuspumpade-hooldus') }}"> ja soojuspumpade hooldus.</a> 
                 </li>
             </ul>
             <hr class="red-line-teenused">

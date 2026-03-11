@@ -6,32 +6,31 @@ document.addEventListener("DOMContentLoaded", () => {
   const prevBtn = section.querySelector(".carousel-button-back");
   const nextBtn = section.querySelector(".carousel-button-next");
 
+  if (!slider) return;
+
   const gap = 20;
   let isAnimating = false;
-
-  /* ===============================
-     YOUTUBE API – PAUSILOOGIKA
-  =============================== */
-
   let ytPlayers = [];
 
-  window.onYouTubeIframeAPIReady = function () {
+  function initYouTubePlayers() {
     section.querySelectorAll("iframe").forEach((iframe, i) => {
       ytPlayers[i] = new YT.Player(iframe);
     });
-  };
+  }
+
+  if (window.YT && window.YT.Player) {
+    initYouTubePlayers();
+  } else {
+    window.onYouTubeIframeAPIReady = initYouTubePlayers;
+  }
 
   function pauseAllVideos() {
-    ytPlayers.forEach(p => {
-      if (p && typeof p.pauseVideo === "function") {
-        p.pauseVideo();
+    ytPlayers.forEach(player => {
+      if (player && typeof player.pauseVideo === "function") {
+        player.pauseVideo();
       }
     });
   }
-
-  /* ===============================
-     SLIDERI ABI-FUNKTSIOONID
-  =============================== */
 
   function step() {
     const first = slider.querySelector(".video-slide");
@@ -51,15 +50,11 @@ document.addEventListener("DOMContentLoaded", () => {
     void slider.offsetHeight;
   }
 
-  /* ===============================
-     EDASI
-  =============================== */
-
   function goNext() {
     if (isAnimating) return;
     isAnimating = true;
 
-    pauseAllVideos(); // 🔴 PEATA VIDEOD
+    pauseAllVideos();
 
     const s = step();
     if (!s) {
@@ -87,15 +82,11 @@ document.addEventListener("DOMContentLoaded", () => {
     );
   }
 
-  /* ===============================
-     TAGASI
-  =============================== */
-
   function goPrev() {
     if (isAnimating) return;
     isAnimating = true;
 
-    pauseAllVideos(); // 🔴 PEATA VIDEOD
+    pauseAllVideos();
 
     const s = step();
     if (!s) {
@@ -122,8 +113,8 @@ document.addEventListener("DOMContentLoaded", () => {
     );
   }
 
-  nextBtn.addEventListener("click", goNext);
-  prevBtn.addEventListener("click", goPrev);
+  if (nextBtn) nextBtn.addEventListener("click", goNext);
+  if (prevBtn) prevBtn.addEventListener("click", goPrev);
 
   window.addEventListener("resize", () => {
     pauseAllVideos();
@@ -131,5 +122,5 @@ document.addEventListener("DOMContentLoaded", () => {
     slider.style.transform = "translateX(0)";
     forceReflow();
     enableTransition();
-  });
+  }, { passive: true });
 });

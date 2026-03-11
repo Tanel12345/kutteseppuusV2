@@ -18,7 +18,7 @@ return view('pages.privaatsuspoliitika');
 })->name('privaatsuspoliitika');
 
 
-
+Route::redirect('/kuttesusteemide-hooldus', '/remont-ja-hooldus', 301);
 
 
 
@@ -29,6 +29,7 @@ Route::controller(PageController::class)->group(function () {
     Route::get('/', 'index')->name('index');
 
     // Teenused / infod
+    Route::get('/kuttesusteemide-ehitus', 'kuttesusteemideEhitus')->name('kuttesusteemide-ehitus');
     Route::get('/soojuspumpade-paigaldus', 'soojuspumpadePaigaldus')->name('soojuspumpade-paigaldus');
     Route::get('/kuttesusteemi-vesi', 'kuttesusteemiVesi')->name('kuttesusteemi-vesi');
     Route::get('/poranda-ja-radiaatorkute', 'porandaJaRadiaatorkute')->name('poranda-ja-radiaatorkute');
@@ -68,8 +69,13 @@ Route::controller(PageController::class)->group(function () {
         ->name('keskkuttepliididJaKaminad.index');
 
     // ===== HOOLDUS JA VESI =====
-    Route::get('/kuttesusteemide-hooldus', 'kuttesusteemideHooldus')
-        ->name('kuttesusteemide-hooldus');
+
+    Route::get('/hooldus-ja-remont', 'hooldusJaRemont')
+    ->name('hooldus-ja-remont');
+    Route::get('/soojuspumpade-remont', 'soojuspumpadeRemont')
+        ->name('soojuspumpade-remont');
+        Route::get('/soojuspumpade-hooldus', 'soojuspumpadeHooldus')
+        ->name('soojuspumpade-hooldus');
 
     Route::get('/kuttesusteemi-labipesu', 'kuttesusteemiPesu')
         ->name('kuttesusteemi-labipesu');

@@ -96,13 +96,13 @@
                 class="arrow-img">
         </button>
 
-        <div class="carousel-nav">
-            <button class="carousel-indicator active1"></button>
-            <button class="carousel-indicator"></button>
-            <button class="carousel-indicator"></button>
-            <button class="carousel-indicator"></button>
-            <button class="carousel-indicator"></button>
-        </div>
+       <div class="carousel-nav">
+    <button class="carousel-indicator active1" aria-label="Mine slaidile 1"></button>
+    <button class="carousel-indicator" aria-label="Mine slaidile 2"></button>
+    <button class="carousel-indicator" aria-label="Mine slaidile 3"></button>
+    <button class="carousel-indicator" aria-label="Mine slaidile 4"></button>
+    <button class="carousel-indicator" aria-label="Mine slaidile 5"></button>
+</div>
 
     </div>
 </section>

@@ -1,16 +1,16 @@
 <div class="header-container" id="headerid">
     <header>
 
-        {{-- ÜLEMINE NAV – ORIGINAAL --}}
+        {{-- ÜLEMINE NAV --}}
         <div class="top-nav">
             <div class="left-topdiv">
                 <a style="cursor:auto;" href="tel:+37256681555">
                     <img src="{{ asset('images/icons/küttesepp.png') }}" alt="Küttesepa telefon" />
-                    +37256681555
+                    +372 5668 1555
                 </a>
 
                 <a style="cursor:auto;" href="mailto:tanel@kuttesepp.ee">
-                    <img src="{{ asset('images/icons/küttesepp.png') }}" alt="Küttesepa email" />
+                    <img src="{{ asset('images/icons/küttesepp.png') }}" alt="Küttesepa e-post" />
                     tanel[ät]kuttesepp.ee
                 </a>
             </div>
@@ -44,10 +44,8 @@
 
         {{-- ALUMINE NAV --}}
         <nav class="bottom-nav">
-
             <a href="https://www.facebook.com/kuttesepp" target="_blank" rel="noopener noreferrer">
-                <img class="facebook" src="{{ asset('images/icons/facebook.png') }}"
-                    alt="facebook logo" />
+                <img class="facebook" src="{{ asset('images/icons/facebook.png') }}" alt="Facebook logo" />
             </a>
 
             <div class="second-line">
@@ -57,19 +55,29 @@
                 </div>
 
                 <a href="{{ route('index') }}" class="logoanchor">
-                    <img class="logo" src="{{ asset('images/küttesepp_logo.webp') }}"
-                        alt="Küttesepp logo" />
+                    <img class="logo" src="{{ asset('images/küttesepp_logo.webp') }}" alt="Küttesepp logo"
+                        width="270" height="86" />
                 </a>
 
                 <div class="bottom-rightdiv">
+
+                    {{-- KÜTTESÜSTEEMIDE EHITUS --}}
+                    <ul style=" margin-right: 22px;">
+                        <li>
+                            <a class="{{ request()->is('kuttesusteemide-ehitus*') ? 'active' : '' }}"
+                                href="{{ route('kuttesusteemide-ehitus') }}">
+                                Küttesüsteemide ehitus
+                            </a>
+                        </li>
+                    </ul>
 
                     {{-- SOOJUSPUMBAD --}}
                     <ul>
                         <li>
                             <a class="{{ request()->is('soojuspumbad*') ? 'active' : '' }}"
                                 href="{{ route('soojuspumbad.index') }}">
-                                SOOJUSPUMBAD
-                                <img src="{{ asset('images/icons/down.png') }}">
+                                Soojuspumbad
+                                <img src="{{ asset('images/icons/down.png') }}" alt="Ava menüü">
                             </a>
 
                             <div class="popup">
@@ -77,33 +85,32 @@
                                     <li>
                                         <a class="{{ request()->is('soojuspumbad/ohk-ohk-soojuspumbad*') ? 'active' : '' }}"
                                             href="{{ route('soojuspumbad.type', 'ohk-ohk-soojuspumbad') }}">
-                                            ÕHK-ÕHK SOOJUSPUMBAD
+                                            Õhk-õhk soojuspumbad
                                         </a>
                                     </li>
                                     <li>
                                         <a class="{{ request()->is('soojuspumbad/ohk-vesi-soojuspumbad*') ? 'active' : '' }}"
                                             href="{{ route('soojuspumbad.type', 'ohk-vesi-soojuspumbad') }}">
-                                            ÕHK-VESI SOOJUSPUMBAD
+                                            Õhk-vesi soojuspumbad
                                         </a>
                                     </li>
                                     <li>
                                         <a class="{{ request()->is('soojuspumbad/maasoojuspumbad*') ? 'active' : '' }}"
                                             href="{{ route('soojuspumbad.type', 'maasoojuspumbad') }}">
-                                            MAASOOJUSPUMBAD
+                                            Maasoojuspumbad
                                         </a>
                                     </li>
                                 </ul>
                             </div>
                         </li>
                     </ul>
-
-                    {{-- TAHKEKÜTTESEADMED --}}
+                    {{-- TAHKEKÜTE --}}
                     <ul>
                         <li>
                             <a class="{{ request()->is('tahkekutteseadmed*') ? 'active' : '' }}"
                                 href="{{ route('tahkekutteseadmed.index') }}">
-                                TAHKEKÜTTESEADMED
-                                <img src="{{ asset('images/icons/down.png') }}">
+                                Tahkeküte
+                                <img src="{{ asset('images/icons/down.png') }}" alt="Ava menüü">
                             </a>
 
                             <div class="popup">
@@ -111,47 +118,63 @@
                                     <li>
                                         <a class="{{ request()->is('pelletikatlad-kaminad*') ? 'active' : '' }}"
                                             href="{{ route('pelletikatladJaKaminad.index') }}">
-                                            PELLETIKATLAD JA -KAMINAD
+                                            Pelletikatlad ja -kaminad
                                         </a>
                                     </li>
                                     <li>
                                         <a class="{{ request()->is('keskkuttepliidid-kaminad*') ? 'active' : '' }}"
                                             href="{{ route('keskkuttepliididJaKaminad.index') }}">
-                                            KESKKÜTTEPLIIDID JA -KAMINAD
+                                            Keskküttepliidid ja -kaminad
                                         </a>
                                     </li>
                                 </ul>
                             </div>
                         </li>
                     </ul>
-
-                    {{-- HOOLDUS --}}
+                    {{-- REMONT JA HOOLDUS --}}
                     <ul>
                         <li>
-                            <a class="{{ request()->is('kuttesusteemide-hooldus*') ? 'active' : '' }}"
-                                href="{{ route('kuttesusteemide-hooldus') }}">
-                                KÜTTESÜSTEEMIDE HOOLDUS
-                                <img src="{{ asset('images/icons/down.png') }}">
+                            <a class="{{ request()->is('hooldus-ja-remont*') ||
+                            request()->is('soojuspumpade-hooldus*') ||
+                            request()->is('kuttevee-demineraliseerimine*') ||
+                            request()->is('kuttevee-inhibiitorid*') ||
+                            request()->is('kuttesusteemi-labipesu*')
+                                ? 'active'
+                                : '' }}"
+                                href="{{ route('hooldus-ja-remont') }}">
+                                Hooldus ja remont
+                                <img src="{{ asset('images/icons/down.png') }}" alt="Ava menüü">
                             </a>
-
                             <div class="popup">
                                 <ul>
-                                    <li>
-                                        <a class="{{ request()->is('kuttevee-demineraliseerimine*') ? 'active' : '' }}"
-                                            href="{{ route('kuttevee-demineraliseerimine') }}">
-                                            KÜTTEVEE DEMINERALISEERIMINE
+                                   <li>
+                                        <a class="{{ request()->is('soojuspumpade-hooldus*') ? 'active' : '' }}"
+                                            href="{{ route('soojuspumpade-hooldus') }}">
+                                            Soojuspumpade hooldus
                                         </a>
                                     </li>
                                     <li>
-                                        <a class="{{ request()->is('kuttevee-inhibiitorid*') ? 'active' : '' }}"
-                                            href="{{ route('kuttevee-inhibiitorid') }}">
-                                            KÜTTEVEE INHIBIITORID
+                                        <a class="{{ request()->is('soojuspumpade-remont*') ? 'active' : '' }}"
+                                            href="{{ route('soojuspumpade-remont') }}">
+                                            Soojuspumpade remont
                                         </a>
                                     </li>
                                     <li>
                                         <a class="{{ request()->is('kuttesusteemi-labipesu*') ? 'active' : '' }}"
                                             href="{{ route('kuttesusteemi-labipesu') }}">
-                                            KÜTTESÜSTEEMI LÄBIPESU
+                                            Küttesüsteemi läbipesu
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="{{ request()->is('kuttevee-demineraliseerimine*') ? 'active' : '' }}"
+                                            href="{{ route('kuttevee-demineraliseerimine') }}">
+                                            Küttevee demineraliseerimine
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="{{ request()->is('kuttevee-inhibiitorid*') ? 'active' : '' }}"
+                                            href="{{ route('kuttevee-inhibiitorid') }}">
+                                            Küttevee inhibiitorid
                                         </a>
                                     </li>
                                 </ul>
@@ -159,16 +182,20 @@
                         </li>
                     </ul>
 
+
+                    {{-- TEHTUD TÖÖD --}}
                     <ul>
-                        <li><a href="{{ route('works.index') }}">TEHTUD TÖÖD</a></li>
+                        <li>
+                            <a class="{{ request()->is('tehtud-tood*') ? 'active' : '' }}"
+                                href="{{ route('works.index') }}">
+                                Tehtud tööd
+                            </a>
+                        </li>
                     </ul>
 
-                    <ul>
-                        <li><a id="kontakt" href="/#form">KONTAKT</a></li>
-                    </ul>
-
-                    <ul style="margin-right: 15px" id="ettevõttest">
-                        <li><a href="/#ettevottestid">ETTEVÕTTEST</a></li>
+                    {{-- KONTAKT --}}
+                    <ul style=" margin-right: 10px;">
+                        <li><a id="kontakt" href="/#form">Kontakt</a></li>
                     </ul>
 
                 </div>
@@ -178,33 +205,32 @@
 </div>
 
 <script>
-document.addEventListener("DOMContentLoaded", () => {
-  document.querySelectorAll(".bottom-rightdiv a > img").forEach(img => {
-    img.addEventListener("click", e => {
-      // ära mine linki
-      e.preventDefault();
-      e.stopPropagation();
+    document.addEventListener("DOMContentLoaded", () => {
+        document.querySelectorAll(".bottom-rightdiv a > img").forEach(img => {
+            img.addEventListener("click", e => {
+                // ära mine linki
+                e.preventDefault();
+                e.stopPropagation();
 
-      const li = img.closest("li");
-      const popup = li?.querySelector(".popup");
+                const li = img.closest("li");
+                const popup = li?.querySelector(".popup");
 
-      if (!popup) return;
+                if (!popup) return;
 
-      // sulge teised
-      document.querySelectorAll(".popup.show").forEach(p => {
-        if (p !== popup) p.classList.remove("show");
-      });
+                // sulge teised
+                document.querySelectorAll(".popup.show").forEach(p => {
+                    if (p !== popup) p.classList.remove("show");
+                });
 
-      popup.classList.toggle("show");
+                popup.classList.toggle("show");
+            });
+        });
+
+        // klikk väljaspool sulgeb
+        document.addEventListener("click", () => {
+            document.querySelectorAll(".popup.show").forEach(p =>
+                p.classList.remove("show")
+            );
+        });
     });
-  });
-
-  // klikk väljaspool sulgeb
-  document.addEventListener("click", () => {
-    document.querySelectorAll(".popup.show").forEach(p =>
-      p.classList.remove("show")
-    );
-  });
-});
 </script>
-

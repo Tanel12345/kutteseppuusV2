@@ -4,7 +4,7 @@
     "name": "upscroller"
   },
   "resources/css/app.css": {
-    "file": "assets/app-Rjvuh5Kg.css",
+    "file": "assets/app-Cr534yQe.css",
     "src": "resources/css/app.css",
     "isEntry": true,
     "names": [
@@ -12,7 +12,7 @@
     ]
   },
   "resources/css/contact.css": {
-    "file": "assets/contact-DoMB3jyG.css",
+    "file": "assets/contact-ByInt1Xz.css",
     "src": "resources/css/contact.css",
     "isEntry": true,
     "names": [
@@ -36,7 +36,7 @@
     ]
   },
   "resources/css/pages/index.css": {
-    "file": "assets/index-CP_klEBr.css",
+    "file": "assets/index-CocoXSHh.css",
     "src": "resources/css/pages/index.css",
     "isEntry": true,
     "names": [
@@ -52,7 +52,7 @@
     ]
   },
   "resources/css/pages/tootelehed.css": {
-    "file": "assets/tootelehed-Db3oRaEe.css",
+    "file": "assets/tootelehed-CG5MmD4-.css",
     "src": "resources/css/pages/tootelehed.css",
     "isEntry": true,
     "names": [
@@ -76,7 +76,7 @@
     ]
   },
   "resources/js/app.js": {
-    "file": "assets/app-CRfFB5JL.js",
+    "file": "assets/app-g6tu13GW.js",
     "name": "app",
     "src": "resources/js/app.js",
     "isEntry": true,
@@ -91,7 +91,7 @@
     "isEntry": true
   },
   "resources/js/pages/index.js": {
-    "file": "assets/index-Ca5zMNrA.js",
+    "file": "assets/index-DVrkqomM.js",
     "name": "index",
     "src": "resources/js/pages/index.js",
     "isEntry": true,

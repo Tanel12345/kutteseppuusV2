@@ -10,8 +10,5 @@
         "concurrently": "^9.0.1",
         "laravel-vite-plugin": "^2.0.1",
         "vite": "^7.1.12"
-    },
-    "dependencies": {
-        "lenis": "^1.1.18"
     }
 }

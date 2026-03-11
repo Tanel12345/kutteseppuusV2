@@ -17,6 +17,10 @@ class PageController extends Controller
         $product = $request->query('product');
         return view('pages.index', compact('product'));
     }
+    public function kuttesusteemideEhitus()
+    {
+        return view('pages.kuttesusteemide_ehitus');
+    }
 
     public function soojuspumpadePaigaldus()
     {
@@ -37,15 +41,28 @@ class PageController extends Controller
     {
         return view('pages.kuttesusteemiVesi.inhibiitorid');
     }
+    public function hooldusJaRemont()
+    {
+        return view('pages.hooldusJaRemont.hooldus_ja_remont');
+    }
+    public function soojuspumpadeHooldus()
+    {
+        return view('pages.hooldusJaRemont.soojuspumpade_hooldus');
+    }
+    public function soojuspumpadeRemont()
+    {
+        return view('pages.hooldusJaRemont.soojuspumpade_remont');
+    }
+
 
     public function kuttesusteemiPesu()
     {
-        return view('pages.kuttesusteemideHooldus.kuttesusteemi_labipesu');
+        return view('pages.hooldusJaRemont.kuttesusteemi_labipesu');
     }
 
     public function kuttesusteemideHooldus()
     {
-        return view('pages.kuttesusteemideHooldus.kuttesusteemide_hooldus');
+        return view('pages.hooldusJaRemont.kuttesusteemide_hooldus');
     }
 
     public function tahkekutteseadmed()

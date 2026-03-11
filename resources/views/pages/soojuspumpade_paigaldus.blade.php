@@ -1,11 +1,11 @@
-<x-layout :title="'Soojuspumpade paigaldus Tallinnas ja Harjumaal – nõuanded ja teostus | Küttesepp'" :metaDescription="'Soojuspumpade paigaldus Tallinnas ja Harjumaal. Selgitame, mida paigalduse juures arvestada, kuidas valida sobiv lahendus ning teostame töö professionaalselt.'" :metaKeywords="'soojuspumba paigaldus, õhk-vesi soojuspumba paigaldus, maasoojuspumba paigaldus, soojuspumba projekt, EHR soojuspump, küttesüsteemi paigaldus'" :metaAuthor="'Tanel Sepp'" :robots="'index, follow'" :viteCssAssets="['resources/css/pages/teenustelehed.css']"
+<x-layout :title="'Soojuspumpade müük ja paigaldus Tallinnas ja Harjumaal | Küttesepp'" :metaDescription="'Soojuspumpade müük ja paigaldus Tallinnas ja Harjumaal. Küttesepp aitab valida sobiva õhk-õhk, õhk-vesi või maasoojuspumba ning teostab paigalduse koos vajaliku nõustamise ja dokumentatsiooniga.'" :metaKeywords="'soojuspumba paigaldus, õhk-vesi soojuspumba paigaldus, maasoojuspumba paigaldus, soojuspumba projekt, EHR soojuspump, küttesüsteemi paigaldus'" :metaAuthor="'Tanel Sepp'" :robots="'index, follow'" :viteCssAssets="['resources/css/pages/teenustelehed.css']"
     :viteJsAssets="['resources/js/pages/teenustelehed.js']">
     <section class="uper" id="uperid">
         <div class="carousel">
             <div class="taustadiv">
                 <div class="textholderdiv">
                     <div class="textholder">
-                        <h1>Soojuspumpade paigaldus ja projekt</h1>
+                        <h1>Soojuspumpade müük ja paigaldus</h1>
 
                     </div>
                 </div>
@@ -22,7 +22,7 @@
         <div class="tootjast">
             <div class="ettevotte">
                 <div class="content">
-                    <h2><span>Soojuspumpade paigaldus</span> - millest alustada ja mida arvestada?</h2>
+                    <h2><span>Soojuspumba valik ja paigaldus</span> - millest alustada ja mida arvestada?</h2>
                     <h3>Mis on eduka projekti valem? - Hästi läbimõeldud idee</h3>
                     <p>
                         Millest tekib aga idee, enamjaolt vajadusest millegi järele.<br>
@@ -51,7 +51,7 @@
                     </div>
                     <hr class="red-line">
 
-                    <h3><strong>Soojuspumpade, küttesüsteemide paigaldus – kuidas teha õige valik?</strong></h3>
+                    <h3><strong>Soojuspumpade, küttesüsteemide valimine paigalduseks – kuidas teha õige valik?</strong></h3>
                     <p>
                         Alustada võiks tüüpilise müügimehe tekstiga, et kõik oleneb... ja siis osava suunava retoorikaga
                         jõuaksime minu pakutavate nn parimate valikute juurde. Teie usaldate spetsialisti ja korras...
@@ -459,4 +459,4 @@
     <x-cookies />
 
 </x-layout>
-'
+

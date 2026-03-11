@@ -54,7 +54,7 @@
                 <ul class="Lisalingid">
                     <li>
                         <a href="{{ route('brand.page', 'es') }}?type=ohk-vesi-soojuspumbad">
-                            <img src="{{ asset('images/vaikesed/es/Energy Save logo.jpg') }}"
+                            <img src="{{ asset('images/vaikesed/es/eslogo.webp') }}"
                                  alt="Energy Save" />
                             Energy Save
                         </a>

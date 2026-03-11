@@ -178,6 +178,8 @@ header.animate {
   flex-wrap: nowrap;
   /* Prevent wrapping of the left and right containers */
   margin-left: 12px;
+  font-size: 16px;
+  font-weight: 600;
 
 }
 
@@ -269,8 +271,9 @@ header.animate {
 
 .logo {
   width: 270px;
-  height: 100%;
+  height: auto;
   min-width: 230px;
+  display: block;
   cursor: pointer;
 
 }

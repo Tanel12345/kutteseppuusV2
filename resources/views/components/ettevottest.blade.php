@@ -1,10 +1,11 @@
 <section class="ettevottestsekts" id="ettevottestid">
     <div class="ettevõttest">
         <div class="kyttesepp">
-            <h2><span>Küttesepp</span> - küttesüsteemide terviklahendused ja hooldus</h2>
+            <h2><span>Küttesepp</span> - küttesüsteemide ehitus, soojuspumbad ja hooldus</h2>
             <p>OÜ Küttesepp pakub kaasaegseid ja tõhusaid küttesüsteeme ja -seadmeid Eesti kodudesse.<br>
-                Personaalse abimehena aitan sul leida tervikliku küttelahenduse vastavalt soovidele ja võimalustele.<br> Kui vajad nõu
-                küttesüsteemi valikut tehes, seadmete paigalduse ning süsteemi ehituseni välja, siis oled õiges kohas.
+                Personaalse abimehena aitan sul leida tervikliku küttelahenduse vastavalt soovidele ja võimalustele.<br> Kui vajad nõu küttesüsteemi valikul, seadmete paigaldusel
+                või kogu küttesüsteemi ehitusel eramajja,
+                 siis oled õiges kohas.
             </p><br>
             <p>
                 Olenevalt teenusest töötan üle Eesti, kuid enda asukoha tõttu eelistan eelkõige <strong>Tallinna ja Harjumaa</strong> piirkonda.<br>
