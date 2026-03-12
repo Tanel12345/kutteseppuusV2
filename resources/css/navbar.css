@@ -170,6 +170,9 @@ position:sticky;
   list-style: none;
   white-space: nowrap;
 }
+.bottom-nav ul:first-child {
+  margin-right: 22px;
+}
 
 .bottom-rightdiv {
 
@@ -285,7 +288,7 @@ transform: scale(1.03);
   justify-content: space-between;
   /* Logo on the left, bottom-right div on the right */
   align-items: flex-end;
-  width: 100%;
+ 
   /* Ensure it spans full width */
   flex-wrap: wrap;
 }
@@ -473,8 +476,12 @@ img.facebook:hover {
     grid-column: 1;
   }
 
- 
-  
+ .bottom-nav ul {
+  margin-right: 0px;
+ }
+ .bottom-nav ul:first-child {
+  margin-right:0px;
+}
   .bottom-rightdiv {
     display: none;
     margin: 0;
@@ -482,7 +489,7 @@ img.facebook:hover {
    height: 100vh;
     opacity: 0;
     position: absolute;
-    top: 135px;
+    top: 110px;
     left: 0;
     width: 100%;
     z-index: 9999;
@@ -510,6 +517,7 @@ img.facebook:hover {
     /* 3 equal columns */
 
     margin-left: 6px;
+    margin-right: 6px;
   }
 
   .logoanchor {
@@ -650,5 +658,8 @@ img.facebook:hover {
       transform: translateY(0px);
     }
   }
-  
+  .bottom-rightdiv {
+ 
+    top: 135px;
+  }
   }

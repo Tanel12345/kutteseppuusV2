@@ -62,7 +62,7 @@
                 <div class="bottom-rightdiv">
 
                     {{-- KÜTTESÜSTEEMIDE EHITUS --}}
-                    <ul style="margin-right: 22px;">
+                    <ul >
                         <li>
                             <a class="{{ request()->is('kuttesusteemide-ehitus*') ? 'active' : '' }}"
                                 href="{{ route('kuttesusteemide-ehitus') }}">
@@ -196,7 +196,7 @@
                     </ul>
 
                     {{-- KONTAKT --}}
-                    <ul style="margin-right: 10px;">
+                    <ul>
                         <li>
                             <a id="kontakt" href="{{ route('index') }}#form">Kontakt</a>
                         </li>
