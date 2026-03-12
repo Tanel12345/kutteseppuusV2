@@ -6,23 +6,14 @@ let lastScrollY = window.scrollY;
 let currentScrollY = window.scrollY;
 let ticking = false;
 
-let isResizing = false;
-let resizeTimeout;
-
 const triggerPoint = 130;
 const speed = 0.3;
 
-//
-// FIRST LOAD ANIMATION
-//
 if (header && !sessionStorage.getItem("firstTimeAnimation")) {
     header.classList.add("animate");
     sessionStorage.setItem("firstTimeAnimation", "true");
 }
 
-//
-// PARALLAX ACTIVE ONLY WHEN VISIBLE
-//
 let parallaxActive = false;
 
 if (background) {
@@ -36,9 +27,6 @@ if (background) {
     observer.observe(background);
 }
 
-//
-// SCROLL LISTENER
-//
 window.addEventListener("scroll", () => {
     currentScrollY = window.scrollY;
 
@@ -48,17 +36,7 @@ window.addEventListener("scroll", () => {
     }
 }, { passive: true });
 
-
-
-//
-// MAIN UPDATE LOOP
-//
 function update() {
-    if (isResizing) {
-        ticking = false;
-        return;
-    }
-
     if (headerContainer) {
         if (currentScrollY === 0) {
             headerContainer.classList.remove("scroll-up", "scroll-down");
