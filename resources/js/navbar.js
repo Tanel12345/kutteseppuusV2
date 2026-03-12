@@ -48,25 +48,7 @@ window.addEventListener("scroll", () => {
     }
 }, { passive: true });
 
-//
-// RESIZE LISTENER
-//
-window.addEventListener("resize", () => {
-    isResizing = true;
 
-    clearTimeout(resizeTimeout);
-
-    resizeTimeout = setTimeout(() => {
-        currentScrollY = window.scrollY;
-        lastScrollY = window.scrollY;
-
-        if (headerContainer) {
-            headerContainer.classList.remove("scroll-up", "scroll-down");
-        }
-
-        isResizing = false;
-    }, 150);
-});
 
 //
 // MAIN UPDATE LOOP
