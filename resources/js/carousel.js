@@ -77,35 +77,6 @@
 //   slideInterval = setInterval(nextSlide, intervalTime);
 // }
 //H1 teksti slider
-const headingh1 = document.querySelector(".heading h1");
-const headingh2 = document.querySelector(".heading h2");
-const headingh3 = document.querySelector(".heading h3");
-const headingH1logo = document.querySelector(".heading .h1logo");
-const firsttextout = () => {
-  headingh1.style.animation = "slide-rightout 5s ease-out";
-  headingh2.style.animation = "slide-rightout 5s ease-out";
-  secondtextout();
-};
-const secondtextout = () => {
-  headingh3.style.animation =
-    "slide-leftin 5s ease-out forwards, slide-rightouth3 5s ease-out 8s forwards ";
-};
-const logoout = () => {
-  headingH1logo.style.animation = "logoslide 5s ease-out forwards";
-};
-const firstagain = () => {
-  headingH1logo.style.opacity = "0";
-  headingh1.style.animation = "h1slide 1s ease-in-out 1s forwards";
-  headingh2.style.animation = "h2slide 1s ease-in-out 2s forwards";
-};
-setTimeout(firsttextout, 8000);
-setTimeout(logoout, 16000);
-setTimeout(firstagain, 28000);
-
-// ==============================
-// CAROUSEL – OPTIMEERITUD JS
-// ==============================
-
 const slides = document.querySelectorAll(".carousel-ul");
 const indicators = document.querySelectorAll(".carousel-indicator");
 const nextBtn = document.querySelector(".carousel-button-next .arrow-img");
@@ -114,10 +85,8 @@ const backBtn = document.querySelector(".carousel-button-back .arrow-img");
 const auto = true;
 const intervalTime = 80000;
 let slideInterval;
+let isAnimating = false;
 
-/**
- * Laeb pildi ainult siis, kui vaja
- */
 function ensureImageLoaded(slide) {
   const img = slide.querySelector("img[data-src]");
   if (img && !img.src) {
@@ -125,21 +94,17 @@ function ensureImageLoaded(slide) {
   }
 }
 
-/**
- * Tagastab aktiivse slaidi indeksi
- */
 function getActiveIndex() {
-  return [...slides].findIndex(slide =>
-    slide.classList.contains("active")
-  );
+  return [...slides].findIndex(slide => slide.classList.contains("active"));
 }
 
-/**
- * Üldine slaidi vahetus (ühtlane animatsioon)
- */
 function goToSlide(newIndex, direction = "next") {
+  if (isAnimating) return;
+
   const currentIndex = getActiveIndex();
-  if (currentIndex === newIndex) return;
+  if (currentIndex === -1 || currentIndex === newIndex) return;
+
+  isAnimating = true;
 
   const currentSlide = slides[currentIndex];
   const currentIndicator = indicators[currentIndex];
@@ -147,35 +112,31 @@ function goToSlide(newIndex, direction = "next") {
   const targetSlide = slides[newIndex];
   const targetIndicator = indicators[newIndex];
 
-  // Lazy-load enne näitamist
   ensureImageLoaded(targetSlide);
 
-  // Indikaatorid
   currentIndicator.classList.remove("active1");
   targetIndicator.classList.add("active1");
 
-  // UUS SLAID KOHE NÄHTAVAKS
-  targetSlide.classList.add("active");
-
-  // VANA SLAIDI VÄLJUMISE ANIMATSIOON
   const outAnimation =
     direction === "prev" ? "slide-leftout" : "slide-rightout";
 
+  // uus slaid aktiivseks
+  targetSlide.classList.add("active");
+
+  // vana slaid välja
   currentSlide.style.animation = `${outAnimation} 1s ease-in-out`;
 
   currentSlide.addEventListener(
     "animationend",
     () => {
-      // Alles PÄRAST animatsiooni
       currentSlide.classList.remove("active");
       currentSlide.style.animation = "";
+      isAnimating = false;
     },
     { once: true }
   );
 }
-/**
- * Järgmine slaid
- */
+
 function nextSlide() {
   let index = getActiveIndex() + 1;
   if (index >= slides.length) index = 0;
@@ -186,9 +147,6 @@ function nextSlide() {
   ensureImageLoaded(slides[preloadIndex]);
 }
 
-/**
- * Eelmine slaid
- */
 function prevSlide() {
   let index = getActiveIndex() - 1;
   if (index < 0) index = slides.length - 1;
@@ -198,9 +156,7 @@ function prevSlide() {
   const preloadIndex = index - 1 >= 0 ? index - 1 : slides.length - 1;
   ensureImageLoaded(slides[preloadIndex]);
 }
-/**
- * Nupud
- */
+
 nextBtn.addEventListener("click", () => {
   nextSlide();
   if (auto) resetInterval();
@@ -211,19 +167,17 @@ backBtn.addEventListener("click", () => {
   if (auto) resetInterval();
 });
 
-/**
- * Indikaatorid (täpid)
- */
 indicators.forEach((btn, index) => {
   btn.addEventListener("click", () => {
-    goToSlide(index);
+    const currentIndex = getActiveIndex();
+    const direction = index < currentIndex ? "prev" : "next";
+
+    goToSlide(index, direction);
+
     if (auto) resetInterval();
   });
 });
 
-/**
- * Auto-slide
- */
 function resetInterval() {
   clearInterval(slideInterval);
   slideInterval = setInterval(nextSlide, intervalTime);
