@@ -1,9 +1,19 @@
 //Screeni scrollimine ülesse automaatselt
-var upscroller = document.querySelector(".upscroller");
-window.onscroll = function () {
-  if (window.pageYOffset > 1050) {
-    upscroller.style.opacity = "1";
-  } else {
-    upscroller.style.opacity = "0";
-  }
-};
+const upscroller = document.querySelector(".upscroller");
+
+window.addEventListener("scroll", () => {
+
+    if (window.scrollY > 1050) {
+        upscroller.classList.add("visible");
+    } else {
+        upscroller.classList.remove("visible");
+    }
+
+});
+
+upscroller.addEventListener("click", () => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+});

@@ -62,7 +62,7 @@
                 <div class="bottom-rightdiv">
 
                     {{-- KÜTTESÜSTEEMIDE EHITUS --}}
-                    <ul style=" margin-right: 22px;">
+                    <ul style="margin-right: 22px;">
                         <li>
                             <a class="{{ request()->is('kuttesusteemide-ehitus*') ? 'active' : '' }}"
                                 href="{{ route('kuttesusteemide-ehitus') }}">
@@ -77,7 +77,7 @@
                             <a class="{{ request()->is('soojuspumbad*') ? 'active' : '' }}"
                                 href="{{ route('soojuspumbad.index') }}">
                                 Soojuspumbad
-                                <img src="{{ asset('images/icons/down.png') }}" alt="Ava menüü">
+                                <img class="submenu-toggle" src="{{ asset('images/icons/down.png') }}" alt="Ava menüü">
                             </a>
 
                             <div class="popup">
@@ -104,13 +104,14 @@
                             </div>
                         </li>
                     </ul>
+
                     {{-- TAHKEKÜTE --}}
                     <ul>
                         <li>
                             <a class="{{ request()->is('tahkekutteseadmed*') ? 'active' : '' }}"
                                 href="{{ route('tahkekutteseadmed.index') }}">
                                 Tahkeküte
-                                <img src="{{ asset('images/icons/down.png') }}" alt="Ava menüü">
+                                <img class="submenu-toggle" src="{{ asset('images/icons/down.png') }}" alt="Ava menüü">
                             </a>
 
                             <div class="popup">
@@ -131,23 +132,25 @@
                             </div>
                         </li>
                     </ul>
+
                     {{-- REMONT JA HOOLDUS --}}
                     <ul>
                         <li>
                             <a class="{{ request()->is('hooldus-ja-remont*') ||
-                            request()->is('soojuspumpade-hooldus*') ||
-                            request()->is('kuttevee-demineraliseerimine*') ||
-                            request()->is('kuttevee-inhibiitorid*') ||
-                            request()->is('kuttesusteemi-labipesu*')
-                                ? 'active'
-                                : '' }}"
+                                request()->is('soojuspumpade-hooldus*') ||
+                                request()->is('kuttevee-demineraliseerimine*') ||
+                                request()->is('kuttevee-inhibiitorid*') ||
+                                request()->is('kuttesusteemi-labipesu*')
+                                    ? 'active'
+                                    : '' }}"
                                 href="{{ route('hooldus-ja-remont') }}">
                                 Hooldus ja remont
-                                <img src="{{ asset('images/icons/down.png') }}" alt="Ava menüü">
+                                <img class="submenu-toggle" src="{{ asset('images/icons/down.png') }}" alt="Ava menüü">
                             </a>
+
                             <div class="popup">
                                 <ul>
-                                   <li>
+                                    <li>
                                         <a class="{{ request()->is('soojuspumpade-hooldus*') ? 'active' : '' }}"
                                             href="{{ route('soojuspumpade-hooldus') }}">
                                             Soojuspumpade hooldus
@@ -182,7 +185,6 @@
                         </li>
                     </ul>
 
-
                     {{-- TEHTUD TÖÖD --}}
                     <ul>
                         <li>
@@ -194,8 +196,10 @@
                     </ul>
 
                     {{-- KONTAKT --}}
-                    <ul style=" margin-right: 10px;">
-                        <li><a id="kontakt" href="/#form">Kontakt</a></li>
+                    <ul style="margin-right: 10px;">
+                        <li>
+                            <a id="kontakt" href="{{ route('index') }}#form">Kontakt</a>
+                        </li>
                     </ul>
 
                 </div>
@@ -203,34 +207,3 @@
         </nav>
     </header>
 </div>
-
-<script>
-    document.addEventListener("DOMContentLoaded", () => {
-        document.querySelectorAll(".bottom-rightdiv a > img").forEach(img => {
-            img.addEventListener("click", e => {
-                // ära mine linki
-                e.preventDefault();
-                e.stopPropagation();
-
-                const li = img.closest("li");
-                const popup = li?.querySelector(".popup");
-
-                if (!popup) return;
-
-                // sulge teised
-                document.querySelectorAll(".popup.show").forEach(p => {
-                    if (p !== popup) p.classList.remove("show");
-                });
-
-                popup.classList.toggle("show");
-            });
-        });
-
-        // klikk väljaspool sulgeb
-        document.addEventListener("click", () => {
-            document.querySelectorAll(".popup.show").forEach(p =>
-                p.classList.remove("show")
-            );
-        });
-    });
-</script>

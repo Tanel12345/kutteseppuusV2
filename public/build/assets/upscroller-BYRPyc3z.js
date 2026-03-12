@@ -1,0 +1,1 @@
+const e=document.querySelector(".upscroller");window.addEventListener("scroll",()=>{window.scrollY>1050?e.classList.add("visible"):e.classList.remove("visible")});e.addEventListener("click",()=>{window.scrollTo({top:0,behavior:"smooth"})});

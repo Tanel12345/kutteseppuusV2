@@ -1,10 +1,10 @@
 {
-  "_upscroller-BlUazkKq.js": {
-    "file": "assets/upscroller-BlUazkKq.js",
+  "_upscroller-BYRPyc3z.js": {
+    "file": "assets/upscroller-BYRPyc3z.js",
     "name": "upscroller"
   },
   "resources/css/app.css": {
-    "file": "assets/app-BOlVoHTi.css",
+    "file": "assets/app-DH_e1Q8f.css",
     "src": "resources/css/app.css",
     "isEntry": true,
     "names": [
@@ -76,12 +76,12 @@
     ]
   },
   "resources/js/app.js": {
-    "file": "assets/app-BkwyIFXr.js",
+    "file": "assets/app-DpXGUXNl.js",
     "name": "app",
     "src": "resources/js/app.js",
     "isEntry": true,
     "imports": [
-      "_upscroller-BlUazkKq.js"
+      "_upscroller-BYRPyc3z.js"
     ]
   },
   "resources/js/contact.js": {
@@ -91,12 +91,12 @@
     "isEntry": true
   },
   "resources/js/pages/index.js": {
-    "file": "assets/index-DVrkqomM.js",
+    "file": "assets/index-D7AOxLac.js",
     "name": "index",
     "src": "resources/js/pages/index.js",
     "isEntry": true,
     "imports": [
-      "_upscroller-BlUazkKq.js",
+      "_upscroller-BYRPyc3z.js",
       "resources/js/contact.js"
     ]
   },

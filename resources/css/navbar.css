@@ -10,19 +10,18 @@
 }
 
 
-
 /* ******************************************************************** */
 
 .header-container {
   width: 100%;
   min-width: 300px;
   z-index: 100000;
-  position: relative;
-  top: 0px;
+  position:relative;
+  top: 0;
   background-color: #ffffff;
-  transition-duration: 1s;
-  border-bottom-style: solid;
-  border-color: #ff0100;
+  border-bottom: solid 2px #ff0100;
+  transform: translateY(0);
+  transition: transform 0.35s ease;
 
 }
 
@@ -58,7 +57,7 @@ header.animate {
 }
 
 .header-container.scroll-down {
-  position: sticky;
+position:sticky;
   animation: scroll-down 0.7s ease-out forwards;
 }
 
@@ -73,7 +72,7 @@ header.animate {
 }
 
 .header-container.scroll-up {
-  position: sticky;
+position:sticky;
   animation: scroll-up 0.7s ease-out forwards;
 }
 
@@ -255,14 +254,10 @@ header.animate {
   }
 }
 
-/* tee nool "lihtsamini tabatavaks" */
-.bottom-rightdiv a > img {
-
+.submenu-toggle {
   cursor: pointer;
-   width: 20px;
-  
-           
-  vertical-align:bottom;
+  width: 20px;
+  vertical-align: bottom;
 }
 
 .popup.show {
@@ -277,12 +272,12 @@ header.animate {
   min-width: 230px;
   display: block;
   cursor: pointer;
+    transition: transform 0.4s ease;
 
 }
 
 .logo:hover {
-  width: 280px;
-  transition: width 1s;
+transform: scale(1.03);
 }
 
 .second-line {
@@ -478,38 +473,36 @@ img.facebook:hover {
     grid-column: 1;
   }
 
+ 
+  
   .bottom-rightdiv {
     display: none;
-    margin: 8px auto;
+    margin: 0;
     padding-top: 30px;
-    height: 100vh;
-
+   height: 100vh;
     opacity: 0;
     position: absolute;
-    top: 108px;
+    top: 135px;
     left: 0;
-    width: 100vw;
-    z-index: 6;
+    width: 100%;
+    z-index: 9999;
+    overflow-y: auto;
+    pointer-events: none;
+    background-image: linear-gradient(#eeeeee, rgb(255, 255, 255), #eeeeee, rgb(255, 255, 255));
   }
 
   .bottom-rightdiv.showing {
     display: flex;
     gap: 10px;
     justify-content: flex-start;
-    /* Center horizontally */
     align-items: center;
-    /* Center vertically */
     flex-direction: column;
-    /* Optional: stack content vertically if needed */
     text-align: center;
-    /* Center text inside child elements */
-
-    animation: menuin 1s ease-in-out forwards;
-    background-image: linear-gradient(#eeeeee,
-        rgb(255, 255, 255),
-        #eeeeee,
-        rgb(255, 255, 255));
+    opacity: 1;
+    pointer-events: auto;
+    animation: menuin 0.45s ease forwards;
   }
+
 
   .second-line {
     display: grid;
@@ -542,7 +535,7 @@ img.facebook:hover {
     width: 20px;
 
     position: absolute;
-    top: 65px;
+    top: 60px;
 
     right: 12px;
     margin-top: 20px;
@@ -550,7 +543,7 @@ img.facebook:hover {
   }
 
   .header-container.scroll-down {
-    position: sticky;
+  position:sticky;
     animation: scroll-down 0.7s ease-out forwards;
   }
 
@@ -560,18 +553,18 @@ img.facebook:hover {
     }
 
     to {
-      transform: translateY(-59px);
+      transform: translateY(-34px);
     }
   }
 
   .header-container.scroll-up {
-    position: sticky;
+  position:sticky;
     animation: scroll-up 0.7s ease-out forwards;
   }
 
   @keyframes scroll-up {
     from {
-      transform: translateY(-70px);
+      transform: translateY(-34px);
     }
 
     to {
@@ -622,9 +615,40 @@ img.facebook:hover {
   }
 }
 @media screen and (max-width: 694px) {
-  .bottom-rightdiv {top:133px;}
+ 
   img.facebook {
 
-    top: 88px;
+    top: 83px;
 
-   }}
+   }
+  .header-container.scroll-down {
+  position:sticky;
+    animation: scroll-down 0.7s ease-out forwards;
+  }
+
+  @keyframes scroll-down {
+    from {
+      transform: translateY(-150px);
+    }
+
+    to {
+      transform: translateY(-59px);
+    }
+  }
+
+  .header-container.scroll-up {
+  position:sticky;
+    animation: scroll-up 0.7s ease-out forwards;
+  }
+
+  @keyframes scroll-up {
+    from {
+      transform: translateY(-70px);
+    }
+
+    to {
+      transform: translateY(0px);
+    }
+  }
+  
+  }
