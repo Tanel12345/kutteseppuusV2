@@ -466,6 +466,7 @@ img.facebook:hover {
 }
 
 @media screen and (max-width: 755px) {
+
   .top-nav {
 
     font-size: 11px;
@@ -478,11 +479,16 @@ img.facebook:hover {
 
  .bottom-nav ul {
   margin-right: 0px;
+  white-space: normal;
  }
  .bottom-nav ul:first-child {
   margin-right:0px;
 }
   .bottom-rightdiv {
+    overflow-x: hidden;
+    box-sizing: border-box;
+    right: 0;
+    max-width: 100%;
     display: none;
     margin: 0;
     padding-top: 30px;
@@ -491,7 +497,7 @@ img.facebook:hover {
     position: absolute;
     top: 110px;
     left: 0;
-    width: 100%;
+    width: auto;
     z-index: 9999;
     overflow-y: auto;
     pointer-events: none;
@@ -500,7 +506,7 @@ img.facebook:hover {
 
   .bottom-rightdiv.showing {
     display: flex;
-    gap: 10px;
+    gap: 5px;
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
@@ -508,6 +514,10 @@ img.facebook:hover {
     opacity: 1;
     pointer-events: auto;
     animation: menuin 0.45s ease forwards;
+  }
+    .bottom-rightdiv a {
+    white-space: normal;
+    word-break: break-word;
   }
 
 
@@ -599,7 +609,7 @@ img.facebook:hover {
     background-color: rgba(60, 60, 60, 1);
     /* Transparent red background */
     border-top-left-radius: 8px;
-
+   padding: 10px 10px 0px 10px;
   }
 
 
