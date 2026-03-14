@@ -81,7 +81,10 @@
                                 </a>
 
                                 <button class="submenu-toggle" type="button" aria-label="Ava soojuspumpade alammenüü">
-                                    <img src="{{ asset('images/icons/down.png') }}" alt="">
+                                    <svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20">
+                                        <path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.3"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
                                 </button>
                             </div>
 
@@ -120,7 +123,10 @@
                                 </a>
 
                                 <button class="submenu-toggle" type="button" aria-label="Ava tahkekütte alammenüü">
-                                    <img src="{{ asset('images/icons/down.png') }}" alt="">
+                                    <svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20">
+                                        <path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.3"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
                                 </button>
                             </div>
 
@@ -158,10 +164,12 @@
                                     href="{{ route('hooldus-ja-remont') }}">
                                     Hooldus ja remont
                                 </a>
-
                                 <button class="submenu-toggle" type="button"
                                     aria-label="Ava hoolduse ja remondi alammenüü">
-                                    <img src="{{ asset('images/icons/down.png') }}" alt="">
+                                    <svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20">
+                                        <path d="M6 9l6 6 6-6" fill="none" stroke="currentColor"
+                                            stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
                                 </button>
                             </div>
 
