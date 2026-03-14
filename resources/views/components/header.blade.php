@@ -1,78 +1,76 @@
 <div class="header-container" id="headerid">
-    <header>
-
+    <header class="site-header">
         {{-- ÜLEMINE NAV --}}
         <div class="top-nav">
             <div class="left-topdiv">
-                <a style="cursor:auto;" href="tel:+37256681555">
-                    <img src="{{ asset('images/icons/küttesepp.png') }}" alt="Küttesepa telefon" />
-                    +372 5668 1555
+                <a class="contact-link" href="tel:+37256681555" aria-label="Helista numbril +372 5668 1555">
+                    <img src="{{ asset('images/icons/küttesepp.png') }}" alt="" aria-hidden="true" />
+                    <span>+372 5668 1555</span>
                 </a>
 
-                <a style="cursor:auto;" href="mailto:tanel@kuttesepp.ee">
-                    <img src="{{ asset('images/icons/küttesepp.png') }}" alt="Küttesepa e-post" />
-                    tanel[ät]kuttesepp.ee
+                <a class="contact-link" href="mailto:tanel@kuttesepp.ee" aria-label="Saada e-kiri aadressile tanel@kuttesepp.ee">
+                    <img src="{{ asset('images/icons/küttesepp.png') }}" alt="" aria-hidden="true" />
+                    <span>tanel[ät]kuttesepp.ee</span>
                 </a>
             </div>
 
             <div class="right-topdiv" id="right-topdiv">
-                <a class="{{ Route::currentRouteName() == 'soojuspumpade-paigaldus' ? 'active' : '' }}"
+                <a class="{{ Route::currentRouteName() === 'soojuspumpade-paigaldus' ? 'active' : '' }}"
                     href="{{ route('soojuspumpade-paigaldus') }}">
-                    <img src="{{ asset('images/icons/küttesepp.png') }}" alt="Küttesepp" />
-                    Soojuspumpade paigaldus
+                    <img src="{{ asset('images/icons/küttesepp.png') }}" alt="" aria-hidden="true" />
+                    <span>Soojuspumpade paigaldus</span>
                 </a>
 
-                <a class="{{ Route::currentRouteName() == 'kuttesusteemi-vesi' ? 'active' : '' }}"
+                <a class="{{ Route::currentRouteName() === 'kuttesusteemi-vesi' ? 'active' : '' }}"
                     href="{{ route('kuttesusteemi-vesi') }}">
-                    <img src="{{ asset('images/icons/küttesepp.png') }}" alt="Küttesepp" />
-                    Küttesüsteemi vesi
+                    <img src="{{ asset('images/icons/küttesepp.png') }}" alt="" aria-hidden="true" />
+                    <span>Küttesüsteemi vesi</span>
                 </a>
 
-                <a class="{{ Route::currentRouteName() == 'milleks-kutteautomaatika' ? 'active' : '' }}"
+                <a class="{{ Route::currentRouteName() === 'milleks-kutteautomaatika' ? 'active' : '' }}"
                     href="{{ route('milleks-kutteautomaatika') }}">
-                    <img src="{{ asset('images/icons/küttesepp.png') }}" alt="Küttesepp" />
-                    Kütteautomaatika
+                    <img src="{{ asset('images/icons/küttesepp.png') }}" alt="" aria-hidden="true" />
+                    <span>Kütteautomaatika</span>
                 </a>
 
-                <a class="{{ Route::currentRouteName() == 'poranda-ja-radiaatorkute' ? 'active' : '' }}"
+                <a class="{{ Route::currentRouteName() === 'poranda-ja-radiaatorkute' ? 'active' : '' }}"
                     href="{{ route('poranda-ja-radiaatorkute') }}">
-                    <img src="{{ asset('images/icons/küttesepp.png') }}" alt="Küttesepp" />
-                    Põranda- ja radiaatorküte
+                    <img src="{{ asset('images/icons/küttesepp.png') }}" alt="" aria-hidden="true" />
+                    <span>Põranda- ja radiaatorküte</span>
                 </a>
             </div>
         </div>
 
         {{-- ALUMINE NAV --}}
-        <nav class="bottom-nav">
-            <a href="https://www.facebook.com/kuttesepp" target="_blank" rel="noopener noreferrer">
-                <img class="facebook" src="{{ asset('images/icons/facebook.png') }}" alt="Facebook logo" />
+        <nav class="bottom-nav" aria-label="Peamenüü">
+            <a class="facebook-link" href="https://www.facebook.com/kuttesepp" target="_blank" rel="noopener noreferrer" aria-label="Küttesepp Facebookis">
+                <img class="facebook" src="{{ asset('images/icons/facebook.png') }}" alt="Facebook logo" width="20" height="20" />
             </a>
 
             <div class="second-line">
+                <button class="hamburger" type="button" aria-label="Ava menüü" aria-expanded="false" aria-controls="main-menu">
+                    <span class="menu-btn"></span>
+                </button>
 
-                <div class="hamburger">
-                    <div class="menu-btn"></div>
-                </div>
-
-                <a href="{{ route('index') }}" class="logoanchor">
-                    <img class="logo" src="{{ asset('images/küttesepp_logo.webp') }}" alt="Küttesepp logo"
-                        width="270" height="86" />
+                <a href="{{ route('index') }}" class="logoanchor" aria-label="Avaleht">
+                    <img
+                        class="logo"
+                        src="{{ asset('images/küttesepp_logo.webp') }}"
+                        alt="Küttesepp logo"
+                        width="270"
+                        height="86"
+                    />
                 </a>
 
-                <div class="bottom-rightdiv">
-
-                    {{-- KÜTTESÜSTEEMIDE EHITUS --}}
-                    <ul>
+                <div class="bottom-rightdiv" id="main-menu">
+                    <ul class="main-menu">
                         <li>
                             <a class="{{ request()->is('kuttesusteemide-ehitus*') ? 'active' : '' }}"
                                 href="{{ route('kuttesusteemide-ehitus') }}">
                                 Küttesüsteemide ehitus
                             </a>
                         </li>
-                    </ul>
 
-                    {{-- SOOJUSPUMBAD --}}
-                    <ul>
                         <li class="has-submenu">
                             <div class="menu-link-row">
                                 <a class="{{ request()->is('soojuspumbad*') ? 'active' : '' }}"
@@ -80,7 +78,12 @@
                                     Soojuspumbad
                                 </a>
 
-                                <button class="submenu-toggle" type="button" aria-label="Ava soojuspumpade alammenüü">
+                                <button
+                                    class="submenu-toggle"
+                                    type="button"
+                                    aria-label="Ava soojuspumpade alammenüü"
+                                    aria-expanded="false"
+                                    aria-controls="submenu-soojuspumbad">
                                     <svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20">
                                         <path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.3"
                                             stroke-linecap="round" stroke-linejoin="round" />
@@ -88,7 +91,7 @@
                                 </button>
                             </div>
 
-                            <div class="popup">
+                            <div class="popup" id="submenu-soojuspumbad">
                                 <ul>
                                     <li>
                                         <a class="{{ request()->is('soojuspumbad/ohk-ohk-soojuspumbad*') ? 'active' : '' }}"
@@ -111,10 +114,7 @@
                                 </ul>
                             </div>
                         </li>
-                    </ul>
 
-                    {{-- TAHKEKÜTE --}}
-                    <ul>
                         <li class="has-submenu">
                             <div class="menu-link-row">
                                 <a class="{{ request()->is('tahkekutteseadmed*') ? 'active' : '' }}"
@@ -122,7 +122,12 @@
                                     Tahkeküte
                                 </a>
 
-                                <button class="submenu-toggle" type="button" aria-label="Ava tahkekütte alammenüü">
+                                <button
+                                    class="submenu-toggle"
+                                    type="button"
+                                    aria-label="Ava tahkekütte alammenüü"
+                                    aria-expanded="false"
+                                    aria-controls="submenu-tahkekute">
                                     <svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20">
                                         <path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.3"
                                             stroke-linecap="round" stroke-linejoin="round" />
@@ -130,7 +135,7 @@
                                 </button>
                             </div>
 
-                            <div class="popup">
+                            <div class="popup" id="submenu-tahkekute">
                                 <ul>
                                     <li>
                                         <a class="{{ request()->is('pelletikatlad-kaminad*') ? 'active' : '' }}"
@@ -147,33 +152,33 @@
                                 </ul>
                             </div>
                         </li>
-                    </ul>
 
-                    {{-- HOOLDUS JA REMONT --}}
-                    <ul>
                         <li class="has-submenu">
                             <div class="menu-link-row">
                                 <a class="{{ request()->is('hooldus-ja-remont*') ||
-                                request()->is('soojuspumpade-hooldus*') ||
-                                request()->is('soojuspumpade-remont*') ||
-                                request()->is('kuttevee-demineraliseerimine*') ||
-                                request()->is('kuttevee-inhibiitorid*') ||
-                                request()->is('kuttesusteemi-labipesu*')
-                                    ? 'active'
-                                    : '' }}"
+                                    request()->is('soojuspumpade-hooldus*') ||
+                                    request()->is('soojuspumpade-remont*') ||
+                                    request()->is('kuttevee-demineraliseerimine*') ||
+                                    request()->is('kuttevee-inhibiitorid*') ||
+                                    request()->is('kuttesusteemi-labipesu*') ? 'active' : '' }}"
                                     href="{{ route('hooldus-ja-remont') }}">
                                     Hooldus ja remont
                                 </a>
-                                <button class="submenu-toggle" type="button"
-                                    aria-label="Ava hoolduse ja remondi alammenüü">
+
+                                <button
+                                    class="submenu-toggle"
+                                    type="button"
+                                    aria-label="Ava hoolduse ja remondi alammenüü"
+                                    aria-expanded="false"
+                                    aria-controls="submenu-hooldus">
                                     <svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20">
-                                        <path d="M6 9l6 6 6-6" fill="none" stroke="currentColor"
-                                            stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.3"
+                                            stroke-linecap="round" stroke-linejoin="round" />
                                     </svg>
                                 </button>
                             </div>
 
-                            <div class="popup">
+                            <div class="popup" id="submenu-hooldus">
                                 <ul>
                                     <li>
                                         <a class="{{ request()->is('soojuspumpade-hooldus*') ? 'active' : '' }}"
@@ -208,25 +213,18 @@
                                 </ul>
                             </div>
                         </li>
-                    </ul>
 
-                    {{-- TEHTUD TÖÖD --}}
-                    <ul>
                         <li>
                             <a class="{{ request()->is('tehtud-tood*') ? 'active' : '' }}"
                                 href="{{ route('works.index') }}">
                                 Tehtud tööd
                             </a>
                         </li>
-                    </ul>
 
-                    {{-- KONTAKT --}}
-                    <ul>
                         <li>
                             <a id="kontakt" href="{{ route('index') }}#form">Kontakt</a>
                         </li>
                     </ul>
-
                 </div>
             </div>
         </nav>

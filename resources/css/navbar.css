@@ -8,19 +8,16 @@
   color: #000000;
   transition: color 1s;
 }
+
 html.menu-open,
 body.menu-open {
-  position: fixed;
   overflow: hidden;
-  height: 100%;
-  touch-action: none;
 }
 
 /* ******************************************************************** */
 
 .header-container {
   width: 100%;
-
   z-index: 100000;
   position: relative;
   top: 0;
@@ -30,12 +27,14 @@ body.menu-open {
   border-color: #ff0100;
 }
 
-header {
+header,
+.site-header {
   max-width: 1300px;
   margin: 0 auto;
 }
 
-header.animate {
+header.animate,
+.site-header.animate {
   animation: headerslide 1s ease-in-out 1s forwards;
   transform: translateY(-160px);
 }
@@ -54,6 +53,11 @@ header.animate {
 
 .taust {
   will-change: transform;
+}
+
+.header-container.scroll-down,
+.header-container.scroll-up {
+  top: 0;
 }
 
 .header-container.scroll-down {
@@ -95,7 +99,7 @@ header.animate {
   justify-content: space-between;
   align-items: center;
   flex-wrap: nowrap;
-    min-width: 360px;
+  min-width: 360px;
 }
 
 .left-topdiv {
@@ -132,10 +136,10 @@ header.animate {
   display: flex;
   flex-direction: column;
   list-style: none;
-  min-width: 360px;
   padding: 0 15px;
 }
 
+/* vana + uus markup ühilduvus */
 .bottom-nav ul {
   margin-right: 15px;
   margin-bottom: 10px;
@@ -148,31 +152,53 @@ header.animate {
   margin-right: 22px;
 }
 
-.bottom-rightdiv {
+.main-menu {
+  margin-right: 0;
+  margin-bottom: 10px;
+  padding-left: 0;
+  list-style: none;
+  white-space: nowrap;
   display: flex;
   justify-content: flex-end;
   flex-wrap: nowrap;
-  margin-left: 12px;
-  font-size: 16px;
-  font-weight: 600;
+  gap: 0;
 }
 
-.bottom-rightdiv ul li {
+.main-menu > li {
   position: relative;
+  margin-right: 15px;
+  display: inline-flex;
+  align-items: center;
+  width: auto;
 }
 
-/* =========================
-   SUBMENU STRUKTUUR
-   ========================= */
+.main-menu > li:first-child {
+  margin-left: 0;
+}
 
+.main-menu > li:last-child {
+  margin-right: 0;
+}
+
+/* tavaline link ainult oma laiusega */
+.main-menu > li > a {
+  display: inline-flex;
+  align-items: center;
+  width: auto;
+  flex: 0 0 auto;
+}
+
+/* submenu rea wrapper */
 .has-submenu {
   position: relative;
   display: inline-block;
+  width: auto;
 }
 
 .menu-link-row {
   display: inline-flex;
   align-items: center;
+  justify-content: flex-start;
   gap: 6px;
   width: auto;
 }
@@ -184,8 +210,16 @@ header.animate {
   width: auto;
   text-decoration: none;
   color: #000000;
+  transition: color 0.3s ease;
 }
 
+/* hover ainult tekstilingil */
+.menu-link-row > a:hover {
+  color: #ff0100 !important;
+  -webkit-text-fill-color: #ff0100 !important;
+}
+
+/* linnuke eraldi klikitav ala */
 .submenu-toggle {
   background: none;
   border: none;
@@ -199,21 +233,39 @@ header.animate {
   justify-content: center;
   -webkit-tap-highlight-color: transparent;
   transition: transform 0.25s ease;
+  color: #000000;
 }
 
-.submenu-toggle img {
-  display: block;
-  width: 20px;
-  height: 20px;
+.submenu-toggle:hover {
+  color: #000000;
+  -webkit-text-fill-color: #000000;
 }
 
 .has-submenu.open > .menu-link-row .submenu-toggle {
   transform: rotate(180deg);
 }
 
+.bottom-rightdiv {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+  margin-left: 12px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.bottom-rightdiv ul li,
+.bottom-rightdiv .main-menu li {
+  position: relative;
+}
+
+/* =========================
+   SUBMENU STRUKTUUR
+   ========================= */
+
 .popup {
   position: absolute;
-  top:100%;
+  top: 32px;
   left: 0;
   display: none;
   opacity: 0;
@@ -239,12 +291,10 @@ header.animate {
   list-style: none;
 }
 
-
-
 @keyframes slideInDesktop {
   from {
     opacity: 0;
-    transform: translateY(-8px);
+    transform: translateY(-28px);
   }
   to {
     opacity: 1;
@@ -252,25 +302,20 @@ header.animate {
   }
 }
 
-@media (hover: hover) {
-  .has-submenu:hover > .popup,
-  .has-submenu.open > .popup {
-    display: block;
-    opacity: 1;
-    pointer-events: auto;
-    animation: slideInDesktop 0.2s ease forwards;
-  }
+/* desktopis:
+   1) popup avaneb kui hover on ainult tekstilingil
+   2) popup jääb avatuks kui hiir on popupi peal
+   3) popup avaneb ka siis kui JS lisab .open
+*/
+.has-submenu:has(.menu-link-row > a:hover) > .popup,
+.has-submenu:has(.popup:hover) > .popup,
+.has-submenu.open > .popup {
+  display: block;
+  opacity: 1;
+  pointer-events: auto;
+  animation: slideInDesktop 0.5s ease forwards;
 }
 
-/* mobile */
-@media (hover: none) {
-  .has-submenu.open > .popup {
-    display: block;
-    opacity: 1;
-    pointer-events: auto;
-    animation: slideInMobile 0.35s ease forwards;
-  }
-}
 .popup a,
 .popup a:visited,
 .popup a:focus,
@@ -330,14 +375,16 @@ header.animate {
 }
 
 /* Facebook */
-img.facebook {
+img.facebook,
+.facebook {
   width: 20px;
   position: absolute;
   right: 12px;
   margin-top: 20px;
 }
 
-img.facebook:hover {
+img.facebook:hover,
+.facebook:hover {
   padding: 2px;
   width: 23px;
   border-radius: 5px;
@@ -350,61 +397,72 @@ img.facebook:hover {
   width: 25px;
   height: 25px;
   display: none;
-  text-align: justify;
+  align-items: center;
+  justify-content: flex-end;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  position: relative;
+  bottom: 8px;
 }
 
 .menu-btn {
+  display: block;
+  position: relative;
   width: 25px;
   height: 4px;
   background-color: #262626;
   border-radius: 15px;
-  -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.3s ease-in-out;
-  cursor: pointer;
 }
 
-.menu-btn::after,
-.menu-btn::before {
+.menu-btn::before,
+.menu-btn::after {
   content: "";
   position: absolute;
+  left: 0;
   width: 25px;
   height: 4px;
   background-color: #262626;
   border-radius: 15px;
-  -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.3s ease-in-out;
-  cursor: pointer;
+}
+
+.menu-btn::before {
+  top: -8px;
 }
 
 .menu-btn::after {
-  transform: translateY(8px);
+  top: 8px;
 }
 
-.menu-btn::before {
-  transform: translateY(-8px);
-}
-
-.menu-btn.open.menu-btn {
+.menu-btn.open {
   background: transparent;
 }
 
-.menu-btn.open.menu-btn::before {
+.menu-btn.open::before {
+  top: 0;
   transform: rotate(45deg);
 }
 
-.menu-btn.open.menu-btn::after {
+.menu-btn.open::after {
+  top: 0;
   transform: rotate(-45deg);
 }
 
 /* Safari / active link fix */
 .bottom-rightdiv > ul > li > a.active,
+.bottom-rightdiv .main-menu > li > a.active,
 .menu-link-row > a.active {
   color: #ff0100 !important;
   -webkit-text-fill-color: #ff0100 !important;
 }
 
 .bottom-rightdiv > ul > li > a:not(.active):not(#kontakt):hover,
-.menu-link-row > a:not(.active):hover {
+.bottom-rightdiv .main-menu > li > a:not(.active):not(#kontakt):hover,
+.menu-link-row > a:not(.active):hover,
+.popup a:not(.active):hover {
   color: #ff0100 !important;
   -webkit-text-fill-color: #ff0100 !important;
 }
@@ -422,6 +480,10 @@ img.facebook:hover {
     flex-wrap: wrap;
   }
 
+  .main-menu {
+    flex-wrap: wrap;
+  }
+
   .left-topdiv {
     display: none;
   }
@@ -433,21 +495,17 @@ img.facebook:hover {
 }
 
 @media screen and (max-width: 755px) {
-  html,
-  body {
-    overflow-x: hidden;
-  }
-
   .top-nav {
     font-size: 11px;
   }
 
   .hamburger {
-    display: block;
+    display: flex;
     grid-column: 1;
   }
 
-  .bottom-nav ul {
+  .bottom-nav ul,
+  .main-menu {
     margin-right: 0;
     white-space: normal;
   }
@@ -465,6 +523,7 @@ img.facebook:hover {
 
   .logoanchor {
     grid-column: 2;
+    justify-self: center;
   }
 
   @keyframes menuin {
@@ -478,7 +537,8 @@ img.facebook:hover {
     }
   }
 
-  img.facebook {
+  img.facebook,
+  .facebook {
     width: 20px;
     position: absolute;
     top: 60px;
@@ -514,11 +574,10 @@ img.facebook:hover {
     }
   }
 
-
   .bottom-rightdiv {
     display: none;
     margin: 0;
-    padding-top: 30px;
+    padding: 30px 16px 24px;
     opacity: 0;
     position: fixed;
     top: 108px;
@@ -536,50 +595,122 @@ img.facebook:hover {
       #eeeeee,
       rgb(255, 255, 255)
     );
+    box-sizing: border-box;
   }
 
   .bottom-rightdiv.showing {
     display: flex;
     gap: 10px;
     justify-content: flex-start;
-    align-items: stretch;
+    align-items: center;
     flex-direction: column;
     text-align: center;
     animation: menuin 0.5s ease-in-out forwards;
   }
 
+  .main-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .main-menu > li {
+    margin-right: 0;
+    width: auto;
+    max-width: 100%;
+  }
+
+  .main-menu > li > a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .has-submenu {
+    display: inline-block;
+    width: auto;
+    max-width: 100%;
+  }
 
   .menu-link-row {
+    display: inline-flex;
+    align-items: center;
     justify-content: center;
+    gap: 6px;
+    width: auto;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .menu-link-row > a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .submenu-toggle {
+    width: auto;
+    min-width: 24px;
+    height: 24px;
+    padding: 0;
   }
 
   .popup {
-    position: absolute;
-    top: 100%;
-    left: 50% !important;
-    right: auto !important;
-    width: max-content;
-    min-width: 0;
-    max-width: 90vw;
-    white-space: normal;
-    background-color: rgba(60, 60, 60, 1);
-    border: 1px solid #ff0100;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
-    padding: 10px 12px;
-    display: none;
-    opacity: 0;
-    pointer-events: none;
-    text-align: left;
-    z-index: 1000;
-  }
+  position: absolute;
+  top: 25px;
+  left: 50% !important;
+  right: auto !important;
+  transform: translateX(-50%);
+  width: max-content;
+  min-width: 0;
+  max-width: 90vw;
+  white-space: normal;
+  background-color: rgba(60, 60, 60, 1);
+  border: 1px solid #ff0100;
+  border-radius: 8px;
+  padding: 10px 12px;
+  display: none;
+  opacity: 0;
+  pointer-events: none;
+  text-align: left;
+  z-index: 1000;
+  box-sizing: border-box;
+}
 
+.popup ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.popup li {
+  list-style: none;
+  margin: 0;
+}
+
+
+.popup a {
+  display: inline-block;
+  width: auto;
+  max-width: 100%;
+  padding: 0;
+  text-align: left;
+  line-height: 1.5;
+}
   @keyframes slideInMobile {
     from {
       opacity: 0;
-      transform: translateX(-50%) translateY(-12px);
+      transform: translateX(-50%) translateY(-28px);
     }
     to {
       opacity: 1;
@@ -587,18 +718,19 @@ img.facebook:hover {
     }
   }
 
-  .has-submenu.open > .popup,
-  .has-submenu:hover > .popup {
-    display: block;
-    opacity: 1;
-    pointer-events: auto;
-    animation: slideInMobile 0.35s ease forwards;
-  }
+  .has-submenu:has(.menu-link-row > a:hover) > .popup,
+.has-submenu:has(.popup:hover) > .popup,
+.has-submenu.open > .popup {
+  display: block;
+  opacity: 1;
+  pointer-events: auto;
+  animation: slideInMobile 0.5s ease forwards;
+}
 }
 
-
 @media screen and (max-width: 694px) {
-  img.facebook {
+  img.facebook,
+  .facebook {
     top: 83px;
   }
 
@@ -634,6 +766,7 @@ img.facebook:hover {
 
   .bottom-rightdiv {
     top: 135px;
-   min-width: 360px;
+    height: calc(100dvh - 135px);
+    min-width: 0;
   }
 }
