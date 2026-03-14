@@ -1,4 +1,4 @@
-/* pseudo elements*/
+/* pseudo elements */
 .top-nav a:hover {
   color: #ff0100;
   transition: color 0.5s;
@@ -8,36 +8,36 @@
   color: #000000;
   transition: color 1s;
 }
-
+html.menu-open,
+body.menu-open {
+  position: fixed;
+  overflow: hidden;
+  height: 100%;
+  touch-action: none;
+}
 
 /* ******************************************************************** */
 
 .header-container {
   width: 100%;
-  min-width: 300px;
+
   z-index: 100000;
-  position:relative;
+  position: relative;
   top: 0;
   background-color: #ffffff;
-  border-bottom: solid 2px #ff0100;
-  transform: translateY(0);
-  transition: transform 0.35s ease;
-
+  transition-duration: 1s;
+  border-bottom-style: solid;
+  border-color: #ff0100;
 }
-
 
 header {
   max-width: 1300px;
   margin: 0 auto;
-
-
 }
 
 header.animate {
-
   animation: headerslide 1s ease-in-out 1s forwards;
-  transform: translatey(-160px);
-
+  transform: translateY(-160px);
 }
 
 @keyframes headerslide {
@@ -48,16 +48,16 @@ header.animate {
 
   to {
     opacity: 1;
-    transform: translateY(0px);
+    transform: translateY(0);
   }
 }
 
 .taust {
-    will-change: transform;
+  will-change: transform;
 }
 
 .header-container.scroll-down {
-position:sticky;
+  position: sticky;
   animation: scroll-down 0.7s ease-out forwards;
 }
 
@@ -72,7 +72,7 @@ position:sticky;
 }
 
 .header-container.scroll-up {
-position:sticky;
+  position: sticky;
   animation: scroll-up 0.7s ease-out forwards;
 }
 
@@ -82,192 +82,214 @@ position:sticky;
   }
 
   to {
-    transform: translateY(0px);
+    transform: translateY(0);
   }
 }
 
-/*Navbar*/
+/* Navbar */
 .top-nav {
   font-weight: 400;
   font-size: 13px;
-
-  padding: 15px 15px 0px 15px;
+  padding: 15px 15px 0 15px;
   display: flex;
   justify-content: space-between;
-  /* Space between left and right sections */
   align-items: center;
-  /* Vertically align items */
   flex-wrap: nowrap;
-  /* Prevent wrapping of the left and right containers */
-
+    min-width: 360px;
 }
-
 
 .left-topdiv {
   display: flex;
   align-items: center;
-  /* Align items vertically */
   flex-wrap: nowrap;
-  /* Prevent line breaks within each container */
   gap: 15px;
-  /* Add space between elements */
 }
 
 .right-topdiv {
   display: flex;
   align-items: center;
-  /* Align items vertically */
   flex-wrap: nowrap;
-  /* Prevent line breaks within each container */
   gap: 5px;
-  /* Add space between elements */
   min-width: 370px;
-
 }
-
-
 
 .top-nav img {
   width: 20px;
-
   margin-right: 3px;
 }
 
 .top-nav a {
   display: flex;
-  /* Make anchors a flex container to keep image and text in one line */
   align-items: center;
-  /* Vertically align text with image */
   white-space: nowrap;
-  /* Prevent text wrapping */
   margin-right: 12px;
   color: #000;
   text-decoration: none;
   transition: color 0.3s;
 }
 
-
-
-
-
-
 .bottom-nav {
   display: flex;
   flex-direction: column;
   list-style: none;
-  /* Remove list-style in case of nested lists */
-  min-width: 320px;
-  /* Ensure proper width for responsive design */
-  padding: 0px 15px 0px 15px;
-
-
+  min-width: 360px;
+  padding: 0 15px;
 }
 
 .bottom-nav ul {
   margin-right: 15px;
   margin-bottom: 10px;
-
   list-style: none;
   white-space: nowrap;
+  padding-left: 0;
 }
+
 .bottom-nav ul:first-child {
   margin-right: 22px;
 }
 
 .bottom-rightdiv {
-
   display: flex;
   justify-content: flex-end;
-  /* Space between left and right sections */
   flex-wrap: nowrap;
-  /* Prevent wrapping of the left and right containers */
   margin-left: 12px;
   font-size: 16px;
   font-weight: 600;
-
 }
 
-
-.bottom-rightdiv li {
+.bottom-rightdiv ul li {
   position: relative;
+}
+
+/* =========================
+   SUBMENU STRUKTUUR
+   ========================= */
+
+.has-submenu {
+  position: relative;
+  display: inline-block;
+}
+
+.menu-link-row {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  width: auto;
+}
+
+.menu-link-row > a {
+  display: inline-flex;
+  align-items: center;
+  flex: 0 0 auto;
+  width: auto;
+  text-decoration: none;
+  color: #000000;
+}
+
+.submenu-toggle {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  flex: 0 0 auto;
+  width: auto;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 0.25s ease;
+}
+
+.submenu-toggle img {
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+
+.has-submenu.open > .menu-link-row .submenu-toggle {
+  transform: rotate(180deg);
 }
 
 .popup {
   position: absolute;
-  white-space: nowrap;
+  top:100%;
+  left: 0;
   display: none;
-  top: 0px;
-  /* Start above the visible area */
-  left: 0px;
-  /* Center horizontally */
+  opacity: 0;
+  pointer-events: none;
+  white-space: nowrap;
   min-width: max-content;
-  /* Make it as wide as its content */
-
   background-color: rgba(60, 60, 60, 0.8);
-  /* Transparent red background */
   border: 1px solid #ff0100;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
   z-index: 1000;
-  padding: 10px 0px 0px 10px;
-  /* Creating the arrow effect */
-
+  padding: 10px 12px;
   border-top-right-radius: 8px;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
-
 }
 
-/* Keyframes for sliding animation */
-@keyframes slideIn {
-  0% {
+.popup ul {
+  margin: 0;
+  padding: 0;
+}
+
+.popup li {
+  list-style: none;
+}
+
+
+
+@keyframes slideInDesktop {
+  from {
     opacity: 0;
-    top: -20%;
-    /* Start from above */
+    transform: translateY(-8px);
   }
-
-  100% {
+  to {
     opacity: 1;
-    top: 24px;
-    /* Final position */
+    transform: translateY(0);
   }
 }
 
-.popup a {
-  color: #eeeeee
-}
-
-
-
-
-/*.bottom-rightdiv li:hover .popup,
- .popup:hover {
-  display: block;
-  
-  animation: slideIn 0.5s ease-in-out forwards;
-} */
-
-/* Popup avaneb AINULT noole (img) hoveril – HTML muutmata */
 @media (hover: hover) {
-
-  /* kui hiir on noole pildi kohal, ava popup */
-  .bottom-rightdiv ul > li:has(a > img:hover) > .popup,
-  .bottom-rightdiv ul > li > .popup:hover {
+  .has-submenu:hover > .popup,
+  .has-submenu.open > .popup {
     display: block;
-    animation: slideIn 0.5s ease-in-out forwards;
+    opacity: 1;
+    pointer-events: auto;
+    animation: slideInDesktop 0.2s ease forwards;
   }
 }
 
-.submenu-toggle {
-  cursor: pointer;
-  width: 20px;
-  vertical-align: bottom;
+/* mobile */
+@media (hover: none) {
+  .has-submenu.open > .popup {
+    display: block;
+    opacity: 1;
+    pointer-events: auto;
+    animation: slideInMobile 0.35s ease forwards;
+  }
+}
+.popup a,
+.popup a:visited,
+.popup a:focus,
+.popup a:active {
+  color: #eeeeee !important;
+  -webkit-text-fill-color: #eeeeee !important;
+  text-decoration: none;
 }
 
-.popup.show {
-  display: block;
-  animation: slideIn 0.4s ease forwards;
+.popup a:hover {
+  color: #ff0100 !important;
+  -webkit-text-fill-color: #ff0100 !important;
 }
 
+.popup a.active {
+  color: #ff0100 !important;
+  -webkit-text-fill-color: #ff0100 !important;
+  font-weight: 500;
+}
 
 .logo {
   width: 270px;
@@ -275,42 +297,37 @@ position:sticky;
   min-width: 230px;
   display: block;
   cursor: pointer;
-    transition: transform 0.4s ease;
-
+  transition: transform 0.4s ease;
 }
 
 .logo:hover {
-transform: scale(1.03);
+  transform: scale(1.03);
 }
 
 .second-line {
   display: flex;
   justify-content: space-between;
-  /* Logo on the left, bottom-right div on the right */
   align-items: flex-end;
- 
-  /* Ensure it spans full width */
   flex-wrap: wrap;
 }
-
-
 
 #kontakt {
   background-image: radial-gradient(#ff0100, #ff0100, rgb(206, 7, 7));
   padding: 6px 10px;
-  color: white;
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
   border-radius: 15px;
   transition-duration: 0.3s;
 }
 
 #kontakt:hover {
-  color: rgb(0, 0, 0);
+  color: #000000 !important;
+  -webkit-text-fill-color: #000000 !important;
 }
 
 #kontakt.aktiivne {
-  color: rgb(0, 0, 0);
+  color: #000000;
 }
-
 
 /* Facebook */
 img.facebook {
@@ -318,7 +335,6 @@ img.facebook {
   position: absolute;
   right: 12px;
   margin-top: 20px;
-
 }
 
 img.facebook:hover {
@@ -329,15 +345,10 @@ img.facebook:hover {
   transition-duration: 0.5s;
 }
 
-
-
-/* Hamburger märk ja funktsionaalsus */
-
+/* Hamburger */
 .hamburger {
-
   width: 25px;
   height: 25px;
-
   display: none;
   text-align: justify;
 }
@@ -385,74 +396,29 @@ img.facebook:hover {
   transform: rotate(-45deg);
 }
 
-
-/* =========================================================
-   SAFARI + HEADER LINKIDE LÕPLIK PARANDUS
-   ========================================================= */
-
-/* ❌ ÄRA kasuta enam globaalset a.active
-   (jäta see kas eemaldatuks või lase alloleval üle kirjutada) */
-
-/* ✅ AINULT PÕHIMENÜÜ AKTIIVNE LINK */
-.bottom-rightdiv > ul > li > a.active {
+/* Safari / active link fix */
+.bottom-rightdiv > ul > li > a.active,
+.menu-link-row > a.active {
   color: #ff0100 !important;
   -webkit-text-fill-color: #ff0100 !important;
 }
 
-/* ✅ PÕHIMENÜÜ HOVER (ainult kui EI ole active) */
-.bottom-rightdiv > ul > li > a:not(.active):not(#kontakt):hover {
+.bottom-rightdiv > ul > li > a:not(.active):not(#kontakt):hover,
+.menu-link-row > a:not(.active):hover {
   color: #ff0100 !important;
   -webkit-text-fill-color: #ff0100 !important;
 }
 
-/* ✅ DROPDOWNI ALAMLINGID – EI PÄRI PUNAST SAFARIS */
-.bottom-rightdiv .popup a,
-.bottom-rightdiv .popup a:visited,
-.bottom-rightdiv .popup a:focus,
-.bottom-rightdiv .popup a:active {
-  color: #eeeeee !important;
-  -webkit-text-fill-color: #eeeeee !important;
-}
-/* =========================================
-   ALAMLINGI AKTIIVNE OLEK (lehel olles)
-   ========================================= */
-
-.bottom-rightdiv .popup a.active {
-  color: #ff0100 !important;
-  -webkit-text-fill-color: #ff0100 !important;
-  font-weight: 500;
-}
-/* ✅ ALAMLINGID – HOVER AINULT DESKTOPIS */
-@media (hover: hover) {
-  .bottom-rightdiv .popup a:hover {
-    color: #ff0100 !important;
-    -webkit-text-fill-color: #ff0100 !important;
-  }
-}
-
-/* ✅ KONTAKT JÄÄB ERANDIKS */
-#kontakt {
-  background-image: radial-gradient(#ff0100, #ff0100, rgb(206, 7, 7));
-  color: #ffffff !important;
-  -webkit-text-fill-color: #ffffff !important;
-}
-
-#kontakt:hover {
-  color: #000000 !important;
-  -webkit-text-fill-color: #000000 !important;
-}
-
-/* ✅ SAFARI TOUCH BUGI FIX (ei jäta active olekut külge) */
 .bottom-rightdiv a {
   -webkit-tap-highlight-color: transparent;
 }
 
-/* Media queries */
+/* =========================
+   MEDIA QUERIES
+   ========================= */
+
 @media screen and (max-width: 1074px) {
-
   .bottom-rightdiv {
-
-
     flex-wrap: wrap;
   }
 
@@ -462,13 +428,17 @@ img.facebook:hover {
 
   .right-topdiv {
     flex-wrap: wrap;
+    min-width: 0;
   }
 }
 
 @media screen and (max-width: 755px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
 
   .top-nav {
-
     font-size: 11px;
   }
 
@@ -477,91 +447,47 @@ img.facebook:hover {
     grid-column: 1;
   }
 
- .bottom-nav ul {
-  margin-right: 0px;
-  white-space: normal;
- }
- .bottom-nav ul:first-child {
-  margin-right:0px;
-}
-  .bottom-rightdiv {
-    overflow-x: hidden;
-    box-sizing: border-box;
-    right: 0;
-    max-width: 100%;
-    display: none;
-    margin: 0;
-    padding-top: 30px;
-   height: 100vh;
-    opacity: 0;
-    position: absolute;
-    top: 110px;
-    left: 0;
-    width: auto;
-    z-index: 9999;
-    overflow-y: auto;
-    pointer-events: none;
-    background-image: linear-gradient(#eeeeee, rgb(255, 255, 255), #eeeeee, rgb(255, 255, 255));
-  }
-
-  .bottom-rightdiv.showing {
-    display: flex;
-    gap: 5px;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    opacity: 1;
-    pointer-events: auto;
-    animation: menuin 0.45s ease forwards;
-  }
-    .bottom-rightdiv a {
+  .bottom-nav ul {
+    margin-right: 0;
     white-space: normal;
-    word-break: break-word;
   }
 
+  .bottom-nav ul:first-child {
+    margin-right: 0;
+  }
 
   .second-line {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    /* 3 equal columns */
-
     margin-left: 6px;
     margin-right: 6px;
   }
 
   .logoanchor {
-
     grid-column: 2;
-    /* Position it in the second column (center) */
-
   }
 
   @keyframes menuin {
     from {
-      transform: translatey(-100%);
+      transform: translateY(-100%);
       opacity: 0;
     }
-
     to {
-      transform: translatey(0%);
+      transform: translateY(0%);
       opacity: 1;
     }
   }
 
   img.facebook {
     width: 20px;
-
     position: absolute;
     top: 60px;
-
     right: 12px;
     margin-top: 20px;
-
   }
 
   .header-container.scroll-down {
-  position:sticky;
+    position: sticky;
     animation: scroll-down 0.7s ease-out forwards;
   }
 
@@ -569,14 +495,13 @@ img.facebook:hover {
     from {
       transform: translateY(-150px);
     }
-
     to {
       transform: translateY(-34px);
     }
   }
 
   .header-container.scroll-up {
-  position:sticky;
+    position: sticky;
     animation: scroll-up 0.7s ease-out forwards;
   }
 
@@ -584,63 +509,101 @@ img.facebook:hover {
     from {
       transform: translateY(-34px);
     }
-
     to {
-      transform: translateY(0px);
+      transform: translateY(0);
     }
   }
 
-  .bottom-rightdiv li {
-    position: relative;
+
+  .bottom-rightdiv {
+    display: none;
+    margin: 0;
+    padding-top: 30px;
+    opacity: 0;
+    position: fixed;
+    top: 108px;
+    left: 0;
+    width: 100%;
+    height: calc(100dvh - 108px);
+    z-index: 9999;
+    overflow-y: auto;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior: contain;
+    background-image: linear-gradient(
+      #eeeeee,
+      rgb(255, 255, 255),
+      #eeeeee,
+      rgb(255, 255, 255)
+    );
   }
 
-  .bottom-rightdiv ul {
-    position: relative;
+  .bottom-rightdiv.showing {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-direction: column;
+    text-align: center;
+    animation: menuin 0.5s ease-in-out forwards;
+  }
+
+
+  .menu-link-row {
+    justify-content: center;
   }
 
   .popup {
-
-    top: -50px;
-    /* Position below the parent li */
-    left: 50%;
-    /* Center it horizontally */
-    transform: translateX(-50%);
-    /* Shift it back by 50% of its own width to center it */
+    position: absolute;
+    top: 100%;
+    left: 50% !important;
+    right: auto !important;
+    width: max-content;
+    min-width: 0;
+    max-width: 90vw;
+    white-space: normal;
     background-color: rgba(60, 60, 60, 1);
-    /* Transparent red background */
+    border: 1px solid #ff0100;
     border-top-left-radius: 8px;
-   padding: 10px 10px 0px 10px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    padding: 10px 12px;
+    display: none;
+    opacity: 0;
+    pointer-events: none;
+    text-align: left;
+    z-index: 1000;
   }
 
-
-
-
-
-
-  /* Keyframes for sliding animation */
-  @keyframes slideIn {
-    0% {
+  @keyframes slideInMobile {
+    from {
       opacity: 0;
-      top: -50px;
-      /* Start from above */
+      transform: translateX(-50%) translateY(-12px);
     }
-
-    100% {
+    to {
       opacity: 1;
-      top: 100%;
-      /* Final position */
+      transform: translateX(-50%) translateY(0);
     }
+  }
+
+  .has-submenu.open > .popup,
+  .has-submenu:hover > .popup {
+    display: block;
+    opacity: 1;
+    pointer-events: auto;
+    animation: slideInMobile 0.35s ease forwards;
   }
 }
+
+
 @media screen and (max-width: 694px) {
- 
   img.facebook {
-
     top: 83px;
+  }
 
-   }
   .header-container.scroll-down {
-  position:sticky;
+    position: sticky;
     animation: scroll-down 0.7s ease-out forwards;
   }
 
@@ -655,7 +618,7 @@ img.facebook:hover {
   }
 
   .header-container.scroll-up {
-  position:sticky;
+    position: sticky;
     animation: scroll-up 0.7s ease-out forwards;
   }
 
@@ -665,11 +628,12 @@ img.facebook:hover {
     }
 
     to {
-      transform: translateY(0px);
+      transform: translateY(0);
     }
   }
+
   .bottom-rightdiv {
- 
     top: 135px;
+   min-width: 360px;
   }
-  }
+}

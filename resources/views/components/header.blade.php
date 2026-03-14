@@ -62,7 +62,7 @@
                 <div class="bottom-rightdiv">
 
                     {{-- KÜTTESÜSTEEMIDE EHITUS --}}
-                    <ul >
+                    <ul>
                         <li>
                             <a class="{{ request()->is('kuttesusteemide-ehitus*') ? 'active' : '' }}"
                                 href="{{ route('kuttesusteemide-ehitus') }}">
@@ -73,12 +73,17 @@
 
                     {{-- SOOJUSPUMBAD --}}
                     <ul>
-                        <li>
-                            <a class="{{ request()->is('soojuspumbad*') ? 'active' : '' }}"
-                                href="{{ route('soojuspumbad.index') }}">
-                                Soojuspumbad
-                                <img class="submenu-toggle" src="{{ asset('images/icons/down.png') }}" alt="Ava menüü">
-                            </a>
+                        <li class="has-submenu">
+                            <div class="menu-link-row">
+                                <a class="{{ request()->is('soojuspumbad*') ? 'active' : '' }}"
+                                    href="{{ route('soojuspumbad.index') }}">
+                                    Soojuspumbad
+                                </a>
+
+                                <button class="submenu-toggle" type="button" aria-label="Ava soojuspumpade alammenüü">
+                                    <img src="{{ asset('images/icons/down.png') }}" alt="">
+                                </button>
+                            </div>
 
                             <div class="popup">
                                 <ul>
@@ -107,12 +112,17 @@
 
                     {{-- TAHKEKÜTE --}}
                     <ul>
-                        <li>
-                            <a class="{{ request()->is('tahkekutteseadmed*') ? 'active' : '' }}"
-                                href="{{ route('tahkekutteseadmed.index') }}">
-                                Tahkeküte
-                                <img class="submenu-toggle" src="{{ asset('images/icons/down.png') }}" alt="Ava menüü">
-                            </a>
+                        <li class="has-submenu">
+                            <div class="menu-link-row">
+                                <a class="{{ request()->is('tahkekutteseadmed*') ? 'active' : '' }}"
+                                    href="{{ route('tahkekutteseadmed.index') }}">
+                                    Tahkeküte
+                                </a>
+
+                                <button class="submenu-toggle" type="button" aria-label="Ava tahkekütte alammenüü">
+                                    <img src="{{ asset('images/icons/down.png') }}" alt="">
+                                </button>
+                            </div>
 
                             <div class="popup">
                                 <ul>
@@ -133,20 +143,27 @@
                         </li>
                     </ul>
 
-                    {{-- REMONT JA HOOLDUS --}}
+                    {{-- HOOLDUS JA REMONT --}}
                     <ul>
-                        <li>
-                            <a class="{{ request()->is('hooldus-ja-remont*') ||
+                        <li class="has-submenu">
+                            <div class="menu-link-row">
+                                <a class="{{ request()->is('hooldus-ja-remont*') ||
                                 request()->is('soojuspumpade-hooldus*') ||
+                                request()->is('soojuspumpade-remont*') ||
                                 request()->is('kuttevee-demineraliseerimine*') ||
                                 request()->is('kuttevee-inhibiitorid*') ||
                                 request()->is('kuttesusteemi-labipesu*')
                                     ? 'active'
                                     : '' }}"
-                                href="{{ route('hooldus-ja-remont') }}">
-                                Hooldus ja remont
-                                <img class="submenu-toggle" src="{{ asset('images/icons/down.png') }}" alt="Ava menüü">
-                            </a>
+                                    href="{{ route('hooldus-ja-remont') }}">
+                                    Hooldus ja remont
+                                </a>
+
+                                <button class="submenu-toggle" type="button"
+                                    aria-label="Ava hoolduse ja remondi alammenüü">
+                                    <img src="{{ asset('images/icons/down.png') }}" alt="">
+                                </button>
+                            </div>
 
                             <div class="popup">
                                 <ul>
