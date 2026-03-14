@@ -574,29 +574,29 @@ img.facebook:hover,
     }
   }
 
-  .bottom-rightdiv {
-    display: none;
-    margin: 0;
-    padding: 30px 16px 24px;
-    opacity: 0;
-    position: fixed;
-    top: 108px;
-    left: 0;
-    width: 100%;
-    height: calc(100dvh - 108px);
-    z-index: 9999;
-    overflow-y: auto;
-    overflow-x: hidden;
-    -webkit-overflow-scrolling: touch;
-    overscroll-behavior: contain;
-    background-image: linear-gradient(
-      #eeeeee,
-      rgb(255, 255, 255),
-      #eeeeee,
-      rgb(255, 255, 255)
-    );
-    box-sizing: border-box;
-  }
+.bottom-rightdiv {
+  display: none;
+  margin: 0;
+  padding: 30px 16px 24px;
+  opacity: 0;
+  position: fixed;
+  top: 108px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
+  background-image: linear-gradient(
+    #eeeeee,
+    rgb(255, 255, 255),
+    #eeeeee,
+    rgb(255, 255, 255)
+  );
+  box-sizing: border-box;
+}
 
   .bottom-rightdiv.showing {
     display: flex;
