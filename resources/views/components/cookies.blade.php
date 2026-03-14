@@ -26,37 +26,32 @@
             </span>
         </label>
 
-        <button
-            id="user-cookies-preferences"
-            class="user-cookies-preferences"
+        <button id="user-cookies-preferences" class="user-cookies-preferences"
             aria-label="Salvesta küpsiste eelistused">
             Salvesta eelistused
         </button>
     </div>
 
     <div class="cookie-actions">
-        <button
-            id="kohanda-cookies"
-            class="cookie-button kohanda"
-            aria-label="Kohanda küpsiseid">
-            Kohanda
-            <img
-                src="{{ asset('images/icons/down.png') }}"
-                alt=""
-                style="padding-left:5px;width:20px;height:auto;">
-        </button>
 
-        <button style="background-color: darkblue"
-            id="reject-analytics"
-            class="cookie-button reject"
+        <button id="kohanda-cookies" class="submenu-toggle" type="button" aria-label="Kohanda küpsiseid">
+    Kohanda
+    <svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20">
+        <path d="M6 9l6 6 6-6"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.3"
+              stroke-linecap="round"
+              stroke-linejoin="round" />
+    </svg>
+</button>
+
+        <button style="background-color: darkblue" id="reject-analytics" class="cookie-button reject"
             aria-label="Ainult vajalikud küpsised">
             Ainult vajalikud
         </button>
 
-        <button 
-            id="accept-cookies"
-            class="cookie-button accept"
-            aria-label="Nõustu kõigi küpsistega">
+        <button id="accept-cookies" class="cookie-button accept" aria-label="Nõustu kõigi küpsistega">
             Nõustu kõigiga
         </button>
     </div>
@@ -64,10 +59,6 @@
 </div>
 
 <!-- Küpsiste ikoon -->
-<div
-    id="cookie-icon"
-    class="cookie-icon"
-    onclick="toggleBanner()"
-    aria-hidden="true">
+<div id="cookie-icon" class="cookie-icon" onclick="toggleBanner()" aria-hidden="true">
     🍪
 </div>

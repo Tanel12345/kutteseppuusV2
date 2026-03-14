@@ -151,4 +151,11 @@
 }
 @media screen and (max-width: 755px) {
     
-   .cookie-icon {display:none !important;}}
+   
+.cookie-icon {
+    width:40px;
+    height:40px;
+    font-size:20px;
+    bottom:12px;
+    right:12px;
+}}
