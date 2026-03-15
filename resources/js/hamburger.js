@@ -7,6 +7,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (!hamburger || !menuBtn || !bottomRightdiv) return;
 
+    const menuLinks = bottomRightdiv.querySelectorAll("a");
+
     function isMobileMenu() {
         return window.innerWidth <= 755;
     }
@@ -50,6 +52,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
             if (!isOpen) {
                 parentItem.classList.add("open");
+            }
+        });
+    });
+
+    menuLinks.forEach((link) => {
+        link.addEventListener("click", () => {
+            if (isMobileMenu()) {
+                closeMobileMenu();
             }
         });
     });
