@@ -1,6 +1,6 @@
 /* Sektsioon pildilingid */
 section.piltlingid {
-    width: 100%;
+  
     
     background-color: #ffffff;
     
@@ -8,7 +8,7 @@ section.piltlingid {
   div.piltlingidiv {
     background-color: #ffffff;
 
-    width: 100%;
+  
     max-width: 1300px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Dynamic columns */
@@ -22,9 +22,9 @@ section.piltlingid {
   }
   div.piltlink {
  
-   width: 100%;
+ 
    max-width: 400px;
-   min-width: 310px;
+   min-width: 280px;
    background-color: #ffffff;
    border-radius: 15px;
    box-shadow: 0 10px 7px rgba(0, 0, 0, 0.3);
@@ -50,7 +50,6 @@ section.piltlingid {
     width: 100%;
   }
   .piltlingipilt img {
-    width: 100%;
     object-fit: cover;
     border-radius: 15px 15px 0 0;
     border: 1px solid rgba(0, 0, 0, 0.12);
@@ -108,18 +107,18 @@ ul.Lisalingid {
 
   gap: 1rem; 
 
-  width: 100%;
+
   margin: 30px 0 12px 0;   /* ⬅️ EI nihuta ridu */
   padding: 0 15px;        /* ⬅️ visuaalne siseserv */
 
-  box-sizing: border-box; /* ⬅️ oluline */
+ 
 }
 
 
   .Lisalingid li {
   
     width:160px;
-    height: 45px;
+    height: 50px;
     font-size: 0.7rem;
     border-style:solid;
     border-color: #ff0100;

@@ -8,7 +8,8 @@
                     <span>+372 5668 1555</span>
                 </a>
 
-                <a class="contact-link" href="mailto:tanel@kuttesepp.ee" aria-label="Saada e-kiri aadressile tanel@kuttesepp.ee">
+                <a class="contact-link" href="mailto:tanel@kuttesepp.ee"
+                    aria-label="Saada e-kiri aadressile tanel@kuttesepp.ee">
                     <img src="{{ asset('images/icons/küttesepp.png') }}" alt="" aria-hidden="true" />
                     <span>tanel[ät]kuttesepp.ee</span>
                 </a>
@@ -43,23 +44,21 @@
 
         {{-- ALUMINE NAV --}}
         <nav class="bottom-nav" aria-label="Peamenüü">
-            <a class="facebook-link" href="https://www.facebook.com/kuttesepp" target="_blank" rel="noopener noreferrer" aria-label="Küttesepp Facebookis">
-                <img class="facebook" src="{{ asset('images/icons/facebook.png') }}" alt="Facebook logo" width="20" height="20" />
+            <a class="facebook-link" href="https://www.facebook.com/kuttesepp" target="_blank" rel="noopener noreferrer"
+                aria-label="Küttesepp Facebookis">
+                <img class="facebook" src="{{ asset('images/icons/facebook.png') }}" alt="Facebook logo" width="20"
+                    height="20" />
             </a>
 
             <div class="second-line">
-                <button class="hamburger" type="button" aria-label="Ava menüü" aria-expanded="false" aria-controls="main-menu">
+                <button class="hamburger" type="button" aria-label="Ava menüü" aria-expanded="false"
+                    aria-controls="main-menu">
                     <span class="menu-btn"></span>
                 </button>
 
                 <a href="{{ route('index') }}" class="logoanchor" aria-label="Avaleht">
-                    <img
-                        class="logo"
-                        src="{{ asset('images/küttesepp_logo.webp') }}"
-                        alt="Küttesepp logo"
-                        width="270"
-                        height="86"
-                    />
+                    <img class="logo" src="{{ asset('images/küttesepp_logo.webp') }}" alt="Küttesepp logo"
+                        width="270" height="86" />
                 </a>
 
                 <div class="bottom-rightdiv" id="main-menu">
@@ -78,12 +77,8 @@
                                     Soojuspumbad
                                 </a>
 
-                                <button
-                                    class="submenu-toggle"
-                                    type="button"
-                                    aria-label="Ava soojuspumpade alammenüü"
-                                    aria-expanded="false"
-                                    aria-controls="submenu-soojuspumbad">
+                                <button class="submenu-toggle" type="button" aria-label="Ava soojuspumpade alammenüü"
+                                    aria-expanded="false" aria-controls="submenu-soojuspumbad">
                                     <svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20">
                                         <path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.3"
                                             stroke-linecap="round" stroke-linejoin="round" />
@@ -117,20 +112,20 @@
 
                         <li class="has-submenu">
                             <div class="menu-link-row">
-                                <a class="{{ request()->is('tahkekutteseadmed*') ? 'active' : '' }}"
+                                <a class="{{ request()->is('tahkekutteseadmed*') ||
+                                request()->is('pelletikatlad-kaminad*') ||
+                                request()->is('keskkuttepliidid-kaminad*')
+                                    ? 'active'
+                                    : '' }}"
                                     href="{{ route('tahkekutteseadmed.index') }}">
                                     Tahkeküte
                                 </a>
 
-                                <button
-                                    class="submenu-toggle"
-                                    type="button"
-                                    aria-label="Ava tahkekütte alammenüü"
-                                    aria-expanded="false"
-                                    aria-controls="submenu-tahkekute">
+                                <button class="submenu-toggle" type="button" aria-label="Ava tahkekütte alammenüü"
+                                    aria-expanded="false" aria-controls="submenu-tahkekute">
                                     <svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20">
-                                        <path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.3"
-                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M6 9l6 6 6-6" fill="none" stroke="currentColor"
+                                            stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" />
                                     </svg>
                                 </button>
                             </div>
@@ -156,24 +151,23 @@
                         <li class="has-submenu">
                             <div class="menu-link-row">
                                 <a class="{{ request()->is('hooldus-ja-remont*') ||
-                                    request()->is('soojuspumpade-hooldus*') ||
-                                    request()->is('soojuspumpade-remont*') ||
-                                    request()->is('kuttevee-demineraliseerimine*') ||
-                                    request()->is('kuttevee-inhibiitorid*') ||
-                                    request()->is('kuttesusteemi-labipesu*') ? 'active' : '' }}"
+                                request()->is('soojuspumpade-hooldus*') ||
+                                request()->is('soojuspumpade-remont*') ||
+                                request()->is('kuttevee-demineraliseerimine*') ||
+                                request()->is('kuttevee-inhibiitorid*') ||
+                                request()->is('kuttesusteemi-labipesu*')
+                                    ? 'active'
+                                    : '' }}"
                                     href="{{ route('hooldus-ja-remont') }}">
                                     Hooldus ja remont
                                 </a>
 
-                                <button
-                                    class="submenu-toggle"
-                                    type="button"
-                                    aria-label="Ava hoolduse ja remondi alammenüü"
-                                    aria-expanded="false"
+                                <button class="submenu-toggle" type="button"
+                                    aria-label="Ava hoolduse ja remondi alammenüü" aria-expanded="false"
                                     aria-controls="submenu-hooldus">
                                     <svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20">
-                                        <path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.3"
-                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M6 9l6 6 6-6" fill="none" stroke="currentColor"
+                                            stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" />
                                     </svg>
                                 </button>
                             </div>

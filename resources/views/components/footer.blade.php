@@ -33,7 +33,7 @@
             <hr>
             <h6>LEIA MIND FACEBOOKIS</h6>
             <hr>
-            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fkuttesepp%2Fposts%2Fpfbid02efiuszvCj1BCaXV8aDWsCa2Cgy6a3PEo3JH8gKP8vMMpQBiSzoFEWC6NGMS2C88zl&show_text=true&width=200" width="200" height="200" style="border:none;overflow:hidden;min-width: 400px; transform: scale(0.7); transform-origin: 0 0;" scrolling="no" frameborder="1" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fkuttesepp%2Fposts%2Fpfbid02efiuszvCj1BCaXV8aDWsCa2Cgy6a3PEo3JH8gKP8vMMpQBiSzoFEWC6NGMS2C88zl&show_text=true&width=200" width="250" height="200" style="border:none;min-width: 200px; transform: scale(0.7); transform-origin: 0 0;" scrolling="no" frameborder="1" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
             
         </div>
     </div>

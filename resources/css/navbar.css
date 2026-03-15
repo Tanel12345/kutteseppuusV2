@@ -9,9 +9,12 @@
   transition: color 1s;
 }
 
-html.menu-open,
 body.menu-open {
   overflow: hidden;
+  touch-action: none;
+}
+.header-container {
+  --mobile-header-height: 108px;
 }
 
 /* ******************************************************************** */
@@ -31,6 +34,7 @@ header,
 .site-header {
   max-width: 1300px;
   margin: 0 auto;
+  
 }
 
 header.animate,
@@ -99,7 +103,7 @@ header.animate,
   justify-content: space-between;
   align-items: center;
   flex-wrap: nowrap;
-  min-width: 360px;
+  min-width: 340px;
 }
 
 .left-topdiv {
@@ -252,6 +256,7 @@ header.animate,
   margin-left: 12px;
   font-size: 16px;
   font-weight: 600;
+  
 }
 
 .bottom-rightdiv ul li,
@@ -307,13 +312,15 @@ header.animate,
    2) popup jääb avatuks kui hiir on popupi peal
    3) popup avaneb ka siis kui JS lisab .open
 */
-.has-submenu:has(.menu-link-row > a:hover) > .popup,
-.has-submenu:has(.popup:hover) > .popup,
-.has-submenu.open > .popup {
-  display: block;
-  opacity: 1;
-  pointer-events: auto;
-  animation: slideInDesktop 0.5s ease forwards;
+@media screen and (min-width: 756px) {
+  .has-submenu:has(.menu-link-row > a:hover) > .popup,
+  .has-submenu:has(.popup:hover) > .popup,
+  .has-submenu.open > .popup {
+    display: block;
+    opacity: 1;
+    pointer-events: auto;
+    animation: slideInDesktop 0.5s ease forwards;
+  }
 }
 
 .popup a,
@@ -576,36 +583,32 @@ img.facebook:hover,
 
 .bottom-rightdiv {
   display: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100%;
   margin: 0;
   padding: 30px 16px 24px;
   opacity: 0;
-  position: fixed;
-  top: 108px;
-  left: 0;
-  right: 0;
-  bottom: 0;
   z-index: 9999;
-  overflow-y: auto;
-  overflow-x: hidden;
-  -webkit-overflow-scrolling: touch;
-  overscroll-behavior: contain;
+  box-sizing: border-box;
   background-image: linear-gradient(
     #eeeeee,
     rgb(255, 255, 255),
     #eeeeee,
     rgb(255, 255, 255)
   );
-  box-sizing: border-box;
+  height: calc(100dvh - 130px);
+  overflow: hidden;
 }
-
   .bottom-rightdiv.showing {
-    display: flex;
-    gap: 10px;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    animation: menuin 0.5s ease-in-out forwards;
+     display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 10px;
+  text-align: center;
+  animation: menuin 0.5s ease-in-out forwards;
   }
 
   .main-menu {
@@ -718,8 +721,6 @@ img.facebook:hover,
     }
   }
 
-  .has-submenu:has(.menu-link-row > a:hover) > .popup,
-.has-submenu:has(.popup:hover) > .popup,
 .has-submenu.open > .popup {
   display: block;
   opacity: 1;
@@ -732,6 +733,9 @@ img.facebook:hover,
   img.facebook,
   .facebook {
     top: 83px;
+  }
+  .header-container {
+    --mobile-header-height: 135px;
   }
 
   .header-container.scroll-down {
@@ -766,7 +770,7 @@ img.facebook:hover,
 
   .bottom-rightdiv {
     top: 135px;
-    height: calc(100dvh - 135px);
-    min-width: 0;
+  bottom:0;
   }
+
 }

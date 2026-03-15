@@ -17,11 +17,19 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
+    function closeMobileMenu() {
+        bottomRightdiv.classList.remove("showing");
+        menuBtn.classList.remove("open");
+        document.body.classList.remove("menu-open");
+        closeAllSubmenus();
+    }
+
     hamburger.addEventListener("click", function (e) {
         e.stopPropagation();
 
         menuBtn.classList.toggle("open");
         bottomRightdiv.classList.toggle("showing");
+        document.body.classList.toggle("menu-open");
 
         if (!bottomRightdiv.classList.contains("showing")) {
             closeAllSubmenus();
@@ -52,15 +60,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
     document.addEventListener("click", () => {
         if (isMobileMenu()) {
-            closeAllSubmenus();
+            closeMobileMenu();
         }
     });
 
     window.addEventListener("resize", () => {
         if (!isMobileMenu()) {
-            closeAllSubmenus();
-            bottomRightdiv.classList.remove("showing");
-            menuBtn.classList.remove("open");
+            closeMobileMenu();
         }
     });
 });

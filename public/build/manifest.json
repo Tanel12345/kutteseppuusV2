@@ -4,7 +4,7 @@
     "name": "upscroller"
   },
   "resources/css/app.css": {
-    "file": "assets/app-u2sXcm-I.css",
+    "file": "assets/app-Lb7MsT99.css",
     "src": "resources/css/app.css",
     "isEntry": true,
     "names": [
@@ -36,7 +36,7 @@
     ]
   },
   "resources/css/pages/index.css": {
-    "file": "assets/index-CocoXSHh.css",
+    "file": "assets/index-DekMuTAH.css",
     "src": "resources/css/pages/index.css",
     "isEntry": true,
     "names": [
@@ -76,7 +76,7 @@
     ]
   },
   "resources/js/app.js": {
-    "file": "assets/app-RESuo0j9.js",
+    "file": "assets/app-CGCp7DJu.js",
     "name": "app",
     "src": "resources/js/app.js",
     "isEntry": true,
