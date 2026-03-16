@@ -119,7 +119,7 @@ header.animate,
   align-items: center;
   flex-wrap: nowrap;
   gap: 5px;
-  min-width: 340px;
+  min-width: 350px;
 }
 
 .top-nav img {
@@ -497,7 +497,7 @@ img.facebook:hover,
 
   .right-topdiv {
     flex-wrap: wrap;
-    min-width: 0;
+    min-width: 330px;
   }
 }
 
@@ -776,7 +776,7 @@ img.facebook:hover,
 
   @media screen and (max-width: 400px) {
   .top-nav {
-    font-size: 10px;
+   
     min-width: 320px;
     padding:15px 0 0 15px
   }
