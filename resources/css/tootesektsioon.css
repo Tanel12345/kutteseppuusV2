@@ -94,7 +94,8 @@
     top: 0;
     left: 50%; /* Center the images horizontally */
     transform: translateX(-50%); /* Centering */
-    width: 1600px;  /* Fixed width of 1300px */
+    width: 100%; 
+    max-width: 1600px;
     height: 100%;  /* Ensure the height covers the full height of the parent */
     display: flex;  /* Use flex to position the images side by side */
     justify-content: space-between;  /* Equal space between each image */

@@ -154,7 +154,7 @@ box-shadow: 0 3px 4px rgba(0, 0, 0, 0.3);
   height: 170px;
   background-image: radial-gradient(#ff0100, #ff0100, rgb(206, 7, 7));
   padding: 6px 10px;
-  margin: 100px auto 30px auto;
+  margin: 75px auto 30px auto;
   color: white;
   border-radius: 15px;
   transition-duration: 0.3s;
@@ -187,7 +187,7 @@ box-shadow: 0 3px 4px rgba(0, 0, 0, 0.3);
 .red-line {
   border: none;
   border-top: 2px solid #ff0100;
-  width: 400px;
+  max-width: 400px;
   margin: 1em auto 6em auto;
 }
 
