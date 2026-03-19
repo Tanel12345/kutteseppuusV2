@@ -28,10 +28,10 @@
 
                     <h2><span>Soojuspumpade paigaldus</span> – millest alustada ja mida arvestada?</h2>
                    
-                    <h3>Eduka paigalduse alus on läbimõeldud lahendus</h3>
+                    <h3>Eduka lõpptulemuse alus on läbimõeldud protsess</h3>
 
                     <p>
-                        Soojuspumpade paigaldus algab õigetest lähteandmetest. Oluline on aru saada, milline hoonega sobiv
+                        Soojuspumpade paigaldus algab õigetest lähteandmetest. Oluline on aru saada, millise hoonega milline
                         lahendus valida, kuhu paigutada sise- ja välisosa, kuidas ühendada süsteem olemasoleva küttega
                         ning millist dokumentatsiooni on vaja enne tööde algust ja pärast tööde lõppu.
                     </p>
@@ -48,7 +48,7 @@
                     <ul class="rohelise-linnukesega"
                         style="font-weight:500; font-size:18px; margin-top:20px; margin-bottom:20px">
                         <li>Mõõda enne, otsusta siis.</li>
-                        <li>Vali lahendus vastavalt hoonele, mitte ainult hinnale.</li>
+                        <li>Vali lahendus vastavalt hoonele, vajadustele ja ootustele.</li>
                         <li>Korrektselt planeeritud paigaldus aitab vältida hilisemaid ümbertegemisi.</li>
                     </ul>
 
@@ -94,8 +94,7 @@
                             </h5>
 
                             <p>
-                                Kui valik on tehtud, saab vajadusel tellida Küttesepalt nii projekti kui
-                                paigalduse terviklahenduse.
+                                Kui valik on tehtud, saab vajadusel tellida Küttesepalt nii projekti, seadmed kui paigalduse terviklahendusena.
                             </p>
                         </li>
                     </ul>
@@ -114,8 +113,8 @@
                     <p>
                         Sõltuvalt objektist võib teenus sisaldada nõustamist, sobiva seadme valikut, paigaldusprojekti,
                         dokumentatsiooni, seadme müüki, paigaldust, käivitust, seadistamist ning hilisemat hooldust.
-                        Vajadusel saab Küttesepp aidata ka kogu küttesüsteemi terviklahendusega, mitte ainult üksiku
-                        seadme paigaldusega.
+                        Vajadusel saab Küttesepp aidata ka kogu küttesüsteemi ehitusega, mitte ainult üksiku
+                        seadme paigaldamisega.
                     </p>
 
                     <ul class="rohelise-linnukesega"
