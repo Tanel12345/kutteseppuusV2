@@ -1,10 +1,10 @@
-<x-layout :title="'Soojuspumpade müük ja paigaldus Tallinnas ja Harjumaal | Küttesepp'" :metaDescription="'Soojuspumpade müük ja paigaldus Tallinnas ja Harjumaal. Õhk-õhk, õhk-vesi ja maasoojuspumbad koos nõustamise, sobiva lahenduse valiku ja professionaalse paigaldusega.'" :metaKeywords="'soojuspumbad, õhksoojuspump, õhk-vesi soojuspump, maasoojuspump, kütmine, energiasääst, küttesüsteemid'" 
+<x-layout :title="'Soojuspumbad Tallinnas ja Harjumaal | Õhk-õhk, õhk-vesi ja maasoojuspumbad | Küttesepp'" :metaDescription="'Soojuspumbad Tallinnas ja Harjumaal. Võrdle õhk-õhk, õhk-vesi ja maasoojuspumpasid ning leia oma kodule sobiv küttelahendus koos asjatundliku nõustamisega.'" :metaKeywords="'soojuspumbad, õhksoojuspump, õhk-vesi soojuspump, maasoojuspump, kütmine, energiasääst, küttesüsteemid'" 
 :ogImage="asset('images/serp/kuttesepp-og-soojuspumbad.webp')"
 :metaAuthor="'Tanel Sepp'" :robots="'index, follow'" :viteCssAssets="[
     'resources/css/pages/tootelehed.css',]"> <x-static_carousel
        title="SOOJUSPUMBAD <br><br><span>Tõhusaim ja nutikaim valik sinu kodu kütmiseks</span>"
-        content="Soojuspumpade peamine eesmärk on toota soojust võimalikult madala energiakuluga. Kõik soojuspumba tüübid – õhk-õhk, õhk-vesi ja maasoojuspumbad – kasutavad ära looduslikku soojusenergiat ning kannavad selle sinu elamisse. <br><br>Soojuspumbad erinevad üksteisest selle järgi, millisest keskkonnast nad soojust koguvad ja kuidas nad selle sinu küttevõrku või ruumidesse edasi annavad. Kui soovid säästa küttekuludelt, tõsta kodu energiatõhusust ja suurendada mugavust, on soojuspump üks parimaid valikuid. <br><br>Küttesepp aitab valida sinu hoone jaoks sobivaima lahenduse, koostab vajalikud projektid ning teostab professionaalse paigalduse ja seadistamise. Paigaldusteenust pakume nii enda lähedal <strong>Tallinna ja Harjumaa piirkonnas</strong> kui ka kaugemal üle Eesti."
-        image="images/taustad/soojuspumbad-üldtaust.webp" imageAlt="Soojuspumpade müük ja paigaldus Tallinnas ja Harjumaal"
+       content="Soojuspump on energiatõhus küttelahendus, mis kasutab ära välisõhus, maapinnas või muus keskkonnas leiduvat soojusenergiat ning suunab selle sinu elamisse. Erinevad soojuspumba tüübid – õhk-õhk, õhk-vesi ja maasoojuspumbad – sobivad erinevatele hoonetele, vajadustele ja eelarvetele. <br><br>Õige valik sõltub muu hulgas hoone suurusest, olemasolevast küttesüsteemist, soojustusest, tarbevee vajadusest ja sellest, kas soovid lisaks küttele ka jahutust. Küttesepp aitab võrrelda eri lahendusi ning leida sinu objektile tehniliselt ja majanduslikult sobivaima variandi. <br><br>Kui otsid soojuspumpa <strong>Tallinnas või Harjumaal</strong>, saad siit alustada erinevate tüüpide võrdlemisest ja sobiva lahenduse valikust."
+        image="images/taustad/soojuspumbad-üldtaust.webp" imageAlt="Soojuspumpad Tallinnas ja Harjumaal"
         eriStiil="object-position: bottom;" :textholderStyle="''" />
 <section class="piltlingid" id="piltlingid">
 
@@ -142,15 +142,50 @@
         </a>
     </div>
 
-    <!-- KONTAKT -->
+   
+
+</div>
+</section>
+    <section style="max-width:1300px;margin:0 auto;padding:20px 15px 70px 15px;">
+        <h2 style="font-size:32px;font-weight:400;text-align:center;margin:20px 0 0 0;">
+            KUIDAS VALIDA SOBIV SOOJUSPUMP?
+        </h2>
+
+        <hr class="red-line">
+
+        <div style="max-width:900px;margin:0 auto;font-size:18px;line-height:1.8;">
+            <p>
+                Sobiva soojuspumba valik sõltub eelkõige sinu hoone eripärast. Väiksematesse ja hästi jaotatud ruumidega
+                elamutesse sobib sageli hästi õhk-õhk soojuspump, mis on soodne ja pakub lisaks küttele ka jahutust.
+                Kui eesmärk on kütta veega töötavat põrandakütet, radiaatoreid ja tarbevett, on enamasti sobivam
+                õhk-vesi soojuspump. Kui soovid maksimaalselt stabiilset kasutegurit ja oled valmis suuremaks
+                alginvesteeringuks, tasub kaaluda maasoojuspumpa.
+            </p>
+<br>
+            <p>
+                Õige lahenduse valimisel tuleks arvestada hoone suurust, soojustust, olemasolevat küttesüsteemi,
+                tarbevee vajadust, elektriliitumist ja kasutusharjumusi. Samuti mängib rolli, kas soovid ainult
+                küttelahendust või ka ruumide jahutust suvisel ajal.
+            </p>
+<br>
+            <p>
+                Küttesepp aitab hinnata, milline soojuspumba tüüp on sinu objektile kõige mõistlikum. Kui vajad lisaks
+                ka terviklikku teostust, vaata eraldi
+                <a style="font-weight:700" href="{{ route('soojuspumpade-paigaldus', 'soojuspumpade-paigaldus') }}" title="Soojuspumba paigalduse teenus">
+                    soojuspumba paigalduse teenuselehte
+                </a>,
+                kus on täpsemalt kirjeldatud paigalduse, projekti ja dokumentatsiooni poolega seotud teemad.
+            </p>
+        </div>
+         <!-- KONTAKT -->
+<div style="width:100%; display:flex; justify-content:center;">
     <div class="kusipakkumist">
         <a href="{{ route('index') }}#form">
             <p style="margin:35px 5px;">KÜSI LISAINFOT</p>
         </a>
     </div>
-
 </div>
-</section>
+    </section>
 
 <x-up_scroller />
 <x-cookies />

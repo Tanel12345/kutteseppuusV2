@@ -1,7 +1,7 @@
 <x-layout 
 :title="'Küttesüsteemide ehitus Tallinnas ja Harjumaal | Küttesepp'"
-:metaDescription="'Küttesüsteemide ehitus eramajadele – soojuspumbad, katlad, põrandaküte, radiaatorküte. Küttesepp aitab valida sobiva kütteseadme ning teostab professionaalselt kogu küttesüsteemi ehituse.'"
-:metaKeywords="'küttesüsteemide ehitus, küttesüsteem, küttesüsteemi paigaldus, põrandaküte, radiaatorküte, soojuspumpade paigaldus, küttelahendused'"
+:metaDescription="'Küttesüsteemide ehitus Tallinnas ja Harjumaal. Küttesepp aitab valida sobiva lahenduse ning teostab põrandakütte, radiaatorkütte, soojuspumpade ja teiste küttesüsteemide terviklahendusi eramajadele ja väiksematele hoonetele.'"
+:metaKeywords="'küttesüsteemide ehitus, küttesüsteem, küttesüsteemi paigaldus, põrandaküte, radiaatorküte,  küttelahendused'"
 :ogImage="asset('images/serp/kuttesepp-og-paigaldus.webp')"
 :metaAuthor="'Tanel Sepp'"
 :robots="'index, follow'"
@@ -12,10 +12,11 @@
 <x-static_carousel
 title="KÜTTESÜSTEEMIDE EHITUS <br><br><span>Terviklik teenus sinu kodu kütmiseks</span>"
 
-content="Küttesüsteemi ehitus tähendab Küttesepa puhul terviklikku teenust – alates sobiva kütteallika valikust kuni torustiku, automaatika ja küttekehade paigaldamiseni. Õigesti ehitatud küttesüsteem töötab stabiilselt, hoiab energiakulu mõistlikuna ning tagab kodus ühtlase ja mugava sisekliima. <br><br>
+content="Küttesüsteemide ehitus tähendab Küttesepa puhul terviklikku teenust – alates sobiva kütteallika ja süsteemilahenduse valikust kuni torustiku, automaatika ja küttekehade paigaldamiseni. Õigesti ehitatud küttesüsteem töötab stabiilselt, hoiab energiakulu mõistlikuna ning tagab kodus ühtlase ja mugava sisekliima.<br><br>
 
-Küttesepp oma miniatuurse olemusega teostab küttesüsteemide ehitust eelkõige eramajadele, ridaelamutele ja teistele väiksematele hoonetele. Eelised suuremate konkurentide ees on selge ja personaalne lähenemine. Kuna küttesüsteemi erinevad osad peavad töötama tervikuna, siis teostan ainult selliseid töid, kus eelnevalt valmistatud küttesüsteemi osa on kas hoones nähtaval kujul või korrektselt dokumenteeritud.  
-<br> Muul juhul saabki kogu teenuse Küttesepalt, kes planeerib, teostab ja vastutab kogu küttesüsteemi eest. <br><br>
+Küttesepp teostab küttesüsteemide ehitust eelkõige eramajadele, ridaelamutele ja väiksematele hoonetele. Eeliseks on personaalne lähenemine, selge vastutus ja tervikpildi arvestamine kogu süsteemi toimimisel.<br><br>
+
+Kuna küttesüsteemi kõik osad peavad toimima koos, teostan töid eelkõige objektidel, kus olemasolev süsteem on hinnatav või korrektselt dokumenteeritud. Vajadusel saab kogu lahenduse Küttesepalt – planeerimisest kuni süsteemi valmimiseni.<br><br>
 
 Töötan peamiselt <strong>Tallinna ja Harjumaa piirkonnas</strong>, kuid olenevalt projektist liigun ka kaugemale üle Eesti."
 

@@ -270,7 +270,7 @@ header.animate,
 
 .popup {
   position: absolute;
-  top: 32px;
+  top: 31px;
   left: 0;
   display: none;
   opacity: 0;

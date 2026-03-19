@@ -12,13 +12,9 @@
         <div class="heading">
             <h1>Soojuspumbad ja küttesüsteemid <br> <span>Tallinnas ja Harjumaal</span></h1>
             <h2>Õhk-õhk | õhk-vesi | maakütte soojuspumbad ning tahkekütteseadmed</h2>
-            <h3>Lahendame Sinu küttemure</h3>
+         
 
-            <img
-                src="{{ asset('images/küttesepp_logo1.png') }}"
-                class="h1logo"
-                alt="Küttesepp logo"
-                loading="eager">
+            
         </div>
 
         <button type="button" class="carousel-button carousel-button-back">

@@ -38,9 +38,13 @@ $pageRoute =
 
                     <div class="tekstid">
                         <h2>{{ $product->name }}</h2>
-                        <button class="toggle-description" type="button">
+                        <button class="toggle-description" type="button" aria-label="Kohanda küpsiseid">
                             <span class="toggle-text">Vaata kirjeldust</span>
-                            <img class="toggle-icon" src="{{ asset('images/icons/down.png') }}" alt="Allaikoon">
+                            <svg class="toggle-icon" aria-hidden="true" viewBox="0 0 24 24" width="20"
+                                height="20">
+                                <path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.3"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
                         </button>
 
                         <p class="description">{!! nl2br(e($product->description)) !!}</p>
