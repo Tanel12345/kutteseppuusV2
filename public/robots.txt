@@ -2,4 +2,4 @@ User-agent: *
 Disallow: /taname
 Disallow: /privaatsuspoliitika
 
-Sitemap: https://kuttesepp.ee/sitemap.xml
+Sitemap: https://www.kuttesepp.ee/sitemap.xml

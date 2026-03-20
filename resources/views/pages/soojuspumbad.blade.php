@@ -171,7 +171,7 @@
             <p>
                 Küttesepp aitab hinnata, milline soojuspumba tüüp on sinu objektile kõige mõistlikum. Kui vajad lisaks
                 ka terviklikku teostust, vaata eraldi
-                <a style="font-weight:700" href="{{ route('soojuspumpade-paigaldus', 'soojuspumpade-paigaldus') }}" title="Soojuspumba paigalduse teenus">
+                <a style="font-weight:700" href="{{ route('soojuspumpade-paigaldus') }}" title="Soojuspumba paigalduse teenus">
                     soojuspumba paigalduse teenuselehte
                 </a>,
                 kus on täpsemalt kirjeldatud paigalduse, projekti ja dokumentatsiooni poolega seotud teemad.
