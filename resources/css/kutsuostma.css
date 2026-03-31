@@ -1,5 +1,5 @@
 .sektsioon-kutsuostma {
-  margin: 180px 20px 55px;
+  margin: 190px 20px 55px;
 }
 
 .hero-text {
@@ -115,7 +115,7 @@
 
 @media screen and (max-width: 755px) {
   .sektsioon-kutsuostma {
-    margin: 140px 20px 40px;
+    margin: 120px 20px 60px;
   }
 
   .hero-text {

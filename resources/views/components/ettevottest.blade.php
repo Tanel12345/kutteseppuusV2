@@ -5,19 +5,19 @@
             <h2><span>Küttesepp</span> aitab luua töökindlaid küttesüsteeme eramajadele</h2>
 
             <p>
-                OÜ Küttesepp pakub eramajadele kaasaegseid ja tõhusaid küttesüsteeme ning terviklahendusi
-                alates nõustamisest ja sobiva lahenduse leidmisest kuni paigalduse, hoolduse ja järelteeninduseni.
+                Pakun eramajadele, paarismajadele, ridaelamutele kaasaegseid ja tõhusaid küttesüsteeme ning terviklahendusi
+                alates nõustamisest kuni paigalduse, hoolduse, remondi ja järelteeninduseni.
             </p>
 
             <p>
-                Aitan leida lahenduse vastavalt hoonele, kasutusharjumustele ja eelarvele.
+                Aitan leida sobiva küttesüsteemi vastavalt hoonele, kasutusharjumustele ja eelarvele.
                 Tegutsen peamiselt <strong>Tallinnas ja Harjumaal</strong>, kuid olenevalt tööst ka mujal Eestis.
             </p>
 <br>
             <h3>Miks valida Küttesepp?</h3>
 
             <p>
-                Küttesepp on mikroettevõte, kus töö eest vastutab üks meister – <strong>Tanel Sepp</strong>. <br>Olen küttesüsteemide valdkonnas tegutsenud alates <strong>2003. aastast</strong>.
+                Küttesepp on mikroettevõte, kus töö eest vastutab üks meister – <strong>Tanel Sepp</strong>. Olen küttesüsteemide valdkonnas tegutsenud juba alates <strong>2003. aastast</strong>.
             </p>
 
             <p>

@@ -24,12 +24,12 @@ padding-top:20px;
   display: block;
   width: 100%;
 
-  margin: 35px 0 25px 0;
-
+  margin: 35px 0 10px 0;
+padding: 15px;
   text-align: center;
 
   font-size: 26px;
-  font-weight: 300; /* veel pehmem */
+  font-weight: 200; /* veel pehmem */
  
 
   text-transform: uppercase;
