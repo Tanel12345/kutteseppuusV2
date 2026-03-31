@@ -2,7 +2,7 @@
 <section class="sektsioon-teenused" id="teenused">
     <div class="teenused-wrapper">
       
- <h2 class="teenused-title">Küttesepp pakub terviklahendust eramajade küttesüsteemidele</h2>
+ <h2 class="teenused-title">Küttesepalt saab terviklahenduse eramajade küttesüsteemidele</h2>
         <ul class="teenused">
             
             <li>

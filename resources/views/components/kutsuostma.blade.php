@@ -18,7 +18,7 @@
         </div>
 
         <p class="hero-area">
-            Tegutseme peamiselt Tallinnas ja Harjumaal kuid kokkuleppel liigume ka mujale Eestis.
+            Tegutseme eelkõige Tallinnas ja Harjumaal kuid kokkuleppel liigume ka mujale Eestis.
         </p>
     </div>
 

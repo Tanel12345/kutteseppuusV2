@@ -17,8 +17,7 @@
             <h3>Miks valida Küttesepp?</h3>
 
             <p>
-                Küttesepp on mikroettevõte, kus töö eest vastutab üks meister – <strong>Tanel</strong>.
-                Olen küttesüsteemide valdkonnas tegutsenud alates <strong>2003. aastast</strong>.
+                Küttesepp on mikroettevõte, kus töö eest vastutab üks meister – <strong>Tanel Sepp</strong>. <br>Olen küttesüsteemide valdkonnas tegutsenud alates <strong>2003. aastast</strong>.
             </p>
 
             <p>
@@ -46,7 +45,7 @@
             </p>
 
             <p>
-                Küttesepp teostab lisaks küttesüsteemide ehitusele ka hooldust, remonti, läbipesu ja küttevee töötlust,
+                Küttesepp pakubki lisaks küttesüsteemide ehitusele ka hooldust, remonti, läbipesu ja küttevee töötlust,
                 lähtudes tootjate nõuetest ja kehtivatest standarditest.
             </p>
 <br>

@@ -17,19 +17,19 @@ padding-top:20px;
    max-width: 1300px;
    min-width: 300px;
    margin: 0 auto;
-   padding: 10px 8px 60px 8px;
+   padding: 0 8px 60px 8px;
    gap: 10px;
  }
  .teenused-title {
   display: block;
   width: 100%;
 
-  margin: 25px 0 25px 0;
+  margin: 35px 0 25px 0;
 
   text-align: center;
 
   font-size: 26px;
-  font-weight: 500; /* veel pehmem */
+  font-weight: 300; /* veel pehmem */
  
 
   text-transform: uppercase;
@@ -140,10 +140,4 @@ width:100%;
 
  
 
- @media screen and (max-width: 755px)   {
 
-  .teenused{
-    justify-content: center;
-       padding: 80px 8px 20px 8px;
-  }
- }
