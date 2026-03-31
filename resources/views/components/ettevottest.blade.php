@@ -5,7 +5,7 @@
             <h2><span>Küttesepp</span> aitab luua töökindlaid küttesüsteeme eramajadele</h2>
 
             <p>
-                Pakun eramajadele, paarismajadele, ridaelamutele kaasaegseid ja tõhusaid küttesüsteeme ning terviklahendusi
+                Pakun eramajadele, paarismajadele, ridaelamutele kaasaegseid ja tõhusaid küttelahendusi
                 alates nõustamisest kuni paigalduse, hoolduse, remondi ja järelteeninduseni.
             </p>
 

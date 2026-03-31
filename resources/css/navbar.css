@@ -1,11 +1,4 @@
-
-
 /* pseudo elements */
-.top-nav a:hover {
-  color: #ff0100;
-  transition: color 0.5s;
-}
-
 #ettevottest:hover {
   color: #000000;
   transition: color 1s;
@@ -317,10 +310,11 @@ header,
   display: block;
   cursor: pointer;
   transition: transform 0.25s ease;
+  transform-origin: center bottom;
 }
 
 .logo:hover {
-  transform: scale(1.03);
+  transform: scale(1.04);
 }
 
 .second-line {
@@ -667,19 +661,13 @@ img.facebook:hover,
     pointer-events: auto;
     animation: slideInMobile 0.28s ease forwards;
   }
-
- 
 }
 
 @media screen and (max-width: 694px) {
+  .header-container.scroll-down {
+    transform: translateY(-58px);
+  }
 
-   .header-container.scroll-down {
-  transform: translateY(-58px);
-}
-
-.header-container.scroll-up {
-  transform: translateY(0);
-}
   img.facebook,
   .facebook {
     top: 83px;

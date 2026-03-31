@@ -4,7 +4,7 @@
     "name": "upscroller"
   },
   "resources/css/app.css": {
-    "file": "assets/app-BKyqHips.css",
+    "file": "assets/app-CgeqvhEz.css",
     "src": "resources/css/app.css",
     "isEntry": true,
     "names": [
@@ -36,7 +36,7 @@
     ]
   },
   "resources/css/pages/index.css": {
-    "file": "assets/index-dyQi4KVp.css",
+    "file": "assets/index-BkqBcNW8.css",
     "src": "resources/css/pages/index.css",
     "isEntry": true,
     "names": [
@@ -52,7 +52,7 @@
     ]
   },
   "resources/css/pages/tootelehed.css": {
-    "file": "assets/tootelehed-DJBu-oGv.css",
+    "file": "assets/tootelehed-B1LqI8m4.css",
     "src": "resources/css/pages/tootelehed.css",
     "isEntry": true,
     "names": [
