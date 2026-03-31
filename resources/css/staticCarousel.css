@@ -23,17 +23,17 @@
  }
  .taust {
   position: absolute;
-  top: -30px;
+  top: 0px;
   left: 0;
   width: 100%; /* Optional */
   height:100%;
   object-fit: cover; /* Optional - fills the area without stretching */
-  object-position: top; 
-  opacity: 0.9;
-  z-index: -5;
+  
+
+
 
    will-change: transform;
-  transform: translate3d(0, 0, 0);
+
  }
  .textholderdiv{
   position: relative;
@@ -47,22 +47,35 @@
   border-radius: 15px;
 }
 
- .textholder{
-  background-color: #ffffffa8;
-   backdrop-filter: blur(3px);
+ .textholder {
+   background-color: rgba(255, 255, 255, 0.82);
+opacity: 0;
   animation: h1slide 1s ease-in-out 0.5s forwards;
   position: relative;
   padding: 10px;
   width: 70%;
   min-width: 315px;
   max-width: 900px;
-  
-
   z-index: 9999;
-  margin:15px;
+  margin: 15px;
   border-radius: 15px;
-  transform: scale(0);
- }
+
+}
+
+@keyframes h1slide {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px) scale(0.5);
+  }
+  70% {
+    opacity: 1;
+    transform: translateY(10px) scale(1.1);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
 
  .carousel h1 {
   
@@ -104,19 +117,7 @@
 
  
 }
-@keyframes h1slide {
-  0% {
-    opacity: 1;
-    transform: translateY(-50px) scale(0);
-  }
-  70% {
-    transform: translateY(15px) scale(1.2);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0px) scale(1);
-  }
-}
+
 
 @media screen and (max-width: 755px)   {
 
@@ -126,7 +127,7 @@
   
   }
   .taust {
-    height:840px;
+    height:940px;
    
   }
 

@@ -21,11 +21,12 @@
   font-weight: 500;
 }
 .ettevõttest h3 {
- 
-  font-weight: 500;
+ line-height: 32px;
+  font-weight: 600;
+  padding: 0px 0 10px 0;
 }
 .ettevõttest p {
- 
+ padding: 0px 0 10px 0;
   font-weight: 400;
 }
 

@@ -22,17 +22,13 @@ position: relative;
  }
  .taust {
   position: absolute;
-  top: -30px;
+  top: 0px;
   left: 0;
   width: 100%; /* Optional */
   height:100%;
   object-fit: cover; /* Optional - fills the area without stretching */
   object-position: top; /* <-- This makes the top of the image always show */
-  opacity: 0.8;
-  z-index: -5;
-   
-   will-change: transform;
-  transform: translate3d(0, 0, 0);
+
  }
  .textholderdiv{
    position: absolute;
@@ -106,6 +102,7 @@ position: relative;
   line-height: 0px;
  
 }
+
 @keyframes h1slide {
   0% {
     opacity: 1;
@@ -128,7 +125,7 @@ height:250px;
   
   }
   .taust {
-    height:300px;
+    height:330px;
   }
 
   .taustadiv {

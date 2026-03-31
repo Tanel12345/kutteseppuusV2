@@ -1,76 +1,90 @@
 const header = document.querySelector("header");
 const headerContainer = document.querySelector(".header-container");
 const background = document.querySelector(".taust");
+const hero = document.querySelector(".uper");
 
 let lastScrollY = window.scrollY;
 let currentScrollY = window.scrollY;
 let ticking = false;
+let isMobile = window.innerWidth <= 755;
 
 const triggerPoint = 130;
-const speed = 0.3;
+const topResetPoint = 170;
+const scrollDelta = 4;
 
-//
-// ✅ FIRST LOAD ANIMATION
-//
+const backgroundStartOffset = 0;
+const parallaxFactor = 0.5;
+
 if (!sessionStorage.getItem("firstTimeAnimation")) {
-    header.classList.add("animate");
+    if (headerContainer) {
+        headerContainer.classList.add("animate");
+        headerContainer.addEventListener(
+            "animationend",
+            () => {
+                headerContainer.classList.remove("animate");
+            },
+            { once: true }
+        );
+    }
     sessionStorage.setItem("firstTimeAnimation", "true");
 }
 
-//
-// ✅ PARALLAX ACTIVE ONLY WHEN VISIBLE
-//
-let parallaxActive = false;
+window.addEventListener(
+    "scroll",
+    () => {
+        currentScrollY = window.scrollY;
 
-if (background) {
-    const observer = new IntersectionObserver(
-        ([entry]) => {
-            parallaxActive = entry.isIntersecting;
-        },
-        { threshold: 0 }
-    );
-    observer.observe(background);
-}
+        if (!ticking) {
+            requestAnimationFrame(update);
+            ticking = true;
+        }
+    },
+    { passive: true }
+);
 
-//
-// ✅ SCROLL LISTENER (LIGHTWEIGHT)
-//
-window.addEventListener("scroll", () => {
+window.addEventListener("resize", () => {
+    isMobile = window.innerWidth <= 755;
     currentScrollY = window.scrollY;
-
-    if (!ticking) {
-        requestAnimationFrame(update);
-        ticking = true;
-    }
+    update();
 });
 
-//
-// ✅ MAIN UPDATE LOOP (1x per frame)
-//
-function update() {
+window.addEventListener("load", () => {
+    isMobile = window.innerWidth <= 755;
+    currentScrollY = window.scrollY;
+    update();
+});
 
-    // HEADER LOGIC
-    if (currentScrollY === 0) {
-        headerContainer.classList.remove("scroll-up", "scroll-down");
-    } 
-    else if (currentScrollY > triggerPoint && currentScrollY > lastScrollY) {
-        headerContainer.classList.add("scroll-down");
-        headerContainer.classList.remove("scroll-up");
-    } 
-    else if (currentScrollY <= triggerPoint && currentScrollY < lastScrollY) {
-        headerContainer.classList.add("scroll-up");
-        headerContainer.classList.remove("scroll-down");
+function update() {
+    const diff = currentScrollY - lastScrollY;
+
+    if (headerContainer) {
+        // täiesti üleval → navbar nähtav
+        if (currentScrollY <= topResetPoint) {
+            headerContainer.classList.remove("scroll-down");
+            headerContainer.classList.add("scroll-up");
+        }
+
+        // alla scroll → peida navbar
+        else if (currentScrollY > triggerPoint && diff > scrollDelta) {
+            headerContainer.classList.add("scroll-down");
+            headerContainer.classList.remove("scroll-up");
+        }
+
+        // üles scroll → ÄRA tee midagi
+        // (navbar jääb peitu kuni jõuad üles)
     }
 
-    // PARALLAX (only if visible)
-    if (background && parallaxActive) {
-        background.style.transform =
-            `translate3d(0, ${currentScrollY * speed}px, 0)`;
+    // --- su parallax jääb samaks ---
+    if (background && hero) {
+        if (isMobile) {
+            background.style.transform = `translateY(${backgroundStartOffset}px)`;
+        } else if (currentScrollY < hero.offsetHeight) {
+            background.style.transform = `translateY(${backgroundStartOffset + currentScrollY * parallaxFactor}px)`;
+        } else {
+            background.style.transform = `translateY(${backgroundStartOffset}px)`;
+        }
     }
 
     lastScrollY = currentScrollY;
     ticking = false;
 }
-  
-
-

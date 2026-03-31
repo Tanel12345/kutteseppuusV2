@@ -4,7 +4,7 @@
     "name": "upscroller"
   },
   "resources/css/app.css": {
-    "file": "assets/app-CdquZ-70.css",
+    "file": "assets/app-BKyqHips.css",
     "src": "resources/css/app.css",
     "isEntry": true,
     "names": [
@@ -12,7 +12,7 @@
     ]
   },
   "resources/css/contact.css": {
-    "file": "assets/contact-ByInt1Xz.css",
+    "file": "assets/contact-AnrT9V3f.css",
     "src": "resources/css/contact.css",
     "isEntry": true,
     "names": [
@@ -20,7 +20,7 @@
     ]
   },
   "resources/css/ettevottest.css": {
-    "file": "assets/ettevottest-DBAmwFgn.css",
+    "file": "assets/ettevottest-Dal1k-hj.css",
     "src": "resources/css/ettevottest.css",
     "isEntry": true,
     "names": [
@@ -28,7 +28,7 @@
     ]
   },
   "resources/css/pages/brandilehed.css": {
-    "file": "assets/brandilehed-CIg-8RI7.css",
+    "file": "assets/brandilehed-C9lOOg0j.css",
     "src": "resources/css/pages/brandilehed.css",
     "isEntry": true,
     "names": [
@@ -36,7 +36,7 @@
     ]
   },
   "resources/css/pages/index.css": {
-    "file": "assets/index-DHBf2swO.css",
+    "file": "assets/index-IQ-vvf80.css",
     "src": "resources/css/pages/index.css",
     "isEntry": true,
     "names": [
@@ -44,7 +44,7 @@
     ]
   },
   "resources/css/pages/teenustelehed.css": {
-    "file": "assets/teenustelehed-Dgpr9-gE.css",
+    "file": "assets/teenustelehed-BTAtbbLL.css",
     "src": "resources/css/pages/teenustelehed.css",
     "isEntry": true,
     "names": [
@@ -52,7 +52,7 @@
     ]
   },
   "resources/css/pages/tootelehed.css": {
-    "file": "assets/tootelehed-D9nGiw4L.css",
+    "file": "assets/tootelehed-ngJ90-XE.css",
     "src": "resources/css/pages/tootelehed.css",
     "isEntry": true,
     "names": [
@@ -60,7 +60,7 @@
     ]
   },
   "resources/css/pages/tootelehedala.css": {
-    "file": "assets/tootelehedala-CAO8vVJw.css",
+    "file": "assets/tootelehedala-B5xAE8u7.css",
     "src": "resources/css/pages/tootelehedala.css",
     "isEntry": true,
     "names": [
@@ -68,7 +68,7 @@
     ]
   },
   "resources/css/pages/worksleht.css": {
-    "file": "assets/worksleht-ubeR0G5P.css",
+    "file": "assets/worksleht-CoJNK6lX.css",
     "src": "resources/css/pages/worksleht.css",
     "isEntry": true,
     "names": [
@@ -76,7 +76,7 @@
     ]
   },
   "resources/js/app.js": {
-    "file": "assets/app-foGeWxpN.js",
+    "file": "assets/app-Omqaymtk.js",
     "name": "app",
     "src": "resources/js/app.js",
     "isEntry": true,

@@ -1,18 +1,18 @@
 
 
 <x-layout :title="'Soojuspumbad ja küttesüsteemid Tallinnas ja Harjumaal | Küttesepp'"
-    :metaDescription="'Soojuspumpade ja küttesüsteemide müük, paigaldus ja hooldus Tallinnas ja Harjumaal. Õhk-õhk, õhk-vesi ja maasoojuspumbad, pelletikatlad ja kaminad. Küttesepp.'"
+    :metaDescription="'Soojuspumpade müük, paigaldus, remont ja hooldus Tallinnas ja Harjumaal. Küttesüsteemide ehitus, läbipesu ja küttevee demineraliseerimine eramajadele. Küttesepp.'"
     :metaKeywords="'soojuspumbad tallinn, soojuspumbad harjumaa, õhk-õhk soojuspumbad, õhk-vesi soojuspumbad, maasoojuspumbad, pelletikatlad, küttesüsteemide paigaldus'"
     :ogImage="asset('images/serp/kuttesepp-og.webp')"
     :metaAuthor="'Tanel Sepp'"
     :robots="'index, follow'"  
-
     :viteCssAssets="['resources/css/pages/index.css']"
     :viteJsAssets="['resources/js/pages/index.js']"
-    >
+>
 
  
     <x-carousel/>
+    <x-kutsuostma/>
     <x-teenused/>
     <x-up_scroller/>
     <x-piltlingid/>

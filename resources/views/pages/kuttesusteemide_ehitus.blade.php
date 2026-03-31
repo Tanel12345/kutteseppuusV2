@@ -22,7 +22,7 @@ Töötan peamiselt <strong>Tallinna ja Harjumaa piirkonnas</strong>, kuid olenev
 
 image="images/taustad/kuttesusteemide-ehitus-ES.webp"
 imageAlt="Küttesüsteemide ehitus eramajas"
-eriStiil="object-position: 20% top;"
+eriStiil=""
 :textholderStyle="''"
 />
 
