@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const gtagScript = document.createElement('script');
     gtagScript.id = 'google-analytics';
     gtagScript.async = true;
-    gtagScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-QCX3G9KSPC';
+    gtagScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-W55JKH7E9W';
     document.head.appendChild(gtagScript);
 
     gtagScript.onload = function () {
@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function () {
         // märgi, et analytics on lubatud (consent juba saadud)
         gtag('js', new Date());
 
-        gtag('config', 'G-QCX3G9KSPC', {
+        gtag('config', 'G-W55JKH7E9W', {
             anonymize_ip: true,                    // GDPR
             allow_google_signals: false,           // ei mingit reklaami/profiile
             allow_ad_personalization_signals: false

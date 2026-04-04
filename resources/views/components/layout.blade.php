@@ -15,6 +15,7 @@
     <meta property="og:title" content="{{ $title ?? 'Küttesepp - Küttemurede lahendaja' }}">
     <meta property="og:description"
         content="{{ $metaDescription ?? 'Pakume küttesüsteeme ja paigaldust kogu Eestis. Vaata lähemalt!' }}">
+        
     @if (request()->has('brand') &&
             (Route::is('soojuspumbad.*') ||
                 Route::is('pelletikatladJaKaminad.index') ||
@@ -34,6 +35,7 @@
         {{-- Päris SEO-leht --}}
         <meta property="og:url" content="{{ request()->fullUrl() }}">
     @endif
+
     <meta property="og:type" content="website">
     <meta property="og:locale" content="et_EE">
 
