@@ -1,11 +1,9 @@
-
 document.addEventListener('DOMContentLoaded', function () {
     const cookieBanner = document.getElementById('cookie-banner');
     const cookieOptions = document.querySelector('.cookie-options');
     const acceptCookiesButton = document.getElementById('accept-cookies');
     const kohandaButton = document.getElementById('kohanda-cookies');
     const rejectAnalyticsButton = document.getElementById('reject-analytics');
-
     const analyticsCheckbox = document.getElementById('analytics-cookies');
     const userCookiesPreferenceButton = document.getElementById('user-cookies-preferences');
 
@@ -13,91 +11,92 @@ document.addEventListener('DOMContentLoaded', function () {
     const analyticsCookies = localStorage.getItem('analyticsCookies');
 
     function analyticsLoad() {
-    // ära lae uuesti, kui juba olemas
-    if (document.getElementById('google-analytics')) return;
+        if (document.getElementById('google-analytics')) return;
 
-    // lae GA4 gtag.js
-    const gtagScript = document.createElement('script');
-    gtagScript.id = 'google-analytics';
-    gtagScript.async = true;
-    gtagScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-W55JKH7E9W';
-    document.head.appendChild(gtagScript);
+        const gtagScript = document.createElement('script');
+        gtagScript.id = 'google-analytics';
+        gtagScript.async = true;
+        gtagScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-W55JKH7E9W';
+        document.head.appendChild(gtagScript);
 
-    gtagScript.onload = function () {
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){ dataLayer.push(arguments); }
+        gtagScript.onload = function () {
+            window.dataLayer = window.dataLayer || [];
+            window.gtag = function () { window.dataLayer.push(arguments); };
 
-        // märgi, et analytics on lubatud (consent juba saadud)
-        gtag('js', new Date());
-
-        gtag('config', 'G-W55JKH7E9W', {
-            anonymize_ip: true,                    // GDPR
-            allow_google_signals: false,           // ei mingit reklaami/profiile
-            allow_ad_personalization_signals: false
-        });
-    };
-}
-
-
-    // Initial state
-    if (!cookiesAccepted) {
-        cookieBanner.style.display = 'block';
-        // GDPR mõttes: analüütika peab olema vaikimisi OFF
-        analyticsCheckbox.checked = false;
-    } else {
-        const consent = (analyticsCookies === 'true');
-        analyticsCheckbox.checked = consent;
-        if (consent) analyticsLoad();
+            window.gtag('js', new Date());
+            window.gtag('config', 'G-W55JKH7E9W', {
+                anonymize_ip: true,
+                allow_google_signals: false,
+                allow_ad_personalization_signals: false
+            });
+        };
     }
 
-    // "Nõustu kõigiga" = nõustu analüütikaga
-    acceptCookiesButton.addEventListener('click', function () {
-        localStorage.setItem('cookiesAccepted', 'true');
-        localStorage.setItem('analyticsCookies', 'true');
-        analyticsCheckbox.checked = true;
-        analyticsLoad();
-        cookieBanner.style.display = 'none';
-    });
+    function analyticsDisable() {
+        const analyticsScript = document.getElementById('google-analytics');
+        if (analyticsScript) analyticsScript.remove();
 
-    // "Ainult vajalikud" = keeldu analüütikast
-    if (rejectAnalyticsButton) {
+        window['ga-disable-G-W55JKH7E9W'] = true;
+    }
+
+    if (cookieBanner && analyticsCheckbox) {
+        if (!cookiesAccepted) {
+            cookieBanner.style.display = 'block';
+            analyticsCheckbox.checked = false;
+        } else {
+            const consent = analyticsCookies === 'true';
+            analyticsCheckbox.checked = consent;
+            if (consent) analyticsLoad();
+        }
+    }
+
+    if (acceptCookiesButton && cookieBanner && analyticsCheckbox) {
+        acceptCookiesButton.addEventListener('click', function () {
+            localStorage.setItem('cookiesAccepted', 'true');
+            localStorage.setItem('analyticsCookies', 'true');
+            analyticsCheckbox.checked = true;
+            analyticsLoad();
+            cookieBanner.style.display = 'none';
+        });
+    }
+
+    if (rejectAnalyticsButton && cookieBanner && analyticsCheckbox) {
         rejectAnalyticsButton.addEventListener('click', function () {
             localStorage.setItem('cookiesAccepted', 'true');
             localStorage.setItem('analyticsCookies', 'false');
             analyticsCheckbox.checked = false;
+            analyticsDisable();
+            cookieBanner.style.display = 'none';
+        });
+    }
 
-            // Kui script on juba lehel (nt varem lubatud), eemalda script tag
-            const analyticsScript = document.getElementById('google-analytics');
-            if (analyticsScript) analyticsScript.remove();
+    if (userCookiesPreferenceButton && cookieBanner && analyticsCheckbox) {
+        userCookiesPreferenceButton.addEventListener('click', function () {
+            const analyticsConsent = analyticsCheckbox.checked;
+
+            localStorage.setItem('cookiesAccepted', 'true');
+            localStorage.setItem('analyticsCookies', analyticsConsent ? 'true' : 'false');
+
+            if (analyticsConsent) {
+                window['ga-disable-G-W55JKH7E9W'] = false;
+                analyticsLoad();
+            } else {
+                analyticsDisable();
+            }
 
             cookieBanner.style.display = 'none';
         });
     }
 
-    // "Salvesta eelistused"
-    userCookiesPreferenceButton.addEventListener('click', function () {
-        const analyticsConsent = analyticsCheckbox.checked;
+    if (kohandaButton && cookieOptions) {
+        kohandaButton.addEventListener('click', function () {
+            cookieOptions.classList.toggle('visible');
+        });
+    }
 
-        localStorage.setItem('cookiesAccepted', 'true');
-        localStorage.setItem('analyticsCookies', analyticsConsent ? 'true' : 'false');
-
-        if (analyticsConsent) {
-            analyticsLoad();
-        } else {
-            const analyticsScript = document.getElementById('google-analytics');
-            if (analyticsScript) analyticsScript.remove();
-        }
-
-        cookieBanner.style.display = 'none';
-    });
-
-    // Kohanda toggle
-    kohandaButton.addEventListener('click', function () {
-        cookieOptions.classList.toggle('visible');
-    });
-
-    // Banner show/hide via cookie icon
     window.toggleBanner = function () {
+        if (!cookieBanner) return;
+
         cookieBanner.style.display =
             (cookieBanner.style.display === 'none' || cookieBanner.style.display === '') ? 'block' : 'none';
     };
