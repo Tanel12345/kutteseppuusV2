@@ -19,6 +19,14 @@
       "contact.css"
     ]
   },
+  "resources/css/cookies.css": {
+    "file": "assets/cookies-XNmilpX-.css",
+    "src": "resources/css/cookies.css",
+    "isEntry": true,
+    "names": [
+      "cookies.css"
+    ]
+  },
   "resources/css/ettevottest.css": {
     "file": "assets/ettevottest-Dal1k-hj.css",
     "src": "resources/css/ettevottest.css",
@@ -76,18 +84,25 @@
     ]
   },
   "resources/js/app.js": {
-    "file": "assets/app-Bp6X2Cvr.js",
+    "file": "assets/app-qHxLPpjV.js",
     "name": "app",
     "src": "resources/js/app.js",
     "isEntry": true,
     "imports": [
-      "_upscroller-BYRPyc3z.js"
+      "_upscroller-BYRPyc3z.js",
+      "resources/js/cookies.js"
     ]
   },
   "resources/js/contact.js": {
     "file": "assets/contact-mwsCU14Z.js",
     "name": "contact",
     "src": "resources/js/contact.js",
+    "isEntry": true
+  },
+  "resources/js/cookies.js": {
+    "file": "assets/cookies-B8k0K8l_.js",
+    "name": "cookies",
+    "src": "resources/js/cookies.js",
     "isEntry": true
   },
   "resources/js/pages/index.js": {
