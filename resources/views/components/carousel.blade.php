@@ -19,9 +19,17 @@
         </button>
 
         <div class="carouselcontainer">
+              {{-- SLIDE 3 --}}
+            <ul class="carousel-ul active">
+                <li class="carousel-li">
+                    <img data-src="{{ asset('images/taustad/Küttesepp-ES1.webp') }}"
+                        alt="Energy Save õhk-vesi soojuspump küttesüsteemis" title="Energy Save õhk-vesi soojuspump"
+                        class="carousel-img">
+                </li>
+            </ul>
 
             {{-- SLIDE 0 – LAETAKSE KOHE --}}
-            <ul class="carousel-ul active">
+            <ul class="carousel-ul">
                 <li class="carousel-li">
                     <img src="{{ asset('images/taustad/ohk-vesi-samsungtaust.webp') }}"
                         alt="Õhk-vesi soojuspump – Samsung" title="Samsung õhk-vesi soojuspump" class="carousel-img"
@@ -56,14 +64,7 @@
                 </li>
             </ul>
 
-            {{-- SLIDE 4 --}}
-            <ul class="carousel-ul">
-                <li class="carousel-li">
-                    <img data-src="{{ asset('images/taustad/ALPHA-maasoojus.webp') }}"
-                        alt="Maakütte soojuspump – energiatõhus lahendus" title="Alpha Innotec maakütte soojuspump"
-                        class="carousel-img">
-                </li>
-            </ul>
+     
 
         </div>
 
