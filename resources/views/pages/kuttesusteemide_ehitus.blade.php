@@ -72,7 +72,7 @@ eriStiil=""
 
             <div class="piltlingitekst">
                 <img src="{{ asset('images/icons/küttesepp.png') }}" alt="Küttesepp">
-                <h2>Korralik väljaehitus</h2>
+                <h2>Korralik süsteemi väljaehitus</h2>
             </div>
 
             <ul class="teenus-checklist">
@@ -106,7 +106,7 @@ eriStiil=""
             </ul>
 
             <p class="piltlink-kirjeldus teenus-kirjeldus">
-                Kui kogu ehitus on valmis, tuleb süsteem ka paika häälestada. Just sellest sõltub,
+                Kui kogu ehitus on valmis, tuleb süsteemi pikaealisus tagada ehk õige küttevesi lisada ja optimaalseks timmida - häälestada. Just sellest sõltub,
                 kui stabiilselt ja murevabalt see päriselus töötab.
             </p>
         </article>
