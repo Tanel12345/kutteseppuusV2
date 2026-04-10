@@ -35,6 +35,14 @@
       "ettevottest.css"
     ]
   },
+  "resources/css/kuttesusteemiTeenus.css": {
+    "file": "assets/kuttesusteemiTeenus-CMPv81q2.css",
+    "src": "resources/css/kuttesusteemiTeenus.css",
+    "isEntry": true,
+    "names": [
+      "kuttesusteemiTeenus.css"
+    ]
+  },
   "resources/css/pages/brandilehed.css": {
     "file": "assets/brandilehed-C9lOOg0j.css",
     "src": "resources/css/pages/brandilehed.css",

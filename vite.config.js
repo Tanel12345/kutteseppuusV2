@@ -23,6 +23,7 @@ export default defineConfig({
                 'resources/css/ettevottest.css',
                 'resources/css/contact.css',
                  'resources/css/cookies.css',
+                 'resources/css/kuttesusteemiTeenus.css',
 
                 // 🔹 LEHEPÕHISED JS-id
                 'resources/js/pages/index.js',
