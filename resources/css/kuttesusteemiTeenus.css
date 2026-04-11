@@ -23,7 +23,8 @@ section.teenus-piltlingid {
   color: #2a2a2a;
 }
 
-section.teenus-piltlingid .red-line {
+section.teenus-piltlingid .red-line,
+section.teenus-hinnad .red-line {
   margin: 1em auto 4em auto;
 }
 
@@ -215,16 +216,6 @@ ul.teenus-checklist li::before {
 
 /* HINNAPLOKK */
 
-.hind {
-  font-size: 1.2rem;
-  font-weight: 400;
-}
-
-.hind strong {
-  font-size: 1.5rem;
-  font-weight: 700;
-}
-
 section.teenus-hinnad {
   background: #f8f8f8;
   padding: 50px 15px 90px 15px;
@@ -258,7 +249,7 @@ article.hinnakaart.hinnakaart-soovitatud {
 }
 
 div.hinnakaart-sisu {
-   padding: 30px 24px;
+  padding: 30px 24px;
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -280,11 +271,16 @@ article.hinnakaart h3 {
   color: #111111;
 }
 
-div.hind {
+p.hind {
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin: 0 0 20px 0;
+  color: #222;
+}
+
+.hind strong {
   font-size: 2rem;
   font-weight: 700;
-  margin-bottom: 22px;
-  color: #222;
 }
 
 div.hinnakaart-badge {
@@ -300,7 +296,7 @@ div.hinnakaart-badge {
 }
 
 p.hinnakaart-kirjeldus {
-margin-top: auto;
+  margin-top: auto;
   padding-top: 18px;
   line-height: 1.7;
   color: #444;
@@ -341,16 +337,21 @@ div.ohk-ohk-hinnad {
   color: #111111;
 }
 
-div.ohk-ohk-hind {
-  margin-top: 18px;
+p.ohk-ohk-hind {
+  margin: 18px 0 0 0;
   font-size: 1.25rem;
   line-height: 1.5;
   color: #222222;
 }
 
 section.teenus-hinnad .teenus-cta {
-  margin: 45px 25px 0 25px;
+  margin: 45px auto 0 auto;
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
+
+/* MOBIIL */
 
 @media screen and (max-width: 980px) {
   section.teenus-piltlingid .piltlink.teenuslink {
@@ -372,7 +373,8 @@ section.teenus-hinnad .teenus-cta {
     padding: 0 15px;
   }
 
-  section.teenus-piltlingid .red-line {
+  section.teenus-piltlingid .red-line,
+  section.teenus-hinnad .red-line {
     margin: 1em auto 2.7em auto;
   }
 
@@ -423,7 +425,16 @@ section.teenus-hinnad .teenus-cta {
     padding: 24px 18px;
   }
 
-  div.ohk-ohk-hind {
+  p.ohk-ohk-hind {
     font-size: 1.1rem;
+  }
+
+  p.hind {
+    font-size: 1rem;
+    margin: 0 0 18px 0;
+  }
+
+  .hind strong {
+    font-size: 1.7rem;
   }
 }
