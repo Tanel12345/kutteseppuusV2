@@ -350,6 +350,16 @@ section.teenus-hinnad .teenus-cta {
   justify-content: center;
   text-align: center;
 }
+.teenus-loputekst {
+  max-width: 760px;
+  margin: 26px auto 18px auto;
+  padding: 0 20px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.7;
+  font-weight: 500;
+  color: #2a2a2a;
+}
 
 /* MOBIIL */
 
@@ -436,5 +446,11 @@ section.teenus-hinnad .teenus-cta {
 
   .hind strong {
     font-size: 1.7rem;
+  }
+  .teenus-loputekst {
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 22px auto 16px auto;
+    padding: 0 15px;
   }
 }

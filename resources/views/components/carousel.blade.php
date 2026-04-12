@@ -3,68 +3,67 @@
 
         <div class="taustadiv">
             <img class="taust" src="{{ asset('images/pilved2.webp') }}"
-                alt="Soojuspumpade ja küttesüsteemide paigaldus – Küttesepp" loading="eager" fetchpriority="high">
+                alt="Soojuspumpade ja küttesüsteemide paigaldus – Küttesepp"
+                loading="eager" fetchpriority="high">
         </div>
 
         <div class="heading">
             <h1>Soojuspumbad ja küttesüsteemid <br> <span>Tallinnas ja Harjumaal</span></h1>
             <h2>Õhk-õhk | õhk-vesi | maakütte soojuspumbad ning tahkekütteseadmed</h2>
-
-
-            
         </div>
 
         <button type="button" class="carousel-button carousel-button-back">
             <img src="{{ asset('images/icons/back.png') }}" alt="Tagasi" class="arrow-img">
         </button>
-
+       
         <div class="carouselcontainer">
-              {{-- SLIDE 3 --}}
+
             <ul class="carousel-ul active">
                 <li class="carousel-li">
-                    <img data-src="{{ asset('images/taustad/Küttesepp-ES1.webp') }}"
-                        alt="Energy Save õhk-vesi soojuspump küttesüsteemis" title="Energy Save õhk-vesi soojuspump"
-                        class="carousel-img">
+                    <img src="{{ asset('images/taustad/Küttesepp-ES1.webp') }}"
+                        alt="Energy Save õhk-vesi soojuspump küttesüsteemis"
+                        title="Energy Save õhk-vesi soojuspump"
+                        class="carousel-img"
+                        loading="eager"
+                        fetchpriority="high">
                 </li>
             </ul>
 
-            {{-- SLIDE 0 – LAETAKSE KOHE --}}
             <ul class="carousel-ul">
                 <li class="carousel-li">
                     <img src="{{ asset('images/taustad/ohk-vesi-samsungtaust.webp') }}"
-                        alt="Õhk-vesi soojuspump – Samsung" title="Samsung õhk-vesi soojuspump" class="carousel-img"
-                        loading="eager" fetchpriority="high">
-                </li>
-            </ul>
-
-            {{-- SLIDE 1 --}}
-            <ul class="carousel-ul">
-                <li class="carousel-li">
-                    <img data-src="{{ asset('images/taustad/Es_soojuspump5.webp') }}"
-                        alt="Õhk-vesi soojuspump eramajale – Küttesepp paigaldus" title="ES õhk-vesi soojuspump"
+                        alt="Õhk-vesi soojuspump – Samsung"
+                        title="Samsung õhk-vesi soojuspump"
                         class="carousel-img">
                 </li>
             </ul>
 
-            {{-- SLIDE 2 --}}
             <ul class="carousel-ul">
                 <li class="carousel-li">
-                    <img data-src="{{ asset('images/taustad/Es_soojuspump6.webp') }}"
-                        alt="Õhk-vesi soojuspump – ES Energy Save" title="ES Energy Save soojuspump"
+                    <img src="{{ asset('images/taustad/Es_soojuspump5.webp') }}"
+                        alt="Õhk-vesi soojuspump eramajale – Küttesepp paigaldus"
+                        title="ES õhk-vesi soojuspump"
                         class="carousel-img">
                 </li>
             </ul>
 
-            {{-- SLIDE 3 --}}
             <ul class="carousel-ul">
                 <li class="carousel-li">
-                    <img data-src="{{ asset('images/taustad/ALPHA-ohk-vesi.webp') }}"
-                        alt="Alpha Innotec õhk-vesi soojuspump küttesüsteemis" title="Alpha Innotec õhk-vesi soojuspump"
+                    <img src="{{ asset('images/taustad/Es_soojuspump6.webp') }}"
+                        alt="Õhk-vesi soojuspump – ES Energy Save"
+                        title="ES Energy Save soojuspump"
                         class="carousel-img">
                 </li>
             </ul>
 
-     
+            <ul class="carousel-ul">
+                <li class="carousel-li">
+                    <img src="{{ asset('images/taustad/ALPHA-ohk-vesi.webp') }}"
+                        alt="Alpha Innotec õhk-vesi soojuspump küttesüsteemis"
+                        title="Alpha Innotec õhk-vesi soojuspump"
+                        class="carousel-img">
+                </li>
+            </ul>
 
         </div>
 
@@ -79,8 +78,6 @@
             <button class="carousel-indicator" aria-label="Mine slaidile 4"></button>
             <button class="carousel-indicator" aria-label="Mine slaidile 5"></button>
         </div>
- 
-
 
     </div>
 </section>

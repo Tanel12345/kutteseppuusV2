@@ -1,20 +1,12 @@
-
 const slides = document.querySelectorAll(".carousel-ul");
 const indicators = document.querySelectorAll(".carousel-indicator");
-const nextBtn = document.querySelector(".carousel-button-next .arrow-img");
-const backBtn = document.querySelector(".carousel-button-back .arrow-img");
+const nextBtn = document.querySelector(".carousel-button-next");
+const backBtn = document.querySelector(".carousel-button-back");
 
 const auto = true;
 const intervalTime = 80000;
 let slideInterval;
 let isAnimating = false;
-
-function ensureImageLoaded(slide) {
-  const img = slide.querySelector("img[data-src]");
-  if (img && !img.src) {
-    img.src = img.dataset.src;
-  }
-}
 
 function getActiveIndex() {
   return [...slides].findIndex(slide => slide.classList.contains("active"));
@@ -29,12 +21,9 @@ function goToSlide(newIndex, direction = "next") {
   isAnimating = true;
 
   const currentSlide = slides[currentIndex];
-  const currentIndicator = indicators[currentIndex];
-
   const targetSlide = slides[newIndex];
+  const currentIndicator = indicators[currentIndex];
   const targetIndicator = indicators[newIndex];
-
-  ensureImageLoaded(targetSlide);
 
   currentIndicator.classList.remove("active1");
   targetIndicator.classList.add("active1");
@@ -42,17 +31,25 @@ function goToSlide(newIndex, direction = "next") {
   const outAnimation =
     direction === "prev" ? "slide-leftout" : "slide-rightout";
 
-  // uus slaid aktiivseks
-  targetSlide.classList.add("active");
+  // vana slaid uue ette, et väljalend jääks nähtav
+  currentSlide.style.zIndex = "3";
+  targetSlide.style.zIndex = "2";
 
-  // vana slaid välja
-  currentSlide.style.animation = `${outAnimation} 1s ease-in-out`;
+  // eemalda vana entering klass, kui see jäi külge
+  targetSlide.classList.remove("entering");
+  void targetSlide.offsetWidth;
+
+  targetSlide.classList.add("active", "entering");
+  currentSlide.style.animation = `${outAnimation} 1s ease-in-out forwards`;
 
   currentSlide.addEventListener(
     "animationend",
     () => {
       currentSlide.classList.remove("active");
       currentSlide.style.animation = "";
+      currentSlide.style.zIndex = "";
+      targetSlide.style.zIndex = "";
+      targetSlide.classList.remove("entering");
       isAnimating = false;
     },
     { once: true }
@@ -62,29 +59,21 @@ function goToSlide(newIndex, direction = "next") {
 function nextSlide() {
   let index = getActiveIndex() + 1;
   if (index >= slides.length) index = 0;
-
   goToSlide(index, "next");
-
-  const preloadIndex = index + 1 < slides.length ? index + 1 : 0;
-  ensureImageLoaded(slides[preloadIndex]);
 }
 
 function prevSlide() {
   let index = getActiveIndex() - 1;
   if (index < 0) index = slides.length - 1;
-
   goToSlide(index, "prev");
-
-  const preloadIndex = index - 1 >= 0 ? index - 1 : slides.length - 1;
-  ensureImageLoaded(slides[preloadIndex]);
 }
 
-nextBtn.addEventListener("click", () => {
+nextBtn?.addEventListener("click", () => {
   nextSlide();
   if (auto) resetInterval();
 });
 
-backBtn.addEventListener("click", () => {
+backBtn?.addEventListener("click", () => {
   prevSlide();
   if (auto) resetInterval();
 });
@@ -93,9 +82,7 @@ indicators.forEach((btn, index) => {
   btn.addEventListener("click", () => {
     const currentIndex = getActiveIndex();
     const direction = index < currentIndex ? "prev" : "next";
-
     goToSlide(index, direction);
-
     if (auto) resetInterval();
   });
 });

@@ -3,7 +3,7 @@
 :metaAuthor="'Tanel Sepp'" :robots="'index, follow'" :viteCssAssets="[
     'resources/css/pages/tootelehed.css',]"> <x-static_carousel
        title="SOOJUSPUMBAD <br><br><span>Tõhusaim ja nutikaim valik sinu kodu kütmiseks</span>"
-       content="Soojuspump on energiatõhus küttelahendus, mis kasutab ära välisõhus, maapinnas või muus keskkonnas leiduvat soojusenergiat ning suunab selle sinu elamisse. Erinevad soojuspumba tüübid – õhk-õhk, õhk-vesi ja maasoojuspumbad – sobivad erinevatele hoonetele, vajadustele ja eelarvetele. <br><br>Õige valik sõltub muu hulgas hoone suurusest, olemasolevast küttesüsteemist, soojustusest, tarbevee vajadusest ja sellest, kas soovid lisaks küttele ka jahutust. Küttesepp aitab võrrelda eri lahendusi ning leida sinu objektile tehniliselt ja majanduslikult sobivaima variandi. <br><br>Kui otsid soojuspumpa <strong>Tallinnas või Harjumaal</strong>, saad siit alustada erinevate tüüpide võrdlemisest ja sobiva lahenduse valikust."
+       content="Soojuspump on energiatõhus kütteseade, mis kasutab ära välisõhus, maapinnas või muus keskkonnas leiduvat soojusenergiat ning suunab selle sinu elamisse. Erinevad soojuspumba tüübid – õhk-õhk, õhk-vesi ja maasoojuspumbad – sobivad erinevatele hoonetele, vajadustele ja eelarvetele. <br><br>Õige valik sõltub muu hulgas hoone suurusest, olemasolevast küttesüsteemist, soojustusest, tarbevee vajadusest ja sellest, kas soovid lisaks küttele ka jahutust. Küttesepp aitab võrrelda eri lahendusi ning leida sinu objektile tehniliselt ja majanduslikult sobivaima variandi. <br><br>Kui otsid soojuspumpa <strong>Tallinnas või Harjumaal</strong>, saad siit alustada erinevate tüüpide võrdlemisest ja sobiva seadme valikust."
         image="images/taustad/soojuspumbad-üldtaust.webp" imageAlt="Soojuspumpad Tallinnas ja Harjumaal"
         eriStiil="object-position: bottom;" :textholderStyle="''" />
 <section class="piltlingid" id="piltlingid">
@@ -165,7 +165,7 @@
             <p>
                 Õige lahenduse valimisel tuleks arvestada hoone suurust, soojustust, olemasolevat küttesüsteemi,
                 tarbevee vajadust, elektriliitumist ja kasutusharjumusi. Samuti mängib rolli, kas soovid ainult
-                küttelahendust või ka ruumide jahutust suvisel ajal.
+                kütet või ka ruumide jahutust suvisel ajal.
             </p>
 <br>
             <p>
@@ -175,6 +175,10 @@
                     soojuspumba paigalduse teenuselehte
                 </a>,
                 kus on täpsemalt kirjeldatud paigalduse, projekti ja dokumentatsiooni poolega seotud teemad.
+                Samuti
+                 <a style="font-weight:700" href="{{ route('kuttesusteemide-ehitus') }}" title="Küttesüsteemide ehituse teenus">
+                    küttesüsteemide ehituse teenuselehte
+                </a>, Kus kirjeldan kogu küttesüsteemi ehitust ja ka hindasid.
             </p>
         </div>
          <!-- KONTAKT -->

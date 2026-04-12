@@ -76,27 +76,7 @@ overflow: hidden; /* Clips any overflow */
   cursor: pointer;
 }
 
-/* Keyframes */
-@keyframes slidein-left {
-  from {
-    opacity: 0;
-    transform: translateX(-500px) scale(2);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0px) scale(1);
-  }
-}
-@keyframes slidein-right {
-  from {
-    opacity: 0;
-    transform: translateX(500px) scale(2);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0px) scale(1);
-  }
-}
+
 /* Carousel ul ja li d */
 .carouselcontainer {
   display: flex;
@@ -109,70 +89,61 @@ overflow: hidden; /* Clips any overflow */
 }
 .carousel-ul {
   position: absolute;
+  left: 50%;
   min-width: 300px;
   width: 80%;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin: 0 auto;
+  margin: 0;
   gap: 1rem;
   z-index: 400;
-  transform: translatex(-150%);
+  transform: translateX(-150%);
   opacity: 0;
-  pointer-events: auto;
+   pointer-events: none;
   max-width: 1400px;
 
 }
 .carousel-ul.active {
-  animation: slide-downin 1s ease-in-out forwards;
   opacity: 1;
+  transform: translateX(-50%);
+
   
 }
-@keyframes slide-leftin {
+
+.carousel-ul.active,
+.carousel-ul.entering {
+  pointer-events: auto;
+}
+
+@keyframes slide-leftout {
   from {
-    transform: translateX(-250%) scale(1.5);
-    opacity: 1;
-  }
-  to {
     transform: translateX(-50%) scale(1);
     opacity: 1;
   }
-}
-
-@keyframes slide-rightin {
-  from {
-    transform: translateX(200%) scale(1.5);
-  }
   to {
-    transform: translateX(0%) scale(1);
-  }
-}
-@keyframes slide-leftout {
-  from {
-    transform: translateX(0px) scale(1);
-  }
-  to {
-    transform: translateX(-150%) scale(1.5);
+    transform: translateX(-150%) scale(1.2);
+    opacity: 0;
   }
 }
 @keyframes slide-downin {
-  from {
-    transform: translatey(50%) scale(0.1);
+ from {
+    transform: translateX(-50%) translateY(50%) scale(0.5);
     opacity: 0;
   }
   to {
-    transform: translatey(0%) scale(1);
+    transform: translateX(-50%) translateY(0%) scale(1);
     opacity: 1;
   }
 }
 @keyframes slide-rightout {
   from {
-    transform: translateX(0px) scale(1);
+    transform: translateX(-50%) scale(1);
     opacity: 1;
   }
   to {
-    transform: translateX(200%) scale(1.5);
-    opacity: 1;
+    transform: translateX(150%) scale(1.2);
+    opacity: 0;
   }
 }
 .carousel-li {
@@ -255,7 +226,7 @@ overflow: hidden; /* Clips any overflow */
 @keyframes imgcontainer {
   from {
     opacity: 0;
-    transform: scale(0.2);
+    transform: scale(0.5);
   }
   to {
     opacity: 1;
@@ -327,7 +298,7 @@ h1 span{font-size: 30px; font-weight:300; margin-top:0;}
 @keyframes h1slide {
   0% {
     opacity: 1;
-    transform: translateY(-50px) scale(0);
+    transform: translateY(-100px) scale(0);
   }
   70% {
     transform: translateY(15px) scale(1.2);
@@ -339,7 +310,7 @@ h1 span{font-size: 30px; font-weight:300; margin-top:0;}
 }
 @keyframes h2slide {
   from {
-    transform: translateY(200px);
+    transform: translateY(100px);
   }
   to {
     transform: translateY(0px);
@@ -350,7 +321,9 @@ h1 span{font-size: 30px; font-weight:300; margin-top:0;}
 }
 
 
-
+.carousel-ul.entering {
+  animation: slide-downin 1s ease-in-out forwards;
+}
 
 
 
