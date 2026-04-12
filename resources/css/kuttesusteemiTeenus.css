@@ -42,7 +42,7 @@ section.teenus-piltlingid .piltlink.teenuslink {
   min-width: 280px;
   background-color: #ffffff;
   border-radius: 15px;
-  box-shadow: 0 10px 7px rgba(0, 0, 0, 0.3);
+ box-shadow: 0 10px 7px rgba(0, 0, 0, 0.3);
   border: 1px solid rgba(0, 0, 0, 0.12);
   padding-bottom: 24px;
   min-height: 100%;
@@ -51,9 +51,10 @@ section.teenus-piltlingid .piltlink.teenuslink {
 }
 
 section.teenus-piltlingid .piltlink.teenuslink:hover {
-  transform: translateY(-7px);
-  box-shadow: 0 16px 24px rgba(0, 0, 0, 0.18);
-  cursor: default;
+      transition-duration: 0.5s;
+    transform: translateY(-7px);
+    box-shadow: 10px 14px 10px rgba(0, 0, 0, 0.3);
+    cursor: default;
 }
 
 /* ÜLEMINE NUMBERPLOKK */
@@ -128,9 +129,6 @@ section.teenus-piltlingid .piltlingitekst h3 {
   transition: color 0.3s ease;
 }
 
-section.teenus-piltlingid .piltlink.teenuslink:hover .piltlingitekst h3 {
-  color: #ff0100;
-}
 
 section.teenus-piltlingid .piltlingitekst img {
   width: 50px;

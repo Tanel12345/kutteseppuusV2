@@ -31,7 +31,7 @@ Töötan peamiselt <strong>Tallinna ja Harjumaa piirkonnas</strong>, kuid kokkul
         </h2>
 
         <p class="teenus-sissejuhatus">
-            Küttesepp ei paigalda lihtsalt ühte seadet, vaid aitab kokku panna terviku, kus kõik osad töötavad omavahel loogiliselt. See tähendab õiget süsteemi valikut, korralikku väljaehitust, küttevee korrastamist, seadistamist ja lõpuks ka kasutaja juhendamist.
+            Küttesepp ei müü ega paigalda lihtsalt ühte seadet, vaid aitab kokku panna terviku, kus kõik osad töötavad omavahel loogiliselt. See tähendab õiget süsteemi valikut, korralikku väljaehitust, küttevee korrastamist, seadistamist ja lõpuks ka kasutaja juhendamist.
         </p>
 
         <div class="red-line" role="presentation"></div>
@@ -114,11 +114,11 @@ Töötan peamiselt <strong>Tallinna ja Harjumaa piirkonnas</strong>, kuid kokkul
                 </h2>
 
                 <p class="teenus-sissejuhatus hinnad-sissejuhatus">
-                    Allpool on toodud mõned tüüpilised hinnatasemed. Lõplik hind sõltub sellest, kas vaja on ainult seadme paigaldust või kogu küttesüsteemi ehitust, samuti hoonest, valitud tehnikast ja olemasoleva süsteemi seisukorrast.
+                    Allpool on toodud mõned tüüpilised hinnatasemed. Lõplik hind sõltub sellest, kas vaja on ainult seadmeid ja paigaldust või kogu küttesüsteemi ehitust, samuti hoonest, valitud tehnikast ja olemasoleva süsteemi seisukorrast.
                 </p>
 
                 <p class="teenus-sissejuhatus hinnad-sissejuhatus">
-                    Need hinnad käivad peamiselt eramajade õhk-vesi ja maasoojuspumba lahenduste kohta.
+                    Küttesepp ei paku eraldi paigaldusteenust. Hinnad kehtivad peamiselt eramajade õhk-vesi ja maasoojuspumba lahenduste kohta ja sisaldavad nii vajaminevat tehnikat, planeerimist kui tööd.
                 </p>
 
                 <div class="red-line" role="presentation"></div>
@@ -169,12 +169,12 @@ Töötan peamiselt <strong>Tallinna ja Harjumaa piirkonnas</strong>, kuid kokkul
                     <article class="hinnakaart" aria-labelledby="premium-pealkiri">
                         <div class="hinnakaart-sisu">
                             <span class="hinnakaart-label">TÄISTEENUS</span>
-                            <h3 id="premium-pealkiri">Suurem või keerukam küttesüsteemi ehitus</h3>
+                            <h3 id="premium-pealkiri">Suurem või keerukam küttesüsteem</h3>
                             <p class="hind">alates <strong>18 000 €</strong></p>
 
                             <ul class="teenus-checklist">
+                                <li>Kõik mis eelmistes pakettides +</li>
                                 <li>Kogu küttesüsteemi väljaehitus või põhjalik uuendamine</li>
-                                <li>Tarbevee lahendus vastavalt süsteemile</li>
                                 <li>Radiaatorite, põrandakütte või fancoilide rajamine</li>
                                 <li>Automaatika ja süsteemi loogika terviklahendus</li>
                                 <li>Suuremad või keerukamad objektid</li>
