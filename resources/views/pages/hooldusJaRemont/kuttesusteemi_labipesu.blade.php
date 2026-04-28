@@ -1,13 +1,11 @@
-<x-layout :title="'Küttesüsteemi läbipesu – õhu-, vee- ja keemiaga puhastus küttesüsteemidele | Küttesepp'" :metaDescription="'Küttesüsteemi läbipesu eemaldab rooste, muda, magnetiidi ja katlakivi setted. Pakume õhu ja vee loputust, happelist puhastust ning aluselise keemiaga süsteemipesu. Küttesepp OÜ – professionaalne süsteemide taastamine ja hooldus enne uue küttesüsteemi täitmist või renoveerimist.'" :metaKeywords="'küttesüsteemi läbipesu,
-küttesüsteemi puhastus,
-torustiku pesu,
-happeline süsteemipesu,
-aluselise keemiaga pesu,
-powerflush küttesüsteem,
-magnetiidi eemaldus,
-katlakivi eemaldus'" :ogImage="asset('images/serp/kuttesepp-og-labipesu.webp')" :metaAuthor="'Tanel Sepp'" :robots="'index, follow'"
-    :viteCssAssets="['resources/css/pages/teenustelehed.css']" :viteJsAssets="['resources/js/pages/teenustelehed.js']">
+<x-layout :title="'Küttesüsteemi läbipesu – õhuimpulsidega ja keemiaga puhastus'" :metaDescription="'Küttesüsteemi läbipesu üle Eesti. Õhu ja vee impulssloputus, happeline ja aluseline keemiapesu, magnetiidi, muda ja katlakivi eemaldus ning küttevee demineraliseerimine (VDI 2035).'" :metaKeywords="'küttesüsteemi läbipesu, küttesüsteemi puhastus, torustiku pesu, happeline süsteemipesu, aluseline keemiaga pesu, powerflush küttesüsteem, magnetiidi eemaldus, katlakivi eemaldus'" :ogImage="asset('images/serp/kuttesepp-og-labipesu.webp')" :metaAuthor="'Tanel Sepp'" :robots="'index, follow'"
+    :viteCssAssets="[
+        'resources/css/pages/tootelehed.css',
+        'resources/css/pages/teenustelehed.css',
+        'resources/css/kuttesusteemiTeenus.css',
+    ]" :viteJsAssets="['resources/js/pages/teenustelehed.js']">
 
+    <!-- HERO -->
     <section class="uper" id="uperid">
         <div class="carousel">
             <div class="taustadiv">
@@ -21,28 +19,159 @@ katlakivi eemaldus'" :ogImage="asset('images/serp/kuttesepp-og-labipesu.webp')" 
             </div>
         </div>
     </section>
-
-    <section class="tootjasektsioon" id="tootjaid">
+    <section class="tootjasektsioon" style="background-image:none; background-color:white;">
         <div class="tootjast">
             <div class="ettevotte">
                 <div class="content">
 
-                    <h2><span>Küttesüsteemi läbipesu</span> – süsteemi taastamine ja puhastus</h2>
+                    <h2><span>Küttesepa läbipesu teenus</span> – süsteemi põhjalik puhastus ja uue küttevee
+                        demineraliseerimine</h2>
 
-
-                    <p> Küttesüsteemi läbipesu on eriti oluline enne soojuspumba, kondensatsioonikatla või uue
-                        ringluspumba paigaldust, et vältida soojusvahetite ummistumist ja garantiiprobleeme.<br><br>
-                        Aastatega koguneb küttesüsteemi torustikku muda, rooste, magnetiit, katlakivi ning muud jäägid,
-                        mis
-                        vähendavad küttesüsteemi efektiivsust ja võivad põhjustada ringluspumba, soojusvaheti või
-                        põrandakütte kontuuride ummistumist. Põrandaküttel toad või radiaatorid ei soene enam piisaval
-                        määral. Küttearved suurenevad.
+                    <p>
+                        Kui küttesüsteem on täidetud tavalise kraaniveega, võib süsteemi aja jooksul koguneda muda,
+                        roostet, magnetiiti, katlakivi ja muid setteid. Tekke kiirus sõltub vee kvaliteedist,
+                        süsteemi materjalidest ja sellest, kas süsteem on olnud korrektselt hooldatud.
                     </p>
 
                     <p>
-                        <strong>Küttesepp OÜ</strong> teostab küttesüsteemidele professionaalset läbipesu kolmes
-                        erinevas vormis:
+                        Need setted vähendavad küttesüsteemi efektiivsust ning võivad põhjustada ringluspumba,
+                        soojusvaheti või põrandakütte kontuuride ummistumist. Selle tulemusel ei pruugi põrandakütte
+                        ruumid või radiaatorid enam piisavalt soojeneda ning energiakulu võib suureneda.
                     </p>
+                    <p>
+                        Küttesüsteemi läbipesu on eriti oluline enne soojuspumba, kondensatsioonikatla või uue
+                        ringluspumba paigaldust,
+                        et vältida soojusvahetite ummistumist ja garantiiprobleeme.
+                    </p>
+
+                </div>
+                <div>
+                    <img class="tootjastpilt" src=""
+                        data-src="{{ asset('images/vaikesed/kuttesusteemide-hooldus/labipesu.webp') }}"
+                        alt="Küttesüsteemi loputus veega ja õhuga">
+                </div>
+
+
+
+            </div>
+        </div>
+    </section>
+    <section class="piltlingid teenus-piltlingid" id="kuttesusteemi-teenus" aria-labelledby="protsess-pealkiri"
+        style="margin-top:0px; margin-bottom:75px;">
+
+
+        <!-- 🔥 KAARDID -->
+        <h2 class="teenus-pealkiri" style="margin-top:0px;">KÜTTESÜSTEEMI LÄBIPESU PAKETID</h2>
+
+        <p class="teenus-sissejuhatus">
+            Läbipesu paketi soovitan valida vastavalt süsteemi seisukorrale ja eesmärgile – kas piisab loputusest või on
+            vaja
+            põhjalikku taastamist koos edasiste probleemide ennetamisega.
+        </p>
+
+        <div class="red-line" role="presentation"></div>
+
+        <div class="piltlingidiv">
+
+            <!-- 1 -->
+            <article class="piltlink teenuslink inverse1">
+                <div class="teenus-number-visual"><span>01</span></div>
+
+                <div class="piltlingitekst">
+                    <img src="{{ asset('images/icons/küttesepp.png') }}" alt="Küttesepp">
+                    <h3>Õhu ja vee impulssloputus</h3>
+                </div>
+
+                <ul class="teenus-checklist">
+                    <li>Keemiavaba puhastus</li>
+                    <li>Eemaldab muda ja lahtise sette</li>
+                    <li>Sobib uuematele süsteemidele</li>
+                    <li>Hea põrandakütte kontuuride taastamiseks</li>
+                </ul>
+
+                <p class="teenus-kirjeldus">
+                    Sobib juhul, kui süsteem ei ole tugevalt saastunud ja soovitakse taastada normaalne ringlus.
+                </p>
+            </article>
+
+            <!-- 2 -->
+            <article class="piltlink teenuslink inverse1">
+                <div class="teenus-number-visual"><span>02</span></div>
+
+                <div class="piltlingitekst">
+                    <img src="{{ asset('images/icons/küttesepp.png') }}" alt="Küttesepp">
+                    <h3>Keemiaga leotus ja pesu</h3>
+                </div>
+
+                <ul class="teenus-checklist">
+                    <li>Happeline pesu katlakivi eemaldamiseks</li>
+                    <li>Aluseline pesu muda ja magnetiidi eemaldamiseks</li>
+                    <li>Sobib vanematele süsteemidele</li>
+                    <li>Taastab soojusülekande</li>
+                </ul>
+
+                <p class="teenus-kirjeldus">
+                    Kasutatakse siis, kui süsteemis on juba tekkinud tõsisemad setted ja loputusest üksi ei piisa.
+                </p>
+            </article>
+
+            <!-- 3 -->
+            <article class="piltlink teenuslink inverse1">
+                <div class="teenus-number-visual"><span>03</span></div>
+
+                <div class="piltlingitekst">
+                    <img src="{{ asset('images/icons/küttesepp.png') }}" alt="Küttesepp">
+                    <h3>Põhjalik taastamine ja uus küttevesi</h3>
+                </div>
+
+                <ul class="teenus-checklist">
+
+                    <li>Keemiaga pesu + powerflush loputus</li>
+
+                    <li>Kogu vana küttevee eemaldus</li>
+
+                    <li>
+                        Küttevee demineraliseerimine
+                        <strong>
+                            <a href="{{ route('kuttevee-demineraliseerimine') }}"
+                                style="font-size:15px; display:inline;">
+                                (VDI 2035)
+                            </a>
+                        </strong>
+                    </li>
+
+                    <li>
+                        Korrosiooni
+                        <strong>
+                            <a href="{{ route('kuttevee-inhibiitorid') }}" style="font-size:15px; display:inline;">
+                                inhibiitor
+                            </a>
+                        </strong> (valikuline)
+                    </li>
+                    <li>Järeltäite demineraliseerimise filter</li>
+                </ul>
+                <p class="teenus-kirjeldus">
+                    Parim lahendus küttesüsteemi täielikuks taastamiseks.<br> Eriti oluline enne uue soojuspumba või
+                    katla paigaldust – annab süsteemile uue elu.
+                </p>
+            </article>
+
+        </div>
+
+    </section>
+
+
+
+
+
+    <section class="tootjasektsioon">
+        <div class="tootjast">
+            <div class="ettevotte">
+                <div class="content">
+
+
+                    <h2><span>Küttesepa</span> läbipesu meetodid:</h2>
+
 
                     <ul class="rohelise-linnukesega" style="font-weight:500; font-size:18px; margin-top:10px;">
                         <li>Õhu ja vee loputus – keemiavaba puhastus</li>
@@ -57,7 +186,7 @@ katlakivi eemaldus'" :ogImage="asset('images/serp/kuttesepp-og-labipesu.webp')" 
                         Läbipesu valik sõltub probleemi olemusest, torustiku seisukorrast, materjalidest ja vee
                         kvaliteedist.
                         Pärast pesu saame vajadusel teha süsteemi täitmise vastavalt <strong><a style="font-size:18px"
-                                href="{{ route('kuttevee-demineraliseerimine') }}">VDI-2035</a></strong> standardile või
+                                href="{{ route('kuttevee-demineraliseerimine') }}">VDI 2035</a></strong> standardile või
                         lisame
                         <strong><a style="font-size:18px" href="{{ route('kuttevee-inhibiitorid') }}">küttevee
                                 inhibiitorid.</a></strong>
@@ -239,11 +368,10 @@ katlakivi eemaldus'" :ogImage="asset('images/serp/kuttesepp-og-labipesu.webp')" 
                             <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"
                                 class="faq-answer">
                                 <p itemprop="text">
-                                    Absoluudselt võib, siin tuleb aga leida balanss mõistliku teenuse hinna ja
-                                    puhtusastme vahel. Üldjuhul keemia lahustab kõik mittevajaliku teie küttesüsteemis
-                                    ja tava loputuse käigus kõik ebavajalik eemaldub. Kui aga on alust arvata, et lisaks
-                                    veel powerflush tehnoloogiaga loputamisest täiendavat abi oleks, siis halba see
-                                    kindlasti ei tee.
+                                    Absoluudselt võib. Üldjuhul keemia lahustab kõik mittevajaliku teie küttesüsteemis
+                                    ja tava loputuse käigus kõik ebavajalik eemaldub. Eriti määrdunud süsteemi puhul on
+                                    aga välja pakuda Küttesepa pakett 3 mis sisaldabki impuls loputust lisaks
+                                    keemiapesule.
                                 </p>
 
                             </div>
