@@ -191,12 +191,7 @@
                         <strong><a style="font-size:18px" href="{{ route('kuttevee-inhibiitorid') }}">küttevee
                                 inhibiitorid.</a></strong>
                     </p>
-
-                    <div class="pildidiv">
-                        <img class="tootjastpilt" src=""
-                            data-src="{{ asset('images/vaikesed/kuttesusteemide-hooldus/labipesu.webp') }}"
-                            alt="Küttesüsteemi loputus veega ja õhuga">
-                    </div>
+               
 
                     <hr class="red-line">
 
