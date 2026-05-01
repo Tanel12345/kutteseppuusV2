@@ -270,8 +270,6 @@
                         </strong>
                     </p>
 
-                    <hr class="red-line">
-
                     <h3>Õhu ja vee loputus ehk impulssloputus – keemiavaba süsteemi puhastus</h3>
 
                     <p>
