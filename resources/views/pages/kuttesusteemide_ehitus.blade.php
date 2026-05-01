@@ -31,8 +31,10 @@ Töötan peamiselt <strong>Tallinna ja Harjumaa piirkonnas</strong>, kuid kokkul
         </h2>
 
         <p class="teenus-sissejuhatus">
-            Küttesepp ei müü ega paigalda lihtsalt ühte seadet, vaid aitab kokku panna terviku, kus kõik osad töötavad omavahel loogiliselt. See tähendab õiget süsteemi valikut, korralikku väljaehitust, küttevee korrastamist, seadistamist ja lõpuks ka kasutaja juhendamist.
-        </p>
+    Kasutan lahendustes usaldusväärseid õhk-vesi soojuspumpasid, näiteks Samsungi ja Energy Save seadmeid,
+    kuid lõplik valik sõltub alati hoonest, olemasolevast küttesüsteemist, tarbevee vajadusest ja eelarvest.
+    Eesmärk ei ole müüa kindlat brändi, vaid ehitada optimaalselt toimiv küttesüsteem.
+</p>
 
         <div class="red-line" role="presentation"></div>
 
@@ -110,7 +112,7 @@ Töötan peamiselt <strong>Tallinna ja Harjumaa piirkonnas</strong>, kuid kokkul
             <div class="teenus-hinnad-wrapper">
 
                 <h2 id="hinnad-pealkiri" class="teenus-pealkiri">
-                    HINNANÄITED
+                    ORIENTEERUVAD HINNATASEMED
                 </h2>
 
                 <p class="teenus-sissejuhatus hinnad-sissejuhatus">
@@ -118,7 +120,7 @@ Töötan peamiselt <strong>Tallinna ja Harjumaa piirkonnas</strong>, kuid kokkul
                 </p>
 
                 <p class="teenus-sissejuhatus hinnad-sissejuhatus">
-                    Küttesepp ei paku eraldi paigaldusteenust. Hinnad kehtivad peamiselt eramajade õhk-vesi ja maasoojuspumba lahenduste kohta ja sisaldavad nii vajaminevat tehnikat, planeerimist kui tööd.
+                    Küttesepp keskendub terviklahendustele – eesmärk ei ole ainult seadme seinale paigaldamine, vaid toimiva küttesüsteemi väljaehitus ja seadistamine.
                 </p>
 
                 <div class="red-line" role="presentation"></div>
@@ -127,12 +129,12 @@ Töötan peamiselt <strong>Tallinna ja Harjumaa piirkonnas</strong>, kuid kokkul
 
                     <article class="hinnakaart" aria-labelledby="simple-pealkiri">
                         <div class="hinnakaart-sisu">
-                            <span class="hinnakaart-label">SEADE JA LIHTSAM PAIGALDUS</span>
-                            <h3 id="simple-pealkiri">Olemasoleva süsteemiga majale</h3>
+                            <span class="hinnakaart-label">LIHTSAM TERVIKLAHENDUS</span>
+<h3 id="simple-pealkiri">Olemasoleva toimiva küttesüsteemiga majale</h3>
                             <p class="hind">alates <strong>7900 €</strong></p>
 
                             <ul class="teenus-checklist">
-                                <li>Soodsam soojuspump koos tavapärase paigaldusega</li>
+                                <li>Soojuspump koos tavapärase ühendamise ja seadistamisega</li>
                                 <li>Sobib lihtsamatele objektidele</li>
                                 <li>Olemasolev küttesüsteem on kasutatav</li>
                                 <li>Põhiline seadistamine ja kasutaja juhendamine</li>
@@ -204,7 +206,7 @@ Töötan peamiselt <strong>Tallinna ja Harjumaa piirkonnas</strong>, kuid kokkul
                     </p>
 
                     <p class="ohk-ohk-hind">
-                        <strong>Paigaldus koos seadmega: alates 2000 €</strong>
+                        <strong>Paigaldus koos seadmega: alates 1500 €</strong>
                     </p>
                 </div>
 <p class="teenus-loputekst">
