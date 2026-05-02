@@ -116,11 +116,11 @@ Töötan peamiselt <strong>Tallinna ja Harjumaa piirkonnas</strong>, kuid kokkul
                 </h2>
 
                 <p class="teenus-sissejuhatus hinnad-sissejuhatus">
-                    Allpool on toodud mõned tüüpilised hinnatasemed. Lõplik hind sõltub sellest, kas vaja on ainult seadmeid ja paigaldust või kogu küttesüsteemi ehitust, samuti hoonest, valitud tehnikast ja olemasoleva süsteemi seisukorrast.
+                    Allpool on toodud mõned tüüpilised hinnatasemed. Lõplik hind sõltub sellest, kas vaja on ainult seadmeid, paigaldust ja seadistamist või kogu küttesüsteemi ehitust, samuti hoonest, valitud tehnikast ja olemasoleva süsteemi seisukorrast.
                 </p>
 
                 <p class="teenus-sissejuhatus hinnad-sissejuhatus">
-                    Küttesepp keskendub terviklahendustele – eesmärk ei ole ainult seadme seinale paigaldamine, vaid toimiva küttesüsteemi väljaehitus ja seadistamine.
+                    Küttesepp keskendub terviklahendustele – Ma ei paku ainult seadme paigaldamist, vaid toimiva küttesüsteemi väljaehitus. Olenevalt olukorrast ka olemasoleva süsteemi külge uue kütteseadme integreerimist, selle seadistamist ja süsteemi tasakaalustamist.
                 </p>
 
                 <div class="red-line" role="presentation"></div>
