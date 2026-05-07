@@ -1,4 +1,4 @@
-<x-layout :title="'Küttevee demineraliseerimine | VDI 2035 | Küttesepp'" :metaDescription="'Küttevee demineraliseerimine, pH stabiliseerimine ja VDI 2035 põhimõtetele vastav küttesüsteemi täitmine. Küttesepp pakub küttevee töötlust, müüki ja läbipesu üle Eesti.'" :metaKeywords="'küttevee demineraliseerimine,
+<x-layout :title="'Küttevee demineraliseerimine ja VDI 2035 | Küttesepp'" :metaDescription="'Küttevee demineraliseerimine, pH stabiliseerimine ja VDI 2035 põhimõtetele vastav küttesüsteemi täitmine. Küttesepp pakub küttevee töötlust, läbipesu ja täitmist üle Eesti.'" :metaKeywords="'küttevee demineraliseerimine,
 demineraliseeritud küttevesi,
 VDI 2035,
 küttesüsteemi vesi,
@@ -35,13 +35,15 @@ VDI 2035 küttevesi'" :metaAuthor="'Tanel Sepp'" :robots="'index, follow'" :ogIm
 
                     <p>
                         Küttevee demineraliseerimine tähendab vee puhastamist lahustunud sooladest ja mineraalidest,
-                        mis võivad küttesüsteemis põhjustada katlakivi, korrosiooni ja muda teket.
+                        mis põhjustavad küttesüsteemis katlakivi, korrosiooni ja muda teket.
                         Demineraliseeritud vesi on tänapäevase küttesüsteemi õige täitevee alus.
                     </p>
 
                     <p>
-                        Ainult väga puhtast veest siiski ei piisa. Küttesüsteemi jaoks peab vesi olema ka keemiliselt stabiilne – oluline on pH, elektrijuhtivus, hapnikusisaldus ja sobivus süsteemi materjalidega.
-                        Väga madala mineraalsusega demineraliseeritud vesi on ilma stabiliseerimiseta keemiliselt agressiivne ning hakkab süsteemis tasakaalu otsides metallpindadega reageerima, kiirendades korrosiooni teket.
+                        Ainult väga puhtast veest siiski ei piisa. Väga madala mineraalsusega vesi on keemiliselt agressiivne
+                        ning võib hakata metallpindadega reageerima. Oluline on saavutada õige pH vahemik, elektrijuhtivus, hapnikusisaldus ja sobivus süsteemi materjalidega.
+                        
+                        
                     </p>
 
                     <p>
@@ -51,19 +53,17 @@ VDI 2035 küttevesi'" :metaAuthor="'Tanel Sepp'" :robots="'index, follow'" :ogIm
                     </p>
 
                     <p>
-                        Kasutan töötluses kvaliteetseid Saksamaa tootjate lahendusi, näiteks Grünbecki süsteeme.
-                        Eesmärk ei ole müüa ühte kindlat toodet, vaid saavutada süsteemis pikaajaliselt toimiv
+                        Kasutan töötluses kvaliteetset Saksamaa tootja Grünbecki süsteemi, millega
+                        valmibki pikaajaliselt toimiv
                         küttevesi.
                     </p>
 
                     <p>
-                        
-                            Küttesepp OÜ teostab alati enne kohapealset küttevee töötlemist
-                            <strong>
+                        <strong>
+                            Enne küttevee töötlust teostab Küttesepp alati ka
                             <a href="{{ route('kuttesusteemi-labipesu') }}">
                                 küttesüsteemi läbipesu.
                             </a>
-
                         </strong>
                     </p>
 
@@ -90,7 +90,8 @@ VDI 2035 küttevesi'" :metaAuthor="'Tanel Sepp'" :robots="'index, follow'" :ogIm
 
         <p class="teenus-sissejuhatus">
             Küttesüsteemi jaoks on oluline, et täitevesi oleks stabiilne, sobiks süsteemi
-            materjalidega ja oleks täesti puhas liigsetest mineraalidest ja setetest. Küttesepalt saab stabiilset, demineraliseeritud
+            materjalidega ja oleks täesti puhas liigsetest mineraalidest ja setetest. Küttesepalt saab stabiilset,
+            demineraliseeritud
             küttevett nii otse mahutist osta, kui ka
             objektil kohapealse töötluse ja läbipesuga.
         </p>
@@ -110,9 +111,9 @@ VDI 2035 küttevesi'" :metaAuthor="'Tanel Sepp'" :robots="'index, follow'" :ogIm
                 </div>
 
                 <ul class="teenus-checklist">
-                    <li>Valmis töödeldud küttevesi ise järele tulemisega (Laagri, Tallinn)</li>
+                    <li>Valmis töödeldud küttevesi kohapealt kaasa ostmine (Laagri, Tallinn)</li>
                     <li>VDI 2035-le vastav demineraliseeritud küttevesi</li>
-                    <li>Juhtivus korras ja pH stabilisaator-korrosioonikaitse sees</li>
+                    <li>pH stabiliseerimine ja korrosioonikaitse lisand</li>
                     <li>Kohapeal ümberpumpamise võimalus</li>
                     <li>Hea lahendus neile, kes soovivad ise oma süsteemi täita</li>
                 </ul>
@@ -136,7 +137,7 @@ VDI 2035 küttevesi'" :metaAuthor="'Tanel Sepp'" :robots="'index, follow'" :ogIm
                 <ul class="teenus-checklist">
                     <li>Valmis töödeldud küttevesi sinu koju üle Eesti</li>
                     <li>VDI 2035-le vastav demineraliseeritud küttevesi</li>
-                    <li>Juhtivus korras ja pH stabilisaator-korrosioonikaitse sees</li>
+                    <li>pH stabiliseerimine ja korrosioonikaitse lisand</li>
                     <li>Kohapeal ümberpumpamise võimalus</li>
                     <li>Hea lahendus neile, kes soovivad ise oma süsteemi täita</li>
                 </ul>
@@ -162,7 +163,7 @@ VDI 2035 küttevesi'" :metaAuthor="'Tanel Sepp'" :robots="'index, follow'" :ogIm
                     <li>Värske trassivee demineraliseerimine</li>
                     <li>Demineraliseeritud küttevee VDI 2035-le vastavusse viimine</li>
                     <li>Järeltäite demineraliseerimise filtri lisamine</li>
-                    <li>Aastane garantii hoolduse tellijatele</li>
+                    <li><strong>Aastane garantii hoolduse tellijatele</strong></li>
                 </ul>
 
                 <p class="piltlink-kirjeldus teenus-kirjeldus">
@@ -183,7 +184,9 @@ VDI 2035 küttevesi'" :metaAuthor="'Tanel Sepp'" :robots="'index, follow'" :ogIm
 
                     <h3>Miks demineraliseeritud vesi on vajalik?</h3>
                     <p>
-                        Kui küttevõrk täidetakse tavalise trassiveega, satuvad sinna kaltsiumi-, magneesiumi- ja kloriidioonid, mille sisaldust saab hinnata elektrijuhtivuse mõõtmisega. Lisaks tekkitavad probleeme ebapiisav pH tase ja hapniku olemasolu süsteemis.
+                        Kui küttevõrk täidetakse tavalise trassiveega, satuvad sinna kaltsiumi-, magneesiumi- ja
+                        kloriidioonid, mille sisaldust saab hinnata elektrijuhtivuse mõõtmisega. Lisaks tekkitavad
+                        probleeme ebapiisav pH tase ja hapniku olemasolu süsteemis.
                     </p>
 
                     <p>
@@ -320,7 +323,8 @@ VDI 2035 küttevesi'" :metaAuthor="'Tanel Sepp'" :robots="'index, follow'" :ogIm
                             <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"
                                 class="faq-answer">
                                 <p itemprop="text">
-                                    Kraanivesi sisaldab mineraale, mis kuumenedes ladestuvad katlakivina ning soodustavad korrosiooni ja muda teket. See lühendab süsteemi eluiga,
+                                    Kraanivesi sisaldab mineraale, mis kuumenedes ladestuvad katlakivina ning
+                                    soodustavad korrosiooni ja muda teket. See lühendab süsteemi eluiga,
                                     vähendab soojusülekannet ja suurendab energiakulu.
                                 </p>
                             </div>
@@ -334,10 +338,8 @@ VDI 2035 küttevesi'" :metaAuthor="'Tanel Sepp'" :robots="'index, follow'" :ogIm
                             <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"
                                 class="faq-answer">
                                 <p itemprop="text">
-                                    Jah, soovi korral võib, kuid üldjuhul muutub küsitavaks majanduslik otstarbekus.
-                                    Inhibiitor, mis takistab kütteveel metalliga kokku puutumist, toimib oma eluea
-                                    jooksul ka tavalise trassiveega. Pärast selle eluea lõppemist püsib küll demin vesi
-                                    paremini, kuid vajaks ikka rohkem kontrolli ja vajadusel aine lisamist.
+                                    Jah, võib. Korrosiooniinhibiitor aitab kaitsta süsteemi metallpindu
+                                    ning seda kasutatakse sageli koos demineraliseeritud kütteveega.
                                 </p>
                             </div>
                         </div>
