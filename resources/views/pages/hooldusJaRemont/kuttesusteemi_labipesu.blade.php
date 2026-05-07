@@ -161,28 +161,30 @@
                             alt="Happeline küttesüsteemi läbipesu"> </div>
                     <hr class="red-line">
                     <h3>Keemiaga läbipesu – aluseline puhastus</h3>
-                    <p> Aluseline pesu sobib süsteemidele, kus torustikus on: </p>
+
+                    <p>
+                        Aluseline pesu sobib süsteemidele, kus torustikus on muda,
+                        magnetiit, õlised setted või pika aja jooksul tekkinud biokile.
+                    </p>
+
                     <ul class="rohelise-linnukesega" style="font-weight:500; font-size:18px;">
-                        <li>Muda ja õlised setted</li>
-                        <li>Magnetiit ehk must raudoksiid</li>
-                        <li>Põrandakütte torudes tekkinud biokile</li>
-                        <li>Soojusvahetitesse ladestunud must kiht</li>
+                        <li>Puhastab torustikku orgaanilistest ja bioloogilistest setetest</li>
+                        <li>Aitab lõhustada magnetiiti ja õliseid kihte</li>
+                        <li>Parandab ringlust ja süsteemi töötingimusi</li>
+                        <li>Sobib hästi vanemate küttesüsteemide taastamiseks</li>
                     </ul>
-                    <p> Mida teeb aluseline keemia: </p>
-                    <ul class="rohelise-linnukesega" style="font-weight:500; font-size:18px;">
-                        <li>Aitab eemaldada muda ja orgaanilist mustust</li>
-                        <li>Lõhustab magnetiiti ja õliseid jääke</li>
-                        <li>Puhastab torustikku bioloogilistest setetest</li>
-                        <li>Parandab ringlust ja pumba töötingimusi</li>
-                    </ul>
-                    <p> Aluseline pesu on üks tõhusamaid meetodeid vanemate küttesüsteemide taastamiseks, kui
-                        probleemiks on must muda, magnetiit ja pika aja jooksul kogunenud setted. </p>
-                    <p style="font-size:16px; color:#444;"> Aluseline pesu on mõeldud eelkõige muda, magnetiidi, õliste
-                        jääkide ja bioloogilise mustuse eemaldamiseks. Tugeva katlakivi puhul kasutatakse happelist
-                        puhastust. </p>
-                    <div class="pildidiv"> <img class="tootjastpilt" src=""
+
+                    <p style="font-size:16px; color:#444;">
+                        Aluseline puhastus on mõeldud eelkõige korrosioonijääkide, õliste setete aga ka orgaanilise mustuse eemaldamiseks.
+                        Tugeva katlakivi puhul kasutatakse happelist puhastust.
+                    </p>
+
+                    <div class="pildidiv">
+                        <img class="tootjastpilt" src=""
                             data-src="{{ asset('images/vaikesed/kuttesusteemide-hooldus/aluselise-keemiaga-pesu.webp') }}"
-                            alt="Aluseline küttesüsteemi läbipesu"> </div>
+                            alt="Aluseline küttesüsteemi läbipesu">
+                    </div>
+
                     <hr class="red-line" style="margin-top:40px; margin-bottom:40px;">
                     <p> Teenust pakun <strong>üle Eesti</strong>, kuid enda asukoha tõttu eelistan Tallinna ja Harjumaa
                         piirkonda.<br> Läbipesu ja termokaamera mõõdistuse teostan mobiilse seadmega objektil kohapeal.
