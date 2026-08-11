@@ -1,111 +1,463 @@
-@props(['products', 'brands', 'typeSlug'])
+@props([
+    'products',
+    'brands',
+    'typeSlug'
+])
 
-<section class="tootesektsioon" id="tootesektsioon">
-    <div class="tootevalikud">
 
-        <h2 style="font-size: 32px; font-weight: 400; margin: 14px; text-align: center;">
-            REASTA TOOTED BRÄNDI JÄRGI
-        </h2>
+@php
 
-        {{-- BRÄNDIDE FILTER --}}
-        <div class="brands">
-            @foreach ($brands as $brand)
-                <div class="brandboxes">
-                    <a href="{{ route('soojuspumbad.type', $typeSlug) }}?brand={{ $brand->slug }}#tootesektsioon"
-                        title="{{ $brand->name }}">
-                        <img src="{{ asset('storage/' . $brand->logo) }}" alt="{{ $brand->name }}">
+    /*
+    |--------------------------------------------------------------------------
+    | SOOJUSPUMBA TÜÜBI TEKSTID
+    |--------------------------------------------------------------------------
+    |
+    | Sama komponent töötab:
+    |
+    | ohk-ohk-soojuspumbad
+    | ohk-vesi-soojuspumbad
+    | maasoojuspumbad
+    |
+    */
+
+    $catalogContent = match ($typeSlug) {
+
+        'ohk-ohk-soojuspumbad' => [
+            'eyebrow' => 'Seadmete valik',
+            'title' => 'Sirvi õhksoojuspumpasid',
+            'intro' => 'Valikus on erinevad õhksoojuspumbad tootjatelt, kelle seadmeid saan pakkuda koos nõustamise ja paigaldusega.',
+        ],
+
+        'ohk-vesi-soojuspumbad' => [
+            'eyebrow' => 'Seadmete valik',
+            'title' => 'Sirvi õhk-vesi soojuspumpasid',
+            'intro' => 'Valikus on erinevad õhk-vesi soojuspumbad eramajade ja teiste vesiküttesüsteemiga hoonete kütmiseks. Aitan valida hoonele ja küttesüsteemile sobiva lahenduse.',
+        ],
+
+        'maasoojuspumbad' => [
+            'eyebrow' => 'Seadmete valik',
+            'title' => 'Sirvi maasoojuspumpasid',
+            'intro' => 'Valikus on erinevad maasoojuspumbad uutele ja olemasolevatele küttesüsteemidele. Sobiva seadme valikul arvestan hoone soojusvajaduse, maakontuuri ja küttesüsteemiga.',
+        ],
+
+        default => [
+            'eyebrow' => 'Seadmete valik',
+            'title' => 'Sirvi soojuspumpasid',
+            'intro' => 'Tutvu erinevate soojuspumpadega ning küsi oma hoonele sobiva lahenduse ja paigalduse hinda.',
+        ],
+    };
+
+@endphp
+
+
+
+<section class="product-catalog" id="tootesektsioon">
+
+    <div class="product-catalog__container">
+
+
+        {{-- =====================================================
+             BRÄNDIFILTER
+             ===================================================== --}}
+
+        @if ($brands->count())
+
+            <div class="product-catalog__filter">
+
+
+                <p class="product-catalog__eyebrow">
+                    {{ $catalogContent['eyebrow'] }}
+                </p>
+
+
+                <h2>
+                    {{ $catalogContent['title'] }}
+                </h2>
+
+
+                <p class="product-catalog__intro">
+                    {{ $catalogContent['intro'] }}
+                </p>
+
+
+
+                <div class="product-brand-filter">
+
+
+                    {{-- KÕIK TOOTED --}}
+                    <a
+                        href="{{ route('soojuspumbad.type', $typeSlug) }}#tootesektsioon"
+                        class="product-brand-filter__item {{ !request('brand') ? 'is-active' : '' }}"
+                    >
+                        <span>Kõik</span>
                     </a>
-                </div>
-            @endforeach
-        </div>
-
-        {{-- TOOTED --}}
-        @foreach ($products as $product)
-            <div class="tootediv">
-                <div class="tooteaktiivala">
-
-                    <div class="tekstid">
-                        <h2>{{ $product->name }}</h2>
 
 
-                        <button class="toggle-description" type="button" aria-label="Kohanda küpsiseid">
-                            <span class="toggle-text">Vaata kirjeldust</span>
-                            <svg class="toggle-icon" aria-hidden="true" viewBox="0 0 24 24" width="20"
-                                height="20">
-                                <path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.3"
-                                    stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-                        </button>
 
-                        <p class="description">{!! nl2br(e($product->description)) !!}</p>
+                    {{-- BRÄNDID --}}
+                    @foreach ($brands as $brand)
 
-                        <h3>
-                            Toote võimsus:
-                            <span style="font-weight: 400;">
-                                {{ $product->power }}
-                            </span>
-                        </h3>
+                        <a
+                            href="{{ route('soojuspumbad.type', $typeSlug) }}?brand={{ $brand->slug }}#tootesektsioon"
+                            class="product-brand-filter__item {{ request('brand') === $brand->slug ? 'is-active' : '' }}"
+                            title="{{ $brand->name }}"
+                        >
 
-                        <div class="brandImg">
+                            @if ($brand->logo)
 
-                            {{-- KÜSI LISAINFOT --}}
-                            <div class="kusipakkumist">
-                                <a
-                                    href="{{ url('/') . '?product=' . urlencode($product->brand->name . ' ' . $product->name) . '#form' }}">
-                                    <p>KÜSI LISAINFOT</p>
-                                </a>
-                            </div>
+                                <img
+                                    src="{{ asset('storage/' . $brand->logo) }}"
+                                    alt="{{ $brand->name }}"
+                                    loading="lazy"
+                                >
 
-                            {{-- BRÄND --}}
-                            @if ($product->brand)
-                                <a href="{{ route('brand.page', $product->brand->slug) }}?type={{ $typeSlug }}">
-                                    <img class="brand" src="{{ asset('storage/' . $product->brand->logo) }}"
-                                        alt="{{ $product->brand->name }}">
-                                </a>
                             @endif
 
-                        </div>
-                    </div>
 
-                    {{-- TOOTE PILT --}}
-                    <div class="productImg">
-                        <a href="{{ route('brand.page', $product->brand->slug) }}?type={{ $typeSlug }}">
-                            <img loading="lazy" class="tooteImg" src="{{ asset('storage/' . $product->product_img) }}"
-                                alt="{{ $product->name }}">
+                            <span>
+                                {{ $brand->name }}
+                            </span>
+
                         </a>
-                    </div>
+
+                    @endforeach
+
 
                 </div>
 
-                <div class="taustapildid">
-                    <img class="img" src="{{ asset('images/taustad/taust5.png') }}" alt="Taustaikoon">
-                    <img class="img" src="{{ asset('images/taustad/taust5.png') }}" alt="Taustaikoon">
-                    <img class="img" src="{{ asset('images/taustad/taust5.png') }}" alt="Taustaikoon">
-                </div>
             </div>
-        @endforeach
+
+        @endif
+
+
+
+        {{-- =====================================================
+             TOOTEKAARDID
+             ===================================================== --}}
+
+        @if ($products->count())
+
+            <div class="product-grid">
+
+
+                @foreach ($products as $product)
+
+                    <article class="product-card">
+
+
+                        {{-- =================================================
+                             TOOTE PILT
+                             ================================================= --}}
+
+                        @if ($product->brand)
+
+                            <a
+                                class="product-card__image"
+                                href="{{ route('brand.page', [
+                                    'type' => $typeSlug,
+                                    'brand' => $product->brand->slug
+                                ]) }}"
+                                title="{{ $product->brand->name }}"
+                            >
+
+                                <img
+                                    loading="lazy"
+                                    src="{{ asset('storage/' . $product->product_img) }}"
+                                    alt="{{ $product->name }}"
+                                >
+
+                            </a>
+
+                        @else
+
+                            <div class="product-card__image">
+
+                                <img
+                                    loading="lazy"
+                                    src="{{ asset('storage/' . $product->product_img) }}"
+                                    alt="{{ $product->name }}"
+                                >
+
+                            </div>
+
+                        @endif
+
+
+
+                        {{-- =================================================
+                             SISU
+                             ================================================= --}}
+
+                        <div class="product-card__content">
+
+
+                            {{-- TOOTJA LOGO --}}
+                            @if ($product->brand)
+
+                                <a
+                                    class="product-card__brand"
+                                    href="{{ route('brand.page', [
+                                        'type' => $typeSlug,
+                                        'brand' => $product->brand->slug
+                                    ]) }}"
+                                    title="Vaata tootjat {{ $product->brand->name }}"
+                                >
+
+                                    @if ($product->brand->logo)
+
+                                        <img
+                                            src="{{ asset('storage/' . $product->brand->logo) }}"
+                                            alt="{{ $product->brand->name }}"
+                                            loading="lazy"
+                                        >
+
+                                    @endif
+
+                                </a>
+
+                            @endif
+
+
+
+                            {{-- TOOTE NIMI --}}
+                            <h3>
+                                {{ $product->name }}
+                            </h3>
+
+
+
+                            {{-- VÕIMSUS --}}
+                            @if ($product->power)
+
+                                <p class="product-card__power">
+
+                                    Võimsus
+
+                                    <strong>
+                                        {{ $product->power }}
+                                    </strong>
+
+                                </p>
+
+                            @endif
+
+
+
+                            {{-- =================================================
+                                 KIRJELDUS
+                                 ================================================= --}}
+
+                            @if ($product->description)
+
+                                <div class="product-card__description">
+
+
+                                    {{-- LÜHIKE KIRJELDUS --}}
+                                    <p>
+                                        {{ \Illuminate\Support\Str::limit(
+                                            $product->description,
+                                            150
+                                        ) }}
+                                    </p>
+
+
+
+                                    {{-- PIKEM KIRJELDUS --}}
+                                    @if (mb_strlen($product->description) > 150)
+
+                                        <button
+                                            class="product-card__toggle"
+                                            type="button"
+                                            aria-expanded="false"
+                                        >
+
+                                            <span>
+                                                Vaata kirjeldust
+                                            </span>
+
+
+                                            <svg
+                                                aria-hidden="true"
+                                                viewBox="0 0 24 24"
+                                                width="18"
+                                                height="18"
+                                            >
+
+                                                <path
+                                                    d="M6 9l6 6 6-6"
+                                                    fill="none"
+                                                    stroke="currentColor"
+                                                    stroke-width="2.3"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                />
+
+                                            </svg>
+
+                                        </button>
+
+
+
+                                        <div class="product-card__description-full">
+
+                                            <p>
+                                                {!! nl2br(e($product->description)) !!}
+                                            </p>
+
+                                        </div>
+
+                                    @endif
+
+
+                                </div>
+
+                            @endif
+
+
+
+                            {{-- =================================================
+                                 CTA NUPUD
+                                 ================================================= --}}
+
+                            <div class="product-card__actions">
+
+
+                                {{-- KÜSI KOMPLEKTI HINDA --}}
+                                <a
+                                    class="product-card__button product-card__button--primary"
+                                    href="{{ url('/') . '?product=' . urlencode(
+                                        ($product->brand
+                                            ? $product->brand->name . ' '
+                                            : '') . $product->name
+                                    ) . '#form' }}"
+                                >
+                                    Küsi komplekti hinda
+                                </a>
+
+
+
+                                {{-- VAATA TOOTJAT --}}
+                                @if ($product->brand)
+
+                                    <a
+                                        class="product-card__button product-card__button--secondary"
+                                        href="{{ route('brand.page', [
+                                            'type' => $typeSlug,
+                                            'brand' => $product->brand->slug
+                                        ]) }}"
+                                    >
+                                        Vaata tootjat
+                                    </a>
+
+                                @endif
+
+
+                            </div>
+
+
+                        </div>
+
+                    </article>
+
+                @endforeach
+
+
+            </div>
+
+
+
+        @else
+
+
+            {{-- =====================================================
+                 TÜHI FILTER
+                 ===================================================== --}}
+
+            <div class="product-catalog__empty">
+
+                <h3>
+                    Selle filtriga tooteid ei leitud
+                </h3>
+
+
+                <a
+                    href="{{ route('soojuspumbad.type', $typeSlug) }}#tootesektsioon"
+                >
+                    Näita kõiki seadmeid
+                </a>
+
+            </div>
+
+
+        @endif
+
 
     </div>
+
 </section>
 
+
+
+{{-- =========================================================
+     KIRJELDUSE AVAMINE
+     ========================================================= --}}
+
 <script>
+
     document.addEventListener("DOMContentLoaded", () => {
-        document.querySelectorAll(".toggle-description").forEach(button => {
-            button.addEventListener("click", () => {
-                const description = button.nextElementSibling;
-                if (!description) return;
 
-                const isOpen = description.classList.toggle("open");
+        document
+            .querySelectorAll(".product-card__toggle")
+            .forEach(button => {
 
-                button.classList.toggle("open", isOpen);
+                button.addEventListener("click", () => {
 
-                const textSpan = button.querySelector(".toggle-text");
-                if (textSpan) {
-                    textSpan.textContent = isOpen ?
-                        "Peida kirjeldus" :
-                        "Vaata kirjeldust";
-                }
+                    const description =
+                        button
+                            .parentElement
+                            .querySelector(
+                                ".product-card__description-full"
+                            );
+
+
+                    if (!description) {
+                        return;
+                    }
+
+
+                    const open =
+                        description.classList.toggle("is-open");
+
+
+                    button.classList.toggle(
+                        "is-open",
+                        open
+                    );
+
+
+                    button.setAttribute(
+                        "aria-expanded",
+                        open ? "true" : "false"
+                    );
+
+
+                    const text =
+                        button.querySelector("span");
+
+
+                    if (text) {
+
+                        text.textContent =
+                            open
+                                ? "Peida kirjeldus"
+                                : "Vaata kirjeldust";
+
+                    }
+
+                });
+
             });
-        });
+
     });
+
 </script>

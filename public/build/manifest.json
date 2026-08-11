@@ -44,7 +44,7 @@
     ]
   },
   "resources/css/pages/brandilehed.css": {
-    "file": "assets/brandilehed-C9lOOg0j.css",
+    "file": "assets/brandilehed-jcjyzyOa.css",
     "src": "resources/css/pages/brandilehed.css",
     "isEntry": true,
     "names": [
@@ -52,7 +52,7 @@
     ]
   },
   "resources/css/pages/index.css": {
-    "file": "assets/index-B96vDYB4.css",
+    "file": "assets/index-BZo-JYts.css",
     "src": "resources/css/pages/index.css",
     "isEntry": true,
     "names": [
@@ -68,7 +68,7 @@
     ]
   },
   "resources/css/pages/tootelehed.css": {
-    "file": "assets/tootelehed-B1LqI8m4.css",
+    "file": "assets/tootelehed-CCFVVAOb.css",
     "src": "resources/css/pages/tootelehed.css",
     "isEntry": true,
     "names": [
@@ -76,7 +76,7 @@
     ]
   },
   "resources/css/pages/tootelehedala.css": {
-    "file": "assets/tootelehedala-B5xAE8u7.css",
+    "file": "assets/tootelehedala-Bfaa83PH.css",
     "src": "resources/css/pages/tootelehedala.css",
     "isEntry": true,
     "names": [
@@ -124,7 +124,7 @@
     ]
   },
   "resources/js/pages/teenustelehed.js": {
-    "file": "assets/teenustelehed-DTJi5r8-.js",
+    "file": "assets/teenustelehed-B6UwmDzh.js",
     "name": "teenustelehed",
     "src": "resources/js/pages/teenustelehed.js",
     "isEntry": true

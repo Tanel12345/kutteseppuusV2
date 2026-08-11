@@ -23,7 +23,7 @@
  }
  .taust {
   position: absolute;
-  top: 0px;
+  top: 0;
   left: 0;
   width: 100%; /* Optional */
   height:100%;
@@ -89,7 +89,7 @@ opacity: 0;
  
   padding: 12px;
   line-height: 26px;
-  letter-spacing: 1px;
+
   margin-bottom:10px
   
   

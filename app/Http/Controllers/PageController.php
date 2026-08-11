@@ -130,37 +130,39 @@ public function soojuspumbad(Request $request, string $type)
 
 
 
-   public function brandPage(Brand $brand, Request $request)
+ public function brandPage(string $type, Brand $brand)
 {
-    // SEO slug URL-ist (ohk-vesi-soojuspumbad)
-    $typeSlug = $request->query('type');
+    // URL:
+    // ohk-ohk-soojuspumbad
+    //
+    // DB + Blade:
+    // ohk_ohk_soojuspumbad
+    $viewType = str_replace('-', '_', $type);
 
-    // DB + Blade jaoks (ohk_vesi_soojuspumbad)
-    $viewType = $typeSlug ? str_replace('-', '_', $typeSlug) : null;
 
- 
-
-    // Tooted
+    // Ainult selle tootja vastava tüübi tooted
     $products = $brand->products()
-        ->when($viewType, fn ($q) =>
-            $q->where('product_type', $viewType)
-        )
+        ->where('product_type', $viewType)
         ->get();
 
-    // 👉 dünaamiline blade tee (ALAKRIIPS)
-    $view = $viewType
-        ? "pages.brand.{$brand->slug}.{$viewType}"
-        : "pages.brand.{$brand->slug}.index";
 
-    // Kui view puudub → 404
+    // Näiteks:
+    //
+    // pages.brand.midea.ohk_ohk_soojuspumbad
+    // pages.brand.midea.ohk_vesi_soojuspumbad
+    $view = "pages.brand.{$brand->slug}.{$viewType}";
+
+
     if (!view()->exists($view)) {
         abort(404);
     }
 
+
     return view($view, [
-        'brand'    => $brand,
-        'products' => $products,
-        'typeSlug' => $typeSlug, // vajadusel SEO / breadcrumb jaoks
+        'brand'     => $brand,
+        'products'  => $products,
+        'typeSlug'  => $type,
+        'type'      => $viewType,
     ]);
 }
     /* ===============================
@@ -213,4 +215,28 @@ public function soojuspumbad(Request $request, string $type)
        return view('pages.tahkekutteseadmed.keskkuttepliidid_ja_kaminad', compact('products', 'brands'))
     ->with('pageRoute', 'keskkuttepliididJaKaminad.index');
     }
+
+//Vanade brandpagede 301 redirect
+
+    public function legacyBrandPage(Brand $brand, Request $request)
+{
+    $type = $request->query('type');
+
+    $allowedTypes = [
+        'ohk-ohk-soojuspumbad',
+        'ohk-vesi-soojuspumbad',
+        'maasoojuspumbad',
+    ];
+
+
+    if (!$type || !in_array($type, $allowedTypes, true)) {
+        abort(404);
+    }
+
+
+    return redirect()->route('brand.page', [
+        'type'  => $type,
+        'brand' => $brand->slug,
+    ], 301);
+}
 }

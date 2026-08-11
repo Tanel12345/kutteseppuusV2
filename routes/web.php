@@ -37,26 +37,41 @@ Route::controller(PageController::class)->group(function () {
     Route::get('/kuidas-saasta-kuttekuludelt', 'kuidasSaastaKuttekuludelt')->name('kuidas-saasta-kuttekuludelt');
   
 
-    // ===== SOOJUSPUMBAD (UNIVERSAALNE) =====
-    Route::get('/soojuspumbad', 'soojuspumbadIndex')
+// ===== SOOJUSPUMBAD =====
+
+Route::get('/soojuspumbad', 'soojuspumbadIndex')
     ->name('soojuspumbad.index');
 
-    // Näited:
-    // /soojuspumbad/ohk_ohk_soojuspumbad
-    // /soojuspumbad/ohk_vesi_soojuspumbad?brand=samsung
-    // /soojuspumbad/maasoojuspumbad
-    Route::get('/soojuspumbad/{type}', 'soojuspumbad')
-        ->name('soojuspumbad.type');
 
-    // ===== BRÄNDILEHT (ÜKS KÕIGILE) =====
-    // Näited:
-    // /tootja/samsung
-    // /tootja/bosch?type=maasoojuspumbad
-    // Route::get('/tootja/{brand:slug}', 'brandPage')
-    //     ->name('brand.page');
-    Route::get('/tootja/{brand:slug}', 'brandPage')
+// Kategoorialehed
+Route::get('/soojuspumbad/{type}', 'soojuspumbad')
+    ->where(
+        'type',
+        'ohk-ohk-soojuspumbad|ohk-vesi-soojuspumbad|maasoojuspumbad'
+    )
+    ->name('soojuspumbad.type');
+
+
+// ===== TOOTJALEHT KONKREETSE SOOJUSPUMBA TÜÜBI ALL =====
+//
+// /ohk-ohk-soojuspumbad/tootja/midea
+// /ohk-vesi-soojuspumbad/tootja/midea
+// /maasoojuspumbad/tootja/bosch
+
+Route::get('/{type}/tootja/{brand:slug}', 'brandPage')
+    ->where(
+        'type',
+        'ohk-ohk-soojuspumbad|ohk-vesi-soojuspumbad|maasoojuspumbad'
+    )
     ->where('brand', '[a-z0-9\-]+')
     ->name('brand.page');
+
+
+// VANA URL -> 301 uuele URL-ile
+// /tootja/midea?type=ohk-ohk-soojuspumbad
+Route::get('/tootja/{brand:slug}', 'legacyBrandPage')
+    ->where('brand', '[a-z0-9\-]+')
+    ->name('brand.page.legacy');
 
     // ===== TAHKEKÜTTESEADMED =====
     Route::get('/tahkekutteseadmed', 'tahkekutteseadmed')

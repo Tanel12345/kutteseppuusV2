@@ -123,19 +123,21 @@
     Google saab aru, et:
     see leht kuulub ettevõttele “Küttesepp”
     --}}
-    <script type="application/ld+json">
-    {
+<script type="application/ld+json">
+{
     "@context": "https://schema.org",
-    "@type": "Organization",
+    "@type": "LocalBusiness",
+    "@id": "https://www.kuttesepp.ee/#business",
     "name": "Küttesepp",
+    "legalName": "Küttesepp OÜ",
     "url": "https://www.kuttesepp.ee",
     "logo": "https://www.kuttesepp.ee/images/küttesepp_logo.webp",
     "image": "https://www.kuttesepp.ee/images/Tanel-Küttesepp.png",
     "sameAs": [
         "https://www.facebook.com/kuttesepp"
     ]
-    }
-    </script>
+}
+</script>
 
 
 

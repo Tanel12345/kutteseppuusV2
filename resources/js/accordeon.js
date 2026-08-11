@@ -26,3 +26,46 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
+ /*
+    |--------------------------------------------------------------------------
+    | Uue läbipesulehe details accordion
+    |--------------------------------------------------------------------------
+    */
+
+    const flushMethods = document.querySelectorAll(".flush-method");
+
+    flushMethods.forEach(function (details) {
+        const summary = details.querySelector("summary");
+        const content = details.querySelector(".flush-method__content");
+
+        if (!summary || !content) {
+            return;
+        }
+
+        if (details.open) {
+            details.classList.add("is-open");
+        }
+
+        summary.addEventListener("click", function (event) {
+            event.preventDefault();
+
+            const isOpen = details.classList.contains("is-open");
+
+            if (isOpen) {
+                details.classList.remove("is-open");
+
+                window.setTimeout(function () {
+                    details.open = false;
+                }, 380);
+
+                return;
+            }
+
+            details.open = true;
+
+            window.requestAnimationFrame(function () {
+                details.classList.add("is-open");
+            });
+        });
+    });

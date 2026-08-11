@@ -1,234 +1,617 @@
-<x-layout :title="'Küttesüsteemi läbipesu | Põrandakütte ja radiaatorite puhastus | Küttesepp'" :metaDescription="'Küttesüsteemi läbipesu, põrandakütte ja radiaatorite puhastus. Probleemi tuvastamine termokaameraga, impulssloputus, keemiapesu ja küttevee demineraliseerimine vastavalt VDI 2035 põhimõtetele.'" :ogImage="asset('images/serp/kuttesepp-og-labipesu.webp')" :metaAuthor="'Tanel Sepp'" :robots="'index, follow'" :viteCssAssets="[
+<x-layout :title="'Küttesüsteemi läbipesu Tallinnas ja Harjumaal | Küttesepp'" :metaDescription="'Küttesüsteemi läbipesu Tallinnas ja Harjumaal. Põrandakütte ja radiaatorite impulssloputus, keemiapesu ning VDI 2035 küttevesi.'" :ogImage="asset('images/serp/kuttesepp-og-labipesu.webp')" :metaAuthor="'Tanel Sepp'" :robots="'index, follow, max-image-preview:large'" :viteCssAssets="[
     'resources/css/pages/tootelehed.css',
     'resources/css/pages/teenustelehed.css',
-    'resources/css/kuttesusteemiTeenus.css',
+    'resources/css/kuttesusteemiTeenus1.css',
 ]"
     :viteJsAssets="['resources/js/pages/teenustelehed.js']">
 
-    <!-- HERO -->
+    {{-- HERO – jäetud olemasoleva staatilise karusselli süsteemi peale --}}
     <section class="uper" id="uperid">
         <div class="carousel">
             <div class="taustadiv">
                 <div class="textholderdiv">
                     <div class="textholder">
-                        <h1>Küttesüsteemi läbipesu – põrandakütte ja radiaatorite puhastus</h1>
+                        <h1>Küttesüsteemi läbipesu – põrandaküte ja radiaatorid seest puhtaks</h1>
                     </div>
                 </div>
+
                 <img class="taust" src="{{ asset('images/taustad/labipesu.webp') }}"
-                    alt="Küttesüsteemi läbipesu, põrandakütte läbipesu ja radiaatorite puhastus">
+                    alt="Küttesüsteemi läbipesu, põrandakütte läbipesu ja radiaatorite sisemine puhastus"
+                    fetchpriority="high" decoding="async">
             </div>
         </div>
     </section>
 
-    <!-- SISSEJUHATUS -->
-    <section class="tootjasektsioon" style="background-image:none; background-color:white;">
-        <div class="tootjast">
-            <div class="ettevotte">
-                <div class="content">
-                    <h2> <span>Kas küttesüsteem vajab läbipesu?</span> </h2>
-                    <p> Enne läbipesu kontrollin, kas probleem on tegelikult mustuses, halvas ringluses, õhus süsteemis,
-                        tasakaalustamata kontuurides või kütteseadme töös. Vajadusel mõõdan termokaameraga põrandakütte
-                        ja radiaatorite soojenemist ning hindan süsteemi vooluhulkasid. </p>
-                    <h3>Probleemi kontroll kohapeal</h3>
-                    <ul class="rohelise-linnukesega" style="font-weight:500; font-size:18px;">
-                        <li>Kütteseadme kontroll – kas süsteemi jõuab piisavalt soojust?</li>
-                        <li>Põrandakütte kontuuride kontroll termokaameraga</li>
-                        <li>Radiaatorite soojenemise kontroll termokaameraga</li>
-                        <li>Kollektori vooluhulkade ja ringluse hindamine</li>
-                        <li>Filtrite, mudakogujate ja nähtavate ühenduste kontroll</li>
-                        <li>Soovitus, kas vaja on läbipesu, tasakaalustamist või muud hooldust</li>
+    <div class="flush-page">
+
+        {{-- KAS SÜSTEEM VAJAB LÄBIPESU? --}}
+        <section class="flush-intro" aria-labelledby="flush-intro-title">
+            <div class="flush-container flush-assessment">
+                <div class="flush-assessment__content">
+                    <p class="flush-eyebrow">Diagnostika, puhastus ja süsteemi taastamine</p>
+
+                    <h2 id="flush-intro-title">
+                        Läbipesuga käsikäes käib probleemi põhjuse välja selgitamine
+                    </h2>
+
+                    <p class="flush-lead">
+                        Olenevalt valitud teenusest kontrollin, kas ebaühtlase kütte
+                        põhjuseks on must süsteem või hoopis õhk süsteemis, nõrk ringlus,
+                        tasakaalustamata kontuurid, ummistunud filter või kütteseadme töö.
+                    </p>
+                    <p class="flush-lead">
+                        Teostan nii põrandakütte läbipesu kui ka radiaatorite ja kogu küttesüsteemi puhastust.
+                        Töö eesmärk on taastada võimalikult hea ringlus ja soojusülekanne ning eemaldada süsteemist
+                        muda, sete ja muud vooluhulka takistavad jäägid.
+                    </p>
+
+                    <div class="flush-symptoms" aria-label="Tunnused, mille korral tasub küttesüsteemi kontrollida">
+                        <article class="flush-symptom">
+                            <span aria-hidden="true">01</span>
+                            <div>
+                                <h3>Ebaühtlane soojenemine</h3>
+                                <p>Radiaator, põrandakütte kontuur või osa ruumist jääb jahedaks.</p>
+                            </div>
+                        </article>
+
+                        <article class="flush-symptom">
+                            <span aria-hidden="true">02</span>
+                            <div>
+                                <h3>Nõrk vooluhulk</h3>
+                                <p>Kollektori läbivool on väike või ringlus ei taastu seadistamisega.</p>
+                            </div>
+                        </article>
+
+                        <article class="flush-symptom">
+                            <span aria-hidden="true">03</span>
+                            <div>
+                                <h3>Must sete filtris</h3>
+                                <p>Magnetfiltrisse või mudakogujasse koguneb kiiresti musta muda.</p>
+                            </div>
+                        </article>
+
+                        <article class="flush-symptom">
+                            <span aria-hidden="true">04</span>
+                            <div>
+                                <h3>Müra või ringlushäired</h3>
+                                <p>Torustikus, pumbas või kütteseadmes kostab mulinat või sahinat.</p>
+                            </div>
+                        </article>
+                    </div>
+
+                    <ul class="flush-feature-list" aria-label="Teenuse põhilised eelised">
+                        <li>Termokaamera kontroll enne ja pärast tööd</li>
+                        <li>Põrandakütte ja radiaatorite vooluhulkade hindamine</li>
+                        <li>Impulssloputus, powerflush ja sobiv keemiapesu</li>
+                        <li>Süsteemi täitmine sobiva VDI 2035 küttevee või korrosiooniinhibiitoriga</li>
                     </ul>
-                    <hr class="red-line">
-                    <h3>Põrandakütte ja radiaatorite läbipesu</h3>
-                    <p> Läbipesu aitab taastada ringlust süsteemides, kus põrandakütte kontuurid või radiaatorid ei
-                        soojene ühtlaselt. Termokaamera abil saab enne ja pärast tööd hinnata, kas soojus jaotub
-                        paremini ning kas probleem on seotud mustuse, õhu, ventiilide või vooluhulkadega. </p>
-                    <p> Küttesüsteemi läbipesu on eriti oluline enne soojuspumba, katla või isegi uue ringluspumba
-                        paigaldust, et vähendada soojusvahetite ummistumise ja garantiiprobleemide riski. </p>
+
+                    <div class="flush-actions">
+                        <a class="flush-btn flush-btn--primary" href="/#form">
+                            Küsi hinnapakkumist
+                        </a>
+
+                        <a class="flush-btn flush-btn--secondary" href="#labipesu-paketid">
+                            Vaata võimalusi
+                        </a>
+                    </div>
+
+                    <p class="flush-location">
+                        Teenus eelkõige Tallinnas ja Harjumaal, suuremate tööde puhul kokkuleppel üle Eesti.
+                    </p>
                 </div>
-                <div> <img class="tootjastpilt" src=""
-                        data-src="{{ asset('images/vaikesed/kuttesusteemide-hooldus/labipesu.webp') }}"
-                        alt="Küttesüsteemi loputus veega ja õhuga"> </div>
+
+                <div class="flush-assessment__side">
+                    <figure class="flush-intro__media">
+                        <img src="{{ asset('images/vaikesed/kuttesusteemide-hooldus/labipesu.webp') }}"
+                            alt="Küttesüsteemi loputus vee ja õhu impulssidega" loading="lazy" decoding="async">
+                        <figcaption>
+                            Sobiv puhastusmeetod valitakse süsteemi seisukorra järgi.
+                        </figcaption>
+                    </figure>
+
+
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- PAKETID -->
-    <section class="piltlingid teenus-piltlingid" id="kuttesusteemi-teenus" aria-labelledby="protsess-pealkiri"
-        style="margin-top:0px; margin-bottom:75px;">
-        <h2 class="teenus-pealkiri" style="margin-top:0px;"> KÜTTESÜSTEEMI LÄBIPESU PAKETID </h2>
-        <p class="teenus-sissejuhatus"> Sobiva läbipesu meetodi valik sõltub süsteemi seisukorrast, setete tüübist ja
-            probleemi põhjusest. </p>
-        <div class="red-line" role="presentation"></div>
-        <div class="piltlingidiv"> <!-- 1 -->
-            <article class="piltlink teenuslink inverse1">
-                <div class="teenus-number-visual"><span>01</span></div>
-                <div class="piltlingitekst"> <img src="{{ asset('images/icons/küttesepp.png') }}" alt="Küttesepp">
-                    <h3>Õhu-vee impulssloputus</h3>
+        {{-- PAKETID --}}
+        <section class="flush-section flush-section--soft" id="labipesu-paketid" aria-labelledby="flush-packages-title">
+            <div class="flush-container">
+                <div class="flush-heading">
+                    <p class="flush-eyebrow">Lähenemine vastavalt süsteemi seisukorrale</p>
+                    <h2 id="flush-packages-title">Küttesüsteemi läbipesu paketid</h2>
+                    <p>
+                        Sobiv meetod sõltub torustiku materjalidest, süsteemi vanusest,
+                        saastumise tüübist ja sellest, millist tulemust on vaja saavutada.
+                    </p>
                 </div>
-                <ul class="teenus-checklist">
-                    <li>Keemiavaba süsteemi puhastus</li>
-                    <li>Eemaldab muda ja lahtise sette</li>
-                    <li>Aitab parandada ringlust</li>
-                    <li>Hea põrandakütte kontuuride läbivoolu taastamiseks</li>
-                </ul>
-                <p class="teenus-kirjeldus"> Sobib süsteemidele, mis ei ole tugevalt saastunud ning kus probleemiks on
-                    peamiselt nõrk ringlus või sete. </p>
-            </article> <!-- 2 -->
-            <article class="piltlink teenuslink inverse1">
-                <div class="teenus-number-visual"><span>02</span></div>
-                <div class="piltlingitekst"> <img src="{{ asset('images/icons/küttesepp.png') }}" alt="Küttesepp">
-                    <h3>Keemiaga läbipesu</h3>
-                </div>
-                <ul class="teenus-checklist">
-                    <li>Probleemi hindamine enne pesu</li>
-                    <li>Happeline pesu katlakivi eemaldamiseks</li>
-                    <li>Aluseline pesu muda ja magnetiidi eemaldamiseks</li>
-                    <li>Sobib vanematele küttesüsteemidele</li>
-                    <li>Taastab ringlust ja soojusülekannet</li>
-                </ul>
-                <p class="teenus-kirjeldus"> Sobib süsteemidele, kus on tekkinud tugevamad setted, magnetiit või
-                    katlakivi ning tavalisest loputusest enam ei piisa. </p>
-            </article> <!-- 3 -->
-            <article class="piltlink teenuslink inverse1">
-                <div class="teenus-number-visual"><span>03</span></div>
-                <div class="piltlingitekst"> <img src="{{ asset('images/icons/küttesepp.png') }}" alt="Küttesepp">
-                    <h3>Põhjalik küttesüsteemi taastamine</h3>
-                </div>
-                <ul class="teenus-checklist">
-                    <li>Termokaamera kontroll enne ja pärast tööd</li>
-                    <li>Keemiapesu + powerflush + impulssloputus</li>
-                    <li>Kogu süsteemi põhjalik läbipesu</li>
-                    <li>Kütteseadme ja küttesüsteemi hooldus</li>
-                    <li>Küttesüsteemi tasakaalustamine</li>
-                    <li>Vajadusel süsteemi ümberehitus</li>
-                    <li> Küttevee demineraliseerimine <strong> <a href="{{ route('kuttevee-demineraliseerimine') }}"
-                                style="font-size:15px; display:inline;"> (VDI 2035) </a> </strong> </li>
-                    <li> Korrosiooni <strong> <a href="{{ route('kuttevee-inhibiitorid') }}"
-                                style="font-size:15px; display:inline;"> inhibiitor </a> </strong> (valikuline) </li>
-                    <li>Järeltäite vee demineraliseerimise filter</li>
-                </ul>
-                <p class="teenus-kirjeldus"> Kõige põhjalikum lahendus küttesüsteemi taastamiseks. Sobib eriti hästi
-                    enne uue soojuspumba või katla paigaldust. </p>
-            </article>
-        </div>
-    </section>
 
-    <!-- MEETODID -->
-    <section class="tootjasektsioon">
-        <div class="tootjast">
-            <div class="ettevotte">
-                <div class="content">
-                    <h2><span>Küttesepa</span> läbipesu meetodid</h2>
-                    <ul class="rohelise-linnukesega" style="font-weight:500; font-size:18px; margin-top:10px;">
-                        <li>Õhu ja vee impulssloputus – keemiavaba puhastus</li>
-                        <li> Happeline keemiapesu – katlakivi ja oksüdatsioonijääkide eemaldamiseks <span
-                                style="font-size:16px; font-weight:300;"> (2–3 tundi pesuaeg) </span> </li>
-                        <li> Aluseline keemiapesu – muda, magnetiidi ja orgaaniliste setete eemaldamiseks <span
-                                style="font-size:16px; font-weight:300;"> (3–4 nädalat pesuaeg) </span> </li>
-                    </ul>
-                    <p> Vajadusel täidan süsteemi pärast läbipesu töödeldud kütteveega vastavalt <strong> <a
-                                style="font-size:18px" href="{{ route('kuttevee-demineraliseerimine') }}"> VDI 2035 </a>
-                        </strong> põhimõtetele ning lisan soovi korral <strong> <a style="font-size:18px"
-                                href="{{ route('kuttevee-inhibiitorid') }}"> inhibiitori. </a> </strong> </p>
-                    <hr class="red-line">
-                    <h3>Õhu ja vee impulssloputus – keemiavaba süsteemi puhastus</h3>
-                    <p> Sobib süsteemidele, kus probleemiks on muda, õhumullid või nõrk ringlus, kuid torustikus ei ole
-                        tugevat katlakivi ega vanu metalloksiide. </p>
-                    <ul class="rohelise-linnukesega" style="font-weight:500; font-size:18px;">
-                        <li>Süsteemi loputatakse vee ja õhu impulssidega</li>
-                        <li>Eemaldab muda, magnetiiti ja lahtist setet</li>
-                        <li>Keemiavaba ja ohutu kõikidele materjalidele</li>
-                        <li>Tõhus põrandakütte kontuuride läbivoolu taastamisel</li>
-                    </ul>
-                    <div class="pildidiv" style="justify-self:flex-end;"> <img class="tootjastpilt" src=""
-                            data-src="{{ asset('images/vaikesed/kuttesusteemide-hooldus/Läbipesu-seadmed.webp') }}"
-                            alt="Küttesüsteemi läbipesu seadmed"> </div>
-                    <hr class="red-line" style="justify-self:flex-end;">
-                    <h3>Keemiaga läbipesu – happeline puhastus</h3>
-                    <p> Happeline puhastus sobib süsteemidele, kus torudes või soojusvahetites on <strong> katlakivi,
-                            oksüdatsioonijäljed või sadestunud rauaühendid. </strong> </p>
-                    <p> Happeline puhastus aitab: </p>
-                    <ul class="rohelise-linnukesega" style="font-weight:500; font-size:18px;">
-                        <li>Lahustada lubjakivi ja kaltsiumisoolasid</li>
-                        <li>Eemaldada roostekihti ja oksüdeerunud setteid</li>
-                        <li>Puhastada soojusvaheteid ja torustikku</li>
-                        <li>Taastada süsteemi läbilaskvust ja soojusülekannet</li>
-                    </ul>
-                    <p> Pärast happelist pesu neutraliseeritakse süsteem ning loputatakse puhta veega. </p>
-                    <div class="pildidiv"> <img class="tootjastpilt" src=""
-                            data-src="{{ asset('images/vaikesed/kuttesusteemide-hooldus/happelise-keemiaga-pesu.webp') }}"
-                            alt="Happeline küttesüsteemi läbipesu"> </div>
-                    <hr class="red-line">
-                    <h3>Keemiaga läbipesu – aluseline puhastus</h3>
+                <div class="flush-packages-grid">
+                    <article class="flush-package">
+                        <div class="flush-package__top">
+                            <span class="flush-package__number">01</span>
+                            <p class="flush-package__method">Õhu ja vee impulssloputus</p>
+                            <h3>Ringluse taastamine</h3>
+                        </div>
+
+                        <ul class="flush-checklist">
+                            <li>Keemiavaba süsteemi puhastus</li>
+                            <li>Eemaldab lahtist muda ja liikuvat setet</li>
+                            <li>Aitab vabastada õhumulle</li>
+                            <li>Sobib põrandakütte kontuuridele</li>
+                            <li>Võimaldab loputada harusid eraldi</li>
+                        </ul>
+
+                        <p class="flush-package__description">
+                            Sobib süsteemile, mis ei ole tugevalt saastunud ning kus probleemiks
+                            on peamiselt nõrk ringlus, õhk või lahtine sete.
+                        </p>
+                    </article>
+
+                    <article class="flush-package flush-package--featured">
+                        <div class="flush-package__badge">Enim valitud</div>
+
+                        <div class="flush-package__top">
+                            <span class="flush-package__number">02</span>
+                            <p class="flush-package__method">Keemia + dünaamiline läbipesu</p>
+                            <h3>Põhjalik keemiapesu</h3>
+                        </div>
+
+                        <ul class="flush-checklist">
+                            <li>Probleemi hindamine enne pesu</li>
+                            <li>Pesukeemia valik sette tüübi järgi</li>
+                            <li>Happeline pesu katlakivi korral</li>
+                            <li>Aluseline puhastus muda ja õliste setete korral</li>
+                            <li>Powerflush või impulssloputus sette eemaldamiseks</li>
+                            <li>
+                                <a href="{{ route('kuttevee-demineraliseerimine') }}">
+                                    Küttevee demineraliseerimine VDI 2035 järgi
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{{ route('kuttevee-inhibiitorid') }}">
+                                    Korrosiooniinhibiitor ja järeltäitefilter
+                                </a>
+                            </li>
+                        </ul>
+
+                        <p class="flush-package__description">
+                            Sobib vanematele ja tugevamalt määrdunud süsteemidele,
+                            kus tavalisest veega loputamisest enam ei piisa.
+                        </p>
+                    </article>
+
+                    <article class="flush-package">
+                        <div class="flush-package__top">
+                            <span class="flush-package__number">03</span>
+                            <p class="flush-package__method">Lisatöödega pakett</p>
+                            <h3>Kogu süsteemi renoveerimine</h3>
+                        </div>
+
+                        <ul class="flush-checklist">
+                            <li>Impulssloputus ja põhjalik keemiapesu</li>
+                            <li>VDI 2035 küttevesi või sobiv inhibiitor</li>
+                            <li>Termokaamera kontroll enne ja pärast</li>
+                            <li>Kütteseadme ning küttesüsteemi hooldus</li>
+                            <li>Vooluhulkade tasakaalustamine</li>
+                            <li>Vajadusel süsteemi ümberehitus</li>
+
+                        </ul>
+
+                        <p class="flush-package__description">
+                            Kõige põhjalikum pakett kütteprobleemi lahendamiseks, kus vajalikud
+                            puhastus-, hooldus- ja seadistustööd tehakse tervikuna.
+                            Sobib süsteemidele, mis vajab põhjalikumat lähenemist.
+                        </p>
+                    </article>
+                </div>
+
+                <div class="flush-centered-action">
+                    <a class="flush-btn flush-btn--primary" href="/#form">
+                        Küsi oma probleemile sobivat lahendust
+                    </a>
+                </div>
+            </div>
+        </section>
+        {{-- LÄBIPESU TULEMUSED --}}
+        <section class="flush-section flush-benefits" aria-labelledby="flush-benefits-title">
+            <div class="flush-container">
+
+                <div class="flush-heading">
+                    <p class="flush-eyebrow">Läbipesu võimalik tulemus</p>
+
+                    <h2 id="flush-benefits-title">
+                        Mida korras ja puhtam küttesüsteem annab?
+                    </h2>
 
                     <p>
-                        Aluseline pesu sobib süsteemidele, kus torustikus on muda,
-                        magnetiit, õlised setted või pika aja jooksul tekkinud biokile.
+                        Läbipesu eesmärk on taastada süsteemi ringlus ja soojusülekanne.
+                        Tegelik tulemus sõltub süsteemi seisukorrast ning sellest,
+                        kas probleemi põhjuseks oli mustus, sete või ummistunud voolutee.
                     </p>
+                </div>
 
-                    <ul class="rohelise-linnukesega" style="font-weight:500; font-size:18px;">
-                        <li>Puhastab torustikku orgaanilistest ja bioloogilistest setetest</li>
-                        <li>Aitab lõhustada magnetiiti ja õliseid kihte</li>
-                        <li>Parandab ringlust ja süsteemi töötingimusi</li>
-                        <li>Sobib hästi vanemate küttesüsteemide taastamiseks</li>
-                    </ul>
+                <div class="flush-benefits-grid">
 
-                    <p style="font-size:16px; color:#444;">
-                        Aluseline puhastus on mõeldud eelkõige korrosioonijääkide, õliste setete aga ka orgaanilise mustuse eemaldamiseks.
-                        Tugeva katlakivi puhul kasutatakse happelist puhastust.
-                    </p>
+                    <article class="flush-benefit-card">
+                        <span class="flush-benefit-card__icon" aria-hidden="true">✓</span>
+                        <h3>Ühtlasem küte</h3>
+                        <p>
+                            Radiaatorid ja põrandakütte kontuurid saavad parema ringluse
+                            korral ühtlasemalt soojeneda.
+                        </p>
+                    </article>
 
-                    <div class="pildidiv">
-                        <img class="tootjastpilt" src=""
-                            data-src="{{ asset('images/vaikesed/kuttesusteemide-hooldus/aluselise-keemiaga-pesu.webp') }}"
-                            alt="Aluseline küttesüsteemi läbipesu">
-                    </div>
+                    <article class="flush-benefit-card">
+                        <span class="flush-benefit-card__icon" aria-hidden="true">✓</span>
+                        <h3>Väiksem energiakulu</h3>
+                        <p>
+                            Parem soojusülekanne ja taastunud vooluhulgad võivad vähendada
+                            kütteseadme ning ringluspumba koormust.
+                        </p>
+                    </article>
 
-                    <hr class="red-line" style="margin-top:40px; margin-bottom:40px;">
-                    <p> Teenust pakun <strong>üle Eesti</strong>, kuid enda asukoha tõttu eelistan Tallinna ja Harjumaa
-                        piirkonda.<br> Läbipesu ja termokaamera mõõdistuse teostan mobiilse seadmega objektil kohapeal.
-                    </p> <!-- FAQ -->
-                    <div class="faq-container" itemscope itemtype="https://schema.org/FAQPage">
-                        <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                            <h3 itemprop="name" class="faq-question"> <span class="faq-icon">&#10003;</span> Kas
-                                küttesüsteemi läbipesu on alati vajalik? </h3>
-                            <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"
-                                class="faq-answer">
-                                <p itemprop="text"> Mitte alati. Kui põrandaküte või radiaatorid ei tööta korralikult,
-                                    võib põhjus olla ka õhus süsteemis, vales seadistuses, tasakaalustamata
-                                    vooluhulkades või ummistunud filtris. Vajadusel alustan probleemi tuvastamisest ja
-                                    süsteemi kontrollist. </p>
-                            </div>
-                        </div>
-                        <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                            <h3 itemprop="name" class="faq-question"> <span class="faq-icon">&#10003;</span> Mis vahe
-                                on impulssloputusel ja keemiapesul? </h3>
-                            <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"
-                                class="faq-answer">
-                                <p itemprop="text"> Õhu ja vee impulssloputus aitab eemaldada muda ja õhumulle ilma
-                                    kemikaalideta. Keemiapesu kasutatakse siis, kui süsteemis on katlakivi, magnetiit,
-                                    rooste või tugevamad setted. </p>
-                            </div>
-                        </div>
-                        <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                            <h3 itemprop="name" class="faq-question"> <span class="faq-icon">&#10003;</span> Kas
-                                keemiapesu võib kombineerida powerflush pesuga? </h3>
-                            <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"
-                                class="faq-answer">
-                                <p itemprop="text"> Jah. Keemia aitab setted lahti lahustada ning powerflush või
-                                    impulssloputus aitab need süsteemist välja viia. Tugevalt määrdunud süsteemide puhul
-                                    annab kombineeritud lahendus põhjalikuma tulemuse. </p>
-                            </div>
-                        </div>
-                        <div class="links" style="margin-top:20px;">
-                            <div class="kusipakkumist"> <a href="/#form" title="Emaili vormile">
-                                    <p>KÜSI LISAINFOT</p>
-                                </a> </div>
-                        </div>
-                    </div>
+                    <article class="flush-benefit-card">
+                        <span class="flush-benefit-card__icon" aria-hidden="true">✓</span>
+                        <h3>Töökindlam süsteem</h3>
+                        <p>
+                            Mustuse eemaldamine aitab vähendada filtrite, ventiilide,
+                            pumpade ja soojusvahetite ummistumise ohtu.
+                        </p>
+                    </article>
+
+                    <article class="flush-benefit-card">
+                        <span class="flush-benefit-card__icon" aria-hidden="true">✓</span>
+                        <h3>Vaiksem töö</h3>
+                        <p>
+                            Õhu, muda ja ringlushäirete kõrvaldamine võib vähendada
+                            torustikus ja pumbas tekkivat müra.
+                        </p>
+                    </article>
+
+                    <article class="flush-benefit-card">
+                        <span class="flush-benefit-card__icon" aria-hidden="true">✓</span>
+                        <h3>Pikem kasutusiga</h3>
+                        <p>
+                            Puhtamad töötingimused vähendavad kütteseadme ja süsteemi
+                            komponentide tarbetut koormust.
+                        </p>
+                    </article>
+
+                    <article class="flush-benefit-card">
+                        <span class="flush-benefit-card__icon" aria-hidden="true">✓</span>
+                        <h3>Parem alus uuele kütteseadmele</h3>
+                        <p>
+                            Puhas süsteem vähendab riski, et vana muda jõuab uue
+                            soojuspumba, katla või soojusvaheti sisse.
+                        </p>
+                    </article>
+
                 </div>
             </div>
-        </div>
-    </section><x-up_scroller /><x-cookies />
+        </section>
+
+        {{-- TÖÖPROTSESS --}}
+        <section class="flush-section flush-section--dark" aria-labelledby="flush-process-title">
+            <div class="flush-container">
+                <div class="flush-heading flush-heading--light">
+                    <p class="flush-eyebrow">Selge tööprotsess</p>
+                    <h2 id="flush-process-title">Kuidas küttesüsteemi läbipesu teostatakse?</h2>
+                </div>
+
+                <ol class="flush-process">
+                    <li class="flush-process__item">
+                        <span>1</span>
+                        <div>
+                            <h3>Teenuse tellimine, infovahetus ja meetodi valik</h3>
+                            <p>Võtke ühendust ja kirjeldage oma probleemi. Töö mahu ja hinna suurusjärgu saab tavaliselt
+                                enne visiiti teada.</p>
+                        </div>
+                    </li>
+
+                    <li class="flush-process__item">
+                        <span>2</span>
+                        <div>
+                            <h3>Süsteemi ettevalmistus, puhastus, loputus</h3>
+                            <p> Tutvun süsteemi ehitusega ja teen vajadusel läbipesuks vajalikud
+                                ühendustööd. Küttesüsteem loputatakse harude kaupa ning vajadusel
+                                puhastatakse eraldi iga radiaator, fancoil või põranda- ja
+                                seinakütte kontuur.</p>
+                        </div>
+                    </li>
+
+                    <li class="flush-process__item">
+                        <span>3</span>
+                        <div>
+                            <h3>Täitmine ja uus küttevesi</h3>
+                            <p>Testin objektil täitevee elektrijuhtivust ja pH-d. Vajadusel
+                                demineraliseerin vee VDI 2035 põhimõtete järgi ning paigaldan
+                                süsteemi järeltäiteks sobiva filtri.</p>
+                        </div>
+                    </li>
+
+                    <li class="flush-process__item">
+                        <span>4</span>
+                        <div>
+                            <h3>Lõppkontroll</h3>
+                            <p>Kontrollin ringlust, rõhku ja soojenemist ning annan soovitused süsteemi edasiseks
+                                hoolduseks.</p>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        {{-- MEETODID --}}
+        <section class="flush-section" aria-labelledby="flush-methods-title">
+            <div class="flush-container flush-methods-layout">
+                <div class="flush-methods-layout__intro">
+                    <p class="flush-eyebrow">Puhastusmeetodid</p>
+                    <h2 id="flush-methods-title">Meetod valitakse sette ja süsteemi materjalide järgi</h2>
+                    <p>
+                        Liiga nõrk puhastus ei anna tulemust, kuid põhjendamatult tugev keemia, ja veel selleks mitte
+                        sobivate materjalidega, võib süsteemi kahjustada.
+                        Seetõttu tuleks kõigepealt olukorda hinnata.
+                    </p>
+
+                    <img class="flush-methods-layout__image"
+                        src="{{ asset('images/vaikesed/kuttesusteemide-hooldus/Läbipesu-seadmed.webp') }}"
+                        alt="Professionaalsed küttesüsteemi läbipesu seadmed" loading="lazy" decoding="async">
+                </div>
+
+                <div class="flush-accordion">
+                    <details class="flush-method" open>
+                        <summary>
+                            <span>Õhu ja vee impulssloputus</span>
+                            <span class="flush-method__icon" aria-hidden="true"></span>
+                        </summary>
+                        <div class="flush-method__content">
+                            <p>
+                                Keemiavaba meetod, mille käigus tekitatakse torustikus vee ja õhu impulsse.
+                                Sobib lahtise muda, liikuvate magnetiidiosakeste ja õhumullide eemaldamiseks.
+                            </p>
+                            <ul>
+                                <li>Ohutu tavapärastele küttesüsteemi materjalidele</li>
+                                <li>Tõhus põrandakütte kontuuride eraldi loputamisel</li>
+                                <li>Sobib kergema ja keskmise saastumise korral</li>
+                            </ul>
+                        </div>
+                    </details>
+
+                    <details class="flush-method">
+                        <summary>
+                            <span>Happeline keemiapesu</span>
+                            <span class="flush-method__icon" aria-hidden="true"></span>
+                        </summary>
+                        <div class="flush-method__content">
+                            <p>
+                                Kasutatakse katlakivi, kaltsiumisoolade, oksüdatsioonijääkide ja
+                                sobivate rauaühendite lahustamiseks. Pärast pesu süsteem neutraliseeritakse
+                                ja loputatakse hoolikalt puhta veega.
+                            </p>
+                            <ul>
+                                <li>Aitab puhastada soojusvaheteid ja torustikku</li>
+                                <li>Taastab läbilaskvust ning soojusülekannet</li>
+                                <li>Kemikaal valitakse süsteemi materjalide järgi</li>
+                            </ul>
+                        </div>
+                    </details>
+
+                    <details class="flush-method">
+                        <summary>
+                            <span>Aluseline puhastus</span>
+                            <span class="flush-method__icon" aria-hidden="true"></span>
+                        </summary>
+                        <div class="flush-method__content">
+                            <p>
+                                Sobib muda, õliste jääkide, orgaanilise mustuse ja biokile eemaldamiseks.
+                                Puhastuskemikaal võib jääda süsteemi kokkulepitud ajaks ringlema ning
+                                seejärel tehakse lõplik läbipesu.
+                            </p>
+                            <ul>
+                                <li>Sobib vanemate süsteemide taastamiseks</li>
+                                <li>Aitab lahti töödelda tugevat ja kihilist mustust</li>
+                                <li>Tugeva katlakivi korral kasutatakse happelist puhastust</li>
+                            </ul>
+                        </div>
+                    </details>
+
+                    <details class="flush-method">
+                        <summary>
+                            <span>VDI 2035 küttevesi ja korrosioonikaitse</span>
+                            <span class="flush-method__icon" aria-hidden="true"></span>
+                        </summary>
+                        <div class="flush-method__content">
+                            <p>
+                                Pärast põhjalikku läbipesu saab süsteemi täita demineraliseeritud veega
+                                ning lisada sobiva inhibiitori. See aitab vähendada uue
+                                katlakivi ja korrosiooniprobleemide tekkimise riski.
+                            </p>
+                            <p>
+                                <a href="{{ route('kuttevee-demineraliseerimine') }}">
+                                    Loe küttevee demineraliseerimisest
+                                </a>
+                                <br>
+                                <a href="{{ route('kuttevee-inhibiitorid') }}">
+                                    Loe küttesüsteemi inhibiitoritest
+                                </a>
+                            </p>
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        {{-- USALDUS --}}
+        <section class="flush-section flush-section--soft" aria-labelledby="flush-trust-title">
+            <div class="flush-container">
+                <div class="flush-heading">
+                    <p class="flush-eyebrow">Miks valida Küttesepp?</p>
+                    <h2 id="flush-trust-title">Küttesepp on spetsialiseerunud eelkõige soojuspumbaga küttesüsteemide
+                        ehitusele</h2>
+                </div>
+
+                <div class="flush-trust-grid">
+                    <article>
+                        <h3>Kompetents</h3>
+                        <p>Oman kütte- ja jahutussüsteemide lukksepa ning külmatehniku
+                            kutset. Praktiline kogemus küttesüsteemide ehituse, hoolduse ja
+                            remondiga võimaldab hinnata süsteemi tervikuna.</p>
+                    </article>
+
+                    <article>
+                        <h3>Termokaamera kontroll</h3>
+                        <p>Vajadusel hindan põrandakütte ja radiaatorite soojenemist enne ning pärast tööd.</p>
+                    </article>
+
+                    <article>
+                        <h3>Meetod vastavalt probleemile</h3>
+                        <p>Kasutan impulssloputust, powerflush’i ja sobivat keemiat ainult põhjendatud vajaduse korral.
+                        </p>
+                    </article>
+
+                    <article>
+                        <h3>Küttevee töötlemine</h3>
+                        <p>Mõõdan vee elektrijuhtivust ja pH-d ning täidan süsteemi VDI 2035 põhimõtetel.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        {{-- FAQ --}}
+        <section class="flush-section" aria-labelledby="flush-faq-title">
+            <div class="flush-container flush-faq-layout">
+                <div class="flush-faq-layout__intro">
+                    <p class="flush-eyebrow">Korduma kippuvad küsimused</p>
+                    <h2 id="flush-faq-title">Küttesüsteemi läbipesu küsimused</h2>
+                    <p>
+                        Täpne lahendus ja töömaht sõltuvad süsteemi ehitusest,
+                        mahust, seisukorrast ning ligipääsust.
+                    </p>
+                </div>
+
+                <div class="flush-accordion" itemscope itemtype="https://schema.org/FAQPage">
+                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <details class="flush-method">
+                            <summary itemprop="name">
+                                <span>Kas küttesüsteemi läbipesu on iga kütteprobleemi korral vajalik?</span>
+                                <span class="flush-method__icon" aria-hidden="true"></span>
+                            </summary>
+                            <div class="flush-method__content" itemscope itemprop="acceptedAnswer"
+                                itemtype="https://schema.org/Answer">
+                                <p itemprop="text">
+                                    Mitte alati. Probleemi põhjuseks võib olla õhk süsteemis, vale seadistus,
+                                    tasakaalustamata vooluhulk, ummistunud filter või rikkis ventiil.
+                                    Alustan probleemi tuvastamisest.
+                                </p>
+                            </div>
+                        </details>
+                    </div>
+
+                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <details class="flush-method">
+                            <summary itemprop="name">
+                                <span>Mis vahe on impulssloputusel ja keemiapesul?</span>
+                                <span class="flush-method__icon" aria-hidden="true"></span>
+                            </summary>
+                            <div class="flush-method__content" itemscope itemprop="acceptedAnswer"
+                                itemtype="https://schema.org/Answer">
+                                <p itemprop="text">
+                                    Impulssloputus eemaldab vee ja õhu impulssidega lahtist muda,
+                                    õhumulle ning liikuvat setet. Keemiapesu kasutatakse siis,
+                                    kui süsteemis on tugevam sade, katlakivi, õlised jäägid või biokile.
+                                    Olenevalt vajadusest teostan ka pärast keemiapesu impulsloputuse.
+                                </p>
+                            </div>
+                        </details>
+                    </div>
+
+                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <details class="flush-method">
+                            <summary itemprop="name">
+                                <span>Kas keemiapesu võib kombineerida powerflush-pesuga?</span>
+                                <span class="flush-method__icon" aria-hidden="true"></span>
+                            </summary>
+                            <div class="flush-method__content" itemscope itemprop="acceptedAnswer"
+                                itemtype="https://schema.org/Answer">
+                                <p itemprop="text">
+                                    Jah. Keemia aitab sobivat setet lahti töödelda ning powerflush
+                                    või impulssloputus aitab selle süsteemist välja viia.
+                                    Tugevalt määrdunud süsteemis annab kombineeritud lahendus põhjalikuma tulemuse.
+                                </p>
+                            </div>
+                        </details>
+                    </div>
+
+                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <details class="flush-method">
+                            <summary itemprop="name">
+                                <span>Kui kaua läbipesu kestab?</span>
+                                <span class="flush-method__icon" aria-hidden="true"></span>
+                            </summary>
+                            <div class="flush-method__content" itemscope itemprop="acceptedAnswer"
+                                itemtype="https://schema.org/Answer">
+                                <p itemprop="text">
+                                    Töö kestus sõltub süsteemi suurusest ja valitud meetodist.
+                                    Lihtsama impulssloputuse saab sageli teha ühe tööpäevaga, kuid pika toimeajaga
+                                    puhastuskeemia kasutamisel tehakse lõplik läbipesu hilisemal kokkulepitud ajal.
+                                </p>
+                            </div>
+                        </details>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        {{-- LÕPU CTA --}}
+        <section class="flush-contact" aria-labelledby="flush-contact-title">
+            <div class="flush-container flush-contact__content">
+                <div>
+                    <p class="flush-eyebrow">Esmane hinnang</p>
+                    <h2 id="flush-contact-title">Pole kindel, kas süsteem vajab läbipesu?</h2>
+                    <p>
+                        Saada fotod tehnoruumist ning kirjelda probleemi.
+                        Annan esmase hinnangu, kuidas edasi.
+                    </p>
+                </div>
+
+                <a class="flush-btn flush-btn--light" href="/#form">
+                    Küsi lisainfot</a>
+            </div>
+        </section>
+    </div>
+
+    {{-- Teenuselehe struktureeritud andmed --}}
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "@id": "{{ url()->current() }}#service",
+            "name": "Küttesüsteemi läbipesu",
+            "serviceType": "Küttesüsteemi läbipesu ja puhastus",
+            "description": "Põrandakütte ja radiaatorite kontroll, impulssloputus, keemiapesu ning küttevee demineraliseerimine.",
+            "url": "{{ url()->current() }}",
+            "provider": {
+                "@type": "LocalBusiness",
+                "@id": "https://www.kuttesepp.ee/#business",
+                "name": "Küttesepp",
+                "url": "https://www.kuttesepp.ee"
+            },
+            "areaServed": [
+                {
+                    "@type": "AdministrativeArea",
+                    "name": "Harjumaa"
+                },
+                {
+                    "@type": "Country",
+                    "name": "Eesti"
+                }
+            ]
+        }
+    </script>
+
+    <x-up_scroller />
+    <x-cookies />
 </x-layout>
