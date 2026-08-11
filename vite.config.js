@@ -1,5 +1,3 @@
-
-
 import { defineConfig } from 'vite';
 import laravel from 'laravel-vite-plugin';
 
@@ -20,21 +18,22 @@ export default defineConfig({
                 'resources/css/pages/tootelehedala.css',
                 'resources/css/pages/worksleht.css',
 
+                // 🔹 SOOJUSPUMPADE UUED LEHED
+                'resources/css/pages/soojuspumbad.css',
+                'resources/css/pages/soojuspumbadTooted.css',
+
                 'resources/css/ettevottest.css',
                 'resources/css/contact.css',
-                 'resources/css/cookies.css',
-                 'resources/css/kuttesusteemiTeenus.css',
+                'resources/css/cookies.css',
+                'resources/css/kuttesusteemiTeenus.css',
 
                 // 🔹 LEHEPÕHISED JS-id
                 'resources/js/pages/index.js',
                 'resources/js/pages/teenustelehed.js',
                 'resources/js/contact.js',
-                'resources/js/cookies.js'
-
-
-
-
+                'resources/js/cookies.js',
             ],
+
             refresh: true,
         }),
     ],

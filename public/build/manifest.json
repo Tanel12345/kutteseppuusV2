@@ -59,6 +59,22 @@
       "index.css"
     ]
   },
+  "resources/css/pages/soojuspumbad.css": {
+    "file": "assets/soojuspumbad-BgZFaL9C.css",
+    "src": "resources/css/pages/soojuspumbad.css",
+    "isEntry": true,
+    "names": [
+      "soojuspumbad.css"
+    ]
+  },
+  "resources/css/pages/soojuspumbadTooted.css": {
+    "file": "assets/soojuspumbadTooted-A7TZ3xju.css",
+    "src": "resources/css/pages/soojuspumbadTooted.css",
+    "isEntry": true,
+    "names": [
+      "soojuspumbadTooted.css"
+    ]
+  },
   "resources/css/pages/teenustelehed.css": {
     "file": "assets/teenustelehed-XOGqP0Vh.css",
     "src": "resources/css/pages/teenustelehed.css",
