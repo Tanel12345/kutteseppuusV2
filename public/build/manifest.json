@@ -43,6 +43,14 @@
       "kuttesusteemiTeenus.css"
     ]
   },
+  "resources/css/kuttesusteemiTeenus1.css": {
+    "file": "assets/kuttesusteemiTeenus1-DGUi2hlX.css",
+    "src": "resources/css/kuttesusteemiTeenus1.css",
+    "isEntry": true,
+    "names": [
+      "kuttesusteemiTeenus1.css"
+    ]
+  },
   "resources/css/pages/brandilehed.css": {
     "file": "assets/brandilehed-jcjyzyOa.css",
     "src": "resources/css/pages/brandilehed.css",

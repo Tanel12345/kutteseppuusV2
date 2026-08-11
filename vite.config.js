@@ -26,6 +26,7 @@ export default defineConfig({
                 'resources/css/contact.css',
                 'resources/css/cookies.css',
                 'resources/css/kuttesusteemiTeenus.css',
+                'resources/css/kuttesusteemiTeenus1.css',
 
                 // 🔹 LEHEPÕHISED JS-id
                 'resources/js/pages/index.js',
