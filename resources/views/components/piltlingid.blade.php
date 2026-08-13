@@ -14,7 +14,7 @@
 
             <div class="piltlingitekst">
                 <img src="{{ asset('images/icons/küttesepp.png') }}" alt="Küttesepp" />
-                <h2>ÕHK-õhk soojuspumbad</h2>
+                <h2>ÕHK-õhk <br>soojuspumbad</h2>
             </div>
 
         </a>
@@ -74,7 +74,7 @@
 
             <div class="piltlingitekst">
                 <img src="{{ asset('images/icons/küttesepp.png') }}" alt="Küttesepp" />
-                <h2>ÕHK-vesi soojuspumbad</h2>
+                <h2>ÕHK-vesi <br>soojuspumbad</h2>
             </div>
 
         </a>

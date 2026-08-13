@@ -95,10 +95,11 @@ div.piltlingitekst {
 
 div.piltlingitekst h2 {
     margin: 0;
-    font-size: 1.35rem;
+    font-size: 1.2rem;
     font-weight: 500;
-    line-height: 1.3;
+    line-height: 1.25;
     transition: color .2s ease;
+    white-space: nowrap;
 }
 
 div.piltlink:hover .piltlingitekst h2 {
@@ -106,7 +107,7 @@ div.piltlink:hover .piltlingitekst h2 {
 }
 
 div.piltlingitekst img {
-    width: 50px;
+    width: 40px;
     height: auto;
 }
 
