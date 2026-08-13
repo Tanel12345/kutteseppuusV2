@@ -28,7 +28,7 @@
     ]
   },
   "resources/css/ettevottest.css": {
-    "file": "assets/ettevottest-Dal1k-hj.css",
+    "file": "assets/ettevottest-DzdWb2IL.css",
     "src": "resources/css/ettevottest.css",
     "isEntry": true,
     "names": [
@@ -60,7 +60,7 @@
     ]
   },
   "resources/css/pages/index.css": {
-    "file": "assets/index-BZo-JYts.css",
+    "file": "assets/index-BsB886OX.css",
     "src": "resources/css/pages/index.css",
     "isEntry": true,
     "names": [
@@ -92,7 +92,7 @@
     ]
   },
   "resources/css/pages/tootelehed.css": {
-    "file": "assets/tootelehed-CCFVVAOb.css",
+    "file": "assets/tootelehed-C0bSbe3Z.css",
     "src": "resources/css/pages/tootelehed.css",
     "isEntry": true,
     "names": [
@@ -113,6 +113,14 @@
     "isEntry": true,
     "names": [
       "worksleht.css"
+    ]
+  },
+  "resources/css/soojuspumbaKaardid.css": {
+    "file": "assets/soojuspumbaKaardid-DHTsNySb.css",
+    "src": "resources/css/soojuspumbaKaardid.css",
+    "isEntry": true,
+    "names": [
+      "soojuspumbaKaardid.css"
     ]
   },
   "resources/js/app.js": {

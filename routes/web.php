@@ -89,6 +89,7 @@ Route::get('/tootja/{brand:slug}', 'legacyBrandPage')
     ->name('hooldus-ja-remont');
     Route::get('/soojuspumpade-remont', 'soojuspumpadeRemont')
         ->name('soojuspumpade-remont');
+        Route::get('/kulmaringi-diagnostika-ja-remont',  'kulmaringiDiagnostikaJaRemont') ->name('kulmaringi-diagnostika-ja-remont');
         Route::get('/soojuspumpade-hooldus', 'soojuspumpadeHooldus')
         ->name('soojuspumpade-hooldus');
 

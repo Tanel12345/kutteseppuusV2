@@ -186,6 +186,12 @@
                                             Soojuspumpade remont
                                         </a>
                                     </li>
+                                      <li>
+                                        <a class="{{ request()->is('kulmaringi-diagnostika-ja-remont*') ? 'active' : '' }}"
+                                            href="{{ route('kulmaringi-diagnostika-ja-remont') }}">
+                                            Külmaringi diagnostika ja remont
+                                        </a>
+                                    </li>
                                     <li>
                                         <a class="{{ request()->is('kuttesusteemi-labipesu*') ? 'active' : '' }}"
                                             href="{{ route('kuttesusteemi-labipesu') }}">

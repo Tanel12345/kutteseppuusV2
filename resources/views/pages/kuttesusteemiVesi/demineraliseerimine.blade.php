@@ -1,17 +1,17 @@
-<x-layout :title="'Küttevee demineraliseerimine ja VDI 2035 | Küttesepp'" :metaDescription="'Küttevee demineraliseerimine, pH stabiliseerimine ja VDI 2035 põhimõtetele vastav küttesüsteemi täitmine. Küttesepp pakub küttevee töötlust, läbipesu ja täitmist üle Eesti.'" :metaKeywords="'küttevee demineraliseerimine,
-demineraliseeritud küttevesi,
-VDI 2035,
-küttesüsteemi vesi,
-katlakivi vältimine,
-korrosioonikaitse,
-küttesüsteemi täitmine,
-soojuspumba hooldus,
-VDI 2035 küttevesi'" :metaAuthor="'Tanel Sepp'" :robots="'index, follow'" :ogImage="asset('images/serp/kuttesepp-og-demineraliseerimine.webp')"
+<x-layout
+    :title="'Küttevee demineraliseerimine ja VDI 2035 | Küttesepp'"
+    :metaDescription="'Küttevee demineraliseerimine ja küttesüsteemi täitmine VDI 2035 põhimõtetel. Madala juhtivusega küttevesi, pH kontroll, vee töötlus ja vajadusel küttesüsteemi läbipesu.'"
+    :metaAuthor="'Tanel Sepp'"
+    :robots="'index, follow'"
+    :ogImage="asset('images/serp/kuttesepp-og-demineraliseerimine.webp')"
     :viteCssAssets="[
         'resources/css/pages/tootelehed.css',
         'resources/css/pages/teenustelehed.css',
         'resources/css/kuttesusteemiTeenus.css',
-    ]" :viteJsAssets="['resources/js/pages/teenustelehed.js']">
+        'resources/css/soojuspumbaKaardid.css',
+    ]"
+    :viteJsAssets="['resources/js/pages/teenustelehed.js']"
+>
 
     <section class="uper" id="uperid">
         <div class="carousel">
@@ -21,330 +21,470 @@ VDI 2035 küttevesi'" :metaAuthor="'Tanel Sepp'" :robots="'index, follow'" :ogIm
                         <h1>Küttevee demineraliseerimine – VDI 2035 põhimõtetele vastav küttevesi</h1>
                     </div>
                 </div>
-                <img class="taust" src="{{ asset('images/taustad/VDI-2035_taust.webp') }}"
-                    alt="Küttevee demineraliseerimine ja VDI 2035 nõuded">
+
+                <img
+                    class="taust"
+                    src="{{ asset('images/taustad/VDI-2035_taust.webp') }}"
+                    alt="Küttevee demineraliseerimine ja VDI 2035 põhimõtted"
+                >
             </div>
         </div>
     </section>
+
 
     <section class="tootjasektsioon" id="tootjaid">
         <div class="tootjast">
             <div class="ettevotte">
                 <div class="content">
-                    <h2><span>Demineraliseeritud küttevesi</span> – alus stabiilsele küttesüsteemile</h2>
+
+                    <h2>
+                        <span>Demineraliseeritud küttevesi</span> – alus stabiilsele küttesüsteemile
+                    </h2>
 
                     <p>
-                        Küttevee demineraliseerimine tähendab vee puhastamist lahustunud sooladest ja mineraalidest,
-                        mis põhjustavad küttesüsteemis katlakivi, korrosiooni ja muda teket.
-                        Demineraliseeritud vesi on tänapäevase küttesüsteemi õige täitevee alus.
+                        Küttevee demineraliseerimine tähendab täiteveest lahustunud soolade ja mineraalide
+                        eemaldamist. Nii saab vähendada katlakivi ja mineraalsete sadestuste tekkimise riski
+                        küttesüsteemi torustikus, soojusvahetites ja muudes komponentides.
                     </p>
 
                     <p>
-                        Ainult väga puhtast veest siiski ei piisa. Väga madala mineraalsusega vesi on keemiliselt agressiivne
-                        ning võib hakata metallpindadega reageerima. Oluline on saavutada õige pH vahemik, elektrijuhtivus, hapnikusisaldus ja sobivus süsteemi materjalidega.
-                        
-                        
+                        Ainult madalast elektrijuhtivusest siiski ei piisa.
+                        Küttesüsteemi täitevee puhul tuleb arvestada ka pH, süsteemi materjalide,
+                        kasutatava kütteseadme ja tootja nõuetega.
+                        Seetõttu mõõdan vee elektrijuhtivust ja pH-d ning valin vee töötluse
+                        vastavalt konkreetsele süsteemile.
                     </p>
 
                     <p>
-                        Seetõttu stabiliseerib Küttesepp küttevee pH ja korrosioonikaitse lisandiga.
-                        Töötluse eesmärk on saavutada selge, stabiilne ja <strong>VDI 2035</strong> põhimõtetele vastav
-                        küttevesi.
+                        Töötluse eesmärk on saavutada võimalikult stabiilne ja
+                        <strong>VDI 2035 põhimõtetega kooskõlas</strong> olev küttevesi,
+                        mis aitab vähendada katlakivi ja korrosiooniga seotud riske.
                     </p>
 
                     <p>
-                        Kasutan töötluses kvaliteetset Saksamaa tootja Grünbecki süsteemi, millega
-                        valmibki pikaajaliselt toimiv
-                        küttevesi.
+                        Kasutan vee demineraliseerimiseks professionaalset ioonvahetussüsteemi
+                        ning vajadusel sobivat vee omaduste stabiliseerimise lahendust.
                     </p>
 
                     <p>
-                        <strong>
-                            Enne küttevee töötlust teostab Küttesepp alati ka
-                            <a href="{{ route('kuttesusteemi-labipesu') }}">
-                                küttesüsteemi läbipesu.
-                            </a>
-                        </strong>
+                        Olemasoleva küttesüsteemi puhul kontrollin enne uue vee lisamist,
+                        kas süsteem vajab ka
+                        <a href="{{ route('kuttesusteemi-labipesu') }}">
+                            küttesüsteemi läbipesu
+                        </a>.
+                        Uue või puhta süsteemi puhul ei ole põhjalik läbipesu alati vajalik.
                     </p>
+
 
                     <div class="pildidiv">
-                        <img class="tootjastpilt" src=""
+                        <img
+                            class="tootjastpilt"
+                            src=""
                             data-src="{{ asset('images/vaikesed/kuttesusteemi-vesi/VDI-2035_radiaator.webp') }}"
-                            alt="Demineraliseeritud kütteveega radiaator">
+                            alt="Demineraliseeritud kütteveega küttesüsteem"
+                        >
                     </div>
 
-                    <hr class="red-line" style="margin-bottom: 40px;">
+                    <hr class="red-line" style="margin-bottom:40px;">
 
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- PAKETID -->
-    <section class="piltlingid teenus-piltlingid" id="kutteveepaketid" aria-labelledby="kutteveepaketid-pealkiri"
-        style="margin-top:0px; margin-bottom:75px;">
+                    <h3>VDI 2035 põhimõtetele vastava küttevee lahendused</h3>
 
-        <h2 id="kutteveepaketid-pealkiri" class="teenus-pealkiri" style="margin-top:0px;">
-            VDI 2035 PÕHIMÕTTELE VASTAV KÜTTEVESI
-        </h2>
+                    <p>
+                        Demineraliseeritud küttevett saab osta valmis veena või lasta
+                        süsteemi vee töödelda objektil kohapeal. Sobiv lahendus sõltub
+                        küttesüsteemi mahust, seisukorrast ja sellest, kas süsteem vajab
+                        enne täitmist ka puhastamist.
+                    </p>
 
-        <p class="teenus-sissejuhatus">
-            Küttesüsteemi jaoks on oluline, et täitevesi oleks stabiilne, sobiks süsteemi
-            materjalidega ja oleks täesti puhas liigsetest mineraalidest ja setetest. Küttesepalt saab stabiilset,
-            demineraliseeritud
-            küttevett nii otse mahutist osta, kui ka
-            objektil kohapealse töötluse ja läbipesuga.
-        </p>
 
-        <div class="red-line" role="presentation"></div>
+                    <div class="heatpump-page">
+                        <div class="heatpump-container">
+                            <div class="heatpump-packages-grid">
 
-        <div class="piltlingidiv">
+                                <article class="heatpump-package">
+                                    <div class="heatpump-package__top">
+                                        <span class="heatpump-package__number">01</span>
 
-            <article class="piltlink teenuslink inverse1" aria-labelledby="vesi-1-pealkiri">
-                <div class="teenus-number-visual" aria-hidden="true">
-                    <span>01</span>
-                </div>
+                                        <p class="heatpump-package__method">
+                                            Vesi kohapealt kaasa
+                                        </p>
 
-                <div class="piltlingitekst">
-                    <img src="{{ asset('images/icons/küttesepp.png') }}" alt="Küttesepp">
-                    <h3 id="vesi-1-pealkiri">VDI 2035 küttevee müük</h3>
-                </div>
+                                        <h3>VDI 2035 küttevee müük</h3>
+                                    </div>
 
-                <ul class="teenus-checklist">
-                    <li>Valmis töödeldud küttevesi kohapealt kaasa ostmine (Laagri, Tallinn)</li>
-                    <li>VDI 2035-le vastav demineraliseeritud küttevesi</li>
-                    <li>pH stabiliseerimine ja korrosioonikaitse lisand</li>
-                    <li>Kohapeal ümberpumpamise võimalus</li>
-                    <li>Hea lahendus neile, kes soovivad ise oma süsteemi täita</li>
-                </ul>
+                                    <div class="heatpump-package__image">
+                                        <img
+                                            data-src="{{ asset('images/vaikesed/kuttesusteemi-vesi/VDI-2035_radiaator.webp') }}"
+                                            alt="VDI 2035 küttevee müük"
+                                        >
+                                    </div>
 
-                <p class="piltlink-kirjeldus teenus-kirjeldus">
-                    Ostjal peab olema kaasas oma mahuti. Küttesepa vastutus kütteveele lõpeb kauba testimisel
-                    üleandmisel.
-                </p>
-            </article>
+                                    <ul class="heatpump-checklist">
+                                        <li>Valmis demineraliseeritud küttevesi</li>
+                                        <li>Elektrijuhtivuse kontroll</li>
+                                        <li>pH kontroll enne üleandmist</li>
+                                        <li>Kohapeal ümberpumpamise võimalus</li>
+                                        <li>Sobib süsteemi ise täitvale kliendile</li>
+                                    </ul>
 
-            <article class="piltlink teenuslink inverse1" aria-labelledby="vesi-2-pealkiri">
-                <div class="teenus-number-visual" aria-hidden="true">
-                    <span>02</span>
-                </div>
+                                    <p class="heatpump-package__description">
+                                        Valmis töödeldud küttevesi Laagrist kaasa ostmiseks.
+                                        Ostjal peab olema oma sobiv mahuti.
+                                    </p>
+                                </article>
 
-                <div class="piltlingitekst">
-                    <img src="{{ asset('images/icons/küttesepp.png') }}" alt="Küttesepp">
-                    <h3 id="vesi-2-pealkiri">VDI 2035 küttevee müük koos transpordiga</h3>
-                </div>
 
-                <ul class="teenus-checklist">
-                    <li>Valmis töödeldud küttevesi sinu koju üle Eesti</li>
-                    <li>VDI 2035-le vastav demineraliseeritud küttevesi</li>
-                    <li>pH stabiliseerimine ja korrosioonikaitse lisand</li>
-                    <li>Kohapeal ümberpumpamise võimalus</li>
-                    <li>Hea lahendus neile, kes soovivad ise oma süsteemi täita</li>
-                </ul>
+                                <article class="heatpump-package">
+                                    <div class="heatpump-package__top">
+                                        <span class="heatpump-package__number">02</span>
 
-                <p class="piltlink-kirjeldus teenus-kirjeldus">
-                    Ostjal peab olema oma mahuti või valmidus lasta vesi otse süsteemi. Küttesepa vastutus kütteveele
-                    lõpeb kauba testimisel üleandmisel.
-                </p>
-            </article>
+                                        <p class="heatpump-package__method">
+                                            Vesi koos transpordiga
+                                        </p>
 
-            <article class="piltlink teenuslink inverse1" aria-labelledby="vesi-3-pealkiri">
-                <div class="teenus-number-visual" aria-hidden="true">
-                    <span>03</span>
-                </div>
+                                        <h3>VDI 2035 küttevesi objektile</h3>
+                                    </div>
 
-                <div class="piltlingitekst">
-                    <img src="{{ asset('images/icons/küttesepp.png') }}" alt="Küttesepp">
-                    <h3 id="vesi-3-pealkiri">Läbipesu ja küttevee töötlus kohapeal</h3>
-                </div>
+                                    <div class="heatpump-package__image">
+                                        <img
+                                            data-src="{{ asset('images/vaikesed/kuttesusteemi-vesi/vdi-2035.webp') }}"
+                                            alt="Demineraliseeritud küttevee transport objektile"
+                                        >
+                                    </div>
 
-                <ul class="teenus-checklist">
-                    <li>Küttesüsteemi põhjalik läbipesu, keemiaga või ilma</li>
-                    <li>Värske trassivee demineraliseerimine</li>
-                    <li>Demineraliseeritud küttevee VDI 2035-le vastavusse viimine</li>
-                    <li>Järeltäite demineraliseerimise filtri lisamine</li>
-                    <li><strong>Aastane garantii hoolduse tellijatele</strong></li>
-                </ul>
+                                    <ul class="heatpump-checklist">
+                                        <li>Valmis töödeldud küttevesi</li>
+                                        <li>Transport kokkuleppel üle Eesti</li>
+                                        <li>Elektrijuhtivuse ja pH kontroll</li>
+                                        <li>Kohapeal ümberpumpamise võimalus</li>
+                                        <li>Võimalik täita vesi otse süsteemi</li>
+                                    </ul>
 
-                <p class="piltlink-kirjeldus teenus-kirjeldus">
-                    Sobib nii uutele kui vanematele süsteemidele, kus enne uue küttevee lisamist tuleb teha
-                    esmane loputus või eemaldada muda, magnetiit ja vana küttevesi. Tegemist on täisteenuse
-                    paketiga, kus korralise hoolduse tellijatele tuleb kaasa aastane garantii küttevee
-                    parameetrite püsimisele.
-                </p>
-            </article>
+                                    <p class="heatpump-package__description">
+                                        Sobib juhul, kui suurem kogus demineraliseeritud
+                                        küttevett on mugavam tuua otse objektile.
+                                    </p>
+                                </article>
 
-        </div>
-    </section>
 
-    <section class="tootjasektsioon">
-        <div class="tootjast">
-            <div class="ettevotte">
-                <div class="content">
+                                <article class="heatpump-package">
+                                    <div class="heatpump-package__top">
+                                        <span class="heatpump-package__number">03</span>
+
+                                        <p class="heatpump-package__method">
+                                            Täisteenus objektil
+                                        </p>
+
+                                        <h3>Läbipesu ja küttevee töötlus</h3>
+                                    </div>
+
+                                    <div class="heatpump-package__image">
+                                        <img
+                                            data-src="{{ asset('images/vaikesed/kuttesusteemide-hooldus/labipesu-ja-demineraliseerimine-rae-vald.webp') }}"
+                                            alt="Küttesüsteemi läbipesu ja küttevee demineraliseerimine"
+                                        >
+                                    </div>
+
+                                    <ul class="heatpump-checklist">
+                                        <li>Olemasoleva süsteemi seisukorra hindamine</li>
+                                        <li>Vajadusel küttesüsteemi läbipesu</li>
+                                        <li>Värske täitevee demineraliseerimine</li>
+                                        <li>Elektrijuhtivuse ja pH kontroll</li>
+                                        <li>Järeltäitefiltri paigaldamise võimalus</li>
+                                    </ul>
+
+                                    <p class="heatpump-package__description">
+                                        Täislahendus olemasolevale või renoveeritud
+                                        küttesüsteemile, kus vana küttevesi eemaldatakse,
+                                        süsteem puhastatakse vastavalt vajadusele ning
+                                        täidetakse uue töödeldud veega.
+                                    </p>
+
+                                    <a
+                                        href="{{ route('kuttesusteemi-labipesu') }}"
+                                        class="heatpump-btn heatpump-btn--secondary"
+                                    >
+                                        Vaata küttesüsteemi läbipesu
+                                    </a>
+                                </article>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <hr class="red-line">
+
 
                     <h3>Miks demineraliseeritud vesi on vajalik?</h3>
+
                     <p>
-                        Kui küttevõrk täidetakse tavalise trassiveega, satuvad sinna kaltsiumi-, magneesiumi- ja
-                        kloriidioonid, mille sisaldust saab hinnata elektrijuhtivuse mõõtmisega. Lisaks tekkitavad
-                        probleeme ebapiisav pH tase ja hapniku olemasolu süsteemis.
+                        Tavaline täitevesi sisaldab lahustunud mineraale ja soolasid,
+                        mille kogust saab hinnata muu hulgas vee elektrijuhtivuse kaudu.
+                        Kuumutamisel võivad osa mineraale sadestuda küttesüsteemi
+                        komponentidele ning mõjutada soojusülekannet.
                     </p>
 
                     <p>
-                        Soojenenud küttesüsteemis sadestuvad mineraalid torustikus ja soojusvahetites
-                        katlakivina. Samal ajal kiireneb korrosioon ning tekib korrosioonijääk ehk muda.
-                        Demineraliseeritud ja VDI 2035 le vastav vesi vähendab neid riske:
+                        Korrosiooni mõjutavad lisaks vee mineraalsusele ka pH,
+                        hapniku juurdepääs, süsteemi materjalid ja töötingimused.
+                        Õigesti ettevalmistatud küttevesi aitab neid riske vähendada.
                     </p>
 
-                    <ul class="rohelise-linnukesega" style="font-weight:500; font-size:18px;">
-                        <li>vältides katlakivi teket isegi kõrgel temperatuuril</li>
-                        <li>vähendades korrosiooni ja muda tekkeriski</li>
-                        <li>tagades süsteemi vaikse ja energiatõhusa töö</li>
+                    <ul
+                        class="rohelise-linnukesega"
+                        style="font-weight:500; font-size:18px;"
+                    >
+                        <li>Vähendab katlakivi ja mineraalsete sadestuste tekkeriski</li>
+                        <li>Aitab vähendada korrosiooni ja muda tekkimise riski</li>
+                        <li>Loob paremad töötingimused kütteseadmele ja soojusvahetitele</li>
                     </ul>
+
 
                     <div class="pildidiv" style="justify-self:flex-end;">
-                        <img class="tootjastpilt" src=""
+                        <img
+                            class="tootjastpilt"
+                            src=""
                             data-src="{{ asset('images/vaikesed/kuttesusteemi-vesi/toorvesi.webp') }}"
-                            alt="Mida teeb tavaline toorvesi kraanist">
+                            alt="Tavalise täitevee mõju küttesüsteemile"
+                        >
                     </div>
+
                     <hr class="red-line" style="justify-self:flex-end;">
 
-                    <h3>VDI 2035 – kvaliteedistandard demineraliseeritud veele</h3>
+
+                    <h3>VDI 2035 ja küttesüsteemi täitevee kvaliteet</h3>
 
                     <p>
-                        Standard <strong>VDI 2035</strong> määrab, millised peavad olema küttesüsteemi täitmiseks
-                        kasutatava vee omadused. Peamised parameetrid on:
+                        <strong>VDI 2035</strong> käsitleb vesiküttesüsteemide
+                        täite- ja ringlusvee kvaliteeti ning katlakivi ja veepoolse
+                        korrosiooni vähendamist.
                     </p>
 
-                    <ul class="rohelise-linnukesega" style="font-weight:500; font-size:18px;">
-                        <li>madal elektrijuhtivus, tavaliselt alla 100 µS/cm</li>
-                        <li>stabiilne püsimine süsteemi materjalidega</li>
-                        <li>pH vahemikus 8,2–10; alumiiniumist komponentide puhul vastavalt tootja nõuetele</li>
+                    <p>
+                        Praktikas tuleb arvestada muu hulgas vee elektrijuhtivuse,
+                        pH, süsteemi veemahu, soojusvõimsuse ning süsteemis kasutatud
+                        materjalidega. Sobivad väärtused sõltuvad konkreetsest
+                        süsteemist ja kütteseadme tootja nõuetest.
+                    </p>
+
+                    <ul
+                        class="rohelise-linnukesega"
+                        style="font-weight:500; font-size:18px;"
+                    >
+                        <li>Madal elektrijuhtivus vähendab vees lahustunud soolade hulka</li>
+                        <li>pH peab sobima süsteemis kasutatud materjalidega</li>
+                        <li>Alumiiniumi sisaldavate süsteemide puhul tuleb järgida tootja lubatud pH vahemikku</li>
                     </ul>
 
                     <p>
-                        Selline vesi ei tekita katlakivi, vähendab korrosiooniriski ning tagab süsteemi stabiilse töö
-                        aastateks. See on ka paljude soojuspumpade ja kondensatsioonikatelde tootjate soovitus.
-                        Küttesepp testib alati vett nii ennem kui pärast töötlust.
+                        Küttesepp mõõdab täitevee elektrijuhtivust ja pH-d enne
+                        süsteemi täitmist ning kontrollib vajadusel vee omadusi ka
+                        pärast süsteemi käivitamist.
                     </p>
 
 
                     <div class="pildidiv">
-                        <img class="tootjastpilt" src=""
+                        <img
+                            class="tootjastpilt"
+                            src=""
                             data-src="{{ asset('images/vaikesed/kuttesusteemi-vesi/vdi-2035.webp') }}"
-                            alt="VDI 2035 standard">
+                            alt="VDI 2035 küttevee kontroll"
+                        >
                     </div>
+
                     <hr class="red-line">
 
-                    <h3>Kuidas toimub demineraliseerimine?</h3>
+
+                    <h3>Kuidas toimub küttevee demineraliseerimine?</h3>
+
                     <p>
-                        Demineraliseerimine teostatakse spetsiaalse ioonvahetusfiltri abil.
-                        Filter eemaldab ioonvahetusvaikude abil toorveest erineva laenguga ioonid, asendades need
-                        vesinikioonide ja hüdroksiidioonidega. Nende ioonide ühinemise tulemil jääb alles väga madala
-                        juhtivusega vesi ehk puhas vesi.
-                        Küttesepp mõõdab täitmisvee juhtivuse ja pH enne ning pärast süsteemi täitmist ning viib vee
-                        omadused, õige koguse lisaaine lisamisega, vastavusse VDI 2035 põhimõtetega.
+                        Demineraliseerimisel juhitakse täitevesi läbi spetsiaalse
+                        ioonvahetusvaigu, mis eemaldab veest suure osa lahustunud
+                        sooladest ja mineraalidest.
+                        Tulemuseks on väga madala elektrijuhtivusega vesi.
                     </p>
 
                     <p>
-                        Pärast täitmist soovitame küttevee parameetreid regulaarselt kontrollida, et tagada süsteemi
-                        püsiv kaitse. <br>
-                        <strong>
-                            Hilisem süsteemi juurde täitmine tavalise veega vähendab vee kvaliteeti.
-                            Seetõttu tuleb süsteemile lisada spetsiaalse juurdetäite filter.
-                        </strong>
+                        Töö käigus mõõdan vee elektrijuhtivust ja pH-d.
+                        Vajadusel kohandatakse vee omadusi vastavalt konkreetse
+                        süsteemi materjalidele ja kütteseadme nõuetele.
                     </p>
 
                     <p>
-                        Küttesepp OÜ pakub küttevee demineraliseerimise teenust
-                        <strong>üle Eesti</strong>, lähim piirkond on Tallinn ja Harjumaa.<br>
-                        Teenuse teostan mobiilse seadmega objektil kohapeal või transpordin töödeldud vett kuhu vaja.
+                        Hilisem süsteemi juurde täitmine töötlemata veega suurendab
+                        uuesti süsteemi soolasisaldust ja elektrijuhtivust.
+                        Seetõttu on süsteemides, mida tuleb aeg-ajalt juurde täita,
+                        mõistlik kasutada sobivat järeltäitefiltrit.
                     </p>
+
+                    <p>
+                        Küttesepp OÜ pakub küttevee demineraliseerimist
+                        <strong>üle Eesti</strong>, kuid põhiline teeninduspiirkond
+                        on Tallinn ja Harjumaa. Töötlen vee objektil kohapeal või
+                        transpordin valmis töödeldud vee objektile.
+                    </p>
+
+
                     <div class="pildidiv">
-                        <img class="tootjastpilt" src=""
+                        <img
+                            class="tootjastpilt"
+                            src=""
                             data-src="{{ asset('images/vaikesed/kuttesusteemi-vesi/Täitefilter thermaliQ_HB2.webp') }}"
-                            alt="Demineraliseeritud vee eelised">
+                            alt="Küttesüsteemi järeltäite demineraliseerimise filter"
+                        >
                     </div>
-
 
 
                     <hr class="red-line">
 
-                    <div class="faq-container" itemscope itemtype="https://schema.org/FAQPage">
 
-                        <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <div
+                        class="faq-container"
+                        itemscope
+                        itemtype="https://schema.org/FAQPage"
+                    >
+
+                        <div
+                            itemscope
+                            itemprop="mainEntity"
+                            itemtype="https://schema.org/Question"
+                        >
                             <h3 itemprop="name" class="faq-question">
-                                <span class="faq-icon">&#10003;</span> Mis on demineraliseeritud vesi?
+                                <span class="faq-icon">&#10003;</span>
+                                Mis on demineraliseeritud vesi?
                             </h3>
-                            <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"
-                                class="faq-answer">
+
+                            <div
+                                itemscope
+                                itemprop="acceptedAnswer"
+                                itemtype="https://schema.org/Answer"
+                                class="faq-answer"
+                            >
                                 <p itemprop="text">
-                                    Demineraliseeritud vesi on puhastatud vesi, millest on eemaldatud lahustunud
-                                    soolad ja mineraalid. Selle elektrijuhtivus on väga madal, mistõttu väheneb
-                                    katlakivi ja setete tekkerisk. Küttesüsteemis tuleb lisaks jälgida ka pH taset
-                                    ja vee sobivust süsteemi materjalidega.
+                                    Demineraliseeritud vesi on töödeldud vesi,
+                                    millest on eemaldatud suur osa lahustunud
+                                    mineraalidest ja sooladest.
+                                    Selle elektrijuhtivus on tavalisest täiteveest
+                                    oluliselt madalam.
                                 </p>
                             </div>
                         </div>
 
-                        <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+
+                        <div
+                            itemscope
+                            itemprop="mainEntity"
+                            itemtype="https://schema.org/Question"
+                        >
                             <h3 itemprop="name" class="faq-question">
-                                <span class="faq-icon">&#10003;</span> Millal tuleks süsteem täita demineraliseeritud
-                                veega?
+                                <span class="faq-icon">&#10003;</span>
+                                Millal tuleks süsteem täita demineraliseeritud veega?
                             </h3>
-                            <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"
-                                class="faq-answer">
+
+                            <div
+                                itemscope
+                                itemprop="acceptedAnswer"
+                                itemtype="https://schema.org/Answer"
+                                class="faq-answer"
+                            >
                                 <p itemprop="text">
-                                    Demineraliseeritud vett on mõistlik kasutada uue või täielikult renoveeritud
-                                    küttesüsteemi esmatäitmisel, samuti pärast läbipesu või ennem uue soojuspumba,
-                                    katla või soojusvaheti paigaldust.
+                                    Demineraliseeritud vett kasutatakse uute ja
+                                    renoveeritud küttesüsteemide täitmisel ning
+                                    sageli ka pärast olemasoleva süsteemi läbipesu.
+                                    Täitevee nõuded sõltuvad kütteseadmest ja
+                                    süsteemi materjalidest.
                                 </p>
                             </div>
                         </div>
 
-                        <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+
+                        <div
+                            itemscope
+                            itemprop="mainEntity"
+                            itemtype="https://schema.org/Question"
+                        >
                             <h3 itemprop="name" class="faq-question">
-                                <span class="faq-icon">&#10003;</span> Kas demineraliseeritud vesi vajab hooldust?
+                                <span class="faq-icon">&#10003;</span>
+                                Kas demineraliseeritud küttevee kvaliteeti tuleb hiljem kontrollida?
                             </h3>
-                            <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"
-                                class="faq-answer">
+
+                            <div
+                                itemscope
+                                itemprop="acceptedAnswer"
+                                itemtype="https://schema.org/Answer"
+                                class="faq-answer"
+                            >
                                 <p itemprop="text">
-                                    Kui süsteem on hermeetiline ja korrektselt täidetud, püsib vee kvaliteet üldjuhul
-                                    hästi. Soovitav on siiski kontrollida vee parameetreid iga 1–2 aasta tagant,
-                                    eriti kui süsteemi on juurde täidetud või esineb õhu, rõhu või musta vee probleeme.
+                                    Jah, perioodiline kontroll on mõistlik.
+                                    Eriti tasub vee elektrijuhtivust ja pH-d
+                                    kontrollida pärast süsteemi juurdetäitmist,
+                                    remonti või juhul, kui küttevee seisukord
+                                    on muutunud.
                                 </p>
                             </div>
                         </div>
 
-                        <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+
+                        <div
+                            itemscope
+                            itemprop="mainEntity"
+                            itemtype="https://schema.org/Question"
+                        >
                             <h3 itemprop="name" class="faq-question">
-                                <span class="faq-icon">&#10003;</span> Mis juhtub, kui süsteemi täita tavalise
-                                kraaniveega?
+                                <span class="faq-icon">&#10003;</span>
+                                Kas süsteemi võib täita tavalise kraaniveega?
                             </h3>
-                            <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"
-                                class="faq-answer">
+
+                            <div
+                                itemscope
+                                itemprop="acceptedAnswer"
+                                itemtype="https://schema.org/Answer"
+                                class="faq-answer"
+                            >
                                 <p itemprop="text">
-                                    Kraanivesi sisaldab mineraale, mis kuumenedes ladestuvad katlakivina ning
-                                    soodustavad korrosiooni ja muda teket. See lühendab süsteemi eluiga,
-                                    vähendab soojusülekannet ja suurendab energiakulu.
+                                    See sõltub vee omadustest, süsteemi suurusest,
+                                    materjalidest ja kütteseadme tootja nõuetest.
+                                    Kõrge mineraalsusega täitevesi võib suurendada
+                                    katlakivi ja korrosiooniga seotud riske.
                                 </p>
                             </div>
                         </div>
 
-                        <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+
+                        <div
+                            itemscope
+                            itemprop="mainEntity"
+                            itemtype="https://schema.org/Question"
+                        >
                             <h3 itemprop="name" class="faq-question">
-                                <span class="faq-icon">&#10003;</span> Kas demineraliseeritud vett võib kombineerida
-                                tavalise korrosiooniinhibiitoriga?
+                                <span class="faq-icon">&#10003;</span>
+                                Kas demineraliseeritud vett võib kasutada koos inhibiitoriga?
                             </h3>
-                            <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"
-                                class="faq-answer">
+
+                            <div
+                                itemscope
+                                itemprop="acceptedAnswer"
+                                itemtype="https://schema.org/Answer"
+                                class="faq-answer"
+                            >
                                 <p itemprop="text">
-                                    Jah, võib. Korrosiooniinhibiitor aitab kaitsta süsteemi metallpindu
-                                    ning seda kasutatakse sageli koos demineraliseeritud kütteveega.
+                                    Jah, kui kasutatav inhibiitor sobib
+                                    demineraliseeritud veega ja konkreetse
+                                    küttesüsteemi materjalidega.
+                                    Inhibiitori lisamine ei ole siiski igas
+                                    süsteemis automaatselt vajalik.
+                                    Loe lähemalt
+                                    <a href="{{ route('kuttevee-inhibiitorid') }}">
+                                        küttevee inhibiitoritest
+                                    </a>.
                                 </p>
                             </div>
                         </div>
 
                     </div>
+
 
                     <div class="links" style="margin-top:20px;">
                         <div class="kusipakkumist">
@@ -359,6 +499,8 @@ VDI 2035 küttevesi'" :metaAuthor="'Tanel Sepp'" :robots="'index, follow'" :ogIm
         </div>
     </section>
 
+
     <x-up_scroller />
     <x-cookies />
+
 </x-layout>

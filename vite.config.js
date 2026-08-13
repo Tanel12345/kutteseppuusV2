@@ -21,6 +21,7 @@ export default defineConfig({
                 // 🔹 SOOJUSPUMPADE UUED LEHED
                 'resources/css/pages/soojuspumbad.css',
                 'resources/css/pages/soojuspumbadTooted.css',
+                'resources/css/soojuspumbaKaardid.css',
 
                 'resources/css/ettevottest.css',
                 'resources/css/contact.css',

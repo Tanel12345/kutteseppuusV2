@@ -54,6 +54,10 @@ class PageController extends Controller
         return view('pages.hooldusJaRemont.soojuspumpade_remont');
     }
 
+public function kulmaringiDiagnostikaJaRemont()
+    {
+        return view('pages.hooldusJaRemont.kulmaringi_diagnostika_ja_remont');
+    }
 
     public function kuttesusteemiPesu()
     {

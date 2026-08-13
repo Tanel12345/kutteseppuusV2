@@ -1,231 +1,214 @@
-
 <x-layout
     :title="'Küttesüsteemide ehitus Tallinnas ja Harjumaal | Küttesepp'"
-    :metaDescription="'Küttesüsteemide ehitus Tallinnas ja Harjumaal. Küttesepp aitab valida sobiva lahenduse ning teostab põrandakütte, radiaatorkütte, soojuspumpade ja teiste küttesüsteemide terviklahendusi eramajadele ja väiksematele hoonetele.'"
-    :metaKeywords="'küttesüsteemide ehitus, küttesüsteem, küttesüsteemi paigaldus, põrandaküte, radiaatorküte, küttelahendused'"
+    :metaDescription="'Küttesüsteemide ehitus Tallinnas ja Harjumaal. Soojuspumbad, keskküttekaminad ja -pliidid, pelletikatlad, radiaator- ja põrandaküte, hüdraulika, tarbevesi, automaatika ning süsteemi seadistamine.'"
     :ogImage="asset('images/serp/kuttesepp-og-paigaldus.webp')"
     :metaAuthor="'Tanel Sepp'"
     :robots="'index, follow'"
-    :viteCssAssets="['resources/css/pages/tootelehed.css', 'resources/css/kuttesusteemiTeenus.css']"
+    :viteCssAssets="[
+        'resources/css/pages/tootelehed.css',
+        'resources/css/kuttesusteemiTeenus.css',
+        'resources/css/pages/soojuspumbad.css',
+    ]"
 >
-
+    {{-- HERO --}}
     <x-static_carousel
-        title="KÜTTESÜSTEEMIDE EHITUS <br><br><span>Terviklik teenus sinu kodu kütmiseks</span>"
-        content="Küttesüsteemide ehitus tähendab Küttesepa puhul terviklikku teenust – alates sobiva lahenduse valikust kuni süsteemi väljaehituse, seadistamise ja üleandmiseni. Hästi ehitatud küttesüsteem töötab ühtlaselt, hoiab energiakulu mõistlikuna ja tagab kodus mugava sisekliima.<br><br>
-
-Tegutsen peamiselt eramajade, ridaelamute ja väiksemate hoonetega. Minu eelis on personaalne lähenemine ja see, et vaatan kogu küttesüsteemi tervikuna, mitte ainult üksikut seadet või tööetappi.<br><br>
-
-Kuna küttesüsteemi kõik osad peavad omavahel sobima ja koos korrektselt töötama, teen selliseid töid eelkõige objektidel, kus olemasolev lahendus on hinnatav või piisavalt hästi dokumenteeritud. Vajadusel saab kogu lahenduse Küttesepalt – planeerimisest kuni valmis süsteemini.<br><br>
-
-Töötan peamiselt <strong>Tallinna ja Harjumaa piirkonnas</strong>, kuid kokkuleppel liigun ka mujale üle Eesti."
+        title="KÜTTESÜSTEEMIDE EHITUS <br><br><span>Kütteallikas ja kogu küttesüsteem ühe tervikuna</span>"
+        content="Küttesepp ehitab ja uuendab terviklikke vesiküttesüsteeme eramajadele, ridaelamutele ja väiksematele hoonetele. Lahenduse keskmes võib olla õhk-vesi- või maasoojuspump, kuid vastavalt hoonele ja kasutaja soovidele ka keskküttekamin, pelletikatel või keskküttepliit.<br><br>
+Kütteallikast sõltumata on oluline, et torustik, radiaatorid või põrandaküte, tarbevee lahendus, ringluspumbad, akumulatsioonipaak ja automaatika töötaksid omavahel õigesti. Uue süsteemi puhul saan lahenduse ehitada tervikuna, olemasoleva süsteemi puhul hinnata, milliseid osi saab edasi kasutada ja mida tuleb muuta.<br><br>
+Eesmärk ei ole paigaldada lihtsalt uut kütteseadet, vaid ehitada töökindel ja hästi hooldatav küttesüsteem, kus kütteallikas ja ülejäänud süsteem moodustavad ühe terviku.<br><br>
+Töötan peamiselt <strong>Tallinnas ja Harjumaal</strong>, sobivate suuremate tööde puhul kokkuleppel ka mujal Eestis."
         image="images/taustad/kuttesusteemide-ehitus-ES.webp"
-        imageAlt="Küttesüsteemide ehitus eramajas"
+        imageAlt="Tervikliku küttesüsteemi ehitus eramajas"
         eriStiil=""
         :textholderStyle="''"
     />
-
-    <section class="piltlingid teenus-piltlingid" id="kuttesusteemi-teenus" aria-labelledby="protsess-pealkiri">
-
-        <h2 id="protsess-pealkiri" class="teenus-pealkiri">
-            KUIDAS KÜTTESEPP EHITAB TERVIKLIKU KÜTTESÜSTEEMI
-        </h2>
-
-        <p class="teenus-sissejuhatus">
-    Kasutan lahendustes usaldusväärseid õhk-vesi soojuspumpasid, näiteks Samsungi ja Energy Save seadmeid,
-    kuid lõplik valik sõltub alati hoonest, olemasolevast küttesüsteemist, tarbevee vajadusest ja eelarvest.
-    Eesmärk ei ole müüa kindlat brändi, vaid ehitada optimaalselt toimiv küttesüsteem.
-</p>
-
-        <div class="red-line" role="presentation"></div>
-
-        <div class="piltlingidiv">
-
-            <article class="piltlink teenuslink inverse1" aria-labelledby="samm-1-pealkiri">
-                <div class="teenus-number-visual" aria-hidden="true">
-                    <span>01</span>
+    {{-- KÜTTESÜSTEEM KUI TERVIK --}}
+    <div class="heatpump-page">
+        <section class="heatpump-section" id="kuttesusteemi-teenus" aria-labelledby="protsess-pealkiri">
+            <div class="heatpump-container">
+                <div class="heatpump-heading">
+                    <p class="heatpump-eyebrow">Terviklikud vesiküttesüsteemid</p>
+                    <h2 id="protsess-pealkiri">Kütteallikas on ainult üks osa hästi toimivast küttesüsteemist</h2>
+                    <p>
+                        Küttesüsteemi kavandamisel ei piisa ainult sobiva kütteallika valikust.
+                        Sama oluline on, et radiaatorid või põrandaküte, torustik,
+                        ringluspumbad, tarbevee lahendus, akumulatsioonipaak ja automaatika
+                        sobiksid valitud kütteallikaga töötamiseks.
+                    </p>
                 </div>
-
-                <div class="piltlingitekst">
-                    <img src="{{ asset('images/icons/küttesepp.png') }}" alt="Küttesepp">
-                    <h3 id="samm-1-pealkiri">Õige süsteemi valik ja kavandamine</h3>
+                <div class="heatpump-benefits-grid">
+                    <article class="heatpump-benefit-card">
+                        <span class="heatpump-benefit-card__icon" aria-hidden="true">✓</span>
+                        <h3>Kütteallika valik</h3>
+                        <p>
+                            Lahenduse keskmes võib olla õhk-vesi- või maasoojuspump,
+                            keskküttekamin, pelletikatel või keskküttepliit.
+                            Sobiv lahendus valitakse hoone, olemasoleva süsteemi
+                            ja kasutusvajaduse järgi.
+                        </p>
+                    </article>
+                    <article class="heatpump-benefit-card">
+                        <span class="heatpump-benefit-card__icon" aria-hidden="true">✓</span>
+                        <h3>Olemasolev küttesüsteem</h3>
+                        <p>
+                            Hindan, kas olemasolevad radiaatorid, põrandaküte ja torustik
+                            sobivad uue kütteallikaga töötamiseks või vajavad enne
+                            paigaldust osalist uuendamist.
+                        </p>
+                    </article>
+                    <article class="heatpump-benefit-card">
+                        <span class="heatpump-benefit-card__icon" aria-hidden="true">✓</span>
+                        <h3>Hüdraulika ja tarbevesi</h3>
+                        <p>
+                            Vajadusel lahendan torustiku, ringluspumbad, ventiilid,
+                            tarbeveeboileri ja akumulatsioonipaagi nii,
+                            et kogu süsteem töötaks ühe tervikuna.
+                        </p>
+                    </article>
+                    <article class="heatpump-benefit-card">
+                        <span class="heatpump-benefit-card__icon" aria-hidden="true">✓</span>
+                        <h3>Käivitus ja seadistamine</h3>
+                        <p>
+                            Kontrollin vooluhulgad ja töötemperatuurid ning seadistan
+                            kütteallika, ringluse ja automaatika vastavalt
+                            hoone ning küttesüsteemi vajadusele.
+                        </p>
+                    </article>
                 </div>
-
-                <ul class="teenus-checklist">
-                    <li>Sobiva soojuspumba ja küttelahenduse valik</li>
-                    <li>Dimensioneerimine vastavalt majale ja ruumidele</li>
-                    <li>Radiaatorite, põrandakütte või fancoilide arvestamine</li>
-                    <li>Automaatika ja kogu süsteemi loogika paika panemine</li>
-                </ul>
-
-                <p class="piltlink-kirjeldus teenus-kirjeldus">
-                    Hea tulemus algab õigetest valikutest. Kui plaan on algusest peale paigas, läheb ka kogu järgnev töö palju kindlamalt.
-                </p>
-            </article>
-
-            <article class="piltlink teenuslink inverse1" aria-labelledby="samm-2-pealkiri">
-                <div class="teenus-number-visual" aria-hidden="true">
-                    <span>02</span>
-                </div>
-
-                <div class="piltlingitekst">
-                    <img src="{{ asset('images/icons/küttesepp.png') }}" alt="Küttesepp">
-                    <h3 id="samm-2-pealkiri">Korralik süsteemi väljaehitus</h3>
-                </div>
-
-                <ul class="teenus-checklist">
-                    <li>Soojuspumba ja torustiku korrektne paigaldus</li>
-                    <li>Radiaator-, põrandakütte või fancoilisüsteemi väljaehitus</li>
-                    <li>Automaatika ja vajalike juhtimiste lisamine</li>
-                    <li>Terviklik lahendus, kus kõik osad sobivad omavahel kokku</li>
-                </ul>
-
-                <p class="piltlink-kirjeldus teenus-kirjeldus">
-                    Eesmärk ei ole lihtsalt seadmed omavahel ühendada, vaid ehitada süsteem, mis toimib ühe tervikuna ja jääb ka hiljem hästi hooldatavaks.
-                </p>
-            </article>
-
-            <article class="piltlink teenuslink inverse1" aria-labelledby="samm-3-pealkiri">
-                <div class="teenus-number-visual" aria-hidden="true">
-                    <span>03</span>
-                </div>
-
-                <div class="piltlingitekst">
-                    <img src="{{ asset('images/icons/küttesepp.png') }}" alt="Küttesepp">
-                    <h3 id="samm-3-pealkiri">Küttevesi, seadistamine ja üleandmine</h3>
-                </div>
-
-                <ul class="teenus-checklist">
-                    <li>Süsteemi seadistamine ja tasakaalustamine</li>
-                    <li>Vooluhulkade ja töörežiimide kontroll</li>
-                    <li>Küttevee demineraliseerimine või inhibiitori lisamine</li>
-                    <li>Kasutaja juhendamine ja süsteemi korrektne üleandmine</li>
-                </ul>
-
-                <p class="piltlink-kirjeldus teenus-kirjeldus">
-                    Kui küttesüsteem on valmis, tuleb see ka paika häälestada. Just sellest sõltub, kui stabiilselt, säästlikult ja murevabalt see hiljem töötab.
-                </p>
-            </article>
-
-        </div>
-
+            </div>
+        </section>
+    </div>
+    {{-- HINNASTUS --}}
+    <section class="piltlingid teenus-piltlingid">
         <section class="teenus-hinnad" aria-labelledby="hinnad-pealkiri">
             <div class="teenus-hinnad-wrapper">
-
-                <h2 id="hinnad-pealkiri" class="teenus-pealkiri">
-                    ORIENTEERUVAD HINNATASEMED
-                </h2>
-
+                <h2  class="teenus-pealkiri">ORIENTEERUVAD HINNATASEMED</h2>
+              
                 <p class="teenus-sissejuhatus hinnad-sissejuhatus">
-                    Allpool on toodud mõned tüüpilised hinnatasemed. Lõplik hind sõltub sellest, kas vaja on ainult seadmeid, paigaldust ja seadistamist või kogu küttesüsteemi ehitust, samuti hoonest, valitud tehnikast ja olemasoleva süsteemi seisukorrast.
+                    Allpool on toodud mõned tüüpilised hinnatasemed.
+                    Lihtsamad paketid on näitlikustatud soojuspumbaga lahenduste põhjal,
+                    kuid tervikliku küttesüsteemi puhul võib kütteallikaks olla ka
+                    keskküttekamin, pelletikatel või keskküttepliit.
+                    Lõplik hind sõltub valitud tehnikast, hoonest,
+                    olemasoleva süsteemi seisukorrast ja töömahust.
                 </p>
-
-                <p class="teenus-sissejuhatus hinnad-sissejuhatus">
-                    Küttesepp keskendub terviklahendustele – Ma ei paku ainult seadme paigaldamist, vaid toimiva küttesüsteemi väljaehitus. Olenevalt olukorrast ka olemasoleva süsteemi külge uue kütteseadme integreerimist, selle seadistamist ja süsteemi tasakaalustamist.
-                </p>
-
                 <div class="red-line" role="presentation"></div>
-
                 <div class="hinnapaketid">
-
+                    {{-- LIHTSAM --}}
                     <article class="hinnakaart" aria-labelledby="simple-pealkiri">
                         <div class="hinnakaart-sisu">
-                            <span class="hinnakaart-label">LIHTSAM TERVIKLAHENDUS</span>
-<h3 id="simple-pealkiri">Olemasoleva toimiva küttesüsteemiga majale</h3>
+                            <span class="hinnakaart-label">LIHTSAM LAHENDUS</span>
+                            <h3 id="simple-pealkiri">Soojuspump olemasolevasse küttesüsteemi</h3>
                             <p class="hind">alates <strong>7900 €</strong></p>
-
                             <ul class="teenus-checklist">
-                                <li>Soojuspump koos tavapärase ühendamise ja seadistamisega</li>
-                                <li>Sobib lihtsamatele objektidele</li>
-                                <li>Olemasolev küttesüsteem on kasutatav</li>
-                                <li>Põhiline seadistamine ja kasutaja juhendamine</li>
+                                <li>Õhk-vesi soojuspump koos tavapärase paigaldusega</li>
+                                <li>Ühendamine olemasoleva toimiva küttesüsteemiga</li>
+                                <li>Vajalikud hüdraulilised ühendused</li>
+                                <li>Süsteemi käivitamine ja põhiline seadistamine</li>
+                                <li>Kasutaja juhendamine</li>
                             </ul>
-
                             <p class="hinnakaart-kirjeldus">
-                                Sobib juhul, kui maja olemasolev küttesüsteem on heas korras ja suuremaid lisatöid teha ei ole vaja.
+                                Sobib juhul, kui maja olemasolev radiaator- või
+                                põrandaküttesüsteem on heas korras ja sobib uue
+                                soojuspumbaga töötamiseks ilma suuremate ümberehitusteta.
                             </p>
                         </div>
                     </article>
-
+                    {{-- TERVIKLIK --}}
                     <article class="hinnakaart hinnakaart-soovitatud" aria-labelledby="pro-pealkiri">
                         <div class="hinnakaart-badge" aria-label="Soovitatav pakett">Soovitatav</div>
                         <div class="hinnakaart-sisu">
                             <span class="hinnakaart-label">TERVIKLIK KÜTTELAHENDUS</span>
-                            <h3 id="pro-pealkiri">Töökindel küttesüsteem, mitte ainult uus seade</h3>
+                            <h3 id="pro-pealkiri">Soojuspump ja küttesüsteemi vajalik uuendamine</h3>
                             <p class="hind">alates <strong>12 000 €</strong></p>
-
                             <ul class="teenus-checklist">
                                 <li>Soojuspump ja paigaldus</li>
                                 <li>Tarbevee lahendus vastavalt süsteemile</li>
+                                <li>Vajalikud hüdraulilised muudatused</li>
                                 <li>Küttesüsteemi läbipesu vastavalt vajadusele</li>
-                                <li>Küttevee demineraliseerimine või inhibiitori lisamine</li>
-                                <li>Süsteemi seadistamine ja tasakaalustamine</li>
-                                <li>Kogu lahenduse tööle häälestamine</li>
+                                <li>Küttevee demineraliseerimine või muu sobiv töötlus</li>
+                                <li>Vooluhulkade ja automaatika seadistamine</li>
+                                <li>Kogu süsteemi tööle häälestamine</li>
                             </ul>
-
                             <p class="hinnakaart-kirjeldus">
-                                Hea valik siis, kui eesmärk ei ole ainult uue seadme paigaldus, vaid korralikult toimiv ja pikaajaliselt töökindel küttesüsteem.
+                                Sobib majale, kus eesmärk ei ole ainult vana kütteseadme
+                                asendamine, vaid olemasoleva süsteemi kohandamine nii,
+                                et uus soojuspump saaks töötada sobivates tingimustes.
                             </p>
                         </div>
                     </article>
-
+                    {{-- TÄISTEENUS --}}
                     <article class="hinnakaart" aria-labelledby="premium-pealkiri">
                         <div class="hinnakaart-sisu">
                             <span class="hinnakaart-label">TÄISTEENUS</span>
-                            <h3 id="premium-pealkiri">Suurem või keerukam küttesüsteem</h3>
+                            <h3 id="premium-pealkiri">Kogu vesiküttesüsteemi ehitus</h3>
                             <p class="hind">alates <strong>18 000 €</strong></p>
-
                             <ul class="teenus-checklist">
-                                <li>Kõik mis eelmistes pakettides +</li>
-                                <li>Kogu küttesüsteemi väljaehitus või põhjalik uuendamine</li>
+                                <li>Sobiv kütteallikas ja vajalik tehnika</li>
+                                <li>Torustiku ja hüdraulika väljaehitus</li>
                                 <li>Radiaatorite, põrandakütte või fancoilide rajamine</li>
-                                <li>Automaatika ja süsteemi loogika terviklahendus</li>
-                                <li>Suuremad või keerukamad objektid</li>
+                                <li>Tarbevee ja vajadusel akumulatsioonipaagi lahendus</li>
+                                <li>Automaatika ja süsteemi juhtimise terviklahendus</li>
+                                <li>Täitmine, käivitus ja tasakaalustamine</li>
                             </ul>
-
                             <p class="hinnakaart-kirjeldus">
-                                Sobib majadele, kus ehitatakse või uuendatakse kogu küttesüsteem ja on oluline, et lahendus oleks terviklik, töökindel ja pikaealine.
+                                Sobib uutele või põhjalikult renoveeritavatele hoonetele,
+                                kus kogu vesiküttesüsteem ehitatakse või uuendatakse tervikuna.
+                                Kütteallikaks võib olla soojuspump, keskküttekamin, pelletikatel,
+                                keskküttepliit või muu objektile sobiv lahendus.
                             </p>
                         </div>
                     </article>
-
                 </div>
-
                 <p class="teenus-hinnad-markus">
-                    <strong>Alates hind eeldab lihtsat ja hästi teostatavat objekti.</strong> Täpne hind selgub pärast objekti ülevaatust ja olemasoleva süsteemi hindamist.
+                    <strong>Alates hind eeldab lihtsat ja hästi teostatavat objekti.</strong>
+                    Täpne hind selgub pärast objekti ja olemasoleva küttesüsteemi hindamist.
                 </p>
-
                 <p class="teenus-hinnad-markus">
-                    <strong>Maasoojuspumba puhul lisandub tavaliselt maakontuuri rajamise maksumus</strong>, mis sõltub pinnasest, vajalikust kontuurist ja objekti eripärast. Levinud suurusjärk on enamasti alates 4000 €.
+                    <strong>Maasoojuspumba puhul lisandub tavaliselt maakontuuri rajamise maksumus.</strong>
+                    Selle hind sõltub pinnasest, vajalikust kontuurist ja objekti eripärast.
                 </p>
-
+                {{-- ÕHK-ÕHK --}}
                 <div class="ohk-ohk-hinnad" aria-labelledby="ohk-ohk-pealkiri">
                     <h3 id="ohk-ohk-pealkiri" class="teenus-alapealkiri">Õhk-õhk soojuspumbad</h3>
-
                     <p class="teenus-sissejuhatus">
-                        Õhk-õhk soojuspumba paigaldus on väiksema mahuga töö ja sobib hästi kas eraldi lahenduseks või olemasoleva küttesüsteemi täienduseks.
+                        Õhk-õhk soojuspump on väiksema mahuga lahendus ja sobib näiteks
+                        olemasoleva küttesüsteemi täienduseks, väiksemale majale,
+                        suvilale või ruumide jahutamiseks.
                     </p>
-
                     <p class="ohk-ohk-hind">
                         <strong>Paigaldus koos seadmega: alates 1500 €</strong>
                     </p>
                 </div>
-<p class="teenus-loputekst">
-    Soovid teada, milline lahendus sinu majale päriselt sobib ja mis see maksma läheks? 
-    Saada päring ning vaatan olemasoleva süsteemi või uue lahenduse sinu objekti järgi üle.
-</p>
-
-<div class="teenus-cta" role="region" aria-label="Pakkumise küsimine">
-    <a href="{{ route('index') }}#form" class="teenus-cta-btn">
-        Küsi pakkumist
-    </a>
-</div>
-
+                {{-- JÄRELTEENINDUS --}}
+                <div style="max-width:900px; margin:65px auto 0;">
+                    <h3 class="teenus-alapealkiri" style="text-align:center;">
+                        Lisaks ehitusele ka hooldus ja remont
+                    </h3>
+                    <p class="teenus-sissejuhatus">
+                        Eriti soojuspumbaga küttesüsteemi puhul ei lõpe teenus
+                        paigaldusega. Küttesepp teostab ka
+                        <a href="{{ route('soojuspumpade-hooldus') }}"><strong>soojuspumpade hooldust</strong></a>
+                        ja
+                        <a href="{{ route('soojuspumpade-remont') }}"><strong>soojuspumpade remonti</strong></a>.
+                    </p>
+                    <p class="teenus-sissejuhatus">
+                        Vajadusel saan hiljem hinnata nii kütteseadme enda tööd kui ka
+                        seda mõjutavat küttesüsteemi – veeringlust, vooluhulkasid,
+                        töötemperatuure, automaatikat ja küttevee seisukorda.
+                    </p>
+                </div>
+                <p class="teenus-loputekst">
+                    Soovid teada, milline küte sinu majale sobib ja mis see maksma läheks?
+                    Saada päring ning leiame vastused.
+                    
+                </p>
+                <div class="teenus-cta" role="region" aria-label="Pakkumise küsimine">
+                    <a href="{{ route('index') }}#form" class="teenus-cta-btn">Küsi pakkumist</a>
+                </div>
             </div>
         </section>
-
     </section>
-
     <x-up_scroller />
     <x-cookies />
-
 </x-layout>

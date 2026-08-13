@@ -1,210 +1,352 @@
-<x-layout :title="'Küttevee inhibiitorid – korrosiooni ja katlakivi ennetamine küttesüsteemis | Küttesepp'" :metaDescription="'Küttevee inhibiitorid kaitsevad küttesüsteemi metallosi korrosiooni eest ja vähendavad katlakivi teket. Küttesepp kasutab keskkonnasõbralikke, nitrititeta inhibiitoreid ja tagab õige kontsentratsiooni.'" :metaKeywords="'küttevee inhibiitorid,
-inhibiitor küttesüsteemile,
-korrosioonikaitse,
-katlakivi ennetamine,
-küttesüsteemi hooldus,
-küttevee töötlus,
-keskkonnasõbralik inhibiitor'" :ogImage="asset('images/serp/kuttesepp-og-inhibiitor.webp')" :metaAuthor="'Tanel Sepp'" :robots="'index, follow'"
-    :viteCssAssets="['resources/css/pages/teenustelehed.css']" :viteJsAssets="['resources/js/pages/teenustelehed.js']">
+<x-layout
+    :title="'Küttevee inhibiitorid ja korrosioonikaitse | Küttesepp'"
+    :metaDescription="'Küttevee inhibiitorid aitavad vähendada küttesüsteemi korrosiooni, sette ja katlakivi tekkimise riski. Küttesepp teostab küttevee kontrolli, inhibiitori lisamist ja vajadusel süsteemi läbipesu Tallinnas, Harjumaal ja kokkuleppel mujal Eestis.'"
+    :ogImage="asset('images/serp/kuttesepp-og-inhibiitor.webp')"
+    :metaAuthor="'Tanel Sepp'"
+    :robots="'index, follow'"
+    :viteCssAssets="['resources/css/pages/teenustelehed.css']"
+    :viteJsAssets="['resources/js/pages/teenustelehed.js']"
+>
 
     <section class="uper" id="uperid">
         <div class="carousel">
             <div class="taustadiv">
                 <div class="textholderdiv">
                     <div class="textholder">
-                        <h1>Küttevee inhibiitorid – keskkonnasõbralik katlakivi- ja korrosioonikaitse</h1>
+                        <h1>Küttevee inhibiitorid – korrosioonikaitse küttesüsteemile</h1>
                     </div>
                 </div>
-                <img class="taust" src="{{ asset('images/taustad/inhibiitor.webp') }}"
-                    alt="Küttevee inhibiitorid ja küttesüsteemi kaitse">
+
+                <img
+                    class="taust"
+                    src="{{ asset('images/taustad/inhibiitor.webp') }}"
+                    alt="Küttevee inhibiitorid ja küttesüsteemi korrosioonikaitse"
+                >
             </div>
         </div>
     </section>
+
 
     <section class="tootjasektsioon" id="tootjaid">
         <div class="tootjast">
             <div class="ettevotte">
                 <div class="content">
 
-                    <h2><span>Küttevee inhibiitor</span> – täielik kaitse kogu küttesüsteemile</h2>
-
+                    <h2>
+                        <span>Küttevee inhibiitor</span> – täiendav kaitse küttesüsteemile
+                    </h2>
 
                     <p>
-                        Küttevee inhibiitorid on spetsiaalsed lisaained, mis takistavad torustiku ja soojusvahetite
-                        sisepindade
-                        korrosiooni ja katlakivi teket. Need moodustavad õhukese kaitsekihi, mis ei lase metallpindadel
-                        reageerida hapniku ja mineraalidega.
+                        Küttevee inhibiitor on küttesüsteemi veele lisatav aine,
+                        mille eesmärk on vähendada metallpindade korrosiooni ning
+                        piirata sette ja katlakivi tekkimise riski.
+                        Sobiv inhibiitor sõltub süsteemi materjalidest, olemasoleva vee
+                        omadustest ja kasutatavast kütteseadmest.
                     </p>
 
                     <p>
-                        <strong>Küttesepp OÜ</strong> kasutab oma töös professionaalset inhibiitor konsentraati, mis
-                        tagab täieliku töökindluse, ei sisalda nitriteid ning mille
-                        kõik koostisosad on keskkonnale ohutud.<br> See tagab süsteemi pika eluea ja sobib kasutamiseks
-                        nii
-                        uutes kui ka vanemates küttesüsteemides. <br><br>
-                        <strong>
-                            Küttesepp OÜ teostab võimalusel ennem küttevee töötlemist
-                            <a style="font-size:18px" href="{{ route('kuttesusteemi-labipesu') }}">
-                                küttesüsteemi läbipesu.
-                            </a><br>
-                            Olenevalt vajadusest kas keemiaga või ilma.
-                        </strong>
+                        <strong>Küttesepp OÜ</strong> kasutab küttevee töötlemisel
+                        professionaalseks kasutamiseks mõeldud inhibiitoreid.
+                        Enne lisaaine lisamist hindan võimalusel olemasoleva küttevee
+                        seisukorda ning süsteemi üldist olukorda, et valida konkreetsele
+                        süsteemile sobiv lahendus.
+                    </p>
+
+                    <p>
+                        Kui küttesüsteemis on juba palju muda, korrosioonijääke või muud
+                        saastet, ei asenda inhibiitori lisamine süsteemi puhastamist.
+                        Sellisel juhul võib enne vee töötlemist olla vajalik
+                        <a href="{{ route('kuttesusteemi-labipesu') }}">
+                            küttesüsteemi läbipesu
+                        </a>
+                        kas vee ja õhu impulssidega või vajadusel sobiva puhastuskeemiaga.
                     </p>
 
 
                     <div class="pildidiv">
-                        <img class="tootjastpilt" src=""
+                        <img
+                            class="tootjastpilt"
+                            src=""
                             data-src="{{ asset('images/vaikesed/kuttesusteemi-vesi/inhibiitor.webp') }}"
-                            alt="Küttevee inhibiitor">
+                            alt="Küttevee inhibiitori kasutamine küttesüsteemis"
+                        >
                     </div>
+
                     <hr class="red-line">
 
-                    <h3>Miks kasutada inhibiitoreid?</h3>
+
+                    <h3>Miks kasutada küttevee inhibiitorit?</h3>
 
                     <p>
-                        Inhibiitorid sobivad ka nendesse süsteemidesse, mida ei ole võimalik täielikult
-                        demineraliseerida või välja pesta.
-                        (<a href="{{ route('kuttevee-demineraliseerimine') }}">küttevee demineraliseerimine</a>).
-                        Need toimivad ka siis, kui vesi sisaldab mineraale või süsteemis on segamaterjalid (teras, vask,
-                        alumiinium).
+                        Inhibiitor võib olla sobiv lahendus nii vanemale kui ka uuemale
+                        küttesüsteemile, kui vee kvaliteet, süsteemi materjalid või
+                        kasutustingimused vajavad täiendavat korrosioonikaitset.
+                    </p>
+
+                    <p>
+                        Seda kasutatakse sageli süsteemides, kus kogu vett ei ole
+                        võimalik või otstarbekas välja vahetada, samuti segamaterjalidega
+                        küttesüsteemides. Inhibiitori kasutamine ei välista
+                        <a href="{{ route('kuttevee-demineraliseerimine') }}">
+                            küttevee demineraliseerimist
+                        </a>,
+                        kuid alati ei ole mõlemat meetodit korraga vaja kasutada.
                     </p>
 
                     <ul class="rohelise-linnukesega" style="font-weight:500; font-size:18px;">
-                        <li>Takistab korrosiooni teket isegi suurema juhtivusega vee korral</li>
-                        <li>Vähendab katlakivi ja muda teket</li>
-                        <li>Kaitseb kõiki küttesüsteemi materjale – terast, vaske, alumiiniumi</li>
-                        <li>Keskkonnasõbralik ja ohutu koostis ilma nitrititeta</li>
+                        <li>Aitab vähendada metallpindade korrosiooniriski</li>
+                        <li>Aitab vähendada sette ja katlakivi tekkimise riski</li>
+                        <li>Võib sobida segamaterjalidega küttesüsteemidele</li>
+                        <li>Annustatakse vastavalt süsteemi mahule ja tootja juhistele</li>
                     </ul>
 
+
                     <div class="pildidiv" style="justify-self:flex-end;">
-                        <img class="tootjastpilt" src=""
+                        <img
+                            class="tootjastpilt"
+                            src=""
                             data-src="{{ asset('images/vaikesed/kuttesusteemi-vesi/porandakute.webp') }}"
-                            alt="Inhibiitorid põrandaküttes">
+                            alt="Küttevee inhibiitori kasutamine põrandaküttes"
+                        >
                     </div>
+
                     <hr class="red-line" style="justify-self:flex-end;">
 
+
                     <h3>Kuidas inhibiitor töötab?</h3>
+
                     <p>
-                        Pärast süsteemi täitmist lisatakse inhibiitorilahus küttesüsteemi veele. See aine reageerib
-                        torude sisepindadel,
-                        moodustades õhukese kaitsekihi, mis takistab metallide ja hapniku vahelisi reaktsioone.
-                        See kiht ei mõjuta soojusvahetust ega süsteemi vooluhydraulikat.
+                        Inhibiitori toimemehhanism sõltub konkreetsest tootest.
+                        Osa inhibiitoreid aitab moodustada metallpindadele kaitsekihi,
+                        osa vähendab vee ja metallide vahelisi korrosioonireaktsioone
+                        ning mõni toode aitab samal ajal piirata ka mineraalsete
+                        sadestuste teket.
                     </p>
 
                     <p>
-                        Tulemuseks on süsteem, mis töötab stabiilselt ja ilma roostejääkideta, isegi kui vee kvaliteet
-                        ei ole ideaalne.
+                        Õigesti valitud ja doseeritud inhibiitor võib aidata vähendada
+                        korrosioonijääkide teket ning hoida küttesüsteemi töötingimused
+                        stabiilsemana. Tulemus sõltub siiski kogu süsteemi seisukorrast,
+                        vee kvaliteedist ja sellest, kas süsteemi satub pidevalt uut
+                        hapnikku või täitevett.
                     </p>
+
 
                     <div class="pildidiv">
-                        <img class="tootjastpilt" src=""
+                        <img
+                            class="tootjastpilt"
+                            src=""
                             data-src="{{ asset('images/vaikesed/kuttesusteemi-vesi/inhibiitor2.webp') }}"
-                            alt="Küttevee inhibiitori lisamine">
+                            alt="Küttevee inhibiitori lisamine küttesüsteemi"
+                        >
                     </div>
 
                     <hr class="red-line">
 
-                    <h3>Kontroll ja hooldus</h3>
+
+                    <h3>Inhibiitori kontroll ja hooldus</h3>
+
                     <p>
-                        Inhibiitori kontsentratsiooni tuleks kontrollida vähemalt kord aastas. Kui süsteemi lisatakse
-                        vett või tehakse hooldust,
-                        tuleb inhibiitoritaset uuesti kohandada. Küttesepp OÜ teostab molübdaadi testi või juhtivuse
-                        kontrolli ning lisab täiendava koguse,
-                        et kaitse säiliks.
+                        Inhibiitori olemasolu ja kontsentratsiooni tasub perioodiliselt
+                        kontrollida, eriti kui süsteemi on juurde täidetud, osa veest
+                        välja lastud või tehtud muid hooldus- ja remonditöid.
                     </p>
 
                     <p>
-                        Inhibiitori kaitsev toime kestab keskmiselt 1–2 aastat, sõltuvalt süsteemi töökoormusest ja vee
-                        mahust.
+                        Kontrollimeetod sõltub kasutatavast tootest.
+                        Mõne inhibiitori puhul saab kontsentratsiooni hinnata näiteks
+                        molübdaadi testiga, teiste toodete puhul kasutatakse tootja
+                        ette nähtud testmeetodit või hinnatakse küttevee üldisi parameetreid.
                     </p>
 
-                          <p>
-                    Küttesepp OÜ pakub küttevee töötlemise teenust
-                    <strong>üle Eesti</strong>, eelistan siiski Tallinna ja Harjumaa piirkonda kuna ise asun siin.<br>
-                    Teenuse teostame mobiilsete seadmetega objektil kohapeal.
+                    <p>
+                        Vajadusel lisatakse süsteemi täiendav kogus inhibiitorit vastavalt
+                        süsteemi veemahule, olemasolevale kontsentratsioonile ja
+                        konkreetse toote doseerimisjuhisele.
                     </p>
+
+                    <p>
+                        <strong>Küttesepp OÜ</strong> pakub küttevee kontrolli ja
+                        töötlemist eelkõige Tallinnas ja Harjumaal.
+                        Suuremate või erilahendust vajavate tööde puhul saan kokkuleppel
+                        tulla ka mujale Eestis.
+                    </p>
+
 
                     <hr class="red-line" style="margin-top:40px; margin-bottom:40px;">
 
-                    <!-- FAQ AKORDION -->
-                    <div class="faq-container" itemscope itemtype="https://schema.org/FAQPage">
 
-                        <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    {{-- FAQ --}}
+                    <div
+                        class="faq-container"
+                        itemscope
+                        itemtype="https://schema.org/FAQPage"
+                    >
+
+                        <div
+                            itemscope
+                            itemprop="mainEntity"
+                            itemtype="https://schema.org/Question"
+                        >
                             <h3 itemprop="name" class="faq-question">
-                                <span class="faq-icon">&#10003;</span> Mis on küttevee inhibiitor?
+                                <span class="faq-icon">&#10003;</span>
+                                Mis on küttevee inhibiitor?
                             </h3>
-                            <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"
-                                class="faq-answer">
+
+                            <div
+                                itemscope
+                                itemprop="acceptedAnswer"
+                                itemtype="https://schema.org/Answer"
+                                class="faq-answer"
+                            >
                                 <p itemprop="text">
-                                    Inhibiitor on spetsiaalne lisaaine, mis kaitseb küttesüsteemi metallosi korrosiooni
-                                    ja katlakivi eest,
-                                    moodustades torustiku sisepindadele kaitsekihi.
+                                    Küttevee inhibiitor on küttesüsteemi veele lisatav
+                                    aine, mille eesmärk on vähendada korrosiooni ning
+                                    sõltuvalt tootest ka sette ja katlakivi tekkimise riski.
+                                    Sobiv toode ja doseering sõltuvad süsteemi materjalidest
+                                    ning vee omadustest.
                                 </p>
                             </div>
                         </div>
 
-                        <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+
+                        <div
+                            itemscope
+                            itemprop="mainEntity"
+                            itemtype="https://schema.org/Question"
+                        >
                             <h3 itemprop="name" class="faq-question">
-                                <span class="faq-icon">&#10003;</span> Kas inhibiitorid on keskkonnale ohutud?
+                                <span class="faq-icon">&#10003;</span>
+                                Kas inhibiitor sobib igasse küttesüsteemi?
                             </h3>
-                            <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"
-                                class="faq-answer">
+
+                            <div
+                                itemscope
+                                itemprop="acceptedAnswer"
+                                itemtype="https://schema.org/Answer"
+                                class="faq-answer"
+                            >
                                 <p itemprop="text">
-                                    Jah. Küttesepa kasutatav inhibiitor ei sisalda nitriteid ega muid keskkonnaohtlikke
-                                    aineid. Kõik koostisosad on
-                                    biolagunevad ja ohutud nii keskkonnale kui ka kasutajale.
+                                    Mitte automaatselt. Inhibiitori sobivus sõltub
+                                    süsteemi materjalidest, kütteseadmest, vee omadustest
+                                    ja konkreetse toote tootjapoolsetest nõuetest.
+                                    Seetõttu tuleks enne lisaaine valikut hinnata
+                                    süsteemi ja olemasoleva küttevee seisukorda.
                                 </p>
                             </div>
                         </div>
 
-                        <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+
+                        <div
+                            itemscope
+                            itemprop="mainEntity"
+                            itemtype="https://schema.org/Question"
+                        >
                             <h3 itemprop="name" class="faq-question">
-                                <span class="faq-icon">&#10003;</span> Millal on mõistlik kasutada inhibiitorit?
+                                <span class="faq-icon">&#10003;</span>
+                                Millal on mõistlik inhibiitorit kasutada?
                             </h3>
-                            <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"
-                                class="faq-answer">
+
+                            <div
+                                itemscope
+                                itemprop="acceptedAnswer"
+                                itemtype="https://schema.org/Answer"
+                                class="faq-answer"
+                            >
                                 <p itemprop="text">
-                                    Inhibiitoreid soovitatakse vanemates või segamaterjalidest süsteemides, kus vee
-                                    täielik väljavahetamine
-                                    pole võimalik või demineraliseerimine pole otstarbekas.
+                                    Inhibiitor võib olla sobiv vanemas või
+                                    segamaterjalidega küttesüsteemis, samuti juhul,
+                                    kui olemasolevat vett ei ole võimalik täielikult
+                                    välja vahetada või süsteem vajab täiendavat
+                                    korrosioonikaitset.
                                 </p>
                             </div>
                         </div>
 
-                        <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+
+                        <div
+                            itemscope
+                            itemprop="mainEntity"
+                            itemtype="https://schema.org/Question"
+                        >
                             <h3 itemprop="name" class="faq-question">
-                                <span class="faq-icon">&#10003;</span> Kui tihti tuleb inhibiitorit lisada?
+                                <span class="faq-icon">&#10003;</span>
+                                Kui tihti tuleb inhibiitori kontsentratsiooni kontrollida?
                             </h3>
-                            <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"
-                                class="faq-answer">
+
+                            <div
+                                itemscope
+                                itemprop="acceptedAnswer"
+                                itemtype="https://schema.org/Answer"
+                                class="faq-answer"
+                            >
                                 <p itemprop="text">
-                                    Tavaliselt kord iga 1–2 aasta tagant või kui süsteemi on lisatud uut vett. Küttesepp
-                                    mõõdab vajadusel
-                                    kontsentratsiooni ja lisab täpselt õige koguse.
+                                    Kontrolli sagedus sõltub kasutatavast tootest ja
+                                    küttesüsteemi töötingimustest. Kontsentratsiooni
+                                    tasub kindlasti kontrollida pärast süsteemi
+                                    juurdetäitmist, vee väljalaskmist või suuremat
+                                    hooldus- ja remonditööd.
                                 </p>
                             </div>
                         </div>
 
-                        <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+
+                        <div
+                            itemscope
+                            itemprop="mainEntity"
+                            itemtype="https://schema.org/Question"
+                        >
                             <h3 itemprop="name" class="faq-question">
-                                <span class="faq-icon">&#10003;</span> Kas inhibiitor sobib ka koos demineraliseeritud
-                                veega?
+                                <span class="faq-icon">&#10003;</span>
+                                Kas inhibiitorit võib kasutada koos demineraliseeritud veega?
                             </h3>
-                            <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"
-                                class="faq-answer">
+
+                            <div
+                                itemscope
+                                itemprop="acceptedAnswer"
+                                itemtype="https://schema.org/Answer"
+                                class="faq-answer"
+                            >
                                 <p itemprop="text">
-                                    Kuigi küttevee demineraliseerimise käigus lisatakse ph stabiliseerijat ei ole
-                                    tegemist mitte inhibiitoriga vaid vee omaduste reguleerijaga. Inhibiitor, olgu ta
-                                    moübdaadi, silikaadi või orgaanika baasil, moodustab aktiivse korrosioonivastase
-                                    kaitsekile metalli pinnale, mis muudab toru sisepinna keemiliselt passiivsemaks.
-                                    <br><br>Üldjuhul pole vaja neid kombineerida, kuid see on võimalik. Näiteks suurtes
-                                    või keerulistes süsteemides
-                                    võib väike kogus inhibiitorit anda täiendava kaitse.
+                                    Jah, kui kasutatava inhibiitori tootja seda lubab
+                                    ja lisaaine sobib konkreetse süsteemi materjalidega.
+                                    Demineraliseeritud vesi ja inhibiitor täidavad
+                                    erinevat eesmärki ning nende koos kasutamine
+                                    ei ole igas süsteemis vajalik.
+                                </p>
+                            </div>
+                        </div>
+
+
+                        <div
+                            itemscope
+                            itemprop="mainEntity"
+                            itemtype="https://schema.org/Question"
+                        >
+                            <h3 itemprop="name" class="faq-question">
+                                <span class="faq-icon">&#10003;</span>
+                                Kas inhibiitori lisamisest piisab, kui küttesüsteem on juba must?
+                            </h3>
+
+                            <div
+                                itemscope
+                                itemprop="acceptedAnswer"
+                                itemtype="https://schema.org/Answer"
+                                class="faq-answer"
+                            >
+                                <p itemprop="text">
+                                    Mitte alati. Kui süsteemis on juba palju muda,
+                                    korrosioonijääke või ummistusi, võib enne inhibiitori
+                                    lisamist olla vajalik küttesüsteemi läbipesu.
+                                    Inhibiitori ülesanne on eelkõige vähendada edasiste
+                                    probleemide tekkimise riski, mitte eemaldada
+                                    olemasolevat tugevat saastet.
                                 </p>
                             </div>
                         </div>
 
                     </div>
+
 
                     <div class="links" style="margin-top:20px;">
                         <div class="kusipakkumist">
@@ -219,6 +361,8 @@ keskkonnasõbralik inhibiitor'" :ogImage="asset('images/serp/kuttesepp-og-inhibi
         </div>
     </section>
 
+
     <x-up_scroller />
     <x-cookies />
+
 </x-layout>
