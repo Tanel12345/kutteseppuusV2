@@ -1,9 +1,6 @@
-
-
 <x-layout
     :title="'Soojuspumbad Tallinnas ja Harjumaal | Küttesepp'"
-    :metaDescription="'Õhk-õhk, õhk-vesi ja maasoojuspumbad Tallinnas ja Harjumaal. Võrdle soojuspumba tüüpe ning leia oma majale sobiv lahendus.'"
-    :metaKeywords="'soojuspumbad tallinn, soojuspumbad harjumaa, õhk-õhk soojuspump, õhk-vesi soojuspump, maasoojuspump'"
+    :metaDescription="'Õhk-õhk, õhk-vesi ja maasoojuspumbad Tallinnas ja Harjumaal. Võrdle tüüpe, hinnataset ja sobivust ning küsi pakkumist.'"
     :ogImage="asset('images/serp/kuttesepp-og.webp')"
     :metaAuthor="'Tanel Sepp'"
     :robots="'index, follow, max-image-preview:large'"
@@ -14,8 +11,8 @@
 
     {{-- HERO – jäta sisu ja komponent samaks --}}
     <x-static_carousel
-        title="SOOJUSPUMBAD <br><br><span>Tõhusaim ja nutikaim valik sinu kodu kütmiseks</span>"
-        content="Soojuspump on energiatõhus kütteseade, mis kasutab ära välisõhus, maapinnas või muus keskkonnas leiduvat soojusenergiat ning suunab selle sinu elamisse.<br><br> Erinevad soojuspumba tüübid – õhk-õhk, õhk-vesi ja maasoojuspumbad – sobivad erinevatele hoonetele, vajadustele ja eelarvetele.<br><br> Õige valik sõltub muu hulgas hoone suurusest, olemasolevast küttesüsteemist, soojustusest, tarbevee vajadusest ja sellest, kas soovid lisaks küttele ka jahutust. Küttesepp aitab võrrelda eri võimalusi ning leida sinu objektile tehniliselt ja majanduslikult sobivaima variandi.<br><br> Kui otsid soojuspumpa eelkõige <strong>Tallinnas või Harjumaal</strong>, saad siit alustada erinevate tüüpide võrdlemisest ja sobiva seadme valikust."
+        title="SOOJUSPUMBAD <br><br><span>Küte, tarbevesi ja jahutus vastavalt maja vajadusele</span>"
+        content="Soojuspump on energiatõhus kütteseade, mis kasutab ära välisõhus, maapinnas või muus keskkonnas leiduvat soojusenergiat ning suunab selle sinu elamisse.<br><br> Erinevad soojuspumba tüübid – õhk-õhk, õhk-vesi ja maasoojuspumbad – sobivad erinevatele hoonetele, vajadustele ja eelarvetele.<br><br> Õige valik sõltub muu hulgas hoone suurusest, olemasolevast küttesüsteemist, soojustusest, tarbevee vajadusest ja sellest, kas soovid lisaks küttele ka jahutust. Küttesepp aitab võrrelda eri võimalusi ning valida sinu objektile tehniliselt ja majanduslikult sobiva süsteemi.<br><br> Kui otsid soojuspumpa eelkõige <strong>Tallinnas või Harjumaal</strong>, saad siit alustada erinevate tüüpide võrdlemisest ja sobiva seadme valikust."
         image="images/taustad/soojuspumbad-üldtaust.webp"
         imageAlt="Soojuspumbad Tallinnas ja Harjumaal"
         eriStiil="object-position: bottom;"
@@ -32,7 +29,7 @@
                     <p class="heatpump-eyebrow">Soojuspumba valik</p>
                     <h2>Milline soojuspump sobib sinu kodule?</h2>
                     <p>
-                        Õhk-õhk, õhk-vesi ja maasoojuspump täidavad erinevat sama ülesannet.
+                        Õhk-õhk, õhk-vesi ja maasoojuspump täidavad erinevaid ülesandeid.
                         Sobiv variant sõltub hoone küttevajadusest, olemasolevast küttesüsteemist,
                         vajalikust küttevee temperatuurist ning sellest, kas soovid lisaks
                         ruumide kütmisele ka tarbevett või jahutust.
@@ -55,6 +52,10 @@
                                 alt="Õhk-õhk soojuspump">
                         </div>
 
+                        <p class="heatpump-package__description">
+                            <strong>Seade koos paigaldusega alates 1 900 €</strong>
+                        </p>
+
                         <ul class="heatpump-checklist">
                             <li>Madal alginvesteering</li>
                             <li>Kütab ja jahutab</li>
@@ -73,7 +74,6 @@
                             Vaata õhk-õhk soojuspumpasid
                         </a>
                     </article>
-
 
                     {{-- ÕHK-VESI --}}
                     <article class="heatpump-package heatpump-package--featured">
@@ -94,6 +94,10 @@
                                 alt="Õhk-vesi soojuspump">
                         </div>
 
+                        <p class="heatpump-package__description">
+                            <strong>Soojuspump koos paigaldusega alates 12 900 €</strong>
+                        </p>
+
                         <ul class="heatpump-checklist">
                             <li>Küte ja soe tarbevesi</li>
                             <li>Sobib põrandaküttele ja radiaatoritele</li>
@@ -113,7 +117,6 @@
                         </a>
                     </article>
 
-
                     {{-- MAASOOJUS --}}
                     <article class="heatpump-package">
 
@@ -128,6 +131,9 @@
                                 data-src="{{ asset('images/vaikesed/alpha/alpha2.webp') }}"
                                 alt="Maasoojuspump">
                         </div>
+                         <p class="heatpump-package__description">
+                            <strong>Soojuspump koos maakontuuri rajamisega alates 24 900 €</strong>
+                        </p>
 
                         <ul class="heatpump-checklist">
                             <li>Stabiilne kasutegur</li>
@@ -151,7 +157,6 @@
                 </div>
             </div>
         </section>
-
 
         {{-- VALIKUT MÕJUTAVAD TEGURID --}}
         <section class="heatpump-section heatpump-section--soft">
@@ -227,7 +232,6 @@
             </div>
         </section>
 
-
         {{-- VALIKUJUHEND --}}
         <section class="heatpump-section">
             <div class="heatpump-container heatpump-diagnosis">
@@ -237,7 +241,7 @@
                     <h2>Kuidas valida õige soojuspump?</h2>
                     <p>
                         Väiksemas ja hästi jaotatud ruumidega elamus võib õhk-õhk soojuspump
-                        olla kõige lihtsam ja soodsam lahendus. See sobib hästi ka lisakütteks
+                        olla kõige lihtsam ja soodsam valik. See sobib hästi ka lisakütteks
                         ning võimaldab suvel jahutada.
                     </p>
                     <p>
@@ -279,7 +283,6 @@
                 </div>
             </div>
         </section>
-
 
         {{-- MIKS KÜTTESEPP --}}
         <section class="heatpump-section heatpump-section--dark">
@@ -337,7 +340,6 @@
             </div>
         </section>
 
-
         {{-- CTA --}}
         <section class="heatpump-contact">
             <div class="heatpump-container heatpump-contact__content">
@@ -346,8 +348,9 @@
                     <p class="heatpump-eyebrow">Soojuspumba valik</p>
                     <h2>Pole kindel, milline soojuspump sinu majale sobib?</h2>
                     <p>
-                        Saada maja põhiandmed ja olemasoleva küttesüsteemi kirjeldus.
-                        Nende põhjal saan teha esmase hinnangu sobivale lahendusele.
+                        Saada maja põhiandmed, olemasoleva küttesüsteemi kirjeldus
+                        ja võimalusel soovitud eelarve suurusjärk. Nende põhjal saan
+                        hinnata sobivat seadmeklassi ja töömahtu.
                     </p>
                 </div>
 
@@ -360,7 +363,6 @@
 
     </div>
 
-
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -368,7 +370,7 @@
         "@id": "{{ url()->current() }}#page",
         "url": "{{ url()->current() }}",
         "name": "Soojuspumbad Tallinnas ja Harjumaal",
-        "description": "Õhk-õhk, õhk-vesi ja maasoojuspumpade võrdlus ning valik.",
+        "description": "Õhk-õhk, õhk-vesi ja maasoojuspumpade võrdlus, hinnatasemed ja valik.",
         "mainEntity": {
             "@type": "ItemList",
             "itemListElement": [

@@ -1,7 +1,6 @@
 <x-layout
     :title="'Õhk-vesi soojuspumbad Tallinnas ja Harjumaal – müük ja paigaldus | Küttesepp'"
-    :metaDescription="'Õhk-vesi soojuspumbad Tallinnas ja Harjumaal koos nõustamise ja paigaldusega. Lahendus põrandakütte, radiaatorite ja tarbevee soojendamiseks. Küsi sobiva komplekti hinda.'"
-    :metaKeywords="'õhk-vesi soojuspump, õhk-vesi soojuspumbad, õhk-vesi küte, õhk-vesi küttesüsteem, tarbevee soojendamine, põrandakütte soojuspump'"
+    :metaDescription="'Õhk-vesi soojuspumbad Tallinnas ja Harjumaal. Seadme valik, müük ja paigaldus alates 12 900 €. Põrandaküte, radiaatorid ja tarbevesi.'"
     :ogImage="asset('images/serp/kuttesepp-og-ohkvesisoojuspumbad.webp')"
     :metaAuthor="'Tanel Sepp'"
     :robots="'index, follow, max-image-preview:large'"
@@ -10,20 +9,19 @@
     ]"
 >
 
-
     {{-- =====================================================
          HERO
          ===================================================== --}}
 
     <x-static_carousel
 
-        title="ÕHK-VESI SOOJUSPUMBAD <br><br><span>Tõhus küttevõimalus kogu majale</span>"
+        title="ÕHK-VESI SOOJUSPUMBAD <br><br><span>Kogu maja küte ja tarbevesi</span>"
 
         content="Õhk-vesi soojuspump kasutab välisõhus olevat soojusenergiat ning annab selle edasi hoone vesiküttesüsteemile. Soojuspumbaga saab kütta põrandakütet või radiaatoreid ning valmistada ka sooja tarbevett.<br><br>
 
         Õhk-vesi soojuspump sobib nii uue küttesüsteemi ehitamiseks kui ka olemasoleva katla või muu veeküttesüsteemi asendamiseks. Õigesti valitud seadme puhul saab suure osa maja küttevajadusest katta automaatselt ja energiatõhusalt.<br><br>
 
-        Küttesepalt saad õhk-vesi soojuspumba koos sobiva lahenduse valiku, nõustamise ja paigaldusega. Vaata ka
+        Küttesepalt saad õhk-vesi soojuspumba koos seadme valiku, nõustamise ja paigaldusega. Vaata ka
         <a href='{{ route('soojuspumpade-paigaldus') }}'
            style='font-weight:700;'
            title='Soojuspumpade paigaldus Tallinnas ja Harjumaal'>
@@ -50,7 +48,6 @@
          ===================================================== --}}
 
     <div class="airpump-content">
-
 
         {{-- =================================================
              KELLELE SOBIB?
@@ -79,9 +76,7 @@
 
                 </div>
 
-
                 <div class="airpump-benefits-grid">
-
 
                     <article class="airpump-benefit-card">
 
@@ -101,7 +96,6 @@
 
                     </article>
 
-
                     <article class="airpump-benefit-card">
 
                         <span class="airpump-benefit-card__icon">
@@ -119,7 +113,6 @@
                         </p>
 
                     </article>
-
 
                     <article class="airpump-benefit-card">
 
@@ -139,7 +132,6 @@
 
                     </article>
 
-
                     <article class="airpump-benefit-card">
 
                         <span class="airpump-benefit-card__icon">
@@ -158,14 +150,11 @@
 
                     </article>
 
-
                 </div>
 
             </div>
 
         </section>
-
-
 
         {{-- =================================================
              VALIKU JUHEND
@@ -176,7 +165,6 @@
             <div class="airpump-container">
 
                 <div class="airpump-choice">
-
 
                     <div class="airpump-choice__content">
 
@@ -204,9 +192,7 @@
 
                     </div>
 
-
                     <div class="airpump-choice__cards">
-
 
                         <article class="airpump-choice-card">
 
@@ -227,7 +213,6 @@
                             </div>
 
                         </article>
-
 
                         <article class="airpump-choice-card">
 
@@ -250,7 +235,6 @@
 
                         </article>
 
-
                         <article class="airpump-choice-card">
 
                             <span>03</span>
@@ -271,7 +255,6 @@
 
                         </article>
 
-
                         <article class="airpump-choice-card">
 
                             <span>04</span>
@@ -285,13 +268,12 @@
                                 <p>
                                     Arvestada tuleb tarbevee vajaduse,
                                     boileri, võimaliku akupaagi ja ülejäänud
-                                    küttesüsteemi hüdraulilise lahendusega.
+                                    küttesüsteemi hüdraulikaga.
                                 </p>
 
                             </div>
 
                         </article>
-
 
                     </div>
 
@@ -301,19 +283,13 @@
 
         </section>
 
-
     </div>
-
-
-    
-
 
     {{-- =====================================================
          PAIGALDUS JA LÕPU CTA
          ===================================================== --}}
 
     <div class="airpump-content">
-
 
         {{-- =================================================
              PAIGALDUS
@@ -325,7 +301,6 @@
 
                 <div class="airpump-install">
 
-
                     <div class="airpump-install__content">
 
                         <p class="airpump-eyebrow">
@@ -333,7 +308,7 @@
                         </p>
 
                         <h2>
-                            Õhk-vesi soojuspump koos tervikliku paigaldusega
+                            Õhk-vesi soojuspump koos paigalduse ja seadistamisega
                         </h2>
 
                         <p>
@@ -345,11 +320,10 @@
                         </p>
 
                         <p>
-                            Aitan hinnata olemasolevat küttesüsteemi, valida
-                            sobiva võimsusega seadme ja koostada lahenduse,
-                            mis arvestab konkreetse maja vajadustega.
+                            Hindan olemasoleva küttesüsteemi sobivust, valin
+                            hoonele õige võimsusega seadme ning panen paika
+                            vajaliku hüdraulika, tarbevee ja juhtimise.
                         </p>
-
 
                         <a
                             class="airpump-text-link"
@@ -360,60 +334,59 @@
 
                     </div>
 
-
                     <div class="airpump-install__box">
-
                         <p class="airpump-install__label">
-                            Pakkumise koostamiseks
+                            Seade koos paigaldusega
                         </p>
 
                         <h3>
-                            Saada maja põhiinfo
+                            Alates 12 900 €
                         </h3>
 
-
+                        <p>
+                            Hind sobib objektile, kus olemasolev radiaator- või
+                            põrandaküttesüsteem on heas korras ja tehnoruum ei vaja
+                            suuremat ümberehitust.
+                        </p>
+<br>
                         <ul>
-
-                            <li>
-                                Köetav pind ja hoone tüüp
-                            </li>
-
-                            <li>
-                                Olemasolev küttesüsteem
-                            </li>
-
-                            <li>
-                                Põrandaküte või radiaatorid
-                            </li>
-
-                            <li>
-                                Praegune kütteseade ja energiakulu
-                            </li>
-
-                            <li>
-                                Tarbevee vajadus
-                            </li>
-
+                            <li>Hoonele sobiva võimsusega õhk-vesi soojuspump</li>
+                            <li>Välis- ja siseosa tavapärane paigaldus</li>
+                            <li>Ühendamine olemasoleva küttesüsteemiga</li>
+                            <li>Vajalikud hüdraulilised ühendused ja sulgarmatuur</li>
+                            <li>Magnet- või mudafilter vastavalt süsteemile</li>
+                            <li>Elektritööd tavapärases mahus</li>
+                            <li>Täitmine, õhutamine ja süsteemi käivitus</li>
+                            <li>Küttegraafiku ja tööparameetrite seadistamine</li>
+                            <li>Kasutaja juhendamine</li>
                         </ul>
 
+                        <p>
+                            Kui olemasolev küttesüsteem vajab põhjalikumat uuendamist,
+                            läbipesu, uut küttevett, tarbevee või tehnoruumi ümberehitust,
+                            algavad tööd umbes 19 900 eurost.
+                        </p>
 
+                        <a
+                            class="airpump-text-link"
+                            href="/kuttesusteemide-ehitus"
+                        >
+                            Vaata küttesüsteemide ehituse hinnatasemeid →
+                        </a>
+<br><br>
                         <a
                             class="airpump-btn airpump-btn--primary"
                             href="/#form"
                         >
                             Küsi pakkumist
                         </a>
-
                     </div>
-
 
                 </div>
 
             </div>
 
         </section>
-
-
 
         {{-- =================================================
              LÕPU CTA
@@ -424,7 +397,6 @@
             <div class="airpump-container">
 
                 <div class="airpump-contact__content">
-
 
                     <div>
 
@@ -437,13 +409,12 @@
                         </h2>
 
                         <p>
-                            Kirjelda maja, olemasolevat küttesüsteemi ja
-                            praegust küttelahendust. Aitan hinnata sobiva
-                            seadme võimsust ja süsteemi ülesehitust.
+                            Kirjelda maja suurust, olemasolevat küttesüsteemi,
+                            praegust kütteallikat ja võimalusel aastast energiakulu.
+                            Selle põhjal saan hinnata sobivat võimsust ja töömahtu.
                         </p>
 
                     </div>
-
 
                     <a
                         class="airpump-btn airpump-btn--light"
@@ -452,20 +423,16 @@
                         Küsi pakkumist
                     </a>
 
-
                 </div>
 
             </div>
 
         </section>
 
-
     </div>
-
 
     <x-up_scroller />
 
     <x-cookies />
-
 
 </x-layout>

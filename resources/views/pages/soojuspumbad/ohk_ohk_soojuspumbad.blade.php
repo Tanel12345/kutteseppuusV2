@@ -1,6 +1,6 @@
 <x-layout
     :title="'Õhksoojuspumbad Tallinnas ja Harjumaal – müük ja paigaldus | Küttesepp'"
-    :metaDescription="'Õhksoojuspumbad Tallinnas ja Harjumaal koos nõustamise ja paigaldusega. Võrdle erinevaid seadmeid ning küsi oma kodule sobiva komplekti hinda.'"
+    :metaDescription="'Õhksoojuspumbad Tallinnas ja Harjumaal. Seadme valik, müük ja paigaldus alates 1900 €. Küte ja jahutus eramajale, korterile või suvilale.'"
     :metaKeywords="'õhk-õhk soojuspump, õhk-õhk soojuspumbad, õhksoojuspump, õhksoojuspumbad, kütmine ja jahutus'"
     :ogImage="asset('images/serp/kuttesepp-og-ohksoojuspumbad.webp')"
     :metaAuthor="'Tanel Sepp'"
@@ -16,11 +16,11 @@
          ===================================================== --}}
 
     <x-static_carousel
-        title="ÕHKSOOJUSPUMBAD <br><br><span>Soodsaim valik efektiivseks kütteks</span>"
+        title="ÕHKSOOJUSPUMBAD <br><br><span>Tõhus küte ja jahutus ühe seadmega</span>"
 
         content="Õhksoojuspump ehk õhk-õhk soojuspump kasutab välisõhus olevat soojusenergiat ning annab selle siseosa kaudu otse ruumi. Tegemist on ühe lihtsama ja soodsama viisiga elamu kütmiseks ning suvel saab sama seadmega ka jahutada.<br><br>
 
-        Õhksoojuspumba eelisteks on suhteliselt väike soetuskulu, kiire paigaldus ja hea energiatõhusus. Lahendus sobib hästi eramajale, korterile, suvilale või olemasoleva küttesüsteemi täiendamiseks.<br><br>
+        Õhksoojuspumba eelisteks on mõõdukas soetuskulu, kiire paigaldus ja hea energiatõhusus. Õhksoojuspump sobib hästi eramajale, korterile, suvilale või olemasoleva küttesüsteemi täiendamiseks.<br><br>
 
         Küttesepalt saad õhksoojuspumba koos seadme valiku, nõustamise ja paigaldusega. Kui vajad paigaldust, vaata
         <a href='{{ route('soojuspumpade-paigaldus') }}'
@@ -115,7 +115,7 @@
                         </h3>
 
                         <p>
-                            Mugav lahendus temperatuuri hoidmiseks ja hoone
+                            Mugav viis temperatuuri hoidmiseks ja hoone
                             kiireks soojendamiseks. Paljusid seadmeid saab
                             juhtida ka telefoni kaudu.
                         </p>
@@ -154,8 +154,8 @@
 
                         <p>
                             Talvel annab seade sooja ning suvel töötab
-                            konditsioneerina, mistõttu saab ühe seadmega
-                            lahendada kaks erinevat vajadust.
+                            konditsioneerina, mistõttu katab üks seade
+                            nii kütte kui ka jahutuse vajaduse.
                         </p>
 
                     </article>
@@ -314,7 +314,7 @@
                         </p>
 
                         <h2>
-                            Õhksoojuspump koos professionaalse paigaldusega
+                            Õhksoojuspump koos nõuetekohase paigaldusega
                         </h2>
 
                         <p>
@@ -328,6 +328,7 @@
                         <p>
                             Aitan valida hoonele sobiva seadme ja paigalduskoha
                             ning teen paigalduse peamiselt Tallinnas ja Harjumaal.
+                            Seadme ja tavapärase paigaldusega komplektid algavad 1 900 eurost.
                         </p>
 
 
@@ -344,19 +345,39 @@
                     <div class="airpump-install__box">
 
                         <p class="airpump-install__label">
-                            Sobiva seadme ja võimaluse leidmiseks
+                            Seade koos paigaldusega
                         </p>
 
                         <h3>
-                            Saada maja põhiinfo
+                            Alates 1 900 €
                         </h3>
+<br>
+                        <p>
+                            Hind sisaldab õhksoojuspumpa ja tavapärast paigaldust
+                            Tallinnas või Harjumaal.
+                        </p>
+                        <br>
 
                         <ul>
-                            <li>Köetav pind ja hoone tüüp</li>
-                            <li>Olemasolev küttesüsteem</li>
-                            <li>Ruumide paigutus</li>
-                            <li>Soovitud küte, jahutus või mõlemad</li>
+                            <li>Hoonele sobiva seadme ja võimsuse valik</li>
+                            <li>Sise- ja välisosa paigaldus ning kinnitused</li>
+                            <li>Külmaine torustik ja isolatsioon tavapärases mahus</li>
+                            <li>Seina läbiviik tavapärases konstruktsioonis</li>
+                            <li>Kondensaadi äravoolu tavapärane teostus</li>
+                            <li>Elektriühendus olemasolevast sobivast toitepunktist</li>
+                            <li>Külmaineühenduste kontroll ja süsteemi vaakumeerimine</li>
+                            <li>Käivitus, tööparameetrite kontroll ja seadistamine</li>
+                            <li>Kasutaja juhendamine</li>
                         </ul>
+
+                        <p>
+                            Suurema võimsuse, kõrgema varustustaseme või kallima seadmeklassi puhul
+                            on komplekti hind kõrgem. Pikem torustik, keerukad läbiviigud,
+                            eraldi rajatav elektritoide, eritööna välisosa alus ja muud
+                            tavapärasest paigaldusest erinevad tööd hinnatakse eraldi.
+                        </p>
+                        <br>
+                        <br>
 
                         <a
                             class="airpump-btn airpump-btn--primary"
@@ -397,9 +418,9 @@
                         </h2>
 
                         <p>
-                            Kirjelda maja, köetavat pinda ja olemasolevat
-                            küttesüsteemi. Aitan valida sobiva seadme ja
-                            paigalduslahenduse.
+                            Kirjelda maja, köetavat pinda ja ruumide paigutust.
+                            Selle põhjal saan soovitada sobiva võimsusega seadet
+                            ja hinnata paigalduse töömahtu.
                         </p>
 
                     </div>
